@@ -1,0 +1,33 @@
+<svg width="136" height="136" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M36.5534 0H99.4466C119.637 0 136 16.363 136 36.5534V99.4466C136 119.637 119.637 136 99.4466 136H36.5534C16.363 136 0 119.637 0 99.4466V36.5534C0 16.363 16.363 0 36.5534 0Z"
+        fill="white" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M90.4149 48.0224V100H98.9346C103.39 100 107 96.2984 107 91.7407V37.8389C107 36.2816 105.231 35.4337 104.059 36.4284L90.4149 48.0224Z"
+        fill="url(#paint0_linear_10975_186572)" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M78.532 58.1326L62.9671 72.2134C60.3132 74.6105 56.3522 74.6676 53.6345 72.352L29 51.3816V37.8471C29 36.2898 30.7693 35.4337 31.9408 36.4284L62.8476 62.6985C65.8362 65.2423 70.1718 65.2423 73.1604 62.6985L78.532 58.1326Z"
+        fill="url(#paint1_linear_10975_186572)" />
+    <path
+        d="M90.4149 48.0306L78.532 58.1326L78.54 58.1326L62.9671 72.2134C60.3132 74.6105 56.3522 74.6676 53.6345 72.352L29 51.3816V91.7406C29 96.2984 32.6103 100 37.0654 100L90.4149 100V48.0306Z"
+        fill="url(#paint2_radial_10975_186572)" />
+    <defs>
+        <linearGradient id="paint0_linear_10975_186572" x1="341.251" y1="224.17" x2="299.222"
+            y2="-114.315" gradientUnits="userSpaceOnUse">
+            <stop offset="0.271" stop-color="#E3D9FF" />
+            <stop offset="1" stop-color="#7341FF" />
+        </linearGradient>
+        <linearGradient id="paint1_linear_10975_186572" x1="80.3614" y1="137.263" x2="-2.95405"
+            y2="-129.672" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E3D9FF" />
+            <stop offset="1" stop-color="#7341FF" />
+        </linearGradient>
+        <radialGradient id="paint2_radial_10975_186572" cx="0" cy="0" r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(106.66 43.8342) scale(90.9615 93.0569)">
+            <stop offset="0.5561" stop-color="#6D4AFF" />
+            <stop offset="0.9944" stop-color="#AA8EFF" />
+        </radialGradient>
+    </defs>
+</svg>
+    
