@@ -100,7 +100,7 @@ type PropsTypes = { source?: string };
  * @param source Req. a string containing the social network label, ex : 'facebook', 'twitter', etc
  */
 
-const SocialNetworkIcon = ({ source }: PropsTypes): JSX.Element | null => {
+const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
   let icon: null | JSX.Element = null;
 
   if (!source) return icon;
@@ -402,4 +402,4 @@ const SocialNetworkIcon = ({ source }: PropsTypes): JSX.Element | null => {
   return icon;
 };
 
-export default SocialNetworkIcon;
+export default SocialIcons;
