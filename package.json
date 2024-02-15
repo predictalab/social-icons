@@ -1,6 +1,6 @@
 {
   "name": "@predictalab/social-icons",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Custom social icons lib",
   "author": "Nicolas - Predicta Lab",
   "repository": {
@@ -16,7 +16,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "deploy": "npm run build && npm publish"
   },
   "eslintConfig": {
     "extends": [
