@@ -59,6 +59,7 @@ export type SourceTypes =
   | "reddit"
   | "runkeeper"
   | "runtastic"
+  | "rocketreach"
   | "scrabblego"
   | "sellix"
   | "shotgun"

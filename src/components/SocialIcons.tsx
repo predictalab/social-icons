@@ -64,6 +64,7 @@ import { BiLogoMicrosoftTeams as TeamsIcon } from "react-icons/bi";
 import { ImOnedrive as OnedriveIcon } from "react-icons/im";
 import { LiaHashtagSolid as DehashedIcon } from "react-icons/lia";
 import { PiShareNetwork as NetworkIcon } from "react-icons/pi";
+import { IoIosRocket as RocketReachIcon } from "react-icons/io";
 
 import protonmailsvg from "../assets/social-icons/protonmail.svg";
 import sellixsvg from "../assets/social-icons/sellix.svg";
@@ -290,6 +291,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "dehashed":
       icon = <DehashedIcon color={socialNetworks.dehashed.color} />;
+      break;
+    case "rocketreach":
+      icon = <RocketReachIcon color={socialNetworks.rocketreach.color} />;
       break;
 
     case "protonmail":

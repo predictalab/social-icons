@@ -78,6 +78,7 @@ export const socialNetworks: socialNetworkType = {
   sellix: { color: "#000000" },
   vivino: { color: "#AA1329" },
   whoxy: { color: "#ED8727" },
+  rocketreach: { color: "#FF3B3F" },
 
   whatsmyname: { color: "#000000", name: "WhatsMyName" },
   myfitnesspal: { color: "#00A087", name: "MyFitnessPal" },
