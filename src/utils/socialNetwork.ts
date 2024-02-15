@@ -71,7 +71,7 @@ export const socialNetworks: socialNetworkType = {
   scrabblego: { color: "#DEB357" },
   dehashed: { color: "#000000" },
   cavalier: { color: "#FDCD4E" },
-  imvu: { color: "#4B4D48" },
+  imvu: { color: "#000000" },
   sellix: { color: "#000000" },
   vivino: { color: "#AA1329" },
   whoxy: { color: "#ED8727" },
