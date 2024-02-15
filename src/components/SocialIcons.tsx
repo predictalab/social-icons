@@ -1,6 +1,5 @@
 import {
   FaFacebookF as FacebookIcon,
-  FaTwitter as TwitterIcon,
   FaInstagram as InstagramIcon,
   FaTelegramPlane as TelegramIcon,
   FaLinkedinIn as LinkedinIcon,
@@ -39,6 +38,7 @@ import {
   FaKeybase as KeybaseIcon,
   FaApple as AppleIcon,
 } from "react-icons/fa";
+import { FaXTwitter as TwitterXIcon } from "react-icons/fa6";
 import {
   SiGravatar as GravatarIcon,
   SiMyspace as MyspaceIcon,
@@ -112,9 +112,10 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "twitter":
     case "tw":
+    case "x":
     case "twitter archived profile":
     case "twitter archived tweets":
-      icon = <TwitterIcon color={socialNetworks.twitter.color} />;
+      icon = <TwitterXIcon color={socialNetworks.twitter.color} />;
       break;
     case "instagram":
     case "picuki":
