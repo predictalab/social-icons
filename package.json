@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/predictalab/social-icons.git"
   },
-  "private": true,
+  "private": false,
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "type": "module",
