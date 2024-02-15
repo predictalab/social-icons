@@ -318,82 +318,82 @@ const SocialNetworkIcon = ({ source }: PropsTypes): JSX.Element | null => {
       break;
 
     case "protonmail":
-      icon = <img src={protonmailsvg} />;
+      icon = <img src={protonmailsvg} alt="ProtonMail" />;
       break;
     case "sellix":
-      icon = <img src={sellixsvg} />;
+      icon = <img src={sellixsvg} alt="Sellix" />;
       break;
     case "vivino":
-      icon = <img src={vivinopng} />;
+      icon = <img src={vivinopng} alt="Vivino" />;
       break;
     case "myfitnesspal":
-      icon = <img src={myfitnesspalpng} />;
+      icon = <img src={myfitnesspalpng} alt="MyFitnessPal" />;
       break;
     case "whatsmyname":
-      icon = <img src={whatsmynamejpg} />;
+      icon = <img src={whatsmynamejpg} alt="WhatsMyName" />;
       break;
     case "yandex":
-      icon = <img src={yandexpng} />;
+      icon = <img src={yandexpng} alt="Yandex" />;
       break;
     case "imageshack":
-      icon = <img src={imageshackpng} />;
+      icon = <img src={imageshackpng} alt="Imageshack" />;
       break;
     case "taringa":
-      icon = <img src={taringapng} />;
+      icon = <img src={taringapng} alt="Taringa" />;
       break;
     case "shotgun":
-      icon = <img src={shotgunpng} />;
+      icon = <img src={shotgunpng} alt="Shotgun" />;
       break;
     case "weward":
-      icon = <img src={wewardpng} />;
+      icon = <img src={wewardpng} alt="Weward" />;
       break;
     case "life360":
-      icon = <img src={life360png} />;
+      icon = <img src={life360png} alt="Life360" />;
       break;
     case "okru":
-      icon = <img src={okrupng} />;
+      icon = <img src={okrupng} alt="Okru" />;
       break;
     case "clubhouse":
-      icon = <img src={clubhousesvg} />;
+      icon = <img src={clubhousesvg} alt="Clubhouse" />;
       break;
     case "eyecon":
-      icon = <img src={eyeconsvg} />;
+      icon = <img src={eyeconsvg} alt="Eyecon" />;
       break;
     case "locket":
-      icon = <img src={locketpng} />;
+      icon = <img src={locketpng} alt="Locket" />;
       break;
     case "touchtunes":
-      icon = <img src={touchtunespng} />;
+      icon = <img src={touchtunespng} alt="Touchtunes" />;
       break;
     case "mocospace":
-      icon = <img src={mocospacepng} />;
+      icon = <img src={mocospacepng} alt="Mocospace" />;
       break;
     case "whoxy":
-      icon = <img src={whoxypng} />;
+      icon = <img src={whoxypng} alt="Whoxy" />;
       break;
     case "runkeeper":
-      icon = <img src={runkeeperpng} />;
+      icon = <img src={runkeeperpng} alt="Runkeeper" />;
       break;
     case "garmin":
-      icon = <img src={garminpng} />;
+      icon = <img src={garminpng} alt="Garmin" />;
       break;
     case "bibleapp":
-      icon = <img src={bibleapppng} />;
+      icon = <img src={bibleapppng} alt="BibleApp" />;
       break;
     case "goodreads":
-      icon = <img src={goodreadspng} />;
+      icon = <img src={goodreadspng} alt="Goodreads" />;
       break;
     case "monopolygo":
-      icon = <img src={monopolygopng} />;
+      icon = <img src={monopolygopng} alt="MonopolyGo" />;
       break;
     case "scrabblego":
-      icon = <img src={scrabblegopng} />;
+      icon = <img src={scrabblegopng} alt="ScrabbleGo" />;
       break;
     case "cavalier":
-      icon = <img src={hudsonrockpng} />;
+      icon = <img src={hudsonrockpng} alt="Cavalier" />;
       break;
     case "imvu":
-      icon = <img src={imvupng} />;
+      icon = <img src={imvupng} alt="IMVU" />;
       break;
 
     default:
