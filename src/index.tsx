@@ -1,2 +1,4 @@
 import SocialIcons from "./components/SocialIcons";
-export default SocialIcons;
+import { socialNetworks } from "./utils/socialNetwork";
+
+export default { SocialIcons, socialNetworks };

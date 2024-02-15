@@ -1,11 +1,6 @@
-type socialNetworkType = {
-  [key: string]: {
-    color: string;
-    name?: string;
-  };
-};
+type socialNetworkType = { [key: string]: { color: string; name?: string } };
 
-export const sn: socialNetworkType = {
+export const socialNetworks: socialNetworkType = {
   facebook: { color: "#4267B2" },
   twitter: { color: "#1DA1F2" },
   instagram: { color: "#E1306C" },
