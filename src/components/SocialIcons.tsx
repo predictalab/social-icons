@@ -38,7 +38,10 @@ import {
   FaKeybase as KeybaseIcon,
   FaApple as AppleIcon,
 } from "react-icons/fa";
-import { FaXTwitter as TwitterXIcon } from "react-icons/fa6";
+import {
+  FaXTwitter as TwitterXIcon,
+  FaTwitter as TwitterIcon,
+} from "react-icons/fa6";
 import {
   SiGravatar as GravatarIcon,
   SiMyspace as MyspaceIcon,
@@ -92,11 +95,13 @@ import monopolygopng from "../assets/social-icons/monopolygo.png";
 import scrabblegopng from "../assets/social-icons/scrabblego.png";
 import hudsonrockpng from "../assets/social-icons/hudsonrock.png";
 import imvupng from "../assets/social-icons/imvu.png";
+import pagesjaunessvg from "../assets/social-icons/pagesjaunes.svg";
+import copaindavantsvg from "../assets/social-icons/copaindavant.svg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
 
-type PropsTypes = { source?: SourceTypes };
+type PropsTypes = { source?: string };
 
 /**
  * @param source Req. a string containing the social network label, ex : 'facebook', 'twitter', etc
@@ -107,13 +112,15 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
 
   if (!source) return icon;
 
-  switch (source) {
+  switch (source as SourceTypes) {
     case "facebook":
       icon = <FacebookIcon color={socialNetworks.facebook.color} />;
       break;
     case "twitter":
+      icon = <TwitterIcon color={socialNetworks.twitter.color} />;
+      break;
     case "x":
-      icon = <TwitterXIcon color={socialNetworks.twitter.color} />;
+      icon = <TwitterXIcon color={socialNetworks.x.color} />;
       break;
     case "instagram":
       icon = <InstagramIcon color={socialNetworks.instagram.color} />;
@@ -373,6 +380,12 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "imvu":
       icon = <img src={imvupng} alt="IMVU" />;
+      break;
+    case "pagesjaunes":
+      icon = <img src={pagesjaunessvg} alt="Pages Jaunes" />;
+      break;
+    case "copaindavant":
+      icon = <img src={copaindavantsvg} alt="Copain d'avant" />;
       break;
 
     default:
