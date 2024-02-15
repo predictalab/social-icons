@@ -1,4 +1,8 @@
-type socialNetworkType = { [key: string]: { color: string; name?: string } };
+import { SourceTypes } from "../types/sourceTypes";
+
+type socialNetworkType = {
+  [key in SourceTypes]: { color: string; name?: string };
+};
 
 export const socialNetworks: socialNetworkType = {
   facebook: { color: "#4267B2" },
@@ -67,10 +71,13 @@ export const socialNetworks: socialNetworkType = {
   goodreads: { color: "#824707" },
   bereal: { color: "#000000" },
   monopolygo: { color: "#FB2F1A" },
-  scrabblkego: { color: "#DEB357" },
+  scrabblego: { color: "#DEB357" },
   dehashed: { color: "#000000" },
   cavalier: { color: "#FDCD4E" },
   imvu: { color: "#ffffff" },
+  sellix: { color: "#000000" },
+  vivino: { color: "#AA1329" },
+  whoxy: { color: "#ED8727" },
 
   whatsmyname: { color: "#000000", name: "WhatsMyName" },
   myfitnesspal: { color: "#00A087", name: "MyFitnessPal" },
@@ -88,4 +95,5 @@ export const socialNetworks: socialNetworkType = {
   imageshack: { color: "#00A4EF", name: "ImageShack" },
   okru: { color: "#FF7700", name: "OK.ru" },
   touchtunes: { color: "#7463D4", name: "TouchTunes" },
+  x: { color: "#ffffff", name: "X" },
 };

@@ -93,8 +93,9 @@ import hudsonrockpng from "../assets/social-icons/hudsonrock.png";
 import imvupng from "../assets/social-icons/imvu.png";
 
 import { socialNetworks } from "../utils/socialNetwork";
+import { SourceTypes } from "../types/sourceTypes";
 
-type PropsTypes = { source?: string };
+type PropsTypes = { source?: SourceTypes };
 
 /**
  * @param source Req. a string containing the social network label, ex : 'facebook', 'twitter', etc
@@ -105,56 +106,39 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
 
   if (!source) return icon;
 
-  switch (source.toLocaleLowerCase()) {
+  switch (source) {
     case "facebook":
-    case "fb":
       icon = <FacebookIcon color={socialNetworks.facebook.color} />;
       break;
     case "twitter":
-    case "tw":
     case "x":
-    case "twitter archived profile":
-    case "twitter archived tweets":
       icon = <TwitterXIcon color={socialNetworks.twitter.color} />;
       break;
     case "instagram":
-    case "picuki":
-    case "ig":
       icon = <InstagramIcon color={socialNetworks.instagram.color} />;
       break;
     case "telegram":
-    case "tg":
       icon = <TelegramIcon color={socialNetworks.telegram.color} />;
       break;
     case "linkedin":
-    case "ln":
       icon = <LinkedinIcon color={socialNetworks.linkedin.color} />;
       break;
     case "whatsapp":
-    case "wa":
       icon = <WhatsappIcon color={socialNetworks.whatsapp.color} />;
       break;
     case "skype":
-    case "sk":
       icon = <SkypeIcon color={socialNetworks.skype.color} />;
       break;
     case "github":
-    case "gitHub":
-    case "gh":
       icon = <GithubIcon color={socialNetworks.github.color} />;
       break;
     case "gravatar":
-    case "gr":
       icon = <GravatarIcon color={socialNetworks.gravatar.color} />;
       break;
-    case "feelinsonice":
     case "snapchat":
-    case "sn":
-    case "snapchat Stories":
       icon = <SnapchatIcon color={socialNetworks.snapchat.color} />;
       break;
     case "youtube":
-    case "yt":
       icon = <YoutubeIcon color={socialNetworks.youtube.color} />;
       break;
     case "myspace":
@@ -169,7 +153,6 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "pinterest":
       icon = <PinterestIcon color={socialNetworks.pinterest.color} />;
       break;
-    case "xbox Gamertag":
     case "xbox":
       icon = <XboxIcon color={socialNetworks.xbox.color} />;
       break;
@@ -180,11 +163,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       icon = <MastodonIcon color={socialNetworks.mastodon.color} />;
       break;
     case "vk":
-    case "vkontakte":
       icon = <VkIcon color={socialNetworks.vk.color} />;
       break;
     case "gitlab":
-    case "gitLab":
       icon = <GitlabIcon color={socialNetworks.gitlab.color} />;
       break;
     case "steam":
@@ -197,18 +178,15 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       icon = <TrelloIcon color={socialNetworks.trello.color} />;
       break;
     case "docker":
-    case "dockerHub":
       icon = <DockerIcon color={socialNetworks.docker.color} />;
       break;
     case "twitch":
-    case "th":
       icon = <TwitchIcon color={socialNetworks.twitch.color} />;
       break;
     case "medium":
       icon = <MediumIcon color={socialNetworks.medium.color} />;
       break;
     case "flickr":
-    case "fk":
       icon = <FlickrIcon color={socialNetworks.flickr.color} />;
       break;
     case "google":
@@ -263,10 +241,8 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       icon = <StravaIcon color={socialNetworks.strava.color} />;
       break;
     case "aboutme":
-    case "about.me":
       icon = <AboutDotMeIcon color={socialNetworks.aboutme.color} />;
       break;
-    case "chess.com":
     case "chess":
       icon = <ChessComIcon color={socialNetworks.chess.color} />;
       break;
