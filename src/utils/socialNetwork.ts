@@ -1,7 +1,7 @@
 import { SourceTypes } from "../types/sourceTypes";
 
 type socialNetworkType = {
-  [key in SourceTypes]: { color: string; name?: string };
+  [key: string]: { color: string; name?: string };
 };
 
 export const socialNetworks: socialNetworkType = {
