@@ -1,10 +1,4 @@
-import { SourceTypes } from "../types/sourceTypes";
-
-type socialNetworkType = {
-  [key: string]: { color: string; name?: string };
-};
-
-export const socialNetworks: socialNetworkType = {
+export const socialNetworks = {
   facebook: { color: "#4267B2" },
   twitter: { color: "#1DA1F2" },
   instagram: { color: "#E1306C" },
