@@ -1,4 +1,6 @@
-export const socialNetworks = {
+type socialNetworkType = Record<string, { color: string; name?: string }>;
+
+export const socialNetworks: socialNetworkType = {
   facebook: { color: "#4267B2" },
   twitter: { color: "#1DA1F2" },
   instagram: { color: "#E1306C" },
