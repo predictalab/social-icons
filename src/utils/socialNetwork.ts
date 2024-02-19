@@ -66,12 +66,12 @@ export const socialNetworks: socialNetworkType = {
   monopolygo: { color: "#FB2F1A" },
   scrabblego: { color: "#DEB357" },
   dehashed: { color: "#000000" },
-  cavalier: { color: "#FDCD4E" },
   imvu: { color: "#000000" },
   sellix: { color: "#000000" },
   vivino: { color: "#AA1329" },
   whoxy: { color: "#ED8727" },
 
+  hudsonrock: { color: "#FDCD4E", name: "Hudson Rock" },
   myspace: { color: "#000000", name: "MySpace" },
   bereal: { color: "#000000", name: "BeReal" },
   rocketreach: { color: "#FF3B3F", name: "RocketReach" },

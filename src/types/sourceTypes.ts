@@ -8,7 +8,7 @@ export type SourceTypes =
   | "chess"
   | "clubhouse"
   | "copaindavant"
-  | "cavalier"
+  | "hudsonrock"
   | "dehashed"
   | "discord"
   | "docker"
