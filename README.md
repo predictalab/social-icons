@@ -10,7 +10,7 @@ Custom library to display social networks (and more) icons.
 
 `npm i @predictalab/social-icons`
 
-https://www.npmjs.com/package/@predictalab/predictalab/social-icons
+https://www.npmjs.com/package/@predictalab/social-icons
 
 <!-- ## Usage
 
