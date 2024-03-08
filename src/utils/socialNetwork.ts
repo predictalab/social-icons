@@ -70,6 +70,7 @@ export const socialNetworks: socialNetworkType = {
   sellix: { color: "#000000" },
   vivino: { color: "#AA1329" },
   whoxy: { color: "#ED8727" },
+  dropbox: { color: "#0062FF" },
 
   hudsonrock: { color: "#FDCD4E", name: "Hudson Rock" },
   myspace: { color: "#000000", name: "MySpace" },

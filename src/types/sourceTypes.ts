@@ -14,6 +14,7 @@ export type SourceTypes =
   | "docker"
   | "disqus"
   | "duolingo"
+  | "dropbox"
   | "etsy"
   | "eyecon"
   | "facebook"

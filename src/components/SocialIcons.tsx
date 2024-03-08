@@ -37,6 +37,7 @@ import {
   FaEtsy as EtsyIcon,
   FaKeybase as KeybaseIcon,
   FaApple as AppleIcon,
+  FaDropbox as DropboxIcon,
 } from "react-icons/fa";
 import {
   FaXTwitter as TwitterXIcon,
@@ -301,6 +302,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "rocketreach":
       icon = <RocketReachIcon color={socialNetworks.rocketreach.color} />;
+      break;
+    case "dropbox":
+      icon = <DropboxIcon color={socialNetworks.dropbox.color} />;
       break;
 
     case "protonmail":
