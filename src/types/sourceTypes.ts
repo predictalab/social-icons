@@ -7,7 +7,7 @@ export type SourceTypes =
   | "bibleapp"
   | "chess"
   | "clubhouse"
-  | "copaindavant"
+  | "copainsdavant"
   | "hudsonrock"
   | "dehashed"
   | "discord"

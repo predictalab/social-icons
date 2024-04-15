@@ -97,7 +97,7 @@ import scrabblegopng from "../assets/social-icons/scrabblego.png";
 import hudsonrockpng from "../assets/social-icons/hudsonrock.png";
 import imvupng from "../assets/social-icons/imvu.png";
 import pagesjaunessvg from "../assets/social-icons/pagesjaunes.svg";
-import copaindavantsvg from "../assets/social-icons/copaindavant.svg";
+import copainsdavantsvg from "../assets/social-icons/copainsdavant.svg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -388,8 +388,8 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "pagesjaunes":
       icon = <img src={pagesjaunessvg} alt="Pages Jaunes" />;
       break;
-    case "copaindavant":
-      icon = <img src={copaindavantsvg} alt="Copain d'avant" />;
+    case "copainsdavant":
+      icon = <img src={copainsdavantsvg} alt="Copains d'avant" />;
       break;
 
     default:

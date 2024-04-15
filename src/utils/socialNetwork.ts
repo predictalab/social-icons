@@ -88,7 +88,7 @@ export const socialNetworks: socialNetworkType = {
   aboutme: { color: "#0872b4", name: "About.me" },
   chess: { color: "#a2d060", name: "Chess.com" },
   pagesjaunes: { color: "#FFDE07", name: "Pages Jaunes" },
-  copaindavant: { color: "#e41129", name: "Copain d'avant" },
+  copainsdavant: { color: "#e41129", name: "Copains d'avant" },
   hibp: { color: "#000000", name: "HIBP" },
   imageshack: { color: "#DDAE3A", name: "ImageShack" },
   okru: { color: "#FF7700", name: "OK.ru" },
