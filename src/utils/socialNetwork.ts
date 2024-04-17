@@ -72,6 +72,7 @@ export const socialNetworks: socialNetworkType = {
   whoxy: { color: "#ED8727" },
   dropbox: { color: "#0062FF" },
 
+  clearstream: { color: "#eee", name: "ClearStream" },
   hudsonrock: { color: "#FDCD4E", name: "Hudson Rock" },
   myspace: { color: "#000000", name: "MySpace" },
   bereal: { color: "#000000", name: "BeReal" },

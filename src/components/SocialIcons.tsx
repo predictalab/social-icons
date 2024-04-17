@@ -62,7 +62,10 @@ import {
   SiBereal as BerealIcon,
 } from "react-icons/si";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
-import { BsSignal as SignalIcon } from "react-icons/bs";
+import {
+  BsSignal as SignalIcon,
+  BsDatabaseExclamation as ClearStreamIcon,
+} from "react-icons/bs";
 import { TbBrandPicsart as PicsArtIcon } from "react-icons/tb";
 import { BiLogoMicrosoftTeams as TeamsIcon } from "react-icons/bi";
 import { ImOnedrive as OnedriveIcon } from "react-icons/im";
@@ -305,6 +308,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "dropbox":
       icon = <DropboxIcon color={socialNetworks.dropbox.color} />;
+      break;
+    case "clearstream":
+      icon = <ClearStreamIcon color={socialNetworks.clearstream.color} />;
       break;
 
     case "protonmail":
