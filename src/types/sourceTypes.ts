@@ -30,6 +30,7 @@ export type SourceTypes =
   | "google"
   | "gravatar"
   | "hibp"
+  | "holehe"
   | "imageshack"
   | "imgur"
   | "imvu"

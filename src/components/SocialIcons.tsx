@@ -101,6 +101,7 @@ import hudsonrockpng from "../assets/social-icons/hudsonrock.png";
 import imvupng from "../assets/social-icons/imvu.png";
 import pagesjaunessvg from "../assets/social-icons/pagesjaunes.svg";
 import copainsdavantsvg from "../assets/social-icons/copainsdavant.svg";
+import holehesvg from "../assets/social-icons/holehe.svg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -396,6 +397,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "copainsdavant":
       icon = <img src={copainsdavantsvg} alt="Copains d'avant" />;
+      break;
+    case "holehe":
+      icon = <img src={holehesvg} alt="Holehe" />;
       break;
 
     default:

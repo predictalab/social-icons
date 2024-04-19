@@ -71,6 +71,7 @@ export const socialNetworks: socialNetworkType = {
   vivino: { color: "#AA1329" },
   whoxy: { color: "#ED8727" },
   dropbox: { color: "#0062FF" },
+  holehe: { color: "#FF5822" },
 
   clearstream: { color: "#eee", name: "ClearStream" },
   hudsonrock: { color: "#FDCD4E", name: "Hudson Rock" },
