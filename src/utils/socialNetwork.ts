@@ -80,6 +80,7 @@ export const socialNetworks: socialNetworkType = {
   rocketreach: { color: "#FF3B3F", name: "RocketReach" },
   bibleapp: { color: "#A4332E", name: "BibleApp" },
   whatsmyname: { color: "#000000", name: "WhatsMyName" },
+  wmn: { color: "#000000", name: "WhatsMyName" },
   myfitnesspal: { color: "#0C8CC3", name: "MyFitnessPal" },
   protonmail: { color: "#8B89CC", name: "ProtonMail" },
   linkedin: { color: "#087BB7", name: "LinkedIn" },

@@ -88,6 +88,7 @@ export type SourceTypes =
   | "weward"
   | "whatsapp"
   | "whatsmyname"
+  | "wmn"
   | "whoxy"
   | "x"
   | "xbox"

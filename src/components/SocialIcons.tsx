@@ -327,6 +327,7 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       icon = <img src={myfitnesspalpng} alt="MyFitnessPal" />;
       break;
     case "whatsmyname":
+    case "wmn":
       icon = <img src={whatsmynamejpg} alt="WhatsMyName" />;
       break;
     case "yandex":
