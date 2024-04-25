@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "dev": "vite",
+    "vite-build": "vite build",
     "build": "rollup -c",
     "deploy": "npm run build && npm publish"
   },
