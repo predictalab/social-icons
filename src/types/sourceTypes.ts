@@ -93,4 +93,13 @@ export type SourceTypes =
   | "x"
   | "xbox"
   | "yandex"
-  | "youtube";
+  | "youtube"
+  | "isharing"
+  | "leboncoin"
+  | "rakutendrive"
+  | "beatstars"
+  | "foap"
+  | "rumble"
+  | "wise"
+  | "plex"
+  | "uber";

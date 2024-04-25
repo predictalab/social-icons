@@ -60,6 +60,11 @@ import {
   SiAdidas as RuntasticIcon,
   SiSubstack as SubstackIcon,
   SiBereal as BerealIcon,
+  SiRumble as RumbleIcon,
+  SiWise as WiseIcon,
+  SiPlex as PlexIcon,
+  SiUber as UberIcon,
+  SiRakuten as RakutenDriveIcon,
 } from "react-icons/si";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
 import {
@@ -72,6 +77,7 @@ import { ImOnedrive as OnedriveIcon } from "react-icons/im";
 import { LiaHashtagSolid as DehashedIcon } from "react-icons/lia";
 import { PiShareNetwork as NetworkIcon } from "react-icons/pi";
 import { IoIosRocket as RocketReachIcon } from "react-icons/io";
+import { MdCameraAlt as FoapIcon } from "react-icons/md";
 
 import protonmailsvg from "../assets/social-icons/protonmail.svg";
 import sellixsvg from "../assets/social-icons/sellix.svg";
@@ -102,6 +108,9 @@ import imvupng from "../assets/social-icons/imvu.png";
 import pagesjaunessvg from "../assets/social-icons/pagesjaunes.svg";
 import copainsdavantsvg from "../assets/social-icons/copainsdavant.svg";
 import holehesvg from "../assets/social-icons/holehe.svg";
+import isharingsvg from "../assets/social-icons/isharing.svg";
+import beatstarssvg from "../assets/social-icons/beatstars.svg";
+import leboncoinsvg from "../assets/social-icons/leboncoin.svg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -313,6 +322,24 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "clearstream":
       icon = <ClearStreamIcon color={socialNetworks.clearstream.color} />;
       break;
+    case "foap":
+      icon = <FoapIcon color={socialNetworks.foap.color} />;
+      break;
+    case "rumble":
+      icon = <RumbleIcon color={socialNetworks.rumble.color} />;
+      break;
+    case "wise":
+      icon = <WiseIcon color={socialNetworks.wise.color} />;
+      break;
+    case "plex":
+      icon = <PlexIcon color={socialNetworks.plex.color} />;
+      break;
+    case "uber":
+      icon = <UberIcon color={socialNetworks.uber.color} />;
+      break;
+    case "rakutendrive":
+      icon = <RakutenDriveIcon color={socialNetworks.rakutendrive.color} />;
+      break;
 
     case "protonmail":
       icon = <img src={protonmailsvg} alt="ProtonMail" />;
@@ -401,6 +428,15 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "holehe":
       icon = <img src={holehesvg} alt="Holehe" />;
+      break;
+    case "isharing":
+      icon = <img src={isharingsvg} alt="iSharing" />;
+      break;
+    case "leboncoin":
+      icon = <img src={leboncoinsvg} alt="LeBonCoin" />;
+      break;
+    case "beatstars":
+      icon = <img src={beatstarssvg} alt="Beat Stars" />;
       break;
 
     default:
