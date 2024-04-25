@@ -1,6 +1,6 @@
 {
   "name": "@predictalab/social-icons",
-  "version": "1.0.28",
+  "version": "1.1.0",
   "description": "Custom social icons lib",
   "author": "Nicolas - Predicta Lab",
   "repository": {
@@ -16,6 +16,7 @@
     "dist"
   ],
   "scripts": {
+    "dev": "vite",
     "build": "rollup -c",
     "deploy": "npm run build && npm publish"
   },
@@ -93,5 +94,9 @@
     "url": "https://github.com/predictalab/social-icons/issues"
   },
   "homepage": "https://github.com/predictalab/social-icons#readme",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.2.10"
+  }
 }
