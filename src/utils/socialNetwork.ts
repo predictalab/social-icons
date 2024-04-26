@@ -106,4 +106,5 @@ export const socialNetworks: socialNetworkType = {
   leboncoin: { color: "#FF7421", name: "LeBonCoin" },
   rakutendrive: { color: "#083099", name: "Rakuten Drive" },
   beatstars: { color: "#ED170C", name: "Beat Stars" },
+  khanacademy: { color: "#18BF96", name: "Khan Academy" },
 };

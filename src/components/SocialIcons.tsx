@@ -65,6 +65,7 @@ import {
   SiPlex as PlexIcon,
   SiUber as UberIcon,
   SiRakuten as RakutenDriveIcon,
+  SiKhanacademy as KhanAcademyIcon,
 } from "react-icons/si";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
 import {
@@ -339,6 +340,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "rakutendrive":
       icon = <RakutenDriveIcon color={socialNetworks.rakutendrive.color} />;
+      break;
+    case "khanacademy":
+      icon = <KhanAcademyIcon color={socialNetworks.khanacademy.color} />;
       break;
 
     case "protonmail":

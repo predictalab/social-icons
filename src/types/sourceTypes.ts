@@ -37,6 +37,7 @@ export type SourceTypes =
   | "instagram"
   | "keybase"
   | "kaggle"
+  | "khanacademy"
   | "life360"
   | "linkedin"
   | "locket"
