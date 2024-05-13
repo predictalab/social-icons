@@ -66,6 +66,7 @@ import {
   SiUber as UberIcon,
   SiRakuten as RakutenDriveIcon,
   SiKhanacademy as KhanAcademyIcon,
+  SiBox as BoxIcon,
 } from "react-icons/si";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
 import {
@@ -112,6 +113,11 @@ import holehesvg from "../assets/social-icons/holehe.svg";
 import isharingsvg from "../assets/social-icons/isharing.svg";
 import beatstarssvg from "../assets/social-icons/beatstars.svg";
 import leboncoinsvg from "../assets/social-icons/leboncoin.svg";
+import imappsvg from "../assets/social-icons/imapp.svg";
+import mapstrpng from "../assets/social-icons/mapstr.png";
+import walkietalkiesvg from "../assets/social-icons/walkietalkie.svg";
+import marcopolosvg from "../assets/social-icons/marcopolo.svg";
+import truecallerpng from "../assets/social-icons/truecaller.png";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -344,6 +350,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "khanacademy":
       icon = <KhanAcademyIcon color={socialNetworks.khanacademy.color} />;
       break;
+    case "box":
+      icon = <BoxIcon color={socialNetworks.box.color} />;
+      break;
 
     case "protonmail":
       icon = <img src={protonmailsvg} alt="ProtonMail" />;
@@ -441,6 +450,21 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "beatstars":
       icon = <img src={beatstarssvg} alt="Beat Stars" />;
+      break;
+    case "imapp":
+      icon = <img src={imappsvg} alt="iMapp" />;
+      break;
+    case "mapstr":
+      icon = <img src={mapstrpng} alt="Mapstr" />;
+      break;
+    case "walkietalkie":
+      icon = <img src={walkietalkiesvg} alt="Walkie Talkie" />;
+      break;
+    case "marcopolo":
+      icon = <img src={marcopolosvg} alt="Marco Polo" />;
+      break;
+    case "truecaller":
+      icon = <img src={truecallerpng} alt="Truecaller" />;
       break;
 
     default:

@@ -77,6 +77,9 @@ export const socialNetworks: socialNetworkType = {
   wise: { color: "#1DBBFF" },
   plex: { color: "#ECB118" },
   uber: { color: "#000000" },
+  box: { color: "#0061D5" },
+  mapstr: { color: "#FFB133" },
+  truecaller: { color: "#004AFF" },
 
   clearstream: { color: "#eee", name: "ClearStream" },
   hudsonrock: { color: "#FDCD4E", name: "Hudson Rock" },
@@ -107,4 +110,7 @@ export const socialNetworks: socialNetworkType = {
   rakutendrive: { color: "#083099", name: "Rakuten Drive" },
   beatstars: { color: "#ED170C", name: "Beat Stars" },
   khanacademy: { color: "#18BF96", name: "Khan Academy" },
+  imapp: { color: "#EB9921", name: "iMapp" },
+  walkietalkie: { color: "#F7C90F", name: "Walkie Talkie" },
+  marcopolo: { color: "#FF4D00", name: "Marco Polo" },
 };
