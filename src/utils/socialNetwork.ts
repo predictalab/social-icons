@@ -113,4 +113,5 @@ export const socialNetworks: socialNetworkType = {
   imapp: { color: "#EB9921", name: "iMapp" },
   walkietalkie: { color: "#F7C90F", name: "Walkie Talkie" },
   marcopolo: { color: "#FF4D00", name: "Marco Polo" },
+  truthsocial: { color: "#5051EC", name: "Truth Social" },
 };

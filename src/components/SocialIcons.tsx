@@ -118,6 +118,7 @@ import mapstrpng from "../assets/social-icons/mapstr.png";
 import walkietalkiesvg from "../assets/social-icons/walkietalkie.svg";
 import marcopolosvg from "../assets/social-icons/marcopolo.svg";
 import truecallerpng from "../assets/social-icons/truecaller.png";
+import truthsocialsvg from "../assets/social-icons/truthsocial.svg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -465,6 +466,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "truecaller":
       icon = <img src={truecallerpng} alt="Truecaller" />;
+      break;
+    case "truthsocial":
+      icon = <img src={truthsocialsvg} alt="Truth Social" />;
       break;
 
     default:

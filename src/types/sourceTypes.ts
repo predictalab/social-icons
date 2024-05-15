@@ -88,6 +88,7 @@ export type SourceTypes =
   | "twitter"
   | "truecaller"
   | "twitch"
+  | "truthsocial"
   | "virustotal"
   | "vivino"
   | "vk"
