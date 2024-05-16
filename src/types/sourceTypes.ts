@@ -26,6 +26,7 @@ export type SourceTypes =
   | "garmin"
   | "giphy"
   | "gitlab"
+  | "giftful"
   | "github"
   | "goodreads"
   | "google"

@@ -119,6 +119,7 @@ import walkietalkiesvg from "../assets/social-icons/walkietalkie.svg";
 import marcopolosvg from "../assets/social-icons/marcopolo.svg";
 import truecallerpng from "../assets/social-icons/truecaller.png";
 import truthsocialsvg from "../assets/social-icons/truthsocial.svg";
+import giftfulsvg from "../assets/social-icons/giftful.svg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -353,6 +354,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "box":
       icon = <BoxIcon color={socialNetworks.box.color} />;
+      break;
+    case "giftful":
+      icon = <img src={giftfulsvg} alt="Giftful" />;
       break;
 
     case "protonmail":
