@@ -115,4 +115,5 @@ export const socialNetworks: socialNetworkType = {
   walkietalkie: { color: "#F7C90F", name: "Walkie Talkie" },
   marcopolo: { color: "#FF4D00", name: "Marco Polo" },
   truthsocial: { color: "#5051EC", name: "Truth Social" },
+  tvtime: { color: "#EFBF4E", name: "TV Time" },
 };

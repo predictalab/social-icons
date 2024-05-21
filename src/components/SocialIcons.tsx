@@ -67,6 +67,7 @@ import {
   SiRakuten as RakutenDriveIcon,
   SiKhanacademy as KhanAcademyIcon,
   SiBox as BoxIcon,
+  SiTvtime as TvTimeIcon,
 } from "react-icons/si";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
 import {
@@ -357,6 +358,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "giftful":
       icon = <img src={giftfulsvg} alt="Giftful" />;
+      break;
+    case "tvtime":
+      icon = <TvTimeIcon color={socialNetworks.tvtime.color} />;
       break;
 
     case "protonmail":

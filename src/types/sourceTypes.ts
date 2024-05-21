@@ -90,6 +90,7 @@ export type SourceTypes =
   | "truecaller"
   | "twitch"
   | "truthsocial"
+  | "tvtime"
   | "virustotal"
   | "vivino"
   | "vk"
