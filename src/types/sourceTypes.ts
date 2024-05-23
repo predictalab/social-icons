@@ -64,6 +64,7 @@ export type SourceTypes =
   | "pinterest"
   | "playstation"
   | "protonmail"
+  | "qq"
   | "quora"
   | "reddit"
   | "runkeeper"

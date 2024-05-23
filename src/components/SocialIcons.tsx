@@ -68,6 +68,7 @@ import {
   SiKhanacademy as KhanAcademyIcon,
   SiBox as BoxIcon,
   SiTvtime as TvTimeIcon,
+  SiTencentqq as QQIcon,
 } from "react-icons/si";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
 import {
@@ -121,6 +122,7 @@ import marcopolosvg from "../assets/social-icons/marcopolo.svg";
 import truecallerpng from "../assets/social-icons/truecaller.png";
 import truthsocialsvg from "../assets/social-icons/truthsocial.svg";
 import giftfulsvg from "../assets/social-icons/giftful.svg";
+import qqsvg from "../assets/social-icons/qq.svg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -477,6 +479,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "truthsocial":
       icon = <img src={truthsocialsvg} alt="Truth Social" />;
+      break;
+    case "qq":
+      icon = <img src={qqsvg} alt="QQ" />;
       break;
 
     default:
