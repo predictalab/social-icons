@@ -68,7 +68,7 @@ import {
   SiKhanacademy as KhanAcademyIcon,
   SiBox as BoxIcon,
   SiTvtime as TvTimeIcon,
-  SiTencentqq as QQIcon,
+  SiPandora as PandoraIcon,
 } from "react-icons/si";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
 import {
@@ -363,6 +363,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "tvtime":
       icon = <TvTimeIcon color={socialNetworks.tvtime.color} />;
+      break;
+    case "pandora":
+      icon = <PandoraIcon color={socialNetworks.pandora.color} />;
       break;
 
     case "protonmail":

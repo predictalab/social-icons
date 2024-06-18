@@ -59,6 +59,7 @@ export type SourceTypes =
   | "pagesjaunes"
   | "patreon"
   | "paypal"
+  | "pandora"
   | "periscope"
   | "picsart"
   | "pinterest"
