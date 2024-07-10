@@ -118,4 +118,5 @@ export const socialNetworks: socialNetworkType = {
   truthsocial: { color: "#5051EC", name: "Truth Social" },
   tvtime: { color: "#EFBF4E", name: "TV Time" },
   qq: { color: "#1F1F1F", name: "QQ" },
+  beerbuddy: { color: "#fea233", name: "Beer Buddy" },
 };

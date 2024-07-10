@@ -5,6 +5,7 @@ export type SourceTypes =
   | "askfm"
   | "bereal"
   | "bibleapp"
+  | "beerbuddy"
   | "box"
   | "chess"
   | "clubhouse"

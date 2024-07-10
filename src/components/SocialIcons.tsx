@@ -123,6 +123,7 @@ import truecallerpng from "../assets/social-icons/truecaller.png";
 import truthsocialsvg from "../assets/social-icons/truthsocial.svg";
 import giftfulsvg from "../assets/social-icons/giftful.svg";
 import qqsvg from "../assets/social-icons/qq.svg";
+import beerbuddysvg from "../assets/social-icons/beerbuddy.svg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -485,6 +486,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "qq":
       icon = <img src={qqsvg} alt="QQ" />;
+      break;
+    case "beerbuddy":
+      icon = <img src={beerbuddysvg} alt="Beer Buddy" />;
       break;
 
     default:
