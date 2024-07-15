@@ -57,6 +57,7 @@ export type SourceTypes =
   | "notion"
   | "okru"
   | "onedrive"
+  | "pappers"
   | "pagesjaunes"
   | "patreon"
   | "paypal"

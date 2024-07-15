@@ -82,6 +82,7 @@ export const socialNetworks: socialNetworkType = {
   truecaller: { color: "#004AFF" },
   giftful: { color: "#00BE83" },
   pandora: { color: "#8427FC" },
+  pappers: { color: "#0f46a8" },
 
   clearstream: { color: "#eee", name: "ClearStream" },
   hudsonrock: { color: "#FDCD4E", name: "Hudson Rock" },

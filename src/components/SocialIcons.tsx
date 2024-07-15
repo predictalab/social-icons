@@ -124,6 +124,7 @@ import truthsocialsvg from "../assets/social-icons/truthsocial.svg";
 import giftfulsvg from "../assets/social-icons/giftful.svg";
 import qqsvg from "../assets/social-icons/qq.svg";
 import beerbuddysvg from "../assets/social-icons/beerbuddy.svg";
+import papperssvg from "../assets/social-icons/pappers.svg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -359,9 +360,6 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "box":
       icon = <BoxIcon color={socialNetworks.box.color} />;
       break;
-    case "giftful":
-      icon = <img src={giftfulsvg} alt="Giftful" />;
-      break;
     case "tvtime":
       icon = <TvTimeIcon color={socialNetworks.tvtime.color} />;
       break;
@@ -489,6 +487,12 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "beerbuddy":
       icon = <img src={beerbuddysvg} alt="Beer Buddy" />;
+      break;
+    case "giftful":
+      icon = <img src={giftfulsvg} alt="Giftful" />;
+      break;
+    case "pappers":
+      icon = <img src={papperssvg} alt="Pappers" />;
       break;
 
     default:
