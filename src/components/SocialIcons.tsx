@@ -69,6 +69,7 @@ import {
   SiBox as BoxIcon,
   SiTvtime as TvTimeIcon,
   SiPandora as PandoraIcon,
+  SiMewe as MeweIcon,
 } from "react-icons/si";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
 import {
@@ -125,6 +126,7 @@ import giftfulsvg from "../assets/social-icons/giftful.svg";
 import qqsvg from "../assets/social-icons/qq.svg";
 import beerbuddysvg from "../assets/social-icons/beerbuddy.svg";
 import papperssvg from "../assets/social-icons/pappers.svg";
+import partifulsvg from "../assets/social-icons/partiful.svg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -366,6 +368,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "pandora":
       icon = <PandoraIcon color={socialNetworks.pandora.color} />;
       break;
+    case "mewe":
+      icon = <MeweIcon color={socialNetworks.mewe.color} />;
+      break;
 
     case "protonmail":
       icon = <img src={protonmailsvg} alt="ProtonMail" />;
@@ -493,6 +498,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "pappers":
       icon = <img src={papperssvg} alt="Pappers" />;
+      break;
+    case "partiful":
+      icon = <img src={partifulsvg} alt="Partiful" />;
       break;
 
     default:

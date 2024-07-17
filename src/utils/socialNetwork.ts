@@ -83,6 +83,7 @@ export const socialNetworks: socialNetworkType = {
   giftful: { color: "#00BE83" },
   pandora: { color: "#8427FC" },
   pappers: { color: "#0f46a8" },
+  partiful: { color: "#000000" },
 
   clearstream: { color: "#eee", name: "ClearStream" },
   hudsonrock: { color: "#FDCD4E", name: "Hudson Rock" },
@@ -120,4 +121,5 @@ export const socialNetworks: socialNetworkType = {
   tvtime: { color: "#EFBF4E", name: "TV Time" },
   qq: { color: "#1F1F1F", name: "QQ" },
   beerbuddy: { color: "#fea233", name: "Beer Buddy" },
+  mewe: { color: "#b8d500", name: "MeWe" },
 };
