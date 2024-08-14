@@ -85,7 +85,6 @@ export const socialNetworks: socialNetworkType = {
   pappers: { color: "#0f46a8" },
   partiful: { color: "#000000" },
 
-  clearstream: { color: "#eee", name: "ClearStream" },
   hudsonrock: { color: "#FDCD4E", name: "Hudson Rock" },
   myspace: { color: "#000000", name: "MySpace" },
   bereal: { color: "#000000", name: "BeReal" },

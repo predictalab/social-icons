@@ -9,7 +9,6 @@ export type SourceTypes =
   | "box"
   | "chess"
   | "clubhouse"
-  | "clearstream"
   | "copainsdavant"
   | "hudsonrock"
   | "dehashed"
