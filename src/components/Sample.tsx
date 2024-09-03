@@ -7,6 +7,9 @@ const Sample = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [whiteIcons, setWhiteIcons] = useState(false);
   const [networkColorAsBG, setNetworkColorAsBG] = useState(false);
+  const categories = Array.from(
+    new Set(Object.values(socialNetworks).map((network) => network.category))
+  );
 
   return (
     <>
@@ -21,6 +24,39 @@ const Sample = () => {
           Toggle network color as background
         </button>
       </div>
+
+      {categories.map((c) => (
+        <Icons
+          key={c}
+          category={c}
+          networkColorAsBG={networkColorAsBG}
+          darkMode={darkMode}
+          whiteIcons={whiteIcons}
+        />
+      ))}
+    </>
+  );
+};
+
+export default Sample;
+
+type Props = {
+  category: string;
+  networkColorAsBG: boolean;
+  darkMode: boolean;
+  whiteIcons: boolean;
+};
+
+export const Icons = ({
+  category,
+  networkColorAsBG,
+  darkMode,
+  whiteIcons,
+}: Props) => {
+  return (
+    <div className="wrapper">
+      <h2>{category}</h2>
+
       <div
         className="grid"
         data-darkmode={darkMode}
@@ -28,6 +64,7 @@ const Sample = () => {
         data-networkcolorasbg={networkColorAsBG}
       >
         {Object.keys(socialNetworks)
+          .filter((network) => socialNetworks[network].category === category)
           .sort((a, b) => a.localeCompare(b))
           .map((network) => (
             <div
@@ -35,10 +72,8 @@ const Sample = () => {
               className="item"
               style={
                 networkColorAsBG
-                  ? {
-                      backgroundColor: socialNetworks[network].color,
-                    }
-                  : {}
+                  ? { backgroundColor: socialNetworks[network].color }
+                  : undefined
               }
             >
               <SocialIcons source={network} />{" "}
@@ -53,8 +88,6 @@ const Sample = () => {
             </div>
           ))}
       </div>
-    </>
+    </div>
   );
 };
-
-export default Sample;
