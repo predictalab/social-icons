@@ -141,6 +141,24 @@ import papperssvg from "../assets/social-icons/pappers.svg";
 import partifulsvg from "../assets/social-icons/partiful.svg";
 import dreadsvg from "../assets/social-icons/dread.svg";
 import friendfindersvg from "../assets/social-icons/friendfinder.svg";
+import bitchutesvg from "../assets/social-icons/bitchute.svg";
+import rutubesvg from "../assets/social-icons/rutube.svg";
+import youkusvg from "../assets/social-icons/youku.svg";
+import younowsvg from "../assets/social-icons/younow.svg";
+import chaturbatesvg from "../assets/social-icons/chaturbate.svg";
+import onlyfanssvg from "../assets/social-icons/onlyfans.svg";
+import pornhubsvg from "../assets/social-icons/pornhub.svg";
+import youpornsvg from "../assets/social-icons/youporn.svg";
+import livejasminsvg from "../assets/social-icons/livejasmin.svg";
+import redtubesvg from "../assets/social-icons/redtube.svg";
+import xvideossvg from "../assets/social-icons/xvideos.svg";
+import breachforumspng from "../assets/social-icons/breachforums.png";
+import guiadohackersvg from "../assets/social-icons/guiadohacker.svg";
+import hackforumspng from "../assets/social-icons/hackforums.png";
+import leakbasesvg from "../assets/social-icons/leakbase.svg";
+import nulledpng from "../assets/social-icons/nulled.png";
+import raidforumspng from "../assets/social-icons/raidforums.png";
+import xssjpg from "../assets/social-icons/xss.jpg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -566,9 +584,64 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "friendfinder":
       icon = <img src={friendfindersvg} alt="FriendFinder" />;
       break;
+    case "bitchute":
+      icon = <img src={bitchutesvg} alt="Bitchute" />;
+      break;
+    case "rutube":
+      icon = <img src={rutubesvg} alt="Rutube" />;
+      break;
+    case "youku":
+      icon = <img src={youkusvg} alt="Youku" />;
+      break;
+    case "younow":
+      icon = <img src={younowsvg} alt="YouNow" />;
+      break;
+    case "chaturbate":
+      icon = <img src={chaturbatesvg} alt="Chaturbate" />;
+      break;
+    case "onlyfans":
+      icon = <img src={onlyfanssvg} alt="OnlyFans" />;
+      break;
+    case "pornhub":
+      icon = <img src={pornhubsvg} alt="Pornhub" />;
+      break;
+    case "youporn":
+      icon = <img src={youpornsvg} alt="YouPorn" />;
+      break;
+    case "livejasmin":
+      icon = <img src={livejasminsvg} alt="LiveJasmin" />;
+      break;
+    case "redtube":
+      icon = <img src={redtubesvg} alt="RedTube" />;
+      break;
+    case "xvideos":
+      icon = <img src={xvideossvg} alt="XVideos" />;
+      break;
+    case "breachforums":
+    case "breached":
+      icon = <img src={breachforumspng} alt="BreachForums" />;
+      break;
+    case "guiadohacker":
+      icon = <img src={guiadohackersvg} alt="GuiadoHacker" />;
+      break;
+    case "hackforums":
+      icon = <img src={hackforumspng} alt="HackForums" />;
+      break;
+    case "leakbase":
+      icon = <img src={leakbasesvg} alt="LeakBase" />;
+      break;
+    case "nulled":
+      icon = <img src={nulledpng} alt="Nulled" />;
+      break;
+    case "raidforums":
+      icon = <img src={raidforumspng} alt="RaidForums" />;
+      break;
+    case "xss":
+      icon = <img src={xssjpg} alt="XSS" />;
+      break;
 
     default:
-      icon = <>TACOS</>;
+      icon = <NetworkIcon />;
       break;
   }
 
