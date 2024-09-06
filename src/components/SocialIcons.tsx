@@ -38,12 +38,19 @@ import {
   FaKeybase as KeybaseIcon,
   FaApple as AppleIcon,
   FaDropbox as DropboxIcon,
+  FaWeibo as WeiboIcon,
+  FaDailymotion as DailymotionIcon,
 } from "react-icons/fa";
 import {
   FaXTwitter as TwitterXIcon,
   FaTwitter as TwitterIcon,
+  FaOdysee as OdyseeIcon,
 } from "react-icons/fa6";
 import {
+  SiNintendo as NintendoIcon,
+  SiVimeo as VimeoIcon,
+  SiKick as KickIcon,
+  SiPastebin as PastebinIcon,
   SiGravatar as GravatarIcon,
   SiMyspace as MyspaceIcon,
   SiImgur as ImgurIcon,
@@ -70,6 +77,14 @@ import {
   SiTvtime as TvTimeIcon,
   SiPandora as PandoraIcon,
   SiMewe as MeweIcon,
+  SiBluesky as BlueskyIcon,
+  SiQzone as QzoneIcon,
+  SiTinder as TinderIcon,
+  SiJabber as JabberIcon,
+  SiLine as LineIcon,
+  SiWechat as WechatIcon,
+  SiMatrix as MatrixIcon,
+  SiMessenger as MessengerIcon,
 } from "react-icons/si";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
 import { BsSignal as SignalIcon } from "react-icons/bs";
@@ -124,6 +139,8 @@ import qqsvg from "../assets/social-icons/qq.svg";
 import beerbuddysvg from "../assets/social-icons/beerbuddy.svg";
 import papperssvg from "../assets/social-icons/pappers.svg";
 import partifulsvg from "../assets/social-icons/partiful.svg";
+import dreadsvg from "../assets/social-icons/dread.svg";
+import friendfindersvg from "../assets/social-icons/friendfinder.svg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -165,6 +182,7 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       icon = <SkypeIcon color={socialNetworks.skype.color} />;
       break;
     case "github":
+    case "gist":
       icon = <GithubIcon color={socialNetworks.github.color} />;
       break;
     case "gravatar":
@@ -192,6 +210,7 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       icon = <XboxIcon color={socialNetworks.xbox.color} />;
       break;
     case "playstation":
+    case "psn":
       icon = <PlaystationIcon color={socialNetworks.playstation.color} />;
       break;
     case "mastodon":
@@ -365,6 +384,51 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "mewe":
       icon = <MeweIcon color={socialNetworks.mewe.color} />;
       break;
+    case "bluesky":
+      icon = <BlueskyIcon color={socialNetworks.bluesky.color} />;
+      break;
+    case "qzone":
+      icon = <QzoneIcon color={socialNetworks.qzone.color} />;
+      break;
+    case "tinder":
+      icon = <TinderIcon color={socialNetworks.tinder.color} />;
+      break;
+    case "weibo":
+      icon = <WeiboIcon color={socialNetworks.weibo.color} />;
+      break;
+    case "jabber":
+      icon = <JabberIcon color={socialNetworks.jabber.color} />;
+      break;
+    case "line":
+      icon = <LineIcon color={socialNetworks.line.color} />;
+      break;
+    case "wechat":
+      icon = <WechatIcon color={socialNetworks.wechat.color} />;
+      break;
+    case "matrix":
+      icon = <MatrixIcon color={socialNetworks.matrix.color} />;
+      break;
+    case "messenger":
+      icon = <MessengerIcon color={socialNetworks.messenger.color} />;
+      break;
+    case "pastebin":
+      icon = <PastebinIcon color={socialNetworks.pastebin.color} />;
+      break;
+    case "vimeo":
+      icon = <VimeoIcon color={socialNetworks.vimeo.color} />;
+      break;
+    case "dailymotion":
+      icon = <DailymotionIcon color={socialNetworks.dailymotion.color} />;
+      break;
+    case "kick":
+      icon = <KickIcon color={socialNetworks.kick.color} />;
+      break;
+    case "odysee":
+      icon = <OdyseeIcon color={socialNetworks.odysee.color} />;
+      break;
+    case "nintendo_network":
+      icon = <NintendoIcon color={socialNetworks.nintendo_network.color} />;
+      break;
 
     case "protonmail":
       icon = <img src={protonmailsvg} alt="ProtonMail" />;
@@ -496,9 +560,15 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "partiful":
       icon = <img src={partifulsvg} alt="Partiful" />;
       break;
+    case "dread":
+      icon = <img src={dreadsvg} alt="Dread" />;
+      break;
+    case "friendfinder":
+      icon = <img src={friendfindersvg} alt="FriendFinder" />;
+      break;
 
     default:
-      icon = <NetworkIcon />;
+      icon = <>TACOS</>;
       break;
   }
 

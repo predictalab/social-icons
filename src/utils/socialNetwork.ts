@@ -13,8 +13,10 @@ type socialNetworkType = Record<
       | "sport"
       | "ecommerce"
       | "finance"
+      | "dating"
       | "other"
-      | "programming";
+      | "programming"
+      | "hacking";
   }
 >;
 
@@ -162,4 +164,46 @@ export const socialNetworks: socialNetworkType = {
   qq: { color: "#1F1F1F", name: "QQ", category: "messaging_app" },
   beerbuddy: { color: "#fea233", name: "Beer Buddy", category: "social" },
   mewe: { color: "#b8d500", name: "MeWe", category: "social" },
+  rutube: { color: "#333333", category: "video_platform" },
+  vimeo: { color: "#1AB7EA", category: "video_platform" },
+  dailymotion: { color: "#0066DC", category: "video_platform" },
+  bitchute: { color: "#CC0000", category: "video_platform" },
+  kick: { color: "#52E367", category: "video_platform" },
+  odysee: { color: "#CC0BA9", category: "video_platform" },
+  youku: { color: "#FE3C00", category: "video_platform" },
+  younow: { color: "#44C049", category: "video_platform" },
+  xvideos: { color: "#FF0000", category: "adult" },
+  pornhub: { color: "#FF9900", category: "adult" },
+  chaturbate: { color: "#3EC2FA", category: "adult" },
+  onlyfans: { color: "#1DA1F2", category: "adult" },
+  livejasmin: { color: "#E31C79", category: "adult" },
+  youporn: { color: "#FF007F", category: "adult" },
+  redtube: { color: "#FF0000", category: "adult" },
+  bluesky: { color: "#00A7E4", category: "social" },
+  weibo: { color: "#E6162D", category: "social" },
+  qzone: { color: "#FECE00", category: "social" },
+  dread: { color: "#9d5cb4", category: "social" },
+  wechat: { color: "#7BB32E", category: "messaging_app" },
+  messenger: { color: "#0078FF", category: "messaging_app" },
+  line: { color: "#00C300", category: "messaging_app" },
+  jabber: { color: "#FF7800", category: "messaging_app" },
+  matrix: { color: "#000000", category: "messaging_app" },
+  pastebin: { color: "#02458E", category: "other" },
+  gist: { color: "#161414", category: "programming" },
+  leakbase: { color: "#FF0000", category: "hacking" },
+  raidforums: { color: "#000000", category: "hacking" },
+  hackforums: { color: "#5C005C", category: "hacking" },
+  guiadohacker: { color: "#008000", category: "hacking" },
+  breached: { color: "#FF0000", category: "hacking" },
+  breachforums: { color: "#FF0000", category: "hacking" },
+  xss: { color: "#000000", category: "hacking" },
+  nulled: { color: "#000000", category: "hacking" },
+  friendfinder: { color: "#f37b28", category: "dating", name: "FriendFinder" },
+  tinder: { color: "#FF6B6B", category: "dating" },
+  nintendo_network: {
+    color: "#E60012",
+    category: "gaming",
+    name: "Nintendo Network",
+  },
+  psn: { color: "#003087", category: "gaming", name: "PSN" },
 };
