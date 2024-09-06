@@ -155,4 +155,5 @@ export type SourceTypes =
   | "friendfinder"
   | "tinder"
   | "nintendo_network"
-  | "psn";
+  | "psn"
+  | "tgbot1"; // custom bot

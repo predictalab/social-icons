@@ -86,6 +86,7 @@ import {
   SiMatrix as MatrixIcon,
   SiMessenger as MessengerIcon,
 } from "react-icons/si";
+import { RiRobot2Fill as BotIcon } from "react-icons/ri";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
 import { BsSignal as SignalIcon } from "react-icons/bs";
 import { TbBrandPicsart as PicsArtIcon } from "react-icons/tb";
@@ -446,6 +447,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "nintendo_network":
       icon = <NintendoIcon color={socialNetworks.nintendo_network.color} />;
+      break;
+    case "tgbot1":
+      icon = <BotIcon color={socialNetworks.tgbot1.color} />;
       break;
 
     case "protonmail":

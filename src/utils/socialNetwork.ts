@@ -16,7 +16,8 @@ type socialNetworkType = Record<
       | "dating"
       | "other"
       | "programming"
-      | "hacking";
+      | "hacking"
+      | "bot";
   }
 >;
 
@@ -214,4 +215,5 @@ export const socialNetworks: socialNetworkType = {
     name: "Nintendo Network",
   },
   psn: { color: "#003087", category: "gaming", name: "PSN" },
+  tgbot1: { color: "#1d51d1", category: "bot", name: "Homebot-1" },
 };
