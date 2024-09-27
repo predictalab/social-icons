@@ -18,7 +18,8 @@ type socialNetworkType = Record<
       | "programming"
       | "hacking"
       | "bot"
-      | "search-engine";
+      | "search_engine"
+      | "dating_app";
   }
 >;
 
@@ -217,7 +218,17 @@ export const socialNetworks: socialNetworkType = {
   },
   psn: { color: "#003087", category: "gaming", name: "PSN" },
   tgbot1: { color: "#1d51d1", category: "bot", name: "Homebot-1" },
-  clearweb: { color: "#aaa", category: "search-engine", name: "Clear web" },
-  darkweb: { color: "#000000", category: "search-engine", name: "Dark web" },
+  clearweb: { color: "#aaa", category: "search_engine", name: "Clear web" },
+  darkweb: { color: "#000000", category: "search_engine", name: "Dark web" },
   viadeo: { color: "#ee7657", category: "social" },
+  deezer: { color: "#7c2ec1", category: "streaming" },
+  applemusic: { color: "#fc465b", category: "streaming", name: "Apple Music" },
+  amazonmusic: {
+    color: "#54d1de",
+    category: "streaming",
+    name: "Amazon Music",
+  },
+  audiomack: { color: "#f38a19", category: "streaming" },
+  soundcloud: { color: "#f87d1c", category: "streaming" },
+  bandcamp: { color: "#2aa3c5", category: "streaming" },
 };

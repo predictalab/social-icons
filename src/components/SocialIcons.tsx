@@ -46,6 +46,7 @@ import {
   FaXTwitter as TwitterXIcon,
   FaTwitter as TwitterIcon,
   FaOdysee as OdyseeIcon,
+  FaDeezer as DeezerIcon,
 } from "react-icons/fa6";
 import {
   SiNintendo as NintendoIcon,
@@ -87,6 +88,11 @@ import {
   SiMatrix as MatrixIcon,
   SiMessenger as MessengerIcon,
   SiViadeo as ViadeoIcon,
+  SiApplemusic as AppleMusicIcon,
+  SiAmazonmusic as AmazonMusicIcon,
+  SiAudiomack as AudiomackIcon,
+  SiSoundcloud as SoundcloudIcon,
+  SiBandcamp as BandcampIcon,
 } from "react-icons/si";
 import { RiRobot2Fill as BotIcon } from "react-icons/ri";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
@@ -461,6 +467,24 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "viadeo":
       icon = <ViadeoIcon color={socialNetworks.viadeo.color} />;
+      break;
+    case "deezer":
+      icon = <DeezerIcon color={socialNetworks.deezer.color} />;
+      break;
+    case "applemusic":
+      icon = <AppleMusicIcon color={socialNetworks.applemusic.color} />;
+      break;
+    case "amazonmusic":
+      icon = <AmazonMusicIcon color={socialNetworks.amazonmusic.color} />;
+      break;
+    case "audiomack":
+      icon = <AudiomackIcon color={socialNetworks.audiomack.color} />;
+      break;
+    case "soundcloud":
+      icon = <SoundcloudIcon color={socialNetworks.soundcloud.color} />;
+      break;
+    case "bandcamp":
+      icon = <BandcampIcon color={socialNetworks.bandcamp.color} />;
       break;
 
     case "protonmail":

@@ -159,4 +159,10 @@ export type SourceTypes =
   | "tgbot1" // custom bot
   | "clearweb"
   | "darkweb"
-  | "viadeo";
+  | "viadeo"
+  | "deezer"
+  | "applemusic"
+  | "amazonmusic"
+  | "audiomack"
+  | "soundcloud"
+  | "bandcamp";
