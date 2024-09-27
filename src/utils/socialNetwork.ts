@@ -17,7 +17,8 @@ type socialNetworkType = Record<
       | "other"
       | "programming"
       | "hacking"
-      | "bot";
+      | "bot"
+      | "search-engine";
   }
 >;
 
@@ -216,4 +217,7 @@ export const socialNetworks: socialNetworkType = {
   },
   psn: { color: "#003087", category: "gaming", name: "PSN" },
   tgbot1: { color: "#1d51d1", category: "bot", name: "Homebot-1" },
+  clearweb: { color: "#aaa", category: "search-engine", name: "Clear web" },
+  darkweb: { color: "#000000", category: "search-engine", name: "Dark web" },
+  viadeo: { color: "#ee7657", category: "social" },
 };

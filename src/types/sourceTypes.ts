@@ -156,4 +156,7 @@ export type SourceTypes =
   | "tinder"
   | "nintendo_network"
   | "psn"
-  | "tgbot1"; // custom bot
+  | "tgbot1" // custom bot
+  | "clearweb"
+  | "darkweb"
+  | "viadeo";

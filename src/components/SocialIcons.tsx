@@ -40,6 +40,7 @@ import {
   FaDropbox as DropboxIcon,
   FaWeibo as WeiboIcon,
   FaDailymotion as DailymotionIcon,
+  FaGlobe as GlobeIcon,
 } from "react-icons/fa";
 import {
   FaXTwitter as TwitterXIcon,
@@ -85,6 +86,7 @@ import {
   SiWechat as WechatIcon,
   SiMatrix as MatrixIcon,
   SiMessenger as MessengerIcon,
+  SiViadeo as ViadeoIcon,
 } from "react-icons/si";
 import { RiRobot2Fill as BotIcon } from "react-icons/ri";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
@@ -450,6 +452,15 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "tgbot1":
       icon = <BotIcon color={socialNetworks.tgbot1.color} />;
+      break;
+    case "clearweb":
+      icon = <GlobeIcon color={socialNetworks.clearweb.color} />;
+      break;
+    case "darkweb":
+      icon = <GlobeIcon color={socialNetworks.darkweb.color} />;
+      break;
+    case "viadeo":
+      icon = <ViadeoIcon color={socialNetworks.viadeo.color} />;
       break;
 
     case "protonmail":
