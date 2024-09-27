@@ -211,6 +211,10 @@ export const socialNetworks: socialNetworkType = {
   nulled: { color: "#81abc9", category: "hacking" },
   friendfinder: { color: "#f37b28", category: "dating", name: "FriendFinder" },
   tinder: { color: "#FF6B6B", category: "dating" },
+  meetic: { color: "#ff1b83", category: "dating" },
+  happn: { color: "#1d8bb7", category: "dating" },
+  okcupid: { color: "#f851b9", category: "dating" },
+  bumble: { color: "#fdc834", category: "dating" },
   nintendo_network: {
     color: "#E60012",
     category: "gaming",

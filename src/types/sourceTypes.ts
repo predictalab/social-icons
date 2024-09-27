@@ -154,6 +154,10 @@ export type SourceTypes =
   | "nulled"
   | "friendfinder"
   | "tinder"
+  | "meetic"
+  | "happn"
+  | "okcupid"
+  | "bumble"
   | "nintendo_network"
   | "psn"
   | "tgbot1" // custom bot

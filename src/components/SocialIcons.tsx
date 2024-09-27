@@ -93,11 +93,12 @@ import {
   SiAudiomack as AudiomackIcon,
   SiSoundcloud as SoundcloudIcon,
   SiBandcamp as BandcampIcon,
+  SiOkcupid as OkCupidIcon,
 } from "react-icons/si";
 import { RiRobot2Fill as BotIcon } from "react-icons/ri";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
 import { BsSignal as SignalIcon } from "react-icons/bs";
-import { TbBrandPicsart as PicsArtIcon } from "react-icons/tb";
+import { TbBrandPicsart as PicsArtIcon, TbBrandBumble } from "react-icons/tb";
 import { BiLogoMicrosoftTeams as TeamsIcon } from "react-icons/bi";
 import { ImOnedrive as OnedriveIcon } from "react-icons/im";
 import { LiaHashtagSolid as DehashedIcon } from "react-icons/lia";
@@ -168,6 +169,8 @@ import leakbasesvg from "../assets/social-icons/leakbase.svg";
 import nulledpng from "../assets/social-icons/nulled.png";
 import raidforumspng from "../assets/social-icons/raidforums.png";
 import xssjpg from "../assets/social-icons/xss.jpg";
+import happnsvg from "../assets/social-icons/happn.svg";
+import meeticsvg from "../assets/social-icons/meetic.svg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -486,6 +489,12 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "bandcamp":
       icon = <BandcampIcon color={socialNetworks.bandcamp.color} />;
       break;
+    case "okcupid":
+      icon = <OkCupidIcon color={socialNetworks.okcupid.color} />;
+      break;
+    case "bumble":
+      icon = <TbBrandBumble color={socialNetworks.bumble.color} />;
+      break;
 
     case "protonmail":
       icon = <img src={protonmailsvg} alt="ProtonMail" />;
@@ -677,6 +686,12 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "xss":
       icon = <img src={xssjpg} alt="XSS" />;
+      break;
+    case "happn":
+      icon = <img src={happnsvg} alt="Happn" />;
+      break;
+    case "meetic":
+      icon = <img src={meeticsvg} alt="Meetic" />;
       break;
 
     default:
