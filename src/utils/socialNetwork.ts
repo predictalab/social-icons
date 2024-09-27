@@ -18,8 +18,7 @@ type socialNetworkType = Record<
       | "programming"
       | "hacking"
       | "bot"
-      | "search_engine"
-      | "dating_app";
+      | "search_engine";
   }
 >;
 
