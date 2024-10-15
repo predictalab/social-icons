@@ -169,4 +169,5 @@ export type SourceTypes =
   | "amazonmusic"
   | "audiomack"
   | "soundcloud"
-  | "bandcamp";
+  | "bandcamp"
+  | "shodan";

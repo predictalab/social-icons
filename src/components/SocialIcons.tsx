@@ -171,6 +171,7 @@ import raidforumspng from "../assets/social-icons/raidforums.png";
 import xssjpg from "../assets/social-icons/xss.jpg";
 import happnsvg from "../assets/social-icons/happn.svg";
 import meeticsvg from "../assets/social-icons/meetic.svg";
+import shodanpng from "../assets/social-icons/shodan.png";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -692,6 +693,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "meetic":
       icon = <img src={meeticsvg} alt="Meetic" />;
+      break;
+    case "shodan":
+      icon = <img src={shodanpng} alt="Shodan" />;
       break;
 
     default:
