@@ -234,5 +234,5 @@ export const socialNetworks: socialNetworkType = {
   audiomack: { color: "#f38a19", category: "streaming" },
   soundcloud: { color: "#f87d1c", category: "streaming" },
   bandcamp: { color: "#2aa3c5", category: "streaming" },
-  shodan: { color: "#121212", category: "search_engine" },
+  shodan: { color: "#dc424e", category: "search_engine" },
 };
