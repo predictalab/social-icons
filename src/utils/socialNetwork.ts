@@ -18,7 +18,8 @@ type socialNetworkType = Record<
       | "programming"
       | "hacking"
       | "bot"
-      | "search_engine";
+      | "search_engine"
+      | "service";
   }
 >;
 
@@ -87,7 +88,7 @@ export const socialNetworks: socialNetworkType = {
   goodreads: { color: "#824707", category: "social" },
   monopolygo: { color: "#FB2F1A", category: "gaming" },
   scrabblego: { color: "#DEB357", category: "gaming" },
-  dehashed: { color: "#000000", category: "other" },
+  dehashed: { color: "#000000", category: "service" },
   imvu: { color: "#000000", category: "social" },
   sellix: { color: "#000000", category: "social" },
   vivino: { color: "#AA1329", category: "social" },
@@ -106,13 +107,13 @@ export const socialNetworks: socialNetworkType = {
   pandora: { color: "#8427FC", category: "streaming" },
   pappers: { color: "#0f46a8", category: "social" },
   partiful: { color: "#000000", category: "social" },
-  hudsonrock: { color: "#FDCD4E", name: "Hudson Rock", category: "other" },
+  hudsonrock: { color: "#FDCD4E", name: "Hudson Rock", category: "service" },
   myspace: { color: "#000000", name: "MySpace", category: "social" },
   bereal: { color: "#000000", name: "BeReal", category: "social" },
-  rocketreach: { color: "#FF3B3F", name: "RocketReach", category: "other" },
+  rocketreach: { color: "#FF3B3F", name: "RocketReach", category: "service" },
   bibleapp: { color: "#A4332E", name: "BibleApp", category: "social" },
-  whatsmyname: { color: "#000000", name: "WhatsMyName", category: "other" },
-  wmn: { color: "#000000", name: "WhatsMyName", category: "other" },
+  whatsmyname: { color: "#000000", name: "WhatsMyName", category: "service" },
+  wmn: { color: "#000000", name: "WhatsMyName", category: "service" },
   myfitnesspal: {
     color: "#0C8CC3",
     name: "MyFitnessPal",
@@ -140,7 +141,7 @@ export const socialNetworks: socialNetworkType = {
     name: "Copains d’avant",
     category: "social",
   },
-  hibp: { color: "#000000", name: "HIBP", category: "other" },
+  hibp: { color: "#000000", name: "HIBP", category: "service" },
   imageshack: { color: "#DDAE3A", name: "ImageShack", category: "social" },
   okru: { color: "#FF7700", name: "OK.ru", category: "social" },
   touchtunes: { color: "#7463D4", name: "TouchTunes", category: "social" },
@@ -234,5 +235,5 @@ export const socialNetworks: socialNetworkType = {
   audiomack: { color: "#f38a19", category: "streaming" },
   soundcloud: { color: "#f87d1c", category: "streaming" },
   bandcamp: { color: "#2aa3c5", category: "streaming" },
-  shodan: { color: "#121212", category: "search_engine" },
+  shodan: { color: "#e3555e", category: "service" },
 };
