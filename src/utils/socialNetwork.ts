@@ -109,7 +109,11 @@ export const socialNetworks: socialNetworkType = {
   hudsonrock: { color: "#FDCD4E", name: "Hudson Rock", category: "other" },
   myspace: { color: "#000000", name: "MySpace", category: "social" },
   bereal: { color: "#000000", name: "BeReal", category: "social" },
-  rocketreach: { color: "#FF3B3F", name: "RocketReach", category: "other" },
+  rocketreach: {
+    color: "#FF3B3F",
+    name: "Rocket Reach",
+    category: "search_engine",
+  },
   bibleapp: { color: "#A4332E", name: "BibleApp", category: "social" },
   whatsmyname: { color: "#000000", name: "WhatsMyName", category: "other" },
   wmn: { color: "#000000", name: "WhatsMyName", category: "other" },
