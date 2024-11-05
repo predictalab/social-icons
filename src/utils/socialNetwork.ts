@@ -239,4 +239,5 @@ export const socialNetworks: socialNetworkType = {
   soundcloud: { color: "#f87d1c", category: "streaming" },
   bandcamp: { color: "#2aa3c5", category: "streaming" },
   shodan: { color: "#dc424e", category: "search_engine" },
+  whiteintel: { color: "#4EA1DE", category: "other", name: "White Intel" },
 };

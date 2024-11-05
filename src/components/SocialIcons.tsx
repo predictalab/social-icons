@@ -172,6 +172,7 @@ import xssjpg from "../assets/social-icons/xss.jpg";
 import happnsvg from "../assets/social-icons/happn.svg";
 import meeticsvg from "../assets/social-icons/meetic.svg";
 import shodanpng from "../assets/social-icons/shodan.png";
+import whiteintelsvg from "../assets/social-icons/whiteintel.svg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -696,6 +697,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "shodan":
       icon = <img src={shodanpng} alt="Shodan" />;
+      break;
+    case "whiteintel":
+      icon = <img src={whiteintelsvg} alt="WhiteIntel" />;
       break;
 
     default:
