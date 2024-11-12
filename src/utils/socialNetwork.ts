@@ -91,7 +91,7 @@ export const socialNetworks: socialNetworkType = {
   imvu: { color: "#000000", category: "social" },
   sellix: { color: "#000000", category: "social" },
   vivino: { color: "#AA1329", category: "social" },
-  whoxy: { color: "#ED8727", category: "social" },
+  whoxy: { color: "#ED8727", category: "other" },
   dropbox: { color: "#0062FF", category: "social" },
   holehe: { color: "#FF5822", category: "other" },
   foap: { color: "#60BEB9", category: "social" },
@@ -240,4 +240,6 @@ export const socialNetworks: socialNetworkType = {
   bandcamp: { color: "#2aa3c5", category: "streaming" },
   shodan: { color: "#dc424e", category: "search_engine" },
   whiteintel: { color: "#4EA1DE", category: "other", name: "White Intel" },
+  ipinfo: { color: "#066BA4", category: "other", name: "IP Info" },
+  threads: { color: "#0A0A0A", category: "social", name: "Threads" },
 };

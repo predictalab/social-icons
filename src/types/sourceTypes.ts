@@ -171,4 +171,6 @@ export type SourceTypes =
   | "soundcloud"
   | "bandcamp"
   | "shodan"
-  | "whiteintel";
+  | "whiteintel"
+  | "ipinfo"
+  | "threads";

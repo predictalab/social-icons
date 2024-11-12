@@ -47,6 +47,7 @@ import {
   FaTwitter as TwitterIcon,
   FaOdysee as OdyseeIcon,
   FaDeezer as DeezerIcon,
+  FaSquareThreads as ThreadsIcon,
 } from "react-icons/fa6";
 import {
   SiNintendo as NintendoIcon,
@@ -173,6 +174,7 @@ import happnsvg from "../assets/social-icons/happn.svg";
 import meeticsvg from "../assets/social-icons/meetic.svg";
 import shodanpng from "../assets/social-icons/shodan.png";
 import whiteintelsvg from "../assets/social-icons/whiteintel.svg";
+import ipinfosvg from "../assets/social-icons/ipinfo.svg";
 
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -497,6 +499,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "bumble":
       icon = <TbBrandBumble color={socialNetworks.bumble.color} />;
       break;
+    case "threads":
+      icon = <ThreadsIcon color={socialNetworks.threads.color} />;
+      break;
 
     case "protonmail":
       icon = <img src={protonmailsvg} alt="ProtonMail" />;
@@ -700,6 +705,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "whiteintel":
       icon = <img src={whiteintelsvg} alt="WhiteIntel" />;
+      break;
+    case "ipinfo":
+      icon = <img src={ipinfosvg} alt="IPInfo" />;
       break;
 
     default:
