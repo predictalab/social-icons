@@ -242,4 +242,9 @@ export const socialNetworks: socialNetworkType = {
   whiteintel: { color: "#4EA1DE", category: "other", name: "White Intel" },
   ipinfo: { color: "#066BA4", category: "other", name: "IP Info" },
   threads: { color: "#0A0A0A", category: "social", name: "Threads" },
+  typing: { color: "#59A7E7", category: "social", name: "Typing" },
+  gowish: { color: "#039BBF", category: "social", name: "GoWish" },
+  bikemap: { color: "#0B73E8", category: "social", name: "BikeMap" },
+  sleeper: { color: "#223353", category: "social", name: "Sleeper" },
+  thefork: { color: "#01675B", category: "social", name: "The Fork" },
 };

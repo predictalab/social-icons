@@ -96,6 +96,7 @@ import {
   SiBandcamp as BandcampIcon,
   SiOkcupid as OkCupidIcon,
 } from "react-icons/si";
+import { GrBike } from "react-icons/gr";
 import { RiRobot2Fill as BotIcon } from "react-icons/ri";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
 import { BsSignal as SignalIcon } from "react-icons/bs";
@@ -175,7 +176,11 @@ import meeticsvg from "../assets/social-icons/meetic.svg";
 import shodanpng from "../assets/social-icons/shodan.png";
 import whiteintelsvg from "../assets/social-icons/whiteintel.svg";
 import ipinfosvg from "../assets/social-icons/ipinfo.svg";
-
+import typingsvg from "../assets/social-icons/typing.svg";
+import gowishsvg from "../assets/social-icons/gowish.svg";
+import sleeperpng from "../assets/social-icons/sleeper.png";
+import theforksvg from "../assets/social-icons/thefork.svg";
+//
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
 
@@ -502,6 +507,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "threads":
       icon = <ThreadsIcon color={socialNetworks.threads.color} />;
       break;
+    case "bikemap":
+      icon = <GrBike color={socialNetworks.bikemap.color} />;
+      break;
 
     case "protonmail":
       icon = <img src={protonmailsvg} alt="ProtonMail" />;
@@ -708,6 +716,18 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "ipinfo":
       icon = <img src={ipinfosvg} alt="IPInfo" />;
+      break;
+    case "typing":
+      icon = <img src={typingsvg} alt="Typing" />;
+      break;
+    case "gowish":
+      icon = <img src={gowishsvg} alt="GoWish" />;
+      break;
+    case "sleeper":
+      icon = <img src={sleeperpng} alt="Sleeper" />;
+      break;
+    case "thefork":
+      icon = <img src={theforksvg} alt="TheFork" />;
       break;
 
     default:

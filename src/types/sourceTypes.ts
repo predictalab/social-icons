@@ -173,4 +173,9 @@ export type SourceTypes =
   | "shodan"
   | "whiteintel"
   | "ipinfo"
-  | "threads";
+  | "threads"
+  | "typing"
+  | "gowish"
+  | "bikemap"
+  | "sleeper"
+  | "thefork";
