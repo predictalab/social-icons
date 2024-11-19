@@ -107,6 +107,7 @@ import { LiaHashtagSolid as DehashedIcon } from "react-icons/lia";
 import { PiShareNetwork as NetworkIcon } from "react-icons/pi";
 import { IoIosRocket as RocketReachIcon } from "react-icons/io";
 import { MdCameraAlt as FoapIcon } from "react-icons/md";
+import { IoCompassOutline as PolarstepsIcon } from "react-icons/io5";
 
 import protonmailsvg from "../assets/social-icons/protonmail.svg";
 import sellixsvg from "../assets/social-icons/sellix.svg";
@@ -509,6 +510,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "bikemap":
       icon = <GrBike color={socialNetworks.bikemap.color} />;
+      break;
+    case "polarsteps":
+      icon = <PolarstepsIcon color={socialNetworks.polarsteps.color} />;
       break;
 
     case "protonmail":

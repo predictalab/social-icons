@@ -178,4 +178,5 @@ export type SourceTypes =
   | "gowish"
   | "bikemap"
   | "sleeper"
-  | "thefork";
+  | "thefork"
+  | "polarsteps";
