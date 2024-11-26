@@ -179,4 +179,5 @@ export type SourceTypes =
   | "bikemap"
   | "sleeper"
   | "thefork"
-  | "polarsteps";
+  | "polarsteps"
+  | "facecheckid";

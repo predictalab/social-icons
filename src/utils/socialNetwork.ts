@@ -18,7 +18,8 @@ type socialNetworkType = Record<
       | "programming"
       | "hacking"
       | "bot"
-      | "search_engine";
+      | "search_engine"
+      | "images-search-engine";
   }
 >;
 
@@ -248,4 +249,9 @@ export const socialNetworks: socialNetworkType = {
   sleeper: { color: "#223353", category: "social" },
   thefork: { color: "#01675B", category: "social", name: "The Fork" },
   polarsteps: { color: "#DE2B52", category: "social" },
+  facecheckid: {
+    color: "#047FC5",
+    category: "images-search-engine",
+    name: "FaceCheck ID",
+  },
 };
