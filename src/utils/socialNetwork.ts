@@ -254,4 +254,5 @@ export const socialNetworks: socialNetworkType = {
     category: "images-search-engine",
     name: "FaceCheck ID",
   },
+  crackedio: { color: "#036B8E", category: "hacking", name: "Cracked.io" },
 };

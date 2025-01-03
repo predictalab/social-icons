@@ -182,6 +182,7 @@ import gowishsvg from "../assets/social-icons/gowish.svg";
 import sleeperpng from "../assets/social-icons/sleeper.png";
 import theforksvg from "../assets/social-icons/thefork.svg";
 import facecheckidsvg from "../assets/social-icons/facecheckid.svg";
+import crackediosvg from "../assets/social-icons/crackedio.svg";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -736,6 +737,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "facecheckid":
       icon = <img src={facecheckidsvg} alt="FaceCheckID" />;
+      break;
+    case "crackedio":
+      icon = <img src={crackediosvg} alt="Cracked.io" />;
       break;
 
     default:
