@@ -19,7 +19,8 @@ type socialNetworkType = Record<
       | "hacking"
       | "bot"
       | "search_engine"
-      | "images-search-engine";
+      | "images-search-engine"
+      | "paste";
   }
 >;
 
@@ -255,4 +256,5 @@ export const socialNetworks: socialNetworkType = {
     name: "FaceCheck ID",
   },
   crackedio: { color: "#036B8E", category: "hacking", name: "Cracked.io" },
+  psbdmp: { color: "#262557", category: "paste", name: "PSBDMP" },
 };
