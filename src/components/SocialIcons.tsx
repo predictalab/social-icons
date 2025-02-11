@@ -183,6 +183,7 @@ import sleeperpng from "../assets/social-icons/sleeper.png";
 import theforksvg from "../assets/social-icons/thefork.svg";
 import facecheckidsvg from "../assets/social-icons/facecheckid.svg";
 import crackediosvg from "../assets/social-icons/crackedio.svg";
+import flaresvg from "../assets/social-icons/flare.svg";
 import psbdmppng from "../assets/social-icons/psbdmp.png";
 //
 import { socialNetworks } from "../utils/socialNetwork";
@@ -744,6 +745,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "psbdmp":
       icon = <img src={psbdmppng} alt="PSBDMP" />;
+      break;
+    case "flare":
+      icon = <img src={flaresvg} alt="Flare" />;
       break;
 
     default:

@@ -182,4 +182,5 @@ export type SourceTypes =
   | "polarsteps"
   | "facecheckid"
   | "crackedio"
-  | "psbdmp";
+  | "psbdmp"
+  | "flare";

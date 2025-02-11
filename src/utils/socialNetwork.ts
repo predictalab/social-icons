@@ -257,4 +257,5 @@ export const socialNetworks: socialNetworkType = {
   },
   crackedio: { color: "#036B8E", category: "hacking", name: "Cracked.io" },
   psbdmp: { color: "#262557", category: "paste", name: "PSBDMP" },
+  flare: { color: "#5361F2", category: "search_engine" },
 };
