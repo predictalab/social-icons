@@ -107,7 +107,10 @@ import { LiaHashtagSolid as DehashedIcon } from "react-icons/lia";
 import { PiShareNetwork as NetworkIcon } from "react-icons/pi";
 import { IoIosRocket as RocketReachIcon } from "react-icons/io";
 import { MdCameraAlt as FoapIcon } from "react-icons/md";
-import { IoCompassOutline as PolarstepsIcon } from "react-icons/io5";
+import {
+  IoCompassOutline as PolarstepsIcon,
+  IoPaperPlaneOutline as TelemetryIcon,
+} from "react-icons/io5";
 
 import protonmailsvg from "../assets/social-icons/protonmail.svg";
 import sellixsvg from "../assets/social-icons/sellix.svg";
@@ -185,6 +188,8 @@ import facecheckidsvg from "../assets/social-icons/facecheckid.svg";
 import crackediosvg from "../assets/social-icons/crackedio.svg";
 import flaresvg from "../assets/social-icons/flare.svg";
 import psbdmppng from "../assets/social-icons/psbdmp.png";
+import leaklookupsvg from "../assets/social-icons/leaklookup.svg";
+import whoisxmlsvg from "../assets/social-icons/whoisxml.svg";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -518,6 +523,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "polarsteps":
       icon = <PolarstepsIcon color={socialNetworks.polarsteps.color} />;
       break;
+    case "telemetry":
+      icon = <TelemetryIcon color={socialNetworks.telemetry.color} />;
+      break;
 
     case "protonmail":
       icon = <img src={protonmailsvg} alt="ProtonMail" />;
@@ -748,6 +756,12 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "flare":
       icon = <img src={flaresvg} alt="Flare" />;
+      break;
+    case "leaklookup":
+      icon = <img src={leaklookupsvg} alt="LeakLookup" />;
+      break;
+    case "whoisxml":
+      icon = <img src={whoisxmlsvg} alt="WhoisXML" />;
       break;
 
     default:

@@ -183,4 +183,7 @@ export type SourceTypes =
   | "facecheckid"
   | "crackedio"
   | "psbdmp"
-  | "flare";
+  | "flare"
+  | "leaklookup"
+  | "telemetry"
+  | "whoisxml";
