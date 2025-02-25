@@ -186,4 +186,5 @@ export type SourceTypes =
   | "flare"
   | "leaklookup"
   | "telemetry"
-  | "whoisxml";
+  | "whoisxml"
+  | "vinted";

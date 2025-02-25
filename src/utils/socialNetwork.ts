@@ -261,4 +261,5 @@ export const socialNetworks: socialNetworkType = {
   leaklookup: { color: "#293042", category: "other", name: "Leak-Lookup" },
   telemetry: { color: "#030711", category: "other" },
   whoisxml: { color: "#3598FB", category: "other", name: "WhoisXML" },
+  vinted: { color: "#147B87", category: "ecommerce" },
 };

@@ -100,7 +100,11 @@ import { GrBike } from "react-icons/gr";
 import { RiRobot2Fill as BotIcon } from "react-icons/ri";
 import { FcGoogle as GoogleIcon } from "react-icons/fc";
 import { BsSignal as SignalIcon } from "react-icons/bs";
-import { TbBrandPicsart as PicsArtIcon, TbBrandBumble } from "react-icons/tb";
+import {
+  TbBrandPicsart as PicsArtIcon,
+  TbBrandBumble,
+  TbBrandVinted,
+} from "react-icons/tb";
 import { BiLogoMicrosoftTeams as TeamsIcon } from "react-icons/bi";
 import { ImOnedrive as OnedriveIcon } from "react-icons/im";
 import { LiaHashtagSolid as DehashedIcon } from "react-icons/lia";
@@ -525,6 +529,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "telemetry":
       icon = <TelemetryIcon color={socialNetworks.telemetry.color} />;
+      break;
+    case "vinted":
+      icon = <TbBrandVinted color={socialNetworks.vinted.color} />;
       break;
 
     case "protonmail":
