@@ -41,6 +41,7 @@ import {
   FaWeibo as WeiboIcon,
   FaDailymotion as DailymotionIcon,
   FaGlobe as GlobeIcon,
+  FaRunning as MapMyRunIcon,
 } from "react-icons/fa";
 import {
   FaXTwitter as TwitterXIcon,
@@ -95,6 +96,8 @@ import {
   SiSoundcloud as SoundcloudIcon,
   SiBandcamp as BandcampIcon,
   SiOkcupid as OkCupidIcon,
+  SiReplit as ReplitIcon,
+  SiKomoot as KomootIcon,
 } from "react-icons/si";
 import { GrBike } from "react-icons/gr";
 import { RiRobot2Fill as BotIcon } from "react-icons/ri";
@@ -532,6 +535,15 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "vinted":
       icon = <TbBrandVinted color={socialNetworks.vinted.color} />;
+      break;
+    case "replit":
+      icon = <ReplitIcon color={socialNetworks.replit.color} />;
+      break;
+    case "mapmyrun":
+      icon = <MapMyRunIcon color={socialNetworks.mapmyrun.color} />;
+      break;
+    case "komoot":
+      icon = <KomootIcon color={socialNetworks.komoot.color} />;
       break;
 
     case "protonmail":

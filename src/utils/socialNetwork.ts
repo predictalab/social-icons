@@ -262,4 +262,7 @@ export const socialNetworks: socialNetworkType = {
   telemetry: { color: "#030711", category: "other" },
   whoisxml: { color: "#3598FB", category: "other", name: "WhoisXML" },
   vinted: { color: "#147B87", category: "ecommerce" },
+  replit: { color: "#FD5401", category: "programming" },
+  mapmyrun: { color: "#029EEA", category: "sport", name: "Map My Run" },
+  komoot: { color: "#76B52E", category: "sport" },
 };

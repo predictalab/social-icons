@@ -187,4 +187,7 @@ export type SourceTypes =
   | "leaklookup"
   | "telemetry"
   | "whoisxml"
-  | "vinted";
+  | "vinted"
+  | "replit"
+  | "mapmyrun"
+  | "komoot";
