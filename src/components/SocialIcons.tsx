@@ -216,6 +216,7 @@ import praypng from "../assets/social-icons/pray.png";
 import pelotonpng from "../assets/social-icons/peloton.png";
 import zepetopng from "../assets/social-icons/zepeto.png";
 import sporttrackerpng from "../assets/social-icons/sportstracker.png";
+import chimepng from "../assets/social-icons/chime.png";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -845,6 +846,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "sportstracker":
       icon = <img src={sporttrackerpng} alt="SportsTracker" />;
+      break;
+    case "chime":
+      icon = <img src={chimepng} alt="Chime" />;
       break;
 
     default:

@@ -205,4 +205,5 @@ export type SourceTypes =
   | "indigo"
   | "zepeto"
   | "lidl"
-  | "sportstracker";
+  | "sportstracker"
+  | "chime";

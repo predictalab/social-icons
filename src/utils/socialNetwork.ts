@@ -288,4 +288,5 @@ export const socialNetworks: socialNetworkType = {
     category: "sport",
     name: "Sport Tracker",
   },
+  chime: { color: "#20C074", category: "finance" },
 };
