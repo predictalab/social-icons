@@ -98,6 +98,7 @@ import {
   SiOkcupid as OkCupidIcon,
   SiReplit as ReplitIcon,
   SiKomoot as KomootIcon,
+  SiCashapp as CashAppIcon,
 } from "react-icons/si";
 import { GrBike } from "react-icons/gr";
 import { RiRobot2Fill as BotIcon } from "react-icons/ri";
@@ -114,6 +115,7 @@ import { LiaHashtagSolid as DehashedIcon } from "react-icons/lia";
 import { PiShareNetwork as NetworkIcon } from "react-icons/pi";
 import { IoIosRocket as RocketReachIcon } from "react-icons/io";
 import { MdCameraAlt as FoapIcon } from "react-icons/md";
+import { TiVendorMicrosoft } from "react-icons/ti";
 import {
   IoCompassOutline as PolarstepsIcon,
   IoPaperPlaneOutline as TelemetryIcon,
@@ -544,6 +546,12 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "komoot":
       icon = <KomootIcon color={socialNetworks.komoot.color} />;
+      break;
+    case "microsoft":
+      icon = <TiVendorMicrosoft color={socialNetworks.microsoft.color} />;
+      break;
+    case "cashapp":
+      icon = <CashAppIcon color={socialNetworks.cashapp.color} />;
       break;
 
     case "protonmail":

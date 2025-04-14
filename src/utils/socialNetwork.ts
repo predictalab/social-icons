@@ -265,4 +265,6 @@ export const socialNetworks: socialNetworkType = {
   replit: { color: "#FD5401", category: "programming" },
   mapmyrun: { color: "#029EEA", category: "sport", name: "Map My Run" },
   komoot: { color: "#76B52E", category: "sport" },
+  microsoft: { color: "#177CD8", category: "social" },
+  cashapp: { color: "#04E012", category: "finance" },
 };
