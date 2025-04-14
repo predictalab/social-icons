@@ -196,13 +196,13 @@ export type SourceTypes =
   | "revolut"
   | "mailru"
   | "newyorktimes"
-  | "pandora"
-  | "quora"
-  | "plex"
-  | "okru"
   | "venmo"
   | "smule"
   | "yelp"
   | "bleacher"
   | "pray"
-  | "peleton";
+  | "peloton"
+  | "indigo"
+  | "zepeto"
+  | "lidl"
+  | "sportstracker";

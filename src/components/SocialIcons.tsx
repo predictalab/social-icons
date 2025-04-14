@@ -99,6 +99,11 @@ import {
   SiReplit as ReplitIcon,
   SiKomoot as KomootIcon,
   SiCashapp as CashAppIcon,
+  SiRevolut as RevolutIcon,
+  SiNewyorktimes as NewYorkTimesIcon,
+  SiYelp as YelpIcon,
+  SiIndigo as IndigoIcon,
+  SiLidl as LidlIcon,
 } from "react-icons/si";
 import { GrBike } from "react-icons/gr";
 import { RiRobot2Fill as BotIcon } from "react-icons/ri";
@@ -109,12 +114,18 @@ import {
   TbBrandBumble,
   TbBrandVinted,
 } from "react-icons/tb";
-import { BiLogoMicrosoftTeams as TeamsIcon } from "react-icons/bi";
+import {
+  BiLogoMicrosoftTeams as TeamsIcon,
+  BiLogoVenmo as VenmoIcon,
+} from "react-icons/bi";
 import { ImOnedrive as OnedriveIcon } from "react-icons/im";
 import { LiaHashtagSolid as DehashedIcon } from "react-icons/lia";
 import { PiShareNetwork as NetworkIcon } from "react-icons/pi";
 import { IoIosRocket as RocketReachIcon } from "react-icons/io";
-import { MdCameraAlt as FoapIcon } from "react-icons/md";
+import {
+  MdCameraAlt as FoapIcon,
+  MdAlternateEmail as MailRuIcon,
+} from "react-icons/md";
 import { TiVendorMicrosoft } from "react-icons/ti";
 import {
   IoCompassOutline as PolarstepsIcon,
@@ -199,6 +210,12 @@ import flaresvg from "../assets/social-icons/flare.svg";
 import psbdmppng from "../assets/social-icons/psbdmp.png";
 import leaklookupsvg from "../assets/social-icons/leaklookup.svg";
 import whoisxmlsvg from "../assets/social-icons/whoisxml.svg";
+import smulepng from "../assets/social-icons/smule.png";
+import bleacherpng from "../assets/social-icons/bleacher.png";
+import praypng from "../assets/social-icons/pray.png";
+import pelotonpng from "../assets/social-icons/peloton.png";
+import zepetopng from "../assets/social-icons/zepeto.png";
+import sporttrackerpng from "../assets/social-icons/sportstracker.png";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -553,6 +570,27 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "cashapp":
       icon = <CashAppIcon color={socialNetworks.cashapp.color} />;
       break;
+    case "revolut":
+      icon = <RevolutIcon color={socialNetworks.revolut.color} />;
+      break;
+    case "mailru":
+      icon = <MailRuIcon color={socialNetworks.mailru.color} />;
+      break;
+    case "newyorktimes":
+      icon = <NewYorkTimesIcon color={socialNetworks.newyorktimes.color} />;
+      break;
+    case "venmo":
+      icon = <VenmoIcon color={socialNetworks.venmo.color} />;
+      break;
+    case "yelp":
+      icon = <YelpIcon color={socialNetworks.yelp.color} />;
+      break;
+    case "indigo":
+      icon = <IndigoIcon color={socialNetworks.indigo.color} />;
+      break;
+    case "lidl":
+      icon = <LidlIcon color={socialNetworks.lidl.color} />;
+      break;
 
     case "protonmail":
       icon = <img src={protonmailsvg} alt="ProtonMail" />;
@@ -789,6 +827,24 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "whoisxml":
       icon = <img src={whoisxmlsvg} alt="WhoisXML" />;
+      break;
+    case "smule":
+      icon = <img src={smulepng} alt="Smule" />;
+      break;
+    case "bleacher":
+      icon = <img src={bleacherpng} alt="Bleacher" />;
+      break;
+    case "pray":
+      icon = <img src={praypng} alt="Pray" />;
+      break;
+    case "peloton":
+      icon = <img src={pelotonpng} alt="Peloton" />;
+      break;
+    case "zepeto":
+      icon = <img src={zepetopng} alt="Zepeto" />;
+      break;
+    case "sportstracker":
+      icon = <img src={sporttrackerpng} alt="SportsTracker" />;
       break;
 
     default:
