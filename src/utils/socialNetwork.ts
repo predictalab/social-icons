@@ -1,5 +1,7 @@
+import { SourceTypes } from "../types/sourceTypes";
+
 type socialNetworkType = Record<
-  string,
+  SourceTypes,
   {
     color: string;
     name?: string;
@@ -289,4 +291,304 @@ export const socialNetworks: socialNetworkType = {
     name: "Sport Tracker",
   },
   chime: { color: "#20C074", category: "finance" },
+  adobe: { color: "#FF0000", category: "other", name: "Adobe" },
+  anghami: { color: "#7C52D5", category: "streaming", name: "Anghami" },
+  att: { color: "#1DACE2", category: "other", name: "AT&T" },
+  bajao: {
+    color: "#B92373",
+    category: "streaming",
+  },
+  bandlab: { color: "#EA2C17", category: "streaming", name: "BandLab" },
+  blink: { color: "#1A594B", category: "social", name: "Blink" },
+  bush: { color: "#000000", category: "social", name: "Bush" },
+  callapp: { color: "#098DF7", category: "social", name: "CallApp" },
+  castbox: {
+    color: "#F36337",
+    category: "streaming",
+    name: "Castbox.fm",
+  },
+  catch: { color: "#000195", category: "other", name: "Catch" },
+  coda: { color: "#E65728", category: "other", name: "Coda" },
+  costar: { color: "#696969", category: "other", name: "Co-Star" },
+  cricheroes: {
+    color: "#AD2011",
+    category: "sport",
+    name: "CricHeroes",
+  },
+  cricwick: {
+    color: "#C5292E",
+    category: "sport",
+    name: "CricWick",
+  },
+  dailytelegraph: {
+    color: "#0056B7",
+    category: "other",
+    name: "Daily Telegraph",
+  },
+  distiller: {
+    color: "#F25A41",
+    category: "other",
+    name: "Distiller",
+  },
+  doordash: { color: "#DE4D2E", category: "other", name: "DoorDash" },
+  easypaisa: {
+    color: "#009688",
+    category: "finance",
+    name: "Easypaisa",
+  },
+  ebay: { color: "#106AD4", category: "ecommerce", name: "eBay" },
+  elsa: { color: "#F40009", category: "other", name: "Elsa" },
+  explurger: {
+    color: "#1150B3",
+    category: "other",
+    name: "Explurger",
+  },
+  fam: { color: "#000000", category: "other", name: "Fam" },
+  familylocator: {
+    color: "#2570EC",
+    category: "other",
+    name: "Family Locator",
+  },
+  favicon: {
+    color: "#000000",
+    category: "other",
+    name: "FavIcon",
+  },
+  fiton: { color: "#3547AD", category: "sport", name: "Fiton" },
+  fittr: { color: "#1C352A", category: "sport", name: "Fittr" },
+  fishangler: {
+    color: "#09637B",
+    category: "sport",
+    name: "FishAngler",
+  },
+  fishbrain: {
+    color: "#FF5722",
+    category: "sport",
+    name: "Fishbrain",
+  },
+  flock: { color: "#10BE52", category: "other", name: "Flock" },
+  golfnow: {
+    color: "#1DAF4C",
+    category: "sport",
+    name: "GolfNow",
+  },
+  groupme: {
+    color: "#1AA3EB",
+    category: "messaging_app",
+    name: "GroupMe",
+  },
+  habitshare: {
+    color: "#1C96A9",
+    category: "other",
+    name: "Habitshare",
+  },
+  halfords: {
+    color: "#FF9F18",
+    category: "ecommerce",
+    name: "Halfords",
+  },
+  jazzbalance: {
+    color: "#E91E63",
+    category: "other",
+    name: "Jazz Balance",
+  },
+  jazzcash: {
+    color: "#FFC60C",
+    category: "finance",
+    name: "Jazz Cash",
+  },
+  joinr: { color: "#161616", category: "other", name: "Joinr" },
+  lapse: { color: "#FF8E00", category: "social", name: "Lapse" },
+  libravatar: {
+    color: "#37B7D7",
+    category: "other",
+    name: "Libavatar",
+  },
+  likewise: {
+    color: "#FD7648",
+    category: "other",
+    name: "Likewise",
+  },
+  lineleap: {
+    color: "#0882FF",
+    category: "messaging_app",
+    name: "LineLeap",
+  },
+  lovense: {
+    color: "#FF2D8A",
+    category: "adult",
+    name: "Lovense",
+  },
+  medaltv: {
+    color: "#621096",
+    category: "streaming",
+    name: "Medal.tv",
+  },
+  melissa: {
+    color: "#FF4081",
+    category: "other",
+    name: "Melissa",
+  },
+  mindbody: {
+    color: "#00BFA5",
+    category: "other",
+    name: "Mindbody",
+  },
+  napster: {
+    color: "#2A5FFF",
+    category: "streaming",
+    name: "Napster",
+  },
+  nike: { color: "#111111", category: "sport", name: "Nike" },
+  numtrace: {
+    color: "#000000",
+    category: "other",
+    name: "NumTrace",
+  },
+  offtop: { color: "#080808", category: "other", name: "Offtop" },
+  omada: { color: "#0C7271", category: "other", name: "Omada" },
+  paytm: { color: "#273971", category: "finance", name: "Paytm" },
+  pinetwork: {
+    color: "#FCB44A",
+    category: "finance",
+    name: "Pi Network",
+  },
+  pitaya: {
+    color: "#F306E8",
+    category: "social",
+    name: "Pitaya",
+  },
+  playpark: {
+    color: "#00A7E1",
+    category: "gaming",
+    name: "Playpark.com",
+  },
+  playtomic: {
+    color: "#345FFF",
+    category: "sport",
+    name: "Playtomic",
+  },
+  planetfitness: {
+    color: "#762A85",
+    category: "sport",
+    name: "Planet Fitness",
+  },
+  poe: { color: "#E648EB", category: "programming" },
+  poshmark: {
+    color: "#7F0254",
+    category: "ecommerce",
+    name: "Poshmark",
+  },
+  reclip: { color: "#F7852B", category: "other", name: "Reclip" },
+  regroup: {
+    color: "#139162",
+    category: "other",
+    name: "Regroup",
+  },
+  savorfood: {
+    color: "#992295",
+    category: "other",
+    name: "Savorfood",
+  },
+  shoescompany: {
+    color: "#000000",
+    category: "ecommerce",
+    name: "ShoesCompany",
+  },
+  skiline: {
+    color: "#B90068",
+    category: "sport",
+    name: "Skiline",
+  },
+  sololearn: {
+    color: "#4CAF50",
+    category: "other",
+    name: "SoloLearn",
+  },
+  sportxjazz: {
+    color: "#FF9800",
+    category: "sport",
+    name: "Sportx Jazz",
+  },
+  superlocal: {
+    color: "#009688",
+    category: "other",
+    name: "Superlocal",
+  },
+  tapmad: {
+    color: "#FF5722",
+    category: "other",
+    name: "Tapmad",
+  },
+  tellonym: {
+    color: "#607D8B",
+    category: "other",
+    name: "Tellonym",
+  },
+  templatemonster: {
+    color: "#FF5722",
+    category: "other",
+    name: "TemplateMonster",
+  },
+  tokeechat: {
+    color: "#2196F3",
+    category: "messaging_app",
+    name: "Tokee Chat",
+  },
+  toneitup: {
+    color: "#E91E63",
+    category: "other",
+    name: "ToneItUp",
+  },
+  theshoecompany: {
+    color: "#3F51B5",
+    category: "ecommerce",
+    name: "Theshoecompany",
+  },
+  viewcaller: {
+    color: "#9C27B0",
+    category: "messaging_app",
+    name: "ViewCaller",
+  },
+  vibes: {
+    color: "#6A1B9A",
+    category: "other",
+    name: "Vibes",
+  },
+  vsco: { color: "#000000", category: "other", name: "VSCO" },
+  winendine: {
+    color: "#FF9800",
+    category: "other",
+    name: "Winendine",
+  },
+  w3schools: {
+    color: "#4CAF50",
+    category: "other",
+    name: "W3Schools",
+  },
+  wokii: {
+    color: "#FB8C00",
+    category: "other",
+    name: "Wokii",
+  },
+  zapier: {
+    color: "#FF4A00",
+    category: "other",
+    name: "Zapier",
+  },
+  zenly: {
+    color: "#FFFF00",
+    category: "other",
+    name: "Zenly",
+  },
+  untappd: {
+    color: "#E0A500",
+    category: "other",
+    name: "Untappd",
+  },
+  wayfair: {
+    color: "#E50000",
+    category: "ecommerce",
+    name: "Wayfair",
+  },
 };

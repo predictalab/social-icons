@@ -104,6 +104,16 @@ import {
   SiYelp as YelpIcon,
   SiIndigo as IndigoIcon,
   SiLidl as LidlIcon,
+  SiAdobe as AdobeIcon,
+  SiBandlab as BandlabIcon,
+  SiCastbox as CastboxIcon,
+  SiCoda as CodaIcon,
+  SiDoordash as DoorDashIcon,
+  SiEbay as EbayIcon,
+  SiGroupme as GroupMeIcon,
+  SiNapster as NapsterIcon,
+  SiPaytm as PaytmIcon,
+  SiPinetwork as PiNetworkIcon,
 } from "react-icons/si";
 import { GrBike } from "react-icons/gr";
 import { RiRobot2Fill as BotIcon } from "react-icons/ri";
@@ -217,6 +227,48 @@ import pelotonpng from "../assets/social-icons/peloton.png";
 import zepetopng from "../assets/social-icons/zepeto.png";
 import sporttrackerpng from "../assets/social-icons/sportstracker.png";
 import chimepng from "../assets/social-icons/chime.png";
+import blinksvg from "../assets/social-icons/blink.svg";
+import anghamisvg from "../assets/social-icons/anghami.svg";
+import attsvg from "../assets/social-icons/att.svg";
+import bajaopng from "../assets/social-icons/bajao.png";
+import callapppng from "../assets/social-icons/callapp.png";
+import catchpng from "../assets/social-icons/catch.png";
+import costarpng from "../assets/social-icons/costar.png";
+import cricheroespng from "../assets/social-icons/cricheroes.png";
+import cricwickpng from "../assets/social-icons/cricwick.png";
+import dailytelegraphpng from "../assets/social-icons/dailytelegraph.png";
+import distillerpng from "../assets/social-icons/distiller.png";
+import easypaisapng from "../assets/social-icons/easypaisa.png";
+import explurgerpng from "../assets/social-icons/explurger.png";
+import familylocatorpng from "../assets/social-icons/familylocator.png";
+import fitonpng from "../assets/social-icons/fiton.png";
+import fishanglerpng from "../assets/social-icons/fishangler.png";
+import fittrpng from "../assets/social-icons/fittr.png";
+import flockpng from "../assets/social-icons/flock.png";
+import golfnowpng from "../assets/social-icons/golfnow.png";
+import habitsharepng from "../assets/social-icons/habbitshare.png";
+import halfordssvg from "../assets/social-icons/halfords.svg";
+import jazzcashpng from "../assets/social-icons/jazzcash.png";
+import joinrpng from "../assets/social-icons/joinr.png";
+import lapsepng from "../assets/social-icons/lapse.png";
+import libravatarpng from "../assets/social-icons/libravatar.png";
+import likewisepng from "../assets/social-icons/likewise.png";
+import lineleappng from "../assets/social-icons/lineleap.png";
+import lovensepng from "../assets/social-icons/lovense.png";
+import medaltvpng from "../assets/social-icons/medaltv.png";
+import offtoppng from "../assets/social-icons/offtop.png";
+import omadapng from "../assets/social-icons/omada.png";
+import pitayapng from "../assets/social-icons/pitaya.png";
+import playparkjpg from "../assets/social-icons/playpark.jpg";
+import playtomicpng from "../assets/social-icons/playtomic.png";
+import planetfitnesspng from "../assets/social-icons/planetfitness.png";
+import poepng from "../assets/social-icons/poe.png";
+import poshmarkpng from "../assets/social-icons/poshmark.png";
+import reclippng from "../assets/social-icons/reclip.png";
+import regrouppng from "../assets/social-icons/regroup.png";
+import savorfoodpng from "../assets/social-icons/savorfood.png";
+import shoecompanypng from "../assets/social-icons/shoecompany.png";
+import skilinepng from "../assets/social-icons/skiline.png";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -592,6 +644,36 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "lidl":
       icon = <LidlIcon color={socialNetworks.lidl.color} />;
       break;
+    case "adobe":
+      icon = <AdobeIcon color={socialNetworks.adobe.color} />;
+      break;
+    case "bandlab":
+      icon = <BandlabIcon color={socialNetworks.bandlab.color} />;
+      break;
+    case "castbox":
+      icon = <CastboxIcon color={socialNetworks.castbox.color} />;
+      break;
+    case "coda":
+      icon = <CodaIcon color={socialNetworks.coda.color} />;
+      break;
+    case "doordash":
+      icon = <DoorDashIcon color={socialNetworks.doordash.color} />;
+      break;
+    case "ebay":
+      icon = <EbayIcon color={socialNetworks.ebay.color} />;
+      break;
+    case "groupme":
+      icon = <GroupMeIcon color={socialNetworks.groupme.color} />;
+      break;
+    case "napster":
+      icon = <NapsterIcon color={socialNetworks.napster.color} />;
+      break;
+    case "paytm":
+      icon = <PaytmIcon color={socialNetworks.paytm.color} />;
+      break;
+    case "pinetwork":
+      icon = <PiNetworkIcon color={socialNetworks.pinetwork.color} />;
+      break;
 
     case "protonmail":
       icon = <img src={protonmailsvg} alt="ProtonMail" />;
@@ -849,6 +931,132 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "chime":
       icon = <img src={chimepng} alt="Chime" />;
+      break;
+    case "blink":
+      icon = <img src={blinksvg} alt="Blink" />;
+      break;
+    case "anghami":
+      icon = <img src={anghamisvg} alt="Anghami" />;
+      break;
+    case "att":
+      icon = <img src={attsvg} alt="AT&T" />;
+      break;
+    case "bajao":
+      icon = <img src={bajaopng} alt="Bajao" />;
+      break;
+    case "callapp":
+      icon = <img src={callapppng} alt="CallApp" />;
+      break;
+    case "catch":
+      icon = <img src={catchpng} alt="Catch" />;
+      break;
+    case "costar":
+      icon = <img src={costarpng} alt="Costar" />;
+      break;
+    case "cricheroes":
+      icon = <img src={cricheroespng} alt="CricHeroes" />;
+      break;
+    case "cricwick":
+      icon = <img src={cricwickpng} alt="Cricwick" />;
+      break;
+    case "dailytelegraph":
+      icon = <img src={dailytelegraphpng} alt="Daily Telegraph" />;
+      break;
+    case "distiller":
+      icon = <img src={distillerpng} alt="Distiller" />;
+      break;
+    case "easypaisa":
+      icon = <img src={easypaisapng} alt="EasyPaisa" />;
+      break;
+    case "explurger":
+      icon = <img src={explurgerpng} alt="Explurger" />;
+      break;
+    case "familylocator":
+      icon = <img src={familylocatorpng} alt="Family Locator" />;
+      break;
+    case "fiton":
+      icon = <img src={fitonpng} alt="FitOn" />;
+      break;
+    case "fishangler":
+      icon = <img src={fishanglerpng} alt="FishAngler" />;
+      break;
+    case "fittr":
+      icon = <img src={fittrpng} alt="Fittr" />;
+      break;
+    case "flock":
+      icon = <img src={flockpng} alt="Flock" />;
+      break;
+    case "golfnow":
+      icon = <img src={golfnowpng} alt="GolfNow" />;
+      break;
+    case "habitshare":
+      icon = <img src={habitsharepng} alt="HabitShare" />;
+      break;
+    case "halfords":
+      icon = <img src={halfordssvg} alt="Halfords" />;
+      break;
+    case "jazzcash":
+      icon = <img src={jazzcashpng} alt="JazzCash" />;
+      break;
+    case "joinr":
+      icon = <img src={joinrpng} alt="Joinr" />;
+      break;
+    case "lapse":
+      icon = <img src={lapsepng} alt="Lapse" />;
+      break;
+    case "libravatar":
+      icon = <img src={libravatarpng} alt="Libravatar" />;
+      break;
+    case "likewise":
+      icon = <img src={likewisepng} alt="Likewise" />;
+      break;
+    case "lineleap":
+      icon = <img src={lineleappng} alt="LineLeap" />;
+      break;
+    case "lovense":
+      icon = <img src={lovensepng} alt="Lovense" />;
+      break;
+    case "medaltv":
+      icon = <img src={medaltvpng} alt="MedalTV" />;
+      break;
+    case "offtop":
+      icon = <img src={offtoppng} alt="Offtop" />;
+      break;
+    case "omada":
+      icon = <img src={omadapng} alt="Omada" />;
+      break;
+    case "pitaya":
+      icon = <img src={pitayapng} alt="Pitaya" />;
+      break;
+    case "playpark":
+      icon = <img src={playparkjpg} alt="PlayPark" />;
+      break;
+    case "playtomic":
+      icon = <img src={playtomicpng} alt="Playtomic" />;
+      break;
+    case "planetfitness":
+      icon = <img src={planetfitnesspng} alt="Planet Fitness" />;
+      break;
+    case "poe":
+      icon = <img src={poepng} alt="Poe" />;
+      break;
+    case "poshmark":
+      icon = <img src={poshmarkpng} alt="Poshmark" />;
+      break;
+    case "reclip":
+      icon = <img src={reclippng} alt="Reclip" />;
+      break;
+    case "regroup":
+      icon = <img src={regrouppng} alt="Regroup" />;
+      break;
+    case "savorfood":
+      icon = <img src={savorfoodpng} alt="SavorFood" />;
+      break;
+    case "shoescompany":
+      icon = <img src={shoecompanypng} alt="ShoesCompany" />;
+      break;
+    case "skiline":
+      icon = <img src={skilinepng} alt="SkiLine" />;
       break;
 
     default:
