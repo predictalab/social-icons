@@ -42,6 +42,7 @@ import {
   FaDailymotion as DailymotionIcon,
   FaGlobe as GlobeIcon,
   FaRunning as MapMyRunIcon,
+  FaNapster as NapsterIcon,
 } from "react-icons/fa";
 import {
   FaXTwitter as TwitterXIcon,
@@ -111,7 +112,6 @@ import {
   SiDoordash as DoorDashIcon,
   SiEbay as EbayIcon,
   SiGroupme as GroupMeIcon,
-  SiNapster as NapsterIcon,
   SiPaytm as PaytmIcon,
   SiPinetwork as PiNetworkIcon,
   SiSololearn as SoloLearnIcon,
