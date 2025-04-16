@@ -287,6 +287,8 @@ import wayfairwebp from "../assets/social-icons/wayfair.webp";
 import winendinepng from "../assets/social-icons/winendine.png";
 import wokiiwebp from "../assets/social-icons/wokii.webp";
 import zenlywebp from "../assets/social-icons/zenly.webp";
+import elsawebp from "../assets/social-icons/elsa.webp";
+import famappwepb from "../assets/social-icons/famapp.webp";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -1129,6 +1131,12 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "zenly":
       icon = <img src={zenlywebp} alt="Zenly" />;
+      break;
+    case "elsa":
+      icon = <img src={elsawebp} alt="Elsa" />;
+      break;
+    case "fam":
+      icon = <img src={famappwepb} alt="FamApp" />;
       break;
 
     default:

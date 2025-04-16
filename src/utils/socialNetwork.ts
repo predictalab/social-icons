@@ -337,13 +337,13 @@ export const socialNetworks: socialNetworkType = {
     name: "Easypaisa",
   },
   ebay: { color: "#106AD4", category: "ecommerce", name: "eBay" },
-  elsa: { color: "#F40009", category: "other", name: "Elsa" },
+  elsa: { color: "#39AB51", category: "other", name: "Elsa" },
   explurger: {
     color: "#1150B3",
     category: "other",
     name: "Explurger",
   },
-  fam: { color: "#000000", category: "other", name: "Fam" },
+  fam: { color: "#FDA31F", category: "finance", name: "Fam" },
   familylocator: {
     color: "#2570EC",
     category: "other",
