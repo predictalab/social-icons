@@ -114,6 +114,11 @@ import {
   SiNapster as NapsterIcon,
   SiPaytm as PaytmIcon,
   SiPinetwork as PiNetworkIcon,
+  SiSololearn as SoloLearnIcon,
+  SiUntappd as UntappdIcon,
+  SiVsco as VscoIcon,
+  SiW3Schools as W3SchoolsIcon,
+  SiZapier as ZapierIcon,
 } from "react-icons/si";
 import { GrBike } from "react-icons/gr";
 import { RiRobot2Fill as BotIcon } from "react-icons/ri";
@@ -269,6 +274,19 @@ import regrouppng from "../assets/social-icons/regroup.png";
 import savorfoodpng from "../assets/social-icons/savorfood.png";
 import shoecompanypng from "../assets/social-icons/shoecompany.png";
 import skilinepng from "../assets/social-icons/skiline.png";
+import sportxjazzpng from "../assets/social-icons/sportxjazz.png";
+import superlocalpng from "../assets/social-icons/superlocal.png";
+import tapmadpng from "../assets/social-icons/tapmad.png";
+import tellonympng from "../assets/social-icons/tellonym.png";
+import templatemonsterjpg from "../assets/social-icons/templatemonster.jpg";
+import tokeechatwebp from "../assets/social-icons/tokeechat.webp";
+import toneituppng from "../assets/social-icons/toneitup.png";
+import viewcallerpng from "../assets/social-icons/viewcaller.png";
+import vibeswebp from "../assets/social-icons/vibes.webp";
+import wayfairwebp from "../assets/social-icons/wayfair.webp";
+import winendinepng from "../assets/social-icons/winendine.png";
+import wokiiwebp from "../assets/social-icons/wokii.webp";
+import zenlywebp from "../assets/social-icons/zenly.webp";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -674,6 +692,21 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "pinetwork":
       icon = <PiNetworkIcon color={socialNetworks.pinetwork.color} />;
       break;
+    case "sololearn":
+      icon = <SoloLearnIcon color={socialNetworks.sololearn.color} />;
+      break;
+    case "untappd":
+      icon = <UntappdIcon color={socialNetworks.untappd.color} />;
+      break;
+    case "vsco":
+      icon = <VscoIcon color={socialNetworks.vsco.color} />;
+      break;
+    case "w3schools":
+      icon = <W3SchoolsIcon color={socialNetworks.w3schools.color} />;
+      break;
+    case "zapier":
+      icon = <ZapierIcon color={socialNetworks.zapier.color} />;
+      break;
 
     case "protonmail":
       icon = <img src={protonmailsvg} alt="ProtonMail" />;
@@ -1057,6 +1090,45 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "skiline":
       icon = <img src={skilinepng} alt="SkiLine" />;
+      break;
+    case "sportxjazz":
+      icon = <img src={sportxjazzpng} alt="SportJazz" />;
+      break;
+    case "superlocal":
+      icon = <img src={superlocalpng} alt="SuperLocal" />;
+      break;
+    case "tapmad":
+      icon = <img src={tapmadpng} alt="TapMad" />;
+      break;
+    case "tellonym":
+      icon = <img src={tellonympng} alt="Tellonym" />;
+      break;
+    case "templatemonster":
+      icon = <img src={templatemonsterjpg} alt="TemplateMonster" />;
+      break;
+    case "tokeechat":
+      icon = <img src={tokeechatwebp} alt="TokeeChat" />;
+      break;
+    case "toneitup":
+      icon = <img src={toneituppng} alt="ToneItUp" />;
+      break;
+    case "viewcaller":
+      icon = <img src={viewcallerpng} alt="ViewCall" />;
+      break;
+    case "vibes":
+      icon = <img src={vibeswebp} alt="Vibes" />;
+      break;
+    case "wayfair":
+      icon = <img src={wayfairwebp} alt="Wayfair" />;
+      break;
+    case "winendine":
+      icon = <img src={winendinepng} alt="Winendine" />;
+      break;
+    case "wokii":
+      icon = <img src={wokiiwebp} alt="Wokii" />;
+      break;
+    case "zenly":
+      icon = <img src={zenlywebp} alt="Zenly" />;
       break;
 
     default:
