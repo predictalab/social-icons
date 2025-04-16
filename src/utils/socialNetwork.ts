@@ -1,7 +1,7 @@
 import { SourceTypes } from "../types/sourceTypes";
 
 type socialNetworkType = Record<
-  SourceTypes,
+  string,
   {
     color: string;
     name?: string;
