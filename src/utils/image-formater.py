@@ -20,7 +20,6 @@ def process_image(file_path, output_path):
         with Image.open(file_path) as img:
             # Ne traiter que les images dont l'une des dimensions est supérieure à 150 pixels
             if img.width <= 150 and img.height <= 150:
-                print(f"Image ignorée (taille inférieure ou égale à 150px) : {file_path}")
                 return
             
             # Redimensionner en conservant le ratio pour que ni la largeur ni la hauteur ne dépasse 150 pixels
