@@ -202,7 +202,7 @@ export const socialNetworks: socialNetworkType = {
   line: { color: "#00C300", category: "messaging_app" },
   jabber: { color: "#FF7800", category: "messaging_app" },
   matrix: { color: "#000000", category: "messaging_app" },
-  pastebin: { color: "#02458E", category: "other" },
+  pastebin: { color: "#02458E", category: "paste" },
   gist: { color: "#161414", category: "programming" },
   leakbase: { color: "#1b1c15", category: "hacking", name: "LeakBase" },
   raidforums: { color: "#88748f", category: "hacking", name: "RaidForums" },
@@ -260,15 +260,15 @@ export const socialNetworks: socialNetworkType = {
   crackedio: { color: "#036B8E", category: "hacking", name: "Cracked.io" },
   psbdmp: { color: "#262557", category: "paste", name: "PSBDMP" },
   flare: { color: "#5361F2", category: "search_engine" },
-  leaklookup: { color: "#293042", category: "other", name: "Leak-Lookup" },
+  leaklookup: { color: "#293042", category: "hacking", name: "Leak-Lookup" },
   telemetry: { color: "#030711", category: "other" },
-  whoisxml: { color: "#3598FB", category: "other", name: "WhoisXML" },
+  whoisxml: { color: "#3598FB", category: "search_engine", name: "WhoisXML" },
   vinted: { color: "#147B87", category: "ecommerce" },
   replit: { color: "#FD5401", category: "programming" },
   mapmyrun: { color: "#029EEA", category: "sport", name: "Map My Run" },
   komoot: { color: "#76B52E", category: "sport" },
   microsoft: { color: "#177CD8", category: "social" },
-  cashapp: { color: "#04E012", category: "finance", name: "Case App" },
+  cashapp: { color: "#04E012", category: "finance", name: "Cash App" },
   revolut: { color: "#272D35", category: "finance" },
   mailru: { color: "#0077FF", category: "social", name: "Mail.ru" },
   newyorktimes: {
@@ -285,65 +285,40 @@ export const socialNetworks: socialNetworkType = {
   indigo: { color: "#001B94", category: "social" },
   zepeto: { color: "#5D46FF", category: "social" },
   lidl: { color: "#1D4F90", category: "ecommerce" },
-  sportstracker: {
-    color: "#FF5933",
-    category: "sport",
-    name: "Sport Tracker",
-  },
+  sportstracker: { color: "#FF5933", category: "sport", name: "Sport Tracker" },
   chime: { color: "#20C074", category: "finance" },
-  adobe: { color: "#FF0000", category: "other", name: "Adobe" },
-  anghami: { color: "#7C52D5", category: "streaming", name: "Anghami" },
+  adobe: { color: "#FF0000", category: "other" },
+  anghami: { color: "#7C52D5", category: "streaming" },
   att: { color: "#1DACE2", category: "other", name: "AT&T" },
-  bajao: {
-    color: "#B92373",
-    category: "streaming",
-  },
-  bandlab: { color: "#EA2C17", category: "streaming", name: "BandLab" },
-  blink: { color: "#1A594B", category: "social", name: "Blink" },
-  bush: { color: "#000000", category: "social", name: "Bush" },
+  bajao: { color: "#B92373", category: "streaming" },
+  bandlab: { color: "#EA2C17", category: "streaming" },
+  blink: { color: "#1A594B", category: "social" },
+  bush: { color: "#000000", category: "social" },
   callapp: { color: "#098DF7", category: "social", name: "CallApp" },
-  castbox: {
-    color: "#F36337",
-    category: "streaming",
-    name: "Castbox.fm",
-  },
-  catch: { color: "#000195", category: "other", name: "Catch" },
-  coda: { color: "#E65728", category: "other", name: "Coda" },
+  castbox: { color: "#F36337", category: "streaming", name: "Castbox.fm" },
+  catch: { color: "#000195", category: "ecommerce" },
+  coda: { color: "#E65728", category: "other" },
   costar: { color: "#696969", category: "other", name: "Co-Star" },
-  cricheroes: {
-    color: "#AD2011",
-    category: "sport",
-    name: "CricHeroes",
-  },
-  cricwick: {
-    color: "#C5292E",
-    category: "sport",
-    name: "CricWick",
-  },
+  cricheroes: { color: "#AD2011", category: "sport", name: "CricHeroes" },
+  cricwick: { color: "#C5292E", category: "sport", name: "CricWick" },
   dailytelegraph: {
     color: "#0056B7",
     category: "other",
     name: "Daily Telegraph",
   },
-  distiller: {
-    color: "#F25A41",
-    category: "other",
-    name: "Distiller",
-  },
-  doordash: { color: "#DE4D2E", category: "other", name: "DoorDash" },
+  distiller: { color: "#F25A41", category: "social" },
+  doordash: { color: "#DE4D2E", category: "ecommerce", name: "DoorDash" },
   easypaisa: {
     color: "#009688",
     category: "finance",
-    name: "Easypaisa",
   },
   ebay: { color: "#106AD4", category: "ecommerce", name: "eBay" },
-  elsa: { color: "#39AB51", category: "other", name: "Elsa" },
+  elsa: { color: "#39AB51", category: "other" },
   explurger: {
     color: "#1150B3",
-    category: "other",
-    name: "Explurger",
+    category: "social",
   },
-  fam: { color: "#FDA31F", category: "finance", name: "Fam" },
+  fam: { color: "#FDA31F", category: "finance" },
   familylocator: {
     color: "#2570EC",
     category: "other",
@@ -354,8 +329,8 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "FavIcon",
   },
-  fiton: { color: "#3547AD", category: "sport", name: "Fiton" },
-  fittr: { color: "#1C352A", category: "sport", name: "Fittr" },
+  fiton: { color: "#3547AD", category: "sport" },
+  fittr: { color: "#1C352A", category: "sport" },
   fishangler: {
     color: "#09637B",
     category: "sport",
@@ -366,7 +341,7 @@ export const socialNetworks: socialNetworkType = {
     category: "sport",
     name: "Fishbrain",
   },
-  flock: { color: "#10BE52", category: "other", name: "Flock" },
+  flock: { color: "#10BE52", category: "messaging_app" },
   golfnow: {
     color: "#1DAF4C",
     category: "sport",
@@ -379,13 +354,11 @@ export const socialNetworks: socialNetworkType = {
   },
   habitshare: {
     color: "#1C96A9",
-    category: "other",
-    name: "Habitshare",
+    category: "social",
   },
   halfords: {
     color: "#FF9F18",
     category: "ecommerce",
-    name: "Halfords",
   },
   jazzbalance: {
     color: "#E91E63",
@@ -397,17 +370,15 @@ export const socialNetworks: socialNetworkType = {
     category: "finance",
     name: "Jazz Cash",
   },
-  joinr: { color: "#161616", category: "other", name: "Joinr" },
-  lapse: { color: "#FF8E00", category: "social", name: "Lapse" },
+  joinr: { color: "#161616", category: "social" },
+  lapse: { color: "#FF8E00", category: "social" },
   libravatar: {
     color: "#37B7D7",
     category: "other",
-    name: "Libavatar",
   },
   likewise: {
     color: "#FD7648",
-    category: "other",
-    name: "Likewise",
+    category: "social",
   },
   lineleap: {
     color: "#0882FF",
@@ -417,7 +388,6 @@ export const socialNetworks: socialNetworkType = {
   lovense: {
     color: "#FF2D8A",
     category: "adult",
-    name: "Lovense",
   },
   medaltv: {
     color: "#621096",
@@ -427,26 +397,23 @@ export const socialNetworks: socialNetworkType = {
   melissa: {
     color: "#FF4081",
     category: "other",
-    name: "Melissa",
   },
   mindbody: {
     color: "#00BFA5",
     category: "other",
-    name: "Mindbody",
   },
   napster: {
     color: "#2A5FFF",
     category: "streaming",
-    name: "Napster",
   },
   numtrace: {
     color: "#000000",
     category: "other",
     name: "NumTrace",
   },
-  offtop: { color: "#080808", category: "other", name: "Offtop" },
-  omada: { color: "#0C7271", category: "other", name: "Omada" },
-  paytm: { color: "#273971", category: "finance", name: "Paytm" },
+  offtop: { color: "#080808", category: "social" },
+  omada: { color: "#0C7271", category: "programming" },
+  paytm: { color: "#273971", category: "finance" },
   pinetwork: {
     color: "#FCB44A",
     category: "finance",
@@ -455,7 +422,6 @@ export const socialNetworks: socialNetworkType = {
   pitaya: {
     color: "#F306E8",
     category: "social",
-    name: "Pitaya",
   },
   playpark: {
     color: "#00A7E1",
@@ -465,7 +431,6 @@ export const socialNetworks: socialNetworkType = {
   playtomic: {
     color: "#345FFF",
     category: "sport",
-    name: "Playtomic",
   },
   planetfitness: {
     color: "#762A85",
@@ -476,32 +441,27 @@ export const socialNetworks: socialNetworkType = {
   poshmark: {
     color: "#7F0254",
     category: "ecommerce",
-    name: "Poshmark",
   },
-  reclip: { color: "#F7852B", category: "other", name: "Reclip" },
+  reclip: { color: "#F7852B", category: "other" },
   regroup: {
     color: "#139162",
     category: "other",
-    name: "Regroup",
   },
   savorfood: {
     color: "#992295",
     category: "other",
-    name: "Savorfood",
   },
   shoescompany: {
     color: "#000000",
     category: "ecommerce",
-    name: "ShoesCompany",
   },
   skiline: {
     color: "#B90068",
     category: "sport",
-    name: "Skiline",
   },
   sololearn: {
     color: "#F3185C",
-    category: "other",
+    category: "programming",
     name: "SoloLearn",
   },
   sportxjazz: {
@@ -512,21 +472,18 @@ export const socialNetworks: socialNetworkType = {
   superlocal: {
     color: "#146EFB",
     category: "other",
-    name: "Superlocal",
   },
   tapmad: {
     color: "#2BB06A",
     category: "streaming",
-    name: "Tapmad",
   },
   tellonym: {
     color: "#FF015A",
-    category: "other",
-    name: "Tellonym",
+    category: "messaging_app",
   },
   templatemonster: {
     color: "#1A2A43",
-    category: "other",
+    category: "ecommerce",
     name: "TemplateMonster",
   },
   tokeechat: {
@@ -547,42 +504,35 @@ export const socialNetworks: socialNetworkType = {
   vibes: {
     color: "#B4A7D2",
     category: "other",
-    name: "Vibes",
   },
-  vsco: { color: "#111111", category: "other", name: "VSCO" },
+  vsco: { color: "#111111", category: "social", name: "VSCO" },
   winendine: {
     color: "#073B72",
     category: "social",
-    name: "Winendine",
   },
   w3schools: {
     color: "#20AC71",
-    category: "other",
+    category: "social",
     name: "W3Schools",
   },
   wokii: {
     color: "#F9CC65",
     category: "finance",
-    name: "Wokii",
   },
   zapier: {
     color: "#FF5813",
     category: "programming",
-    name: "Zapier",
   },
   zenly: {
     color: "#F04F5B",
-    category: "other",
-    name: "Zenly",
+    category: "social",
   },
   untappd: {
     color: "#FFC82C",
-    category: "other",
-    name: "Untappd",
+    category: "social",
   },
   wayfair: {
     color: "#7D19A1",
     category: "ecommerce",
-    name: "Wayfair",
   },
 };
