@@ -438,18 +438,12 @@ export const socialNetworks: socialNetworkType = {
     name: "Planet Fitness",
   },
   poe: { color: "#E648EB", category: "programming" },
-  poshmark: {
-    color: "#7F0254",
-    category: "ecommerce",
-  },
-  reclip: { color: "#F7852B", category: "other" },
-  regroup: {
-    color: "#139162",
-    category: "other",
-  },
+  poshmark: { color: "#7F0254", category: "ecommerce" },
+  reclip: { color: "#F7852B", category: "social" },
+  regroup: { color: "#139162", category: "gaming" },
   savorfood: {
     color: "#992295",
-    category: "other",
+    category: "social",
   },
   shoescompany: {
     color: "#000000",
@@ -503,7 +497,7 @@ export const socialNetworks: socialNetworkType = {
   },
   vibes: {
     color: "#B4A7D2",
-    category: "other",
+    category: "social",
   },
   vsco: { color: "#111111", category: "social", name: "VSCO" },
   winendine: {
