@@ -530,4 +530,13 @@ export const socialNetworks: socialNetworkType = {
     color: "#7D19A1",
     category: "ecommerce",
   },
+  samsunghealth: {
+    color: "#1CCD92",
+    category: "sport",
+    name: "Samsung Health",
+  },
+  wordfeud: {
+    color: "#1A375F",
+    category: "gaming",
+  },
 };

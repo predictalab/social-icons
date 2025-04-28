@@ -290,6 +290,8 @@ import zenlywebp from "../assets/social-icons/zenly.webp";
 import elsawebp from "../assets/social-icons/elsa.webp";
 import famappwepb from "../assets/social-icons/famapp.webp";
 import mindbodysvg from "../assets/social-icons/mindbody.svg";
+import samsunghealthpng from "../assets/social-icons/samsunghealth.png";
+import wordfeudpng from "../assets/social-icons/wordfeud.png";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -1141,6 +1143,12 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "mindbody":
       icon = <img src={mindbodysvg} alt="MindBody" />;
+      break;
+    case "samsunghealth":
+      icon = <img src={samsunghealthpng} alt="Samsung Health" />;
+      break;
+    case "wordfeud":
+      icon = <img src={wordfeudpng} alt="WordFeud" />;
       break;
 
     default:

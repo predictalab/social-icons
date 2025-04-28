@@ -286,4 +286,6 @@ export type SourceTypes =
   | "w3schools"
   | "wokii"
   | "zapier"
-  | "zenly";
+  | "zenly"
+  | "samsunghealth"
+  | "wordfeud";
