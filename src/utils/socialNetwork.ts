@@ -399,7 +399,7 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
   },
   mindbody: {
-    color: "#00BFA5",
+    color: "#AAFFD8",
     category: "other",
   },
   napster: {

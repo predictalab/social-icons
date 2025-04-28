@@ -289,6 +289,7 @@ import wokiiwebp from "../assets/social-icons/wokii.webp";
 import zenlywebp from "../assets/social-icons/zenly.webp";
 import elsawebp from "../assets/social-icons/elsa.webp";
 import famappwepb from "../assets/social-icons/famapp.webp";
+import mindbodysvg from "../assets/social-icons/mindbody.svg";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -1137,6 +1138,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "fam":
       icon = <img src={famappwepb} alt="FamApp" />;
+      break;
+    case "mindbody":
+      icon = <img src={mindbodysvg} alt="MindBody" />;
       break;
 
     default:
