@@ -249,7 +249,7 @@ export type SourceTypes =
   | "likewise"
   | "lineleap"
   | "lovense"
-  | "medaltv"
+  | "medal"
   | "melissa"
   | "mindbody"
   | "napster"

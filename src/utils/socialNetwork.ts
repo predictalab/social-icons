@@ -389,10 +389,10 @@ export const socialNetworks: socialNetworkType = {
     color: "#FF2D8A",
     category: "adult",
   },
-  medaltv: {
+  medal: {
     color: "#621096",
     category: "streaming",
-    name: "Medal.tv",
+    name: "Medal",
   },
   melissa: {
     color: "#FF4081",

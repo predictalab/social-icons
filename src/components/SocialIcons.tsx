@@ -1051,8 +1051,8 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "lovense":
       icon = <img src={lovensepng} alt="Lovense" />;
       break;
-    case "medaltv":
-      icon = <img src={medaltvpng} alt="MedalTV" />;
+    case "medal":
+      icon = <img src={medaltvpng} alt="Medal" />;
       break;
     case "offtop":
       icon = <img src={offtoppng} alt="Offtop" />;
