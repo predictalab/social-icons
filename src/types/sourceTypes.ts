@@ -267,7 +267,7 @@ export type SourceTypes =
   | "reclip"
   | "regroup"
   | "savorfood"
-  | "shoescompany"
+  | "theshoecompany"
   | "skiline"
   | "sololearn"
   | "sportxjazz"

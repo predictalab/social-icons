@@ -1087,8 +1087,8 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
     case "savorfood":
       icon = <img src={savorfoodpng} alt="SavorFood" />;
       break;
-    case "shoescompany":
-      icon = <img src={shoecompanypng} alt="ShoesCompany" />;
+    case "theshoecompany":
+      icon = <img src={shoecompanypng} alt="TheShoeCompany" />;
       break;
     case "skiline":
       icon = <img src={skilinepng} alt="SkiLine" />;

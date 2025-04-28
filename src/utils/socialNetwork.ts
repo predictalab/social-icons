@@ -445,9 +445,10 @@ export const socialNetworks: socialNetworkType = {
     color: "#992295",
     category: "social",
   },
-  shoescompany: {
+  theshoecompany: {
     color: "#000000",
     category: "ecommerce",
+    name: "TheShoeCompany",
   },
   skiline: {
     color: "#B90068",
