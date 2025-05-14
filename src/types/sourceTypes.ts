@@ -288,4 +288,7 @@ export type SourceTypes =
   | "zapier"
   | "zenly"
   | "samsunghealth"
-  | "wordfeud";
+  | "wordfeud"
+  | "fetchamericasreward"
+  | "twilio"
+  | "classpass";

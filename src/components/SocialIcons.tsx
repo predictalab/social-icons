@@ -119,6 +119,7 @@ import {
   SiVsco as VscoIcon,
   SiW3Schools as W3SchoolsIcon,
   SiZapier as ZapierIcon,
+  SiTwilio as TwilioIcon,
 } from "react-icons/si";
 import { GrBike } from "react-icons/gr";
 import { RiRobot2Fill as BotIcon } from "react-icons/ri";
@@ -292,6 +293,8 @@ import famappwepb from "../assets/social-icons/famapp.webp";
 import mindbodysvg from "../assets/social-icons/mindbody.svg";
 import samsunghealthpng from "../assets/social-icons/samsunghealth.png";
 import wordfeudpng from "../assets/social-icons/wordfeud.png";
+import fetchwepb from "../assets/social-icons/fetch.webp";
+import classpasspng from "../assets/social-icons/classpass.png";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -711,6 +714,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "zapier":
       icon = <ZapierIcon color={socialNetworks.zapier.color} />;
+      break;
+    case "twilio":
+      icon = <TwilioIcon color={socialNetworks.twilio.color} />;
       break;
 
     case "protonmail":
@@ -1149,6 +1155,12 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "wordfeud":
       icon = <img src={wordfeudpng} alt="WordFeud" />;
+      break;
+    case "classpass":
+      icon = <img src={classpasspng} alt="ClassPass" />;
+      break;
+    case "fetchamericasreward":
+      icon = <img src={fetchwepb} alt="Fetch" />;
       break;
 
     default:

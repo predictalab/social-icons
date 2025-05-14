@@ -539,4 +539,19 @@ export const socialNetworks: socialNetworkType = {
     color: "#1A375F",
     category: "gaming",
   },
+  classpass: {
+    color: "#0156FF",
+    category: "sport",
+    name: "ClassPass",
+  },
+  fetchamericasreward: {
+    color: "#F45A5C",
+    category: "ecommerce",
+    name: "Fetch",
+  },
+  twilio: {
+    color: "#F22E46",
+    category: "programming",
+    name: "Twilio",
+  },
 };
