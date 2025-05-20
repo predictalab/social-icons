@@ -554,4 +554,17 @@ export const socialNetworks: socialNetworkType = {
     category: "programming",
     name: "Twilio",
   },
+  aliexpress: {
+    color: "#E72B51",
+    category: "ecommerce",
+    name: "AliExpress",
+  },
+  telerik: {
+    color: "#5DE600",
+    category: "programming",
+  },
+  typeform: {
+    color: "#262626",
+    category: "programming",
+  },
 };

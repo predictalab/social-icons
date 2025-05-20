@@ -295,6 +295,9 @@ import samsunghealthpng from "../assets/social-icons/samsunghealth.png";
 import wordfeudpng from "../assets/social-icons/wordfeud.png";
 import fetchwepb from "../assets/social-icons/fetch.webp";
 import classpasspng from "../assets/social-icons/classpass.png";
+import aliexpresswebp from "../assets/social-icons/aliexpress.webp";
+import telerikpng from "../assets/social-icons/telerik.png";
+import typeformjpg from "../assets/social-icons/typeform.jpg";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -1161,6 +1164,15 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "fetchamericasreward":
       icon = <img src={fetchwepb} alt="Fetch" />;
+      break;
+    case "aliexpress":
+      icon = <img src={aliexpresswebp} alt="AliExpress" />;
+      break;
+    case "telerik":
+      icon = <img src={telerikpng} alt="Telerik" />;
+      break;
+    case "typeform":
+      icon = <img src={typeformjpg} alt="Typeform" />;
       break;
 
     default:

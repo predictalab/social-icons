@@ -289,6 +289,9 @@ export type SourceTypes =
   | "zenly"
   | "samsunghealth"
   | "wordfeud"
+  | "aliexpress"
+  | "telerik"
+  | "typeform"
   | "fetchamericasreward"
   | "twilio"
   | "classpass";
