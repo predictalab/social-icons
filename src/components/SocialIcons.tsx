@@ -298,6 +298,8 @@ import classpasspng from "../assets/social-icons/classpass.png";
 import aliexpresswebp from "../assets/social-icons/aliexpress.webp";
 import telerikpng from "../assets/social-icons/telerik.png";
 import typeformjpg from "../assets/social-icons/typeform.jpg";
+import fishbrainwebp from "../assets/social-icons/fishbrain.webp";
+import sunowebp from "../assets/social-icons/suno.webp";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -1173,6 +1175,12 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "typeform":
       icon = <img src={typeformjpg} alt="Typeform" />;
+      break;
+    case "fishbrain":
+      icon = <img src={fishbrainwebp} alt="Fishbrain" />;
+      break;
+    case "suno":
+      icon = <img src={sunowebp} alt="Suno" />;
       break;
 
     default:

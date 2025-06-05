@@ -294,4 +294,6 @@ export type SourceTypes =
   | "typeform"
   | "fetchamericasreward"
   | "twilio"
-  | "classpass";
+  | "classpass"
+  | "suno"
+  | "fishbrain";

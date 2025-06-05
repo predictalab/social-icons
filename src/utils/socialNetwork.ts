@@ -336,11 +336,6 @@ export const socialNetworks: socialNetworkType = {
     category: "sport",
     name: "FishAngler",
   },
-  fishbrain: {
-    color: "#FF5722",
-    category: "sport",
-    name: "Fishbrain",
-  },
   flock: { color: "#10BE52", category: "messaging_app" },
   golfnow: {
     color: "#1DAF4C",
@@ -566,5 +561,13 @@ export const socialNetworks: socialNetworkType = {
   typeform: {
     color: "#262626",
     category: "programming",
+  },
+  fishbrain: {
+    color: "#0D3155",
+    category: "sport",
+  },
+  suno: {
+    color: "#FF7717",
+    category: "other",
   },
 };
