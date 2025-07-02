@@ -300,7 +300,7 @@ import telerikpng from "../assets/social-icons/telerik.png";
 import typeformjpg from "../assets/social-icons/typeform.jpg";
 import fishbrainwebp from "../assets/social-icons/fishbrain.webp";
 import sunowebp from "../assets/social-icons/suno.webp";
-import tokeewepb from "../assets/social-icons/tokee.webp";
+import tokeewebp from "../assets/social-icons/tokee.webp";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
