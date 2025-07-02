@@ -570,4 +570,9 @@ export const socialNetworks: socialNetworkType = {
     color: "#FF7717",
     category: "other",
   },
+  tokee: {
+    color: "#983B99",
+    category: "messaging_app",
+    name: "Tokee",
+  },
 };

@@ -296,4 +296,5 @@ export type SourceTypes =
   | "twilio"
   | "classpass"
   | "suno"
-  | "fishbrain";
+  | "fishbrain"
+  | "tokee";
