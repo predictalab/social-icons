@@ -303,6 +303,7 @@ import fishbrainwebp from "../assets/social-icons/fishbrain.webp";
 import sunowebp from "../assets/social-icons/suno.webp";
 import tokeewebp from "../assets/social-icons/tokee.webp";
 import lushapng from "../assets/social-icons/lusha.png";
+import ransomwarepng from "../assets/social-icons/ransomware.png";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -1193,6 +1194,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "lusha":
       icon = <img src={lushapng} alt="Lusha" />;
+      break;
+    case "ransomware":
+      icon = <img src={ransomwarepng} alt="Ransomware" />;
       break;
 
     default:

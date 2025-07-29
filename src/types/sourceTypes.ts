@@ -299,4 +299,5 @@ export type SourceTypes =
   | "fishbrain"
   | "tokee"
   | "lusha"
-  | "baidu";
+  | "baidu"
+  | "ransomware";

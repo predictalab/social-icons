@@ -585,4 +585,9 @@ export const socialNetworks: socialNetworkType = {
     category: "search_engine",
     name: "Baidu",
   },
+  ransomware: {
+    color: "#339D72",
+    category: "search_engine",
+    name: "Ransomware.live",
+  },
 };
