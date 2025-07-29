@@ -120,6 +120,7 @@ import {
   SiW3Schools as W3SchoolsIcon,
   SiZapier as ZapierIcon,
   SiTwilio as TwilioIcon,
+  SiBaidu as BaiduIcon,
 } from "react-icons/si";
 import { GrBike } from "react-icons/gr";
 import { RiRobot2Fill as BotIcon } from "react-icons/ri";
@@ -301,6 +302,7 @@ import typeformjpg from "../assets/social-icons/typeform.jpg";
 import fishbrainwebp from "../assets/social-icons/fishbrain.webp";
 import sunowebp from "../assets/social-icons/suno.webp";
 import tokeewebp from "../assets/social-icons/tokee.webp";
+import lushapng from "../assets/social-icons/lusha.png";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -723,6 +725,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "twilio":
       icon = <TwilioIcon color={socialNetworks.twilio.color} />;
+      break;
+    case "baidu":
+      icon = <BaiduIcon color={socialNetworks.baidu.color} />;
       break;
 
     case "protonmail":
@@ -1185,6 +1190,9 @@ const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
       break;
     case "tokee":
       icon = <img src={tokeewebp} alt="Tokee" />;
+      break;
+    case "lusha":
+      icon = <img src={lushapng} alt="Lusha" />;
       break;
 
     default:

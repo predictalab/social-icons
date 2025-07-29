@@ -575,4 +575,14 @@ export const socialNetworks: socialNetworkType = {
     category: "messaging_app",
     name: "Tokee",
   },
+  lusha: {
+    color: "#610EFF",
+    category: "social",
+    name: "Lusha",
+  },
+  baidu: {
+    color: "#2219D6",
+    category: "search_engine",
+    name: "Baidu",
+  },
 };

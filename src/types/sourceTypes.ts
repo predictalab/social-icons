@@ -297,4 +297,6 @@ export type SourceTypes =
   | "classpass"
   | "suno"
   | "fishbrain"
-  | "tokee";
+  | "tokee"
+  | "lusha"
+  | "baidu";
