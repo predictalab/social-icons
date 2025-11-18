@@ -4,7 +4,9 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import image from "@rollup/plugin-image";
-import packageJson from "./package.json" assert { type: "json" };
+import { readFileSync } from "fs";
+
+const packageJson = JSON.parse(readFileSync("./package.json", "utf-8"));
 
 export default {
   input: "src/index.tsx",
