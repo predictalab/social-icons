@@ -307,6 +307,7 @@ import ransomwarepng from "../assets/social-icons/ransomware.png";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
+import { ReactNode } from "react";
 
 type PropsTypes = { source?: string };
 
@@ -314,8 +315,8 @@ type PropsTypes = { source?: string };
  * @param source Req. a string containing the social network label, ex : 'facebook', 'twitter', etc
  */
 
-const SocialIcons = ({ source }: PropsTypes): JSX.Element | null => {
-  let icon: null | JSX.Element = null;
+const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
+  let icon: null | ReactNode = null;
 
   if (!source) return icon;
 
