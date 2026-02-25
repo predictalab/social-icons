@@ -98,6 +98,7 @@ import {
   SiBandcamp as BandcampIcon,
   SiOkcupid as OkCupidIcon,
   SiReplit as ReplitIcon,
+  SiRoblox as RobloxIcon,
   SiKomoot as KomootIcon,
   SiCashapp as CashAppIcon,
   SiRevolut as RevolutIcon,
@@ -592,6 +593,9 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "nintendo_network":
       icon = <NintendoIcon color={socialNetworks.nintendo_network.color} />;
+      break;
+    case "roblox":
+      icon = <RobloxIcon color={socialNetworks.roblox.color} />;
       break;
     case "tgbot1":
       icon = <BotIcon color={socialNetworks.tgbot1.color} />;

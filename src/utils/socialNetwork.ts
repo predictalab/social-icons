@@ -41,6 +41,7 @@ export const socialNetworks: socialNetworkType = {
   pinterest: { color: "#E60023", category: "social" },
   xbox: { color: "#107C10", category: "gaming" },
   playstation: { color: "#003087", category: "gaming" },
+  roblox: { color: "#000000", category: "gaming", name: "Roblox" },
   mastodon: { color: "#595AFF", category: "social" },
   gitlab: { color: "#FCA121", category: "programming" },
   steam: { color: "#1D487A", category: "gaming" },

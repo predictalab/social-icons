@@ -67,6 +67,7 @@ export type SourceTypes =
   | "picsart"
   | "pinterest"
   | "playstation"
+  | "roblox"
   | "protonmail"
   | "qq"
   | "quora"
