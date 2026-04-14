@@ -51,8 +51,8 @@ import {
   FaDeezer as DeezerIcon,
   FaSquareThreads as ThreadsIcon,
 } from "react-icons/fa6";
+import { Icon } from "@iconify/react";
 import {
-  SiNintendo as NintendoIcon,
   SiVimeo as VimeoIcon,
   SiKick as KickIcon,
   SiPastebin as PastebinIcon,
@@ -62,7 +62,6 @@ import {
   SiGiphy as GiphyIcon,
   SiDisqus as DisqusIcon,
   SiVirustotal as VirusTotalIcon,
-  SiAskfm as AskfmIcon,
   SiDuolingo as DuolingoIcon,
   SiAboutdotme as AboutDotMeIcon,
   SiHaveibeenpwned as HaveIBeenPwnedIcon,
@@ -92,7 +91,6 @@ import {
   SiMessenger as MessengerIcon,
   SiViadeo as ViadeoIcon,
   SiApplemusic as AppleMusicIcon,
-  SiAmazonmusic as AmazonMusicIcon,
   SiAudiomack as AudiomackIcon,
   SiSoundcloud as SoundcloudIcon,
   SiBandcamp as BandcampIcon,
@@ -106,7 +104,6 @@ import {
   SiYelp as YelpIcon,
   SiIndigo as IndigoIcon,
   SiLidl as LidlIcon,
-  SiAdobe as AdobeIcon,
   SiBandlab as BandlabIcon,
   SiCastbox as CastboxIcon,
   SiCoda as CodaIcon,
@@ -135,6 +132,7 @@ import {
 import {
   BiLogoMicrosoftTeams as TeamsIcon,
   BiLogoVenmo as VenmoIcon,
+  BiLogoAdobe as AdobeIcon,
 } from "react-icons/bi";
 import { ImOnedrive as OnedriveIcon } from "react-icons/im";
 import { LiaHashtagSolid as DehashedIcon } from "react-icons/lia";
@@ -445,7 +443,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <SpotifyIcon color={socialNetworks.spotify.color} />;
       break;
     case "askfm":
-      icon = <AskfmIcon color={socialNetworks.askfm.color} />;
+      icon = <Icon icon="simple-icons:askfm" color={socialNetworks.askfm.color} />;
       break;
     case "duolingo":
       icon = <DuolingoIcon color={socialNetworks.duolingo.color} />;
@@ -592,7 +590,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <OdyseeIcon color={socialNetworks.odysee.color} />;
       break;
     case "nintendo_network":
-      icon = <NintendoIcon color={socialNetworks.nintendo_network.color} />;
+      icon = <Icon icon="simple-icons:nintendo" color={socialNetworks.nintendo_network.color} />;
       break;
     case "roblox":
       icon = <RobloxIcon color={socialNetworks.roblox.color} />;
@@ -616,7 +614,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <AppleMusicIcon color={socialNetworks.applemusic.color} />;
       break;
     case "amazonmusic":
-      icon = <AmazonMusicIcon color={socialNetworks.amazonmusic.color} />;
+      icon = <Icon icon="simple-icons:amazonmusic" color={socialNetworks.amazonmusic.color} />;
       break;
     case "audiomack":
       icon = <AudiomackIcon color={socialNetworks.audiomack.color} />;
