@@ -1,156 +1,6 @@
-import {
-  FaFacebookF as FacebookIcon,
-  FaInstagram as InstagramIcon,
-  FaTelegramPlane as TelegramIcon,
-  FaLinkedinIn as LinkedinIcon,
-  FaWhatsapp as WhatsappIcon,
-  FaSkype as SkypeIcon,
-  FaGithub as GithubIcon,
-  FaSnapchatGhost as SnapchatIcon,
-  FaYoutube as YoutubeIcon,
-  FaReddit as RedditIcon,
-  FaPinterest as PinterestIcon,
-  FaXbox as XboxIcon,
-  FaPlaystation as PlaystationIcon,
-  FaMastodon as MastodonIcon,
-  FaVk as VkIcon,
-  FaGitlab as GitlabIcon,
-  FaSteam as SteamIcon,
-  FaKaggle as KaggleIcon,
-  FaTrello as TrelloIcon,
-  FaDocker as DockerIcon,
-  FaTwitch as TwitchIcon,
-  FaMedium as MediumIcon,
-  FaFlickr as FlickrIcon,
-  FaTiktok as TikTokIcon,
-  FaDiscord as DiscordIcon,
-  FaPaypal as PaypalIcon,
-  FaQuora as QuoraIcon,
-  FaPeriscope as PeriscopeIcon,
-  FaPatreon as PatreonIcon,
-  FaSpotify as SpotifyIcon,
-  FaAirbnb as AirbnbIcon,
-  FaFoursquare as FoursquareIcon,
-  FaStrava as StravaIcon,
-  FaChessPawn as ChessComIcon,
-  FaTumblr as TumblrIcon,
-  FaEtsy as EtsyIcon,
-  FaKeybase as KeybaseIcon,
-  FaApple as AppleIcon,
-  FaDropbox as DropboxIcon,
-  FaWeibo as WeiboIcon,
-  FaDailymotion as DailymotionIcon,
-  FaGlobe as GlobeIcon,
-  FaRunning as MapMyRunIcon,
-  FaNapster as NapsterIcon,
-} from "react-icons/fa";
-import {
-  FaXTwitter as TwitterXIcon,
-  FaTwitter as TwitterIcon,
-  FaOdysee as OdyseeIcon,
-  FaDeezer as DeezerIcon,
-  FaSquareThreads as ThreadsIcon,
-} from "react-icons/fa6";
 import { Icon } from "@iconify/react";
-import {
-  SiVimeo as VimeoIcon,
-  SiKick as KickIcon,
-  SiPastebin as PastebinIcon,
-  SiGravatar as GravatarIcon,
-  SiMyspace as MyspaceIcon,
-  SiImgur as ImgurIcon,
-  SiGiphy as GiphyIcon,
-  SiDisqus as DisqusIcon,
-  SiVirustotal as VirusTotalIcon,
-  SiDuolingo as DuolingoIcon,
-  SiAboutdotme as AboutDotMeIcon,
-  SiHaveibeenpwned as HaveIBeenPwnedIcon,
-  SiFitbit as FitbitIcon,
-  SiNike as NikeIcon,
-  SiNotion as NotionIcon,
-  SiAdidas as RuntasticIcon,
-  SiSubstack as SubstackIcon,
-  SiBereal as BerealIcon,
-  SiRumble as RumbleIcon,
-  SiWise as WiseIcon,
-  SiPlex as PlexIcon,
-  SiUber as UberIcon,
-  SiRakuten as RakutenDriveIcon,
-  SiKhanacademy as KhanAcademyIcon,
-  SiBox as BoxIcon,
-  SiTvtime as TvTimeIcon,
-  SiPandora as PandoraIcon,
-  SiMewe as MeweIcon,
-  SiBluesky as BlueskyIcon,
-  SiQzone as QzoneIcon,
-  SiTinder as TinderIcon,
-  SiJabber as JabberIcon,
-  SiLine as LineIcon,
-  SiWechat as WechatIcon,
-  SiMatrix as MatrixIcon,
-  SiMessenger as MessengerIcon,
-  SiViadeo as ViadeoIcon,
-  SiApplemusic as AppleMusicIcon,
-  SiAudiomack as AudiomackIcon,
-  SiSoundcloud as SoundcloudIcon,
-  SiBandcamp as BandcampIcon,
-  SiOkcupid as OkCupidIcon,
-  SiReplit as ReplitIcon,
-  SiRoblox as RobloxIcon,
-  SiKomoot as KomootIcon,
-  SiCashapp as CashAppIcon,
-  SiRevolut as RevolutIcon,
-  SiNewyorktimes as NewYorkTimesIcon,
-  SiYelp as YelpIcon,
-  SiIndigo as IndigoIcon,
-  SiLidl as LidlIcon,
-  SiBandlab as BandlabIcon,
-  SiCastbox as CastboxIcon,
-  SiCoda as CodaIcon,
-  SiDoordash as DoorDashIcon,
-  SiEbay as EbayIcon,
-  SiGroupme as GroupMeIcon,
-  SiPaytm as PaytmIcon,
-  SiPinetwork as PiNetworkIcon,
-  SiSololearn as SoloLearnIcon,
-  SiUntappd as UntappdIcon,
-  SiVsco as VscoIcon,
-  SiW3Schools as W3SchoolsIcon,
-  SiZapier as ZapierIcon,
-  SiTwilio as TwilioIcon,
-  SiBaidu as BaiduIcon,
-} from "react-icons/si";
-import { GrBike } from "react-icons/gr";
-import { RiRobot2Fill as BotIcon } from "react-icons/ri";
-import { FcGoogle as GoogleIcon } from "react-icons/fc";
-import { BsSignal as SignalIcon } from "react-icons/bs";
-import {
-  TbBrandPicsart as PicsArtIcon,
-  TbBrandBumble,
-  TbBrandVinted,
-} from "react-icons/tb";
-import {
-  BiLogoMicrosoftTeams as TeamsIcon,
-  BiLogoVenmo as VenmoIcon,
-  BiLogoAdobe as AdobeIcon,
-} from "react-icons/bi";
-import { ImOnedrive as OnedriveIcon } from "react-icons/im";
-import { LiaHashtagSolid as DehashedIcon } from "react-icons/lia";
-import { PiShareNetwork as NetworkIcon } from "react-icons/pi";
-import { IoIosRocket as RocketReachIcon } from "react-icons/io";
-import {
-  MdCameraAlt as FoapIcon,
-  MdAlternateEmail as MailRuIcon,
-} from "react-icons/md";
-import { TiVendorMicrosoft } from "react-icons/ti";
-import {
-  IoCompassOutline as PolarstepsIcon,
-  IoPaperPlaneOutline as TelemetryIcon,
-} from "react-icons/io5";
-
-import protonmailsvg from "../assets/social-icons/protonmail.svg";
 import sellixsvg from "../assets/social-icons/sellix.svg";
-import vivinopng from "../assets/social-icons/vivino.png";
+
 import myfitnesspalpng from "../assets/social-icons/myfitnesspal.png";
 import whatsmynamejpg from "../assets/social-icons/whatsmyname.jpg";
 import yandexpng from "../assets/social-icons/yandex.png";
@@ -160,16 +10,14 @@ import shotgunpng from "../assets/social-icons/shotgun.png";
 import wewardpng from "../assets/social-icons/weward.png";
 import life360png from "../assets/social-icons/life360.png";
 import okrupng from "../assets/social-icons/okru.png";
-import clubhousesvg from "../assets/social-icons/clubhouse.svg";
+
 import eyeconsvg from "../assets/social-icons/eyecon.svg";
 import touchtunespng from "../assets/social-icons/touchtunes.png";
 import locketpng from "../assets/social-icons/locket.png";
 import mocospacepng from "../assets/social-icons/mocospace.png";
 import whoxypng from "../assets/social-icons/whoxy.png";
-import runkeeperpng from "../assets/social-icons/runkeeper.png";
-import garminpng from "../assets/social-icons/garmin.png";
 import bibleapppng from "../assets/social-icons/bible.png";
-import goodreadspng from "../assets/social-icons/goodreads.png";
+
 import monopolygopng from "../assets/social-icons/monopolygo.png";
 import scrabblegopng from "../assets/social-icons/scrabblego.png";
 import hudsonrockpng from "../assets/social-icons/hudsonrock.png";
@@ -178,7 +26,7 @@ import pagesjaunessvg from "../assets/social-icons/pagesjaunes.svg";
 import copainsdavantsvg from "../assets/social-icons/copainsdavant.svg";
 import holehesvg from "../assets/social-icons/holehe.svg";
 import isharingsvg from "../assets/social-icons/isharing.svg";
-import beatstarssvg from "../assets/social-icons/beatstars.svg";
+
 import leboncoinsvg from "../assets/social-icons/leboncoin.svg";
 import imappsvg from "../assets/social-icons/imapp.svg";
 import mapstrpng from "../assets/social-icons/mapstr.png";
@@ -187,7 +35,7 @@ import marcopolosvg from "../assets/social-icons/marcopolo.svg";
 import truecallerpng from "../assets/social-icons/truecaller.png";
 import truthsocialsvg from "../assets/social-icons/truthsocial.svg";
 import giftfulsvg from "../assets/social-icons/giftful.svg";
-import qqsvg from "../assets/social-icons/qq.svg";
+
 import beerbuddysvg from "../assets/social-icons/beerbuddy.svg";
 import papperssvg from "../assets/social-icons/pappers.svg";
 import partifulsvg from "../assets/social-icons/partiful.svg";
@@ -198,7 +46,7 @@ import rutubesvg from "../assets/social-icons/rutube.svg";
 import youkusvg from "../assets/social-icons/youku.svg";
 import younowsvg from "../assets/social-icons/younow.svg";
 import chaturbatesvg from "../assets/social-icons/chaturbate.svg";
-import onlyfanssvg from "../assets/social-icons/onlyfans.svg";
+
 import pornhubsvg from "../assets/social-icons/pornhub.svg";
 import youpornsvg from "../assets/social-icons/youporn.svg";
 import livejasminsvg from "../assets/social-icons/livejasmin.svg";
@@ -229,7 +77,7 @@ import whoisxmlsvg from "../assets/social-icons/whoisxml.svg";
 import smulepng from "../assets/social-icons/smule.png";
 import bleacherpng from "../assets/social-icons/bleacher.png";
 import praypng from "../assets/social-icons/pray.png";
-import pelotonpng from "../assets/social-icons/peloton.png";
+
 import zepetopng from "../assets/social-icons/zepeto.png";
 import sporttrackerpng from "../assets/social-icons/sportstracker.png";
 import chimepng from "../assets/social-icons/chime.png";
@@ -268,7 +116,7 @@ import pitayapng from "../assets/social-icons/pitaya.png";
 import playparkjpg from "../assets/social-icons/playpark.jpg";
 import playtomicpng from "../assets/social-icons/playtomic.png";
 import planetfitnesspng from "../assets/social-icons/planetfitness.png";
-import poepng from "../assets/social-icons/poe.png";
+
 import poshmarkpng from "../assets/social-icons/poshmark.png";
 import reclippng from "../assets/social-icons/reclip.png";
 import regrouppng from "../assets/social-icons/regroup.png";
@@ -295,11 +143,11 @@ import samsunghealthpng from "../assets/social-icons/samsunghealth.png";
 import wordfeudpng from "../assets/social-icons/wordfeud.png";
 import fetchwepb from "../assets/social-icons/fetch.webp";
 import classpasspng from "../assets/social-icons/classpass.png";
-import aliexpresswebp from "../assets/social-icons/aliexpress.webp";
+
 import telerikpng from "../assets/social-icons/telerik.png";
-import typeformjpg from "../assets/social-icons/typeform.jpg";
+
 import fishbrainwebp from "../assets/social-icons/fishbrain.webp";
-import sunowebp from "../assets/social-icons/suno.webp";
+
 import tokeewebp from "../assets/social-icons/tokee.webp";
 import lushapng from "../assets/social-icons/lusha.png";
 import ransomwarepng from "../assets/social-icons/ransomware.png";
@@ -321,427 +169,427 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
 
   switch (source as SourceTypes) {
     case "facebook":
-      icon = <FacebookIcon color={socialNetworks.facebook.color} />;
+      icon = <Icon icon="simple-icons:facebook" color={socialNetworks.facebook.color} />;
       break;
     case "twitter":
-      icon = <TwitterIcon color={socialNetworks.twitter.color} />;
+      icon = <Icon icon="fa6-brands:twitter" color={socialNetworks.twitter.color} />;
       break;
     case "x":
-      icon = <TwitterXIcon color={socialNetworks.x.color} />;
+      icon = <Icon icon="simple-icons:x" color={socialNetworks.x.color} />;
       break;
     case "instagram":
-      icon = <InstagramIcon color={socialNetworks.instagram.color} />;
+      icon = <Icon icon="simple-icons:instagram" color={socialNetworks.instagram.color} />;
       break;
     case "telegram":
-      icon = <TelegramIcon color={socialNetworks.telegram.color} />;
+      icon = <Icon icon="simple-icons:telegram" color={socialNetworks.telegram.color} />;
       break;
     case "linkedin":
-      icon = <LinkedinIcon color={socialNetworks.linkedin.color} />;
+      icon = <Icon icon="simple-icons:linkedin" color={socialNetworks.linkedin.color} />;
       break;
     case "whatsapp":
-      icon = <WhatsappIcon color={socialNetworks.whatsapp.color} />;
+      icon = <Icon icon="simple-icons:whatsapp" color={socialNetworks.whatsapp.color} />;
       break;
     case "skype":
-      icon = <SkypeIcon color={socialNetworks.skype.color} />;
+      icon = <Icon icon="simple-icons:skype" color={socialNetworks.skype.color} />;
       break;
     case "github":
     case "gist":
-      icon = <GithubIcon color={socialNetworks.github.color} />;
+      icon = <Icon icon="simple-icons:github" color={socialNetworks.github.color} />;
       break;
     case "gravatar":
-      icon = <GravatarIcon color={socialNetworks.gravatar.color} />;
+      icon = <Icon icon="simple-icons:gravatar" color={socialNetworks.gravatar.color} />;
       break;
     case "snapchat":
-      icon = <SnapchatIcon color={socialNetworks.snapchat.color} />;
+      icon = <Icon icon="simple-icons:snapchat" color={socialNetworks.snapchat.color} />;
       break;
     case "youtube":
-      icon = <YoutubeIcon color={socialNetworks.youtube.color} />;
+      icon = <Icon icon="simple-icons:youtube" color={socialNetworks.youtube.color} />;
       break;
     case "myspace":
-      icon = <MyspaceIcon color={socialNetworks.myspace.color} />;
+      icon = <Icon icon="simple-icons:myspace" color={socialNetworks.myspace.color} />;
       break;
     case "reddit":
-      icon = <RedditIcon color={socialNetworks.reddit.color} />;
+      icon = <Icon icon="simple-icons:reddit" color={socialNetworks.reddit.color} />;
       break;
     case "imgur":
-      icon = <ImgurIcon color={socialNetworks.imgur.color} />;
+      icon = <Icon icon="simple-icons:imgur" color={socialNetworks.imgur.color} />;
       break;
     case "pinterest":
-      icon = <PinterestIcon color={socialNetworks.pinterest.color} />;
+      icon = <Icon icon="simple-icons:pinterest" color={socialNetworks.pinterest.color} />;
       break;
     case "xbox":
-      icon = <XboxIcon color={socialNetworks.xbox.color} />;
+      icon = <Icon icon="simple-icons:xbox" color={socialNetworks.xbox.color} />;
       break;
     case "playstation":
     case "psn":
-      icon = <PlaystationIcon color={socialNetworks.playstation.color} />;
+      icon = <Icon icon="simple-icons:playstation" color={socialNetworks.playstation.color} />;
       break;
     case "mastodon":
-      icon = <MastodonIcon color={socialNetworks.mastodon.color} />;
+      icon = <Icon icon="simple-icons:mastodon" color={socialNetworks.mastodon.color} />;
       break;
     case "vk":
-      icon = <VkIcon color={socialNetworks.vk.color} />;
+      icon = <Icon icon="simple-icons:vk" color={socialNetworks.vk.color} />;
       break;
     case "gitlab":
-      icon = <GitlabIcon color={socialNetworks.gitlab.color} />;
+      icon = <Icon icon="simple-icons:gitlab" color={socialNetworks.gitlab.color} />;
       break;
     case "steam":
-      icon = <SteamIcon color={socialNetworks.steam.color} />;
+      icon = <Icon icon="simple-icons:steam" color={socialNetworks.steam.color} />;
       break;
     case "kaggle":
-      icon = <KaggleIcon color={socialNetworks.kaggle.color} />;
+      icon = <Icon icon="simple-icons:kaggle" color={socialNetworks.kaggle.color} />;
       break;
     case "trello":
-      icon = <TrelloIcon color={socialNetworks.trello.color} />;
+      icon = <Icon icon="simple-icons:trello" color={socialNetworks.trello.color} />;
       break;
     case "docker":
-      icon = <DockerIcon color={socialNetworks.docker.color} />;
+      icon = <Icon icon="simple-icons:docker" color={socialNetworks.docker.color} />;
       break;
     case "twitch":
-      icon = <TwitchIcon color={socialNetworks.twitch.color} />;
+      icon = <Icon icon="simple-icons:twitch" color={socialNetworks.twitch.color} />;
       break;
     case "medium":
-      icon = <MediumIcon color={socialNetworks.medium.color} />;
+      icon = <Icon icon="simple-icons:medium" color={socialNetworks.medium.color} />;
       break;
     case "flickr":
-      icon = <FlickrIcon color={socialNetworks.flickr.color} />;
+      icon = <Icon icon="simple-icons:flickr" color={socialNetworks.flickr.color} />;
       break;
     case "google":
-      icon = <GoogleIcon color={socialNetworks.google.color} />;
+      icon = <Icon icon="simple-icons:google" color={socialNetworks.google.color} />;
       break;
     case "signal":
-      icon = <SignalIcon color={socialNetworks.signal.color} />;
+      icon = <Icon icon="simple-icons:signal" color={socialNetworks.signal.color} />;
       break;
     case "tiktok":
-      icon = <TikTokIcon color={socialNetworks.tiktok.color} />;
+      icon = <Icon icon="simple-icons:tiktok" color={socialNetworks.tiktok.color} />;
       break;
     case "discord":
-      icon = <DiscordIcon color={socialNetworks.discord.color} />;
+      icon = <Icon icon="simple-icons:discord" color={socialNetworks.discord.color} />;
       break;
     case "paypal":
-      icon = <PaypalIcon color={socialNetworks.paypal.color} />;
+      icon = <Icon icon="simple-icons:paypal" color={socialNetworks.paypal.color} />;
       break;
     case "quora":
-      icon = <QuoraIcon color={socialNetworks.quora.color} />;
+      icon = <Icon icon="simple-icons:quora" color={socialNetworks.quora.color} />;
       break;
     case "periscope":
-      icon = <PeriscopeIcon color={socialNetworks.periscope.color} />;
+      icon = <Icon icon="fa-brands:periscope" color={socialNetworks.periscope.color} />;
       break;
     case "giphy":
-      icon = <GiphyIcon color={socialNetworks.giphy.color} />;
+      icon = <Icon icon="simple-icons:giphy" color={socialNetworks.giphy.color} />;
       break;
     case "disqus":
-      icon = <DisqusIcon color={socialNetworks.disqus.color} />;
+      icon = <Icon icon="simple-icons:disqus" color={socialNetworks.disqus.color} />;
       break;
     case "patreon":
-      icon = <PatreonIcon color={socialNetworks.patreon.color} />;
+      icon = <Icon icon="simple-icons:patreon" color={socialNetworks.patreon.color} />;
       break;
     case "virustotal":
-      icon = <VirusTotalIcon color={socialNetworks.virustotal.color} />;
+      icon = <Icon icon="simple-icons:virustotal" color={socialNetworks.virustotal.color} />;
       break;
     case "spotify":
-      icon = <SpotifyIcon color={socialNetworks.spotify.color} />;
+      icon = <Icon icon="simple-icons:spotify" color={socialNetworks.spotify.color} />;
       break;
     case "askfm":
       icon = <Icon icon="simple-icons:askfm" color={socialNetworks.askfm.color} />;
       break;
     case "duolingo":
-      icon = <DuolingoIcon color={socialNetworks.duolingo.color} />;
+      icon = <Icon icon="simple-icons:duolingo" color={socialNetworks.duolingo.color} />;
       break;
     case "airbnb":
-      icon = <AirbnbIcon color={socialNetworks.airbnb.color} />;
+      icon = <Icon icon="simple-icons:airbnb" color={socialNetworks.airbnb.color} />;
       break;
     case "foursquare":
-      icon = <FoursquareIcon color={socialNetworks.foursquare.color} />;
+      icon = <Icon icon="simple-icons:foursquare" color={socialNetworks.foursquare.color} />;
       break;
     case "strava":
-      icon = <StravaIcon color={socialNetworks.strava.color} />;
+      icon = <Icon icon="simple-icons:strava" color={socialNetworks.strava.color} />;
       break;
     case "aboutme":
-      icon = <AboutDotMeIcon color={socialNetworks.aboutme.color} />;
+      icon = <Icon icon="simple-icons:aboutdotme" color={socialNetworks.aboutme.color} />;
       break;
     case "chess":
-      icon = <ChessComIcon color={socialNetworks.chess.color} />;
+      icon = <Icon icon="simple-icons:chessdotcom" color={socialNetworks.chess.color} />;
       break;
     case "hibp":
-      icon = <HaveIBeenPwnedIcon color={socialNetworks.hibp.color} />;
+      icon = <Icon icon="simple-icons:haveibeenpwned" color={socialNetworks.hibp.color} />;
       break;
     case "tumblr":
-      icon = <TumblrIcon color={socialNetworks.tumblr.color} />;
+      icon = <Icon icon="simple-icons:tumblr" color={socialNetworks.tumblr.color} />;
       break;
     case "etsy":
-      icon = <EtsyIcon color={socialNetworks.etsy.color} />;
+      icon = <Icon icon="simple-icons:etsy" color={socialNetworks.etsy.color} />;
       break;
     case "fitbit":
-      icon = <FitbitIcon color={socialNetworks.fitbit.color} />;
+      icon = <Icon icon="simple-icons:fitbit" color={socialNetworks.fitbit.color} />;
       break;
     case "nikerunningclub":
-      icon = <NikeIcon color={socialNetworks.nikerunningclub.color} />;
+      icon = <Icon icon="simple-icons:nike" color={socialNetworks.nikerunningclub.color} />;
       break;
     case "notion":
-      icon = <NotionIcon color={socialNetworks.notion.color} />;
+      icon = <Icon icon="simple-icons:notion" color={socialNetworks.notion.color} />;
       break;
     case "keybase":
-      icon = <KeybaseIcon color={socialNetworks.keybase.color} />;
+      icon = <Icon icon="simple-icons:keybase" color={socialNetworks.keybase.color} />;
       break;
     case "runtastic":
-      icon = <RuntasticIcon color={socialNetworks.runtastic.color} />;
+      icon = <Icon icon="simple-icons:adidas" color={socialNetworks.runtastic.color} />;
       break;
     case "substack":
-      icon = <SubstackIcon color={socialNetworks.substack.color} />;
+      icon = <Icon icon="simple-icons:substack" color={socialNetworks.substack.color} />;
       break;
     case "picsart":
-      icon = <PicsArtIcon color={socialNetworks.picsart.color} />;
+      icon = <Icon icon="simple-icons:picsart" color={socialNetworks.picsart.color} />;
       break;
     case "apple":
-      icon = <AppleIcon color={socialNetworks.apple.color} />;
+      icon = <Icon icon="simple-icons:apple" color={socialNetworks.apple.color} />;
       break;
     case "teams":
-      icon = <TeamsIcon color={socialNetworks.teams.color} />;
+      icon = <Icon icon="simple-icons:microsoftteams" color={socialNetworks.teams.color} />;
       break;
     case "onedrive":
-      icon = <OnedriveIcon color={socialNetworks.onedrive.color} />;
+      icon = <Icon icon="simple-icons:microsoftonedrive" color={socialNetworks.onedrive.color} />;
       break;
     case "bereal":
-      icon = <BerealIcon color={socialNetworks.bereal.color} />;
+      icon = <Icon icon="simple-icons:bereal" color={socialNetworks.bereal.color} />;
       break;
     case "dehashed":
-      icon = <DehashedIcon color={socialNetworks.dehashed.color} />;
+      icon = <Icon icon="mdi:pound" color={socialNetworks.dehashed.color} />;
       break;
     case "rocketreach":
-      icon = <RocketReachIcon color={socialNetworks.rocketreach.color} />;
+      icon = <Icon icon="mdi:rocket-launch" color={socialNetworks.rocketreach.color} />;
       break;
     case "dropbox":
-      icon = <DropboxIcon color={socialNetworks.dropbox.color} />;
+      icon = <Icon icon="simple-icons:dropbox" color={socialNetworks.dropbox.color} />;
       break;
     case "foap":
-      icon = <FoapIcon color={socialNetworks.foap.color} />;
+      icon = <Icon icon="mdi:camera" color={socialNetworks.foap.color} />;
       break;
     case "rumble":
-      icon = <RumbleIcon color={socialNetworks.rumble.color} />;
+      icon = <Icon icon="simple-icons:rumble" color={socialNetworks.rumble.color} />;
       break;
     case "wise":
-      icon = <WiseIcon color={socialNetworks.wise.color} />;
+      icon = <Icon icon="simple-icons:wise" color={socialNetworks.wise.color} />;
       break;
     case "plex":
-      icon = <PlexIcon color={socialNetworks.plex.color} />;
+      icon = <Icon icon="simple-icons:plex" color={socialNetworks.plex.color} />;
       break;
     case "uber":
-      icon = <UberIcon color={socialNetworks.uber.color} />;
+      icon = <Icon icon="simple-icons:uber" color={socialNetworks.uber.color} />;
       break;
     case "rakutendrive":
-      icon = <RakutenDriveIcon color={socialNetworks.rakutendrive.color} />;
+      icon = <Icon icon="simple-icons:rakuten" color={socialNetworks.rakutendrive.color} />;
       break;
     case "khanacademy":
-      icon = <KhanAcademyIcon color={socialNetworks.khanacademy.color} />;
+      icon = <Icon icon="simple-icons:khanacademy" color={socialNetworks.khanacademy.color} />;
       break;
     case "box":
-      icon = <BoxIcon color={socialNetworks.box.color} />;
+      icon = <Icon icon="simple-icons:box" color={socialNetworks.box.color} />;
       break;
     case "tvtime":
-      icon = <TvTimeIcon color={socialNetworks.tvtime.color} />;
+      icon = <Icon icon="simple-icons:tvtime" color={socialNetworks.tvtime.color} />;
       break;
     case "pandora":
-      icon = <PandoraIcon color={socialNetworks.pandora.color} />;
+      icon = <Icon icon="simple-icons:pandora" color={socialNetworks.pandora.color} />;
       break;
     case "mewe":
-      icon = <MeweIcon color={socialNetworks.mewe.color} />;
+      icon = <Icon icon="simple-icons:mewe" color={socialNetworks.mewe.color} />;
       break;
     case "bluesky":
-      icon = <BlueskyIcon color={socialNetworks.bluesky.color} />;
+      icon = <Icon icon="simple-icons:bluesky" color={socialNetworks.bluesky.color} />;
       break;
     case "qzone":
-      icon = <QzoneIcon color={socialNetworks.qzone.color} />;
+      icon = <Icon icon="simple-icons:qzone" color={socialNetworks.qzone.color} />;
       break;
     case "tinder":
-      icon = <TinderIcon color={socialNetworks.tinder.color} />;
+      icon = <Icon icon="simple-icons:tinder" color={socialNetworks.tinder.color} />;
       break;
     case "weibo":
-      icon = <WeiboIcon color={socialNetworks.weibo.color} />;
+      icon = <Icon icon="simple-icons:sinaweibo" color={socialNetworks.weibo.color} />;
       break;
     case "jabber":
-      icon = <JabberIcon color={socialNetworks.jabber.color} />;
+      icon = <Icon icon="simple-icons:xmpp" color={socialNetworks.jabber.color} />;
       break;
     case "line":
-      icon = <LineIcon color={socialNetworks.line.color} />;
+      icon = <Icon icon="simple-icons:line" color={socialNetworks.line.color} />;
       break;
     case "wechat":
-      icon = <WechatIcon color={socialNetworks.wechat.color} />;
+      icon = <Icon icon="simple-icons:wechat" color={socialNetworks.wechat.color} />;
       break;
     case "matrix":
-      icon = <MatrixIcon color={socialNetworks.matrix.color} />;
+      icon = <Icon icon="simple-icons:matrix" color={socialNetworks.matrix.color} />;
       break;
     case "messenger":
-      icon = <MessengerIcon color={socialNetworks.messenger.color} />;
+      icon = <Icon icon="simple-icons:messenger" color={socialNetworks.messenger.color} />;
       break;
     case "pastebin":
-      icon = <PastebinIcon color={socialNetworks.pastebin.color} />;
+      icon = <Icon icon="simple-icons:pastebin" color={socialNetworks.pastebin.color} />;
       break;
     case "vimeo":
-      icon = <VimeoIcon color={socialNetworks.vimeo.color} />;
+      icon = <Icon icon="simple-icons:vimeo" color={socialNetworks.vimeo.color} />;
       break;
     case "dailymotion":
-      icon = <DailymotionIcon color={socialNetworks.dailymotion.color} />;
+      icon = <Icon icon="simple-icons:dailymotion" color={socialNetworks.dailymotion.color} />;
       break;
     case "kick":
-      icon = <KickIcon color={socialNetworks.kick.color} />;
+      icon = <Icon icon="simple-icons:kick" color={socialNetworks.kick.color} />;
       break;
     case "odysee":
-      icon = <OdyseeIcon color={socialNetworks.odysee.color} />;
+      icon = <Icon icon="simple-icons:odysee" color={socialNetworks.odysee.color} />;
       break;
     case "nintendo_network":
       icon = <Icon icon="simple-icons:nintendo" color={socialNetworks.nintendo_network.color} />;
       break;
     case "roblox":
-      icon = <RobloxIcon color={socialNetworks.roblox.color} />;
+      icon = <Icon icon="simple-icons:roblox" color={socialNetworks.roblox.color} />;
       break;
     case "tgbot1":
-      icon = <BotIcon color={socialNetworks.tgbot1.color} />;
+      icon = <Icon icon="mdi:robot" color={socialNetworks.tgbot1.color} />;
       break;
     case "clearweb":
-      icon = <GlobeIcon color={socialNetworks.clearweb.color} />;
+      icon = <Icon icon="mdi:web" color={socialNetworks.clearweb.color} />;
       break;
     case "darkweb":
-      icon = <GlobeIcon color={socialNetworks.darkweb.color} />;
+      icon = <Icon icon="mdi:web" color={socialNetworks.darkweb.color} />;
       break;
     case "viadeo":
-      icon = <ViadeoIcon color={socialNetworks.viadeo.color} />;
+      icon = <Icon icon="simple-icons:viadeo" color={socialNetworks.viadeo.color} />;
       break;
     case "deezer":
-      icon = <DeezerIcon color={socialNetworks.deezer.color} />;
+      icon = <Icon icon="simple-icons:deezer" color={socialNetworks.deezer.color} />;
       break;
     case "applemusic":
-      icon = <AppleMusicIcon color={socialNetworks.applemusic.color} />;
+      icon = <Icon icon="simple-icons:applemusic" color={socialNetworks.applemusic.color} />;
       break;
     case "amazonmusic":
       icon = <Icon icon="simple-icons:amazonmusic" color={socialNetworks.amazonmusic.color} />;
       break;
     case "audiomack":
-      icon = <AudiomackIcon color={socialNetworks.audiomack.color} />;
+      icon = <Icon icon="simple-icons:audiomack" color={socialNetworks.audiomack.color} />;
       break;
     case "soundcloud":
-      icon = <SoundcloudIcon color={socialNetworks.soundcloud.color} />;
+      icon = <Icon icon="simple-icons:soundcloud" color={socialNetworks.soundcloud.color} />;
       break;
     case "bandcamp":
-      icon = <BandcampIcon color={socialNetworks.bandcamp.color} />;
+      icon = <Icon icon="simple-icons:bandcamp" color={socialNetworks.bandcamp.color} />;
       break;
     case "okcupid":
-      icon = <OkCupidIcon color={socialNetworks.okcupid.color} />;
+      icon = <Icon icon="simple-icons:okcupid" color={socialNetworks.okcupid.color} />;
       break;
     case "bumble":
-      icon = <TbBrandBumble color={socialNetworks.bumble.color} />;
+      icon = <Icon icon="tabler:brand-bumble" color={socialNetworks.bumble.color} />;
       break;
     case "threads":
-      icon = <ThreadsIcon color={socialNetworks.threads.color} />;
+      icon = <Icon icon="simple-icons:threads" color={socialNetworks.threads.color} />;
       break;
     case "bikemap":
-      icon = <GrBike color={socialNetworks.bikemap.color} />;
+      icon = <Icon icon="mdi:bicycle" color={socialNetworks.bikemap.color} />;
       break;
     case "polarsteps":
-      icon = <PolarstepsIcon color={socialNetworks.polarsteps.color} />;
+      icon = <Icon icon="mdi:compass-outline" color={socialNetworks.polarsteps.color} />;
       break;
     case "telemetry":
-      icon = <TelemetryIcon color={socialNetworks.telemetry.color} />;
+      icon = <Icon icon="mdi:send-outline" color={socialNetworks.telemetry.color} />;
       break;
     case "vinted":
-      icon = <TbBrandVinted color={socialNetworks.vinted.color} />;
+      icon = <Icon icon="simple-icons:vinted" color={socialNetworks.vinted.color} />;
       break;
     case "replit":
-      icon = <ReplitIcon color={socialNetworks.replit.color} />;
+      icon = <Icon icon="simple-icons:replit" color={socialNetworks.replit.color} />;
       break;
     case "mapmyrun":
-      icon = <MapMyRunIcon color={socialNetworks.mapmyrun.color} />;
+      icon = <Icon icon="mdi:run" color={socialNetworks.mapmyrun.color} />;
       break;
     case "komoot":
-      icon = <KomootIcon color={socialNetworks.komoot.color} />;
+      icon = <Icon icon="simple-icons:komoot" color={socialNetworks.komoot.color} />;
       break;
     case "microsoft":
-      icon = <TiVendorMicrosoft color={socialNetworks.microsoft.color} />;
+      icon = <Icon icon="simple-icons:microsoft" color={socialNetworks.microsoft.color} />;
       break;
     case "cashapp":
-      icon = <CashAppIcon color={socialNetworks.cashapp.color} />;
+      icon = <Icon icon="simple-icons:cashapp" color={socialNetworks.cashapp.color} />;
       break;
     case "revolut":
-      icon = <RevolutIcon color={socialNetworks.revolut.color} />;
+      icon = <Icon icon="simple-icons:revolut" color={socialNetworks.revolut.color} />;
       break;
     case "mailru":
-      icon = <MailRuIcon color={socialNetworks.mailru.color} />;
+      icon = <Icon icon="simple-icons:maildotru" color={socialNetworks.mailru.color} />;
       break;
     case "newyorktimes":
-      icon = <NewYorkTimesIcon color={socialNetworks.newyorktimes.color} />;
+      icon = <Icon icon="simple-icons:newyorktimes" color={socialNetworks.newyorktimes.color} />;
       break;
     case "venmo":
-      icon = <VenmoIcon color={socialNetworks.venmo.color} />;
+      icon = <Icon icon="simple-icons:venmo" color={socialNetworks.venmo.color} />;
       break;
     case "yelp":
-      icon = <YelpIcon color={socialNetworks.yelp.color} />;
+      icon = <Icon icon="simple-icons:yelp" color={socialNetworks.yelp.color} />;
       break;
     case "indigo":
-      icon = <IndigoIcon color={socialNetworks.indigo.color} />;
+      icon = <Icon icon="simple-icons:indigo" color={socialNetworks.indigo.color} />;
       break;
     case "lidl":
-      icon = <LidlIcon color={socialNetworks.lidl.color} />;
+      icon = <Icon icon="simple-icons:lidl" color={socialNetworks.lidl.color} />;
       break;
     case "adobe":
-      icon = <AdobeIcon color={socialNetworks.adobe.color} />;
+      icon = <Icon icon="simple-icons:adobe" color={socialNetworks.adobe.color} />;
       break;
     case "bandlab":
-      icon = <BandlabIcon color={socialNetworks.bandlab.color} />;
+      icon = <Icon icon="simple-icons:bandlab" color={socialNetworks.bandlab.color} />;
       break;
     case "castbox":
-      icon = <CastboxIcon color={socialNetworks.castbox.color} />;
+      icon = <Icon icon="simple-icons:castbox" color={socialNetworks.castbox.color} />;
       break;
     case "coda":
-      icon = <CodaIcon color={socialNetworks.coda.color} />;
+      icon = <Icon icon="simple-icons:coda" color={socialNetworks.coda.color} />;
       break;
     case "doordash":
-      icon = <DoorDashIcon color={socialNetworks.doordash.color} />;
+      icon = <Icon icon="simple-icons:doordash" color={socialNetworks.doordash.color} />;
       break;
     case "ebay":
-      icon = <EbayIcon color={socialNetworks.ebay.color} />;
+      icon = <Icon icon="simple-icons:ebay" color={socialNetworks.ebay.color} />;
       break;
     case "groupme":
-      icon = <GroupMeIcon color={socialNetworks.groupme.color} />;
+      icon = <Icon icon="simple-icons:groupme" color={socialNetworks.groupme.color} />;
       break;
     case "napster":
-      icon = <NapsterIcon color={socialNetworks.napster.color} />;
+      icon = <Icon icon="simple-icons:napster" color={socialNetworks.napster.color} />;
       break;
     case "paytm":
-      icon = <PaytmIcon color={socialNetworks.paytm.color} />;
+      icon = <Icon icon="simple-icons:paytm" color={socialNetworks.paytm.color} />;
       break;
     case "pinetwork":
-      icon = <PiNetworkIcon color={socialNetworks.pinetwork.color} />;
+      icon = <Icon icon="simple-icons:pinetwork" color={socialNetworks.pinetwork.color} />;
       break;
     case "sololearn":
-      icon = <SoloLearnIcon color={socialNetworks.sololearn.color} />;
+      icon = <Icon icon="simple-icons:sololearn" color={socialNetworks.sololearn.color} />;
       break;
     case "untappd":
-      icon = <UntappdIcon color={socialNetworks.untappd.color} />;
+      icon = <Icon icon="simple-icons:untappd" color={socialNetworks.untappd.color} />;
       break;
     case "vsco":
-      icon = <VscoIcon color={socialNetworks.vsco.color} />;
+      icon = <Icon icon="simple-icons:vsco" color={socialNetworks.vsco.color} />;
       break;
     case "w3schools":
-      icon = <W3SchoolsIcon color={socialNetworks.w3schools.color} />;
+      icon = <Icon icon="simple-icons:w3schools" color={socialNetworks.w3schools.color} />;
       break;
     case "zapier":
-      icon = <ZapierIcon color={socialNetworks.zapier.color} />;
+      icon = <Icon icon="simple-icons:zapier" color={socialNetworks.zapier.color} />;
       break;
     case "twilio":
-      icon = <TwilioIcon color={socialNetworks.twilio.color} />;
+      icon = <Icon icon="simple-icons:twilio" color={socialNetworks.twilio.color} />;
       break;
     case "baidu":
-      icon = <BaiduIcon color={socialNetworks.baidu.color} />;
+      icon = <Icon icon="simple-icons:baidu" color={socialNetworks.baidu.color} />;
       break;
 
     case "protonmail":
-      icon = <img src={protonmailsvg} alt="ProtonMail" />;
+      icon = <Icon icon="simple-icons:protonmail" color={socialNetworks.protonmail.color} />;
       break;
     case "sellix":
       icon = <img src={sellixsvg} alt="Sellix" />;
       break;
     case "vivino":
-      icon = <img src={vivinopng} alt="Vivino" />;
+      icon = <Icon icon="simple-icons:vivino" color={socialNetworks.vivino.color} />;
       break;
     case "myfitnesspal":
       icon = <img src={myfitnesspalpng} alt="MyFitnessPal" />;
@@ -772,7 +620,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={okrupng} alt="Okru" />;
       break;
     case "clubhouse":
-      icon = <img src={clubhousesvg} alt="Clubhouse" />;
+      icon = <Icon icon="simple-icons:clubhouse" color={socialNetworks.clubhouse.color} />;
       break;
     case "eyecon":
       icon = <img src={eyeconsvg} alt="Eyecon" />;
@@ -790,16 +638,16 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={whoxypng} alt="Whoxy" />;
       break;
     case "runkeeper":
-      icon = <img src={runkeeperpng} alt="Runkeeper" />;
+      icon = <Icon icon="simple-icons:runkeeper" color={socialNetworks.runkeeper.color} />;
       break;
     case "garmin":
-      icon = <img src={garminpng} alt="Garmin" />;
+      icon = <Icon icon="simple-icons:garmin" color={socialNetworks.garmin.color} />;
       break;
     case "bibleapp":
       icon = <img src={bibleapppng} alt="BibleApp" />;
       break;
     case "goodreads":
-      icon = <img src={goodreadspng} alt="Goodreads" />;
+      icon = <Icon icon="simple-icons:goodreads" color={socialNetworks.goodreads.color} />;
       break;
     case "monopolygo":
       icon = <img src={monopolygopng} alt="MonopolyGo" />;
@@ -829,7 +677,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={leboncoinsvg} alt="LeBonCoin" />;
       break;
     case "beatstars":
-      icon = <img src={beatstarssvg} alt="Beat Stars" />;
+      icon = <Icon icon="simple-icons:beatstars" color={socialNetworks.beatstars.color} />;
       break;
     case "imapp":
       icon = <img src={imappsvg} alt="iMapp" />;
@@ -850,7 +698,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={truthsocialsvg} alt="Truth Social" />;
       break;
     case "qq":
-      icon = <img src={qqsvg} alt="QQ" />;
+      icon = <Icon icon="simple-icons:tencentqq" color={socialNetworks.qq.color} />;
       break;
     case "beerbuddy":
       icon = <img src={beerbuddysvg} alt="Beer Buddy" />;
@@ -886,7 +734,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={chaturbatesvg} alt="Chaturbate" />;
       break;
     case "onlyfans":
-      icon = <img src={onlyfanssvg} alt="OnlyFans" />;
+      icon = <Icon icon="simple-icons:onlyfans" color={socialNetworks.onlyfans.color} />;
       break;
     case "pornhub":
       icon = <img src={pornhubsvg} alt="Pornhub" />;
@@ -980,7 +828,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={praypng} alt="Pray" />;
       break;
     case "peloton":
-      icon = <img src={pelotonpng} alt="Peloton" />;
+      icon = <Icon icon="simple-icons:peloton" color={socialNetworks.peloton.color} />;
       break;
     case "zepeto":
       icon = <img src={zepetopng} alt="Zepeto" />;
@@ -1097,7 +945,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={planetfitnesspng} alt="Planet Fitness" />;
       break;
     case "poe":
-      icon = <img src={poepng} alt="Poe" />;
+      icon = <Icon icon="simple-icons:poe" color={socialNetworks.poe.color} />;
       break;
     case "poshmark":
       icon = <img src={poshmarkpng} alt="Poshmark" />;
@@ -1178,19 +1026,19 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={fetchwepb} alt="Fetch" />;
       break;
     case "aliexpress":
-      icon = <img src={aliexpresswebp} alt="AliExpress" />;
+      icon = <Icon icon="simple-icons:aliexpress" color={socialNetworks.aliexpress.color} />;
       break;
     case "telerik":
       icon = <img src={telerikpng} alt="Telerik" />;
       break;
     case "typeform":
-      icon = <img src={typeformjpg} alt="Typeform" />;
+      icon = <Icon icon="simple-icons:typeform" color={socialNetworks.typeform.color} />;
       break;
     case "fishbrain":
       icon = <img src={fishbrainwebp} alt="Fishbrain" />;
       break;
     case "suno":
-      icon = <img src={sunowebp} alt="Suno" />;
+      icon = <Icon icon="simple-icons:suno" color={socialNetworks.suno.color} />;
       break;
     case "tokee":
       icon = <img src={tokeewebp} alt="Tokee" />;
@@ -1203,7 +1051,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
 
     default:
-      icon = <NetworkIcon />;
+      icon = <Icon icon="mdi:share-variant-outline" />;
       break;
   }
 
