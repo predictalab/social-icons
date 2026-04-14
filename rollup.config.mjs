@@ -1,7 +1,7 @@
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import typescript from "rollup-plugin-typescript2";
+import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import image from "@rollup/plugin-image";
 import { readFileSync } from "fs";
@@ -27,7 +27,7 @@ export default {
     resolve(),
     commonjs(),
     image(),
-    typescript({ useTsconfigDeclarationDir: true }),
+    typescript(),
     postcss({
       extensions: [".css"],
     }),
