@@ -17,35 +17,18 @@
   ],
   "scripts": {
     "dev": "vite",
-    "vite-build": "vite build",
     "build": "rollup -c",
     "deploy": "npm run build && npm publish"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
+    "@iconify/react": "^6.0.2",
     "@rollup/plugin-commonjs": "^25.0.0 || ^29.0.0",
     "@rollup/plugin-image": "^3.0.0",
     "@rollup/plugin-node-resolve": "^15.0.0 || ^16.0.0",
     "@types/node": "^20.0.0 || ^24.0.0",
     "@types/react": "^18.0.0 || ^19.0.0",
     "@types/react-dom": "^18.0.0 || ^19.0.0",
+    "@vitejs/plugin-react": "^4.0.0 || ^5.0.0",
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0",
     "react-icons": "^5.0.0",
@@ -55,25 +38,18 @@
     "rollup-plugin-typescript2": "^0.36.0",
     "sass": "^1.60.0",
     "typescript": "^5.0.0",
-    "@vitejs/plugin-react": "^4.0.0 || ^5.0.0",
     "vite": "^5.0.0 || ^7.0.0"
   },
   "peerDependencies": {
-    "@types/node": "^20.0.0 || ^24.10.1",
-    "@types/react": "^18.0.0 || ^19.2.6",
-    "@types/react-dom": "^18.0.0 || ^19.2.3",
-    "react": "^18.0.0 || ^19.2.0",
-    "react-dom": "^18.0.0 || ^19.2.0",
-    "react-icons": "^5.0.0",
-    "typescript": "^5.0.0"
+    "@types/react": "^18.0.0 || ^19.0.0",
+    "@types/react-dom": "^18.0.0 || ^19.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0",
+    "react-icons": "^5.0.0"
   },
   "bugs": {
     "url": "https://github.com/predictalab/social-icons/issues"
   },
   "homepage": "https://github.com/predictalab/social-icons#readme",
-  "license": "ISC",
-  "dependencies": {
-    "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.2.10"
-  }
+  "license": "ISC"
 }
