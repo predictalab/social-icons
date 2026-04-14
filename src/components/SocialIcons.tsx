@@ -1,8 +1,6 @@
 import { Icon } from "@iconify/react";
-
-import protonmailsvg from "../assets/social-icons/protonmail.svg";
 import sellixsvg from "../assets/social-icons/sellix.svg";
-import vivinopng from "../assets/social-icons/vivino.png";
+
 import myfitnesspalpng from "../assets/social-icons/myfitnesspal.png";
 import whatsmynamejpg from "../assets/social-icons/whatsmyname.jpg";
 import yandexpng from "../assets/social-icons/yandex.png";
@@ -12,16 +10,14 @@ import shotgunpng from "../assets/social-icons/shotgun.png";
 import wewardpng from "../assets/social-icons/weward.png";
 import life360png from "../assets/social-icons/life360.png";
 import okrupng from "../assets/social-icons/okru.png";
-import clubhousesvg from "../assets/social-icons/clubhouse.svg";
+
 import eyeconsvg from "../assets/social-icons/eyecon.svg";
 import touchtunespng from "../assets/social-icons/touchtunes.png";
 import locketpng from "../assets/social-icons/locket.png";
 import mocospacepng from "../assets/social-icons/mocospace.png";
 import whoxypng from "../assets/social-icons/whoxy.png";
-import runkeeperpng from "../assets/social-icons/runkeeper.png";
-import garminpng from "../assets/social-icons/garmin.png";
 import bibleapppng from "../assets/social-icons/bible.png";
-import goodreadspng from "../assets/social-icons/goodreads.png";
+
 import monopolygopng from "../assets/social-icons/monopolygo.png";
 import scrabblegopng from "../assets/social-icons/scrabblego.png";
 import hudsonrockpng from "../assets/social-icons/hudsonrock.png";
@@ -30,7 +26,7 @@ import pagesjaunessvg from "../assets/social-icons/pagesjaunes.svg";
 import copainsdavantsvg from "../assets/social-icons/copainsdavant.svg";
 import holehesvg from "../assets/social-icons/holehe.svg";
 import isharingsvg from "../assets/social-icons/isharing.svg";
-import beatstarssvg from "../assets/social-icons/beatstars.svg";
+
 import leboncoinsvg from "../assets/social-icons/leboncoin.svg";
 import imappsvg from "../assets/social-icons/imapp.svg";
 import mapstrpng from "../assets/social-icons/mapstr.png";
@@ -39,7 +35,7 @@ import marcopolosvg from "../assets/social-icons/marcopolo.svg";
 import truecallerpng from "../assets/social-icons/truecaller.png";
 import truthsocialsvg from "../assets/social-icons/truthsocial.svg";
 import giftfulsvg from "../assets/social-icons/giftful.svg";
-import qqsvg from "../assets/social-icons/qq.svg";
+
 import beerbuddysvg from "../assets/social-icons/beerbuddy.svg";
 import papperssvg from "../assets/social-icons/pappers.svg";
 import partifulsvg from "../assets/social-icons/partiful.svg";
@@ -50,7 +46,7 @@ import rutubesvg from "../assets/social-icons/rutube.svg";
 import youkusvg from "../assets/social-icons/youku.svg";
 import younowsvg from "../assets/social-icons/younow.svg";
 import chaturbatesvg from "../assets/social-icons/chaturbate.svg";
-import onlyfanssvg from "../assets/social-icons/onlyfans.svg";
+
 import pornhubsvg from "../assets/social-icons/pornhub.svg";
 import youpornsvg from "../assets/social-icons/youporn.svg";
 import livejasminsvg from "../assets/social-icons/livejasmin.svg";
@@ -81,7 +77,7 @@ import whoisxmlsvg from "../assets/social-icons/whoisxml.svg";
 import smulepng from "../assets/social-icons/smule.png";
 import bleacherpng from "../assets/social-icons/bleacher.png";
 import praypng from "../assets/social-icons/pray.png";
-import pelotonpng from "../assets/social-icons/peloton.png";
+
 import zepetopng from "../assets/social-icons/zepeto.png";
 import sporttrackerpng from "../assets/social-icons/sportstracker.png";
 import chimepng from "../assets/social-icons/chime.png";
@@ -120,7 +116,7 @@ import pitayapng from "../assets/social-icons/pitaya.png";
 import playparkjpg from "../assets/social-icons/playpark.jpg";
 import playtomicpng from "../assets/social-icons/playtomic.png";
 import planetfitnesspng from "../assets/social-icons/planetfitness.png";
-import poepng from "../assets/social-icons/poe.png";
+
 import poshmarkpng from "../assets/social-icons/poshmark.png";
 import reclippng from "../assets/social-icons/reclip.png";
 import regrouppng from "../assets/social-icons/regroup.png";
@@ -147,11 +143,11 @@ import samsunghealthpng from "../assets/social-icons/samsunghealth.png";
 import wordfeudpng from "../assets/social-icons/wordfeud.png";
 import fetchwepb from "../assets/social-icons/fetch.webp";
 import classpasspng from "../assets/social-icons/classpass.png";
-import aliexpresswebp from "../assets/social-icons/aliexpress.webp";
+
 import telerikpng from "../assets/social-icons/telerik.png";
-import typeformjpg from "../assets/social-icons/typeform.jpg";
+
 import fishbrainwebp from "../assets/social-icons/fishbrain.webp";
-import sunowebp from "../assets/social-icons/suno.webp";
+
 import tokeewebp from "../assets/social-icons/tokee.webp";
 import lushapng from "../assets/social-icons/lusha.png";
 import ransomwarepng from "../assets/social-icons/ransomware.png";
@@ -587,13 +583,13 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
 
     case "protonmail":
-      icon = <img src={protonmailsvg} alt="ProtonMail" />;
+      icon = <Icon icon="simple-icons:protonmail" color={socialNetworks.protonmail.color} />;
       break;
     case "sellix":
       icon = <img src={sellixsvg} alt="Sellix" />;
       break;
     case "vivino":
-      icon = <img src={vivinopng} alt="Vivino" />;
+      icon = <Icon icon="simple-icons:vivino" color={socialNetworks.vivino.color} />;
       break;
     case "myfitnesspal":
       icon = <img src={myfitnesspalpng} alt="MyFitnessPal" />;
@@ -624,7 +620,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={okrupng} alt="Okru" />;
       break;
     case "clubhouse":
-      icon = <img src={clubhousesvg} alt="Clubhouse" />;
+      icon = <Icon icon="simple-icons:clubhouse" color={socialNetworks.clubhouse.color} />;
       break;
     case "eyecon":
       icon = <img src={eyeconsvg} alt="Eyecon" />;
@@ -642,16 +638,16 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={whoxypng} alt="Whoxy" />;
       break;
     case "runkeeper":
-      icon = <img src={runkeeperpng} alt="Runkeeper" />;
+      icon = <Icon icon="simple-icons:runkeeper" color={socialNetworks.runkeeper.color} />;
       break;
     case "garmin":
-      icon = <img src={garminpng} alt="Garmin" />;
+      icon = <Icon icon="simple-icons:garmin" color={socialNetworks.garmin.color} />;
       break;
     case "bibleapp":
       icon = <img src={bibleapppng} alt="BibleApp" />;
       break;
     case "goodreads":
-      icon = <img src={goodreadspng} alt="Goodreads" />;
+      icon = <Icon icon="simple-icons:goodreads" color={socialNetworks.goodreads.color} />;
       break;
     case "monopolygo":
       icon = <img src={monopolygopng} alt="MonopolyGo" />;
@@ -681,7 +677,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={leboncoinsvg} alt="LeBonCoin" />;
       break;
     case "beatstars":
-      icon = <img src={beatstarssvg} alt="Beat Stars" />;
+      icon = <Icon icon="simple-icons:beatstars" color={socialNetworks.beatstars.color} />;
       break;
     case "imapp":
       icon = <img src={imappsvg} alt="iMapp" />;
@@ -702,7 +698,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={truthsocialsvg} alt="Truth Social" />;
       break;
     case "qq":
-      icon = <img src={qqsvg} alt="QQ" />;
+      icon = <Icon icon="simple-icons:tencentqq" color={socialNetworks.qq.color} />;
       break;
     case "beerbuddy":
       icon = <img src={beerbuddysvg} alt="Beer Buddy" />;
@@ -738,7 +734,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={chaturbatesvg} alt="Chaturbate" />;
       break;
     case "onlyfans":
-      icon = <img src={onlyfanssvg} alt="OnlyFans" />;
+      icon = <Icon icon="simple-icons:onlyfans" color={socialNetworks.onlyfans.color} />;
       break;
     case "pornhub":
       icon = <img src={pornhubsvg} alt="Pornhub" />;
@@ -832,7 +828,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={praypng} alt="Pray" />;
       break;
     case "peloton":
-      icon = <img src={pelotonpng} alt="Peloton" />;
+      icon = <Icon icon="simple-icons:peloton" color={socialNetworks.peloton.color} />;
       break;
     case "zepeto":
       icon = <img src={zepetopng} alt="Zepeto" />;
@@ -949,7 +945,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={planetfitnesspng} alt="Planet Fitness" />;
       break;
     case "poe":
-      icon = <img src={poepng} alt="Poe" />;
+      icon = <Icon icon="simple-icons:poe" color={socialNetworks.poe.color} />;
       break;
     case "poshmark":
       icon = <img src={poshmarkpng} alt="Poshmark" />;
@@ -1030,19 +1026,19 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={fetchwepb} alt="Fetch" />;
       break;
     case "aliexpress":
-      icon = <img src={aliexpresswebp} alt="AliExpress" />;
+      icon = <Icon icon="simple-icons:aliexpress" color={socialNetworks.aliexpress.color} />;
       break;
     case "telerik":
       icon = <img src={telerikpng} alt="Telerik" />;
       break;
     case "typeform":
-      icon = <img src={typeformjpg} alt="Typeform" />;
+      icon = <Icon icon="simple-icons:typeform" color={socialNetworks.typeform.color} />;
       break;
     case "fishbrain":
       icon = <img src={fishbrainwebp} alt="Fishbrain" />;
       break;
     case "suno":
-      icon = <img src={sunowebp} alt="Suno" />;
+      icon = <Icon icon="simple-icons:suno" color={socialNetworks.suno.color} />;
       break;
     case "tokee":
       icon = <img src={tokeewebp} alt="Tokee" />;
