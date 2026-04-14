@@ -18,6 +18,7 @@
   "scripts": {
     "dev": "vite",
     "build": "rollup -c",
+    "vite-build": "vite build",
     "deploy": "npm run build && npm publish"
   },
   "devDependencies": {
@@ -32,7 +33,6 @@
     "@vitejs/plugin-react": "^6.0.1",
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0",
-    "react-icons": "^5.0.0",
     "rollup": "^4.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^4.0.0",
@@ -46,7 +46,7 @@
     "@types/react-dom": "^18.0.0 || ^19.0.0",
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0",
-    "react-icons": "^5.0.0"
+    "@iconify/react": "^6.0.0"
   },
   "bugs": {
     "url": "https://github.com/predictalab/social-icons/issues"
