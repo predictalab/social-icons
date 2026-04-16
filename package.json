@@ -1,6 +1,6 @@
 {
   "name": "@predictalab/social-icons",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Custom social icons lib",
   "author": "Nicolas - Predicta Lab",
   "repository": {
@@ -41,12 +41,14 @@
     "typescript": "^6.0.2",
     "vite": "^8.0.8"
   },
+  "dependencies": {
+    "@iconify/react": "^6.0.0"
+  },
   "peerDependencies": {
     "@types/react": "^18.0.0 || ^19.0.0",
     "@types/react-dom": "^18.0.0 || ^19.0.0",
     "react": "^18.0.0 || ^19.0.0",
-    "react-dom": "^18.0.0 || ^19.0.0",
-    "@iconify/react": "^6.0.0"
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "bugs": {
     "url": "https://github.com/predictalab/social-icons/issues"

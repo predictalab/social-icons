@@ -10,6 +10,7 @@ const packageJson = JSON.parse(readFileSync("./package.json", "utf-8"));
 
 export default {
   input: "src/index.tsx",
+  external: ["@iconify/react"],
   output: [
     {
       file: packageJson.main,
