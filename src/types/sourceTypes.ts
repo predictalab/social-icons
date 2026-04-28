@@ -301,4 +301,5 @@ export type SourceTypes =
   | "tokee"
   | "lusha"
   | "baidu"
-  | "ransomware";
+  | "ransomware"
+  | "alltrails";

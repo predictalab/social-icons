@@ -591,4 +591,9 @@ export const socialNetworks: socialNetworkType = {
     category: "search_engine",
     name: "Ransomware.live",
   },
+  alltrails: {
+    color: "#538D2F",
+    category: "sport",
+    name: "AllTrails",
+  },
 };
