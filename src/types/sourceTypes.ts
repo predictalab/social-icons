@@ -302,4 +302,5 @@ export type SourceTypes =
   | "lusha"
   | "baidu"
   | "ransomware"
-  | "alltrails";
+  | "alltrails"
+  | "wikipedia";

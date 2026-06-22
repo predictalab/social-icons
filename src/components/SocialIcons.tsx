@@ -1052,6 +1052,9 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "alltrails":
       icon = <Icon icon="simple-icons:alltrails" color={socialNetworks.alltrails.color} />;
       break;
+    case "wikipedia":
+      icon = <Icon icon="simple-icons:wikipedia" color={socialNetworks.wikipedia.color} />;
+      break;
 
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
