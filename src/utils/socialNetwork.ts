@@ -606,4 +606,9 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "Wattpad",
   },
+  wikipedia: {
+    color: "#000000",
+    category: "other",
+    name: "Wikipedia",
+  },
 };
