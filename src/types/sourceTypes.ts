@@ -304,4 +304,5 @@ export type SourceTypes =
   | "ransomware"
   | "alltrails"
   | "deviantart"
-  | "wattpad";
+  | "wattpad"
+  | "wikipedia";

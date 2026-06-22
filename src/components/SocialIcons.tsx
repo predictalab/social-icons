@@ -1058,6 +1058,9 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "wattpad":
       icon = <Icon icon="simple-icons:wattpad" color={socialNetworks.wattpad.color} />;
       break;
+    case "wikipedia":
+      icon = <Icon icon="simple-icons:wikipedia" color={socialNetworks.wikipedia.color} />;
+      break;
 
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
