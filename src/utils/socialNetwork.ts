@@ -596,9 +596,4 @@ export const socialNetworks: socialNetworkType = {
     category: "sport",
     name: "AllTrails",
   },
-  wikipedia: {
-    color: "#000000",
-    category: "other",
-    name: "Wikipedia",
-  },
 };
