@@ -596,4 +596,14 @@ export const socialNetworks: socialNetworkType = {
     category: "sport",
     name: "AllTrails",
   },
+  deviantart: {
+    color: "#05CC47",
+    category: "social",
+    name: "DeviantArt",
+  },
+  wattpad: {
+    color: "#FF500A",
+    category: "social",
+    name: "Wattpad",
+  },
 };
