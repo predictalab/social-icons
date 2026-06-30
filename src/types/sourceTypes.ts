@@ -305,4 +305,5 @@ export type SourceTypes =
   | "alltrails"
   | "deviantart"
   | "wattpad"
-  | "wikipedia";
+  | "wikipedia"
+  | "dealabs";

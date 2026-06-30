@@ -611,4 +611,9 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "Wikipedia",
   },
+  dealabs: {
+    color: "#2D9FAA",
+    category: "ecommerce",
+    name: "Dealabs",
+  },
 };

@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import sellixsvg from "../assets/social-icons/sellix.svg";
+import dealabssvg from "../assets/social-icons/dealabs.svg";
 
 import myfitnesspalpng from "../assets/social-icons/myfitnesspal.png";
 import whatsmynamejpg from "../assets/social-icons/whatsmyname.jpg";
@@ -1060,6 +1061,9 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "wikipedia":
       icon = <Icon icon="simple-icons:wikipedia" color={socialNetworks.wikipedia.color} />;
+      break;
+    case "dealabs":
+      icon = <img src={dealabssvg} alt="Dealabs" />;
       break;
 
     default:
