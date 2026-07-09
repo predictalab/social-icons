@@ -616,4 +616,14 @@ export const socialNetworks: socialNetworkType = {
     category: "ecommerce",
     name: "Dealabs",
   },
+  arkham: {
+    color: "#6B21A8",
+    category: "search_engine",
+    name: "Arkham",
+  },
+  finch: {
+    color: "#1DA1F2",
+    category: "other",
+    name: "Finch",
+  },
 };
