@@ -1065,6 +1065,12 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "dealabs":
       icon = <img src={dealabssvg} alt="Dealabs" />;
       break;
+    case "arkham":
+      icon = <Icon icon="solar:incognito-bold" color={socialNetworks.arkham.color} />;
+      break;
+    case "finch":
+      icon = <Icon icon="fa6-solid:user-clock" color={socialNetworks.finch.color} />;
+      break;
 
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;

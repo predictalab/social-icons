@@ -306,4 +306,6 @@ export type SourceTypes =
   | "deviantart"
   | "wattpad"
   | "wikipedia"
-  | "dealabs";
+  | "dealabs"
+  | "arkham"
+  | "finch";
