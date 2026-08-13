@@ -626,4 +626,9 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "Finch",
   },
+  mixcloud: {
+    color: "#5000FF",
+    category: "streaming",
+    name: "Mixcloud",
+  },
 };

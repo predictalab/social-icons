@@ -1071,6 +1071,9 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "finch":
       icon = <Icon icon="fa6-solid:user-clock" color={socialNetworks.finch.color} />;
       break;
+    case "mixcloud":
+      icon = <Icon icon="simple-icons:mixcloud" color={socialNetworks.mixcloud.color} />;
+      break;
 
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;

@@ -308,4 +308,5 @@ export type SourceTypes =
   | "wikipedia"
   | "dealabs"
   | "arkham"
-  | "finch";
+  | "finch"
+  | "mixcloud";
