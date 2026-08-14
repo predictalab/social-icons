@@ -631,4 +631,59 @@ export const socialNetworks: socialNetworkType = {
     category: "streaming",
     name: "Mixcloud",
   },
+  lichess: {
+    color: "#000000",
+    category: "gaming",
+    name: "Lichess",
+  },
+  gitea: {
+    color: "#609926",
+    category: "programming",
+    name: "Gitea",
+  },
+  stackexchange: {
+    color: "#1E5397",
+    category: "programming",
+    name: "Stack Exchange",
+  },
+  mediawiki: {
+    color: "#3366CC",
+    category: "other",
+    name: "MediaWiki",
+  },
+  hackernews: {
+    color: "#FF6600",
+    category: "social",
+    name: "Hacker News",
+  },
+  codeforces: {
+    color: "#1F8ACB",
+    category: "programming",
+    name: "Codeforces",
+  },
+  codewars: {
+    color: "#B1361E",
+    category: "programming",
+    name: "Codewars",
+  },
+  gab: {
+    color: "#00D178",
+    category: "social",
+    name: "Gab",
+  },
+  gettr: {
+    color: "#E50000",
+    category: "social",
+    name: "Gettr",
+  },
+  gdbrowser: {
+    color: "#FFB914",
+    category: "gaming",
+    name: "GDBrowser",
+  },
+  npm: {
+    color: "#CB3837",
+    category: "programming",
+    name: "npm",
+  },
 };
