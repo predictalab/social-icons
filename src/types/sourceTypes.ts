@@ -309,4 +309,15 @@ export type SourceTypes =
   | "dealabs"
   | "arkham"
   | "finch"
-  | "mixcloud";
+  | "mixcloud"
+  | "lichess"
+  | "gitea"
+  | "stackexchange"
+  | "mediawiki"
+  | "hackernews"
+  | "codeforces"
+  | "codewars"
+  | "gab"
+  | "gettr"
+  | "gdbrowser"
+  | "npm";

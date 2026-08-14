@@ -152,6 +152,9 @@ import fishbrainwebp from "../assets/social-icons/fishbrain.webp";
 import tokeewebp from "../assets/social-icons/tokee.webp";
 import lushapng from "../assets/social-icons/lusha.png";
 import ransomwarepng from "../assets/social-icons/ransomware.png";
+import gabpng from "../assets/social-icons/gab.png";
+import gettrpng from "../assets/social-icons/gettr.png";
+import gdbrowserpng from "../assets/social-icons/gdbrowser.png";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -1073,6 +1076,39 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "mixcloud":
       icon = <Icon icon="simple-icons:mixcloud" color={socialNetworks.mixcloud.color} />;
+      break;
+    case "lichess":
+      icon = <Icon icon="simple-icons:lichess" color={socialNetworks.lichess.color} />;
+      break;
+    case "gitea":
+      icon = <Icon icon="simple-icons:gitea" color={socialNetworks.gitea.color} />;
+      break;
+    case "stackexchange":
+      icon = <Icon icon="simple-icons:stackexchange" color={socialNetworks.stackexchange.color} />;
+      break;
+    case "mediawiki":
+      icon = <Icon icon="file-icons:mediawiki" color={socialNetworks.mediawiki.color} />;
+      break;
+    case "hackernews":
+      icon = <Icon icon="simple-icons:ycombinator" color={socialNetworks.hackernews.color} />;
+      break;
+    case "codeforces":
+      icon = <Icon icon="simple-icons:codeforces" color={socialNetworks.codeforces.color} />;
+      break;
+    case "codewars":
+      icon = <Icon icon="simple-icons:codewars" color={socialNetworks.codewars.color} />;
+      break;
+    case "gab":
+      icon = <img src={gabpng} alt="Gab" />;
+      break;
+    case "gettr":
+      icon = <img src={gettrpng} alt="Gettr" />;
+      break;
+    case "gdbrowser":
+      icon = <img src={gdbrowserpng} alt="GDBrowser" />;
+      break;
+    case "npm":
+      icon = <Icon icon="simple-icons:npm" color={socialNetworks.npm.color} />;
       break;
 
     default:
