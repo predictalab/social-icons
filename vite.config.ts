@@ -4,4 +4,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/social-icons/",
   plugins: [react()],
+  server: {
+    port: process.env.PORT ? Number(process.env.PORT) : undefined,
+  },
 });
