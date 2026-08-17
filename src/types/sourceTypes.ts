@@ -345,4 +345,12 @@ export type SourceTypes =
   | "wakatime"
   | "muckrack"
   | "discourse"
-  | "ssh-keys";
+  | "ssh-keys"
+  | "500px"
+  | "dribbble"
+  | "lastfm"
+  | "myanimelist"
+  | "letterboxd"
+  | "codepen"
+  | "newgrounds"
+  | "kofi";

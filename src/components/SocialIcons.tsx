@@ -1185,6 +1185,30 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "ssh-keys":
       icon = <Icon icon="mdi:key-variant" color={socialNetworks["ssh-keys"].color} />;
       break;
+    case "500px":
+      icon = <Icon icon="simple-icons:500px" color={socialNetworks["500px"].color} />;
+      break;
+    case "dribbble":
+      icon = <Icon icon="simple-icons:dribbble" color={socialNetworks.dribbble.color} />;
+      break;
+    case "lastfm":
+      icon = <Icon icon="simple-icons:lastdotfm" color={socialNetworks.lastfm.color} />;
+      break;
+    case "myanimelist":
+      icon = <Icon icon="simple-icons:myanimelist" color={socialNetworks.myanimelist.color} />;
+      break;
+    case "letterboxd":
+      icon = <Icon icon="simple-icons:letterboxd" color={socialNetworks.letterboxd.color} />;
+      break;
+    case "codepen":
+      icon = <Icon icon="simple-icons:codepen" color={socialNetworks.codepen.color} />;
+      break;
+    case "newgrounds":
+      icon = <Icon icon="simple-icons:newgrounds" color={socialNetworks.newgrounds.color} />;
+      break;
+    case "kofi":
+      icon = <Icon icon="simple-icons:kofi" color={socialNetworks.kofi.color} />;
+      break;
 
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;

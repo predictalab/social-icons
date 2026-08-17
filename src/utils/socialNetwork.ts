@@ -811,4 +811,44 @@ export const socialNetworks: socialNetworkType = {
     category: "programming",
     name: "SSH Keys",
   },
+  "500px": {
+    color: "#222222",
+    category: "social",
+    name: "500px",
+  },
+  dribbble: {
+    color: "#EA4C89",
+    category: "social",
+    name: "Dribbble",
+  },
+  lastfm: {
+    color: "#D51007",
+    category: "streaming",
+    name: "Last.fm",
+  },
+  myanimelist: {
+    color: "#2E51A2",
+    category: "social",
+    name: "MyAnimeList",
+  },
+  letterboxd: {
+    color: "#202830",
+    category: "social",
+    name: "Letterboxd",
+  },
+  codepen: {
+    color: "#000000",
+    category: "programming",
+    name: "CodePen",
+  },
+  newgrounds: {
+    color: "#FDA238",
+    category: "gaming",
+    name: "Newgrounds",
+  },
+  kofi: {
+    color: "#FF6433",
+    category: "social",
+    name: "Ko-fi",
+  },
 };
