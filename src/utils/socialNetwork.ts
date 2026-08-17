@@ -686,4 +686,129 @@ export const socialNetworks: socialNetworkType = {
     category: "programming",
     name: "npm",
   },
+  discogs: {
+    color: "#333333",
+    category: "streaming",
+    name: "Discogs",
+  },
+  huggingface: {
+    color: "#FFD21E",
+    category: "programming",
+    name: "Hugging Face",
+  },
+  scratch: {
+    color: "#855CD6",
+    category: "programming",
+    name: "Scratch",
+  },
+  minecraft: {
+    color: "#62B47A",
+    category: "gaming",
+    name: "Minecraft",
+  },
+  sourceforge: {
+    color: "#FF6600",
+    category: "programming",
+    name: "SourceForge",
+  },
+  artstation: {
+    color: "#13AFF0",
+    category: "social",
+    name: "ArtStation",
+  },
+  cameo: {
+    color: "#EC008C",
+    category: "social",
+    name: "Cameo",
+  },
+  behance: {
+    color: "#1769FF",
+    category: "social",
+    name: "Behance",
+  },
+  unsplash: {
+    color: "#000000",
+    category: "social",
+    name: "Unsplash",
+  },
+  producthunt: {
+    color: "#DA552F",
+    category: "social",
+    name: "Product Hunt",
+  },
+  anilist: {
+    color: "#02A9FF",
+    category: "social",
+    name: "AniList",
+  },
+  arena: {
+    color: "#000000",
+    category: "social",
+    name: "Are.na",
+  },
+  devto: {
+    color: "#0A0A0A",
+    category: "programming",
+    name: "Dev.to",
+  },
+  faceit: {
+    color: "#FF5500",
+    category: "gaming",
+    name: "FACEIT",
+  },
+  freelancer: {
+    color: "#29B2FE",
+    category: "other",
+    name: "Freelancer",
+  },
+  habbo: {
+    color: "#F7941E",
+    category: "gaming",
+    name: "Habbo",
+  },
+  inaturalist: {
+    color: "#74AC00",
+    category: "social",
+    name: "iNaturalist",
+  },
+  kongregate: {
+    color: "#F04438",
+    category: "gaming",
+    name: "Kongregate",
+  },
+  mslearn: {
+    color: "#0078D4",
+    category: "programming",
+    name: "Microsoft Learn",
+  },
+  pronounspage: {
+    color: "#C71585",
+    category: "social",
+    name: "Pronouns.page",
+  },
+  speedrun: {
+    color: "#199C77",
+    category: "gaming",
+    name: "Speedrun.com",
+  },
+  wakatime: {
+    color: "#000000",
+    category: "programming",
+    name: "WakaTime",
+  },
+  muckrack: {
+    color: "#16325C",
+    category: "other",
+    name: "Muck Rack",
+  },
+  discourse: {
+    color: "#000000",
+    category: "social",
+    name: "Discourse",
+  },
+  "ssh-keys": {
+    color: "#DAA520",
+    category: "programming",
+    name: "SSH Keys",
+  },
 };

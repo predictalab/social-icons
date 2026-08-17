@@ -1110,6 +1110,81 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "npm":
       icon = <Icon icon="simple-icons:npm" color={socialNetworks.npm.color} />;
       break;
+    case "discogs":
+      icon = <Icon icon="simple-icons:discogs" color={socialNetworks.discogs.color} />;
+      break;
+    case "huggingface":
+      icon = <Icon icon="simple-icons:huggingface" color={socialNetworks.huggingface.color} />;
+      break;
+    case "scratch":
+      icon = <Icon icon="simple-icons:scratch" color={socialNetworks.scratch.color} />;
+      break;
+    case "minecraft":
+      icon = <Icon icon="simple-icons:minecraft" color={socialNetworks.minecraft.color} />;
+      break;
+    case "sourceforge":
+      icon = <Icon icon="simple-icons:sourceforge" color={socialNetworks.sourceforge.color} />;
+      break;
+    case "artstation":
+      icon = <Icon icon="simple-icons:artstation" color={socialNetworks.artstation.color} />;
+      break;
+    case "cameo":
+      icon = <Icon icon="mdi:video-account" color={socialNetworks.cameo.color} />;
+      break;
+    case "behance":
+      icon = <Icon icon="simple-icons:behance" color={socialNetworks.behance.color} />;
+      break;
+    case "unsplash":
+      icon = <Icon icon="simple-icons:unsplash" color={socialNetworks.unsplash.color} />;
+      break;
+    case "producthunt":
+      icon = <Icon icon="simple-icons:producthunt" color={socialNetworks.producthunt.color} />;
+      break;
+    case "anilist":
+      icon = <Icon icon="simple-icons:anilist" color={socialNetworks.anilist.color} />;
+      break;
+    case "arena":
+      icon = <Icon icon="mdi:asterisk" color={socialNetworks.arena.color} />;
+      break;
+    case "devto":
+      icon = <Icon icon="simple-icons:devdotto" color={socialNetworks.devto.color} />;
+      break;
+    case "faceit":
+      icon = <Icon icon="simple-icons:faceit" color={socialNetworks.faceit.color} />;
+      break;
+    case "freelancer":
+      icon = <Icon icon="simple-icons:freelancer" color={socialNetworks.freelancer.color} />;
+      break;
+    case "habbo":
+      icon = <Icon icon="mdi:hotel" color={socialNetworks.habbo.color} />;
+      break;
+    case "inaturalist":
+      icon = <Icon icon="academicons:inaturalist" color={socialNetworks.inaturalist.color} />;
+      break;
+    case "kongregate":
+      icon = <Icon icon="simple-icons:kongregate" color={socialNetworks.kongregate.color} />;
+      break;
+    case "mslearn":
+      icon = <Icon icon="mdi:school" color={socialNetworks.mslearn.color} />;
+      break;
+    case "pronounspage":
+      icon = <Icon icon="simple-icons:pronounsdotpage" color={socialNetworks.pronounspage.color} />;
+      break;
+    case "speedrun":
+      icon = <Icon icon="mdi:trophy" color={socialNetworks.speedrun.color} />;
+      break;
+    case "wakatime":
+      icon = <Icon icon="simple-icons:wakatime" color={socialNetworks.wakatime.color} />;
+      break;
+    case "muckrack":
+      icon = <Icon icon="mdi:newspaper-variant" color={socialNetworks.muckrack.color} />;
+      break;
+    case "discourse":
+      icon = <Icon icon="simple-icons:discourse" color={socialNetworks.discourse.color} />;
+      break;
+    case "ssh-keys":
+      icon = <Icon icon="mdi:key-variant" color={socialNetworks["ssh-keys"].color} />;
+      break;
 
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
