@@ -353,4 +353,5 @@ export type SourceTypes =
   | "letterboxd"
   | "codepen"
   | "newgrounds"
-  | "kofi";
+  | "kofi"
+  | "leaks";
