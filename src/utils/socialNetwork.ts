@@ -851,4 +851,9 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "Ko-fi",
   },
+  leaks: {
+    color: "#E24B4A",
+    category: "hacking",
+    name: "Leaks",
+  },
 };

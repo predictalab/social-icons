@@ -140,6 +140,7 @@ import zenlywebp from "../assets/social-icons/zenly.webp";
 import elsawebp from "../assets/social-icons/elsa.webp";
 import famappwepb from "../assets/social-icons/famapp.webp";
 import mindbodysvg from "../assets/social-icons/mindbody.svg";
+import leakssvg from "../assets/social-icons/leaks.svg";
 import samsunghealthpng from "../assets/social-icons/samsunghealth.png";
 import wordfeudpng from "../assets/social-icons/wordfeud.png";
 import fetchwepb from "../assets/social-icons/fetch.webp";
@@ -1208,6 +1209,9 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "kofi":
       icon = <Icon icon="simple-icons:kofi" color={socialNetworks.kofi.color} />;
+      break;
+    case "leaks":
+      icon = <img src={leakssvg} alt="Leaks" />;
       break;
 
     default:
