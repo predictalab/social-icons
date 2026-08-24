@@ -856,4 +856,129 @@ export const socialNetworks: socialNetworkType = {
     category: "hacking",
     name: "Leaks",
   },
+  archiveorg: {
+    color: "#666666",
+    category: "other",
+    name: "Internet Archive",
+  },
+  atcoder: {
+    color: "#000000",
+    category: "programming",
+    name: "AtCoder",
+  },
+  bitbucket: {
+    color: "#0052CC",
+    category: "programming",
+    name: "Bitbucket",
+  },
+  blogspot: {
+    color: "#FF5722",
+    category: "social",
+    name: "Blogger",
+  },
+  cfxre: {
+    color: "#F40552",
+    category: "gaming",
+    name: "Cfx.re",
+  },
+  codeberg: {
+    color: "#2185D0",
+    category: "programming",
+    name: "Codeberg",
+  },
+  crates: {
+    color: "#F74C00",
+    category: "programming",
+    name: "crates.io",
+  },
+  dockerhub: {
+    color: "#2496ED",
+    category: "programming",
+    name: "Docker Hub",
+  },
+  fandom: {
+    color: "#FA005A",
+    category: "other",
+    name: "Fandom",
+  },
+  fansly: {
+    color: "#279EFF",
+    category: "adult",
+    name: "Fansly",
+  },
+  gitee: {
+    color: "#C71D23",
+    category: "programming",
+    name: "Gitee",
+  },
+  hackerrank: {
+    color: "#00EA64",
+    category: "programming",
+    name: "HackerRank",
+  },
+  microsoftlearn: {
+    color: "#0078D4",
+    category: "programming",
+    name: "Microsoft Learn",
+  },
+  minds: {
+    color: "#FED12F",
+    category: "social",
+    name: "Minds",
+  },
+  note: {
+    color: "#41C9B4",
+    category: "social",
+    name: "note",
+  },
+  opencollective: {
+    color: "#7FADF2",
+    category: "finance",
+    name: "Open Collective",
+  },
+  patriotswin: {
+    color: "#B22234",
+    category: "social",
+    name: "Patriots.win",
+  },
+  pixelfed: {
+    color: "#6366F1",
+    category: "social",
+    name: "Pixelfed",
+  },
+  pokemonshowdown: {
+    color: "#16467D",
+    category: "gaming",
+    name: "Pokemon Showdown",
+  },
+  r6: {
+    color: "#000000",
+    category: "gaming",
+    name: "Rainbow Six Siege",
+  },
+  redgifs: {
+    color: "#E5194D",
+    category: "adult",
+    name: "RedGIFs",
+  },
+  revolutme: {
+    color: "#191C1F",
+    category: "finance",
+    name: "Revolut.me",
+  },
+  steemit: {
+    color: "#06D6A9",
+    category: "social",
+    name: "Steemit",
+  },
+  wordpress: {
+    color: "#21759B",
+    category: "social",
+    name: "WordPress",
+  },
+  zenn: {
+    color: "#3EA8FF",
+    category: "programming",
+    name: "Zenn",
+  },
 };
