@@ -141,6 +141,10 @@ import elsawebp from "../assets/social-icons/elsa.webp";
 import famappwepb from "../assets/social-icons/famapp.webp";
 import mindbodysvg from "../assets/social-icons/mindbody.svg";
 import leakssvg from "../assets/social-icons/leaks.svg";
+import fanslysvg from "../assets/social-icons/fansly.svg";
+import redgifssvg from "../assets/social-icons/redgifs.svg";
+import cratespng from "../assets/social-icons/crates.png";
+import pokemonshowdownpng from "../assets/social-icons/pokemonshowdown.png";
 import samsunghealthpng from "../assets/social-icons/samsunghealth.png";
 import wordfeudpng from "../assets/social-icons/wordfeud.png";
 import fetchwepb from "../assets/social-icons/fetch.webp";
@@ -1212,6 +1216,81 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "leaks":
       icon = <img src={leakssvg} alt="Leaks" />;
+      break;
+    case "archiveorg":
+      icon = <Icon icon="simple-icons:internetarchive" color={socialNetworks.archiveorg.color} />;
+      break;
+    case "atcoder":
+      icon = <Icon icon="mdi:code-braces" color={socialNetworks.atcoder.color} />;
+      break;
+    case "bitbucket":
+      icon = <Icon icon="simple-icons:bitbucket" color={socialNetworks.bitbucket.color} />;
+      break;
+    case "blogspot":
+      icon = <Icon icon="simple-icons:blogger" color={socialNetworks.blogspot.color} />;
+      break;
+    case "cfxre":
+      icon = <Icon icon="simple-icons:fivem" color={socialNetworks.cfxre.color} />;
+      break;
+    case "codeberg":
+      icon = <Icon icon="simple-icons:codeberg" color={socialNetworks.codeberg.color} />;
+      break;
+    case "crates":
+      icon = <img src={cratespng} alt="crates.io" />;
+      break;
+    case "dockerhub":
+      icon = <Icon icon="simple-icons:docker" color={socialNetworks.dockerhub.color} />;
+      break;
+    case "fandom":
+      icon = <Icon icon="simple-icons:fandom" color={socialNetworks.fandom.color} />;
+      break;
+    case "fansly":
+      icon = <img src={fanslysvg} alt="Fansly" />;
+      break;
+    case "gitee":
+      icon = <Icon icon="simple-icons:gitee" color={socialNetworks.gitee.color} />;
+      break;
+    case "hackerrank":
+      icon = <Icon icon="simple-icons:hackerrank" color={socialNetworks.hackerrank.color} />;
+      break;
+    case "microsoftlearn":
+      icon = <Icon icon="mdi:school" color={socialNetworks.microsoftlearn.color} />;
+      break;
+    case "minds":
+      icon = <Icon icon="simple-icons:minds" color={socialNetworks.minds.color} />;
+      break;
+    case "note":
+      icon = <Icon icon="mdi:notebook-outline" color={socialNetworks.note.color} />;
+      break;
+    case "opencollective":
+      icon = <Icon icon="simple-icons:opencollective" color={socialNetworks.opencollective.color} />;
+      break;
+    case "patriotswin":
+      icon = <Icon icon="mdi:flag-variant" color={socialNetworks.patriotswin.color} />;
+      break;
+    case "pixelfed":
+      icon = <Icon icon="simple-icons:pixelfed" color={socialNetworks.pixelfed.color} />;
+      break;
+    case "pokemonshowdown":
+      icon = <img src={pokemonshowdownpng} alt="Pokémon Showdown" />;
+      break;
+    case "r6":
+      icon = <Icon icon="simple-icons:ubisoft" color={socialNetworks.r6.color} />;
+      break;
+    case "redgifs":
+      icon = <img src={redgifssvg} alt="RedGIFs" />;
+      break;
+    case "revolutme":
+      icon = <Icon icon="simple-icons:revolut" color={socialNetworks.revolutme.color} />;
+      break;
+    case "steemit":
+      icon = <Icon icon="simple-icons:steemit" color={socialNetworks.steemit.color} />;
+      break;
+    case "wordpress":
+      icon = <Icon icon="simple-icons:wordpress" color={socialNetworks.wordpress.color} />;
+      break;
+    case "zenn":
+      icon = <Icon icon="simple-icons:zenn" color={socialNetworks.zenn.color} />;
       break;
 
     default:
