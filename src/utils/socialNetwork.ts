@@ -1286,4 +1286,314 @@ export const socialNetworks: socialNetworkType = {
     category: "adult",
     name: "xHamster",
   },
+  akniga: {
+    color: "#E8452C",
+    category: "other",
+    name: "Akniga",
+  },
+  biosite: {
+    color: "#000000",
+    category: "social",
+    name: "Bio.site",
+  },
+  buymeacoffee: {
+    color: "#FFDD00",
+    category: "finance",
+    name: "Buy Me A Coffee",
+  },
+  codechef: {
+    color: "#5B4638",
+    category: "programming",
+    name: "CodeChef",
+  },
+  devrant: {
+    color: "#F99A66",
+    category: "programming",
+    name: "devRant",
+  },
+  geeksforgeeks: {
+    color: "#2F8D46",
+    category: "programming",
+    name: "GeeksforGeeks",
+  },
+  habr: {
+    color: "#65A3BE",
+    category: "programming",
+    name: "Habr",
+  },
+  inkbunny: {
+    color: "#D97BA6",
+    category: "adult",
+    name: "Inkbunny",
+  },
+  justforfans: {
+    color: "#1B4F8A",
+    category: "adult",
+    name: "JustFor.Fans",
+  },
+  mix: {
+    color: "#FF8126",
+    category: "social",
+    name: "Mix",
+  },
+  openstreetmap: {
+    color: "#7EBC6F",
+    category: "other",
+    name: "OpenStreetMap",
+  },
+  rsi: {
+    color: "#3E7A9B",
+    category: "gaming",
+    name: "Roberts Space Industries",
+  },
+  setlistfm: {
+    color: "#08A00A",
+    category: "other",
+    name: "setlist.fm",
+  },
+  sofurry: {
+    color: "#E8A33D",
+    category: "adult",
+    name: "SoFurry",
+  },
+  tenor: {
+    color: "#1D1D1D",
+    category: "images-search-engine",
+    name: "Tenor",
+  },
+  warriorforum: {
+    color: "#1A1A1A",
+    category: "other",
+    name: "Warrior Forum",
+  },
+  weasyl: {
+    color: "#990000",
+    category: "social",
+    name: "Weasyl",
+  },
+  wykop: {
+    color: "#367DA9",
+    category: "social",
+    name: "Wykop",
+  },
+  hackerone: {
+    color: "#494649",
+    category: "hacking",
+    name: "HackerOne",
+  },
+  kwai: {
+    color: "#FF6600",
+    category: "video_platform",
+    name: "Kwai",
+  },
+  "7cups": {
+    color: "#3DBFC4",
+    category: "other",
+    name: "7 Cups",
+  },
+  academia: {
+    color: "#41454A",
+    category: "other",
+    name: "Academia.edu",
+  },
+  animeplanet: {
+    color: "#E8482F",
+    category: "social",
+    name: "Anime-Planet",
+  },
+  au: {
+    color: "#0080C8",
+    category: "ecommerce",
+    name: "Au.ru",
+  },
+  beacons: {
+    color: "#000000",
+    category: "social",
+    name: "Beacons",
+  },
+  bookcrossing: {
+    color: "#E8A33D",
+    category: "social",
+    name: "BookCrossing",
+  },
+  buzzfeed: {
+    color: "#EE3322",
+    category: "other",
+    name: "BuzzFeed",
+  },
+  clapper: {
+    color: "#F26722",
+    category: "video_platform",
+    name: "Clapper",
+  },
+  cloudflarecommunity: {
+    color: "#F38020",
+    category: "programming",
+    name: "Cloudflare Community",
+  },
+  codtracker: {
+    color: "#E2342D",
+    category: "gaming",
+    name: "COD Tracker",
+  },
+  colourlovers: {
+    color: "#000000",
+    category: "social",
+    name: "COLOURlovers",
+  },
+  comicvine: {
+    color: "#1B2838",
+    category: "social",
+    name: "Comic Vine",
+  },
+  creativemarket: {
+    color: "#00B34F",
+    category: "ecommerce",
+    name: "Creative Market",
+  },
+  curseforge: {
+    color: "#F16436",
+    category: "gaming",
+    name: "CurseForge",
+  },
+  depop: {
+    color: "#FF0000",
+    category: "ecommerce",
+    name: "Depop",
+  },
+  diigo: {
+    color: "#3A88D6",
+    category: "other",
+    name: "Diigo",
+  },
+  directme: {
+    color: "#000000",
+    category: "social",
+    name: "Direct.me",
+  },
+  eksisozluk: {
+    color: "#81C14B",
+    category: "social",
+    name: "Ekşi Sözlük",
+  },
+  exophase: {
+    color: "#3D7AB5",
+    category: "gaming",
+    name: "Exophase",
+  },
+  furaffinity: {
+    color: "#36566F",
+    category: "adult",
+    name: "Fur Affinity",
+  },
+  gamefaqs: {
+    color: "#294A82",
+    category: "gaming",
+    name: "GameFAQs",
+  },
+  inkitt: {
+    color: "#1D1D1D",
+    category: "social",
+    name: "Inkitt",
+  },
+  itchio: {
+    color: "#FA5C5C",
+    category: "gaming",
+    name: "itch.io",
+  },
+  jvc: {
+    color: "#E8102E",
+    category: "gaming",
+    name: "Jeuxvideo.com",
+  },
+  kaskus: {
+    color: "#1B65B3",
+    category: "social",
+    name: "Kaskus",
+  },
+  kickstarter: {
+    color: "#05CE78",
+    category: "finance",
+    name: "Kickstarter",
+  },
+  librarything: {
+    color: "#251A15",
+    category: "social",
+    name: "LibraryThing",
+  },
+  linuxorgru: {
+    color: "#FCC624",
+    category: "programming",
+    name: "Linux.org.ru",
+  },
+  livelib: {
+    color: "#E8A33D",
+    category: "social",
+    name: "LiveLib",
+  },
+  moddb: {
+    color: "#CC0000",
+    category: "gaming",
+    name: "ModDB",
+  },
+  musescore: {
+    color: "#1A70B8",
+    category: "other",
+    name: "MuseScore",
+  },
+  musicboard: {
+    color: "#5B2CE8",
+    category: "social",
+    name: "Musicboard",
+  },
+  nexusmods: {
+    color: "#DA8E35",
+    category: "gaming",
+    name: "Nexus Mods",
+  },
+  paypalme: {
+    color: "#002991",
+    category: "finance",
+    name: "PayPal.Me",
+  },
+  quizlet: {
+    color: "#4255FF",
+    category: "other",
+    name: "Quizlet",
+  },
+  redbubble: {
+    color: "#E41321",
+    category: "ecommerce",
+    name: "Redbubble",
+  },
+  stackshare: {
+    color: "#0690FA",
+    category: "programming",
+    name: "StackShare",
+  },
+  stripchat: {
+    color: "#F04E23",
+    category: "adult",
+    name: "Stripchat",
+  },
+  superlink: {
+    color: "#3DCC8F",
+    category: "social",
+    name: "Superlink",
+  },
+  tvtropes: {
+    color: "#2B6E45",
+    category: "other",
+    name: "TV Tropes",
+  },
+  ultimateguitar: {
+    color: "#FFCC00",
+    category: "other",
+    name: "Ultimate Guitar",
+  },
+  zillow: {
+    color: "#006AFF",
+    category: "ecommerce",
+    name: "Zillow",
+  },
 };

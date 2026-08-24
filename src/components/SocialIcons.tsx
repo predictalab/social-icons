@@ -173,6 +173,44 @@ import imgsrcpng from "../assets/social-icons/imgsrc.png";
 import interpalspng from "../assets/social-icons/interpals.png";
 import pillowfortpng from "../assets/social-icons/pillowfort.png";
 import youpicpng from "../assets/social-icons/youpic.png";
+import aknigapng from "../assets/social-icons/akniga.png";
+import biositepng from "../assets/social-icons/biosite.png";
+import inkbunnypng from "../assets/social-icons/inkbunny.png";
+import justforfanspng from "../assets/social-icons/justforfans.png";
+import rsipng from "../assets/social-icons/rsi.png";
+import setlistfmpng from "../assets/social-icons/setlistfm.png";
+import sofurrypng from "../assets/social-icons/sofurry.png";
+import tenorpng from "../assets/social-icons/tenor.png";
+import warriorforumpng from "../assets/social-icons/warriorforum.png";
+import kwaipng from "../assets/social-icons/kwai.png";
+import cups7png from "../assets/social-icons/7cups.png";
+import animeplanetpng from "../assets/social-icons/animeplanet.png";
+import aupng from "../assets/social-icons/au.png";
+import beaconspng from "../assets/social-icons/beacons.png";
+import bookcrossingpng from "../assets/social-icons/bookcrossing.png";
+import clapperpng from "../assets/social-icons/clapper.png";
+import codtrackerpng from "../assets/social-icons/codtracker.png";
+import colourloverspng from "../assets/social-icons/colourlovers.png";
+import comicvinepng from "../assets/social-icons/comicvine.png";
+import creativemarketpng from "../assets/social-icons/creativemarket.png";
+import depoppng from "../assets/social-icons/depop.png";
+import diigopng from "../assets/social-icons/diigo.png";
+import directmepng from "../assets/social-icons/directme.png";
+import eksisozlukpng from "../assets/social-icons/eksisozluk.png";
+import exophasepng from "../assets/social-icons/exophase.png";
+import gamefaqspng from "../assets/social-icons/gamefaqs.png";
+import inkittjpg from "../assets/social-icons/inkitt.jpg";
+import jvcpng from "../assets/social-icons/jvc.png";
+import kaskuspng from "../assets/social-icons/kaskus.png";
+import livelibsvg from "../assets/social-icons/livelib.svg";
+import moddbpng from "../assets/social-icons/moddb.png";
+import musescorepng from "../assets/social-icons/musescore.png";
+import musicboardpng from "../assets/social-icons/musicboard.png";
+import nexusmodspng from "../assets/social-icons/nexusmods.png";
+import stripchatpng from "../assets/social-icons/stripchat.png";
+import superlinkpng from "../assets/social-icons/superlink.png";
+import tvtropespng from "../assets/social-icons/tvtropes.png";
+import ultimateguitarpng from "../assets/social-icons/ultimateguitar.png";
 import photo35png from "../assets/social-icons/35photo.png";
 import championatpng from "../assets/social-icons/championat.png";
 import designspirationpng from "../assets/social-icons/designspiration.png";
@@ -1498,6 +1536,192 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "xhamster":
       icon = <img src={xhamsterpng} alt="xHamster" />;
+      break;
+    case "akniga":
+      icon = <img src={aknigapng} alt="Akniga" />;
+      break;
+    case "biosite":
+      icon = <img src={biositepng} alt="Bio.site" />;
+      break;
+    case "buymeacoffee":
+      icon = <Icon icon="simple-icons:buymeacoffee" color={socialNetworks.buymeacoffee.color} />;
+      break;
+    case "codechef":
+      icon = <Icon icon="simple-icons:codechef" color={socialNetworks.codechef.color} />;
+      break;
+    case "devrant":
+      icon = <Icon icon="simple-icons:devrant" color={socialNetworks.devrant.color} />;
+      break;
+    case "geeksforgeeks":
+      icon = <Icon icon="simple-icons:geeksforgeeks" color={socialNetworks.geeksforgeeks.color} />;
+      break;
+    case "habr":
+      icon = <Icon icon="simple-icons:habr" color={socialNetworks.habr.color} />;
+      break;
+    case "inkbunny":
+      icon = <img src={inkbunnypng} alt="Inkbunny" />;
+      break;
+    case "justforfans":
+      icon = <img src={justforfanspng} alt="JustFor.Fans" />;
+      break;
+    case "mix":
+      icon = <Icon icon="simple-icons:mix" color={socialNetworks.mix.color} />;
+      break;
+    case "openstreetmap":
+      icon = <Icon icon="simple-icons:openstreetmap" color={socialNetworks.openstreetmap.color} />;
+      break;
+    case "rsi":
+      icon = <img src={rsipng} alt="Roberts Space Industries" />;
+      break;
+    case "setlistfm":
+      icon = <img src={setlistfmpng} alt="setlist.fm" />;
+      break;
+    case "sofurry":
+      icon = <img src={sofurrypng} alt="SoFurry" />;
+      break;
+    case "tenor":
+      icon = <img src={tenorpng} alt="Tenor" />;
+      break;
+    case "warriorforum":
+      icon = <img src={warriorforumpng} alt="Warrior Forum" />;
+      break;
+    case "weasyl":
+      icon = <Icon icon="simple-icons:weasyl" color={socialNetworks.weasyl.color} />;
+      break;
+    case "wykop":
+      icon = <Icon icon="simple-icons:wykop" color={socialNetworks.wykop.color} />;
+      break;
+    case "hackerone":
+      icon = <Icon icon="simple-icons:hackerone" color={socialNetworks.hackerone.color} />;
+      break;
+    case "kwai":
+      icon = <img src={kwaipng} alt="Kwai" />;
+      break;
+    case "7cups":
+      icon = <img src={cups7png} alt="7 Cups" />;
+      break;
+    case "academia":
+      icon = <Icon icon="simple-icons:academia" color={socialNetworks.academia.color} />;
+      break;
+    case "animeplanet":
+      icon = <img src={animeplanetpng} alt="Anime-Planet" />;
+      break;
+    case "au":
+      icon = <img src={aupng} alt="Au.ru" />;
+      break;
+    case "beacons":
+      icon = <img src={beaconspng} alt="Beacons" />;
+      break;
+    case "bookcrossing":
+      icon = <img src={bookcrossingpng} alt="BookCrossing" />;
+      break;
+    case "buzzfeed":
+      icon = <Icon icon="simple-icons:buzzfeed" color={socialNetworks.buzzfeed.color} />;
+      break;
+    case "clapper":
+      icon = <img src={clapperpng} alt="Clapper" />;
+      break;
+    case "cloudflarecommunity":
+      icon = <Icon icon="simple-icons:cloudflare" color={socialNetworks.cloudflarecommunity.color} />;
+      break;
+    case "codtracker":
+      icon = <img src={codtrackerpng} alt="COD Tracker" />;
+      break;
+    case "colourlovers":
+      icon = <img src={colourloverspng} alt="COLOURlovers" />;
+      break;
+    case "comicvine":
+      icon = <img src={comicvinepng} alt="Comic Vine" />;
+      break;
+    case "creativemarket":
+      icon = <img src={creativemarketpng} alt="Creative Market" />;
+      break;
+    case "curseforge":
+      icon = <Icon icon="simple-icons:curseforge" color={socialNetworks.curseforge.color} />;
+      break;
+    case "depop":
+      icon = <img src={depoppng} alt="Depop" />;
+      break;
+    case "diigo":
+      icon = <img src={diigopng} alt="Diigo" />;
+      break;
+    case "directme":
+      icon = <img src={directmepng} alt="Direct.me" />;
+      break;
+    case "eksisozluk":
+      icon = <img src={eksisozlukpng} alt="Ekşi Sözlük" />;
+      break;
+    case "exophase":
+      icon = <img src={exophasepng} alt="Exophase" />;
+      break;
+    case "furaffinity":
+      icon = <Icon icon="simple-icons:furaffinity" color={socialNetworks.furaffinity.color} />;
+      break;
+    case "gamefaqs":
+      icon = <img src={gamefaqspng} alt="GameFAQs" />;
+      break;
+    case "inkitt":
+      icon = <img src={inkittjpg} alt="Inkitt" />;
+      break;
+    case "itchio":
+      icon = <Icon icon="simple-icons:itchdotio" color={socialNetworks.itchio.color} />;
+      break;
+    case "jvc":
+      icon = <img src={jvcpng} alt="Jeuxvideo.com" />;
+      break;
+    case "kaskus":
+      icon = <img src={kaskuspng} alt="Kaskus" />;
+      break;
+    case "kickstarter":
+      icon = <Icon icon="simple-icons:kickstarter" color={socialNetworks.kickstarter.color} />;
+      break;
+    case "librarything":
+      icon = <Icon icon="simple-icons:librarything" color={socialNetworks.librarything.color} />;
+      break;
+    case "linuxorgru":
+      icon = <Icon icon="simple-icons:linux" color={socialNetworks.linuxorgru.color} />;
+      break;
+    case "livelib":
+      icon = <img src={livelibsvg} alt="LiveLib" />;
+      break;
+    case "moddb":
+      icon = <img src={moddbpng} alt="ModDB" />;
+      break;
+    case "musescore":
+      icon = <img src={musescorepng} alt="MuseScore" />;
+      break;
+    case "musicboard":
+      icon = <img src={musicboardpng} alt="Musicboard" />;
+      break;
+    case "nexusmods":
+      icon = <img src={nexusmodspng} alt="Nexus Mods" />;
+      break;
+    case "paypalme":
+      icon = <Icon icon="simple-icons:paypal" color={socialNetworks.paypalme.color} />;
+      break;
+    case "quizlet":
+      icon = <Icon icon="simple-icons:quizlet" color={socialNetworks.quizlet.color} />;
+      break;
+    case "redbubble":
+      icon = <Icon icon="simple-icons:redbubble" color={socialNetworks.redbubble.color} />;
+      break;
+    case "stackshare":
+      icon = <Icon icon="simple-icons:stackshare" color={socialNetworks.stackshare.color} />;
+      break;
+    case "stripchat":
+      icon = <img src={stripchatpng} alt="Stripchat" />;
+      break;
+    case "superlink":
+      icon = <img src={superlinkpng} alt="Superlink" />;
+      break;
+    case "tvtropes":
+      icon = <img src={tvtropespng} alt="TV Tropes" />;
+      break;
+    case "ultimateguitar":
+      icon = <img src={ultimateguitarpng} alt="Ultimate Guitar" />;
+      break;
+    case "zillow":
+      icon = <Icon icon="simple-icons:zillow" color={socialNetworks.zillow.color} />;
       break;
 
     default:
