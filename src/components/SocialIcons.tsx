@@ -160,6 +160,30 @@ import ransomwarepng from "../assets/social-icons/ransomware.png";
 import gabpng from "../assets/social-icons/gab.png";
 import gettrpng from "../assets/social-icons/gettr.png";
 import gdbrowserpng from "../assets/social-icons/gdbrowser.png";
+import crevadopng from "../assets/social-icons/crevado.png";
+import datingrupng from "../assets/social-icons/datingru.png";
+import dibizpng from "../assets/social-icons/dibiz.png";
+import ifunnysvg from "../assets/social-icons/ifunny.svg";
+import veropng from "../assets/social-icons/vero.png";
+import carbonmadepng from "../assets/social-icons/carbonmade.png";
+import fabswingerspng from "../assets/social-icons/fabswingers.png";
+import freesoundsvg from "../assets/social-icons/freesound.svg";
+import goodgamepng from "../assets/social-icons/goodgame.png";
+import imgsrcpng from "../assets/social-icons/imgsrc.png";
+import interpalspng from "../assets/social-icons/interpals.png";
+import pillowfortpng from "../assets/social-icons/pillowfort.png";
+import youpicpng from "../assets/social-icons/youpic.png";
+import photo35png from "../assets/social-icons/35photo.png";
+import championatpng from "../assets/social-icons/championat.png";
+import designspirationpng from "../assets/social-icons/designspiration.png";
+import hubpagespng from "../assets/social-icons/hubpages.png";
+import intensedebatesvg from "../assets/social-icons/intensedebate.svg";
+import pentesterlabpng from "../assets/social-icons/pentesterlab.png";
+import pikabupng from "../assets/social-icons/pikabu.png";
+import subscribestarpng from "../assets/social-icons/subscribestar.png";
+import wikidotpng from "../assets/social-icons/wikidot.png";
+import wishlistrpng from "../assets/social-icons/wishlistr.png";
+import xhamsterpng from "../assets/social-icons/xhamster.png";
 //
 import { socialNetworks } from "../utils/socialNetwork";
 import { SourceTypes } from "../types/sourceTypes";
@@ -1291,6 +1315,189 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "zenn":
       icon = <Icon icon="simple-icons:zenn" color={socialNetworks.zenn.color} />;
+      break;
+    case "arduinoprojecthub":
+      icon = <Icon icon="simple-icons:arduino" color={socialNetworks.arduinoprojecthub.color} />;
+      break;
+    case "calendly":
+      icon = <Icon icon="simple-icons:calendly" color={socialNetworks.calendly.color} />;
+      break;
+    case "codecademy":
+      icon = <Icon icon="simple-icons:codecademy" color={socialNetworks.codecademy.color} />;
+      break;
+    case "crevado":
+      icon = <img src={crevadopng} alt="Crevado" />;
+      break;
+    case "datingru":
+      icon = <img src={datingrupng} alt="Dating.ru" />;
+      break;
+    case "dibiz":
+      icon = <img src={dibizpng} alt="Dibiz" />;
+      break;
+    case "digitalocean":
+      icon = <Icon icon="simple-icons:digitalocean" color={socialNetworks.digitalocean.color} />;
+      break;
+    case "figma":
+      icon = <Icon icon="simple-icons:figma" color={socialNetworks.figma.color} />;
+      break;
+    case "gumroad":
+      icon = <Icon icon="simple-icons:gumroad" color={socialNetworks.gumroad.color} />;
+      break;
+    case "habrcareer":
+      icon = <Icon icon="simple-icons:habr" color={socialNetworks.habrcareer.color} />;
+      break;
+    case "hackerearth":
+      icon = <Icon icon="simple-icons:hackerearth" color={socialNetworks.hackerearth.color} />;
+      break;
+    case "ifunny":
+      icon = <img src={ifunnysvg} alt="iFunny" />;
+      break;
+    case "osu":
+      icon = <Icon icon="simple-icons:osu" color={socialNetworks.osu.color} />;
+      break;
+    case "streamlabs":
+      icon = <Icon icon="simple-icons:streamlabs" color={socialNetworks.streamlabs.color} />;
+      break;
+    case "tapas":
+      icon = <Icon icon="simple-icons:tapas" color={socialNetworks.tapas.color} />;
+      break;
+    case "vero":
+      icon = <img src={veropng} alt="Vero" />;
+      break;
+    case "vscodemarketplace":
+      icon = <Icon icon="logos:visual-studio-code" color={socialNetworks.vscodemarketplace.color} />;
+      break;
+    case "asciinema":
+      icon = <Icon icon="simple-icons:asciinema" color={socialNetworks.asciinema.color} />;
+      break;
+    case "carbonmade":
+      icon = <img src={carbonmadepng} alt="Carbonmade" />;
+      break;
+    case "carrd":
+      icon = <Icon icon="simple-icons:carrd" color={socialNetworks.carrd.color} />;
+      break;
+    case "crowdin":
+      icon = <Icon icon="simple-icons:crowdin" color={socialNetworks.crowdin.color} />;
+      break;
+    case "fabswingers":
+      icon = <img src={fabswingerspng} alt="FabSwingers" />;
+      break;
+    case "fiverr":
+      icon = <Icon icon="simple-icons:fiverr" color={socialNetworks.fiverr.color} />;
+      break;
+    case "flipboard":
+      icon = <Icon icon="simple-icons:flipboard" color={socialNetworks.flipboard.color} />;
+      break;
+    case "freesound":
+      icon = <img src={freesoundsvg} alt="Freesound" />;
+      break;
+    case "geocaching":
+      icon = <Icon icon="simple-icons:geocaching" color={socialNetworks.geocaching.color} />;
+      break;
+    case "goodgame":
+      icon = <img src={goodgamepng} alt="GoodGame" />;
+      break;
+    case "ifttt":
+      icon = <Icon icon="simple-icons:ifttt" color={socialNetworks.ifttt.color} />;
+      break;
+    case "imgsrc":
+      icon = <img src={imgsrcpng} alt="ImgSrc.ru" />;
+      break;
+    case "interpals":
+      icon = <img src={interpalspng} alt="InterPals" />;
+      break;
+    case "issuu":
+      icon = <Icon icon="simple-icons:issuu" color={socialNetworks.issuu.color} />;
+      break;
+    case "kik":
+      icon = <Icon icon="simple-icons:kik" color={socialNetworks.kik.color} />;
+      break;
+    case "metacritic":
+      icon = <Icon icon="simple-icons:metacritic" color={socialNetworks.metacritic.color} />;
+      break;
+    case "naverblog":
+      icon = <Icon icon="simple-icons:naver" color={socialNetworks.naverblog.color} />;
+      break;
+    case "pillowfort":
+      icon = <img src={pillowfortpng} alt="Pillowfort" />;
+      break;
+    case "slides":
+      icon = <Icon icon="simple-icons:slides" color={socialNetworks.slides.color} />;
+      break;
+    case "tradingview":
+      icon = <Icon icon="simple-icons:tradingview" color={socialNetworks.tradingview.color} />;
+      break;
+    case "youpic":
+      icon = <img src={youpicpng} alt="YouPic" />;
+      break;
+    case "35photo":
+      icon = <img src={photo35png} alt="35PHOTO" />;
+      break;
+    case "ameblo":
+      icon = <Icon icon="simple-icons:ameba" color={socialNetworks.ameblo.color} />;
+      break;
+    case "ao3":
+      icon = <Icon icon="simple-icons:archiveofourown" color={socialNetworks.ao3.color} />;
+      break;
+    case "audiojungle":
+      icon = <Icon icon="simple-icons:envato" color={socialNetworks.audiojungle.color} />;
+      break;
+    case "championat":
+      icon = <img src={championatpng} alt="Championat" />;
+      break;
+    case "coderwall":
+      icon = <Icon icon="simple-icons:coderwall" color={socialNetworks.coderwall.color} />;
+      break;
+    case "designspiration":
+      icon = <img src={designspirationpng} alt="Designspiration" />;
+      break;
+    case "hackadayio":
+      icon = <Icon icon="simple-icons:hackaday" color={socialNetworks.hackadayio.color} />;
+      break;
+    case "hackster":
+      icon = <Icon icon="simple-icons:hackster" color={socialNetworks.hackster.color} />;
+      break;
+    case "hubpages":
+      icon = <img src={hubpagespng} alt="HubPages" />;
+      break;
+    case "instructables":
+      icon = <Icon icon="simple-icons:instructables" color={socialNetworks.instructables.color} />;
+      break;
+    case "intensedebate":
+      icon = <img src={intensedebatesvg} alt="IntenseDebate" />;
+      break;
+    case "pentesterlab":
+      icon = <img src={pentesterlabpng} alt="PentesterLab" />;
+      break;
+    case "pikabu":
+      icon = <img src={pikabupng} alt="Pikabu" />;
+      break;
+    case "plurk":
+      icon = <Icon icon="simple-icons:plurk" color={socialNetworks.plurk.color} />;
+      break;
+    case "shopify":
+      icon = <Icon icon="simple-icons:shopify" color={socialNetworks.shopify.color} />;
+      break;
+    case "smugmug":
+      icon = <Icon icon="simple-icons:smugmug" color={socialNetworks.smugmug.color} />;
+      break;
+    case "speakerdeck":
+      icon = <Icon icon="simple-icons:speakerdeck" color={socialNetworks.speakerdeck.color} />;
+      break;
+    case "subscribestar":
+      icon = <img src={subscribestarpng} alt="SubscribeStar" />;
+      break;
+    case "themeforest":
+      icon = <Icon icon="simple-icons:envato" color={socialNetworks.themeforest.color} />;
+      break;
+    case "wikidot":
+      icon = <img src={wikidotpng} alt="Wikidot" />;
+      break;
+    case "wishlistr":
+      icon = <img src={wishlistrpng} alt="Wishlistr" />;
+      break;
+    case "xhamster":
+      icon = <img src={xhamsterpng} alt="xHamster" />;
       break;
 
     default:

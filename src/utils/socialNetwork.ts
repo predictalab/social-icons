@@ -981,4 +981,309 @@ export const socialNetworks: socialNetworkType = {
     category: "programming",
     name: "Zenn",
   },
+  arduinoprojecthub: {
+    color: "#00878F",
+    category: "programming",
+    name: "Arduino Project Hub",
+  },
+  calendly: {
+    color: "#006BFF",
+    category: "other",
+    name: "Calendly",
+  },
+  codecademy: {
+    color: "#1F4056",
+    category: "programming",
+    name: "Codecademy",
+  },
+  crevado: {
+    color: "#E8503A",
+    category: "other",
+    name: "Crevado",
+  },
+  datingru: {
+    color: "#F2555A",
+    category: "dating",
+    name: "Dating.ru",
+  },
+  dibiz: {
+    color: "#0C7C59",
+    category: "other",
+    name: "Dibiz",
+  },
+  digitalocean: {
+    color: "#0080FF",
+    category: "programming",
+    name: "DigitalOcean",
+  },
+  figma: {
+    color: "#F24E1E",
+    category: "programming",
+    name: "Figma",
+  },
+  gumroad: {
+    color: "#FF90E8",
+    category: "ecommerce",
+    name: "Gumroad",
+  },
+  habrcareer: {
+    color: "#65A3BE",
+    category: "programming",
+    name: "Habr Career",
+  },
+  hackerearth: {
+    color: "#2C3454",
+    category: "programming",
+    name: "HackerEarth",
+  },
+  ifunny: {
+    color: "#FFDD2D",
+    category: "social",
+    name: "iFunny",
+  },
+  osu: {
+    color: "#FF66AA",
+    category: "gaming",
+    name: "osu!",
+  },
+  streamlabs: {
+    color: "#80F5D2",
+    category: "streaming",
+    name: "Streamlabs",
+  },
+  tapas: {
+    color: "#FFCE00",
+    category: "social",
+    name: "Tapas",
+  },
+  vero: {
+    color: "#000000",
+    category: "social",
+    name: "Vero",
+  },
+  vscodemarketplace: {
+    color: "#007ACC",
+    category: "programming",
+    name: "VS Code Marketplace",
+  },
+  asciinema: {
+    color: "#D40000",
+    category: "programming",
+    name: "asciinema",
+  },
+  carbonmade: {
+    color: "#613CB0",
+    category: "other",
+    name: "Carbonmade",
+  },
+  carrd: {
+    color: "#596CAF",
+    category: "other",
+    name: "Carrd",
+  },
+  crowdin: {
+    color: "#2E3340",
+    category: "other",
+    name: "Crowdin",
+  },
+  fabswingers: {
+    color: "#CC0000",
+    category: "adult",
+    name: "FabSwingers",
+  },
+  fiverr: {
+    color: "#1DBF73",
+    category: "other",
+    name: "Fiverr",
+  },
+  flipboard: {
+    color: "#E12828",
+    category: "social",
+    name: "Flipboard",
+  },
+  freesound: {
+    color: "#307BBB",
+    category: "other",
+    name: "Freesound",
+  },
+  geocaching: {
+    color: "#00874D",
+    category: "sport",
+    name: "Geocaching",
+  },
+  goodgame: {
+    color: "#F6931D",
+    category: "gaming",
+    name: "GoodGame",
+  },
+  ifttt: {
+    color: "#000000",
+    category: "other",
+    name: "IFTTT",
+  },
+  imgsrc: {
+    color: "#E8792B",
+    category: "images-search-engine",
+    name: "ImgSrc.ru",
+  },
+  interpals: {
+    color: "#3B5998",
+    category: "social",
+    name: "InterPals",
+  },
+  issuu: {
+    color: "#F36D5D",
+    category: "social",
+    name: "Issuu",
+  },
+  kik: {
+    color: "#82BC23",
+    category: "messaging_app",
+    name: "Kik",
+  },
+  metacritic: {
+    color: "#000000",
+    category: "other",
+    name: "Metacritic",
+  },
+  naverblog: {
+    color: "#03C75A",
+    category: "social",
+    name: "Naver Blog",
+  },
+  pillowfort: {
+    color: "#1F3A5F",
+    category: "social",
+    name: "Pillowfort",
+  },
+  slides: {
+    color: "#E4637C",
+    category: "other",
+    name: "Slides",
+  },
+  tradingview: {
+    color: "#131622",
+    category: "finance",
+    name: "TradingView",
+  },
+  youpic: {
+    color: "#000000",
+    category: "social",
+    name: "YouPic",
+  },
+  "35photo": {
+    color: "#000000",
+    category: "social",
+    name: "35PHOTO",
+  },
+  ameblo: {
+    color: "#2D8C3C",
+    category: "social",
+    name: "Ameblo",
+  },
+  ao3: {
+    color: "#990000",
+    category: "social",
+    name: "Archive of Our Own",
+  },
+  audiojungle: {
+    color: "#00A550",
+    category: "ecommerce",
+    name: "AudioJungle",
+  },
+  championat: {
+    color: "#E52E2E",
+    category: "sport",
+    name: "Championat",
+  },
+  coderwall: {
+    color: "#3E8DCC",
+    category: "programming",
+    name: "Coderwall",
+  },
+  designspiration: {
+    color: "#000000",
+    category: "social",
+    name: "Designspiration",
+  },
+  hackadayio: {
+    color: "#1A1A1A",
+    category: "programming",
+    name: "Hackaday.io",
+  },
+  hackster: {
+    color: "#2E9FE6",
+    category: "programming",
+    name: "Hackster",
+  },
+  hubpages: {
+    color: "#0E7C7B",
+    category: "social",
+    name: "HubPages",
+  },
+  instructables: {
+    color: "#FABF15",
+    category: "social",
+    name: "Instructables",
+  },
+  intensedebate: {
+    color: "#009EE1",
+    category: "other",
+    name: "IntenseDebate",
+  },
+  pentesterlab: {
+    color: "#1F2937",
+    category: "hacking",
+    name: "PentesterLab",
+  },
+  pikabu: {
+    color: "#00A46C",
+    category: "social",
+    name: "Pikabu",
+  },
+  plurk: {
+    color: "#FF574D",
+    category: "social",
+    name: "Plurk",
+  },
+  shopify: {
+    color: "#7AB55C",
+    category: "ecommerce",
+    name: "Shopify",
+  },
+  smugmug: {
+    color: "#6DB944",
+    category: "social",
+    name: "SmugMug",
+  },
+  speakerdeck: {
+    color: "#009287",
+    category: "social",
+    name: "Speaker Deck",
+  },
+  subscribestar: {
+    color: "#009688",
+    category: "other",
+    name: "SubscribeStar",
+  },
+  themeforest: {
+    color: "#82B540",
+    category: "ecommerce",
+    name: "ThemeForest",
+  },
+  wikidot: {
+    color: "#7D9BB5",
+    category: "other",
+    name: "Wikidot",
+  },
+  wishlistr: {
+    color: "#F0544C",
+    category: "other",
+    name: "Wishlistr",
+  },
+  xhamster: {
+    color: "#FF7300",
+    category: "adult",
+    name: "xHamster",
+  },
 };
