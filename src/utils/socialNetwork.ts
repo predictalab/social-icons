@@ -1596,4 +1596,969 @@ export const socialNetworks: socialNetworkType = {
     category: "ecommerce",
     name: "Zillow",
   },
+  alternativeto: {
+    color: "#0289D5",
+    category: "other",
+    name: "AlternativeTo",
+  },
+  backstage: {
+    color: "#000000",
+    category: "other",
+    name: "Backstage",
+  },
+  biolink: {
+    color: "#000000",
+    category: "social",
+    name: "Bio Link",
+  },
+  boardgamegeek: {
+    color: "#FF5100",
+    category: "gaming",
+    name: "BoardGameGeek",
+  },
+  cyberdefenders: {
+    color: "#335EEA",
+    category: "hacking",
+    name: "CyberDefenders",
+  },
+  douban: {
+    color: "#2D963D",
+    category: "social",
+    name: "Douban",
+  },
+  exercism: {
+    color: "#009CAB",
+    category: "programming",
+    name: "Exercism",
+  },
+  genius: {
+    color: "#FFFF64",
+    category: "other",
+    name: "Genius",
+  },
+  gitbook: {
+    color: "#BBDDE5",
+    category: "programming",
+    name: "GitBook",
+  },
+  gofundme: {
+    color: "#00B964",
+    category: "finance",
+    name: "GoFundMe",
+  },
+  gog: {
+    color: "#86328A",
+    category: "gaming",
+    name: "GOG.com",
+  },
+  hackmd: {
+    color: "#453AFF",
+    category: "programming",
+    name: "HackMD",
+  },
+  hashnode: {
+    color: "#2962FF",
+    category: "programming",
+    name: "Hashnode",
+  },
+  hatena: {
+    color: "#00A4DE",
+    category: "social",
+    name: "Hatena",
+  },
+  hiveblog: {
+    color: "#E31337",
+    category: "social",
+    name: "Hive Blog",
+  },
+  intigriti: {
+    color: "#161A36",
+    category: "hacking",
+    name: "Intigriti",
+  },
+  linktree: {
+    color: "#43E55E",
+    category: "social",
+    name: "Linktree",
+  },
+  microblog: {
+    color: "#FF8800",
+    category: "social",
+    name: "Micro.blog",
+  },
+  ninegag: {
+    color: "#000000",
+    category: "social",
+    name: "9GAG",
+  },
+  nuget: {
+    color: "#004880",
+    category: "programming",
+    name: "NuGet",
+  },
+  observable: {
+    color: "#353E58",
+    category: "programming",
+    name: "Observable",
+  },
+  opensea: {
+    color: "#2081E2",
+    category: "finance",
+    name: "OpenSea",
+  },
+  packagist: {
+    color: "#F28D1A",
+    category: "programming",
+    name: "Packagist",
+  },
+  payhip: {
+    color: "#5C6AC4",
+    category: "ecommerce",
+    name: "Payhip",
+  },
+  picarto: {
+    color: "#1DA456",
+    category: "streaming",
+    name: "Picarto.TV",
+  },
+  platzi: {
+    color: "#98CA3F",
+    category: "other",
+    name: "Platzi",
+  },
+  rarible: {
+    color: "#FEDA03",
+    category: "finance",
+    name: "Rarible",
+  },
+  reverbnation: {
+    color: "#E43526",
+    category: "streaming",
+    name: "ReverbNation",
+  },
+  rive: {
+    color: "#1D1D1D",
+    category: "other",
+    name: "Rive",
+  },
+  rubygems: {
+    color: "#E9573F",
+    category: "programming",
+    name: "RubyGems",
+  },
+  scribd: {
+    color: "#1E7B85",
+    category: "other",
+    name: "Scribd",
+  },
+  sessionize: {
+    color: "#1AB394",
+    category: "other",
+    name: "Sessionize",
+  },
+  sketchfab: {
+    color: "#1CAAD9",
+    category: "other",
+    name: "Sketchfab",
+  },
+  slashdot: {
+    color: "#026664",
+    category: "social",
+    name: "Slashdot",
+  },
+  slideshare: {
+    color: "#008ED2",
+    category: "other",
+    name: "SlideShare",
+  },
+  sourcehut: {
+    color: "#000000",
+    category: "programming",
+    name: "SourceHut",
+  },
+  stackblitz: {
+    color: "#1269D3",
+    category: "programming",
+    name: "StackBlitz",
+  },
+  threadless: {
+    color: "#0099FF",
+    category: "ecommerce",
+    name: "Threadless",
+  },
+  tistory: {
+    color: "#000000",
+    category: "social",
+    name: "Tistory",
+  },
+  tmdb: {
+    color: "#01B4E4",
+    category: "other",
+    name: "TMDB",
+  },
+  tripadvisor: {
+    color: "#34E0A1",
+    category: "other",
+    name: "Tripadvisor",
+  },
+  tryhackme: {
+    color: "#212C42",
+    category: "hacking",
+    name: "TryHackMe",
+  },
+  wellfound: {
+    color: "#000000",
+    category: "other",
+    name: "Wellfound",
+  },
+  writeas: {
+    color: "#5AC4EE",
+    category: "social",
+    name: "Write.as",
+  },
+  allmylinks: {
+    color: "#FD4281",
+    category: "social",
+    name: "AllMyLinks",
+  },
+  allthingsworn: {
+    color: "#ED0878",
+    category: "adult",
+    name: "All Things Worn",
+  },
+  apsense: {
+    color: "#070607",
+    category: "social",
+    name: "APSense",
+  },
+  aryion: {
+    color: "#849ACB",
+    category: "adult",
+    name: "Aryion",
+  },
+  authortoday: {
+    color: "#48535E",
+    category: "social",
+    name: "Author.Today",
+  },
+  backloggd: {
+    color: "#13151A",
+    category: "gaming",
+    name: "Backloggd",
+  },
+  backstagecam: {
+    color: "#2277F7",
+    category: "adult",
+    name: "Backstage.cam",
+  },
+  cam4: {
+    color: "#F7A50C",
+    category: "adult",
+    name: "CAM4",
+  },
+  cara: {
+    color: "#010713",
+    category: "social",
+    name: "Cara",
+  },
+  ccmixter: {
+    color: "#3838FF",
+    category: "streaming",
+    name: "ccMixter",
+  },
+  cgtrader: {
+    color: "#67C4B0",
+    category: "ecommerce",
+    name: "CGTrader",
+  },
+  chatujme: {
+    color: "#14D91A",
+    category: "messaging_app",
+    name: "Chatujme.cz",
+  },
+  chollometro: {
+    color: "#EAF2F8",
+    category: "ecommerce",
+    name: "Chollometro",
+  },
+  civitai: {
+    color: "#1971C2",
+    category: "other",
+    name: "Civitai",
+  },
+  codecanyon: {
+    color: "#81B441",
+    category: "programming",
+    name: "CodeCanyon",
+  },
+  coindrop: {
+    color: "#FEB655",
+    category: "finance",
+    name: "Coindrop",
+  },
+  comeup: {
+    color: "#FFEE66",
+    category: "other",
+    name: "ComeUp",
+  },
+  contactinbio: {
+    color: "#25B3F9",
+    category: "social",
+    name: "ContactInBio",
+  },
+  creatorspring: {
+    color: "#2E80ED",
+    category: "ecommerce",
+    name: "Spring",
+  },
+  cryptohack: {
+    color: "#FCB730",
+    category: "hacking",
+    name: "CryptoHack",
+  },
+  cssbattle: {
+    color: "#FEDE00",
+    category: "programming",
+    name: "CSSBattle",
+  },
+  cults3d: {
+    color: "#822EF5",
+    category: "other",
+    name: "Cults",
+  },
+  dailykos: {
+    color: "#F76E04",
+    category: "social",
+    name: "Daily Kos",
+  },
+  danbooru: {
+    color: "#B38E6A",
+    category: "images-search-engine",
+    name: "Danbooru",
+  },
+  debank: {
+    color: "#FE815F",
+    category: "finance",
+    name: "DeBank",
+  },
+  derpibooru: {
+    color: "#618FC3",
+    category: "images-search-engine",
+    name: "Derpibooru",
+  },
+  domestika: {
+    color: "#F02C00",
+    category: "other",
+    name: "Domestika",
+  },
+  dou: {
+    color: "#030606",
+    category: "programming",
+    name: "DOU",
+  },
+  dzen: {
+    color: "#202022",
+    category: "social",
+    name: "Dzen",
+  },
+  e621: {
+    color: "#152F56",
+    category: "adult",
+    name: "e621",
+  },
+  ebaumsworld: {
+    color: "#303BAA",
+    category: "other",
+    name: "eBaum's World",
+  },
+  eintracht: {
+    color: "#E1000F",
+    category: "sport",
+    name: "Eintracht Frankfurt",
+  },
+  empowher: {
+    color: "#E75836",
+    category: "other",
+    name: "EmpowHER",
+  },
+  erome: {
+    color: "#000000",
+    category: "adult",
+    name: "EroMe",
+  },
+  eroprofile: {
+    color: "#7674D7",
+    category: "adult",
+    name: "EroProfile",
+  },
+  fanbase: {
+    color: "#30015B",
+    category: "social",
+    name: "Fanbase",
+  },
+  fanlink: {
+    color: "#7479FD",
+    category: "other",
+    name: "FanLink",
+  },
+  fanvue: {
+    color: "#49F264",
+    category: "adult",
+    name: "Fanvue",
+  },
+  ficwad: {
+    color: "#4A6FC9",
+    category: "other",
+    name: "FicWad",
+  },
+  fixya: {
+    color: "#D5D5D5",
+    category: "other",
+    name: "Fixya",
+  },
+  flightradar24: {
+    color: "#FFCC00",
+    category: "other",
+    name: "Flightradar24",
+  },
+  flist: {
+    color: "#5678A7",
+    category: "adult",
+    name: "F-List",
+  },
+  fragment: {
+    color: "#000000",
+    category: "finance",
+    name: "Fragment",
+  },
+  fredmiranda: {
+    color: "#9B3837",
+    category: "images-search-engine",
+    name: "Fred Miranda",
+  },
+  freelanceua: {
+    color: "#000000",
+    category: "other",
+    name: "Freelance.ua",
+  },
+  freeones: {
+    color: "#000000",
+    category: "adult",
+    name: "FreeOnes",
+  },
+  gaiaonline: {
+    color: "#362826",
+    category: "gaming",
+    name: "Gaia Online",
+  },
+  geneanet: {
+    color: "#35786A",
+    category: "other",
+    name: "Geneanet",
+  },
+  getallmylinks: {
+    color: "#B3A8E8",
+    category: "social",
+    name: "GetAllMyLinks",
+  },
+  giantbomb: {
+    color: "#DA1818",
+    category: "gaming",
+    name: "Giant Bomb",
+  },
+  hackage: {
+    color: "#5E5086",
+    category: "programming",
+    name: "Hackage",
+  },
+  heavyr: {
+    color: "#030303",
+    category: "adult",
+    name: "Heavy-R",
+  },
+  hotukdeals: {
+    color: "#00172B",
+    category: "ecommerce",
+    name: "hotukdeals",
+  },
+  imgflip: {
+    color: "#212121",
+    category: "images-search-engine",
+    name: "Imgflip",
+  },
+  itemfix: {
+    color: "#2A2A2A",
+    category: "video_platform",
+    name: "ItemFix",
+  },
+  jalbum: {
+    color: "#1D3900",
+    category: "images-search-engine",
+    name: "jAlbum",
+  },
+  jetpunk: {
+    color: "#64BEFF",
+    category: "gaming",
+    name: "JetPunk",
+  },
+  justpasteit: {
+    color: "#FFDF5C",
+    category: "paste",
+    name: "JustPaste.it",
+  },
+  koalendar: {
+    color: "#4942C2",
+    category: "other",
+    name: "Koalendar",
+  },
+  lens: {
+    color: "#00501E",
+    category: "social",
+    name: "Lens",
+  },
+  limetorrents: {
+    color: "#78CB28",
+    category: "other",
+    name: "LimeTorrents",
+  },
+  linkme: {
+    color: "#F9776A",
+    category: "social",
+    name: "Link.me",
+  },
+  linuxfr: {
+    color: "#F3B707",
+    category: "programming",
+    name: "LinuxFr",
+  },
+  listal: {
+    color: "#2C2C2C",
+    category: "other",
+    name: "Listal",
+  },
+  listed: {
+    color: "#EAEDF6",
+    category: "social",
+    name: "Listed",
+  },
+  listography: {
+    color: "#000000",
+    category: "other",
+    name: "Listography",
+  },
+  lnkbio: {
+    color: "#B996F7",
+    category: "social",
+    name: "Lnk.Bio",
+  },
+  lushstories: {
+    color: "#D50000",
+    category: "adult",
+    name: "Lush Stories",
+  },
+  lyricstranslate: {
+    color: "#242E42",
+    category: "other",
+    name: "LyricsTranslate",
+  },
+  magiceden: {
+    color: "#E42575",
+    category: "finance",
+    name: "Magic Eden",
+  },
+  manifoldgallery: {
+    color: "#000000",
+    category: "finance",
+    name: "Manifold Gallery",
+  },
+  manylink: {
+    color: "#222222",
+    category: "social",
+    name: "Many.link",
+  },
+  memrise: {
+    color: "#FEC000",
+    category: "other",
+    name: "Memrise",
+  },
+  meneame: {
+    color: "#FF6400",
+    category: "social",
+    name: "Menéame",
+  },
+  mercari: {
+    color: "#FF0211",
+    category: "ecommerce",
+    name: "Mercari",
+  },
+  metalarchives: {
+    color: "#6D1216",
+    category: "other",
+    name: "Metal Archives",
+  },
+  milkshake: {
+    color: "#FF4716",
+    category: "social",
+    name: "Milkshake",
+  },
+  mydealz: {
+    color: "#02027B",
+    category: "ecommerce",
+    name: "mydealz",
+  },
+  mydramalist: {
+    color: "#015284",
+    category: "other",
+    name: "MyDramaList",
+  },
+  myfans: {
+    color: "#FF3700",
+    category: "adult",
+    name: "Myfans",
+  },
+  myminifactory: {
+    color: "#00C3A5",
+    category: "other",
+    name: "MyMiniFactory",
+  },
+  mynickname: {
+    color: "#849A01",
+    category: "other",
+    name: "MyNickname",
+  },
+  nationstates: {
+    color: "#5877F8",
+    category: "gaming",
+    name: "NationStates",
+  },
+  ngl: {
+    color: "#F96636",
+    category: "social",
+    name: "NGL",
+  },
+  nineninenine: {
+    color: "#EE4825",
+    category: "ecommerce",
+    name: "999.md",
+  },
+  nintendolife: {
+    color: "#1A1A1A",
+    category: "gaming",
+    name: "Nintendo Life",
+  },
+  nitrotype: {
+    color: "#D62A36",
+    category: "gaming",
+    name: "Nitro Type",
+  },
+  opengameart: {
+    color: "#EFEBA3",
+    category: "gaming",
+    name: "OpenGameArt",
+  },
+  oshwlab: {
+    color: "#3673FE",
+    category: "programming",
+    name: "OSHWLab",
+  },
+  paragraph: {
+    color: "#3D65F8",
+    category: "social",
+    name: "Paragraph",
+  },
+  passes: {
+    color: "#131316",
+    category: "social",
+    name: "Passes",
+  },
+  pbase: {
+    color: "#6C7EBD",
+    category: "images-search-engine",
+    name: "PBase",
+  },
+  picturepush: {
+    color: "#161616",
+    category: "images-search-engine",
+    name: "PicturePush",
+  },
+  pifyi: {
+    color: "#0000FE",
+    category: "social",
+    name: "PI.FYI",
+  },
+  pinkbike: {
+    color: "#D70302",
+    category: "sport",
+    name: "Pinkbike",
+  },
+  podchaser: {
+    color: "#491D87",
+    category: "streaming",
+    name: "Podchaser",
+  },
+  polymarket: {
+    color: "#1551F0",
+    category: "finance",
+    name: "Polymarket",
+  },
+  preisjaeger: {
+    color: "#EAF2F8",
+    category: "ecommerce",
+    name: "Preisjäger",
+  },
+  promodescuentos: {
+    color: "#91C03D",
+    category: "ecommerce",
+    name: "Promodescuentos",
+  },
+  promptbase: {
+    color: "#222236",
+    category: "ecommerce",
+    name: "PromptBase",
+  },
+  proza: {
+    color: "#23C340",
+    category: "other",
+    name: "Proza.ru",
+  },
+  pwonline: {
+    color: "#FEC103",
+    category: "gaming",
+    name: "PW Online",
+  },
+  qbn: {
+    color: "#F80647",
+    category: "other",
+    name: "QBN",
+  },
+  quotev: {
+    color: "#E1E8FA",
+    category: "social",
+    name: "Quotev",
+  },
+  ramblerdating: {
+    color: "#2C5B91",
+    category: "dating",
+    name: "Rambler Dating",
+  },
+  rankia: {
+    color: "#195175",
+    category: "finance",
+    name: "Rankia",
+  },
+  realmeye: {
+    color: "#222222",
+    category: "gaming",
+    name: "RealmEye",
+  },
+  runescape: {
+    color: "#0D0D0D",
+    category: "gaming",
+    name: "RuneScape",
+  },
+  sharechat: {
+    color: "#FED91C",
+    category: "social",
+    name: "ShareChat",
+  },
+  shoppy: {
+    color: "#5390FE",
+    category: "ecommerce",
+    name: "Shoppy",
+  },
+  shorby: {
+    color: "#6F1E86",
+    category: "social",
+    name: "Shorby",
+  },
+  slushy: {
+    color: "#1E2021",
+    category: "adult",
+    name: "Slushy",
+  },
+  snackvideo: {
+    color: "#000000",
+    category: "video_platform",
+    name: "SnackVideo",
+  },
+  soloto: {
+    color: "#3572FD",
+    category: "social",
+    name: "Solo.to",
+  },
+  soylentnews: {
+    color: "#971216",
+    category: "social",
+    name: "SoylentNews",
+  },
+  spankbang: {
+    color: "#E43E59",
+    category: "adult",
+    name: "SpankBang",
+  },
+  spells8: {
+    color: "#4A85B1",
+    category: "other",
+    name: "Spells8",
+  },
+  spoutible: {
+    color: "#2C465E",
+    category: "social",
+    name: "Spoutible",
+  },
+  statink: {
+    color: "#666666",
+    category: "gaming",
+    name: "stat.ink",
+  },
+  statuscafe: {
+    color: "#8D6E4B",
+    category: "social",
+    name: "status.cafe",
+  },
+  stihi: {
+    color: "#EC6713",
+    category: "other",
+    name: "Stihi.ru",
+  },
+  suicidegirls: {
+    color: "#262425",
+    category: "adult",
+    name: "SuicideGirls",
+  },
+  superprofile: {
+    color: "#04A6FE",
+    category: "social",
+    name: "SuperProfile",
+  },
+  superrare: {
+    color: "#000000",
+    category: "finance",
+    name: "SuperRare",
+  },
+  taittsuu: {
+    color: "#989898",
+    category: "social",
+    name: "Taittsuu",
+  },
+  tango: {
+    color: "#FE0065",
+    category: "streaming",
+    name: "Tango",
+  },
+  teamliquid: {
+    color: "#001437",
+    category: "gaming",
+    name: "Team Liquid",
+  },
+  teia: {
+    color: "#E7E7E7",
+    category: "finance",
+    name: "Teia",
+  },
+  terrariaforum: {
+    color: "#A6C8E5",
+    category: "gaming",
+    name: "Terraria Forums",
+  },
+  thebigboss: {
+    color: "#5B79B8",
+    category: "other",
+    name: "BigBoss",
+  },
+  throne: {
+    color: "#4537E2",
+    category: "social",
+    name: "Throne",
+  },
+  tiendanube: {
+    color: "#2B3256",
+    category: "ecommerce",
+    name: "Tiendanube",
+  },
+  tipeee: {
+    color: "#D74555",
+    category: "finance",
+    name: "Tipeee",
+  },
+  tnaflix: {
+    color: "#1E1E1E",
+    category: "adult",
+    name: "TNAFlix",
+  },
+  tokopedia: {
+    color: "#03AC0E",
+    category: "ecommerce",
+    name: "Tokopedia",
+  },
+  topmate: {
+    color: "#E44332",
+    category: "other",
+    name: "Topmate",
+  },
+  traktrain: {
+    color: "#766CFB",
+    category: "streaming",
+    name: "TrakTrain",
+  },
+  tripline: {
+    color: "#CBCBCB",
+    category: "other",
+    name: "Tripline",
+  },
+  trovo: {
+    color: "#19D66B",
+    category: "streaming",
+    name: "Trovo",
+  },
+  truelancer: {
+    color: "#02ABC8",
+    category: "other",
+    name: "Truelancer",
+  },
+  turpravda: {
+    color: "#FFC109",
+    category: "other",
+    name: "TurPravda",
+  },
+  typeracer: {
+    color: "#006AB4",
+    category: "gaming",
+    name: "TypeRacer",
+  },
+  unstoppabledomains: {
+    color: "#0D0D0D",
+    category: "finance",
+    name: "Unstoppable Domains",
+  },
+  vgen: {
+    color: "#B8FE26",
+    category: "other",
+    name: "VGen",
+  },
+  vlr: {
+    color: "#17171A",
+    category: "gaming",
+    name: "VLR.gg",
+  },
+  voicemod: {
+    color: "#141517",
+    category: "other",
+    name: "Voicemod",
+  },
+  wanderlog: {
+    color: "#F85940",
+    category: "other",
+    name: "Wanderlog",
+  },
+  whatnot: {
+    color: "#FFDF00",
+    category: "ecommerce",
+    name: "Whatnot",
+  },
+  zora: {
+    color: "#281317",
+    category: "finance",
+    name: "Zora",
+  },
 };
