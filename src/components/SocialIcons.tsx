@@ -23,6 +23,8 @@ import monopolygopng from "../assets/social-icons/monopolygo.png";
 import scrabblegopng from "../assets/social-icons/scrabblego.png";
 import hudsonrockpng from "../assets/social-icons/hudsonrock.png";
 import opensanctionspng from "../assets/social-icons/opensanctions.png";
+import numtracepng from "../assets/social-icons/numtrace.png";
+import jazzbalancepng from "../assets/social-icons/jazzbalance.png";
 import imvupng from "../assets/social-icons/imvu.png";
 import pagesjaunessvg from "../assets/social-icons/pagesjaunes.svg";
 import copainsdavantsvg from "../assets/social-icons/copainsdavant.svg";
@@ -2443,6 +2445,18 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "zora":
       icon = <img src={zorapng} alt="Zora" />;
+      break;
+    case "numtrace":
+      icon = <img src={numtracepng} alt="NumTrace" />;
+      break;
+    case "jazzbalance":
+      icon = <img src={jazzbalancepng} alt="Jazz Balance" />;
+      break;
+    case "melissa":
+      icon = <Icon icon="mdi:alpha-m-box" color={socialNetworks.melissa.color} />;
+      break;
+    case "favicon":
+      icon = <Icon icon="mdi:image-search-outline" color={socialNetworks.favicon.color} />;
       break;
 
     default:

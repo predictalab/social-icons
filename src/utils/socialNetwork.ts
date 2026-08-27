@@ -326,7 +326,7 @@ export const socialNetworks: socialNetworkType = {
     name: "Family Locator",
   },
   favicon: {
-    color: "#000000",
+    color: "#4F46E5",
     category: "other",
     name: "FavIcon",
   },
@@ -391,8 +391,9 @@ export const socialNetworks: socialNetworkType = {
     name: "Medal",
   },
   melissa: {
-    color: "#FF4081",
+    color: "#1CA7E0",
     category: "other",
+    name: "Melissa",
   },
   mindbody: {
     color: "#AAFFD8",
