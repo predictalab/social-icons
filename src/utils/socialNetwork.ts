@@ -294,7 +294,6 @@ export const socialNetworks: socialNetworkType = {
   bajao: { color: "#B92373", category: "streaming" },
   bandlab: { color: "#EA2C17", category: "streaming" },
   blink: { color: "#1A594B", category: "social" },
-  bush: { color: "#000000", category: "social" },
   callapp: { color: "#098DF7", category: "social", name: "CallApp" },
   castbox: { color: "#F36337", category: "streaming", name: "Castbox.fm" },
   catch: { color: "#000195", category: "ecommerce" },

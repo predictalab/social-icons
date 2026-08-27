@@ -214,7 +214,6 @@ export type SourceTypes =
   | "bereal"
   | "blink"
   | "bandlab"
-  | "bush"
   | "bajao"
   | "callapp"
   | "castbox"
