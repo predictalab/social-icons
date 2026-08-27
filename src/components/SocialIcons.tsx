@@ -22,6 +22,7 @@ import bibleapppng from "../assets/social-icons/bible.png";
 import monopolygopng from "../assets/social-icons/monopolygo.png";
 import scrabblegopng from "../assets/social-icons/scrabblego.png";
 import hudsonrockpng from "../assets/social-icons/hudsonrock.png";
+import opensanctionspng from "../assets/social-icons/opensanctions.png";
 import imvupng from "../assets/social-icons/imvu.png";
 import pagesjaunessvg from "../assets/social-icons/pagesjaunes.svg";
 import copainsdavantsvg from "../assets/social-icons/copainsdavant.svg";
@@ -864,6 +865,9 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "hudsonrock":
       icon = <img src={hudsonrockpng} alt="Cavalier" />;
       break;
+    case "opensanctions":
+      icon = <img src={opensanctionspng} alt="OpenSanctions" />;
+      break;
     case "imvu":
       icon = <img src={imvupng} alt="IMVU" />;
       break;
@@ -1385,6 +1389,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:discourse" color={socialNetworks.discourse.color} />;
       break;
     case "ssh-keys":
+    case "sshkeys":
       icon = <Icon icon="mdi:key-variant" color={socialNetworks["ssh-keys"].color} />;
       break;
     case "500px":
