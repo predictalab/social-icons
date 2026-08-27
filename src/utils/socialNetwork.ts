@@ -811,6 +811,11 @@ export const socialNetworks: socialNetworkType = {
     category: "programming",
     name: "SSH Keys",
   },
+  sshkeys: {
+    color: "#DAA520",
+    category: "programming",
+    name: "SSH Keys",
+  },
   "500px": {
     color: "#222222",
     category: "social",
@@ -1705,6 +1710,11 @@ export const socialNetworks: socialNetworkType = {
     color: "#2081E2",
     category: "finance",
     name: "OpenSea",
+  },
+  opensanctions: {
+    color: "#014FEB",
+    category: "other",
+    name: "OpenSanctions",
   },
   packagist: {
     color: "#F28D1A",
