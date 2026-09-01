@@ -364,6 +364,31 @@ import voicemodpng from "../assets/social-icons/voicemod.png";
 import wanderlogpng from "../assets/social-icons/wanderlog.png";
 import whatnotpng from "../assets/social-icons/whatnot.png";
 import zorapng from "../assets/social-icons/zora.png";
+import audiuspng from "../assets/social-icons/audius.png";
+import campsitebiopng from "../assets/social-icons/campsitebio.png";
+import chingaripng from "../assets/social-icons/chingari.png";
+import codoliopng from "../assets/social-icons/codolio.png";
+import elixirforumpng from "../assets/social-icons/elixirforum.png";
+import fanboxpng from "../assets/social-icons/fanbox.png";
+import grailedpng from "../assets/social-icons/grailed.png";
+import hexbearpng from "../assets/social-icons/hexbear.png";
+import hexpmpng from "../assets/social-icons/hexpm.png";
+import laylopng from "../assets/social-icons/laylo.png";
+import linkinbiopng from "../assets/social-icons/linkinbio.png";
+import manifoldpng from "../assets/social-icons/manifold.png";
+import playstrategypng from "../assets/social-icons/playstrategy.png";
+import prgrammpng from "../assets/social-icons/pr0gramm.png";
+import programmingdevpng from "../assets/social-icons/programmingdev.png";
+import pychesspng from "../assets/social-icons/pychess.png";
+import quaypng from "../assets/social-icons/quay.png";
+import sooppng from "../assets/social-icons/soop.png";
+import speedrunslivepng from "../assets/social-icons/speedrunslive.png";
+import splinepng from "../assets/social-icons/spline.png";
+import swapdpng from "../assets/social-icons/swapd.png";
+import tetriopng from "../assets/social-icons/tetrio.png";
+import thepiratebaypng from "../assets/social-icons/thepiratebay.png";
+import warframemarketpng from "../assets/social-icons/warframemarket.png";
+import yandexmusicpng from "../assets/social-icons/yandexmusic.png";
 
 type PropsTypes = { source?: string };
 
@@ -2457,6 +2482,148 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "favicon":
       icon = <Icon icon="mdi:image-search-outline" color={socialNetworks.favicon.color} />;
+      break;
+
+    case "anaconda":
+      icon = <Icon icon="simple-icons:anaconda" color={socialNetworks.anaconda.color} />;
+      break;
+    case "aparat":
+      icon = <Icon icon="simple-icons:aparat" color={socialNetworks.aparat.color} />;
+      break;
+    case "audius":
+      icon = <img src={audiuspng} alt="Audius" />;
+      break;
+    case "bilibili":
+      icon = <Icon icon="simple-icons:bilibili" color={socialNetworks.bilibili.color} />;
+      break;
+    case "blenderartists":
+      icon = <Icon icon="simple-icons:blender" color={socialNetworks.blenderartists.color} />;
+      break;
+    case "campsitebio":
+      icon = <img src={campsitebiopng} alt="Campsite.bio" />;
+      break;
+    case "chingari":
+      icon = <img src={chingaripng} alt="Chingari" />;
+      break;
+    case "codestudio":
+      icon = <Icon icon="simple-icons:codingninjas" color={socialNetworks.codestudio.color} />;
+      break;
+    case "codolio":
+      icon = <img src={codoliopng} alt="Codolio" />;
+      break;
+    case "credly":
+      icon = <Icon icon="simple-icons:credly" color={socialNetworks.credly.color} />;
+      break;
+    case "discordgg":
+      icon = <Icon icon="simple-icons:discord" color={socialNetworks.discordgg.color} />;
+      break;
+    case "elixirforum":
+      icon = <img src={elixirforumpng} alt="Elixir Forum" />;
+      break;
+    case "fanbox":
+      icon = <img src={fanboxpng} alt="pixivFANBOX" />;
+      break;
+    case "freecodecamp":
+      icon = <Icon icon="simple-icons:freecodecamp" color={socialNetworks.freecodecamp.color} />;
+      break;
+    case "grailed":
+      icon = <img src={grailedpng} alt="Grailed" />;
+      break;
+    case "hexbear":
+      icon = <img src={hexbearpng} alt="Hexbear" />;
+      break;
+    case "hexpm":
+      icon = <img src={hexpmpng} alt="Hex.pm" />;
+      break;
+    case "kitsu":
+      icon = <Icon icon="simple-icons:kitsu" color={socialNetworks.kitsu.color} />;
+      break;
+    case "laylo":
+      icon = <img src={laylopng} alt="Laylo" />;
+      break;
+    case "leetcode":
+      icon = <Icon icon="simple-icons:leetcode" color={socialNetworks.leetcode.color} />;
+      break;
+    case "lemmy":
+      icon = <Icon icon="simple-icons:lemmy" color={socialNetworks.lemmy.color} />;
+      break;
+    case "linkinbio":
+      icon = <img src={linkinbiopng} alt="Linkin.bio" />;
+      break;
+    case "manifold":
+      icon = <img src={manifoldpng} alt="Manifold" />;
+      break;
+    case "modrinth":
+      icon = <Icon icon="simple-icons:modrinth" color={socialNetworks.modrinth.color} />;
+      break;
+    case "monkeytype":
+      icon = <Icon icon="simple-icons:monkeytype" color={socialNetworks.monkeytype.color} />;
+      break;
+    case "obsidian":
+      icon = <Icon icon="simple-icons:obsidian" color={socialNetworks.obsidian.color} />;
+      break;
+    case "playstrategy":
+      icon = <img src={playstrategypng} alt="PlayStrategy" />;
+      break;
+    case "pr0gramm":
+      icon = <img src={prgrammpng} alt="pr0gramm" />;
+      break;
+    case "programmingdev":
+      icon = <img src={programmingdevpng} alt="Programming.dev" />;
+      break;
+    case "pychess":
+      icon = <img src={pychesspng} alt="PyChess" />;
+      break;
+    case "qiita":
+      icon = <Icon icon="simple-icons:qiita" color={socialNetworks.qiita.color} />;
+      break;
+    case "quay":
+      icon = <img src={quaypng} alt="Quay.io" />;
+      break;
+    case "serverfault":
+      icon = <Icon icon="simple-icons:serverfault" color={socialNetworks.serverfault.color} />;
+      break;
+    case "soop":
+      icon = <img src={sooppng} alt="SOOP" />;
+      break;
+    case "speedrunslive":
+      icon = <img src={speedrunslivepng} alt="SpeedRunsLive" />;
+      break;
+    case "spline":
+      icon = <img src={splinepng} alt="Spline" />;
+      break;
+    case "sublimetextforum":
+      icon = <Icon icon="simple-icons:sublimetext" color={socialNetworks.sublimetextforum.color} />;
+      break;
+    case "superuser":
+      icon = <Icon icon="simple-icons:superuser" color={socialNetworks.superuser.color} />;
+      break;
+    case "swapd":
+      icon = <img src={swapdpng} alt="SWAPD" />;
+      break;
+    case "tetrio":
+      icon = <img src={tetriopng} alt="TETR.IO" />;
+      break;
+    case "thepiratebay":
+      icon = <img src={thepiratebaypng} alt="The Pirate Bay" />;
+      break;
+    case "topcoder":
+      icon = <Icon icon="simple-icons:topcoder" color={socialNetworks.topcoder.color} />;
+      break;
+    case "velog":
+      icon = <Icon icon="simple-icons:velog" color={socialNetworks.velog.color} />;
+      break;
+    case "viber":
+      icon = <Icon icon="simple-icons:viber" color={socialNetworks.viber.color} />;
+      break;
+    case "warframemarket":
+      icon = <img src={warframemarketpng} alt="Warframe Market" />;
+      break;
+    case "warpcast":
+      icon = <Icon icon="simple-icons:farcaster" color={socialNetworks.warpcast.color} />;
+      break;
+    case "yandexmusic":
+      icon = <img src={yandexmusicpng} alt="Yandex Music" />;
       break;
 
     default:

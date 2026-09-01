@@ -2571,4 +2571,239 @@ export const socialNetworks: socialNetworkType = {
     category: "finance",
     name: "Zora",
   },
+  anaconda: {
+    color: "#44A833",
+    category: "programming",
+    name: "Anaconda",
+  },
+  aparat: {
+    color: "#ED145B",
+    category: "video_platform",
+    name: "Aparat",
+  },
+  audius: {
+    color: "#1C1C1C",
+    category: "streaming",
+    name: "Audius",
+  },
+  bilibili: {
+    color: "#00A1D6",
+    category: "video_platform",
+    name: "Bilibili",
+  },
+  blenderartists: {
+    color: "#E87D0D",
+    category: "social",
+    name: "Blender Artists",
+  },
+  campsitebio: {
+    color: "#6A8768",
+    category: "social",
+    name: "Campsite.bio",
+  },
+  chingari: {
+    color: "#2B1133",
+    category: "social",
+    name: "Chingari",
+  },
+  codestudio: {
+    color: "#DD6620",
+    category: "programming",
+    name: "Code Studio",
+  },
+  codolio: {
+    color: "#E3998E",
+    category: "programming",
+    name: "Codolio",
+  },
+  credly: {
+    color: "#FF6B00",
+    category: "other",
+    name: "Credly",
+  },
+  discordgg: {
+    color: "#5865F2",
+    category: "messaging_app",
+    name: "Discord.gg",
+  },
+  elixirforum: {
+    color: "#5B1D66",
+    category: "programming",
+    name: "Elixir Forum",
+  },
+  fanbox: {
+    color: "#F8C3BB",
+    category: "social",
+    name: "pixivFANBOX",
+  },
+  freecodecamp: {
+    color: "#0A0A23",
+    category: "programming",
+    name: "freeCodeCamp",
+  },
+  grailed: {
+    color: "#000000",
+    category: "ecommerce",
+    name: "Grailed",
+  },
+  hexbear: {
+    color: "#261446",
+    category: "social",
+    name: "Hexbear",
+  },
+  hexpm: {
+    color: "#663D96",
+    category: "programming",
+    name: "Hex.pm",
+  },
+  kitsu: {
+    color: "#FD755C",
+    category: "social",
+    name: "Kitsu",
+  },
+  laylo: {
+    color: "#3C6AE2",
+    category: "social",
+    name: "Laylo",
+  },
+  leetcode: {
+    color: "#FFA116",
+    category: "programming",
+    name: "LeetCode",
+  },
+  lemmy: {
+    color: "#000000",
+    category: "social",
+    name: "Lemmy",
+  },
+  linkinbio: {
+    color: "#000000",
+    category: "social",
+    name: "Linkin.bio",
+  },
+  manifold: {
+    color: "#4337CC",
+    category: "finance",
+    name: "Manifold",
+  },
+  modrinth: {
+    color: "#00AF5C",
+    category: "gaming",
+    name: "Modrinth",
+  },
+  monkeytype: {
+    color: "#E2B714",
+    category: "other",
+    name: "Monkeytype",
+  },
+  obsidian: {
+    color: "#7C3AED",
+    category: "other",
+    name: "Obsidian",
+  },
+  playstrategy: {
+    color: "#3F3F41",
+    category: "gaming",
+    name: "PlayStrategy",
+  },
+  pr0gramm: {
+    color: "#D13B21",
+    category: "social",
+    name: "pr0gramm",
+  },
+  programmingdev: {
+    color: "#205970",
+    category: "programming",
+    name: "Programming.dev",
+  },
+  pychess: {
+    color: "#800066",
+    category: "gaming",
+    name: "PyChess",
+  },
+  qiita: {
+    color: "#55C500",
+    category: "programming",
+    name: "Qiita",
+  },
+  quay: {
+    color: "#0A3B61",
+    category: "programming",
+    name: "Quay.io",
+  },
+  serverfault: {
+    color: "#E7282D",
+    category: "programming",
+    name: "Server Fault",
+  },
+  soop: {
+    color: "#16191C",
+    category: "streaming",
+    name: "SOOP",
+  },
+  speedrunslive: {
+    color: "#0F0F0F",
+    category: "gaming",
+    name: "SpeedRunsLive",
+  },
+  spline: {
+    color: "#251234",
+    category: "other",
+    name: "Spline",
+  },
+  sublimetextforum: {
+    color: "#FF9800",
+    category: "programming",
+    name: "Sublime Forum",
+  },
+  superuser: {
+    color: "#38A1CE",
+    category: "programming",
+    name: "Super User",
+  },
+  swapd: {
+    color: "#212121",
+    category: "ecommerce",
+    name: "SWAPD",
+  },
+  tetrio: {
+    color: "#DF4EAA",
+    category: "gaming",
+    name: "TETR.IO",
+  },
+  thepiratebay: {
+    color: "#B17320",
+    category: "other",
+    name: "The Pirate Bay",
+  },
+  topcoder: {
+    color: "#29A7DF",
+    category: "programming",
+    name: "Topcoder",
+  },
+  velog: {
+    color: "#20C997",
+    category: "programming",
+    name: "velog",
+  },
+  viber: {
+    color: "#7360F2",
+    category: "messaging_app",
+    name: "Viber",
+  },
+  warframemarket: {
+    color: "#3A9CB6",
+    category: "gaming",
+    name: "Warframe Market",
+  },
+  warpcast: {
+    color: "#855DCD",
+    category: "social",
+    name: "Warpcast",
+  },
+  yandexmusic: {
+    color: "#100402",
+    category: "streaming",
+    name: "Yandex Music",
+  },
 };
