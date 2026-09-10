@@ -1,77 +1,93 @@
 # Predicta Lab - Social icons
 
-Custom library to display social networks (and more) icons.
-
-<!-- ## Screenshot
-
-![An animated Credit Card component, built with React 18 and Typescript](https://github.com/predictalab/react-credit-card/assets/115979786/89e0cd53-2438-47a9-9aeb-f3a7b5b526cf) -->
+Bibliothèque React d'icônes de réseaux sociaux et de sources (700+), utilisée par les produits
+Predicta Lab pour illustrer les résultats de recherche.
 
 ## Installation
 
-`npm i @predictalab/social-icons`
+```bash
+npm i @predictalab/social-icons
+```
 
 https://www.npmjs.com/package/@predictalab/social-icons
 
-<!-- ## Usage
+## Usage
 
-```js
-import CreditCard from 'predictalab-react-credit-card'
+```tsx
+import { SocialIcons, socialNetworks, type SourceTypes } from "@predictalab/social-icons";
 
-const Example = () : JSX.Element => {
-    return (
-        <CreditCard
-            gradientStartColor: "#113e9f"
-            gradientEndColor: "#3083f7"
-            buttonColor: "#113e9f"
-            buttonTextColor: "#fff"
-            submitAction: (values) => console.log(values)
-        />
-    )
-}
+<SocialIcons source="github" />
 
-export default Example
+socialNetworks.github; // { color: "#161414", category: "programming", name?: string }
 ```
 
-## Props and types
+`source` est la clé de la source (minuscule, sans espace, identique à celle de sources-api :
+`github`, `pr0gramm`, `thepiratebay`…). Une clé inconnue affiche une icône de partage générique.
 
-```js
-type ComponentProps = {
-  gradientStartColor: string,
-  gradientEndColor: string,
-  buttonColor: string,
-  buttonTextColor: string,
-  translations?: TextsTypes,
-  submitAction: (creditCardInfo: CreditCardTypes) => void,
-};
+`socialNetworks` expose pour chaque clé la couleur de marque, une catégorie (`social`,
+`messaging_app`, `gaming`, `programming`…) et éventuellement un nom d'affichage.
 
-// Returned in the 'submitAction' function
-type CreditCardTypes = {
-  number: string,
-  name: string,
-  month: number,
-  year: number,
-  cvv: string,
-  type: string,
-  flipped: boolean,
-};
+## Développement
 
-// Can be provided to translate the module
-type TextsTypes = {
-  "Card holder": string,
-  "FULL NAME": string,
-  Expires: string,
-  YY: string,
-  MM: string,
-  "Card number": string,
-  "Card holder's name": string,
-  "Expiration date": string,
-  Month: string,
-  Year: string,
-  "Proceed to checkout": string,
-  "Get back to credits selection": string,
-};
+```bash
+npm run dev     # aperçu de toutes les icônes sur http://localhost:5174/social-icons/
+npm run build   # build rollup vers dist/
 ```
 
-## Contribution
+L'aperçu propose une recherche, un filtre par catégorie et un filtre **Nouveautés** (les clés
+ajoutées à `sourceTypes.ts` depuis la dernière release).
 
-Feel free to contribute to this project by sending your custom PR -->
+## Ajouter des icônes
+
+Une icône = une clé dans 3 fichiers, plus éventuellement un asset :
+
+| Fichier | Rôle |
+|---|---|
+| `src/types/sourceTypes.ts` | l'union `SourceTypes` |
+| `src/utils/socialNetwork.ts` | couleur, catégorie, nom d'affichage |
+| `src/components/SocialIcons.tsx` | le `case` qui rend l'icône (Iconify ou `<img>` local) |
+| `src/assets/social-icons/<clé>.png` | asset local (150 px max), seulement si la marque n'est pas dans simple-icons |
+
+### Avec Claude Code (recommandé)
+
+Le repo embarque un skill dans `.claude/skills/add-icons/`. Il est découvert automatiquement
+dès que le repo est ouvert dans Claude Code, rien à installer. Deux façons de s'en servir :
+
+```
+/add-icons anaconda, bilibili, tetrio
+```
+
+ou en langage naturel (« ajoute une icône pour Bilibili ») : la description du skill le déclenche.
+
+Le skill déroule la procédure complète :
+
+1. ne traite que les clés qui n'ont pas encore de `case` ;
+2. cherche la marque dans **simple-icons** (via Iconify) et récupère sa couleur officielle, en
+   évitant les faux amis connus (`backstage` est le portail dev Spotify, `lens` l'IDE Kubernetes…) ;
+3. sinon télécharge le logo depuis le site officiel (apple-touch-icon, manifest, og:image, avatars
+   GitHub/X…) et produit une **planche-contact à relire** avant d'installer quoi que ce soit ;
+4. en dernier recours, une icône `mdi` thématique ;
+5. édite les 3 fichiers, lance `tsc` + `build`, vérifie l'aperçu, bumpe la version patch.
+
+Prérequis machine : `python3` avec Pillow (`pip install pillow`) et `curl`. Le script
+`.claude/skills/add-icons/scripts/icons.py` est aussi utilisable seul :
+
+```bash
+python3 .claude/skills/add-icons/scripts/icons.py check anaconda hexbear      # slug + couleur simple-icons
+python3 .claude/skills/add-icons/scripts/icons.py fetch tetrio=tetr.io         # meilleur logo candidat
+python3 .claude/skills/add-icons/scripts/icons.py sheet                        # planche-contact
+python3 .claude/skills/add-icons/scripts/icons.py install tetrio               # PNG 150 px + couleur dominante
+```
+
+Le dossier de travail `.icons-work/` est ignoré par git.
+
+### À la main
+
+Suivre `.claude/skills/add-icons/SKILL.md` : c'est la procédure de référence, lisible sans Claude.
+
+## Release
+
+1. PR vers `master`, avec le bump de version patch dans `package.json`.
+2. Après merge : `npm run deploy` (build + `npm publish`).
+3. Bumper la dépendance dans les produits consommateurs (b2c-app, monitoring-app,
+   predictalab-graph, stealersAI).
