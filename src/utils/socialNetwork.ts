@@ -2806,4 +2806,14 @@ export const socialNetworks: socialNetworkType = {
     category: "streaming",
     name: "Yandex Music",
   },
+  imdb: {
+    color: "#F5C518",
+    category: "social",
+    name: "IMDb",
+  },
+  thirtyfivephoto: {
+    color: "#000000",
+    category: "social",
+    name: "35PHOTO",
+  },
 };
