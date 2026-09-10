@@ -1636,6 +1636,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={youpicpng} alt="YouPic" />;
       break;
     case "35photo":
+    case "thirtyfivephoto":
       icon = <img src={photo35png} alt="35PHOTO" />;
       break;
     case "ameblo":
@@ -2624,6 +2625,9 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "yandexmusic":
       icon = <img src={yandexmusicpng} alt="Yandex Music" />;
+      break;
+    case "imdb":
+      icon = <Icon icon="simple-icons:imdb" color={socialNetworks.imdb.color} />;
       break;
 
     default:

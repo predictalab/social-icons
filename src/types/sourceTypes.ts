@@ -743,4 +743,6 @@ export type SourceTypes =
   | "viber"
   | "warframemarket"
   | "warpcast"
-  | "yandexmusic";
+  | "yandexmusic"
+  | "imdb"
+  | "thirtyfivephoto";
