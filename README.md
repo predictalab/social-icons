@@ -21,8 +21,8 @@ import { SocialIcons, socialNetworks, type SourceTypes } from "@predictalab/soci
 socialNetworks.github; // { color: "#161414", category: "programming", name?: string }
 ```
 
-`source` est la clé de la source (minuscule, sans espace, identique à celle de sources-api :
-`github`, `pr0gramm`, `thepiratebay`…). Une clé inconnue affiche une icône de partage générique.
+`source` est la clé de la source (minuscule, sans espace, identique à celle utilisée par les
+applications qui consomment la lib : `github`, `pr0gramm`, `thepiratebay`…). Une clé inconnue affiche une icône de partage générique.
 
 `socialNetworks` expose pour chaque clé la couleur de marque, une catégorie (`social`,
 `messaging_app`, `gaming`, `programming`…) et éventuellement un nom d'affichage.
@@ -89,5 +89,4 @@ Suivre `.claude/skills/add-icons/SKILL.md` : c'est la procédure de référence,
 
 1. PR vers `master`, avec le bump de version patch dans `package.json`.
 2. Après merge : `npm run deploy` (build + `npm publish`).
-3. Bumper la dépendance dans les produits consommateurs (b2c-app, monitoring-app,
-   predictalab-graph, stealersAI).
+3. Bumper la dépendance dans les applications qui consomment la lib.

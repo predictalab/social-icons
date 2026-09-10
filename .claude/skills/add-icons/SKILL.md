@@ -6,7 +6,7 @@ description: Ajoute des icônes de réseaux/sources à @predictalab/social-icons
 # Ajouter des icônes à social-icons
 
 Entrée : une liste de **clés de sources** (minuscules, sans espace, identiques aux clés
-utilisées par sources-api / les collectors : `hexpm`, `pr0gramm`, `thepiratebay`…).
+utilisées par les applications qui consomment la lib : `hexpm`, `pr0gramm`, `thepiratebay`…).
 Si on te donne des noms de marques, demande ou déduis la clé avant de commencer.
 
 Outillage : `python3 .claude/skills/add-icons/scripts/icons.py <sous-commande>`
@@ -46,9 +46,8 @@ Confirmer l'existence des slugs retenus en une requête :
 
 ## 3. Sinon, asset local
 
-Trouver le domaine de chaque source (site officiel, ou le connecteur dans le repo collectors
-si tu y as accès — attention aux domaines non évidents : fanlink = toneden.io,
-manylink = manylink.co, eintracht = community.eintracht.de).
+Trouver le domaine officiel de chaque source. Il n'est pas toujours évident, vérifier avant
+de fetcher : fanlink = toneden.io, manylink = manylink.co, eintracht = community.eintracht.de.
 
 ```bash
 python3 .claude/skills/add-icons/scripts/icons.py fetch tetrio=tetr.io hexpm=hex.pm ...
