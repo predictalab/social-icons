@@ -2630,6 +2630,14 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:imdb" color={socialNetworks.imdb.color} />;
       break;
 
+    case "deliveroo":
+      icon = <Icon icon="simple-icons:deliveroo" color={socialNetworks.deliveroo.color} />;
+      break;
+
+    case "wix":
+      icon = <Icon icon="simple-icons:wix" color={socialNetworks.wix.color} />;
+      break;
+
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;

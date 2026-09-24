@@ -745,4 +745,6 @@ export type SourceTypes =
   | "warpcast"
   | "yandexmusic"
   | "imdb"
-  | "thirtyfivephoto";
+  | "thirtyfivephoto"
+  | "deliveroo"
+  | "wix";
