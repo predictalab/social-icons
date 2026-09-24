@@ -2816,4 +2816,14 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "35PHOTO",
   },
+  deliveroo: {
+    color: "#00CCBC",
+    category: "ecommerce",
+    name: "Deliveroo",
+  },
+  wix: {
+    color: "#0C6EFC",
+    category: "other",
+    name: "Wix",
+  },
 };
