@@ -389,6 +389,12 @@ import tetriopng from "../assets/social-icons/tetrio.png";
 import thepiratebaypng from "../assets/social-icons/thepiratebay.png";
 import warframemarketpng from "../assets/social-icons/warframemarket.png";
 import yandexmusicpng from "../assets/social-icons/yandexmusic.png";
+import changeorgpng from "../assets/social-icons/changeorg.png";
+import opggpng from "../assets/social-icons/opgg.png";
+import quizizzpng from "../assets/social-icons/quizizz.png";
+import thevergepng from "../assets/social-icons/theverge.png";
+import weeblypng from "../assets/social-icons/weebly.png";
+import weforumpng from "../assets/social-icons/weforum.png";
 
 type PropsTypes = { source?: string };
 
@@ -1515,6 +1521,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "steemit":
       icon = <Icon icon="simple-icons:steemit" color={socialNetworks.steemit.color} />;
       break;
+    case "wordpressorg":
     case "wordpress":
       icon = <Icon icon="simple-icons:wordpress" color={socialNetworks.wordpress.color} />;
       break;
@@ -2636,6 +2643,66 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
 
     case "wix":
       icon = <Icon icon="simple-icons:wix" color={socialNetworks.wix.color} />;
+      break;
+
+    case "changeorg":
+      icon = <img src={changeorgpng} alt="Change.org" />;
+      break;
+
+    case "cnet":
+      icon = <Icon icon="simple-icons:cnet" color={socialNetworks.cnet.color} />;
+      break;
+
+    case "csdn":
+      icon = <Icon icon="simple-icons:csdn" color={socialNetworks.csdn.color} />;
+      break;
+
+    case "freepik":
+      icon = <Icon icon="simple-icons:freepik" color={socialNetworks.freepik.color} />;
+      break;
+
+    case "googleplaystore":
+      icon = <Icon icon="logos:google-play-icon" color={socialNetworks.googleplaystore.color} />;
+      break;
+
+    case "googlescholar":
+      icon = <Icon icon="simple-icons:googlescholar" color={socialNetworks.googlescholar.color} />;
+      break;
+
+    case "launchpad":
+      icon = <Icon icon="simple-icons:launchpad" color={socialNetworks.launchpad.color} />;
+      break;
+
+    case "livejournal":
+      icon = <Icon icon="simple-icons:livejournal" color={socialNetworks.livejournal.color} />;
+      break;
+
+    case "opgg":
+      icon = <img src={opggpng} alt="OP.GG" />;
+      break;
+
+    case "quizizz":
+      icon = <img src={quizizzpng} alt="Quizizz" />;
+      break;
+
+    case "theguardian":
+      icon = <Icon icon="simple-icons:theguardian" color={socialNetworks.theguardian.color} />;
+      break;
+
+    case "theverge":
+      icon = <img src={thevergepng} alt="The Verge" />;
+      break;
+
+    case "weebly":
+      icon = <img src={weeblypng} alt="Weebly" />;
+      break;
+
+    case "weforum":
+      icon = <img src={weforumpng} alt="World Economic Forum" />;
+      break;
+
+    case "xing":
+      icon = <Icon icon="simple-icons:xing" color={socialNetworks.xing.color} />;
       break;
 
     default:
