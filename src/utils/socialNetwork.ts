@@ -2826,4 +2826,84 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "Wix",
   },
+  changeorg: {
+    color: "#F34E49",
+    category: "social",
+    name: "Change.org",
+  },
+  cnet: {
+    color: "#E71D1D",
+    category: "other",
+    name: "CNET",
+  },
+  csdn: {
+    color: "#FC5531",
+    category: "programming",
+    name: "CSDN",
+  },
+  freepik: {
+    color: "#1273EB",
+    category: "other",
+    name: "Freepik",
+  },
+  googleplaystore: {
+    color: "#4285F4",
+    category: "other",
+    name: "Google Play Store",
+  },
+  googlescholar: {
+    color: "#4285F4",
+    category: "search_engine",
+    name: "Google Scholar",
+  },
+  launchpad: {
+    color: "#E95420",
+    category: "programming",
+    name: "Launchpad",
+  },
+  livejournal: {
+    color: "#00B0EA",
+    category: "social",
+    name: "LiveJournal",
+  },
+  opgg: {
+    color: "#5282E8",
+    category: "gaming",
+    name: "OP.GG",
+  },
+  quizizz: {
+    color: "#3A1329",
+    category: "other",
+    name: "Quizizz",
+  },
+  theguardian: {
+    color: "#052962",
+    category: "other",
+    name: "The Guardian",
+  },
+  theverge: {
+    color: "#5200FF",
+    category: "other",
+    name: "The Verge",
+  },
+  weebly: {
+    color: "#1E8DEC",
+    category: "other",
+    name: "Weebly",
+  },
+  weforum: {
+    color: "#4F586A",
+    category: "other",
+    name: "World Economic Forum",
+  },
+  wordpressorg: {
+    color: "#21759B",
+    category: "programming",
+    name: "WordPress.org",
+  },
+  xing: {
+    color: "#006567",
+    category: "social",
+    name: "XING",
+  },
 };
