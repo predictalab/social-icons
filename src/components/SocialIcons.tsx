@@ -408,6 +408,22 @@ import windypng from "../assets/social-icons/windy.png";
 import yandexbugbountypng from "../assets/social-icons/yandexbugbounty.png";
 import yandexznatokipng from "../assets/social-icons/yandexznatoki.png";
 import yumpupng from "../assets/social-icons/yumpu.png";
+import airlinerspng from "../assets/social-icons/airliners.png";
+import americanthinkerpng from "../assets/social-icons/americanthinker.png";
+import animenewsnetworkpng from "../assets/social-icons/animenewsnetwork.png";
+import artsypng from "../assets/social-icons/artsy.png";
+import coroflotpng from "../assets/social-icons/coroflot.png";
+import couchsurfingpng from "../assets/social-icons/couchsurfing.png";
+import coubpng from "../assets/social-icons/coub.png";
+import ctanpng from "../assets/social-icons/ctan.png";
+import destructoidpng from "../assets/social-icons/destructoid.png";
+import dtfpng from "../assets/social-icons/dtf.png";
+import fotkipng from "../assets/social-icons/fotki.png";
+import globalvoicespng from "../assets/social-icons/globalvoices.png";
+import lesswrongpng from "../assets/social-icons/lesswrong.png";
+import residentadvisorpng from "../assets/social-icons/residentadvisor.png";
+import sportsrupng from "../assets/social-icons/sportsru.png";
+import teletypepng from "../assets/social-icons/teletype.png";
 
 type PropsTypes = { source?: string };
 
@@ -2806,6 +2822,57 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <img src={yumpupng} alt="Yumpu" />;
       break;
 
+    case "airliners":
+      icon = <img src={airlinerspng} alt="Airliners.net" />;
+      break;
+    case "americanthinker":
+      icon = <img src={americanthinkerpng} alt="American Thinker" />;
+      break;
+    case "animenewsnetwork":
+      icon = <img src={animenewsnetworkpng} alt="Anime News Network" />;
+      break;
+    case "artsy":
+      icon = <img src={artsypng} alt="Artsy" />;
+      break;
+    case "coroflot":
+      icon = <img src={coroflotpng} alt="Coroflot" />;
+      break;
+    case "couchsurfing":
+      icon = <img src={couchsurfingpng} alt="Couchsurfing" />;
+      break;
+    case "coub":
+      icon = <img src={coubpng} alt="Coub" />;
+      break;
+    case "ctan":
+      icon = <img src={ctanpng} alt="CTAN" />;
+      break;
+    case "destructoid":
+      icon = <img src={destructoidpng} alt="Destructoid" />;
+      break;
+    case "dtf":
+      icon = <img src={dtfpng} alt="DTF" />;
+      break;
+    case "fotki":
+      icon = <img src={fotkipng} alt="Fotki" />;
+      break;
+    case "globalvoices":
+      icon = <img src={globalvoicespng} alt="Global Voices" />;
+      break;
+    case "lesswrong":
+      icon = <img src={lesswrongpng} alt="LessWrong" />;
+      break;
+    case "nextcloud":
+      icon = <Icon icon="simple-icons:nextcloud" color={socialNetworks.nextcloud.color} />;
+      break;
+    case "residentadvisor":
+      icon = <img src={residentadvisorpng} alt="Resident Advisor" />;
+      break;
+    case "sportsru":
+      icon = <img src={sportsrupng} alt="Sports.ru" />;
+      break;
+    case "teletype":
+      icon = <img src={teletypepng} alt="Teletype" />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;
