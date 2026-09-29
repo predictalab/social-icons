@@ -2906,4 +2906,109 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "XING",
   },
+  gamespot: {
+    color: "#FEC500",
+    category: "gaming",
+    name: "GameSpot",
+  },
+  hackernoon: {
+    color: "#00FE00",
+    category: "programming",
+    name: "HackerNoon",
+  },
+  ibmvideo: {
+    color: "#282828",
+    category: "video_platform",
+    name: "IBM Video",
+  },
+  instapaper: {
+    color: "#1F1F1F",
+    category: "other",
+    name: "Instapaper",
+  },
+  laracasts: {
+    color: "#031328",
+    category: "programming",
+    name: "Laracasts",
+  },
+  liveinternet: {
+    color: "#FFB200",
+    category: "social",
+    name: "LiveInternet",
+  },
+  lonelyplanet: {
+    color: "#0056D8",
+    category: "other",
+    name: "Lonely Planet",
+  },
+  pcgamer: {
+    color: "#DC1E25",
+    category: "gaming",
+    name: "PC Gamer",
+  },
+  photobucket: {
+    color: "#1C47CB",
+    category: "other",
+    name: "Photobucket",
+  },
+  polygon: {
+    color: "#E30A68",
+    category: "gaming",
+    name: "Polygon",
+  },
+  pypi: {
+    color: "#3775A9",
+    category: "programming",
+    name: "PyPI",
+  },
+  rottentomatoes: {
+    color: "#FA320A",
+    category: "other",
+    name: "Rotten Tomatoes",
+  },
+  tilda: {
+    color: "#FFA282",
+    category: "other",
+    name: "Tilda",
+  },
+  udemy: {
+    color: "#A435F0",
+    category: "other",
+    name: "Udemy",
+  },
+  upwork: {
+    color: "#6FDA44",
+    category: "other",
+    name: "Upwork",
+  },
+  vcru: {
+    color: "#FEE5EB",
+    category: "social",
+    name: "vc.ru",
+  },
+  wikimapia: {
+    color: "#101111",
+    category: "other",
+    name: "Wikimapia",
+  },
+  windy: {
+    color: "#9D0200",
+    category: "other",
+    name: "Windy",
+  },
+  yandexbugbounty: {
+    color: "#0C0C0C",
+    category: "hacking",
+    name: "Yandex Bug Bounty",
+  },
+  yandexznatoki: {
+    color: "#202333",
+    category: "social",
+    name: "Yandex Znatoki",
+  },
+  yumpu: {
+    color: "#000000",
+    category: "other",
+    name: "Yumpu",
+  },
 };
