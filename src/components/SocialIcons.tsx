@@ -395,6 +395,19 @@ import quizizzpng from "../assets/social-icons/quizizz.png";
 import thevergepng from "../assets/social-icons/theverge.png";
 import weeblypng from "../assets/social-icons/weebly.png";
 import weforumpng from "../assets/social-icons/weforum.png";
+import gamespotpng from "../assets/social-icons/gamespot.png";
+import ibmvideopng from "../assets/social-icons/ibmvideo.png";
+import jimdopng from "../assets/social-icons/jimdo.png";
+import laracastspng from "../assets/social-icons/laracasts.png";
+import lonelyplanetpng from "../assets/social-icons/lonelyplanet.png";
+import pcgamerpng from "../assets/social-icons/pcgamer.png";
+import polygonpng from "../assets/social-icons/polygon.png";
+import vcrupng from "../assets/social-icons/vcru.png";
+import wikimapiapng from "../assets/social-icons/wikimapia.png";
+import windypng from "../assets/social-icons/windy.png";
+import yandexbugbountypng from "../assets/social-icons/yandexbugbounty.png";
+import yandexznatokipng from "../assets/social-icons/yandexznatoki.png";
+import yumpupng from "../assets/social-icons/yumpu.png";
 
 type PropsTypes = { source?: string };
 
@@ -2703,6 +2716,94 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
 
     case "xing":
       icon = <Icon icon="simple-icons:xing" color={socialNetworks.xing.color} />;
+      break;
+
+    case "gamespot":
+      icon = <img src={gamespotpng} alt="GameSpot" />;
+      break;
+
+    case "hackernoon":
+      icon = <Icon icon="simple-icons:hackernoon" color={socialNetworks.hackernoon.color} />;
+      break;
+
+    case "ibmvideo":
+      icon = <img src={ibmvideopng} alt="IBM Video" />;
+      break;
+
+    case "instapaper":
+      icon = <Icon icon="simple-icons:instapaper" color={socialNetworks.instapaper.color} />;
+      break;
+
+    case "jimdo":
+      icon = <img src={jimdopng} alt="Jimdo" />;
+      break;
+
+    case "laracasts":
+      icon = <img src={laracastspng} alt="Laracasts" />;
+      break;
+
+    case "liveinternet":
+      icon = <Icon icon="mdi:book-open-page-variant" color={socialNetworks.liveinternet.color} />;
+      break;
+
+    case "lonelyplanet":
+      icon = <img src={lonelyplanetpng} alt="Lonely Planet" />;
+      break;
+
+    case "pcgamer":
+      icon = <img src={pcgamerpng} alt="PC Gamer" />;
+      break;
+
+    case "photobucket":
+      icon = <Icon icon="simple-icons:photobucket" color={socialNetworks.photobucket.color} />;
+      break;
+
+    case "polygon":
+      icon = <img src={polygonpng} alt="Polygon" />;
+      break;
+
+    case "pypi":
+      icon = <Icon icon="simple-icons:pypi" color={socialNetworks.pypi.color} />;
+      break;
+
+    case "rottentomatoes":
+      icon = <Icon icon="simple-icons:rottentomatoes" color={socialNetworks.rottentomatoes.color} />;
+      break;
+
+    case "tilda":
+      icon = <Icon icon="simple-icons:tildapublishing" color={socialNetworks.tilda.color} />;
+      break;
+
+    case "udemy":
+      icon = <Icon icon="simple-icons:udemy" color={socialNetworks.udemy.color} />;
+      break;
+
+    case "upwork":
+      icon = <Icon icon="simple-icons:upwork" color={socialNetworks.upwork.color} />;
+      break;
+
+    case "vcru":
+      icon = <img src={vcrupng} alt="vc.ru" />;
+      break;
+
+    case "wikimapia":
+      icon = <img src={wikimapiapng} alt="Wikimapia" />;
+      break;
+
+    case "windy":
+      icon = <img src={windypng} alt="Windy" />;
+      break;
+
+    case "yandexbugbounty":
+      icon = <img src={yandexbugbountypng} alt="Yandex Bug Bounty" />;
+      break;
+
+    case "yandexznatoki":
+      icon = <img src={yandexznatokipng} alt="Yandex Znatoki" />;
+      break;
+
+    case "yumpu":
+      icon = <img src={yumpupng} alt="Yumpu" />;
       break;
 
     default:
