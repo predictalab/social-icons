@@ -2926,6 +2926,11 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "Instapaper",
   },
+  jimdo: {
+    color: "#010334",
+    category: "other",
+    name: "Jimdo",
+  },
   laracasts: {
     color: "#031328",
     category: "programming",

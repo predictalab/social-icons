@@ -397,6 +397,7 @@ import weeblypng from "../assets/social-icons/weebly.png";
 import weforumpng from "../assets/social-icons/weforum.png";
 import gamespotpng from "../assets/social-icons/gamespot.png";
 import ibmvideopng from "../assets/social-icons/ibmvideo.png";
+import jimdopng from "../assets/social-icons/jimdo.png";
 import laracastspng from "../assets/social-icons/laracasts.png";
 import lonelyplanetpng from "../assets/social-icons/lonelyplanet.png";
 import pcgamerpng from "../assets/social-icons/pcgamer.png";
@@ -2731,6 +2732,10 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
 
     case "instapaper":
       icon = <Icon icon="simple-icons:instapaper" color={socialNetworks.instapaper.color} />;
+      break;
+
+    case "jimdo":
+      icon = <img src={jimdopng} alt="Jimdo" />;
       break;
 
     case "laracasts":

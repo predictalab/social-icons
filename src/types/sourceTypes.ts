@@ -768,6 +768,7 @@ export type SourceTypes =
   | "hackernoon"
   | "ibmvideo"
   | "instapaper"
+  | "jimdo"
   | "laracasts"
   | "liveinternet"
   | "lonelyplanet"
