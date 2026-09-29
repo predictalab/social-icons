@@ -3016,4 +3016,89 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "Yumpu",
   },
+  airliners: {
+    color: "#000000",
+    category: "social",
+    name: "Airliners.net",
+  },
+  americanthinker: {
+    color: "#3F4E83",
+    category: "other",
+    name: "American Thinker",
+  },
+  animenewsnetwork: {
+    color: "#166598",
+    category: "other",
+    name: "Anime News Network",
+  },
+  artsy: {
+    color: "#000000",
+    category: "ecommerce",
+    name: "Artsy",
+  },
+  coroflot: {
+    color: "#FE5400",
+    category: "social",
+    name: "Coroflot",
+  },
+  couchsurfing: {
+    color: "#FA4200",
+    category: "social",
+    name: "Couchsurfing",
+  },
+  coub: {
+    color: "#4100FF",
+    category: "video_platform",
+    name: "Coub",
+  },
+  ctan: {
+    color: "#19194B",
+    category: "programming",
+    name: "CTAN",
+  },
+  destructoid: {
+    color: "#EB4038",
+    category: "gaming",
+    name: "Destructoid",
+  },
+  dtf: {
+    color: "#000000",
+    category: "social",
+    name: "DTF",
+  },
+  fotki: {
+    color: "#5471B9",
+    category: "social",
+    name: "Fotki",
+  },
+  globalvoices: {
+    color: "#259845",
+    category: "other",
+    name: "Global Voices",
+  },
+  lesswrong: {
+    color: "#030303",
+    category: "social",
+    name: "LessWrong",
+  },
+  nextcloud: {
+    color: "#0082C9",
+    category: "other",
+    name: "Nextcloud",
+  },
+  residentadvisor: {
+    color: "#000000",
+    category: "streaming",
+    name: "Resident Advisor",
+  },
+  sportsru: {
+    color: "#26FDAE",
+    category: "sport",
+    name: "Sports.ru",
+  },
+  teletype: {
+    color: "#593FF5",
+    category: "social",
+    name: "Teletype",
+  },
 };
