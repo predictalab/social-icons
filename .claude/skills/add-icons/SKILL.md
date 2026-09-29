@@ -1,6 +1,6 @@
 ---
 name: add-icons
-description: Ajoute des icônes de réseaux/sources à @predictalab/social-icons à partir d'une liste de clés (ex. "anaconda, bilibili, tetrio"). Sourcing des logos (simple-icons d'abord, sinon asset local, sinon fallback mdi), édition des 3 fichiers, vérification et bump de version. Utiliser dès qu'on demande d'ajouter, créer ou compléter des icônes, ou de vérifier que des sources ont bien leur icône.
+description: Ajoute des icônes de réseaux/sources à @predictalab/social-icons à partir d'une liste de clés (ex. "anaconda, bilibili, tetrio"). Sourcing des logos (simple-icons d'abord, sinon asset local, sinon fallback mdi), édition des 3 fichiers, vérification et bump de version. Utiliser dès qu'on demande d'ajouter, créer ou compléter des icônes, de vérifier que des sources ont bien leur icône, ou de trouver dans maigret quels réseaux n'ont pas encore d'icône.
 ---
 
 # Ajouter des icônes à social-icons
@@ -20,6 +20,40 @@ for k in <clés>; do grep -q "case \"$k\"" src/components/SocialIcons.tsx && ech
 
 Une clé peut aussi exister sous forme d'alias (`case "gist":` juste au-dessus de `case "github":`).
 Ne rien recréer qui existe déjà ; signaler à l'utilisateur ce qui était déjà couvert.
+
+## 1 bis. Identifier chaque source (maigret)
+
+Les clés viennent en grande partie des bases OSINT (maigret surtout). Avant de chercher un
+logo, savoir **quel site** est derrière la clé :
+
+```bash
+python3 .claude/skills/add-icons/scripts/icons.py lookup <clés manquantes>
+```
+
+Cherche la clé dans maigret, puis WhatsMyName, puis Sherlock (nom normalisé, puis nom de
+domaine, puis nom approché marqué `≈`), et affiche le domaine officiel + l'URL de profil, puis
+une ligne `fetch clé=domaine` prête pour l'étape 3. Ce que ça tranche :
+- les homonymes : `polygon` = polygon.com (média gaming), pas la blockchain de simple-icons ;
+- les sous-services : `yandexznatoki` = yandex.ru/q, `yandexbugbounty` = yandex.ru/bugbounty ;
+- `(désactivé dans maigret)` : le check est cassé chez maigret, le site existe quand même.
+
+`INCONNU` : clé absente des trois bases ; demander le domaine à l'utilisateur plutôt que deviner.
+
+**Trouver de nouveaux réseaux à ajouter** (quand on demande quoi ajouter ensuite, ou qu'on
+fouille maigret) :
+
+```bash
+python3 .claude/skills/add-icons/scripts/icons.py lookup --missing [--tag gaming] [-n 50]
+```
+
+Liste les sites maigret actifs sans icône, un par domaine, triés par rang de popularité
+(alexaRank). Les variantes d'un réseau déjà couvert (`VKByID`, `SteamGroup`, `Laracast` pour
+laracasts.com…) sont écartées ; `sous-service de X ?` signale un sous-domaine ou chemin d'une
+marque existante (maps.google.com) : icône propre ou alias, à décider. La « clé proposée » est
+le nom maigret normalisé : la vraie clé est celle des applications consommatrices, à confirmer.
+
+Les bases sont mises en cache dans `.icons-work/` (`maigret-data.json`, `wmn-data.json`,
+`sherlock-data.json`) : les supprimer pour rafraîchir.
 
 ## 2. simple-icons d'abord (Iconify)
 
@@ -46,8 +80,8 @@ Confirmer l'existence des slugs retenus en une requête :
 
 ## 3. Sinon, asset local
 
-Trouver le domaine officiel de chaque source. Il n'est pas toujours évident, vérifier avant
-de fetcher : fanlink = toneden.io, manylink = manylink.co, eintracht = community.eintracht.de.
+Partir du domaine donné par `lookup` (étape 1 bis). Il n'est pas toujours évident, vérifier
+avant de fetcher : fanlink = toneden.io, manylink = manylink.co, eintracht = community.eintracht.de.
 
 ```bash
 python3 .claude/skills/add-icons/scripts/icons.py fetch tetrio=tetr.io hexpm=hex.pm ...

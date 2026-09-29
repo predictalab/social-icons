@@ -2,6 +2,10 @@
 """Outillage du skill add-icons.
 
 Sous-commandes :
+  lookup  <clé>...                 domaine officiel de chaque clé d'après maigret, puis
+                                   WhatsMyName et Sherlock ; imprime la ligne `fetch` prête
+  lookup  --missing [--tag t] [-n N]
+                                   sites maigret actifs sans icône, triés par popularité
   check   <clé>...                 slug simple-icons + couleur de marque pour chaque clé
   fetch   <clé>=<domaine>... [--url <clé>=<url>]
                                    télécharge le meilleur logo candidat par clé dans WORKDIR
@@ -33,6 +37,11 @@ UA = (
 )
 ICONIFY_SET = "https://raw.githubusercontent.com/iconify/icon-sets/master/json/simple-icons.json"
 SI_DATA = "https://raw.githubusercontent.com/simple-icons/simple-icons/master/data/simple-icons.json"
+MAIGRET = "https://raw.githubusercontent.com/soxoj/maigret/main/maigret/resources/data.json"
+WMN = "https://raw.githubusercontent.com/WebBreacher/WhatsMyName/main/wmn-data.json"
+SHERLOCK = (
+    "https://raw.githubusercontent.com/sherlock-project/sherlock/master/sherlock_project/resources/data.json"
+)
 
 
 def get(url, timeout=25):
@@ -60,6 +69,115 @@ def cached_json(workdir, name, url):
             sys.exit(f"impossible de télécharger {url}")
         open(path, "wb").write(data)
     return json.load(open(path))
+
+
+# --------------------------------------------------------------------------- lookup
+def norm(name):
+    return re.sub(r"[^a-z0-9]", "", name.lower())
+
+
+def site_domain(url):
+    """https://www.yandex.ru/q/ → www.yandex.ru/q (forme attendue par `fetch`)."""
+    u = urllib.parse.urlparse(url)
+    path = "" if "{" in u.path else u.path.rstrip("/")
+    return u.netloc + path
+
+
+def domain_label(domain):
+    """maps.google.com → google, {username}.tilda.ws → tilda."""
+    parts = [p for p in domain.split("/")[0].split(".") if p and "{" not in p]
+    return norm(parts[-2]) if len(parts) >= 2 else ""
+
+
+# Variantes de vérification maigret d'un même réseau (VKByID, SteamGroup, FlickrGroups…)
+VARIANT = re.compile(r"(byid|by[a-z]*id|group|groups|archived|api|search|profile|users?|package)$")
+
+
+def covered_by(domain, have):
+    """Clé existante qui couvre déjà ce domaine (laracasts.com → laracasts, dev.to → devto),
+    ou None. Un sous-domaine ou un chemin (maps.google.com, yandex.ru/q) n'est pas couvert."""
+    host = domain.split("/")[0].removeprefix("www.")
+    if "/" in domain or host.count(".") > 1:
+        return None
+    for k in (domain_label(domain), norm(host)):
+        if k in have:
+            return k
+    return None
+
+
+def osint_sites(workdir):
+    """[(source, nom, domaine, url de profil, infos)] depuis maigret, WhatsMyName et Sherlock."""
+    sites = []
+    for name, s in cached_json(workdir, "maigret-data.json", MAIGRET)["sites"].items():
+        if s.get("urlMain"):
+            infos = {"rank": s.get("alexaRank") or 10**9, "tags": s.get("tags", []), "off": s.get("disabled")}
+            sites.append(("maigret", name, site_domain(s["urlMain"]), s.get("url", ""), infos))
+    for s in cached_json(workdir, "wmn-data.json", WMN)["sites"]:
+        u = urllib.parse.urlparse(s["uri_check"])
+        sites.append(("wmn", s["name"], u.netloc, s.get("uri_pretty") or s["uri_check"], {"tags": [s.get("cat")]}))
+    for name, s in cached_json(workdir, "sherlock-data.json", SHERLOCK).items():
+        if isinstance(s, dict) and s.get("urlMain"):
+            sites.append(("sherlock", name, site_domain(s["urlMain"]), s.get("url", ""), {}))
+    return sites
+
+
+def existing_keys():
+    tsx = open(os.path.join(ROOT, "src", "components", "SocialIcons.tsx")).read()
+    return set(re.findall(r'case "([^"]+)"', tsx))
+
+
+def cmd_lookup(args):
+    sites = osint_sites(args.workdir)
+    if args.missing:
+        have = existing_keys()
+        rows, seen = [], set()
+        for s in sorted(sites, key=lambda s: s[4].get("rank", 0)):
+            name, domain, infos = norm(s[1]), s[2], s[4]
+            if s[0] != "maigret" or infos["off"] or name in have or domain in seen:
+                continue
+            if args.tag and args.tag not in infos["tags"]:
+                continue
+            stem = VARIANT.sub("", name)
+            if stem != name and (stem in have or stem == domain_label(domain)):
+                continue  # VKByID, SteamGroup… : même icône que le réseau déjà couvert
+            if covered_by(domain, have):
+                continue  # Laracast → laracasts, CodebergOrg → codeberg
+            seen.add(domain)
+            if "{" in s[1]:
+                name = domain_label(domain)  # {username}.tilda.ws → tilda
+            rows.append((name, domain, infos))
+        print(f"{'clé proposée':26s} {'rang':>8s}  {'domaine':32s} {'tags':28s} note")
+        for name, domain, infos in rows[: args.n]:
+            rank = "-" if infos["rank"] == 10**9 else str(infos["rank"])
+            label = domain_label(domain)
+            note = f"sous-service de {label} ?" if label in have else ""
+            print(f"{name[:26]:26s} {rank:>8s}  {domain:32s} {','.join(infos['tags'])[:28]:28s} {note}")
+        print(f"\n{len(rows)} sites maigret actifs sans icône (1 ligne par domaine)", file=sys.stderr)
+        return
+    if not args.keys:
+        sys.exit("lookup : donner des clés, ou --missing")
+
+    fetch_args = []
+    for key in args.keys:
+        k = norm(key)
+        exact = [s for s in sites if norm(s[1]) == k] or [s for s in sites if domain_label(s[2]) == k]
+        # préfixe (WikimapiaProfile, IBM Video…) puis ressemblance (Laracast ↔ laracasts)
+        near = [s for s in sites if s not in exact and len(k) >= 4 and norm(s[1]).startswith(k)]
+        close = set(difflib.get_close_matches(k, [norm(s[1]) for s in sites], 3, 0.85))
+        near += [s for s in sites if s not in exact and s not in near and norm(s[1]) in close]
+        hits = exact or near
+        if not hits:
+            print(f"{key:18s} INCONNU  (ni maigret, ni WhatsMyName, ni Sherlock)")
+            continue
+        order = {"maigret": 0, "wmn": 1, "sherlock": 2}
+        hits.sort(key=lambda s: (order[s[0]], s[1]))
+        mark = "" if exact else "  ≈ approché, vérifier"
+        for i, (src, name, domain, url, infos) in enumerate(hits[:3]):
+            off = "  (désactivé dans maigret)" if infos.get("off") else ""
+            print(f"{key if i == 0 else '':18s} {src:8s} {name:24s} {domain:32s} {url}{off}{mark if i == 0 else ''}")
+        fetch_args.append(f"{key}={hits[0][2]}")
+    if fetch_args:
+        print("\nicons.py fetch " + " ".join(fetch_args))
 
 
 # --------------------------------------------------------------------------- check
@@ -229,6 +347,11 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--workdir", default=os.path.join(ROOT, ".icons-work"))
     sub = p.add_subparsers(dest="cmd", required=True)
+    s = sub.add_parser("lookup")
+    s.add_argument("keys", nargs="*")
+    s.add_argument("--missing", action="store_true", help="sites maigret actifs sans icône")
+    s.add_argument("--tag", help="avec --missing : filtrer sur un tag maigret (gaming, coding…)")
+    s.add_argument("-n", type=int, default=50, help="avec --missing : nombre de lignes (défaut 50)")
     s = sub.add_parser("check")
     s.add_argument("keys", nargs="+")
     s = sub.add_parser("fetch")
@@ -239,7 +362,7 @@ def main():
     s.add_argument("keys", nargs="+")
     args = p.parse_args()
     os.makedirs(args.workdir, exist_ok=True)
-    {"check": cmd_check, "fetch": cmd_fetch, "sheet": cmd_sheet, "install": cmd_install}[args.cmd](args)
+    {"lookup": cmd_lookup, "check": cmd_check, "fetch": cmd_fetch, "sheet": cmd_sheet, "install": cmd_install}[args.cmd](args)
 
 
 if __name__ == "__main__":
