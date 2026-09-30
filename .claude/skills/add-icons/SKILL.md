@@ -1,6 +1,6 @@
 ---
 name: add-icons
-description: Ajoute des icônes de réseaux/sources à @predictalab/social-icons à partir d'une liste de clés (ex. "anaconda, bilibili, tetrio"). Sourcing des logos (simple-icons d'abord, sinon asset local, sinon fallback mdi), édition des 3 fichiers, vérification et bump de version. Utiliser dès qu'on demande d'ajouter, créer ou compléter des icônes, de vérifier que des sources ont bien leur icône, ou de trouver dans maigret quels réseaux n'ont pas encore d'icône.
+description: Ajoute des icônes de réseaux/sources à @predictalab/social-icons à partir d'une liste de clés (ex. "anaconda, bilibili, tetrio") ; lancé sans clé, liste d'abord les réseaux de l'API Predicta (/networks) qui n'ont pas d'icône. Sourcing des logos (simple-icons d'abord, sinon asset local, sinon fallback mdi), édition des 3 fichiers, vérification et bump de version. Utiliser dès qu'on demande d'ajouter, créer ou compléter des icônes, de vérifier que des sources ont bien leur icône, ou de trouver dans maigret quels réseaux n'ont pas encore d'icône.
 ---
 
 # Ajouter des icônes à social-icons
@@ -11,6 +11,31 @@ Si on te donne des noms de marques, demande ou déduis la clé avant de commence
 
 Outillage : `python3 .claude/skills/add-icons/scripts/icons.py <sous-commande>`
 (dépend de python3 + Pillow + curl ; dossier de travail `.icons-work/`, ignoré par git).
+
+## 0. Lancé sans clé : partir de l'API
+
+Si `/add-icons` est lancé sans liste de clés, les réseaux à traiter sont ceux que l'API
+Predicta expose mais qui n'ont pas d'icône :
+
+```bash
+python3 .claude/skills/add-icons/scripts/icons.py missing
+```
+
+Lit l'endpoint interne `http://192.168.13.67:2936/staging/graph-search/networks` (tous les
+réseaux, y compris ceux désactivés en attente de fix ; réseau local ou VPN seulement), et
+bascule sur le public `https://dev-b2c-api.predictalab.com/networks` (réseaux actifs exposés
+uniquement) s'il ne répond pas : la dernière ligne indique l'endpoint utilisé, le signaler à
+l'utilisateur en cas de repli. Jamais mis en cache ; autre endpoint via `--api <url>`. Ignore
+les réseaux `deprecated` et les compare aux `case` de `SocialIcons.tsx`. La colonne état
+marque les réseaux `désactivé` : leur icône reste utile (ils reviendront après fix). Les clés de l'API sont celles des applications : pas besoin de les
+confirmer. La colonne note signale les chiffres écrits en toutes lettres par l'API
+(`sevencups` pour notre `7cups`) : si la forme à chiffres existe déjà, il suffit d'ajouter
+un alias `case "sevencups":` au-dessus de `case "7cups":` (et la clé dans `sourceTypes.ts` /
+`socialNetwork.ts`), sans chercher de nouveau logo.
+
+Présenter à l'utilisateur le nombre de réseaux manquants et la liste, puis lui proposer un lot
+de 15 à 20 clés (alias faciles d'abord). Attendre son choix avant de passer à l'étape 1 bis
+avec ce lot.
 
 ## 1. Ne traiter que ce qui manque
 

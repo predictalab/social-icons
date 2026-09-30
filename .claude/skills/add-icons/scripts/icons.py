@@ -2,6 +2,8 @@
 """Outillage du skill add-icons.
 
 Sous-commandes :
+  missing [--api URL]              réseaux de l'API Predicta sans icône (défaut sans argument
+                                   du skill) : endpoint interne, sinon /networks public
   lookup  <clé>...                 domaine officiel de chaque clé d'après maigret, puis
                                    WhatsMyName et Sherlock ; imprime la ligne `fetch` prête
   lookup  --missing [--tag t] [-n N]
@@ -42,6 +44,11 @@ WMN = "https://raw.githubusercontent.com/WebBreacher/WhatsMyName/main/wmn-data.j
 SHERLOCK = (
     "https://raw.githubusercontent.com/sherlock-project/sherlock/master/sherlock_project/resources/data.json"
 )
+# Interne (tous les réseaux, y compris désactivés ; réseau local ou VPN), puis public
+NETWORKS_APIS = [
+    "http://192.168.13.67:2936/staging/graph-search/networks",
+    "https://dev-b2c-api.predictalab.com/networks",
+]
 
 
 def get(url, timeout=25):
@@ -124,6 +131,64 @@ def osint_sites(workdir):
 def existing_keys():
     tsx = open(os.path.join(ROOT, "src", "components", "SocialIcons.tsx")).read()
     return set(re.findall(r'case "([^"]+)"', tsx))
+
+
+# --------------------------------------------------------------------------- missing
+UNITS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+TENS = {"twenty": 2, "thirty": 3, "forty": 4, "fifty": 5, "sixty": 6, "seventy": 7, "eighty": 8, "ninety": 9}
+NUMBER_WORD = re.compile("|".join(sorted(list(TENS) + UNITS, key=len, reverse=True)))
+
+
+def digits_form(key):
+    """Clé API aux chiffres écrits en lettres → forme à chiffres de nos clés :
+    sevencups → 7cups, onethreethreesevenx → 1337x, twentythreehq → 23hq. None sinon."""
+    out, rest = "", key
+    while m := NUMBER_WORD.match(rest):
+        word, rest = m.group(), rest[m.end():]
+        if word in TENS:
+            unit = NUMBER_WORD.match(rest)
+            if unit and unit.group() in UNITS[1:]:
+                out += f"{TENS[word]}{UNITS.index(unit.group())}"
+                rest = rest[unit.end():]
+            else:
+                out += f"{TENS[word]}0"
+        else:
+            out += str(UNITS.index(word))
+    return out + rest if out and rest else None
+
+
+def fetch_networks(urls):
+    """{clé: infos} depuis le premier endpoint qui répond. Deux formats : {"items": [{name, …}]}
+    (interne, avec is_active) ou {clé: {…}} (public, uniquement des réseaux actifs)."""
+    for url in urls:
+        data = get(url, timeout=8)
+        try:
+            payload = json.loads(data)
+        except ValueError:
+            print(f"{url} injoignable, endpoint suivant", file=sys.stderr)
+            continue
+        if "items" in payload:
+            return url, {n["name"]: n for n in payload["items"]}
+        return url, payload
+    sys.exit("aucun endpoint de réseaux joignable : " + ", ".join(urls))
+
+
+def cmd_missing(args):
+    url, networks = fetch_networks([args.api] if args.api else NETWORKS_APIS)
+    have = existing_keys()
+    assets = {os.path.splitext(f)[0] for f in os.listdir(ASSETS)}
+    missing = sorted(k for k, n in networks.items() if not n.get("deprecated") and k not in have)
+    print(f"{'clé API':28s} {'type':14s} {'état':10s} note")
+    for key in missing:
+        alt = digits_form(key)
+        note = ""
+        if alt and (alt in have or alt in assets):
+            note = f"= {alt} déjà présent ({'case' if alt in have else 'asset'}) : alias à ajouter"
+        elif alt:
+            note = f"chiffres : {alt}"
+        state = "actif" if networks[key].get("is_active", True) else "désactivé"
+        print(f"{key:28s} {networks[key].get('type', ''):14s} {state:10s} {note}")
+    print(f"\n{len(missing)} réseaux sans icône sur {len(networks)} ({url})", file=sys.stderr)
 
 
 def cmd_lookup(args):
@@ -347,6 +412,8 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--workdir", default=os.path.join(ROOT, ".icons-work"))
     sub = p.add_subparsers(dest="cmd", required=True)
+    s = sub.add_parser("missing")
+    s.add_argument("--api", help="endpoint des réseaux (défaut : interne, sinon public)")
     s = sub.add_parser("lookup")
     s.add_argument("keys", nargs="*")
     s.add_argument("--missing", action="store_true", help="sites maigret actifs sans icône")
@@ -362,7 +429,7 @@ def main():
     s.add_argument("keys", nargs="+")
     args = p.parse_args()
     os.makedirs(args.workdir, exist_ok=True)
-    {"lookup": cmd_lookup, "check": cmd_check, "fetch": cmd_fetch, "sheet": cmd_sheet, "install": cmd_install}[args.cmd](args)
+    {"missing": cmd_missing, "lookup": cmd_lookup, "check": cmd_check, "fetch": cmd_fetch, "sheet": cmd_sheet, "install": cmd_install}[args.cmd](args)
 
 
 if __name__ == "__main__":
