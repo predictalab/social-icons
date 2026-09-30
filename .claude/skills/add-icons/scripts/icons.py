@@ -4,6 +4,8 @@
 Sous-commandes :
   missing [--api URL]              réseaux de l'API Predicta sans icône (défaut sans argument
                                    du skill) : endpoint interne, sinon /networks public
+  inputs  <clé>... [--api URL]     liste markdown des clés groupées par input API (username,
+                                   name, email, phone…) pour la description de la PR
   lookup  <clé>...                 domaine officiel de chaque clé d'après maigret, puis
                                    WhatsMyName et Sherlock ; imprime la ligne `fetch` prête
   lookup  --missing [--tag t] [-n N]
@@ -173,12 +175,16 @@ def fetch_networks(urls):
     sys.exit("aucun endpoint de réseaux joignable : " + ", ".join(urls))
 
 
+def network_inputs(network):
+    return sorted({i for action in network.get("actions", []) for i in action["inputs"]})
+
+
 def cmd_missing(args):
     url, networks = fetch_networks([args.api] if args.api else NETWORKS_APIS)
     have = existing_keys()
     assets = {os.path.splitext(f)[0] for f in os.listdir(ASSETS)}
     missing = sorted(k for k, n in networks.items() if not n.get("deprecated") and k not in have)
-    print(f"{'clé API':28s} {'type':14s} {'état':10s} note")
+    print(f"{'clé API':28s} {'type':14s} {'état':10s} {'inputs':24s} note")
     for key in missing:
         alt = digits_form(key)
         note = ""
@@ -187,8 +193,39 @@ def cmd_missing(args):
         elif alt:
             note = f"chiffres : {alt}"
         state = "actif" if networks[key].get("is_active", True) else "désactivé"
-        print(f"{key:28s} {networks[key].get('type', ''):14s} {state:10s} {note}")
+        inputs = ",".join(network_inputs(networks[key]))
+        print(f"{key:28s} {networks[key].get('type', ''):14s} {state:10s} {inputs:24s} {note}")
     print(f"\n{len(missing)} réseaux sans icône sur {len(networks)} ({url})", file=sys.stderr)
+
+
+MAIN_INPUTS = ["username", "name", "email", "phone"]
+
+
+def cmd_inputs(args):
+    """Bloc markdown pour la PR : chaque clé sous chacun de ses inputs, avec le nom affiché."""
+    url, networks = fetch_networks([args.api] if args.api else NETWORKS_APIS)
+    ts = open(os.path.join(ROOT, "src", "utils", "socialNetwork.ts")).read()
+    names = dict(re.findall(r'^  "?([\w-]+)"?: \{[^}]*?name: "([^"]+)"', ts, re.M))
+    groups, unknown = {}, []
+    for key in sorted(args.keys):
+        if key not in networks:
+            unknown.append(key)
+            continue
+        label = f"{names.get(key, key)} (`{key}`)"
+        inputs = network_inputs(networks[key])
+        for inp in inputs:
+            if inp in MAIN_INPUTS:
+                groups.setdefault(inp, []).append(label)
+        others = [i for i in inputs if i not in MAIN_INPUTS]
+        if others:
+            groups.setdefault("other", []).append(f"{label} – {', '.join(others)}")
+    for inp in MAIN_INPUTS + ["other"]:
+        if inp in groups:
+            print(f"**{inp}** ({len(groups[inp])})\n")
+            print("\n".join(f"- {g}" for g in groups[inp]) + "\n")
+    if unknown:
+        print(f"**hors API** ({len(unknown)})\n\n" + "\n".join(f"- {names.get(k, k)} (`{k}`)" for k in unknown))
+    print(f"source : {url}", file=sys.stderr)
 
 
 def cmd_lookup(args):
@@ -414,6 +451,9 @@ def main():
     sub = p.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("missing")
     s.add_argument("--api", help="endpoint des réseaux (défaut : interne, sinon public)")
+    s = sub.add_parser("inputs")
+    s.add_argument("keys", nargs="+")
+    s.add_argument("--api", help="endpoint des réseaux (défaut : interne, sinon public)")
     s = sub.add_parser("lookup")
     s.add_argument("keys", nargs="*")
     s.add_argument("--missing", action="store_true", help="sites maigret actifs sans icône")
@@ -429,7 +469,7 @@ def main():
     s.add_argument("keys", nargs="+")
     args = p.parse_args()
     os.makedirs(args.workdir, exist_ok=True)
-    {"missing": cmd_missing, "lookup": cmd_lookup, "check": cmd_check, "fetch": cmd_fetch, "sheet": cmd_sheet, "install": cmd_install}[args.cmd](args)
+    {"missing": cmd_missing, "inputs": cmd_inputs, "lookup": cmd_lookup, "check": cmd_check, "fetch": cmd_fetch, "sheet": cmd_sheet, "install": cmd_install}[args.cmd](args)
 
 
 if __name__ == "__main__":

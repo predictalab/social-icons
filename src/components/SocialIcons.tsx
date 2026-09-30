@@ -424,6 +424,109 @@ import lesswrongpng from "../assets/social-icons/lesswrong.png";
 import residentadvisorpng from "../assets/social-icons/residentadvisor.png";
 import sportsrupng from "../assets/social-icons/sportsru.png";
 import teletypepng from "../assets/social-icons/teletype.png";
+import acomicspng from "../assets/social-icons/acomics.png";
+import advegopng from "../assets/social-icons/advego.png";
+import allkpoppng from "../assets/social-icons/allkpop.png";
+import armorgamespng from "../assets/social-icons/armorgames.png";
+import aufemininpng from "../assets/social-icons/aufeminin.png";
+import avforumspng from "../assets/social-icons/avforums.png";
+import bankirupng from "../assets/social-icons/bankiru.png";
+import bigsoccerpng from "../assets/social-icons/bigsoccer.png";
+import blackhatprotoolspng from "../assets/social-icons/blackhatprotools.png";
+import boothpng from "../assets/social-icons/booth.png";
+import brusheezypng from "../assets/social-icons/brusheezy.png";
+import ccmpng from "../assets/social-icons/ccm.png";
+import cfdonlinepng from "../assets/social-icons/cfdonline.png";
+import claritypng from "../assets/social-icons/clarity.png";
+import comedypng from "../assets/social-icons/comedy.png";
+import computerbasepng from "../assets/social-icons/computerbase.png";
+import contpng from "../assets/social-icons/cont.png";
+import dcinsidepng from "../assets/social-icons/dcinside.png";
+import deepdreamgeneratorpng from "../assets/social-icons/deepdreamgenerator.png";
+import dhgatepng from "../assets/social-icons/dhgate.png";
+import donationalertspng from "../assets/social-icons/donationalerts.png";
+import dreamwidthpng from "../assets/social-icons/dreamwidth.png";
+import drive2png from "../assets/social-icons/drive2.png";
+import dumskayapng from "../assets/social-icons/dumskaya.png";
+import exposurepng from "../assets/social-icons/exposure.png";
+import filmowpng from "../assets/social-icons/filmow.png";
+import filmwebpng from "../assets/social-icons/filmweb.png";
+import flrupng from "../assets/social-icons/flru.png";
+import flyertalkpng from "../assets/social-icons/flyertalk.png";
+import fodorspng from "../assets/social-icons/fodors.png";
+import fourpdapng from "../assets/social-icons/fourpda.png";
+import freelancerupng from "../assets/social-icons/freelanceru.png";
+import gamesradarpng from "../assets/social-icons/gamesradar.png";
+import gardenpng from "../assets/social-icons/garden.png";
+import gbatemppng from "../assets/social-icons/gbatemp.png";
+import gloriatvpng from "../assets/social-icons/gloriatv.png";
+import goldderbypng from "../assets/social-icons/goldderby.png";
+import gutefragepng from "../assets/social-icons/gutefrage.png";
+import hardforumpng from "../assets/social-icons/hardforum.png";
+import illustratorspng from "../assets/social-icons/illustrators.png";
+import influensterpng from "../assets/social-icons/influenster.png";
+import infourokpng from "../assets/social-icons/infourok.png";
+import iphonesrupng from "../assets/social-icons/iphonesru.png";
+import irecommendpng from "../assets/social-icons/irecommend.png";
+import jigsawplanetpng from "../assets/social-icons/jigsawplanet.png";
+import joomlartpng from "../assets/social-icons/joomlart.png";
+import joyreactorpng from "../assets/social-icons/joyreactor.png";
+import kworkpng from "../assets/social-icons/kwork.png";
+import likeepng from "../assets/social-icons/likee.png";
+import livemasterpng from "../assets/social-icons/livemaster.png";
+import maxpng from "../assets/social-icons/max.png";
+import melfmpng from "../assets/social-icons/melfm.png";
+import mercadolivrepng from "../assets/social-icons/mercadolivre.png";
+import mirtesenpng from "../assets/social-icons/mirtesen.png";
+import morguefilepng from "../assets/social-icons/morguefile.png";
+import mssgpng from "../assets/social-icons/mssg.png";
+import n4gpng from "../assets/social-icons/n4g.png";
+import nairalandpng from "../assets/social-icons/nairaland.png";
+import nameprospng from "../assets/social-icons/namepros.png";
+import nativeinstrumentspng from "../assets/social-icons/nativeinstruments.png";
+import nhattaopng from "../assets/social-icons/nhattao.png";
+import onexpng from "../assets/social-icons/onex.png";
+import opennetpng from "../assets/social-icons/opennet.png";
+import overclockerspng from "../assets/social-icons/overclockers.png";
+import paltalkpng from "../assets/social-icons/paltalk.png";
+import partnerkinpng from "../assets/social-icons/partnerkin.png";
+import physicsforumspng from "../assets/social-icons/physicsforums.png";
+import planetminecraftpng from "../assets/social-icons/planetminecraft.png";
+import plingpng from "../assets/social-icons/pling.png";
+import pokecommunitypng from "../assets/social-icons/pokecommunity.png";
+import portfolioboxpng from "../assets/social-icons/portfoliobox.png";
+import profipng from "../assets/social-icons/profi.png";
+import promodjpng from "../assets/social-icons/promodj.png";
+import psnprofilespng from "../assets/social-icons/psnprofiles.png";
+import publiclabpng from "../assets/social-icons/publiclab.png";
+import pushsquarepng from "../assets/social-icons/pushsquare.png";
+import rapidapipng from "../assets/social-icons/rapidapi.png";
+import segmentfaultpng from "../assets/social-icons/segmentfault.png";
+import smartlabpng from "../assets/social-icons/smartlab.png";
+import smogonpng from "../assets/social-icons/smogon.png";
+import sparkrupng from "../assets/social-icons/sparkru.png";
+import spatialpng from "../assets/social-icons/spatial.png";
+import spletnikpng from "../assets/social-icons/spletnik.png";
+import stopgamepng from "../assets/social-icons/stopgame.png";
+import studfilepng from "../assets/social-icons/studfile.png";
+import sythepng from "../assets/social-icons/sythe.png";
+import telescopepng from "../assets/social-icons/telescope.png";
+import theodysseyonlinepng from "../assets/social-icons/theodysseyonline.png";
+import thestudentroompng from "../assets/social-icons/thestudentroom.png";
+import threedddpng from "../assets/social-icons/threeddd.png";
+import threedtodaypng from "../assets/social-icons/threedtoday.png";
+import tinkoffinvestpng from "../assets/social-icons/tinkoffinvest.png";
+import travellerspointpng from "../assets/social-icons/travellerspoint.png";
+import trueachievementspng from "../assets/social-icons/trueachievements.png";
+import twentythreehqpng from "../assets/social-icons/twentythreehq.png";
+import videohivepng from "../assets/social-icons/videohive.png";
+import virgoolpng from "../assets/social-icons/virgool.png";
+import weblancerpng from "../assets/social-icons/weblancer.png";
+import webnodepng from "../assets/social-icons/webnode.png";
+import wowheadpng from "../assets/social-icons/wowhead.png";
+import xakeppng from "../assets/social-icons/xakep.png";
+import xenforopng from "../assets/social-icons/xenforo.png";
+import yandexreviewspng from "../assets/social-icons/yandexreviews.png";
 
 type PropsTypes = { source?: string };
 
@@ -1801,6 +1904,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "kwai":
       icon = <img src={kwaipng} alt="Kwai" />;
       break;
+    case "sevencups":
     case "7cups":
       icon = <img src={cups7png} alt="7 Cups" />;
       break;
@@ -2872,6 +2976,396 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "teletype":
       icon = <img src={teletypepng} alt="Teletype" />;
+      break;
+    case "boosty":
+      icon = <Icon icon="simple-icons:boosty" color={socialNetworks.boosty.color} />;
+      break;
+    case "codementor":
+      icon = <Icon icon="simple-icons:codementor" color={socialNetworks.codementor.color} />;
+      break;
+    case "codesandbox":
+      icon = <Icon icon="simple-icons:codesandbox" color={socialNetworks.codesandbox.color} />;
+      break;
+    case "jsfiddle":
+      icon = <Icon icon="simple-icons:jsfiddle" color={socialNetworks.jsfiddle.color} />;
+      break;
+    case "liberapay":
+      icon = <Icon icon="simple-icons:liberapay" color={socialNetworks.liberapay.color} />;
+      break;
+    case "lobsters":
+      icon = <Icon icon="simple-icons:lobsters" color={socialNetworks.lobsters.color} />;
+      break;
+    case "namuwiki":
+      icon = <Icon icon="simple-icons:namuwiki" color={socialNetworks.namuwiki.color} />;
+      break;
+    case "ninetyninedesigns":
+      icon = <Icon icon="simple-icons:99designs" color={socialNetworks.ninetyninedesigns.color} />;
+      break;
+    case "pinboard":
+      icon = <Icon icon="simple-icons:pinboard" color={socialNetworks.pinboard.color} />;
+      break;
+    case "treehouse":
+      icon = <Icon icon="simple-icons:treehouse" color={socialNetworks.treehouse.color} />;
+      break;
+    case "xda":
+      icon = <Icon icon="simple-icons:xdadevelopers" color={socialNetworks.xda.color} />;
+      break;
+    case "acomics":
+      icon = <img src={acomicspng} alt="AComics" />;
+      break;
+    case "advego":
+      icon = <img src={advegopng} alt="Advego" />;
+      break;
+    case "allkpop":
+      icon = <img src={allkpoppng} alt="allkpop" />;
+      break;
+    case "androidforums":
+      icon = <Icon icon="mdi:android" color={socialNetworks.androidforums.color} />;
+      break;
+    case "antiquers":
+      icon = <Icon icon="mdi:treasure-chest" color={socialNetworks.antiquers.color} />;
+      break;
+    case "armorgames":
+      icon = <img src={armorgamespng} alt="Armor Games" />;
+      break;
+    case "aufeminin":
+      icon = <img src={aufemininpng} alt="aufeminin" />;
+      break;
+    case "avforums":
+      icon = <img src={avforumspng} alt="AVForums" />;
+      break;
+    case "bankiru":
+      icon = <img src={bankirupng} alt="Banki.ru" />;
+      break;
+    case "bibsonomy":
+      icon = <Icon icon="mdi:bookmark-multiple" color={socialNetworks.bibsonomy.color} />;
+      break;
+    case "bigsoccer":
+      icon = <img src={bigsoccerpng} alt="BigSoccer" />;
+      break;
+    case "blackhatprotools":
+      icon = <img src={blackhatprotoolspng} alt="BlackHatProTools" />;
+      break;
+    case "booth":
+      icon = <img src={boothpng} alt="BOOTH" />;
+      break;
+    case "brusheezy":
+      icon = <img src={brusheezypng} alt="Brusheezy" />;
+      break;
+    case "bukkit":
+      icon = <Icon icon="mdi:minecraft" color={socialNetworks.bukkit.color} />;
+      break;
+    case "ccm":
+      icon = <img src={ccmpng} alt="CCM" />;
+      break;
+    case "cfdonline":
+      icon = <img src={cfdonlinepng} alt="CFD Online" />;
+      break;
+    case "clarity":
+      icon = <img src={claritypng} alt="Clarity" />;
+      break;
+    case "comedy":
+      icon = <img src={comedypng} alt="British Comedy Guide" />;
+      break;
+    case "computerbase":
+      icon = <img src={computerbasepng} alt="ComputerBase" />;
+      break;
+    case "cont":
+      icon = <img src={contpng} alt="Cont" />;
+      break;
+    case "dcinside":
+      icon = <img src={dcinsidepng} alt="DCInside" />;
+      break;
+    case "deepdreamgenerator":
+      icon = <img src={deepdreamgeneratorpng} alt="Deep Dream Generator" />;
+      break;
+    case "dhgate":
+      icon = <img src={dhgatepng} alt="DHgate" />;
+      break;
+    case "donationalerts":
+      icon = <img src={donationalertspng} alt="DonationAlerts" />;
+      break;
+    case "dreamwidth":
+      icon = <img src={dreamwidthpng} alt="Dreamwidth" />;
+      break;
+    case "drive2":
+      icon = <img src={drive2png} alt="DRIVE2" />;
+      break;
+    case "dumskaya":
+      icon = <img src={dumskayapng} alt="Dumskaya" />;
+      break;
+    case "exposure":
+      icon = <img src={exposurepng} alt="Exposure" />;
+      break;
+    case "filmow":
+      icon = <img src={filmowpng} alt="Filmow" />;
+      break;
+    case "filmweb":
+      icon = <img src={filmwebpng} alt="Filmweb" />;
+      break;
+    case "flru":
+      icon = <img src={flrupng} alt="FL.ru" />;
+      break;
+    case "flyertalk":
+      icon = <img src={flyertalkpng} alt="FlyerTalk" />;
+      break;
+    case "fodors":
+      icon = <img src={fodorspng} alt="Fodor's" />;
+      break;
+    case "fourpda":
+      icon = <img src={fourpdapng} alt="4PDA" />;
+      break;
+    case "freelanceru":
+      icon = <img src={freelancerupng} alt="Freelance.ru" />;
+      break;
+    case "gamesradar":
+      icon = <img src={gamesradarpng} alt="GamesRadar+" />;
+      break;
+    case "garden":
+      icon = <img src={gardenpng} alt="Garden.org" />;
+      break;
+    case "gbatemp":
+      icon = <img src={gbatemppng} alt="GBAtemp" />;
+      break;
+    case "gloriatv":
+      icon = <img src={gloriatvpng} alt="gloria.tv" />;
+      break;
+    case "goldderby":
+      icon = <img src={goldderbypng} alt="Gold Derby" />;
+      break;
+    case "gutefrage":
+      icon = <img src={gutefragepng} alt="gutefrage" />;
+      break;
+    case "hardforum":
+      icon = <img src={hardforumpng} alt="HardForum" />;
+      break;
+    case "huntingnet":
+      icon = <Icon icon="mdi:target" color={socialNetworks.huntingnet.color} />;
+      break;
+    case "illustrators":
+      icon = <img src={illustratorspng} alt="Illustrators.ru" />;
+      break;
+    case "influenster":
+      icon = <img src={influensterpng} alt="Influenster" />;
+      break;
+    case "infourok":
+      icon = <img src={infourokpng} alt="Infourok" />;
+      break;
+    case "iphonesru":
+      icon = <img src={iphonesrupng} alt="iPhones.ru" />;
+      break;
+    case "irecommend":
+      icon = <img src={irecommendpng} alt="iRecommend" />;
+      break;
+    case "jigsawplanet":
+      icon = <img src={jigsawplanetpng} alt="Jigsaw Planet" />;
+      break;
+    case "joomlart":
+      icon = <img src={joomlartpng} alt="JoomlArt" />;
+      break;
+    case "joyreactor":
+      icon = <img src={joyreactorpng} alt="JoyReactor" />;
+      break;
+    case "kwork":
+      icon = <img src={kworkpng} alt="Kwork" />;
+      break;
+    case "likee":
+      icon = <img src={likeepng} alt="Likee" />;
+      break;
+    case "livemaster":
+      icon = <img src={livemasterpng} alt="Livemaster" />;
+      break;
+    case "lomography":
+      icon = <Icon icon="mdi:camera-iris" color={socialNetworks.lomography.color} />;
+      break;
+    case "max":
+      icon = <img src={maxpng} alt="MAX" />;
+      break;
+    case "melfm":
+      icon = <img src={melfmpng} alt="Mel.fm" />;
+      break;
+    case "mercadolivre":
+      icon = <img src={mercadolivrepng} alt="Mercado Livre" />;
+      break;
+    case "mirtesen":
+      icon = <img src={mirtesenpng} alt="MirTesen" />;
+      break;
+    case "morguefile":
+      icon = <img src={morguefilepng} alt="morgueFile" />;
+      break;
+    case "mssg":
+      icon = <img src={mssgpng} alt="mssg.me" />;
+      break;
+    case "n4g":
+      icon = <img src={n4gpng} alt="N4G" />;
+      break;
+    case "nairaland":
+      icon = <img src={nairalandpng} alt="Nairaland" />;
+      break;
+    case "namepros":
+      icon = <img src={nameprospng} alt="NamePros" />;
+      break;
+    case "nativeinstruments":
+      icon = <img src={nativeinstrumentspng} alt="Native Instruments" />;
+      break;
+    case "nhattao":
+      icon = <img src={nhattaopng} alt="Nhattao" />;
+      break;
+    case "nkj":
+      icon = <Icon icon="mdi:book-open-page-variant" color={socialNetworks.nkj.color} />;
+      break;
+    case "onethreethreesevenx":
+      icon = <Icon icon="mdi:magnet" color={socialNetworks.onethreethreesevenx.color} />;
+      break;
+    case "onex":
+      icon = <img src={onexpng} alt="1x" />;
+      break;
+    case "opennet":
+      icon = <img src={opennetpng} alt="OpenNet" />;
+      break;
+    case "opensource":
+      icon = <Icon icon="mdi:newspaper-variant" color={socialNetworks.opensource.color} />;
+      break;
+    case "overclockers":
+      icon = <img src={overclockerspng} alt="Overclockers.ru" />;
+      break;
+    case "paltalk":
+      icon = <img src={paltalkpng} alt="Paltalk" />;
+      break;
+    case "partnerkin":
+      icon = <img src={partnerkinpng} alt="Partnerkin" />;
+      break;
+    case "phpru":
+      icon = <Icon icon="mdi:language-php" color={socialNetworks.phpru.color} />;
+      break;
+    case "physicsforums":
+      icon = <img src={physicsforumspng} alt="Physics Forums" />;
+      break;
+    case "planetminecraft":
+      icon = <img src={planetminecraftpng} alt="Planet Minecraft" />;
+      break;
+    case "pling":
+      icon = <img src={plingpng} alt="Pling" />;
+      break;
+    case "pokecommunity":
+      icon = <img src={pokecommunitypng} alt="PokéCommunity" />;
+      break;
+    case "portfoliobox":
+      icon = <img src={portfolioboxpng} alt="Portfoliobox" />;
+      break;
+    case "profi":
+      icon = <img src={profipng} alt="Profi.ru" />;
+      break;
+    case "promodj":
+      icon = <img src={promodjpng} alt="PromoDJ" />;
+      break;
+    case "psnprofiles":
+      icon = <img src={psnprofilespng} alt="PSNProfiles" />;
+      break;
+    case "publiclab":
+      icon = <img src={publiclabpng} alt="Public Lab" />;
+      break;
+    case "pushsquare":
+      icon = <img src={pushsquarepng} alt="Push Square" />;
+      break;
+    case "rapidapi":
+      icon = <img src={rapidapipng} alt="RapidAPI" />;
+      break;
+    case "rutracker":
+      icon = <Icon icon="mdi:magnet" color={socialNetworks.rutracker.color} />;
+      break;
+    case "samlib":
+      icon = <Icon icon="mdi:library" color={socialNetworks.samlib.color} />;
+      break;
+    case "segmentfault":
+      icon = <img src={segmentfaultpng} alt="SegmentFault" />;
+      break;
+    case "skyblock":
+      icon = <Icon icon="mdi:minecraft" color={socialNetworks.skyblock.color} />;
+      break;
+    case "smartlab":
+      icon = <img src={smartlabpng} alt="Smart-Lab" />;
+      break;
+    case "smogon":
+      icon = <img src={smogonpng} alt="Smogon" />;
+      break;
+    case "sparkru":
+      icon = <img src={sparkrupng} alt="Spark.ru" />;
+      break;
+    case "spatial":
+      icon = <img src={spatialpng} alt="Spatial" />;
+      break;
+    case "spletnik":
+      icon = <img src={spletnikpng} alt="Spletnik" />;
+      break;
+    case "stopgame":
+      icon = <img src={stopgamepng} alt="StopGame" />;
+      break;
+    case "studfile":
+      icon = <img src={studfilepng} alt="Studfile" />;
+      break;
+    case "sugoidesu":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.sugoidesu.color} />;
+      break;
+    case "sythe":
+      icon = <img src={sythepng} alt="Sythe" />;
+      break;
+    case "taplink":
+      icon = <Icon icon="mdi:link-variant" color={socialNetworks.taplink.color} />;
+      break;
+    case "telescope":
+      icon = <img src={telescopepng} alt="Telescope" />;
+      break;
+    case "theodysseyonline":
+      icon = <img src={theodysseyonlinepng} alt="The Odyssey Online" />;
+      break;
+    case "thestudentroom":
+      icon = <img src={thestudentroompng} alt="The Student Room" />;
+      break;
+    case "threeddd":
+      icon = <img src={threedddpng} alt="3DDD" />;
+      break;
+    case "threedtoday":
+      icon = <img src={threedtodaypng} alt="3Dtoday" />;
+      break;
+    case "tinkoffinvest":
+      icon = <img src={tinkoffinvestpng} alt="T-Invest" />;
+      break;
+    case "travelblog":
+      icon = <Icon icon="mdi:airplane" color={socialNetworks.travelblog.color} />;
+      break;
+    case "travellerspoint":
+      icon = <img src={travellerspointpng} alt="Travellerspoint" />;
+      break;
+    case "trueachievements":
+      icon = <img src={trueachievementspng} alt="TrueAchievements" />;
+      break;
+    case "twentythreehq":
+      icon = <img src={twentythreehqpng} alt="23hq" />;
+      break;
+    case "videohive":
+      icon = <img src={videohivepng} alt="VideoHive" />;
+      break;
+    case "virgool":
+      icon = <img src={virgoolpng} alt="Virgool" />;
+      break;
+    case "weblancer":
+      icon = <img src={weblancerpng} alt="Weblancer" />;
+      break;
+    case "webnode":
+      icon = <img src={webnodepng} alt="Webnode" />;
+      break;
+    case "wowhead":
+      icon = <img src={wowheadpng} alt="Wowhead" />;
+      break;
+    case "xakep":
+      icon = <img src={xakeppng} alt="Xakep" />;
+      break;
+    case "xenforo":
+      icon = <img src={xenforopng} alt="XenForo" />;
+      break;
+    case "yandexreviews":
+      icon = <img src={yandexreviewspng} alt="Yandex Reviews" />;
       break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;

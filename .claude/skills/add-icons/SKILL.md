@@ -33,9 +33,11 @@ confirmer. La colonne note signale les chiffres écrits en toutes lettres par l'
 un alias `case "sevencups":` au-dessus de `case "7cups":` (et la clé dans `sourceTypes.ts` /
 `socialNetwork.ts`), sans chercher de nouveau logo.
 
-Présenter à l'utilisateur le nombre de réseaux manquants et la liste, puis lui proposer un lot
-de 15 à 20 clés (alias faciles d'abord). Attendre son choix avant de passer à l'étape 1 bis
-avec ce lot.
+Présenter à l'utilisateur le nombre de réseaux manquants et la liste, puis traiter **toutes**
+les clés dans une seule branche et une seule PR (d'habitude 30 à 40 au maximum). En interne,
+dérouler les étapes 1 bis à 5 par lots de 15 à 20 clés (alias faciles d'abord) : une planche
+de contrôle visuel par lot, un commit par lot. Le bump de version, le build complet et la PR
+(étape 6) se font une seule fois à la fin.
 
 ## 1. Ne traiter que ce qui manque
 
@@ -190,5 +192,16 @@ cassée et qu'aucun SVG Iconify n'est vide :
 
 Puis : bump **patch** de `version` dans `package.json`, commit
 `feat: add N icons for <contexte> and bump version to X.Y.Z` (corps : les mappings de slugs
-non évidents et la provenance des assets), PR vers `master`. La publication npm et le bump
+non évidents et la provenance des assets), PR vers `master`.
+
+La description de la PR liste **toutes** les icônes ajoutées, groupées par input (sert à les
+retrouver dans l'interface des produits) ; ce bloc se génère avec :
+
+```bash
+python3 .claude/skills/add-icons/scripts/icons.py inputs <toutes les clés ajoutées>
+```
+
+Un réseau à plusieurs inputs apparaît dans chacun de ses groupes (username, name, email,
+phone) ; les inputs rares (`network-domain`, `group-company`…) vont dans **other**, et les clés
+absentes de l'API dans **hors API**. La publication npm et le bump
 des produits consommateurs ne font pas partie de ce skill.
