@@ -802,4 +802,16 @@ export type SourceTypes =
   | "nextcloud"
   | "residentadvisor"
   | "sportsru"
-  | "teletype";
+  | "teletype"
+  | "boosty"
+  | "codementor"
+  | "codesandbox"
+  | "jsfiddle"
+  | "liberapay"
+  | "lobsters"
+  | "namuwiki"
+  | "ninetyninedesigns"
+  | "pinboard"
+  | "sevencups"
+  | "treehouse"
+  | "xda";

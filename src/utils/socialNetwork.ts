@@ -3101,4 +3101,64 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "Teletype",
   },
+  boosty: {
+    color: "#F15F2C",
+    category: "finance",
+    name: "Boosty",
+  },
+  codementor: {
+    color: "#003648",
+    category: "programming",
+    name: "Codementor",
+  },
+  codesandbox: {
+    color: "#151515",
+    category: "programming",
+    name: "CodeSandbox",
+  },
+  jsfiddle: {
+    color: "#0084FF",
+    category: "programming",
+    name: "JSFiddle",
+  },
+  liberapay: {
+    color: "#F6C915",
+    category: "finance",
+    name: "Liberapay",
+  },
+  lobsters: {
+    color: "#AC130D",
+    category: "programming",
+    name: "Lobsters",
+  },
+  namuwiki: {
+    color: "#008275",
+    category: "other",
+    name: "Namu Wiki",
+  },
+  ninetyninedesigns: {
+    color: "#FE5F50",
+    category: "other",
+    name: "99designs",
+  },
+  pinboard: {
+    color: "#0000FF",
+    category: "other",
+    name: "Pinboard",
+  },
+  sevencups: {
+    color: "#3DBFC4",
+    category: "other",
+    name: "7 Cups",
+  },
+  treehouse: {
+    color: "#5FCF80",
+    category: "programming",
+    name: "Treehouse",
+  },
+  xda: {
+    color: "#EA7100",
+    category: "programming",
+    name: "XDA",
+  },
 };

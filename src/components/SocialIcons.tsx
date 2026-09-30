@@ -1801,6 +1801,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "kwai":
       icon = <img src={kwaipng} alt="Kwai" />;
       break;
+    case "sevencups":
     case "7cups":
       icon = <img src={cups7png} alt="7 Cups" />;
       break;
@@ -2872,6 +2873,39 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "teletype":
       icon = <img src={teletypepng} alt="Teletype" />;
+      break;
+    case "boosty":
+      icon = <Icon icon="simple-icons:boosty" color={socialNetworks.boosty.color} />;
+      break;
+    case "codementor":
+      icon = <Icon icon="simple-icons:codementor" color={socialNetworks.codementor.color} />;
+      break;
+    case "codesandbox":
+      icon = <Icon icon="simple-icons:codesandbox" color={socialNetworks.codesandbox.color} />;
+      break;
+    case "jsfiddle":
+      icon = <Icon icon="simple-icons:jsfiddle" color={socialNetworks.jsfiddle.color} />;
+      break;
+    case "liberapay":
+      icon = <Icon icon="simple-icons:liberapay" color={socialNetworks.liberapay.color} />;
+      break;
+    case "lobsters":
+      icon = <Icon icon="simple-icons:lobsters" color={socialNetworks.lobsters.color} />;
+      break;
+    case "namuwiki":
+      icon = <Icon icon="simple-icons:namuwiki" color={socialNetworks.namuwiki.color} />;
+      break;
+    case "ninetyninedesigns":
+      icon = <Icon icon="simple-icons:99designs" color={socialNetworks.ninetyninedesigns.color} />;
+      break;
+    case "pinboard":
+      icon = <Icon icon="simple-icons:pinboard" color={socialNetworks.pinboard.color} />;
+      break;
+    case "treehouse":
+      icon = <Icon icon="simple-icons:treehouse" color={socialNetworks.treehouse.color} />;
+      break;
+    case "xda":
+      icon = <Icon icon="simple-icons:xdadevelopers" color={socialNetworks.xda.color} />;
       break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
