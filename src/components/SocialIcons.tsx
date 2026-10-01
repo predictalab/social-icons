@@ -559,6 +559,21 @@ import govlooppng from "../assets/social-icons/govloop.png";
 import hackingwithswiftpng from "../assets/social-icons/hackingwithswift.png";
 import hackthissitepng from "../assets/social-icons/hackthissite.png";
 import homebrewtalkpng from "../assets/social-icons/homebrewtalk.png";
+import imagefappng from "../assets/social-icons/imagefap.png";
+import imginnpng from "../assets/social-icons/imginn.png";
+import kharkovforumpng from "../assets/social-icons/kharkovforum.png";
+import kosmetistapng from "../assets/social-icons/kosmetista.png";
+import kwejkpng from "../assets/social-icons/kwejk.png";
+import liinkspng from "../assets/social-icons/liinks.png";
+import massagerepublicpng from "../assets/social-icons/massagerepublic.png";
+import modxpropng from "../assets/social-icons/modxpro.png";
+import movieforumspng from "../assets/social-icons/movieforums.png";
+import movielistpng from "../assets/social-icons/movielist.png";
+import mpghpng from "../assets/social-icons/mpgh.png";
+import musikerboardpng from "../assets/social-icons/musikerboard.png";
+import mybuilderpng from "../assets/social-icons/mybuilder.png";
+import myinstantspng from "../assets/social-icons/myinstants.png";
+import mylotpng from "../assets/social-icons/mylot.png";
 
 type PropsTypes = { source?: string };
 
@@ -3506,6 +3521,63 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "icheckmovies":
       icon = <Icon icon="mdi:movie-check" color={socialNetworks.icheckmovies.color} />;
+      break;
+    case "imagefap":
+      icon = <img src={imagefappng} alt="ImageFap" />;
+      break;
+    case "imginn":
+      icon = <img src={imginnpng} alt="Imginn" />;
+      break;
+    case "kharkovforum":
+      icon = <img src={kharkovforumpng} alt="KharkovForum" />;
+      break;
+    case "kosmetista":
+      icon = <img src={kosmetistapng} alt="Kosmetista" />;
+      break;
+    case "kwejk":
+      icon = <img src={kwejkpng} alt="Kwejk" />;
+      break;
+    case "lightstalking":
+      icon = <Icon icon="mdi:camera-iris" color={socialNetworks.lightstalking.color} />;
+      break;
+    case "liinks":
+      icon = <img src={liinkspng} alt="Liinks" />;
+      break;
+    case "massagerepublic":
+      icon = <img src={massagerepublicpng} alt="Massage Republic" />;
+      break;
+    case "medikforum":
+      icon = <Icon icon="mdi:medical-bag" color={socialNetworks.medikforum.color} />;
+      break;
+    case "millerovo161":
+      icon = <Icon icon="mdi:city" color={socialNetworks.millerovo161.color} />;
+      break;
+    case "modxpro":
+      icon = <img src={modxpropng} alt="modx.pro" />;
+      break;
+    case "movieforums":
+      icon = <img src={movieforumspng} alt="MovieForums" />;
+      break;
+    case "movielist":
+      icon = <img src={movielistpng} alt="Movie-List" />;
+      break;
+    case "mpgh":
+      icon = <img src={mpghpng} alt="MPGH" />;
+      break;
+    case "musikerboard":
+      icon = <img src={musikerboardpng} alt="Musiker-Board" />;
+      break;
+    case "mybuilder":
+      icon = <img src={mybuilderpng} alt="MyBuilder" />;
+      break;
+    case "myinstants":
+      icon = <img src={myinstantspng} alt="Myinstants" />;
+      break;
+    case "mylot":
+      icon = <img src={mylotpng} alt="myLot" />;
+      break;
+    case "namemc":
+      icon = <Icon icon="simple-icons:namemc" color={socialNetworks.namemc.color} />;
       break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;

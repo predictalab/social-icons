@@ -3936,4 +3936,99 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "iCheckMovies",
   },
+  imagefap: {
+    color: "#0168EC",
+    category: "adult",
+    name: "ImageFap",
+  },
+  imginn: {
+    color: "#F6239C",
+    category: "social",
+    name: "Imginn",
+  },
+  kharkovforum: {
+    color: "#000000",
+    category: "social",
+    name: "KharkovForum",
+  },
+  kosmetista: {
+    color: "#ED3A4A",
+    category: "social",
+    name: "Kosmetista",
+  },
+  kwejk: {
+    color: "#1B3148",
+    category: "social",
+    name: "Kwejk",
+  },
+  lightstalking: {
+    color: "#2B2B2B",
+    category: "social",
+    name: "Light Stalking",
+  },
+  liinks: {
+    color: "#13131D",
+    category: "social",
+    name: "Liinks",
+  },
+  massagerepublic: {
+    color: "#070607",
+    category: "adult",
+    name: "Massage Republic",
+  },
+  medikforum: {
+    color: "#A01010",
+    category: "social",
+    name: "MedikForum",
+  },
+  millerovo161: {
+    color: "#F00000",
+    category: "social",
+    name: "Millerovo161",
+  },
+  modxpro: {
+    color: "#292827",
+    category: "programming",
+    name: "modx.pro",
+  },
+  movieforums: {
+    color: "#010101",
+    category: "social",
+    name: "MovieForums",
+  },
+  movielist: {
+    color: "#8DA0B8",
+    category: "social",
+    name: "Movie-List",
+  },
+  mpgh: {
+    color: "#0E1318",
+    category: "hacking",
+    name: "MPGH",
+  },
+  musikerboard: {
+    color: "#E44D3D",
+    category: "social",
+    name: "Musiker-Board",
+  },
+  mybuilder: {
+    color: "#36F825",
+    category: "ecommerce",
+    name: "MyBuilder",
+  },
+  myinstants: {
+    color: "#B40202",
+    category: "other",
+    name: "Myinstants",
+  },
+  mylot: {
+    color: "#009745",
+    category: "social",
+    name: "myLot",
+  },
+  namemc: {
+    color: "#12161A",
+    category: "gaming",
+    name: "NameMC",
+  },
 };
