@@ -3846,4 +3846,94 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "eGPU.io",
   },
+  ethereummagicians: {
+    color: "#6F4FD8",
+    category: "programming",
+    name: "Ethereum Magicians",
+  },
+  ethresear: {
+    color: "#E56897",
+    category: "programming",
+    name: "Ethresear.ch",
+  },
+  etxt: {
+    color: "#1EC2FE",
+    category: "other",
+    name: "eTXT",
+  },
+  fanlore: {
+    color: "#972C26",
+    category: "social",
+    name: "Fanlore",
+  },
+  fluther: {
+    color: "#AF3E06",
+    category: "social",
+    name: "Fluther",
+  },
+  forest: {
+    color: "#03A44D",
+    category: "other",
+    name: "Forest.ru",
+  },
+  fortnitetracker: {
+    color: "#1D2124",
+    category: "gaming",
+    name: "Fortnite Tracker",
+  },
+  forumhr: {
+    color: "#F0D010",
+    category: "social",
+    name: "Forum.hr",
+  },
+  forumodua: {
+    color: "#16608D",
+    category: "social",
+    name: "Forum.od.ua",
+  },
+  fotostrana: {
+    color: "#1186E5",
+    category: "social",
+    name: "Fotostrana",
+  },
+  freelancehunt: {
+    color: "#FEBB00",
+    category: "other",
+    name: "Freelancehunt",
+  },
+  gcup: {
+    color: "#843314",
+    category: "programming",
+    name: "GCUP.ru",
+  },
+  gingerbread: {
+    color: "#FF5400",
+    category: "social",
+    name: "Gingerbread",
+  },
+  govloop: {
+    color: "#23540E",
+    category: "social",
+    name: "GovLoop",
+  },
+  hackingwithswift: {
+    color: "#C81012",
+    category: "programming",
+    name: "Hacking with Swift",
+  },
+  hackthissite: {
+    color: "#000000",
+    category: "hacking",
+    name: "HackThisSite",
+  },
+  homebrewtalk: {
+    color: "#C8952D",
+    category: "social",
+    name: "HomebrewTalk",
+  },
+  icheckmovies: {
+    color: "#B00020",
+    category: "other",
+    name: "iCheckMovies",
+  },
 };

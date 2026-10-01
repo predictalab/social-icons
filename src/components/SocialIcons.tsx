@@ -543,6 +543,22 @@ import cqhampng from "../assets/social-icons/cqham.png";
 import d3png from "../assets/social-icons/d3.png";
 import dota2rupng from "../assets/social-icons/dota2ru.png";
 import egpupng from "../assets/social-icons/egpu.png";
+import ethereummagicianspng from "../assets/social-icons/ethereummagicians.png";
+import ethresearpng from "../assets/social-icons/ethresear.png";
+import etxtpng from "../assets/social-icons/etxt.png";
+import fanlorepng from "../assets/social-icons/fanlore.png";
+import flutherpng from "../assets/social-icons/fluther.png";
+import forestpng from "../assets/social-icons/forest.png";
+import fortnitetrackerpng from "../assets/social-icons/fortnitetracker.png";
+import forumoduapng from "../assets/social-icons/forumodua.png";
+import fotostranapng from "../assets/social-icons/fotostrana.png";
+import freelancehuntpng from "../assets/social-icons/freelancehunt.png";
+import gcuppng from "../assets/social-icons/gcup.png";
+import gingerbreadpng from "../assets/social-icons/gingerbread.png";
+import govlooppng from "../assets/social-icons/govloop.png";
+import hackingwithswiftpng from "../assets/social-icons/hackingwithswift.png";
+import hackthissitepng from "../assets/social-icons/hackthissite.png";
+import homebrewtalkpng from "../assets/social-icons/homebrewtalk.png";
 
 type PropsTypes = { source?: string };
 
@@ -3436,6 +3452,60 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "egpu":
       icon = <img src={egpupng} alt="eGPU.io" />;
+      break;
+    case "ethereummagicians":
+      icon = <img src={ethereummagicianspng} alt="Ethereum Magicians" />;
+      break;
+    case "ethresear":
+      icon = <img src={ethresearpng} alt="Ethresear.ch" />;
+      break;
+    case "etxt":
+      icon = <img src={etxtpng} alt="eTXT" />;
+      break;
+    case "fanlore":
+      icon = <img src={fanlorepng} alt="Fanlore" />;
+      break;
+    case "fluther":
+      icon = <img src={flutherpng} alt="Fluther" />;
+      break;
+    case "forest":
+      icon = <img src={forestpng} alt="Forest.ru" />;
+      break;
+    case "fortnitetracker":
+      icon = <img src={fortnitetrackerpng} alt="Fortnite Tracker" />;
+      break;
+    case "forumhr":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.forumhr.color} />;
+      break;
+    case "forumodua":
+      icon = <img src={forumoduapng} alt="Forum.od.ua" />;
+      break;
+    case "fotostrana":
+      icon = <img src={fotostranapng} alt="Fotostrana" />;
+      break;
+    case "freelancehunt":
+      icon = <img src={freelancehuntpng} alt="Freelancehunt" />;
+      break;
+    case "gcup":
+      icon = <img src={gcuppng} alt="GCUP.ru" />;
+      break;
+    case "gingerbread":
+      icon = <img src={gingerbreadpng} alt="Gingerbread" />;
+      break;
+    case "govloop":
+      icon = <img src={govlooppng} alt="GovLoop" />;
+      break;
+    case "hackingwithswift":
+      icon = <img src={hackingwithswiftpng} alt="Hacking with Swift" />;
+      break;
+    case "hackthissite":
+      icon = <img src={hackthissitepng} alt="HackThisSite" />;
+      break;
+    case "homebrewtalk":
+      icon = <img src={homebrewtalkpng} alt="HomebrewTalk" />;
+      break;
+    case "icheckmovies":
+      icon = <Icon icon="mdi:movie-check" color={socialNetworks.icheckmovies.color} />;
       break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
