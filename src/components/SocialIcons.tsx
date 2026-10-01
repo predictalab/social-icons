@@ -592,6 +592,22 @@ import salon24png from "../assets/social-icons/salon24.png";
 import savingadvicepng from "../assets/social-icons/savingadvice.png";
 import sbazarpng from "../assets/social-icons/sbazar.png";
 import seoclerkspng from "../assets/social-icons/seoclerks.png";
+import sevendachpng from "../assets/social-icons/sevendach.png";
+import shazoopng from "../assets/social-icons/shazoo.png";
+import smokingmeatforumspng from "../assets/social-icons/smokingmeatforums.png";
+import tfw25png from "../assets/social-icons/tfw2005.png";
+import thesimsresourcepng from "../assets/social-icons/thesimsresource.png";
+import touristlinkpng from "../assets/social-icons/touristlink.png";
+import trainsimpng from "../assets/social-icons/trainsim.png";
+import trashboxpng from "../assets/social-icons/trashbox.png";
+import trisquelpng from "../assets/social-icons/trisquel.png";
+import valinorpng from "../assets/social-icons/valinor.png";
+import vgtimespng from "../assets/social-icons/vgtimes.png";
+import vjudgepng from "../assets/social-icons/vjudge.png";
+import vsemaykipng from "../assets/social-icons/vsemayki.png";
+import w7forumspng from "../assets/social-icons/w7forums.png";
+import windowsforumpng from "../assets/social-icons/windowsforum.png";
+import zoomitpng from "../assets/social-icons/zoomit.png";
 
 type PropsTypes = { source?: string };
 
@@ -3653,6 +3669,60 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "seoclerks":
       icon = <img src={seoclerkspng} alt="SEOClerks" />;
+      break;
+    case "sevendach":
+      icon = <img src={sevendachpng} alt="7dach" />;
+      break;
+    case "shazoo":
+      icon = <img src={shazoopng} alt="Shazoo" />;
+      break;
+    case "shikimori":
+      icon = <Icon icon="simple-icons:shikimori" color={socialNetworks.shikimori.color} />;
+      break;
+    case "smokingmeatforums":
+      icon = <img src={smokingmeatforumspng} alt="Smoking Meat Forums" />;
+      break;
+    case "tfw2005":
+      icon = <img src={tfw25png} alt="TFW2005" />;
+      break;
+    case "theanswerbank":
+      icon = <Icon icon="mdi:comment-question" color={socialNetworks.theanswerbank.color} />;
+      break;
+    case "thesimsresource":
+      icon = <img src={thesimsresourcepng} alt="The Sims Resource" />;
+      break;
+    case "touristlink":
+      icon = <img src={touristlinkpng} alt="Touristlink" />;
+      break;
+    case "trainsim":
+      icon = <img src={trainsimpng} alt="TrainSim" />;
+      break;
+    case "trashbox":
+      icon = <img src={trashboxpng} alt="Trashbox" />;
+      break;
+    case "trisquel":
+      icon = <img src={trisquelpng} alt="Trisquel" />;
+      break;
+    case "valinor":
+      icon = <img src={valinorpng} alt="Valinor" />;
+      break;
+    case "vgtimes":
+      icon = <img src={vgtimespng} alt="VGTimes" />;
+      break;
+    case "vjudge":
+      icon = <img src={vjudgepng} alt="Virtual Judge" />;
+      break;
+    case "vsemayki":
+      icon = <img src={vsemaykipng} alt="Vsemayki" />;
+      break;
+    case "w7forums":
+      icon = <img src={w7forumspng} alt="W7Forums" />;
+      break;
+    case "windowsforum":
+      icon = <img src={windowsforumpng} alt="WindowsForum" />;
+      break;
+    case "zoomit":
+      icon = <img src={zoomitpng} alt="Zoomit" />;
       break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;

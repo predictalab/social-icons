@@ -4126,4 +4126,94 @@ export const socialNetworks: socialNetworkType = {
     category: "ecommerce",
     name: "SEOClerks",
   },
+  sevendach: {
+    color: "#08964B",
+    category: "social",
+    name: "7dach",
+  },
+  shazoo: {
+    color: "#000000",
+    category: "gaming",
+    name: "Shazoo",
+  },
+  shikimori: {
+    color: "#343434",
+    category: "social",
+    name: "Shikimori",
+  },
+  smokingmeatforums: {
+    color: "#111010",
+    category: "social",
+    name: "Smoking Meat Forums",
+  },
+  tfw2005: {
+    color: "#212139",
+    category: "social",
+    name: "TFW2005",
+  },
+  theanswerbank: {
+    color: "#F0A000",
+    category: "social",
+    name: "The AnswerBank",
+  },
+  thesimsresource: {
+    color: "#7D53CA",
+    category: "gaming",
+    name: "The Sims Resource",
+  },
+  touristlink: {
+    color: "#C1E066",
+    category: "social",
+    name: "Touristlink",
+  },
+  trainsim: {
+    color: "#131212",
+    category: "gaming",
+    name: "TrainSim",
+  },
+  trashbox: {
+    color: "#270053",
+    category: "other",
+    name: "Trashbox",
+  },
+  trisquel: {
+    color: "#2364BA",
+    category: "programming",
+    name: "Trisquel",
+  },
+  valinor: {
+    color: "#283551",
+    category: "social",
+    name: "Valinor",
+  },
+  vgtimes: {
+    color: "#FF1C1C",
+    category: "gaming",
+    name: "VGTimes",
+  },
+  vjudge: {
+    color: "#E5C100",
+    category: "programming",
+    name: "Virtual Judge",
+  },
+  vsemayki: {
+    color: "#CF0088",
+    category: "ecommerce",
+    name: "Vsemayki",
+  },
+  w7forums: {
+    color: "#005494",
+    category: "social",
+    name: "W7Forums",
+  },
+  windowsforum: {
+    color: "#81B800",
+    category: "social",
+    name: "WindowsForum",
+  },
+  zoomit: {
+    color: "#E2072C",
+    category: "social",
+    name: "Zoomit",
+  },
 };
