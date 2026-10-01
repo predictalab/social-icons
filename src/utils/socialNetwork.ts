@@ -3756,4 +3756,464 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "Yandex Reviews",
   },
+  allhockey: {
+    color: "#ED292D",
+    category: "sport",
+    name: "AllHockey",
+  },
+  allthelyrics: {
+    color: "#E0C010",
+    category: "other",
+    name: "AllTheLyrics",
+  },
+  aminus3: {
+    color: "#000000",
+    category: "social",
+    name: "Aminus3",
+  },
+  animesuperhero: {
+    color: "#000000",
+    category: "social",
+    name: "AnimeSuperHero",
+  },
+  aniworld: {
+    color: "#637CFA",
+    category: "streaming",
+    name: "AniWorld",
+  },
+  ariva: {
+    color: "#00375B",
+    category: "finance",
+    name: "ariva.de",
+  },
+  arrse: {
+    color: "#D2C966",
+    category: "social",
+    name: "ARRSE",
+  },
+  avizo: {
+    color: "#1F6BB5",
+    category: "ecommerce",
+    name: "Avízo",
+  },
+  babyru: {
+    color: "#DF4388",
+    category: "social",
+    name: "Baby.ru",
+  },
+  bdoutdoors: {
+    color: "#221E1F",
+    category: "sport",
+    name: "BD Outdoors",
+  },
+  bitpapa: {
+    color: "#233BA3",
+    category: "finance",
+    name: "Bitpapa",
+  },
+  clozemaster: {
+    color: "#444444",
+    category: "other",
+    name: "Clozemaster",
+  },
+  coolminiornot: {
+    color: "#FDBC11",
+    category: "gaming",
+    name: "CoolMiniOrNot",
+  },
+  cqham: {
+    color: "#FA014E",
+    category: "social",
+    name: "CQHAM.ru",
+  },
+  d3: {
+    color: "#E2C36F",
+    category: "social",
+    name: "d3.ru",
+  },
+  ddo: {
+    color: "#700000",
+    category: "gaming",
+    name: "Dungeons & Dragons Online",
+  },
+  dota2ru: {
+    color: "#CD280E",
+    category: "gaming",
+    name: "Dota2.ru",
+  },
+  egpu: {
+    color: "#1AB1FF",
+    category: "other",
+    name: "eGPU.io",
+  },
+  ethereummagicians: {
+    color: "#6F4FD8",
+    category: "programming",
+    name: "Ethereum Magicians",
+  },
+  ethresear: {
+    color: "#E56897",
+    category: "programming",
+    name: "Ethresear.ch",
+  },
+  etxt: {
+    color: "#1EC2FE",
+    category: "other",
+    name: "eTXT",
+  },
+  fanlore: {
+    color: "#972C26",
+    category: "social",
+    name: "Fanlore",
+  },
+  fluther: {
+    color: "#AF3E06",
+    category: "social",
+    name: "Fluther",
+  },
+  forest: {
+    color: "#03A44D",
+    category: "other",
+    name: "Forest.ru",
+  },
+  fortnitetracker: {
+    color: "#1D2124",
+    category: "gaming",
+    name: "Fortnite Tracker",
+  },
+  forumhr: {
+    color: "#F0D010",
+    category: "social",
+    name: "Forum.hr",
+  },
+  forumodua: {
+    color: "#16608D",
+    category: "social",
+    name: "Forum.od.ua",
+  },
+  fotostrana: {
+    color: "#1186E5",
+    category: "social",
+    name: "Fotostrana",
+  },
+  freelancehunt: {
+    color: "#FEBB00",
+    category: "other",
+    name: "Freelancehunt",
+  },
+  gcup: {
+    color: "#843314",
+    category: "programming",
+    name: "GCUP.ru",
+  },
+  gingerbread: {
+    color: "#FF5400",
+    category: "social",
+    name: "Gingerbread",
+  },
+  govloop: {
+    color: "#23540E",
+    category: "social",
+    name: "GovLoop",
+  },
+  hackingwithswift: {
+    color: "#C81012",
+    category: "programming",
+    name: "Hacking with Swift",
+  },
+  hackthissite: {
+    color: "#000000",
+    category: "hacking",
+    name: "HackThisSite",
+  },
+  homebrewtalk: {
+    color: "#C8952D",
+    category: "social",
+    name: "HomebrewTalk",
+  },
+  icheckmovies: {
+    color: "#B00020",
+    category: "other",
+    name: "iCheckMovies",
+  },
+  imagefap: {
+    color: "#0168EC",
+    category: "adult",
+    name: "ImageFap",
+  },
+  imginn: {
+    color: "#F6239C",
+    category: "social",
+    name: "Imginn",
+  },
+  kharkovforum: {
+    color: "#000000",
+    category: "social",
+    name: "KharkovForum",
+  },
+  kosmetista: {
+    color: "#ED3A4A",
+    category: "social",
+    name: "Kosmetista",
+  },
+  kwejk: {
+    color: "#1B3148",
+    category: "social",
+    name: "Kwejk",
+  },
+  lightstalking: {
+    color: "#2B2B2B",
+    category: "social",
+    name: "Light Stalking",
+  },
+  liinks: {
+    color: "#13131D",
+    category: "social",
+    name: "Liinks",
+  },
+  massagerepublic: {
+    color: "#070607",
+    category: "adult",
+    name: "Massage Republic",
+  },
+  medikforum: {
+    color: "#A01010",
+    category: "social",
+    name: "MedikForum",
+  },
+  millerovo161: {
+    color: "#F00000",
+    category: "social",
+    name: "Millerovo161",
+  },
+  modxpro: {
+    color: "#292827",
+    category: "programming",
+    name: "modx.pro",
+  },
+  movieforums: {
+    color: "#010101",
+    category: "social",
+    name: "MovieForums",
+  },
+  movielist: {
+    color: "#8DA0B8",
+    category: "social",
+    name: "Movie-List",
+  },
+  mpgh: {
+    color: "#0E1318",
+    category: "hacking",
+    name: "MPGH",
+  },
+  musikerboard: {
+    color: "#E44D3D",
+    category: "social",
+    name: "Musiker-Board",
+  },
+  mybuilder: {
+    color: "#36F825",
+    category: "ecommerce",
+    name: "MyBuilder",
+  },
+  myinstants: {
+    color: "#B40202",
+    category: "other",
+    name: "Myinstants",
+  },
+  mylot: {
+    color: "#009745",
+    category: "social",
+    name: "myLot",
+  },
+  namemc: {
+    color: "#12161A",
+    category: "gaming",
+    name: "NameMC",
+  },
+  nothingcommunity: {
+    color: "#000000",
+    category: "social",
+    name: "Nothing Community",
+  },
+  oldgames: {
+    color: "#435380",
+    category: "gaming",
+    name: "Old-Games.ru",
+  },
+  onethousandonetracklists: {
+    color: "#3CAEF0",
+    category: "other",
+    name: "1001Tracklists",
+  },
+  onlyfinder: {
+    color: "#FD37B7",
+    category: "adult",
+    name: "OnlyFinder",
+  },
+  oper: {
+    color: "#EC2024",
+    category: "social",
+    name: "Oper.ru",
+  },
+  partyflock: {
+    color: "#000000",
+    category: "social",
+    name: "Partyflock",
+  },
+  politforums: {
+    color: "#971B1D",
+    category: "social",
+    name: "Politforums",
+  },
+  radioscanner: {
+    color: "#305060",
+    category: "social",
+    name: "Radioscanner",
+  },
+  rappad: {
+    color: "#55447C",
+    category: "social",
+    name: "Rappad",
+  },
+  reibert: {
+    color: "#010101",
+    category: "social",
+    name: "Reibert.info",
+  },
+  rlocman: {
+    color: "#C8102E",
+    category: "other",
+    name: "RLocman",
+  },
+  rmmedia: {
+    color: "#010101",
+    category: "social",
+    name: "RMMedia",
+  },
+  rollitup: {
+    color: "#BAC579",
+    category: "social",
+    name: "RollItUp",
+  },
+  runitonce: {
+    color: "#8B181A",
+    category: "gaming",
+    name: "Run It Once",
+  },
+  rusfootball: {
+    color: "#282C96",
+    category: "sport",
+    name: "RusFootball",
+  },
+  salon24: {
+    color: "#1A1A1A",
+    category: "social",
+    name: "Salon24",
+  },
+  savingadvice: {
+    color: "#7F9BC5",
+    category: "finance",
+    name: "SavingAdvice",
+  },
+  sbazar: {
+    color: "#CB0000",
+    category: "ecommerce",
+    name: "Sbazar",
+  },
+  seoclerks: {
+    color: "#F8DD66",
+    category: "ecommerce",
+    name: "SEOClerks",
+  },
+  sevendach: {
+    color: "#08964B",
+    category: "social",
+    name: "7dach",
+  },
+  shazoo: {
+    color: "#000000",
+    category: "gaming",
+    name: "Shazoo",
+  },
+  shikimori: {
+    color: "#343434",
+    category: "social",
+    name: "Shikimori",
+  },
+  smokingmeatforums: {
+    color: "#111010",
+    category: "social",
+    name: "Smoking Meat Forums",
+  },
+  tfw2005: {
+    color: "#212139",
+    category: "social",
+    name: "TFW2005",
+  },
+  theanswerbank: {
+    color: "#F0A000",
+    category: "social",
+    name: "The AnswerBank",
+  },
+  thesimsresource: {
+    color: "#7D53CA",
+    category: "gaming",
+    name: "The Sims Resource",
+  },
+  touristlink: {
+    color: "#C1E066",
+    category: "social",
+    name: "Touristlink",
+  },
+  trainsim: {
+    color: "#131212",
+    category: "gaming",
+    name: "TrainSim",
+  },
+  trashbox: {
+    color: "#270053",
+    category: "other",
+    name: "Trashbox",
+  },
+  trisquel: {
+    color: "#2364BA",
+    category: "programming",
+    name: "Trisquel",
+  },
+  valinor: {
+    color: "#283551",
+    category: "social",
+    name: "Valinor",
+  },
+  vgtimes: {
+    color: "#FF1C1C",
+    category: "gaming",
+    name: "VGTimes",
+  },
+  vjudge: {
+    color: "#E5C100",
+    category: "programming",
+    name: "Virtual Judge",
+  },
+  vsemayki: {
+    color: "#CF0088",
+    category: "ecommerce",
+    name: "Vsemayki",
+  },
+  w7forums: {
+    color: "#005494",
+    category: "social",
+    name: "W7Forums",
+  },
+  windowsforum: {
+    color: "#81B800",
+    category: "social",
+    name: "WindowsForum",
+  },
+  zoomit: {
+    color: "#E2072C",
+    category: "social",
+    name: "Zoomit",
+  },
 };
