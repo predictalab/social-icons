@@ -574,6 +574,24 @@ import musikerboardpng from "../assets/social-icons/musikerboard.png";
 import mybuilderpng from "../assets/social-icons/mybuilder.png";
 import myinstantspng from "../assets/social-icons/myinstants.png";
 import mylotpng from "../assets/social-icons/mylot.png";
+import nothingcommunitypng from "../assets/social-icons/nothingcommunity.png";
+import oldgamespng from "../assets/social-icons/oldgames.png";
+import onethousandonetracklistspng from "../assets/social-icons/onethousandonetracklists.png";
+import onlyfinderpng from "../assets/social-icons/onlyfinder.png";
+import operpng from "../assets/social-icons/oper.png";
+import partyflockpng from "../assets/social-icons/partyflock.png";
+import politforumspng from "../assets/social-icons/politforums.png";
+import rappadpng from "../assets/social-icons/rappad.png";
+import reibertpng from "../assets/social-icons/reibert.png";
+import rlocmanpng from "../assets/social-icons/rlocman.png";
+import rmmediapng from "../assets/social-icons/rmmedia.png";
+import rollituppng from "../assets/social-icons/rollitup.png";
+import runitoncepng from "../assets/social-icons/runitonce.png";
+import rusfootballpng from "../assets/social-icons/rusfootball.png";
+import salon24png from "../assets/social-icons/salon24.png";
+import savingadvicepng from "../assets/social-icons/savingadvice.png";
+import sbazarpng from "../assets/social-icons/sbazar.png";
+import seoclerkspng from "../assets/social-icons/seoclerks.png";
 
 type PropsTypes = { source?: string };
 
@@ -3578,6 +3596,63 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "namemc":
       icon = <Icon icon="simple-icons:namemc" color={socialNetworks.namemc.color} />;
+      break;
+    case "nothingcommunity":
+      icon = <img src={nothingcommunitypng} alt="Nothing Community" />;
+      break;
+    case "oldgames":
+      icon = <img src={oldgamespng} alt="Old-Games.ru" />;
+      break;
+    case "onethousandonetracklists":
+      icon = <img src={onethousandonetracklistspng} alt="1001Tracklists" />;
+      break;
+    case "onlyfinder":
+      icon = <img src={onlyfinderpng} alt="OnlyFinder" />;
+      break;
+    case "oper":
+      icon = <img src={operpng} alt="Oper.ru" />;
+      break;
+    case "partyflock":
+      icon = <img src={partyflockpng} alt="Partyflock" />;
+      break;
+    case "politforums":
+      icon = <img src={politforumspng} alt="Politforums" />;
+      break;
+    case "radioscanner":
+      icon = <Icon icon="mdi:radio-tower" color={socialNetworks.radioscanner.color} />;
+      break;
+    case "rappad":
+      icon = <img src={rappadpng} alt="Rappad" />;
+      break;
+    case "reibert":
+      icon = <img src={reibertpng} alt="Reibert.info" />;
+      break;
+    case "rlocman":
+      icon = <img src={rlocmanpng} alt="RLocman" />;
+      break;
+    case "rmmedia":
+      icon = <img src={rmmediapng} alt="RMMedia" />;
+      break;
+    case "rollitup":
+      icon = <img src={rollituppng} alt="RollItUp" />;
+      break;
+    case "runitonce":
+      icon = <img src={runitoncepng} alt="Run It Once" />;
+      break;
+    case "rusfootball":
+      icon = <img src={rusfootballpng} alt="RusFootball" />;
+      break;
+    case "salon24":
+      icon = <img src={salon24png} alt="Salon24" />;
+      break;
+    case "savingadvice":
+      icon = <img src={savingadvicepng} alt="SavingAdvice" />;
+      break;
+    case "sbazar":
+      icon = <img src={sbazarpng} alt="Sbazar" />;
+      break;
+    case "seoclerks":
+      icon = <img src={seoclerkspng} alt="SEOClerks" />;
       break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
