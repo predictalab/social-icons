@@ -527,6 +527,22 @@ import wowheadpng from "../assets/social-icons/wowhead.png";
 import xakeppng from "../assets/social-icons/xakep.png";
 import xenforopng from "../assets/social-icons/xenforo.png";
 import yandexreviewspng from "../assets/social-icons/yandexreviews.png";
+import allhockeypng from "../assets/social-icons/allhockey.png";
+import aminus3png from "../assets/social-icons/aminus3.png";
+import animesuperheropng from "../assets/social-icons/animesuperhero.png";
+import aniworldpng from "../assets/social-icons/aniworld.png";
+import arivapng from "../assets/social-icons/ariva.png";
+import arrsepng from "../assets/social-icons/arrse.png";
+import avizopng from "../assets/social-icons/avizo.png";
+import babyrupng from "../assets/social-icons/babyru.png";
+import bdoutdoorspng from "../assets/social-icons/bdoutdoors.png";
+import bitpapapng from "../assets/social-icons/bitpapa.png";
+import clozemasterpng from "../assets/social-icons/clozemaster.png";
+import coolminiornotpng from "../assets/social-icons/coolminiornot.png";
+import cqhampng from "../assets/social-icons/cqham.png";
+import d3png from "../assets/social-icons/d3.png";
+import dota2rupng from "../assets/social-icons/dota2ru.png";
+import egpupng from "../assets/social-icons/egpu.png";
 
 type PropsTypes = { source?: string };
 
@@ -3366,6 +3382,60 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "yandexreviews":
       icon = <img src={yandexreviewspng} alt="Yandex Reviews" />;
+      break;
+    case "allhockey":
+      icon = <img src={allhockeypng} alt="AllHockey" />;
+      break;
+    case "allthelyrics":
+      icon = <Icon icon="mdi:music-note" color={socialNetworks.allthelyrics.color} />;
+      break;
+    case "aminus3":
+      icon = <img src={aminus3png} alt="Aminus3" />;
+      break;
+    case "animesuperhero":
+      icon = <img src={animesuperheropng} alt="AnimeSuperHero" />;
+      break;
+    case "aniworld":
+      icon = <img src={aniworldpng} alt="AniWorld" />;
+      break;
+    case "ariva":
+      icon = <img src={arivapng} alt="ariva.de" />;
+      break;
+    case "arrse":
+      icon = <img src={arrsepng} alt="ARRSE" />;
+      break;
+    case "avizo":
+      icon = <img src={avizopng} alt="Avízo" />;
+      break;
+    case "babyru":
+      icon = <img src={babyrupng} alt="Baby.ru" />;
+      break;
+    case "bdoutdoors":
+      icon = <img src={bdoutdoorspng} alt="BD Outdoors" />;
+      break;
+    case "bitpapa":
+      icon = <img src={bitpapapng} alt="Bitpapa" />;
+      break;
+    case "clozemaster":
+      icon = <img src={clozemasterpng} alt="Clozemaster" />;
+      break;
+    case "coolminiornot":
+      icon = <img src={coolminiornotpng} alt="CoolMiniOrNot" />;
+      break;
+    case "cqham":
+      icon = <img src={cqhampng} alt="CQHAM.ru" />;
+      break;
+    case "d3":
+      icon = <img src={d3png} alt="d3.ru" />;
+      break;
+    case "ddo":
+      icon = <Icon icon="mdi:sword-cross" color={socialNetworks.ddo.color} />;
+      break;
+    case "dota2ru":
+      icon = <img src={dota2rupng} alt="Dota2.ru" />;
+      break;
+    case "egpu":
+      icon = <img src={egpupng} alt="eGPU.io" />;
       break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;

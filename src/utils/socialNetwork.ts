@@ -3756,4 +3756,94 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "Yandex Reviews",
   },
+  allhockey: {
+    color: "#ED292D",
+    category: "sport",
+    name: "AllHockey",
+  },
+  allthelyrics: {
+    color: "#E0C010",
+    category: "other",
+    name: "AllTheLyrics",
+  },
+  aminus3: {
+    color: "#000000",
+    category: "social",
+    name: "Aminus3",
+  },
+  animesuperhero: {
+    color: "#000000",
+    category: "social",
+    name: "AnimeSuperHero",
+  },
+  aniworld: {
+    color: "#637CFA",
+    category: "streaming",
+    name: "AniWorld",
+  },
+  ariva: {
+    color: "#00375B",
+    category: "finance",
+    name: "ariva.de",
+  },
+  arrse: {
+    color: "#D2C966",
+    category: "social",
+    name: "ARRSE",
+  },
+  avizo: {
+    color: "#1F6BB5",
+    category: "ecommerce",
+    name: "Avízo",
+  },
+  babyru: {
+    color: "#DF4388",
+    category: "social",
+    name: "Baby.ru",
+  },
+  bdoutdoors: {
+    color: "#221E1F",
+    category: "sport",
+    name: "BD Outdoors",
+  },
+  bitpapa: {
+    color: "#233BA3",
+    category: "finance",
+    name: "Bitpapa",
+  },
+  clozemaster: {
+    color: "#444444",
+    category: "other",
+    name: "Clozemaster",
+  },
+  coolminiornot: {
+    color: "#FDBC11",
+    category: "gaming",
+    name: "CoolMiniOrNot",
+  },
+  cqham: {
+    color: "#FA014E",
+    category: "social",
+    name: "CQHAM.ru",
+  },
+  d3: {
+    color: "#E2C36F",
+    category: "social",
+    name: "d3.ru",
+  },
+  ddo: {
+    color: "#700000",
+    category: "gaming",
+    name: "Dungeons & Dragons Online",
+  },
+  dota2ru: {
+    color: "#CD280E",
+    category: "gaming",
+    name: "Dota2.ru",
+  },
+  egpu: {
+    color: "#1AB1FF",
+    category: "other",
+    name: "eGPU.io",
+  },
 };
