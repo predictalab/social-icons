@@ -24,6 +24,8 @@ function newIconsSinceLastRelease(): string[] {
 
 export default defineConfig({
   base: "/social-icons/",
+  // dist/ is the Rollup lib output published to npm: keep the preview site out of it
+  build: { outDir: "site" },
   plugins: [react()],
   resolve: {
     alias: [

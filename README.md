@@ -31,7 +31,8 @@ applications qui consomment la lib : `github`, `pr0gramm`, `thepiratebay`…). U
 
 ```bash
 npm run dev     # aperçu de toutes les icônes sur http://localhost:5174/social-icons/
-npm run build   # build rollup vers dist/
+npm run build        # build rollup de la lib vers dist/ (ce qui est publié sur npm)
+npm run vite-build   # build de la page d'aperçu vers site/ (déployé sur GitHub Pages)
 ```
 
 L'aperçu propose une recherche, un filtre par catégorie et un filtre **Nouveautés** (les clés
