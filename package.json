@@ -1,6 +1,6 @@
 {
   "name": "@predictalab/social-icons",
-  "version": "1.4.25",
+  "version": "1.5.0",
   "description": "Custom social icons lib",
   "author": "Nicolas - Predicta Lab",
   "repository": {
@@ -16,7 +16,10 @@
     "dist"
   ],
   "scripts": {
+    "gen-assets": "node scripts/gen-asset-loaders.mjs",
+    "predev": "npm run gen-assets",
     "dev": "vite",
+    "prebuild": "npm run gen-assets",
     "build": "rollup -c",
     "vite-build": "vite build",
     "deploy": "npm run build && npm publish"
@@ -54,5 +57,6 @@
     "url": "https://github.com/predictalab/social-icons/issues"
   },
   "homepage": "https://github.com/predictalab/social-icons#readme",
-  "license": "ISC"
+  "license": "ISC",
+  "sideEffects": false
 }

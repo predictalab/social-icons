@@ -1,7 +1,7 @@
 import "./Sample.scss";
 import { socialNetworks } from "../utils/socialNetwork";
 import SocialIcons from "./SocialIcons";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 declare const __APP_VERSION__: string;
 declare const __NEW_ICONS__: string[];
@@ -135,17 +135,43 @@ const Sample = () => {
     return () => document.removeEventListener("keydown", onKeyDown);
   }, []);
 
-  const copyKey = (entry: Entry) => {
+  const copyKey = useCallback((entry: Entry) => {
     navigator.clipboard?.writeText(entry.key);
     setCopiedKey(entry.key);
     window.setTimeout(() => setCopiedKey(null), 1200);
-  };
+  }, []);
 
-  const showTooltip = (entry: Entry, target: HTMLElement) => {
+  const showTooltip = useCallback((entry: Entry, target: HTMLElement) => {
     const rect = target.getBoundingClientRect();
     const x = Math.min(Math.max(rect.left + rect.width / 2, 140), window.innerWidth - 140);
     setTooltip({ entry, x, y: rect.bottom + 8 });
-  };
+  }, []);
+
+  // Memoized so that hovering a tile (tooltip state) only re-renders the tooltip,
+  // not the ~1000 tiles of the grid.
+  const grid = useMemo(
+    () => (
+      <div className="icongrid" onMouseLeave={() => setTooltip(null)}>
+        {filtered.map((entry) => (
+          <button
+            key={entry.key}
+            type="button"
+            className="tile"
+            aria-label={entry.name}
+            style={networkColorAsBG ? { backgroundColor: entry.color } : undefined}
+            onMouseEnter={(event) => showTooltip(entry, event.currentTarget)}
+            onFocus={(event) => showTooltip(entry, event.currentTarget)}
+            onBlur={() => setTooltip(null)}
+            onClick={() => copyKey(entry)}
+          >
+            <SocialIcons source={entry.key} />
+            {entry.isNew && <span className="newdot tile-newdot" />}
+          </button>
+        ))}
+      </div>
+    ),
+    [filtered, networkColorAsBG, showTooltip, copyKey]
+  );
 
   return (
     <div
@@ -257,26 +283,7 @@ const Sample = () => {
         <div className="empty">Aucune icône ne correspond à « {query} ».</div>
       )}
 
-      {view === "grid" && filtered.length > 0 && (
-        <div className="icongrid" onMouseLeave={() => setTooltip(null)}>
-          {filtered.map((entry) => (
-            <button
-              key={entry.key}
-              type="button"
-              className="tile"
-              aria-label={entry.name}
-              style={networkColorAsBG ? { backgroundColor: entry.color } : undefined}
-              onMouseEnter={(event) => showTooltip(entry, event.currentTarget)}
-              onFocus={(event) => showTooltip(entry, event.currentTarget)}
-              onBlur={() => setTooltip(null)}
-              onClick={() => copyKey(entry)}
-            >
-              <SocialIcons source={entry.key} />
-              {entry.isNew && <span className="newdot tile-newdot" />}
-            </button>
-          ))}
-        </div>
-      )}
+      {view === "grid" && filtered.length > 0 && grid}
 
       {view === "table" && filtered.length > 0 && (
         <div className="table">

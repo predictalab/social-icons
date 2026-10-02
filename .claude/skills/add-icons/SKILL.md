@@ -139,7 +139,7 @@ puis lire `.icons-work/contact.png`. Rejeter : lettre générique (fallback d'un
 bannière, favicon 16 px flou, mauvais compte. Un candidat sur dix est faux en pratique.
 
 Installation (150 px max, PNG optimisé, affiche la couleur dominante à reporter dans
-`socialNetwork.ts`) :
+`socialNetwork.ts`, puis régénère `src/utils/assetLoaders.ts`) :
 
 ```bash
 python3 .claude/skills/add-icons/scripts/icons.py install <clés>
@@ -167,20 +167,25 @@ Aucun artwork ≥ 48 px : icône mdi thématique + couleur dominante du favicon,
      icon = <Icon icon="simple-icons:<slug>" color={socialNetworks.<clé>.color} />;
      break;
    ```
-   ou, pour un asset local, un import en haut du fichier
-   (`import <clé>png from "../assets/social-icons/<clé>.png";` — pas de chiffre en tête
-   ni de `0` dans l'identifiant : `pr0gramm` → `prgrammpng`) et
+   ou, pour un asset local (chargé à la demande, **pas d'import** en haut du fichier) :
    ```tsx
    case "<clé>":
-     icon = <img src={<clé>png} alt="Nom affiché" />;
+     icon = <LocalIcon file="<clé>.png" alt="Nom affiché" />;
      break;
    ```
+   `file` est typé par `src/utils/assetLoaders.ts`, généré à partir du dossier d'assets
+   (une faute de frappe ou une mauvaise extension casse `tsc`). `icons.py install` le
+   régénère ; pour un asset ajouté à la main (SVG officiel, etc.), lancer
+   `npm run gen-assets`. Ne pas l'éditer, et le commiter avec le reste du lot.
 
 ## 6. Vérifier, versionner, livrer
 
 ```bash
-npx tsc --noEmit && npm run build
+npm run gen-assets && npx tsc --noEmit && npm run build
 ```
+
+`git status` doit montrer `src/utils/assetLoaders.ts` modifié dès qu'un asset local a été
+ajouté : sinon il manque au commit.
 
 Smoke test dans l'aperçu (`npm run dev`, port 5174) : le filtre **Nouveautés** liste les clés
 ajoutées à `sourceTypes.ts` depuis la dernière release. Vérifier qu'aucune `<img>` n'est
