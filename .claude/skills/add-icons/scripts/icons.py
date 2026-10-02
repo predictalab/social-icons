@@ -442,6 +442,8 @@ def cmd_install(args):
         dest = os.path.join(ASSETS, key + ".png")
         size = save_png(im, dest, max_size=150)
         print(f"{key:18s} {color}  {size}  -> src/assets/social-icons/{key}.png")
+    # LocalIcon's `file` prop is typed from this generated map: keep it in sync with the assets
+    subprocess.run(["node", "scripts/gen-asset-loaders.mjs"], cwd=ROOT, check=True)
 
 
 # --------------------------------------------------------------------------- main

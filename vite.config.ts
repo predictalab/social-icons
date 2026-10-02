@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { execSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import { version } from "./package.json";
 
 // Clés ajoutées dans sourceTypes.ts depuis la dernière release (dernier commit
@@ -23,7 +24,20 @@ function newIconsSinceLastRelease(): string[] {
 
 export default defineConfig({
   base: "/social-icons/",
+  // dist/ is the Rollup lib output published to npm: keep the preview site out of it
+  build: { outDir: "site" },
   plugins: [react()],
+  resolve: {
+    alias: [
+      // the preview page shows every icon: load all logos upfront, not on demand
+      {
+        find: /^\.\.\/utils\/assetLoaders$/,
+        replacement: fileURLToPath(
+          new URL("./src/utils/assetLoaders.preview.ts", import.meta.url),
+        ),
+      },
+    ],
+  },
   define: {
     __APP_VERSION__: JSON.stringify(version),
     __NEW_ICONS__: JSON.stringify(newIconsSinceLastRelease()),

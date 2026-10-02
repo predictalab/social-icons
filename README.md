@@ -31,7 +31,8 @@ applications qui consomment la lib : `github`, `pr0gramm`, `thepiratebay`…). U
 
 ```bash
 npm run dev     # aperçu de toutes les icônes sur http://localhost:5174/social-icons/
-npm run build   # build rollup vers dist/
+npm run build        # build rollup de la lib vers dist/ (ce qui est publié sur npm)
+npm run vite-build   # build de la page d'aperçu vers site/ (déployé sur GitHub Pages)
 ```
 
 L'aperçu propose une recherche, un filtre par catégorie et un filtre **Nouveautés** (les clés
@@ -45,8 +46,13 @@ Une icône = une clé dans 3 fichiers, plus éventuellement un asset :
 |---|---|
 | `src/types/sourceTypes.ts` | l'union `SourceTypes` |
 | `src/utils/socialNetwork.ts` | couleur, catégorie, nom d'affichage |
-| `src/components/SocialIcons.tsx` | le `case` qui rend l'icône (Iconify ou `<img>` local) |
+| `src/components/SocialIcons.tsx` | le `case` qui rend l'icône (Iconify ou `<LocalIcon file="<clé>.png" … />`) |
 | `src/assets/social-icons/<clé>.png` | asset local (150 px max), seulement si la marque n'est pas dans simple-icons |
+
+Les assets locaux sont chargés à la demande : chacun devient un chunk séparé
+(`dist/icons/`), récupéré par le navigateur seulement quand l'icône s'affiche.
+`src/utils/assetLoaders.ts` en fait la liste ; il est généré (`npm run gen-assets`,
+lancé aussi par `dev` et `build`) et commité, ne pas l'éditer à la main.
 
 ### Avec Claude Code (recommandé)
 
