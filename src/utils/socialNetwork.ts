@@ -4347,7 +4347,7 @@ export const socialNetworks: socialNetworkType = {
     name: "Fanficslandia",
   },
   fcrubin: {
-    color: "#CFCFCF",
+    color: "#9B1B30",
     category: "sport",
     name: "FC Rubin",
   },
@@ -4532,7 +4532,7 @@ export const socialNetworks: socialNetworkType = {
     name: "Pedsovet",
   },
   pepperpl: {
-    color: "#E3EEF6",
+    color: "#EC3C32",
     category: "ecommerce",
     name: "Pepper.pl",
   },
@@ -4562,7 +4562,7 @@ export const socialNetworks: socialNetworkType = {
     name: "Pregame",
   },
   prodaman: {
-    color: "#E0E6E1",
+    color: "#3A8D3E",
     category: "ecommerce",
     name: "Prodaman",
   },
