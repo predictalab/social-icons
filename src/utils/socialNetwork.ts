@@ -4396,4 +4396,94 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "gpodder.net",
   },
+  graana: {
+    color: "#E32C2C",
+    category: "other",
+    name: "Graana",
+  },
+  hackenproof: {
+    color: "#B093FE",
+    category: "hacking",
+    name: "HackenProof",
+  },
+  housemixes: {
+    color: "#000000",
+    category: "streaming",
+    name: "House-Mixes",
+  },
+  hozpitality: {
+    color: "#35246B",
+    category: "other",
+    name: "Hozpitality",
+  },
+  huntingru: {
+    color: "#262838",
+    category: "social",
+    name: "Hunting.ru",
+  },
+  imood: {
+    color: "#E0B800",
+    category: "social",
+    name: "imood",
+  },
+  justmj: {
+    color: "#536A9D",
+    category: "social",
+    name: "JustMJ",
+  },
+  kuharka: {
+    color: "#AA4F05",
+    category: "social",
+    name: "Kuharka",
+  },
+  lolchess: {
+    color: "#CB9372",
+    category: "gaming",
+    name: "LoLCHESS.GG",
+  },
+  lori: {
+    color: "#D62143",
+    category: "other",
+    name: "Lori",
+  },
+  loveplanet: {
+    color: "#2C5B91",
+    category: "dating",
+    name: "LovePlanet",
+  },
+  machelp: {
+    color: "#6A2C6F",
+    category: "social",
+    name: "Mac Help",
+  },
+  macosx: {
+    color: "#373A3B",
+    category: "social",
+    name: "MacOSX.com",
+  },
+  magix: {
+    color: "#333333",
+    category: "other",
+    name: "MAGIX",
+  },
+  mamuli: {
+    color: "#DA457C",
+    category: "social",
+    name: "Mamuli",
+  },
+  math10: {
+    color: "#ED6722",
+    category: "other",
+    name: "Math10",
+  },
+  mdshooters: {
+    color: "#4A4A4A",
+    category: "social",
+    name: "MDShooters",
+  },
+  motorhomefun: {
+    color: "#166093",
+    category: "social",
+    name: "MotorhomeFun",
+  },
 };

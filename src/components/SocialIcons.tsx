@@ -3227,6 +3227,60 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "gpodder":
       icon = <LocalIcon file="gpodder.png" alt="gpodder.net" />;
       break;
+    case "graana":
+      icon = <LocalIcon file="graana.png" alt="Graana" />;
+      break;
+    case "hackenproof":
+      icon = <LocalIcon file="hackenproof.png" alt="HackenProof" />;
+      break;
+    case "housemixes":
+      icon = <LocalIcon file="housemixes.png" alt="House-Mixes" />;
+      break;
+    case "hozpitality":
+      icon = <LocalIcon file="hozpitality.png" alt="Hozpitality" />;
+      break;
+    case "huntingru":
+      icon = <Icon icon="mdi:target" color={socialNetworks.huntingru.color} />;
+      break;
+    case "imood":
+      icon = <Icon icon="mdi:emoticon-happy" color={socialNetworks.imood.color} />;
+      break;
+    case "justmj":
+      icon = <Icon icon="mdi:microphone-variant" color={socialNetworks.justmj.color} />;
+      break;
+    case "kuharka":
+      icon = <LocalIcon file="kuharka.png" alt="Kuharka" />;
+      break;
+    case "lolchess":
+      icon = <LocalIcon file="lolchess.png" alt="LoLCHESS.GG" />;
+      break;
+    case "lori":
+      icon = <LocalIcon file="lori.png" alt="Lori" />;
+      break;
+    case "loveplanet":
+      icon = <LocalIcon file="loveplanet.png" alt="LovePlanet" />;
+      break;
+    case "machelp":
+      icon = <LocalIcon file="machelp.png" alt="Mac Help" />;
+      break;
+    case "macosx":
+      icon = <LocalIcon file="macosx.png" alt="MacOSX.com" />;
+      break;
+    case "magix":
+      icon = <LocalIcon file="magix.png" alt="MAGIX" />;
+      break;
+    case "mamuli":
+      icon = <Icon icon="mdi:baby-carriage" color={socialNetworks.mamuli.color} />;
+      break;
+    case "math10":
+      icon = <LocalIcon file="math10.png" alt="Math10" />;
+      break;
+    case "mdshooters":
+      icon = <Icon icon="mdi:pistol" color={socialNetworks.mdshooters.color} />;
+      break;
+    case "motorhomefun":
+      icon = <LocalIcon file="motorhomefun.png" alt="MotorhomeFun" />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;
