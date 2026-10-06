@@ -4576,4 +4576,94 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "ProShkolu",
   },
+  pyha: {
+    color: "#9D6A1F",
+    category: "programming",
+    name: "Pyha",
+  },
+  queer: {
+    color: "#1E9DE8",
+    category: "social",
+    name: "Queer.pl",
+  },
+  railforums: {
+    color: "#A31A1A",
+    category: "social",
+    name: "RailForums",
+  },
+  redcafe: {
+    color: "#C20000",
+    category: "sport",
+    name: "RedCafe",
+  },
+  religiousforums: {
+    color: "#3A8FB7",
+    category: "social",
+    name: "ReligiousForums",
+  },
+  romanticcollection: {
+    color: "#E66A80",
+    category: "social",
+    name: "RomanticCollection",
+  },
+  rpgrussia: {
+    color: "#BC5151",
+    category: "gaming",
+    name: "RPG Russia",
+  },
+  ruanekdot: {
+    color: "#010101",
+    category: "social",
+    name: "RuAnekdot",
+  },
+  rubyforum: {
+    color: "#DB1D28",
+    category: "programming",
+    name: "Ruby Forum",
+  },
+  rusfishing: {
+    color: "#1D427A",
+    category: "social",
+    name: "RusFishing",
+  },
+  shophelp: {
+    color: "#FE00FF",
+    category: "ecommerce",
+    name: "ShopHelp",
+  },
+  showme: {
+    color: "#34C0D4",
+    category: "other",
+    name: "ShowMe",
+  },
+  snbforums: {
+    color: "#FC9607",
+    category: "social",
+    name: "SNBForums",
+  },
+  stereo: {
+    color: "#424242",
+    category: "social",
+    name: "Stereo.ru",
+  },
+  svtperformance: {
+    color: "#6C6C6C",
+    category: "social",
+    name: "SVTPerformance",
+  },
+  swedroid: {
+    color: "#4C5669",
+    category: "social",
+    name: "Swedroid",
+  },
+  tamtam: {
+    color: "#526AFE",
+    category: "messaging_app",
+    name: "TamTam",
+  },
+  thefastlaneforum: {
+    color: "#38376B",
+    category: "finance",
+    name: "The Fastlane Forum",
+  },
 };

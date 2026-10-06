@@ -3335,6 +3335,60 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "proshkolu":
       icon = <Icon icon="mdi:school" color={socialNetworks.proshkolu.color} />;
       break;
+    case "pyha":
+      icon = <LocalIcon file="pyha.png" alt="Pyha" />;
+      break;
+    case "queer":
+      icon = <LocalIcon file="queer.png" alt="Queer.pl" />;
+      break;
+    case "railforums":
+      icon = <Icon icon="mdi:train" color={socialNetworks.railforums.color} />;
+      break;
+    case "redcafe":
+      icon = <LocalIcon file="redcafe.png" alt="RedCafe" />;
+      break;
+    case "religiousforums":
+      icon = <Icon icon="mdi:hands-pray" color={socialNetworks.religiousforums.color} />;
+      break;
+    case "romanticcollection":
+      icon = <LocalIcon file="romanticcollection.png" alt="RomanticCollection" />;
+      break;
+    case "rpgrussia":
+      icon = <LocalIcon file="rpgrussia.png" alt="RPG Russia" />;
+      break;
+    case "ruanekdot":
+      icon = <LocalIcon file="ruanekdot.png" alt="RuAnekdot" />;
+      break;
+    case "rubyforum":
+      icon = <LocalIcon file="rubyforum.png" alt="Ruby Forum" />;
+      break;
+    case "rusfishing":
+      icon = <LocalIcon file="rusfishing.png" alt="RusFishing" />;
+      break;
+    case "shophelp":
+      icon = <LocalIcon file="shophelp.png" alt="ShopHelp" />;
+      break;
+    case "showme":
+      icon = <LocalIcon file="showme.png" alt="ShowMe" />;
+      break;
+    case "snbforums":
+      icon = <LocalIcon file="snbforums.png" alt="SNBForums" />;
+      break;
+    case "stereo":
+      icon = <LocalIcon file="stereo.png" alt="Stereo.ru" />;
+      break;
+    case "svtperformance":
+      icon = <LocalIcon file="svtperformance.png" alt="SVTPerformance" />;
+      break;
+    case "swedroid":
+      icon = <LocalIcon file="swedroid.png" alt="Swedroid" />;
+      break;
+    case "tamtam":
+      icon = <LocalIcon file="tamtam.png" alt="TamTam" />;
+      break;
+    case "thefastlaneforum":
+      icon = <LocalIcon file="thefastlaneforum.png" alt="The Fastlane Forum" />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;
