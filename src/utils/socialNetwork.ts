@@ -4731,4 +4731,514 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "WW2Aircraft.net",
   },
+  admireme: {
+    color: "#516A87",
+    category: "adult",
+    name: "AdmireMe",
+  },
+  adobecommunity: {
+    color: "#FF0000",
+    category: "programming",
+    name: "Adobe Community",
+  },
+  alushta24: {
+    color: "#515152",
+    category: "social",
+    name: "Alushta24",
+  },
+  amazfitwatchfaces: {
+    color: "#212121",
+    category: "other",
+    name: "AmazfitWatchFaces",
+  },
+  angara: {
+    color: "#5396CE",
+    category: "social",
+    name: "Angara.Net",
+  },
+  antiquebottles: {
+    color: "#8D6E63",
+    category: "social",
+    name: "Antique Bottles",
+  },
+  aqa: {
+    color: "#026602",
+    category: "social",
+    name: "AQA",
+  },
+  avtoforum: {
+    color: "#3B5169",
+    category: "social",
+    name: "Avtoforum",
+  },
+  bayoushooter: {
+    color: "#4A4A4A",
+    category: "social",
+    name: "Bayou Shooter",
+  },
+  borisfxforum: {
+    color: "#000000",
+    category: "programming",
+    name: "Boris FX Forum",
+  },
+  bristle: {
+    color: "#2B2B2B",
+    category: "social",
+    name: "Bristle",
+  },
+  cad: {
+    color: "#011B71",
+    category: "programming",
+    name: "CAD.ru",
+  },
+  caduser: {
+    color: "#E84E1B",
+    category: "programming",
+    name: "CADUser",
+  },
+  carmasters: {
+    color: "#3B5169",
+    category: "social",
+    name: "CarMasters",
+  },
+  caves: {
+    color: "#3A5897",
+    category: "social",
+    name: "Caves.ru",
+  },
+  cheatmaster: {
+    color: "#564DAD",
+    category: "gaming",
+    name: "Cheat-Master",
+  },
+  coddy: {
+    color: "#29A9E2",
+    category: "programming",
+    name: "Coddy",
+  },
+  codedex: {
+    color: "#E5D600",
+    category: "programming",
+    name: "Codédex",
+  },
+  codersrank: {
+    color: "#67A4AC",
+    category: "programming",
+    name: "CodersRank",
+  },
+  connosr: {
+    color: "#87261A",
+    category: "social",
+    name: "Connosr",
+  },
+  cowboyszone: {
+    color: "#023468",
+    category: "sport",
+    name: "CowboysZone",
+  },
+  diorama: {
+    color: "#818100",
+    category: "social",
+    name: "Diorama.ru",
+  },
+  discoursemozilla: {
+    color: "#161616",
+    category: "programming",
+    name: "Mozilla Discourse",
+  },
+  discussfastpitch: {
+    color: "#E6A100",
+    category: "sport",
+    name: "Discuss Fastpitch",
+  },
+  dogster: {
+    color: "#8D6E63",
+    category: "social",
+    name: "Dogster",
+  },
+  donatestream: {
+    color: "#FFB206",
+    category: "finance",
+    name: "Donate.Stream",
+  },
+  empretienda: {
+    color: "#52B754",
+    category: "ecommerce",
+    name: "Empretienda",
+  },
+  erogen: {
+    color: "#7A2BBE",
+    category: "adult",
+    name: "Erogen.club",
+  },
+  figshare: {
+    color: "#556472",
+    category: "other",
+    name: "figshare",
+  },
+  fishingsib: {
+    color: "#2C6E9B",
+    category: "social",
+    name: "FishingSib",
+  },
+  forumjizni: {
+    color: "#83AEC0",
+    category: "social",
+    name: "ForumJizni",
+  },
+  forummil: {
+    color: "#0370B7",
+    category: "social",
+    name: "Forum-Mil",
+  },
+  forumprosport: {
+    color: "#CF0502",
+    category: "sport",
+    name: "ForumProSport",
+  },
+  forumsdrom: {
+    color: "#DB001A",
+    category: "social",
+    name: "Forums Drom",
+  },
+  forumvancouver: {
+    color: "#24273B",
+    category: "social",
+    name: "ForumVancouver",
+  },
+  fourcheat: {
+    color: "#001599",
+    category: "gaming",
+    name: "4cheat",
+  },
+  freelancers: {
+    color: "#2E7D32",
+    category: "other",
+    name: "Free-lancers",
+  },
+  gays: {
+    color: "#00988C",
+    category: "dating",
+    name: "Gays.com",
+  },
+  gentlemint: {
+    color: "#4D370C",
+    category: "social",
+    name: "Gentlemint",
+  },
+  harvardcyber: {
+    color: "#BD5968",
+    category: "other",
+    name: "Berkman Klein Center",
+  },
+  harvardscholar: {
+    color: "#A51C30",
+    category: "other",
+    name: "Harvard Scholar",
+  },
+  hbh: {
+    color: "#E12322",
+    category: "hacking",
+    name: "HBH",
+  },
+  hitmanforum: {
+    color: "#A62121",
+    category: "gaming",
+    name: "Hitman Forum",
+  },
+  hondaswap: {
+    color: "#1A1A1A",
+    category: "social",
+    name: "HondaSwap",
+  },
+  interfaith: {
+    color: "#3A8FB7",
+    category: "social",
+    name: "Interfaith",
+  },
+  investsocial: {
+    color: "#FDDC2C",
+    category: "finance",
+    name: "T-Bank Invest",
+  },
+  issuehunt: {
+    color: "#147954",
+    category: "programming",
+    name: "IssueHunt",
+  },
+  juejin: {
+    color: "#007FFF",
+    category: "programming",
+    name: "Juejin",
+  },
+  kashalot: {
+    color: "#0A7ED0",
+    category: "social",
+    name: "Kashalot",
+  },
+  kloomba: {
+    color: "#A0002B",
+    category: "social",
+    name: "Kloomba",
+  },
+  livetrack24: {
+    color: "#333639",
+    category: "sport",
+    name: "LiveTrack24",
+  },
+  maccentre: {
+    color: "#FF0000",
+    category: "social",
+    name: "Maccentre",
+  },
+  masterkosta: {
+    color: "#240B3B",
+    category: "social",
+    name: "MasterKosta",
+  },
+  mbclub: {
+    color: "#1A1A1A",
+    category: "social",
+    name: "MBClub",
+  },
+  mdregion: {
+    color: "#0192CB",
+    category: "social",
+    name: "MDRegion",
+  },
+  megapolis: {
+    color: "#006296",
+    category: "social",
+    name: "Megapolis",
+  },
+  minecraftstatistic: {
+    color: "#7EC543",
+    category: "gaming",
+    name: "Minecraft-Statistic",
+  },
+  mineplex: {
+    color: "#E78502",
+    category: "gaming",
+    name: "Mineplex",
+  },
+  mnogodetok: {
+    color: "#D4A017",
+    category: "social",
+    name: "Mnogodetok",
+  },
+  munzee: {
+    color: "#215538",
+    category: "gaming",
+    name: "Munzee",
+  },
+  nesiditsa: {
+    color: "#E46865",
+    category: "social",
+    name: "Ne Siditsa",
+  },
+  neteasemusic: {
+    color: "#D43C33",
+    category: "streaming",
+    name: "NetEase Cloud Music",
+  },
+  nhl: {
+    color: "#ED6927",
+    category: "sport",
+    name: "NHL.ru",
+  },
+  nsk66: {
+    color: "#2B4C8C",
+    category: "social",
+    name: "Nsk66",
+  },
+  nucastle: {
+    color: "#144B72",
+    category: "sport",
+    name: "NUcastle",
+  },
+  operaforums: {
+    color: "#FF1B2D",
+    category: "programming",
+    name: "Opera Forums",
+  },
+  oraclecommunity: {
+    color: "#F80000",
+    category: "programming",
+    name: "Oracle Community",
+  },
+  parkrocker: {
+    color: "#C62828",
+    category: "social",
+    name: "Parkrocker",
+  },
+  playmd: {
+    color: "#D22420",
+    category: "gaming",
+    name: "Play.md",
+  },
+  politikforum: {
+    color: "#5A5A5A",
+    category: "social",
+    name: "Politikforum",
+  },
+  pornsavant: {
+    color: "#E66B1B",
+    category: "adult",
+    name: "PornSavant",
+  },
+  prizyvnik: {
+    color: "#FDBA2B",
+    category: "social",
+    name: "Prizyvnik",
+  },
+  prokoni: {
+    color: "#F29100",
+    category: "social",
+    name: "ProKoni",
+  },
+  psyera: {
+    color: "#016BAB",
+    category: "social",
+    name: "Psyera",
+  },
+  rebornbuddy: {
+    color: "#0B68B7",
+    category: "gaming",
+    name: "RebornBuddy",
+  },
+  recpoker: {
+    color: "#030303",
+    category: "gaming",
+    name: "rec.poker",
+  },
+  rusarmy: {
+    color: "#ED2212",
+    category: "social",
+    name: "RusArmy",
+  },
+  sasgis: {
+    color: "#6A83B4",
+    category: "other",
+    name: "SAS.Planet",
+  },
+  serveradmin: {
+    color: "#F88C00",
+    category: "programming",
+    name: "ServerAdmin",
+  },
+  sforum: {
+    color: "#05699E",
+    category: "social",
+    name: "S-Forum",
+  },
+  shafa: {
+    color: "#070707",
+    category: "ecommerce",
+    name: "Shafa",
+  },
+  socioforum: {
+    color: "#545428",
+    category: "social",
+    name: "SocioForum",
+  },
+  southbayriders: {
+    color: "#336699",
+    category: "social",
+    name: "South Bay Riders",
+  },
+  spaces: {
+    color: "#627CAD",
+    category: "social",
+    name: "Spaces",
+  },
+  studwork: {
+    color: "#2D3FE1",
+    category: "other",
+    name: "Studwork",
+  },
+  texasguntalk: {
+    color: "#BF0A30",
+    category: "social",
+    name: "Texas Gun Talk",
+  },
+  trworkshop: {
+    color: "#555555",
+    category: "social",
+    name: "TRWorkshop",
+  },
+  tuchong: {
+    color: "#FA047C",
+    category: "social",
+    name: "Tuchong",
+  },
+  twentysix: {
+    color: "#B4242B",
+    category: "social",
+    name: "TwentySix",
+  },
+  unixforum: {
+    color: "#32639D",
+    category: "programming",
+    name: "UnixForum",
+  },
+  volgogradru: {
+    color: "#04509D",
+    category: "social",
+    name: "VolgogradRU",
+  },
+  votetags: {
+    color: "#696969",
+    category: "social",
+    name: "VoteTags",
+  },
+  w3challs: {
+    color: "#000000",
+    category: "hacking",
+    name: "W3Challs",
+  },
+  wasm: {
+    color: "#333333",
+    category: "hacking",
+    name: "WASM",
+  },
+  webosforums: {
+    color: "#1C5B99",
+    category: "social",
+    name: "webOS Forums",
+  },
+  worldofplayers: {
+    color: "#040404",
+    category: "gaming",
+    name: "World of Players",
+  },
+  writercenter: {
+    color: "#6B5B45",
+    category: "social",
+    name: "WriterCenter",
+  },
+  xboxgamertag: {
+    color: "#107C10",
+    category: "gaming",
+    name: "Xbox Gamertag",
+  },
+  xgm: {
+    color: "#555555",
+    category: "gaming",
+    name: "XGM",
+  },
+  yamaya: {
+    color: "#CD0703",
+    category: "social",
+    name: "Yamaya",
+  },
+  yapishu: {
+    color: "#2E6DA4",
+    category: "social",
+    name: "YaPishu",
+  },
+  zenodo: {
+    color: "#1682D4",
+    category: "other",
+    name: "Zenodo",
+  },
 };
