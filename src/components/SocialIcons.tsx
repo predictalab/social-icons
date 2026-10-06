@@ -3530,6 +3530,57 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "forumsdrom":
       icon = <LocalIcon file="forumsdrom.png" alt="Forums Drom" />;
       break;
+    case "forumvancouver":
+      icon = <LocalIcon file="forumvancouver.png" alt="ForumVancouver" />;
+      break;
+    case "fourcheat":
+      icon = <LocalIcon file="fourcheat.png" alt="4cheat" />;
+      break;
+    case "freelancers":
+      icon = <Icon icon="mdi:briefcase" color={socialNetworks.freelancers.color} />;
+      break;
+    case "gays":
+      icon = <LocalIcon file="gays.png" alt="Gays.com" />;
+      break;
+    case "gentlemint":
+      icon = <Icon icon="mdi:mustache" color={socialNetworks.gentlemint.color} />;
+      break;
+    case "harvardcyber":
+      icon = <LocalIcon file="harvardcyber.png" alt="Berkman Klein Center" />;
+      break;
+    case "harvardscholar":
+      icon = <Icon icon="mdi:school" color={socialNetworks.harvardscholar.color} />;
+      break;
+    case "hbh":
+      icon = <LocalIcon file="hbh.png" alt="HBH" />;
+      break;
+    case "hitmanforum":
+      icon = <LocalIcon file="hitmanforum.png" alt="Hitman Forum" />;
+      break;
+    case "hondaswap":
+      icon = <LocalIcon file="hondaswap.png" alt="HondaSwap" />;
+      break;
+    case "interfaith":
+      icon = <Icon icon="mdi:hands-pray" color={socialNetworks.interfaith.color} />;
+      break;
+    case "investsocial":
+      icon = <LocalIcon file="investsocial.png" alt="T-Bank Invest" />;
+      break;
+    case "issuehunt":
+      icon = <LocalIcon file="issuehunt.png" alt="IssueHunt" />;
+      break;
+    case "juejin":
+      icon = <Icon icon="simple-icons:juejin" color={socialNetworks.juejin.color} />;
+      break;
+    case "kashalot":
+      icon = <LocalIcon file="kashalot.png" alt="Kashalot" />;
+      break;
+    case "kloomba":
+      icon = <LocalIcon file="kloomba.png" alt="Kloomba" />;
+      break;
+    case "livetrack24":
+      icon = <LocalIcon file="livetrack24.png" alt="LiveTrack24" />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;

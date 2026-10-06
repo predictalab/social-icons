@@ -4901,4 +4901,89 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "Forums Drom",
   },
+  forumvancouver: {
+    color: "#24273B",
+    category: "social",
+    name: "ForumVancouver",
+  },
+  fourcheat: {
+    color: "#001599",
+    category: "gaming",
+    name: "4cheat",
+  },
+  freelancers: {
+    color: "#2E7D32",
+    category: "other",
+    name: "Free-lancers",
+  },
+  gays: {
+    color: "#00988C",
+    category: "dating",
+    name: "Gays.com",
+  },
+  gentlemint: {
+    color: "#4D370C",
+    category: "social",
+    name: "Gentlemint",
+  },
+  harvardcyber: {
+    color: "#BD5968",
+    category: "other",
+    name: "Berkman Klein Center",
+  },
+  harvardscholar: {
+    color: "#A51C30",
+    category: "other",
+    name: "Harvard Scholar",
+  },
+  hbh: {
+    color: "#E12322",
+    category: "hacking",
+    name: "HBH",
+  },
+  hitmanforum: {
+    color: "#A62121",
+    category: "gaming",
+    name: "Hitman Forum",
+  },
+  hondaswap: {
+    color: "#E3E3E2",
+    category: "social",
+    name: "HondaSwap",
+  },
+  interfaith: {
+    color: "#3A8FB7",
+    category: "social",
+    name: "Interfaith",
+  },
+  investsocial: {
+    color: "#FDDC2C",
+    category: "finance",
+    name: "T-Bank Invest",
+  },
+  issuehunt: {
+    color: "#147954",
+    category: "programming",
+    name: "IssueHunt",
+  },
+  juejin: {
+    color: "#007FFF",
+    category: "programming",
+    name: "Juejin",
+  },
+  kashalot: {
+    color: "#0A7ED0",
+    category: "social",
+    name: "Kashalot",
+  },
+  kloomba: {
+    color: "#A0002B",
+    category: "social",
+    name: "Kloomba",
+  },
+  livetrack24: {
+    color: "#333639",
+    category: "sport",
+    name: "LiveTrack24",
+  },
 };
