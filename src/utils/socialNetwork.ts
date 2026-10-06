@@ -4216,4 +4216,94 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "Zoomit",
   },
+  affiliatefix: {
+    color: "#060708",
+    category: "social",
+    name: "AffiliateFix",
+  },
+  animeforum: {
+    color: "#233554",
+    category: "social",
+    name: "AnimeForum",
+  },
+  armtorg: {
+    color: "#FB8400",
+    category: "other",
+    name: "Armtorg",
+  },
+  arsenalmania: {
+    color: "#C70538",
+    category: "sport",
+    name: "Arsenal Mania",
+  },
+  australianfrequentflyer: {
+    color: "#4B6BB3",
+    category: "social",
+    name: "Australian Frequent Flyer",
+  },
+  autokadabra: {
+    color: "#383B3D",
+    category: "social",
+    name: "Autokadabra",
+  },
+  autolada: {
+    color: "#354C99",
+    category: "social",
+    name: "Autolada",
+  },
+  avtomarket: {
+    color: "#FE0700",
+    category: "ecommerce",
+    name: "Avtomarket",
+  },
+  beermoneyforum: {
+    color: "#2C343F",
+    category: "finance",
+    name: "BeerMoneyForum",
+  },
+  bikepost: {
+    color: "#222222",
+    category: "social",
+    name: "Bikepost",
+  },
+  blast: {
+    color: "#333333",
+    category: "hacking",
+    name: "BlastHack",
+  },
+  blipfoto: {
+    color: "#000000",
+    category: "social",
+    name: "Blipfoto",
+  },
+  chan4chan: {
+    color: "#325B9F",
+    category: "social",
+    name: "Chan4Chan",
+  },
+  codeby: {
+    color: "#000000",
+    category: "hacking",
+    name: "Codeby",
+  },
+  cslords: {
+    color: "#FE9C39",
+    category: "gaming",
+    name: "CS-Lords",
+  },
+  cubecraft: {
+    color: "#1D88EB",
+    category: "gaming",
+    name: "CubeCraft",
+  },
+  dishtv: {
+    color: "#EB5221",
+    category: "streaming",
+    name: "Dish TV",
+  },
+  diskusjon: {
+    color: "#274A71",
+    category: "social",
+    name: "Diskusjon.no",
+  },
 };

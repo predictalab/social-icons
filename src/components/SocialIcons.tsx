@@ -3119,6 +3119,60 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "zoomit":
       icon = <LocalIcon file="zoomit.png" alt="Zoomit" />;
       break;
+    case "affiliatefix":
+      icon = <LocalIcon file="affiliatefix.png" alt="AffiliateFix" />;
+      break;
+    case "animeforum":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.animeforum.color} />;
+      break;
+    case "armtorg":
+      icon = <LocalIcon file="armtorg.png" alt="Armtorg" />;
+      break;
+    case "arsenalmania":
+      icon = <LocalIcon file="arsenalmania.png" alt="Arsenal Mania" />;
+      break;
+    case "australianfrequentflyer":
+      icon = <LocalIcon file="australianfrequentflyer.png" alt="Australian Frequent Flyer" />;
+      break;
+    case "autokadabra":
+      icon = <Icon icon="mdi:car" color={socialNetworks.autokadabra.color} />;
+      break;
+    case "autolada":
+      icon = <LocalIcon file="autolada.png" alt="Autolada" />;
+      break;
+    case "avtomarket":
+      icon = <LocalIcon file="avtomarket.png" alt="Avtomarket" />;
+      break;
+    case "beermoneyforum":
+      icon = <LocalIcon file="beermoneyforum.png" alt="BeerMoneyForum" />;
+      break;
+    case "bikepost":
+      icon = <Icon icon="mdi:motorbike" color={socialNetworks.bikepost.color} />;
+      break;
+    case "blast":
+      icon = <LocalIcon file="blast.png" alt="BlastHack" />;
+      break;
+    case "blipfoto":
+      icon = <LocalIcon file="blipfoto.png" alt="Blipfoto" />;
+      break;
+    case "chan4chan":
+      icon = <Icon icon="mdi:image-multiple" color={socialNetworks.chan4chan.color} />;
+      break;
+    case "codeby":
+      icon = <LocalIcon file="codeby.png" alt="Codeby" />;
+      break;
+    case "cslords":
+      icon = <Icon icon="mdi:pistol" color={socialNetworks.cslords.color} />;
+      break;
+    case "cubecraft":
+      icon = <LocalIcon file="cubecraft.png" alt="CubeCraft" />;
+      break;
+    case "dishtv":
+      icon = <LocalIcon file="dishtv.png" alt="Dish TV" />;
+      break;
+    case "diskusjon":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.diskusjon.color} />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;
