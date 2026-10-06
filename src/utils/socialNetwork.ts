@@ -4731,4 +4731,89 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "WW2Aircraft.net",
   },
+  admireme: {
+    color: "#516A87",
+    category: "adult",
+    name: "AdmireMe",
+  },
+  adobecommunity: {
+    color: "#FF0000",
+    category: "programming",
+    name: "Adobe Community",
+  },
+  alushta24: {
+    color: "#515152",
+    category: "social",
+    name: "Alushta24",
+  },
+  amazfitwatchfaces: {
+    color: "#212121",
+    category: "other",
+    name: "AmazfitWatchFaces",
+  },
+  angara: {
+    color: "#5396CE",
+    category: "social",
+    name: "Angara.Net",
+  },
+  antiquebottles: {
+    color: "#8D6E63",
+    category: "social",
+    name: "Antique Bottles",
+  },
+  aqa: {
+    color: "#026602",
+    category: "social",
+    name: "AQA",
+  },
+  avtoforum: {
+    color: "#3B5169",
+    category: "social",
+    name: "Avtoforum",
+  },
+  bayoushooter: {
+    color: "#4A4A4A",
+    category: "social",
+    name: "Bayou Shooter",
+  },
+  borisfxforum: {
+    color: "#000000",
+    category: "programming",
+    name: "Boris FX Forum",
+  },
+  bristle: {
+    color: "#E4E7E3",
+    category: "social",
+    name: "Bristle",
+  },
+  cad: {
+    color: "#011B71",
+    category: "programming",
+    name: "CAD.ru",
+  },
+  caduser: {
+    color: "#E84E1B",
+    category: "programming",
+    name: "CADUser",
+  },
+  carmasters: {
+    color: "#3B5169",
+    category: "social",
+    name: "CarMasters",
+  },
+  caves: {
+    color: "#3A5897",
+    category: "social",
+    name: "Caves.ru",
+  },
+  cheatmaster: {
+    color: "#564DAD",
+    category: "gaming",
+    name: "Cheat-Master",
+  },
+  coddy: {
+    color: "#29A9E2",
+    category: "programming",
+    name: "Coddy",
+  },
 };

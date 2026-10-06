@@ -3428,6 +3428,57 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "ww2aircraft":
       icon = <LocalIcon file="ww2aircraft.png" alt="WW2Aircraft.net" />;
       break;
+    case "admireme":
+      icon = <LocalIcon file="admireme.png" alt="AdmireMe" />;
+      break;
+    case "adobecommunity":
+      icon = <Icon icon="simple-icons:adobe" color={socialNetworks.adobecommunity.color} />;
+      break;
+    case "alushta24":
+      icon = <Icon icon="mdi:city" color={socialNetworks.alushta24.color} />;
+      break;
+    case "amazfitwatchfaces":
+      icon = <LocalIcon file="amazfitwatchfaces.png" alt="AmazfitWatchFaces" />;
+      break;
+    case "angara":
+      icon = <LocalIcon file="angara.png" alt="Angara.Net" />;
+      break;
+    case "antiquebottles":
+      icon = <Icon icon="mdi:bottle-wine" color={socialNetworks.antiquebottles.color} />;
+      break;
+    case "aqa":
+      icon = <LocalIcon file="aqa.png" alt="AQA" />;
+      break;
+    case "avtoforum":
+      icon = <Icon icon="mdi:car" color={socialNetworks.avtoforum.color} />;
+      break;
+    case "bayoushooter":
+      icon = <Icon icon="mdi:pistol" color={socialNetworks.bayoushooter.color} />;
+      break;
+    case "borisfxforum":
+      icon = <LocalIcon file="borisfxforum.png" alt="Boris FX Forum" />;
+      break;
+    case "bristle":
+      icon = <LocalIcon file="bristle.png" alt="Bristle" />;
+      break;
+    case "cad":
+      icon = <LocalIcon file="cad.png" alt="CAD.ru" />;
+      break;
+    case "caduser":
+      icon = <Icon icon="mdi:pencil-ruler" color={socialNetworks.caduser.color} />;
+      break;
+    case "carmasters":
+      icon = <Icon icon="mdi:car-wrench" color={socialNetworks.carmasters.color} />;
+      break;
+    case "caves":
+      icon = <LocalIcon file="caves.png" alt="Caves.ru" />;
+      break;
+    case "cheatmaster":
+      icon = <LocalIcon file="cheatmaster.png" alt="Cheat-Master" />;
+      break;
+    case "coddy":
+      icon = <LocalIcon file="coddy.png" alt="Coddy" />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;
