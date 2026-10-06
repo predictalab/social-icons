@@ -5071,4 +5071,89 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "Parkrocker",
   },
+  playmd: {
+    color: "#D22420",
+    category: "gaming",
+    name: "Play.md",
+  },
+  politikforum: {
+    color: "#5A5A5A",
+    category: "social",
+    name: "Politikforum",
+  },
+  pornsavant: {
+    color: "#E66B1B",
+    category: "adult",
+    name: "PornSavant",
+  },
+  prizyvnik: {
+    color: "#FDBA2B",
+    category: "social",
+    name: "Prizyvnik",
+  },
+  prokoni: {
+    color: "#E7E7E7",
+    category: "social",
+    name: "ProKoni",
+  },
+  psyera: {
+    color: "#016BAB",
+    category: "social",
+    name: "Psyera",
+  },
+  rebornbuddy: {
+    color: "#0B68B7",
+    category: "gaming",
+    name: "RebornBuddy",
+  },
+  recpoker: {
+    color: "#030303",
+    category: "gaming",
+    name: "rec.poker",
+  },
+  rusarmy: {
+    color: "#ED2212",
+    category: "social",
+    name: "RusArmy",
+  },
+  sasgis: {
+    color: "#6A83B4",
+    category: "other",
+    name: "SAS.Planet",
+  },
+  serveradmin: {
+    color: "#F88C00",
+    category: "programming",
+    name: "ServerAdmin",
+  },
+  sforum: {
+    color: "#05699E",
+    category: "social",
+    name: "S-Forum",
+  },
+  shafa: {
+    color: "#070707",
+    category: "ecommerce",
+    name: "Shafa",
+  },
+  socioforum: {
+    color: "#545428",
+    category: "social",
+    name: "SocioForum",
+  },
+  southbayriders: {
+    color: "#336699",
+    category: "social",
+    name: "South Bay Riders",
+  },
+  spaces: {
+    color: "#627CAD",
+    category: "social",
+    name: "Spaces",
+  },
+  studwork: {
+    color: "#2D3FE1",
+    category: "other",
+    name: "Studwork",
+  },
 };

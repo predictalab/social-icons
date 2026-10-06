@@ -3632,6 +3632,57 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "parkrocker":
       icon = <LocalIcon file="parkrocker.png" alt="Parkrocker" />;
       break;
+    case "playmd":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.playmd.color} />;
+      break;
+    case "politikforum":
+      icon = <Icon icon="mdi:vote" color={socialNetworks.politikforum.color} />;
+      break;
+    case "pornsavant":
+      icon = <LocalIcon file="pornsavant.png" alt="PornSavant" />;
+      break;
+    case "prizyvnik":
+      icon = <LocalIcon file="prizyvnik.png" alt="Prizyvnik" />;
+      break;
+    case "prokoni":
+      icon = <LocalIcon file="prokoni.png" alt="ProKoni" />;
+      break;
+    case "psyera":
+      icon = <LocalIcon file="psyera.png" alt="Psyera" />;
+      break;
+    case "rebornbuddy":
+      icon = <LocalIcon file="rebornbuddy.png" alt="RebornBuddy" />;
+      break;
+    case "recpoker":
+      icon = <Icon icon="mdi:cards-playing" color={socialNetworks.recpoker.color} />;
+      break;
+    case "rusarmy":
+      icon = <Icon icon="mdi:medal" color={socialNetworks.rusarmy.color} />;
+      break;
+    case "sasgis":
+      icon = <Icon icon="mdi:map" color={socialNetworks.sasgis.color} />;
+      break;
+    case "serveradmin":
+      icon = <LocalIcon file="serveradmin.png" alt="ServerAdmin" />;
+      break;
+    case "sforum":
+      icon = <LocalIcon file="sforum.png" alt="S-Forum" />;
+      break;
+    case "shafa":
+      icon = <LocalIcon file="shafa.png" alt="Shafa" />;
+      break;
+    case "socioforum":
+      icon = <Icon icon="mdi:account-group" color={socialNetworks.socioforum.color} />;
+      break;
+    case "southbayriders":
+      icon = <Icon icon="mdi:motorbike" color={socialNetworks.southbayriders.color} />;
+      break;
+    case "spaces":
+      icon = <LocalIcon file="spaces.png" alt="Spaces" />;
+      break;
+    case "studwork":
+      icon = <LocalIcon file="studwork.png" alt="Studwork" />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;
