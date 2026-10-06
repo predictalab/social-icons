@@ -3581,6 +3581,57 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "livetrack24":
       icon = <LocalIcon file="livetrack24.png" alt="LiveTrack24" />;
       break;
+    case "maccentre":
+      icon = <LocalIcon file="maccentre.png" alt="Maccentre" />;
+      break;
+    case "masterkosta":
+      icon = <Icon icon="mdi:tools" color={socialNetworks.masterkosta.color} />;
+      break;
+    case "mbclub":
+      icon = <LocalIcon file="mbclub.png" alt="MBClub" />;
+      break;
+    case "mdregion":
+      icon = <LocalIcon file="mdregion.png" alt="MDRegion" />;
+      break;
+    case "megapolis":
+      icon = <Icon icon="mdi:city" color={socialNetworks.megapolis.color} />;
+      break;
+    case "minecraftstatistic":
+      icon = <LocalIcon file="minecraftstatistic.png" alt="Minecraft-Statistic" />;
+      break;
+    case "mineplex":
+      icon = <LocalIcon file="mineplex.png" alt="Mineplex" />;
+      break;
+    case "mnogodetok":
+      icon = <Icon icon="mdi:human-male-female-child" color={socialNetworks.mnogodetok.color} />;
+      break;
+    case "munzee":
+      icon = <LocalIcon file="munzee.png" alt="Munzee" />;
+      break;
+    case "nesiditsa":
+      icon = <LocalIcon file="nesiditsa.png" alt="Ne Siditsa" />;
+      break;
+    case "neteasemusic":
+      icon = <Icon icon="simple-icons:neteasecloudmusic" color={socialNetworks.neteasemusic.color} />;
+      break;
+    case "nhl":
+      icon = <Icon icon="mdi:hockey-sticks" color={socialNetworks.nhl.color} />;
+      break;
+    case "nsk66":
+      icon = <Icon icon="mdi:city" color={socialNetworks.nsk66.color} />;
+      break;
+    case "nucastle":
+      icon = <LocalIcon file="nucastle.png" alt="NUcastle" />;
+      break;
+    case "operaforums":
+      icon = <Icon icon="simple-icons:opera" color={socialNetworks.operaforums.color} />;
+      break;
+    case "oraclecommunity":
+      icon = <Icon icon="simple-icons:oracle" color={socialNetworks.oraclecommunity.color} />;
+      break;
+    case "parkrocker":
+      icon = <LocalIcon file="parkrocker.png" alt="Parkrocker" />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;

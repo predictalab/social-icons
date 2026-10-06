@@ -4986,4 +4986,89 @@ export const socialNetworks: socialNetworkType = {
     category: "sport",
     name: "LiveTrack24",
   },
+  maccentre: {
+    color: "#FF0000",
+    category: "social",
+    name: "Maccentre",
+  },
+  masterkosta: {
+    color: "#240B3B",
+    category: "social",
+    name: "MasterKosta",
+  },
+  mbclub: {
+    color: "#D4D4D4",
+    category: "social",
+    name: "MBClub",
+  },
+  mdregion: {
+    color: "#0192CB",
+    category: "social",
+    name: "MDRegion",
+  },
+  megapolis: {
+    color: "#006296",
+    category: "social",
+    name: "Megapolis",
+  },
+  minecraftstatistic: {
+    color: "#7EC543",
+    category: "gaming",
+    name: "Minecraft-Statistic",
+  },
+  mineplex: {
+    color: "#E78502",
+    category: "gaming",
+    name: "Mineplex",
+  },
+  mnogodetok: {
+    color: "#D4A017",
+    category: "social",
+    name: "Mnogodetok",
+  },
+  munzee: {
+    color: "#215538",
+    category: "gaming",
+    name: "Munzee",
+  },
+  nesiditsa: {
+    color: "#E46865",
+    category: "social",
+    name: "Ne Siditsa",
+  },
+  neteasemusic: {
+    color: "#D43C33",
+    category: "streaming",
+    name: "NetEase Cloud Music",
+  },
+  nhl: {
+    color: "#ED6927",
+    category: "sport",
+    name: "NHL.ru",
+  },
+  nsk66: {
+    color: "#2B4C8C",
+    category: "social",
+    name: "Nsk66",
+  },
+  nucastle: {
+    color: "#144B72",
+    category: "sport",
+    name: "NUcastle",
+  },
+  operaforums: {
+    color: "#FF1B2D",
+    category: "programming",
+    name: "Opera Forums",
+  },
+  oraclecommunity: {
+    color: "#F80000",
+    category: "programming",
+    name: "Oracle Community",
+  },
+  parkrocker: {
+    color: "#E5E6E6",
+    category: "social",
+    name: "Parkrocker",
+  },
 };
