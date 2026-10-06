@@ -4782,7 +4782,7 @@ export const socialNetworks: socialNetworkType = {
     name: "Boris FX Forum",
   },
   bristle: {
-    color: "#E4E7E3",
+    color: "#2B2B2B",
     category: "social",
     name: "Bristle",
   },
@@ -4817,7 +4817,7 @@ export const socialNetworks: socialNetworkType = {
     name: "Coddy",
   },
   codedex: {
-    color: "#FEF400",
+    color: "#E5D600",
     category: "programming",
     name: "Codédex",
   },
@@ -4877,7 +4877,7 @@ export const socialNetworks: socialNetworkType = {
     name: "figshare",
   },
   fishingsib: {
-    color: "#E0DFDF",
+    color: "#2C6E9B",
     category: "social",
     name: "FishingSib",
   },
@@ -4947,7 +4947,7 @@ export const socialNetworks: socialNetworkType = {
     name: "Hitman Forum",
   },
   hondaswap: {
-    color: "#E3E3E2",
+    color: "#1A1A1A",
     category: "social",
     name: "HondaSwap",
   },
@@ -4997,7 +4997,7 @@ export const socialNetworks: socialNetworkType = {
     name: "MasterKosta",
   },
   mbclub: {
-    color: "#D4D4D4",
+    color: "#1A1A1A",
     category: "social",
     name: "MBClub",
   },
@@ -5067,7 +5067,7 @@ export const socialNetworks: socialNetworkType = {
     name: "Oracle Community",
   },
   parkrocker: {
-    color: "#E5E6E6",
+    color: "#C62828",
     category: "social",
     name: "Parkrocker",
   },
@@ -5092,7 +5092,7 @@ export const socialNetworks: socialNetworkType = {
     name: "Prizyvnik",
   },
   prokoni: {
-    color: "#E7E7E7",
+    color: "#F29100",
     category: "social",
     name: "ProKoni",
   },
@@ -5197,7 +5197,7 @@ export const socialNetworks: socialNetworkType = {
     name: "W3Challs",
   },
   wasm: {
-    color: "#F1F0E7",
+    color: "#333333",
     category: "hacking",
     name: "WASM",
   },
@@ -5212,7 +5212,7 @@ export const socialNetworks: socialNetworkType = {
     name: "World of Players",
   },
   writercenter: {
-    color: "#E4E9F6",
+    color: "#6B5B45",
     category: "social",
     name: "WriterCenter",
   },
