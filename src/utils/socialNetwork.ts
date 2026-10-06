@@ -4306,4 +4306,94 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "Diskusjon.no",
   },
+  dmoj: {
+    color: "#000000",
+    category: "programming",
+    name: "DMOJ",
+  },
+  dolap: {
+    color: "#01DA9D",
+    category: "ecommerce",
+    name: "Dolap",
+  },
+  donatepay: {
+    color: "#1C1C1C",
+    category: "finance",
+    name: "DonatePay",
+  },
+  drupalru: {
+    color: "#3C759F",
+    category: "programming",
+    name: "Drupal.ru",
+  },
+  edugeek: {
+    color: "#1C4E70",
+    category: "social",
+    name: "EduGeek",
+  },
+  elakiri: {
+    color: "#0485D0",
+    category: "social",
+    name: "Elakiri",
+  },
+  empflix: {
+    color: "#005E9F",
+    category: "adult",
+    name: "EMPFlix",
+  },
+  fanficslandia: {
+    color: "#416F70",
+    category: "social",
+    name: "Fanficslandia",
+  },
+  fcrubin: {
+    color: "#CFCFCF",
+    category: "sport",
+    name: "FC Rubin",
+  },
+  flashflashrevolution: {
+    color: "#70AFE3",
+    category: "gaming",
+    name: "Flash Flash Revolution",
+  },
+  footballforums: {
+    color: "#2E7D32",
+    category: "sport",
+    name: "FootballForums",
+  },
+  forumkinopoisk: {
+    color: "#000000",
+    category: "social",
+    name: "Forum Kinopoisk",
+  },
+  forumophilia: {
+    color: "#7EB5E8",
+    category: "adult",
+    name: "Forumophilia",
+  },
+  fourgameforum: {
+    color: "#166194",
+    category: "gaming",
+    name: "4GameForum",
+  },
+  fourstor: {
+    color: "#540404",
+    category: "social",
+    name: "4stor",
+  },
+  gardrops: {
+    color: "#CA0883",
+    category: "ecommerce",
+    name: "Gardrops",
+  },
+  geodesist: {
+    color: "#31363A",
+    category: "social",
+    name: "Geodesist",
+  },
+  gpodder: {
+    color: "#2BA09B",
+    category: "other",
+    name: "gpodder.net",
+  },
 };

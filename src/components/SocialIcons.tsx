@@ -3173,6 +3173,60 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "diskusjon":
       icon = <Icon icon="mdi:forum" color={socialNetworks.diskusjon.color} />;
       break;
+    case "dmoj":
+      icon = <LocalIcon file="dmoj.png" alt="DMOJ" />;
+      break;
+    case "dolap":
+      icon = <LocalIcon file="dolap.png" alt="Dolap" />;
+      break;
+    case "donatepay":
+      icon = <LocalIcon file="donatepay.png" alt="DonatePay" />;
+      break;
+    case "drupalru":
+      icon = <LocalIcon file="drupalru.png" alt="Drupal.ru" />;
+      break;
+    case "edugeek":
+      icon = <LocalIcon file="edugeek.png" alt="EduGeek" />;
+      break;
+    case "elakiri":
+      icon = <LocalIcon file="elakiri.png" alt="Elakiri" />;
+      break;
+    case "empflix":
+      icon = <LocalIcon file="empflix.png" alt="EMPFlix" />;
+      break;
+    case "fanficslandia":
+      icon = <LocalIcon file="fanficslandia.png" alt="Fanficslandia" />;
+      break;
+    case "fcrubin":
+      icon = <LocalIcon file="fcrubin.png" alt="FC Rubin" />;
+      break;
+    case "flashflashrevolution":
+      icon = <LocalIcon file="flashflashrevolution.png" alt="Flash Flash Revolution" />;
+      break;
+    case "footballforums":
+      icon = <Icon icon="mdi:soccer" color={socialNetworks.footballforums.color} />;
+      break;
+    case "forumkinopoisk":
+      icon = <LocalIcon file="forumkinopoisk.png" alt="Forum Kinopoisk" />;
+      break;
+    case "forumophilia":
+      icon = <LocalIcon file="forumophilia.png" alt="Forumophilia" />;
+      break;
+    case "fourgameforum":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.fourgameforum.color} />;
+      break;
+    case "fourstor":
+      icon = <LocalIcon file="fourstor.png" alt="4stor" />;
+      break;
+    case "gardrops":
+      icon = <LocalIcon file="gardrops.png" alt="Gardrops" />;
+      break;
+    case "geodesist":
+      icon = <LocalIcon file="geodesist.png" alt="Geodesist" />;
+      break;
+    case "gpodder":
+      icon = <LocalIcon file="gpodder.png" alt="gpodder.net" />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;
