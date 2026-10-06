@@ -3479,6 +3479,57 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "coddy":
       icon = <LocalIcon file="coddy.png" alt="Coddy" />;
       break;
+    case "codedex":
+      icon = <LocalIcon file="codedex.png" alt="Codédex" />;
+      break;
+    case "codersrank":
+      icon = <Icon icon="simple-icons:codersrank" color={socialNetworks.codersrank.color} />;
+      break;
+    case "connosr":
+      icon = <LocalIcon file="connosr.png" alt="Connosr" />;
+      break;
+    case "cowboyszone":
+      icon = <LocalIcon file="cowboyszone.png" alt="CowboysZone" />;
+      break;
+    case "diorama":
+      icon = <Icon icon="mdi:castle" color={socialNetworks.diorama.color} />;
+      break;
+    case "discoursemozilla":
+      icon = <Icon icon="simple-icons:mozilla" color={socialNetworks.discoursemozilla.color} />;
+      break;
+    case "discussfastpitch":
+      icon = <Icon icon="mdi:baseball" color={socialNetworks.discussfastpitch.color} />;
+      break;
+    case "dogster":
+      icon = <Icon icon="mdi:dog" color={socialNetworks.dogster.color} />;
+      break;
+    case "donatestream":
+      icon = <Icon icon="mdi:hand-heart" color={socialNetworks.donatestream.color} />;
+      break;
+    case "empretienda":
+      icon = <LocalIcon file="empretienda.png" alt="Empretienda" />;
+      break;
+    case "erogen":
+      icon = <LocalIcon file="erogen.png" alt="Erogen.club" />;
+      break;
+    case "figshare":
+      icon = <Icon icon="simple-icons:figshare" color={socialNetworks.figshare.color} />;
+      break;
+    case "fishingsib":
+      icon = <LocalIcon file="fishingsib.png" alt="FishingSib" />;
+      break;
+    case "forumjizni":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.forumjizni.color} />;
+      break;
+    case "forummil":
+      icon = <Icon icon="mdi:medal" color={socialNetworks.forummil.color} />;
+      break;
+    case "forumprosport":
+      icon = <LocalIcon file="forumprosport.png" alt="ForumProSport" />;
+      break;
+    case "forumsdrom":
+      icon = <LocalIcon file="forumsdrom.png" alt="Forums Drom" />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;

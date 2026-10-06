@@ -4816,4 +4816,89 @@ export const socialNetworks: socialNetworkType = {
     category: "programming",
     name: "Coddy",
   },
+  codedex: {
+    color: "#FEF400",
+    category: "programming",
+    name: "Codédex",
+  },
+  codersrank: {
+    color: "#67A4AC",
+    category: "programming",
+    name: "CodersRank",
+  },
+  connosr: {
+    color: "#87261A",
+    category: "social",
+    name: "Connosr",
+  },
+  cowboyszone: {
+    color: "#023468",
+    category: "sport",
+    name: "CowboysZone",
+  },
+  diorama: {
+    color: "#818100",
+    category: "social",
+    name: "Diorama.ru",
+  },
+  discoursemozilla: {
+    color: "#161616",
+    category: "programming",
+    name: "Mozilla Discourse",
+  },
+  discussfastpitch: {
+    color: "#E6A100",
+    category: "sport",
+    name: "Discuss Fastpitch",
+  },
+  dogster: {
+    color: "#8D6E63",
+    category: "social",
+    name: "Dogster",
+  },
+  donatestream: {
+    color: "#FFB206",
+    category: "finance",
+    name: "Donate.Stream",
+  },
+  empretienda: {
+    color: "#52B754",
+    category: "ecommerce",
+    name: "Empretienda",
+  },
+  erogen: {
+    color: "#7A2BBE",
+    category: "adult",
+    name: "Erogen.club",
+  },
+  figshare: {
+    color: "#556472",
+    category: "other",
+    name: "figshare",
+  },
+  fishingsib: {
+    color: "#E0DFDF",
+    category: "social",
+    name: "FishingSib",
+  },
+  forumjizni: {
+    color: "#83AEC0",
+    category: "social",
+    name: "ForumJizni",
+  },
+  forummil: {
+    color: "#0370B7",
+    category: "social",
+    name: "Forum-Mil",
+  },
+  forumprosport: {
+    color: "#CF0502",
+    category: "sport",
+    name: "ForumProSport",
+  },
+  forumsdrom: {
+    color: "#DB001A",
+    category: "social",
+    name: "Forums Drom",
+  },
 };
