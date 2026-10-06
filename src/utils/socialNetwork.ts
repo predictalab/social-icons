@@ -5156,4 +5156,89 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "Studwork",
   },
+  texasguntalk: {
+    color: "#BF0A30",
+    category: "social",
+    name: "Texas Gun Talk",
+  },
+  trworkshop: {
+    color: "#555555",
+    category: "social",
+    name: "TRWorkshop",
+  },
+  tuchong: {
+    color: "#FA047C",
+    category: "social",
+    name: "Tuchong",
+  },
+  twentysix: {
+    color: "#B4242B",
+    category: "social",
+    name: "TwentySix",
+  },
+  unixforum: {
+    color: "#32639D",
+    category: "programming",
+    name: "UnixForum",
+  },
+  volgogradru: {
+    color: "#04509D",
+    category: "social",
+    name: "VolgogradRU",
+  },
+  votetags: {
+    color: "#696969",
+    category: "social",
+    name: "VoteTags",
+  },
+  w3challs: {
+    color: "#000000",
+    category: "hacking",
+    name: "W3Challs",
+  },
+  wasm: {
+    color: "#F1F0E7",
+    category: "hacking",
+    name: "WASM",
+  },
+  webosforums: {
+    color: "#1C5B99",
+    category: "social",
+    name: "webOS Forums",
+  },
+  worldofplayers: {
+    color: "#040404",
+    category: "gaming",
+    name: "World of Players",
+  },
+  writercenter: {
+    color: "#E4E9F6",
+    category: "social",
+    name: "WriterCenter",
+  },
+  xboxgamertag: {
+    color: "#107C10",
+    category: "gaming",
+    name: "Xbox Gamertag",
+  },
+  xgm: {
+    color: "#555555",
+    category: "gaming",
+    name: "XGM",
+  },
+  yamaya: {
+    color: "#CD0703",
+    category: "social",
+    name: "Yamaya",
+  },
+  yapishu: {
+    color: "#2E6DA4",
+    category: "social",
+    name: "YaPishu",
+  },
+  zenodo: {
+    color: "#1682D4",
+    category: "other",
+    name: "Zenodo",
+  },
 };

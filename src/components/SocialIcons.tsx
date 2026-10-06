@@ -3683,6 +3683,57 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "studwork":
       icon = <LocalIcon file="studwork.png" alt="Studwork" />;
       break;
+    case "texasguntalk":
+      icon = <Icon icon="mdi:pistol" color={socialNetworks.texasguntalk.color} />;
+      break;
+    case "trworkshop":
+      icon = <Icon icon="mdi:tools" color={socialNetworks.trworkshop.color} />;
+      break;
+    case "tuchong":
+      icon = <LocalIcon file="tuchong.png" alt="Tuchong" />;
+      break;
+    case "twentysix":
+      icon = <LocalIcon file="twentysix.png" alt="TwentySix" />;
+      break;
+    case "unixforum":
+      icon = <LocalIcon file="unixforum.png" alt="UnixForum" />;
+      break;
+    case "volgogradru":
+      icon = <LocalIcon file="volgogradru.png" alt="VolgogradRU" />;
+      break;
+    case "votetags":
+      icon = <Icon icon="mdi:bookmark" color={socialNetworks.votetags.color} />;
+      break;
+    case "w3challs":
+      icon = <LocalIcon file="w3challs.png" alt="W3Challs" />;
+      break;
+    case "wasm":
+      icon = <LocalIcon file="wasm.png" alt="WASM" />;
+      break;
+    case "webosforums":
+      icon = <LocalIcon file="webosforums.png" alt="webOS Forums" />;
+      break;
+    case "worldofplayers":
+      icon = <LocalIcon file="worldofplayers.png" alt="World of Players" />;
+      break;
+    case "writercenter":
+      icon = <LocalIcon file="writercenter.png" alt="WriterCenter" />;
+      break;
+    case "xboxgamertag":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.xboxgamertag.color} />;
+      break;
+    case "xgm":
+      icon = <Icon icon="mdi:puzzle" color={socialNetworks.xgm.color} />;
+      break;
+    case "yamaya":
+      icon = <LocalIcon file="yamaya.png" alt="Yamaya" />;
+      break;
+    case "yapishu":
+      icon = <Icon icon="mdi:feather" color={socialNetworks.yapishu.color} />;
+      break;
+    case "zenodo":
+      icon = <Icon icon="simple-icons:zenodo" color={socialNetworks.zenodo.color} />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;
