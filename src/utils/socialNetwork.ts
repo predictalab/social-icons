@@ -4486,4 +4486,94 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "MotorhomeFun",
   },
+  mywishboard: {
+    color: "#E7103A",
+    category: "social",
+    name: "MyWishBoard",
+  },
+  nightbot: {
+    color: "#000000",
+    category: "bot",
+    name: "Nightbot",
+  },
+  niketalk: {
+    color: "#000000",
+    category: "social",
+    name: "NikeTalk",
+  },
+  nixp: {
+    color: "#010101",
+    category: "programming",
+    name: "nixp",
+  },
+  not606: {
+    color: "#022C6B",
+    category: "sport",
+    name: "Not606",
+  },
+  oakleyforum: {
+    color: "#4198D6",
+    category: "social",
+    name: "Oakley Forum",
+  },
+  officeforums: {
+    color: "#2B5598",
+    category: "social",
+    name: "Office Forums",
+  },
+  omoimot: {
+    color: "#161616",
+    category: "social",
+    name: "Omoimot",
+  },
+  pedsovet: {
+    color: "#2771C7",
+    category: "social",
+    name: "Pedsovet",
+  },
+  pepperpl: {
+    color: "#E3EEF6",
+    category: "ecommerce",
+    name: "Pepper.pl",
+  },
+  pepperru: {
+    color: "#EC3C32",
+    category: "ecommerce",
+    name: "Pepper.ru",
+  },
+  planetaexcel: {
+    color: "#FE7A28",
+    category: "social",
+    name: "Planeta Excel",
+  },
+  poembook: {
+    color: "#000000",
+    category: "social",
+    name: "Poembook",
+  },
+  pogovorim: {
+    color: "#333333",
+    category: "social",
+    name: "Pogovorim",
+  },
+  pregame: {
+    color: "#F39834",
+    category: "sport",
+    name: "Pregame",
+  },
+  prodaman: {
+    color: "#E0E6E1",
+    category: "ecommerce",
+    name: "Prodaman",
+  },
+  proglib: {
+    color: "#010A31",
+    category: "programming",
+    name: "Proglib",
+  },
+  proshkolu: {
+    color: "#EC9B53",
+    category: "social",
+    name: "ProShkolu",
+  },
 };

@@ -3281,6 +3281,60 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "motorhomefun":
       icon = <LocalIcon file="motorhomefun.png" alt="MotorhomeFun" />;
       break;
+    case "mywishboard":
+      icon = <LocalIcon file="mywishboard.png" alt="MyWishBoard" />;
+      break;
+    case "nightbot":
+      icon = <LocalIcon file="nightbot.png" alt="Nightbot" />;
+      break;
+    case "niketalk":
+      icon = <LocalIcon file="niketalk.png" alt="NikeTalk" />;
+      break;
+    case "nixp":
+      icon = <LocalIcon file="nixp.png" alt="nixp" />;
+      break;
+    case "not606":
+      icon = <LocalIcon file="not606.png" alt="Not606" />;
+      break;
+    case "oakleyforum":
+      icon = <LocalIcon file="oakleyforum.png" alt="Oakley Forum" />;
+      break;
+    case "officeforums":
+      icon = <LocalIcon file="officeforums.png" alt="Office Forums" />;
+      break;
+    case "omoimot":
+      icon = <LocalIcon file="omoimot.png" alt="Omoimot" />;
+      break;
+    case "pedsovet":
+      icon = <Icon icon="mdi:school" color={socialNetworks.pedsovet.color} />;
+      break;
+    case "pepperpl":
+      icon = <LocalIcon file="pepperpl.png" alt="Pepper.pl" />;
+      break;
+    case "pepperru":
+      icon = <LocalIcon file="pepperru.png" alt="Pepper.ru" />;
+      break;
+    case "planetaexcel":
+      icon = <Icon icon="mdi:table" color={socialNetworks.planetaexcel.color} />;
+      break;
+    case "poembook":
+      icon = <Icon icon="mdi:feather" color={socialNetworks.poembook.color} />;
+      break;
+    case "pogovorim":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.pogovorim.color} />;
+      break;
+    case "pregame":
+      icon = <LocalIcon file="pregame.png" alt="Pregame" />;
+      break;
+    case "prodaman":
+      icon = <LocalIcon file="prodaman.png" alt="Prodaman" />;
+      break;
+    case "proglib":
+      icon = <LocalIcon file="proglib.png" alt="Proglib" />;
+      break;
+    case "proshkolu":
+      icon = <Icon icon="mdi:school" color={socialNetworks.proshkolu.color} />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;
