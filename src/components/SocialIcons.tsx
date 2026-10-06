@@ -3389,6 +3389,45 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "thefastlaneforum":
       icon = <LocalIcon file="thefastlaneforum.png" alt="The Fastlane Forum" />;
       break;
+    case "themainboard":
+      icon = <Icon icon="mdi:basketball" color={socialNetworks.themainboard.color} />;
+      break;
+    case "truesteamachievements":
+      icon = <LocalIcon file="truesteamachievements.png" alt="TrueSteamAchievements" />;
+      break;
+    case "tvgames":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.tvgames.color} />;
+      break;
+    case "twodthreed":
+      icon = <LocalIcon file="twodthreed.png" alt="2D-3D" />;
+      break;
+    case "uchportal":
+      icon = <Icon icon="mdi:book-education" color={socialNetworks.uchportal.color} />;
+      break;
+    case "uvelir":
+      icon = <Icon icon="mdi:diamond-stone" color={socialNetworks.uvelir.color} />;
+      break;
+    case "vapenews":
+      icon = <Icon icon="mdi:smoke" color={socialNetworks.vapenews.color} />;
+      break;
+    case "vishivalochka":
+      icon = <Icon icon="mdi:needle" color={socialNetworks.vishivalochka.color} />;
+      break;
+    case "voicesevas":
+      icon = <LocalIcon file="voicesevas.png" alt="Voicesevas" />;
+      break;
+    case "windows10forums":
+      icon = <LocalIcon file="windows10forums.png" alt="Windows 10 Forums" />;
+      break;
+    case "wolpy":
+      icon = <Icon icon="mdi:earth" color={socialNetworks.wolpy.color} />;
+      break;
+    case "wowgame":
+      icon = <Icon icon="mdi:sword-cross" color={socialNetworks.wowgame.color} />;
+      break;
+    case "ww2aircraft":
+      icon = <LocalIcon file="ww2aircraft.png" alt="WW2Aircraft.net" />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;

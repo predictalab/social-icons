@@ -4666,4 +4666,69 @@ export const socialNetworks: socialNetworkType = {
     category: "finance",
     name: "The Fastlane Forum",
   },
+  themainboard: {
+    color: "#CB2229",
+    category: "sport",
+    name: "The Mainboard",
+  },
+  truesteamachievements: {
+    color: "#000000",
+    category: "gaming",
+    name: "TrueSteamAchievements",
+  },
+  tvgames: {
+    color: "#6670AC",
+    category: "gaming",
+    name: "TV-Games",
+  },
+  twodthreed: {
+    color: "#E21A1E",
+    category: "other",
+    name: "2D-3D",
+  },
+  uchportal: {
+    color: "#4CAF1F",
+    category: "social",
+    name: "Uchportal",
+  },
+  uvelir: {
+    color: "#F7A427",
+    category: "other",
+    name: "Uvelir",
+  },
+  vapenews: {
+    color: "#B33F21",
+    category: "social",
+    name: "VapeNews",
+  },
+  vishivalochka: {
+    color: "#232323",
+    category: "social",
+    name: "Vishivalochka",
+  },
+  voicesevas: {
+    color: "#856839",
+    category: "social",
+    name: "Voicesevas",
+  },
+  windows10forums: {
+    color: "#005494",
+    category: "social",
+    name: "Windows 10 Forums",
+  },
+  wolpy: {
+    color: "#AF9E6A",
+    category: "social",
+    name: "Wolpy",
+  },
+  wowgame: {
+    color: "#B8862B",
+    category: "gaming",
+    name: "WoW-Game",
+  },
+  ww2aircraft: {
+    color: "#000000",
+    category: "social",
+    name: "WW2Aircraft.net",
+  },
 };

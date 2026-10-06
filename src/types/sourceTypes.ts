@@ -1115,4 +1115,17 @@ export type SourceTypes =
   | "svtperformance"
   | "swedroid"
   | "tamtam"
-  | "thefastlaneforum";
+  | "thefastlaneforum"
+  | "themainboard"
+  | "truesteamachievements"
+  | "tvgames"
+  | "twodthreed"
+  | "uchportal"
+  | "uvelir"
+  | "vapenews"
+  | "vishivalochka"
+  | "voicesevas"
+  | "windows10forums"
+  | "wolpy"
+  | "wowgame"
+  | "ww2aircraft";
