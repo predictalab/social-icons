@@ -6192,7 +6192,7 @@ export const socialNetworks: socialNetworkType = {
     name: "Docker Community Forums",
   },
   doctissimo: {
-    color: "#246AAA",
+    color: "#4876B1",
     category: "social",
     name: "Doctissimo",
   },
