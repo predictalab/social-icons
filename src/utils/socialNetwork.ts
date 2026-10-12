@@ -6171,4 +6171,754 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "Djfint",
   },
+  dnbforum: {
+    color: "#353535",
+    category: "other",
+    name: "Dnbforum",
+  },
+  dndwiki: {
+    color: "#8A9299",
+    category: "gaming",
+    name: "D&D Homebrew Wiki",
+  },
+  dobroeslovo: {
+    color: "#607D8B",
+    category: "social",
+    name: "Dobroeslovo",
+  },
+  dockerforums: {
+    color: "#2496ED",
+    category: "programming",
+    name: "Docker Community Forums",
+  },
+  doctissimo: {
+    color: "#4876B1",
+    category: "social",
+    name: "Doctissimo",
+  },
+  dogcraft: {
+    color: "#8B001E",
+    category: "gaming",
+    name: "Dogcraft",
+  },
+  doytrunt: {
+    color: "#607D8B",
+    category: "other",
+    name: "Doytrunt",
+  },
+  dpilsscooter: {
+    color: "#607D8B",
+    category: "other",
+    name: "Dpils Scooter",
+  },
+  drawingsbase: {
+    color: "#607D8B",
+    category: "other",
+    name: "Drawings Base",
+  },
+  drdenisov: {
+    color: "#2D435B",
+    category: "social",
+    name: "Dr Denisov",
+  },
+  dremel: {
+    color: "#607D8B",
+    category: "ecommerce",
+    name: "Dremel",
+  },
+  droners: {
+    color: "#1057D9",
+    category: "other",
+    name: "Droners",
+  },
+  dubrovo: {
+    color: "#99B554",
+    category: "ecommerce",
+    name: "Dubrovo",
+  },
+  dumpz: {
+    color: "#ECAD53",
+    category: "social",
+    name: "Dumpz",
+  },
+  duno: {
+    color: "#BA7366",
+    category: "social",
+    name: "Duno",
+  },
+  dushschool: {
+    color: "#607D8B",
+    category: "sport",
+    name: "Dushschool",
+  },
+  duz: {
+    color: "#607D8B",
+    category: "other",
+    name: "Duz",
+  },
+  dvkstyle: {
+    color: "#607D8B",
+    category: "other",
+    name: "Dvk Style",
+  },
+  dzhida2000: {
+    color: "#E56E03",
+    category: "social",
+    name: "Dzhida2000",
+  },
+  eaforums: {
+    color: "#000000",
+    category: "gaming",
+    name: "EA Forums",
+  },
+  easyen: {
+    color: "#759F67",
+    category: "other",
+    name: "Easyen",
+  },
+  easyjob: {
+    color: "#D16709",
+    category: "other",
+    name: "Easyjob",
+  },
+  eclipse: {
+    color: "#2C2255",
+    category: "programming",
+    name: "Eclipse",
+  },
+  edumonch: {
+    color: "#607D8B",
+    category: "other",
+    name: "Edumonch",
+  },
+  ekzoticsad: {
+    color: "#5D655A",
+    category: "gaming",
+    name: "Ekzoticsad",
+  },
+  elastic: {
+    color: "#005571",
+    category: "programming",
+    name: "Elastic Discuss",
+  },
+  electroniccomponent: {
+    color: "#0037CC",
+    category: "ecommerce",
+    name: "Electronic Component",
+  },
+  elektron: {
+    color: "#FD5623",
+    category: "other",
+    name: "Elektron",
+  },
+  elibrarytips: {
+    color: "#629963",
+    category: "other",
+    name: "eLibrary Tips",
+  },
+  elpizza: {
+    color: "#E76C28",
+    category: "social",
+    name: "El Pizza",
+  },
+  encyc: {
+    color: "#F8CACD",
+    category: "other",
+    name: "Encyc",
+  },
+  endeavouros: {
+    color: "#7F7FFF",
+    category: "programming",
+    name: "EndeavourOS",
+  },
+  endlessos: {
+    color: "#FF6C00",
+    category: "programming",
+    name: "Endless OS Community",
+  },
+  endoctor: {
+    color: "#607D8B",
+    category: "other",
+    name: "Endoctor",
+  },
+  englishinfo: {
+    color: "#6E2396",
+    category: "other",
+    name: "Englishinfo",
+  },
+  engtips: {
+    color: "#7E8CB2",
+    category: "other",
+    name: "Eng-Tips",
+  },
+  esetnod32: {
+    color: "#0095A0",
+    category: "programming",
+    name: "ESET Forum",
+  },
+  evaveda: {
+    color: "#607D8B",
+    category: "social",
+    name: "Evaveda Forum",
+  },
+  evendim: {
+    color: "#000000",
+    category: "other",
+    name: "Evendim",
+  },
+  excelworld: {
+    color: "#327051",
+    category: "other",
+    name: "Excelworld",
+  },
+  exkavator: {
+    color: "#272828",
+    category: "social",
+    name: "Exkavator",
+  },
+  exoduspay: {
+    color: "#708DF3",
+    category: "finance",
+    name: "Exodus Pay",
+  },
+  eyorkie: {
+    color: "#607D8B",
+    category: "other",
+    name: "Eyorkie",
+  },
+  ezoterikaconversion: {
+    color: "#B77759",
+    category: "social",
+    name: "EzoterikaConversion",
+  },
+  fablero: {
+    color: "#2D2E39",
+    category: "gaming",
+    name: "Fablero",
+  },
+  facultyofmedicine: {
+    color: "#D88386",
+    category: "social",
+    name: "FacultyOfMedicine",
+  },
+  faillyuboi: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Faillyuboi",
+  },
+  faktopedia: {
+    color: "#010101",
+    category: "social",
+    name: "Faktopedia",
+  },
+  fameswap: {
+    color: "#263648",
+    category: "ecommerce",
+    name: "Fameswap",
+  },
+  fancentro: {
+    color: "#413259",
+    category: "social",
+    name: "Fancentro",
+  },
+  fanfiktion: {
+    color: "#004F64",
+    category: "other",
+    name: "Fanfiktion",
+  },
+  faqusha: {
+    color: "#ED0000",
+    category: "gaming",
+    name: "Faqusha",
+  },
+  fareast: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Fareast",
+  },
+  fat: {
+    color: "#B78680",
+    category: "social",
+    name: "Fat",
+  },
+  fcdin: {
+    color: "#3968AC",
+    category: "sport",
+    name: "Fcdin",
+  },
+  fclmnews: {
+    color: "#00795D",
+    category: "sport",
+    name: "FCLM News",
+  },
+  fdroid: {
+    color: "#1976D2",
+    category: "programming",
+    name: "F-Droid",
+  },
+  ffmbio: {
+    color: "#000000",
+    category: "social",
+    name: "ffm.bio",
+  },
+  ficwriter: {
+    color: "#009FE2",
+    category: "other",
+    name: "Ficwriter",
+  },
+  finanzfrage: {
+    color: "#1B9BC6",
+    category: "finance",
+    name: "Finanzfrage",
+  },
+  finforum: {
+    color: "#549654",
+    category: "social",
+    name: "Finforum",
+  },
+  finmessage: {
+    color: "#E91D62",
+    category: "finance",
+    name: "Finmessage",
+  },
+  firesofheaven: {
+    color: "#0C0C0C",
+    category: "programming",
+    name: "Fires of Heaven",
+  },
+  fireteam: {
+    color: "#88825C",
+    category: "gaming",
+    name: "Fire Team",
+  },
+  fiveieight: {
+    color: "#EF8700",
+    category: "other",
+    name: "5i8",
+  },
+  fivelevel: {
+    color: "#607D8B",
+    category: "other",
+    name: "5level",
+  },
+  flamp: {
+    color: "#2D6AE5",
+    category: "social",
+    name: "Flamp",
+  },
+  flarum: {
+    color: "#EC583E",
+    category: "programming",
+    name: "Flarum Community",
+  },
+  flipsnack: {
+    color: "#0361FC",
+    category: "other",
+    name: "Flipsnack",
+  },
+  flirtic: {
+    color: "#FD9E3E",
+    category: "dating",
+    name: "Flirtic",
+  },
+  fly: {
+    color: "#529AEA",
+    category: "programming",
+    name: "Fly",
+  },
+  focuspocus: {
+    color: "#607D8B",
+    category: "other",
+    name: "Focus Pocus",
+  },
+  fordating: {
+    color: "#E95856",
+    category: "social",
+    name: "Fordating",
+  },
+  forextrader: {
+    color: "#607D8B",
+    category: "finance",
+    name: "Forex Trader",
+  },
+  forum29: {
+    color: "#222B16",
+    category: "social",
+    name: "Forum29",
+  },
+  forumhistory: {
+    color: "#8D8E90",
+    category: "social",
+    name: "Forum History",
+  },
+  forumprawne: {
+    color: "#6C8369",
+    category: "social",
+    name: "Forumprawne",
+  },
+  forumsi: {
+    color: "#607D8B",
+    category: "social",
+    name: "Forumsi",
+  },
+  forumtauck: {
+    color: "#668F38",
+    category: "other",
+    name: "ForumTauck",
+  },
+  forumyuristov: {
+    color: "#782C2A",
+    category: "social",
+    name: "ForumYuristov",
+  },
+  fotka: {
+    color: "#00AFDB",
+    category: "social",
+    name: "Fotka",
+  },
+  fourfourzeroonezeroone: {
+    color: "#607D8B",
+    category: "other",
+    name: "440101",
+  },
+  fourninefoureight: {
+    color: "#FF0D0D",
+    category: "other",
+    name: "4948",
+  },
+  fourxfourtomsk: {
+    color: "#060606",
+    category: "other",
+    name: "4x4 Tomsk",
+  },
+  foxrecord: {
+    color: "#FE0102",
+    category: "social",
+    name: "Foxrecord",
+  },
+  freelancebay: {
+    color: "#DF8A3D",
+    category: "other",
+    name: "Freelancebay",
+  },
+  freelancedashua: {
+    color: "#9F831D",
+    category: "other",
+    name: "Free-lance.ua",
+  },
+  freeproxy: {
+    color: "#607D8B",
+    category: "social",
+    name: "Free Proxy",
+  },
+  fsmodsrus: {
+    color: "#545656",
+    category: "gaming",
+    name: "Fs Mods Rus",
+  },
+  fstkolos: {
+    color: "#607D8B",
+    category: "social",
+    name: "Fst Kolos",
+  },
+  funcom: {
+    color: "#000000",
+    category: "gaming",
+    name: "Funcom",
+  },
+  futajiststudio: {
+    color: "#607D8B",
+    category: "video_platform",
+    name: "Futajist Studio",
+  },
+  g2g: {
+    color: "#ED1C24",
+    category: "ecommerce",
+    name: "G2G",
+  },
+  gadjet: {
+    color: "#607D8B",
+    category: "programming",
+    name: "Gadjet",
+  },
+  galactictalk: {
+    color: "#6873E8",
+    category: "finance",
+    name: "GalacticTalk",
+  },
+  gamedevnet: {
+    color: "#1976A8",
+    category: "gaming",
+    name: "GameDev.net",
+  },
+  gamedevtv: {
+    color: "#4ABCA2",
+    category: "gaming",
+    name: "GameDev.tv",
+  },
+  gamemobi: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Game Mobi",
+  },
+  gamerevolution: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "GameRevolution",
+  },
+  gamesfrm: {
+    color: "#1FB5E9",
+    category: "social",
+    name: "Gamesfrm",
+  },
+  garagepunk: {
+    color: "#474747",
+    category: "other",
+    name: "GaragePunk",
+  },
+  gardeningforums: {
+    color: "#689E0E",
+    category: "social",
+    name: "Gardening Forums",
+  },
+  garminucoz: {
+    color: "#040404",
+    category: "other",
+    name: "Garmin.ucoz",
+  },
+  garudalinux: {
+    color: "#8839EF",
+    category: "programming",
+    name: "Garuda Linux Forum",
+  },
+  gebirgs: {
+    color: "#607D8B",
+    category: "social",
+    name: "Gebirgs",
+  },
+  gemsofwar: {
+    color: "#906F3A",
+    category: "gaming",
+    name: "Gems of War",
+  },
+  german242: {
+    color: "#000105",
+    category: "social",
+    name: "German242",
+  },
+  gesundheitsfrage: {
+    color: "#1B9BC6",
+    category: "social",
+    name: "Gesundheitsfrage",
+  },
+  ghostforum: {
+    color: "#15171A",
+    category: "programming",
+    name: "Ghost Forum",
+  },
+  gipsysteam: {
+    color: "#F6000C",
+    category: "gaming",
+    name: "GipsysTeam",
+  },
+  gitcode: {
+    color: "#DA203E",
+    category: "programming",
+    name: "GitCode",
+  },
+  gitlabforum: {
+    color: "#FC6D26",
+    category: "programming",
+    name: "GitLab Forum",
+  },
+  glbyh: {
+    color: "#3D64C7",
+    category: "social",
+    name: "Glbyh",
+  },
+  globulation2: {
+    color: "#154CE3",
+    category: "gaming",
+    name: "Globulation2",
+  },
+  glowforge: {
+    color: "#00A3B1",
+    category: "other",
+    name: "Glowforge Community",
+  },
+  goba6372: {
+    color: "#83887E",
+    category: "gaming",
+    name: "Goba6372",
+  },
+  goddamn: {
+    color: "#607D8B",
+    category: "other",
+    name: "Goddamn",
+  },
+  goha: {
+    color: "#7C7B7B",
+    category: "social",
+    name: "Goha",
+  },
+  golangbridge: {
+    color: "#878787",
+    category: "programming",
+    name: "Golang Bridge",
+  },
+  golasavkfree: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Golasa Vk Free",
+  },
+  golfmonthly: {
+    color: "#1A1A1A",
+    category: "sport",
+    name: "Golf Monthly",
+  },
+  gomeldogs: {
+    color: "#607D8B",
+    category: "social",
+    name: "Gomel Dogs",
+  },
+  gong: {
+    color: "#949494",
+    category: "social",
+    name: "Gong",
+  },
+  goodmusic: {
+    color: "#922B06",
+    category: "other",
+    name: "Good-music",
+  },
+  goroskop: {
+    color: "#0C1D85",
+    category: "social",
+    name: "Goroskop",
+  },
+  gorposmos: {
+    color: "#030481",
+    category: "other",
+    name: "Gorposmos",
+  },
+  gozenhost: {
+    color: "#223D8C",
+    category: "programming",
+    name: "GOZEN HOST Community",
+  },
+  gradleplugins: {
+    color: "#02303A",
+    category: "programming",
+    name: "Gradle Plugins",
+  },
+  gribnikikybani: {
+    color: "#82549B",
+    category: "social",
+    name: "Gribnikikybani",
+  },
+  grodnofish: {
+    color: "#607D8B",
+    category: "social",
+    name: "Grodnofish",
+  },
+  gsmstandart: {
+    color: "#607D8B",
+    category: "ecommerce",
+    name: "Gsm Standart",
+  },
+  gtafanzone: {
+    color: "#DD8C01",
+    category: "gaming",
+    name: "Gta Fan Zone",
+  },
+  gtgarazh: {
+    color: "#E20202",
+    category: "other",
+    name: "GT-GARAZH",
+  },
+  gulfcoastgunforum: {
+    color: "#F9630E",
+    category: "social",
+    name: "Gulfcoastgunforum",
+  },
+  gym5: {
+    color: "#FF9E07",
+    category: "other",
+    name: "Gym5",
+  },
+  hackapp: {
+    color: "#6B7752",
+    category: "hacking",
+    name: "HackApp",
+  },
+  hairmaniac: {
+    color: "#B9166A",
+    category: "other",
+    name: "Hairmaniac",
+  },
+  halol: {
+    color: "#010101",
+    category: "video_platform",
+    name: "Halol",
+  },
+  haogan: {
+    color: "#020555",
+    category: "other",
+    name: "Haogan",
+  },
+  hashicorp: {
+    color: "#000000",
+    category: "programming",
+    name: "HashiCorp Discuss",
+  },
+  haskell: {
+    color: "#5D4F85",
+    category: "programming",
+    name: "Haskell Community",
+  },
+  hiveos: {
+    color: "#FE7600",
+    category: "social",
+    name: "Hiveos",
+  },
+  hmkids: {
+    color: "#565656",
+    category: "gaming",
+    name: "HMKids",
+  },
+  hokage: {
+    color: "#828282",
+    category: "other",
+    name: "Hokage",
+  },
+  holodilshchik: {
+    color: "#607D8B",
+    category: "other",
+    name: "Holodilshchik",
+  },
+  homeassistant: {
+    color: "#18BCF2",
+    category: "programming",
+    name: "Home Assistant",
+  },
+  hostingkitchen: {
+    color: "#81E5D1",
+    category: "other",
+    name: "Hosting Kitchen",
+  },
+  houserepairtalk: {
+    color: "#CF6216",
+    category: "social",
+    name: "Houserepairtalk",
+  },
+  huel: {
+    color: "#0A0A0A",
+    category: "social",
+    name: "Huel Community",
+  },
+  huelna: {
+    color: "#0A0A0A",
+    category: "other",
+    name: "Huel Community NA",
+  },
 };
