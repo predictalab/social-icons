@@ -3734,6 +3734,114 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "zenodo":
       icon = <Icon icon="simple-icons:zenodo" color={socialNetworks.zenodo.color} />;
       break;
+    case "abcaccounting":
+      icon = <Icon icon="mdi:finance" color={socialNetworks.abcaccounting.color} />;
+      break;
+    case "actikom":
+      icon = <Icon icon="mdi:briefcase" color={socialNetworks.actikom.color} />;
+      break;
+    case "adminsoft":
+      icon = <Icon icon="mdi:laptop" color={socialNetworks.adminsoft.color} />;
+      break;
+    case "adultism":
+      icon = <LocalIcon file="adultism.webp" alt="Adultism" />;
+      break;
+    case "advancedcustomfields":
+      icon = <LocalIcon file="advancedcustomfields.webp" alt="Advanced Custom Fields" />;
+      break;
+    case "afsoc":
+      icon = <Icon icon="mdi:medal" color={socialNetworks.afsoc.color} />;
+      break;
+    case "aikidomariupol":
+      icon = <Icon icon="mdi:trophy" color={socialNetworks.aikidomariupol.color} />;
+      break;
+    case "airbit":
+      icon = <Icon icon="mdi:web" color={socialNetworks.airbit.color} />;
+      break;
+    case "airnfts":
+      icon = <LocalIcon file="airnfts.webp" alt="AirNFTs" />;
+      break;
+    case "alabay":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.alabay.color} />;
+      break;
+    case "alexgyver":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.alexgyver.color} />;
+      break;
+    case "aliensoup":
+      icon = <LocalIcon file="aliensoup.webp" alt="Aliensoup" />;
+      break;
+    case "alisaclub":
+      icon = <Icon icon="mdi:puzzle" color={socialNetworks.alisaclub.color} />;
+      break;
+    case "allgaz":
+      icon = <LocalIcon file="allgaz.webp" alt="Allgaz" />;
+      break;
+    case "allmods":
+      icon = <LocalIcon file="allmods.webp" alt="All-mods" />;
+      break;
+    case "allmus":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.allmus.color} />;
+      break;
+    case "alpanf":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.alpanf.color} />;
+      break;
+    case "analitikaforex":
+      icon = <Icon icon="mdi:finance" color={socialNetworks.analitikaforex.color} />;
+      break;
+    case "anarchopunk":
+      icon = <LocalIcon file="anarchopunk.webp" alt="Anarcho-punk" />;
+      break;
+    case "andrei":
+      icon = <Icon icon="mdi:bitcoin" color={socialNetworks.andrei.color} />;
+      break;
+    case "angelgothics":
+      icon = <LocalIcon file="angelgothics.webp" alt="Angelgothics" />;
+      break;
+    case "animebase":
+      icon = <LocalIcon file="animebase.webp" alt="Animebase" />;
+      break;
+    case "animego":
+      icon = <LocalIcon file="animego.webp" alt="AnimeGo" />;
+      break;
+    case "animelend":
+      icon = <Icon icon="mdi:animation" color={socialNetworks.animelend.color} />;
+      break;
+    case "animeuknews":
+      icon = <LocalIcon file="animeuknews.webp" alt="AnimeUKNews" />;
+      break;
+    case "animewebtr":
+      icon = <Icon icon="mdi:animation" color={socialNetworks.animewebtr.color} />;
+      break;
+    case "ankord":
+      icon = <Icon icon="mdi:briefcase" color={socialNetworks.ankord.color} />;
+      break;
+    case "anschula":
+      icon = <Icon icon="mdi:puzzle" color={socialNetworks.anschula.color} />;
+      break;
+    case "antalya":
+      icon = <Icon icon="mdi:tag" color={socialNetworks.antalya.color} />;
+      break;
+    case "antihack":
+      icon = <LocalIcon file="antihack.webp" alt="CyberHacking" />;
+      break;
+    case "antipunk":
+      icon = <Icon icon="mdi:music" color={socialNetworks.antipunk.color} />;
+      break;
+    case "antivirus":
+      icon = <Icon icon="mdi:laptop" color={socialNetworks.antivirus.color} />;
+      break;
+    case "antizombie":
+      icon = <Icon icon="mdi:movie-open" color={socialNetworks.antizombie.color} />;
+      break;
+    case "apelmon":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.apelmon.color} />;
+      break;
+    case "airbuds":
+      icon = <LocalIcon file="airbuds.webp" alt="Airbuds" />;
+      break;
+    case "appclan":
+      icon = <Icon icon="mdi:newspaper-variant" color={socialNetworks.appclan.color} />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;

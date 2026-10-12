@@ -25,3 +25,4 @@ yarn-debug.log*
 yarn-error.log*
 .icons-work/
 .playwright-mcp/
+__pycache__/

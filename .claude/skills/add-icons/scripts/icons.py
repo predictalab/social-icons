@@ -14,8 +14,14 @@ Sous-commandes :
   fetch   <clé>=<domaine>... [--url <clé>=<url>]
                                    télécharge le meilleur logo candidat par clé dans WORKDIR
   sheet                            planche-contact de WORKDIR/*.png → WORKDIR/contact.png
-  install <clé>...                 copie WORKDIR/<clé>.png en 150px optimisé dans les assets
+  install <clé>...                 copie WORKDIR/<clé>.png en WebP 96px dans les assets
                                    et affiche la couleur dominante
+  plan    <clé>... | --api | --maigret [--tag t] [--include-disabled] [-n N]
+                                   propose une source par clé (simple-icons, logo local, mdi
+                                   auto, alias) → WORKDIR/batch.tsv + planches batch-N.png
+  review                           régénère les planches depuis batch.tsv après retouches
+  apply                            écrit les 3 fichiers + assets depuis batch.tsv
+  keys                             précision de la clé prédite pour maigret vs l'API
 
 WORKDIR : --workdir <dir> (défaut : ./.icons-work, ignoré par git).
 Dépendances : python3, Pillow, curl.
@@ -31,7 +37,7 @@ import sys
 import urllib.parse
 from io import BytesIO
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageChops, ImageDraw, ImageStat
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
 ASSETS = os.path.join(ROOT, "src", "assets", "social-icons")
@@ -119,7 +125,12 @@ def osint_sites(workdir):
     sites = []
     for name, s in cached_json(workdir, "maigret-data.json", MAIGRET)["sites"].items():
         if s.get("urlMain"):
-            infos = {"rank": s.get("alexaRank") or 10**9, "tags": s.get("tags", []), "off": s.get("disabled")}
+            infos = {
+                "rank": s.get("alexaRank") or 10**9,
+                "tags": s.get("tags", []),
+                "off": s.get("disabled"),
+                "engine": s.get("engine"),
+            }
             sites.append(("maigret", name, site_domain(s["urlMain"]), s.get("url", ""), infos))
     for s in cached_json(workdir, "wmn-data.json", WMN)["sites"]:
         u = urllib.parse.urlparse(s["uri_check"])
@@ -313,9 +324,10 @@ def cmd_check(args):
 
 
 # --------------------------------------------------------------------------- fetch
-def candidates(domain):
+def candidates(domain, html=None):
     base = f"https://{domain}"
-    html = get(base).decode("utf-8", "ignore")
+    if html is None:
+        html = get(base).decode("utf-8", "ignore")
     urls = []
     for m in re.finditer(r"<link[^>]+>", html, re.I):
         tag = m.group(0)
@@ -349,6 +361,22 @@ def candidates(domain):
     return urls
 
 
+def effective_size(im):
+    """Real resolution of a logo: a 16 px favicon served as 256 px (Advanced Custom Fields)
+    survives a round trip through 16 px almost unchanged."""
+    im = im.convert("RGBA")
+    flat = Image.new("RGBA", im.size, "white")
+    flat.alpha_composite(im)
+    flat = flat.convert("RGB")
+    for s in (16, 24, 32, 48, 64, 96):
+        if s >= min(flat.size):
+            break
+        back = flat.resize((s, s), Image.LANCZOS).resize(flat.size, Image.LANCZOS)
+        if sum(ImageStat.Stat(ImageChops.difference(flat, back)).mean) / 3 < 2:
+            return s
+    return min(flat.size)
+
+
 def save_png(im, path, max_size=512):
     im = im.convert("RGBA")
     im.thumbnail((max_size, max_size), Image.LANCZOS)
@@ -374,7 +402,7 @@ def cmd_fetch(args):
         for kind, url in candidates(domain):
             im = as_image(get(url))
             if im and min(im.size) >= 16:
-                found.append((min(im.size), kind, url, im))
+                found.append((effective_size(im), kind, url, im))
         if not found:
             print(f"{key:18s} ÉCHEC   aucun candidat sur {domain}")
             continue
@@ -383,7 +411,8 @@ def cmd_fetch(args):
         size, kind, url, im = found[0]
         w, h = im.size
         flag = "  ⚠ bannière ?" if max(w, h) > 1.5 * min(w, h) else ""
-        flag += "  ⚠ < 96px" if min(w, h) < 96 else ""
+        flag += "  ⚠ agrandi" if size < min(w, h) else ""
+        flag += "  ⚠ < 96px" if size < 96 else ""
         print(f"{key:18s} {kind:8s} {(w, h)}  {url}{flag}")
         save_png(im, out)
 
@@ -411,24 +440,110 @@ def cmd_sheet(args):
 
 
 # --------------------------------------------------------------------------- install
+# Icons are displayed at 28-48 px: 96 px covers 2x screens, and WebP q90 is ~5x lighter than
+# the former 150 px PNGs (assets are inlined as base64 chunks in the published package).
+ASSET_SIZE = 96
+ASSET_EXT = ".webp"
+
+
+def save_asset(im, path):
+    im = im.convert("RGBA")
+    im.thumbnail((ASSET_SIZE, ASSET_SIZE), Image.LANCZOS)
+    im.save(path, "WEBP", quality=90, method=6)
+    return im.size
+
+
+def _hsv(c):
+    return colorsys.rgb_to_hsv(*(x / 255 for x in c))
+
+
+def _contrast_on_white(c):
+    def channel(v):
+        v /= 255
+        return v / 12.92 if v <= 0.03928 else ((v + 0.055) / 1.055) ** 2.4
+
+    lum = 0.2126 * channel(c[0]) + 0.7152 * channel(c[1]) + 0.0722 * channel(c[2])
+    return 1.05 / (lum + 0.05)
+
+
+def _readable(c):
+    """Darken until usable as an icon/text colour on white: greys need more contrast."""
+    need = 3 if _hsv(c)[1] < 0.15 else 1.4
+    while _contrast_on_white(c) < need:
+        c = [int(x * 0.94) for x in c]
+    return "#%02X%02X%02X" % tuple(c)
+
+
+def _plate(px, size):
+    """Opaque pixels reachable from the shape's outline through small colour steps: the
+    background plate of a square or rounded logo, gradients included."""
+    opaque = lambda x, y: 0 <= x < size and 0 <= y < size and px[x, y][3] >= 128
+    steps = ((1, 0), (-1, 0), (0, 1), (0, -1))
+    seen = {
+        (x, y)
+        for y in range(size)
+        for x in range(size)
+        if opaque(x, y) and not all(opaque(x + dx, y + dy) for dx, dy in steps)
+    }
+    queue = list(seen)
+    while queue:
+        x, y = queue.pop()
+        for dx, dy in steps:
+            n = (x + dx, y + dy)
+            if n not in seen and opaque(*n) and sum(abs(a - b) for a, b in zip(px[x, y][:3], px[n][:3])) < 30:
+                seen.add(n)
+                queue.append(n)
+    return seen
+
+
 def dominant_color(im):
-    """Couleur dominante hors pixels transparents et quasi-blancs (fond)."""
-    im = im.convert("RGBA").resize((64, 64))
-    raw = im.tobytes()
-    buckets = {}
-    for r, g, b, a in (raw[i : i + 4] for i in range(0, len(raw), 4)):
-        if a < 128 or (r > 235 and g > 235 and b > 235):
-            continue
-        h, s, v = colorsys.rgb_to_hsv(r / 255, g / 255, b / 255)
-        weight = 3 if s > 0.25 and 0.15 < v < 0.95 else 1  # favorise les couleurs saturées
-        k = (r // 24, g // 24, b // 24)
-        c, acc = buckets.get(k, (0, [0, 0, 0, 0]))
-        buckets[k] = (c + weight, [acc[0] + r, acc[1] + g, acc[2] + b, acc[3] + 1])
-    if not buckets:
+    """Brand colour of a logo, never its background: a light or pastel plate (white, grey,
+    gradient) is ignored, a strong plate (Codédex yellow, black) wins."""
+    size = 64
+    px = im.convert("RGBA").resize((size, size)).load()
+    opaque = [(x, y) for y in range(size) for x in range(size) if px[x, y][3] >= 128]
+    if not opaque:
         return "#000000"
-    _, acc = buckets[max(buckets, key=lambda k: buckets[k][0])]
-    n = acc[3]
-    return "#%02X%02X%02X" % (acc[0] // n, acc[1] // n, acc[2] // n)
+    mean = lambda pts: [sum(px[p][i] for p in pts) // len(pts) for i in range(3)]
+    bucket = lambda p: (px[p][0] // 24, px[p][1] // 24, px[p][2] // 24)
+    plate = _plate(px, size)
+    pixels = opaque
+    if len(plate) >= 0.35 * len(opaque):
+        h, s, v = _hsv(mean(plate))
+        if not (v > 0.75 and s < 0.6):
+            return _readable(mean(plate))  # brand-coloured plate
+        # Light plate: drop it, its colour islands (inside letters) and other pastel pixels
+        plate_buckets = {bucket(p) for p in plate}
+        pixels = [
+            p
+            for p in opaque
+            if p not in plate
+            and bucket(p) not in plate_buckets
+            and not (_hsv(px[p][:3])[1] < 0.6 and _hsv(px[p][:3])[2] > 0.8)
+        ]
+    buckets = {}
+    for p in pixels:
+        r, g, b, _ = px[p]
+        h, s, v = _hsv((r, g, b))
+        if v > 0.62 and s < 0.12:
+            continue  # white / light grey
+        weight = 3 if s > 0.25 and 0.15 < v < 0.95 else 1  # favour saturated colours
+        c, acc = buckets.get(bucket(p), (0, [0, 0, 0, 0]))
+        buckets[bucket(p)] = (c + weight, [acc[0] + r, acc[1] + g, acc[2] + b, acc[3] + 1])
+    if not buckets:
+        return _readable(mean(plate) if plate else [0, 0, 0])
+    avg = lambda k: [buckets[k][1][i] // buckets[k][1][3] for i in range(3)]
+    total = sum(acc[3] for _, acc in buckets.values())
+    # A concentrated vivid accent (orange box, red mark) beats a larger black outline,
+    # but scattered anti-aliasing does not
+    vivid = [k for k in buckets if _hsv(avg(k))[1] > 0.35 and _hsv(avg(k))[2] > 0.25]
+    pool = vivid if vivid and max(buckets[k][1][3] for k in vivid) >= 0.08 * total else list(buckets)
+    return _readable(avg(max(pool, key=lambda k: buckets[k][0])))
+
+
+def gen_asset_loaders():
+    # LocalIcon's `file` prop is typed from this generated map: keep it in sync with the assets
+    subprocess.run(["node", "scripts/gen-asset-loaders.mjs"], cwd=ROOT, check=True)
 
 
 def cmd_install(args):
@@ -439,11 +554,9 @@ def cmd_install(args):
             continue
         im = Image.open(src)
         color = dominant_color(im)
-        dest = os.path.join(ASSETS, key + ".png")
-        size = save_png(im, dest, max_size=150)
-        print(f"{key:18s} {color}  {size}  -> src/assets/social-icons/{key}.png")
-    # LocalIcon's `file` prop is typed from this generated map: keep it in sync with the assets
-    subprocess.run(["node", "scripts/gen-asset-loaders.mjs"], cwd=ROOT, check=True)
+        size = save_asset(im, os.path.join(ASSETS, key + ASSET_EXT))
+        print(f"{key:18s} {color}  {size}  -> src/assets/social-icons/{key}{ASSET_EXT}")
+    gen_asset_loaders()
 
 
 # --------------------------------------------------------------------------- main
@@ -469,9 +582,28 @@ def main():
     sub.add_parser("sheet")
     s = sub.add_parser("install")
     s.add_argument("keys", nargs="+")
+    s = sub.add_parser("plan")
+    s.add_argument("keys", nargs="*")
+    s.add_argument("--api", action="store_true", help="réseaux de l'API sans icône")
+    s.add_argument("--maigret", action="store_true", help="sites maigret sans icône, par popularité")
+    s.add_argument("--tag", help="avec --maigret : filtrer sur un tag maigret")
+    s.add_argument("--include-disabled", action="store_true", help="avec --maigret : sites désactivés aussi")
+    s.add_argument("-n", type=int, help="limiter au N premiers")
+    s.add_argument("--manifest", help="chemin du manifeste (défaut : WORKDIR/batch.tsv)")
+    s = sub.add_parser("review")
+    s.add_argument("--manifest", help="chemin du manifeste (défaut : WORKDIR/batch.tsv)")
+    s = sub.add_parser("apply")
+    s.add_argument("--manifest", help="chemin du manifeste (défaut : WORKDIR/batch.tsv)")
+    s = sub.add_parser("keys")
+    s.add_argument("-n", type=int, default=30, help="nombre d'écarts affichés")
     args = p.parse_args()
     os.makedirs(args.workdir, exist_ok=True)
-    {"missing": cmd_missing, "inputs": cmd_inputs, "lookup": cmd_lookup, "check": cmd_check, "fetch": cmd_fetch, "sheet": cmd_sheet, "install": cmd_install}[args.cmd](args)
+    commands = {"missing": cmd_missing, "inputs": cmd_inputs, "lookup": cmd_lookup, "check": cmd_check, "fetch": cmd_fetch, "sheet": cmd_sheet, "install": cmd_install}
+    if args.cmd in commands:
+        return commands[args.cmd](args)
+    import batch  # batch pipeline (plan / review / apply / keys)
+
+    {"plan": batch.cmd_plan, "review": batch.cmd_sheet_batch, "apply": batch.cmd_apply, "keys": batch.cmd_keys}[args.cmd](args)
 
 
 if __name__ == "__main__":
