@@ -34,6 +34,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 import urllib.parse
 from io import BytesIO
 
@@ -76,13 +77,21 @@ def as_image(data):
         return None
 
 
+CACHE_DAYS = 7  # maigret gains hundreds of sites a month: a stale copy misses new API keys
+
+
 def cached_json(workdir, name, url):
     path = os.path.join(workdir, name)
-    if not os.path.exists(path):
+    stale = not os.path.exists(path) or time.time() - os.path.getmtime(path) > CACHE_DAYS * 86400
+    if stale:
         data = get(url, timeout=60)
-        if not data:
-            sys.exit(f"impossible de télécharger {url}")
-        open(path, "wb").write(data)
+        try:
+            json.loads(data)
+            open(path, "wb").write(data)
+        except ValueError:
+            if not os.path.exists(path):
+                sys.exit(f"impossible de télécharger {url}")
+            print(f"{url} injoignable, cache {name} conservé", file=sys.stderr)
     return json.load(open(path))
 
 
@@ -124,14 +133,16 @@ def osint_sites(workdir):
     """[(source, nom, domaine, url de profil, infos)] depuis maigret, WhatsMyName et Sherlock."""
     sites = []
     for name, s in cached_json(workdir, "maigret-data.json", MAIGRET)["sites"].items():
-        if s.get("urlMain"):
+        # 388 sites have no urlMain (CaringBridge, BYOND): fall back to the profile URL's host
+        main = s.get("urlMain") or s.get("url", "")
+        if main:
             infos = {
                 "rank": s.get("alexaRank") or 10**9,
                 "tags": s.get("tags", []),
                 "off": s.get("disabled"),
                 "engine": s.get("engine"),
             }
-            sites.append(("maigret", name, site_domain(s["urlMain"]), s.get("url", ""), infos))
+            sites.append(("maigret", name, site_domain(main), s.get("url", ""), infos))
     for s in cached_json(workdir, "wmn-data.json", WMN)["sites"]:
         u = urllib.parse.urlparse(s["uri_check"])
         sites.append(("wmn", s["name"], u.netloc, s.get("uri_pretty") or s["uri_check"], {"tags": [s.get("cat")]}))
