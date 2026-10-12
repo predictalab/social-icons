@@ -8607,7 +8607,7 @@ export const socialNetworks: socialNetworkType = {
     name: "SE.Guru",
   },
   selly: {
-    color: "#226CF3",
+    color: "#2576FF",
     category: "finance",
     name: "Selly",
   },
