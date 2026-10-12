@@ -251,7 +251,6 @@ export const assetLoaders = {
   "ethereummagicians.png": () => import("../assets/social-icons/ethereummagicians.png"),
   "ethresear.png": () => import("../assets/social-icons/ethresear.png"),
   "etxt.png": () => import("../assets/social-icons/etxt.png"),
-  "excelworld.webp": () => import("../assets/social-icons/excelworld.webp"),
   "exkavator.webp": () => import("../assets/social-icons/exkavator.webp"),
   "exoduspay.webp": () => import("../assets/social-icons/exoduspay.webp"),
   "exophase.png": () => import("../assets/social-icons/exophase.png"),

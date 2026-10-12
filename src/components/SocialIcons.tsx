@@ -4410,7 +4410,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:book-open-page-variant" color={socialNetworks.evendim.color} />;
       break;
     case "excelworld":
-      icon = <LocalIcon file="excelworld.webp" alt="Excelworld" />;
+      icon = <Icon icon="mdi:forum" color={socialNetworks.excelworld.color} />;
       break;
     case "exkavator":
       icon = <LocalIcon file="exkavator.webp" alt="Exkavator" />;
