@@ -8282,7 +8282,7 @@ export const socialNetworks: socialNetworkType = {
     name: "Psy Dv",
   },
   pubgopgg: {
-    color: "#664B1A",
+    color: "#5282E8",
     category: "gaming",
     name: "OP.GG PUBG",
   },
@@ -9170,5 +9170,535 @@ export const socialNetworks: socialNetworkType = {
     color: "#3A527C",
     category: "other",
     name: "2Fast4U",
+  },
+  twpro: {
+    color: "#FF9955",
+    category: "social",
+    name: "Twpro",
+  },
+  uaksu: {
+    color: "#A36940",
+    category: "social",
+    name: "Uaksu",
+  },
+  uaodessa: {
+    color: "#A8A46B",
+    category: "social",
+    name: "Uaodessa",
+  },
+  ucozforum: {
+    color: "#398FD8",
+    category: "social",
+    name: "uCoz Forum",
+  },
+  ugri: {
+    color: "#BFCCE8",
+    category: "social",
+    name: "Ugri",
+  },
+  uhiv: {
+    color: "#FF6601",
+    category: "other",
+    name: "U-HIV",
+  },
+  uipath: {
+    color: "#FA4616",
+    category: "programming",
+    name: "UiPath Community Forum",
+  },
+  ukbusinessforums: {
+    color: "#FF5F39",
+    category: "social",
+    name: "UK Business Forums",
+  },
+  ultrasdiary: {
+    color: "#607D8B",
+    category: "social",
+    name: "Ultrasdiary",
+  },
+  umhoops: {
+    color: "#EDCF01",
+    category: "sport",
+    name: "UMHOOPS",
+  },
+  uncua: {
+    color: "#AA7420",
+    category: "social",
+    name: "UNC.UA",
+  },
+  uncyclopedia: {
+    color: "#9F8566",
+    category: "other",
+    name: "Uncyclopedia",
+  },
+  upbyte: {
+    color: "#003298",
+    category: "other",
+    name: "Upbyte",
+  },
+  uralsloboda: {
+    color: "#037F03",
+    category: "other",
+    name: "Ural Sloboda",
+  },
+  urmaiurmaevo: {
+    color: "#607D8B",
+    category: "social",
+    name: "Urmai Urmaevo",
+  },
+  usalife: {
+    color: "#4075C9",
+    category: "social",
+    name: "USA Life",
+  },
+  usersoft: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Usersoft",
+  },
+  usman48: {
+    color: "#EC9234",
+    category: "social",
+    name: "Usman48",
+  },
+  uwr1: {
+    color: "#607D8B",
+    category: "sport",
+    name: "Uwr1",
+  },
+  v3de: {
+    color: "#4C5054",
+    category: "programming",
+    name: "V3de",
+  },
+  valorantopgg: {
+    color: "#5282E8",
+    category: "gaming",
+    name: "OP.GG Valorant",
+  },
+  vdvbelarus: {
+    color: "#607D8B",
+    category: "other",
+    name: "Vdv Belarus",
+  },
+  vegalab: {
+    color: "#6B6B6B",
+    category: "social",
+    name: "VegaLab",
+  },
+  velozone: {
+    color: "#607D8B",
+    category: "other",
+    name: "Velozone",
+  },
+  vgorah: {
+    color: "#607D8B",
+    category: "other",
+    name: "Vgorah",
+  },
+  videhelpcomp: {
+    color: "#2E2E2B",
+    category: "other",
+    name: "Videhelp Comp",
+  },
+  videoforums: {
+    color: "#1A33A2",
+    category: "video_platform",
+    name: "Videoforum",
+  },
+  videomuzon: {
+    color: "#607D8B",
+    category: "other",
+    name: "Videomuzon",
+  },
+  vilo4nik: {
+    color: "#43C5FC",
+    category: "social",
+    name: "Vilo4nik",
+  },
+  vipcccp: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Vip Cccp",
+  },
+  vipicq: {
+    color: "#607D8B",
+    category: "messaging_app",
+    name: "VIP ICQ",
+  },
+  virtualauto: {
+    color: "#92080B",
+    category: "other",
+    name: "Virtual Auto",
+  },
+  virtualireland: {
+    color: "#8D8E90",
+    category: "social",
+    name: "VirtualIreland",
+  },
+  visualparadigm: {
+    color: "#CC3333",
+    category: "other",
+    name: "Visual Paradigm Forums",
+  },
+  vitalfootball: {
+    color: "#607D8B",
+    category: "social",
+    name: "VitalFootball",
+  },
+  viupetra: {
+    color: "#607D8B",
+    category: "other",
+    name: "Viupetra",
+  },
+  voice123: {
+    color: "#2C95DC",
+    category: "other",
+    name: "Voice123",
+  },
+  volkodavcaoko: {
+    color: "#607D8B",
+    category: "social",
+    name: "Volkodavcaoko",
+  },
+  volkswagenlviv: {
+    color: "#1E3A4C",
+    category: "other",
+    name: "Volkswagen Club Lviv",
+  },
+  voxelshop: {
+    color: "#607D8B",
+    category: "other",
+    name: "VoxelShop",
+  },
+  vracing: {
+    color: "#FD0404",
+    category: "other",
+    name: "Vrangel Racing Club",
+  },
+  vse1: {
+    color: "#607D8B",
+    category: "finance",
+    name: "Vse1",
+  },
+  vsemobile: {
+    color: "#607D8B",
+    category: "social",
+    name: "Vsemobile",
+  },
+  vwbus: {
+    color: "#928F8E",
+    category: "other",
+    name: "Vw Bus",
+  },
+  w2lg: {
+    color: "#607D8B",
+    category: "social",
+    name: "W2l G",
+  },
+  wago: {
+    color: "#6EC900",
+    category: "programming",
+    name: "WAGO Automation Community",
+  },
+  wakeup: {
+    color: "#D85842",
+    category: "social",
+    name: "WakeUp",
+  },
+  wallpost: {
+    color: "#A8D7F6",
+    category: "social",
+    name: "Wallpost",
+  },
+  warcraft3ft: {
+    color: "#3A3540",
+    category: "gaming",
+    name: "Warcraft3ft",
+  },
+  warface: {
+    color: "#000000",
+    category: "social",
+    name: "Warface",
+  },
+  warframeucoz: {
+    color: "#021826",
+    category: "gaming",
+    name: "Warframe 3dn",
+  },
+  warhammergames: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Warhammergames",
+  },
+  watchmemore: {
+    color: "#DE5E56",
+    category: "streaming",
+    name: "WatchMeMore",
+  },
+  weaponsas: {
+    color: "#82A7BC",
+    category: "other",
+    name: "Weaponsas",
+  },
+  webdom: {
+    color: "#4574C9",
+    category: "gaming",
+    name: "Webdom",
+  },
+  weblate: {
+    color: "#2ECCAA",
+    category: "programming",
+    name: "Weblate",
+  },
+  webmedia: {
+    color: "#607D8B",
+    category: "other",
+    name: "WEBMEDIA",
+  },
+  webru: {
+    color: "#607D8B",
+    category: "social",
+    name: "Web.ru",
+  },
+  websecurity: {
+    color: "#016001",
+    category: "hacking",
+    name: "WebXakep",
+  },
+  weddingimage: {
+    color: "#8D8D8E",
+    category: "other",
+    name: "Wedding Image",
+  },
+  weld: {
+    color: "#915904",
+    category: "social",
+    name: "Weld",
+  },
+  whonix: {
+    color: "#3F8EB7",
+    category: "programming",
+    name: "Whonix Forum",
+  },
+  wikifur: {
+    color: "#4E4EA0",
+    category: "other",
+    name: "Wikifur",
+  },
+  wimkin: {
+    color: "#000000",
+    category: "social",
+    name: "WIMKIN",
+  },
+  wmmailwmmail: {
+    color: "#FFAC42",
+    category: "finance",
+    name: "Wmmail Wmmail",
+  },
+  wmmaximum: {
+    color: "#32A437",
+    category: "finance",
+    name: "Wm Maximum",
+  },
+  wmucoz: {
+    color: "#607D8B",
+    category: "ecommerce",
+    name: "WM uCoz",
+  },
+  wolfram: {
+    color: "#DD1100",
+    category: "other",
+    name: "Wolfram Community",
+  },
+  wordnik: {
+    color: "#F37221",
+    category: "other",
+    name: "Wordnik",
+  },
+  wordreference: {
+    color: "#7D4D72",
+    category: "social",
+    name: "WordReference Forums",
+  },
+  wowcircle: {
+    color: "#607D8B",
+    category: "social",
+    name: "WOW Circle",
+  },
+  wrestlezone: {
+    color: "#BF0003",
+    category: "sport",
+    name: "Wrestlezone",
+  },
+  wwork: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Wwork",
+  },
+  wyze: {
+    color: "#1DF0BB",
+    category: "programming",
+    name: "Wyze Forum",
+  },
+  xakerminus: {
+    color: "#607D8B",
+    category: "hacking",
+    name: "Xakerminus",
+  },
+  xanga: {
+    color: "#F28521",
+    category: "other",
+    name: "Xanga",
+  },
+  xh2o: {
+    color: "#58707E",
+    category: "social",
+    name: "X-H2O",
+  },
+  xitlar: {
+    color: "#607D8B",
+    category: "other",
+    name: "Xitlar",
+  },
+  xorazmviloyati: {
+    color: "#607D8B",
+    category: "other",
+    name: "Xorazm Viloyati",
+  },
+  xristosvouz: {
+    color: "#607D8B",
+    category: "social",
+    name: "Xristos",
+  },
+  xyuivetmailcpy: {
+    color: "#6BEE29",
+    category: "social",
+    name: "Xyuivet Mailcpy",
+  },
+  yandexmarket: {
+    color: "#FE9812",
+    category: "ecommerce",
+    name: "Yandex Market",
+  },
+  yauchitel: {
+    color: "#B10C0C",
+    category: "other",
+    name: "Ya-uchitel",
+  },
+  yras: {
+    color: "#607D8B",
+    category: "social",
+    name: "Yras",
+  },
+  yuque: {
+    color: "#31CC5E",
+    category: "programming",
+    name: "Yuque",
+  },
+  zabselo: {
+    color: "#607D8B",
+    category: "social",
+    name: "Zabselo",
+  },
+  zapisatsyakvrachu24: {
+    color: "#2A2A26",
+    category: "other",
+    name: "Zapisatsya k vrachu 24",
+  },
+  zareshetkoi: {
+    color: "#607D8B",
+    category: "social",
+    name: "Zareshetkoi",
+  },
+  zbiornik: {
+    color: "#3A5898",
+    category: "social",
+    name: "Zbiornik",
+  },
+  zdorov10: {
+    color: "#C70708",
+    category: "other",
+    name: "Zdorov10",
+  },
+  zebest: {
+    color: "#B76B58",
+    category: "other",
+    name: "Zebest",
+  },
+  zenitbol: {
+    color: "#0B97DE",
+    category: "sport",
+    name: "Zenitbol",
+  },
+  zennenhund: {
+    color: "#8C8483",
+    category: "social",
+    name: "BernClub",
+  },
+  zerkalastekla: {
+    color: "#9B683B",
+    category: "ecommerce",
+    name: "Zerkalastekla",
+  },
+  zerok: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "0k",
+  },
+  zhyk: {
+    color: "#FE831A",
+    category: "social",
+    name: "Zhyk",
+  },
+  ziducoz: {
+    color: "#370F1E",
+    category: "social",
+    name: "Zid",
+  },
+  zmarsa: {
+    color: "#858E9C",
+    category: "social",
+    name: "Zmarsa",
+  },
+  zmey: {
+    color: "#8A919E",
+    category: "sport",
+    name: "Zmey",
+  },
+  znanylekarz: {
+    color: "#00A085",
+    category: "other",
+    name: "ZnanyLekarz",
+  },
+  zonegame: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Zone Game",
+  },
+  zoomdevforum: {
+    color: "#0B5CFF",
+    category: "programming",
+    name: "Zoom Developer Forum",
+  },
+  zorin: {
+    color: "#15A6F0",
+    category: "other",
+    name: "Zorin Forum",
+  },
+  zornet: {
+    color: "#03518B",
+    category: "programming",
+    name: "Zornet",
+  },
+  zpmama: {
+    color: "#607D8B",
+    category: "social",
+    name: "Zp Mama",
+  },
+  zvukinadezdy: {
+    color: "#B99E49",
+    category: "other",
+    name: "Zvukinadezdy",
   },
 };
