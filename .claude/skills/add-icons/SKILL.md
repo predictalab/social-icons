@@ -88,9 +88,13 @@ installe les assets en WebP 96 px, ajoute les blocs triés aux 3 fichiers et ré
 `assetLoaders.ts`, puis imprime la commande `inputs` pour la PR. Enchaîner sur l'étape 6.
 
 `icons.py keys` mesure la règle de clé (nom maigret normalisé, chiffres de tête en lettres,
-ou premier label quand le nom est un hôte : `abc-accounting.ucoz.net` → `abcaccounting`)
-contre l'API : 85 % exacts en 2026-10, les écarts étant surtout des variantes rattachées au
-réseau parent. Pour `plan --maigret`, les clés sont donc prédites : à confirmer avec l'équipe
+ou premier label quand le nom est un hôte : `abc-accounting.ucoz.net` → `abcaccounting`,
+en sautant les préfixes de forum : `forum.cockroachlabs.com` → `cockroachlabs`) contre l'API :
+la première clé candidate est exacte pour ~85 % des sites en 2026-10, les écarts étant surtout
+des variantes rattachées au réseau parent. Des candidats de repli couvrent les autres
+graphies vues dans l'API (`avto.dzerghinsk.org` → `avtodzerghinsk`). Certaines clés restent
+choisies à la main par l'équipe API (`audacity` pour audacityteam.org, `bitcoinwiki` pour
+bitcoin.it) : elles sortent en `?` et se résolvent via sources-api (étape 1 bis). Pour `plan --maigret`, les clés sont donc prédites : à confirmer avec l'équipe
 API avant un import massif.
 
 ## 1. Ne traiter que ce qui manque
@@ -141,7 +145,10 @@ marque existante (maps.google.com) : icône propre ou alias, à décider. La « 
 le nom maigret normalisé : la vraie clé est celle des applications consommatrices, à confirmer.
 
 Les bases sont mises en cache dans `.icons-work/` (`maigret-data.json`, `wmn-data.json`,
-`sherlock-data.json`) : les supprimer pour rafraîchir.
+`sherlock-data.json`) et rafraîchies automatiquement après 7 jours : maigret gagne des
+centaines de sites par mois (6 206 fin septembre, 8 144 mi-octobre), et un cache périmé fait
+passer de nouveaux réseaux de l'API pour inconnus. Les supprimer pour forcer le
+rafraîchissement.
 
 ## 2. simple-icons d'abord (Iconify)
 

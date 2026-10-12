@@ -5421,4 +5421,754 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "AppClan",
   },
+  ahera: {
+    color: "#DFDF00",
+    category: "other",
+    name: "Ahera",
+  },
+  alconar: {
+    color: "#5DC0EC",
+    category: "social",
+    name: "Alconar",
+  },
+  algowiki: {
+    color: "#000000",
+    category: "other",
+    name: "Algowiki Project",
+  },
+  alimero: {
+    color: "#CC1D8B",
+    category: "other",
+    name: "Alimero",
+  },
+  androidgameworld: {
+    color: "#C8E653",
+    category: "gaming",
+    name: "Android Gameworld",
+  },
+  antiscam: {
+    color: "#384833",
+    category: "other",
+    name: "Antiscam",
+  },
+  appian: {
+    color: "#2322F0",
+    category: "programming",
+    name: "Appian Community",
+  },
+  aptoide: {
+    color: "#EA752C",
+    category: "ecommerce",
+    name: "Aptoide",
+  },
+  arduino: {
+    color: "#00878F",
+    category: "programming",
+    name: "Arduino Forum",
+  },
+  arekamrbb: {
+    color: "#96EC54",
+    category: "social",
+    name: "AreKamrbb",
+  },
+  arhrock: {
+    color: "#080605",
+    category: "other",
+    name: "Arhrock",
+  },
+  aribut: {
+    color: "#607D8B",
+    category: "other",
+    name: "Aribut",
+  },
+  armavir: {
+    color: "#059EDF",
+    category: "social",
+    name: "Armavir Forum",
+  },
+  armyboots: {
+    color: "#607D8B",
+    category: "social",
+    name: "Armyboots",
+  },
+  armyrus: {
+    color: "#DD0303",
+    category: "other",
+    name: "Army Rus",
+  },
+  artcolor: {
+    color: "#2C496F",
+    category: "other",
+    name: "Art Color",
+  },
+  artfol: {
+    color: "#F3858F",
+    category: "other",
+    name: "Artfol",
+  },
+  artinvestment: {
+    color: "#7A0719",
+    category: "social",
+    name: "Artinvestment",
+  },
+  artnata: {
+    color: "#607D8B",
+    category: "other",
+    name: "Art Nata",
+  },
+  artpersona: {
+    color: "#DF3B40",
+    category: "other",
+    name: "Artpersona",
+  },
+  asecurity: {
+    color: "#909090",
+    category: "other",
+    name: "Asecurity",
+  },
+  askfedora: {
+    color: "#4287BF",
+    category: "programming",
+    name: "Ask Fedora",
+  },
+  asterisk: {
+    color: "#F68F1E",
+    category: "programming",
+    name: "Asterisk Community",
+  },
+  astrotalks: {
+    color: "#051656",
+    category: "other",
+    name: "Astro-talks",
+  },
+  atmclub: {
+    color: "#6A4343",
+    category: "gaming",
+    name: "Atm Club",
+  },
+  audacity: {
+    color: "#0000CC",
+    category: "other",
+    name: "Audacity Forum",
+  },
+  aussiehomebrewer: {
+    color: "#999289",
+    category: "social",
+    name: "Aussiehomebrewer",
+  },
+  auto63: {
+    color: "#CD9A67",
+    category: "other",
+    name: "Auto63",
+  },
+  autocb: {
+    color: "#838380",
+    category: "social",
+    name: "Autocb",
+  },
+  autofrage: {
+    color: "#1B9BC6",
+    category: "other",
+    name: "Autofrage",
+  },
+  av: {
+    color: "#607D8B",
+    category: "programming",
+    name: "Av",
+  },
+  aviabazameria: {
+    color: "#086CE6",
+    category: "social",
+    name: "Aviabaza Meria",
+  },
+  aviaforum: {
+    color: "#030303",
+    category: "social",
+    name: "Aviaforum",
+  },
+  aviahistory: {
+    color: "#050505",
+    category: "other",
+    name: "Aviahistory",
+  },
+  avtodzerghinsk: {
+    color: "#D95442",
+    category: "other",
+    name: "Avto Dzerghinsk",
+  },
+  awsskillsprofile: {
+    color: "#FF9900",
+    category: "programming",
+    name: "AWS Skills Profile",
+  },
+  azhack: {
+    color: "#607D8B",
+    category: "hacking",
+    name: "Xakerler meskeni",
+  },
+  baggi: {
+    color: "#607D8B",
+    category: "ecommerce",
+    name: "Baggi",
+  },
+  balena: {
+    color: "#B6B954",
+    category: "other",
+    name: "balenaForums",
+  },
+  balletfriends: {
+    color: "#020202",
+    category: "social",
+    name: "Balletfriends",
+  },
+  bambulab: {
+    color: "#00AE42",
+    category: "other",
+    name: "Bambu Lab Forum",
+  },
+  bananapi: {
+    color: "#194CCD",
+    category: "other",
+    name: "Banana Pi Forum",
+  },
+  bangumi: {
+    color: "#FC57B0",
+    category: "other",
+    name: "Bangumi",
+  },
+  baseballreference: {
+    color: "#CF2137",
+    category: "sport",
+    name: "Baseball Reference",
+  },
+  bashteplovent: {
+    color: "#52BDF3",
+    category: "other",
+    name: "Bashteplovent",
+  },
+  bazarcz: {
+    color: "#E1554A",
+    category: "ecommerce",
+    name: "Bazar",
+  },
+  bbclub: {
+    color: "#C77E6F",
+    category: "other",
+    name: "Bbclub",
+  },
+  bbpress: {
+    color: "#464442",
+    category: "other",
+    name: "bbPress",
+  },
+  bcetyt: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Bce Tyt",
+  },
+  beatl: {
+    color: "#607D8B",
+    category: "other",
+    name: "Beatl",
+  },
+  belmos: {
+    color: "#B3BAD7",
+    category: "other",
+    name: "Belmos",
+  },
+  berea: {
+    color: "#57AB57",
+    category: "other",
+    name: "Berea",
+  },
+  bestflowers: {
+    color: "#006195",
+    category: "social",
+    name: "BestFlowers",
+  },
+  bestweapon: {
+    color: "#5E7C4F",
+    category: "other",
+    name: "Bestweapon",
+  },
+  betawiki: {
+    color: "#6B5259",
+    category: "other",
+    name: "Betawiki",
+  },
+  betsportslive: {
+    color: "#840000",
+    category: "sport",
+    name: "BetSportsLive",
+  },
+  bezuzyteczna: {
+    color: "#F65543",
+    category: "other",
+    name: "Bezuzyteczna",
+  },
+  bgforum: {
+    color: "#3875B4",
+    category: "social",
+    name: "Bgforum",
+  },
+  biggerpockets: {
+    color: "#054EF3",
+    category: "finance",
+    name: "BiggerPockets",
+  },
+  binhot: {
+    color: "#6B9FC9",
+    category: "other",
+    name: "Binhot",
+  },
+  bitcoinwiki: {
+    color: "#F7931A",
+    category: "other",
+    name: "Bitcoin Wiki",
+  },
+  bitwarden: {
+    color: "#175DDC",
+    category: "programming",
+    name: "Bitwarden Forum",
+  },
+  blogipl: {
+    color: "#26669D",
+    category: "social",
+    name: "Blogi",
+  },
+  bluemoonmcfc: {
+    color: "#5179AA",
+    category: "sport",
+    name: "Bluemoon MCFC",
+  },
+  bluesystems: {
+    color: "#4F9DCB",
+    category: "programming",
+    name: "Blue Systems Support",
+  },
+  bluray: {
+    color: "#5CB9F3",
+    category: "video_platform",
+    name: "Blu-ray",
+  },
+  bonsaimirai: {
+    color: "#7D8F93",
+    category: "other",
+    name: "Bonsai Mirai",
+  },
+  bookandreader: {
+    color: "#37848A",
+    category: "other",
+    name: "Bookandreader",
+  },
+  bookmate: {
+    color: "#5B1619",
+    category: "other",
+    name: "Bookmate",
+  },
+  brave: {
+    color: "#FB542B",
+    category: "other",
+    name: "Brave Community",
+  },
+  brickimedia: {
+    color: "#72030B",
+    category: "other",
+    name: "Brickimedia",
+  },
+  bugcrowd: {
+    color: "#F26822",
+    category: "programming",
+    name: "Bugcrowd",
+  },
+  bulbapp: {
+    color: "#4AAFDC",
+    category: "other",
+    name: "Bulbapp",
+  },
+  buyforex: {
+    color: "#4C7FCC",
+    category: "finance",
+    name: "BuyForex",
+  },
+  byond: {
+    color: "#0F3950",
+    category: "gaming",
+    name: "BYOND",
+  },
+  cadaverzian: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Cadaverzian",
+  },
+  caddy: {
+    color: "#1F88C0",
+    category: "programming",
+    name: "Caddy Community",
+  },
+  caravelgames: {
+    color: "#B89E7C",
+    category: "gaming",
+    name: "Caravelgames",
+  },
+  caringbridge: {
+    color: "#B06486",
+    category: "other",
+    name: "CaringBridge",
+  },
+  cartalk: {
+    color: "#B80823",
+    category: "other",
+    name: "Car Talk Community",
+  },
+  castingcallclub: {
+    color: "#24B3F7",
+    category: "other",
+    name: "CastingCallClub",
+  },
+  catinboots: {
+    color: "#607D8B",
+    category: "other",
+    name: "Catinboots",
+  },
+  cdaction: {
+    color: "#930F0A",
+    category: "gaming",
+    name: "CD-Action",
+  },
+  cdapl: {
+    color: "#D52B26",
+    category: "video_platform",
+    name: "CDA",
+  },
+  centrspektr: {
+    color: "#607D8B",
+    category: "sport",
+    name: "Centr Spektr",
+  },
+  chamsko: {
+    color: "#020202",
+    category: "other",
+    name: "Chamsko",
+  },
+  chelentano: {
+    color: "#607D8B",
+    category: "social",
+    name: "Chelentano",
+  },
+  chiefdelphi: {
+    color: "#934F00",
+    category: "other",
+    name: "Chief Delphi",
+  },
+  choicecommunity: {
+    color: "#009DD8",
+    category: "other",
+    name: "Choice Community",
+  },
+  chomikuj: {
+    color: "#9C9941",
+    category: "other",
+    name: "Chomikuj.pl",
+  },
+  chpoking: {
+    color: "#763163",
+    category: "dating",
+    name: "Chpoking",
+  },
+  christianvideo: {
+    color: "#076C98",
+    category: "video_platform",
+    name: "Christian Video",
+  },
+  cigarpass: {
+    color: "#885422",
+    category: "social",
+    name: "Cigarpass",
+  },
+  circleci: {
+    color: "#343434",
+    category: "programming",
+    name: "CircleCI Discuss",
+  },
+  clansg: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Clan Sg",
+  },
+  cloudromance: {
+    color: "#F41B1B",
+    category: "other",
+    name: "Cloudromance",
+  },
+  clubcomedy: {
+    color: "#0077FF",
+    category: "other",
+    name: "Club Comedy",
+  },
+  cmet4uk: {
+    color: "#243A74",
+    category: "social",
+    name: "Cmet4uk",
+  },
+  cnblogs: {
+    color: "#2D79CB",
+    category: "other",
+    name: "Cnblogs Q&A",
+  },
+  cockroachlabs: {
+    color: "#6933FF",
+    category: "programming",
+    name: "Cockroach Labs",
+  },
+  codby: {
+    color: "#FE9A02",
+    category: "other",
+    name: "Cod.by",
+  },
+  codeseller: {
+    color: "#42B1BF",
+    category: "programming",
+    name: "CODESELLER",
+  },
+  coffeeworld: {
+    color: "#607D8B",
+    category: "other",
+    name: "Coffeeworld",
+  },
+  coins: {
+    color: "#607D8B",
+    category: "social",
+    name: "Coins",
+  },
+  cokcomua: {
+    color: "#B3BAD7",
+    category: "other",
+    name: "C-O-K Forum",
+  },
+  collectorscom: {
+    color: "#AF8841",
+    category: "social",
+    name: "Collectors Universe",
+  },
+  collegy: {
+    color: "#607D8B",
+    category: "other",
+    name: "Collegy",
+  },
+  combats: {
+    color: "#838783",
+    category: "gaming",
+    name: "Capital City Combats",
+  },
+  commondreams: {
+    color: "#040404",
+    category: "other",
+    name: "Common Dreams",
+  },
+  compline: {
+    color: "#607D8B",
+    category: "programming",
+    name: "Compline",
+  },
+  consumerium: {
+    color: "#030203",
+    category: "other",
+    name: "Consumerium",
+  },
+  coreelectronics: {
+    color: "#005B84",
+    category: "other",
+    name: "Core Electronics Forum",
+  },
+  corsair: {
+    color: "#231F20",
+    category: "gaming",
+    name: "CORSAIR",
+  },
+  cosmoforum: {
+    color: "#607D8B",
+    category: "other",
+    name: "Cosmoforum",
+  },
+  cpu: {
+    color: "#607D8B",
+    category: "programming",
+    name: "Cpu",
+  },
+  crossfaernet: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Crossfaernet",
+  },
+  cruiserswiki: {
+    color: "#01B1CB",
+    category: "other",
+    name: "CruisersWiki",
+  },
+  cryptomator: {
+    color: "#49B04A",
+    category: "programming",
+    name: "Cryptomator Forum",
+  },
+  csi: {
+    color: "#607D8B",
+    category: "other",
+    name: "Csi",
+  },
+  csru: {
+    color: "#212121",
+    category: "gaming",
+    name: "Cs Ru",
+  },
+  cssnn52rus: {
+    color: "#607D8B",
+    category: "programming",
+    name: "Css Nn 52 Rus",
+  },
+  cssomsk: {
+    color: "#1E1E1E",
+    category: "gaming",
+    name: "Cssomsk",
+  },
+  csstrikez: {
+    color: "#373F51",
+    category: "gaming",
+    name: "Cs Strikez",
+  },
+  cxem: {
+    color: "#1B7662",
+    category: "social",
+    name: "Cxem.net Forum",
+  },
+  cybers: {
+    color: "#607D8B",
+    category: "hacking",
+    name: "Cybers",
+  },
+  cydak: {
+    color: "#B3BAD7",
+    category: "other",
+    name: "Cydak",
+  },
+  cytoid: {
+    color: "#000000",
+    category: "gaming",
+    name: "Cytoid",
+  },
+  dandwiki: {
+    color: "#4F4F4F",
+    category: "gaming",
+    name: "D&D Wiki",
+  },
+  dangerousthings: {
+    color: "#000000",
+    category: "other",
+    name: "Dangerous Things",
+  },
+  dasauge: {
+    color: "#58584D",
+    category: "other",
+    name: "dasauge",
+  },
+  datacite: {
+    color: "#243B54",
+    category: "other",
+    name: "DataCite",
+  },
+  daylapku: {
+    color: "#FDCC98",
+    category: "other",
+    name: "Day Lapku",
+  },
+  dcsoft: {
+    color: "#849498",
+    category: "other",
+    name: "DCSoft",
+  },
+  deathlegion: {
+    color: "#010104",
+    category: "gaming",
+    name: "Death Legion",
+  },
+  deathnote: {
+    color: "#532322",
+    category: "other",
+    name: "Death Note",
+  },
+  defcad: {
+    color: "#000000",
+    category: "other",
+    name: "DEFCAD",
+  },
+  demotywatory: {
+    color: "#050505",
+    category: "other",
+    name: "Demotywatory",
+  },
+  destructoidforums: {
+    color: "#8F100B",
+    category: "gaming",
+    name: "Destructoid Forums",
+  },
+  detectiveconanworld: {
+    color: "#919190",
+    category: "other",
+    name: "Detective Conan World",
+  },
+  detstrana: {
+    color: "#10A9E2",
+    category: "other",
+    name: "Detstrana",
+  },
+  deutschauto68: {
+    color: "#607D8B",
+    category: "other",
+    name: "AutoKlub Deutschland",
+  },
+  devtribe: {
+    color: "#1B1B1B",
+    category: "gaming",
+    name: "Devtribe",
+  },
+  dhelp: {
+    color: "#607D8B",
+    category: "ecommerce",
+    name: "Dhelp",
+  },
+  diablocool: {
+    color: "#607D8B",
+    category: "other",
+    name: "Diablocool",
+  },
+  dieselmastera: {
+    color: "#607D8B",
+    category: "other",
+    name: "Diesel Mastera",
+  },
+  dimitrov: {
+    color: "#010101",
+    category: "social",
+    name: "Dimitrov",
+  },
+  discusspython: {
+    color: "#3776AB",
+    category: "programming",
+    name: "Discuss Python",
+  },
+  diveforum: {
+    color: "#FC2829",
+    category: "social",
+    name: "DiveForum",
+  },
+  dizcs: {
+    color: "#27507F",
+    category: "gaming",
+    name: "Diz Cs",
+  },
+  djfint: {
+    color: "#00CBCB",
+    category: "other",
+    name: "Djfint",
+  },
 };

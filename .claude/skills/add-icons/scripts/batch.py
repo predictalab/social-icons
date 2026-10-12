@@ -92,6 +92,12 @@ def norm(name):
     return icons.norm("".join(c for c in name if not unicodedata.combining(c)))
 
 
+# Host prefixes that name the forum software, not the brand. Not "app", "m" or "ru": the API
+# keeps them (app.clan.su -> appclan)
+HOST_PREFIXES = {"forum", "forums", "community", "discuss", "discourse", "support", "develop",
+                 "commons", "board", "boards", "talk", "en"}
+
+
 def is_domain_name(name):
     return " " not in name and bool(re.search(r"\.[a-z]{2,}$", name, re.I))
 
@@ -101,17 +107,26 @@ def key_candidates(name, domain):
     (2026-10, `icons.py keys`): the first candidate is right for 85 % of the maigret sites the
     API has; most misses are variants folded into their parent network (VK (by id) -> vk).
     Rule: normalized name with leading digits spelled out, or the first label when the
-    maigret name is a host (abc-accounting.ucoz.net -> abcaccounting); then fallbacks, the
-    domain's second-level label last (Bambu Lab Forum -> bambulab)."""
+    maigret name is a host (abc-accounting.ucoz.net -> abcaccounting), skipping forum-like
+    prefixes (forum.cockroachlabs.com -> cockroachlabs); then fallbacks, the domain's
+    second-level label last (Bambu Lab Forum -> bambulab)."""
     out = []
     if is_domain_name(name):
-        label = name.lower().removeprefix("www.").split(".")[0]
-        out.append(spell_leading(norm(label)))
+        labels = name.lower().removeprefix("www.").split(".")[:-1]
+        brand = [l for l in labels if l not in HOST_PREFIXES]  # forums.docker.com -> docker
+        out.append(spell_leading(norm((brand or labels)[0])))
+        out.append(spell_leading(norm(labels[0])))
     out.append(spell_leading(norm(name)))
     out.append("".join(icons.UNITS[int(c)] if c.isdigit() else c for c in norm(name)))
     out.append(norm(name))
     if domain:
         out.append(spell_leading(icons.domain_label(domain)))
+    # Rarer API spellings: labels glued together (avto.dzerghinsk.org -> avtodzerghinsk,
+    # forum.c-o-k.com.ua -> cokcomua), forum prefix dropped (Forums-bluemoon-mcfc -> bluemoonmcfc)
+    host = (domain or name).split("/")[0].lower().removeprefix("www.").split(".")
+    glued = [l for l in host if l not in HOST_PREFIXES]
+    out += [spell_leading(norm("".join(glued[:-1]))), spell_leading(norm("".join(glued)))]
+    out.append(spell_leading(re.sub(r"^(forums?|community)", "", norm(name))))
     return [k for k in dict.fromkeys(out) if k and KEY_RE.match(k)]
 
 
@@ -243,6 +258,10 @@ def tag_rule(infos):
     return "mdi:web", "other"
 
 
+# Host labels and page titles that name the software, not the site: forum.balletfriends.ru,
+# en.brickimedia.org, a page titled "Forums"
+GENERIC_LABELS = {"forum", "forums", "community", "discuss", "en", "ru", "m", "app", "support",
+                  "develop", "q", "board", "talk", "wiki", "commons", "home", "main"}
 JUNK_TITLE = re.compile(r"just a moment|attention required|access denied|forbidden|not found|error|"
                         r"index of|welcome to|default page|captcha|ddos", re.I)
 
@@ -253,10 +272,12 @@ def display_name(key, site, title):
     Latin like the existing ones (FishingSib, YaPishu)."""
     if site and not is_domain_name(site[1]) and "{" not in site[1]:
         return site[1][0].upper() + site[1][1:] if site[1].islower() else site[1]
-    if title and title.isascii() and len(title) <= 30 and not JUNK_TITLE.search(title) and not is_domain_name(title):
+    if (title and title.isascii() and len(title) <= 30 and not JUNK_TITLE.search(title)
+            and not is_domain_name(title) and title.lower() not in GENERIC_LABELS):
         return title
     host = (site[2] if site else "").split("/")[0].removeprefix("www.")
-    label = host.split(".")[0] if host else key
+    labels = [l for l in host.split(".")[:-1] if l not in GENERIC_LABELS]  # forum.cxem.net -> cxem
+    label = labels[0] if labels else key
     return " ".join(w.capitalize() for w in re.split(r"[-_]+", label) if w) or key
 
 
