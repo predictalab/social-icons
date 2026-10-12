@@ -262,7 +262,7 @@ def tag_rule(infos):
 # en.brickimedia.org, a page titled "Forums"
 GENERIC_LABELS = {"forum", "forums", "community", "discuss", "en", "ru", "m", "app", "support",
                   "develop", "q", "board", "talk", "wiki", "commons", "home", "main"}
-JUNK_TITLE = re.compile(r"just a moment|attention required|access denied|forbidden|not found|error|"
+JUNK_TITLE = re.compile(r"just a moment|checking your browser|attention required|access denied|forbidden|not found|error|"
                         r"index of|welcome to|default page|captcha|ddos", re.I)
 
 
@@ -389,15 +389,41 @@ def read_manifest(path):
 
 
 # --------------------------------------------------------------------------- review sheet
+ICON_SETS = "https://raw.githubusercontent.com/iconify/icon-sets/master/json/{}.json"
+_icon_sets = {}
+
+
+def icon_set(workdir, prefix):
+    """Whole Iconify collection, cached like the OSINT bases: the per-icon API rate-limits
+    (HTTP 429) after a few hundred review renders."""
+    if prefix not in _icon_sets:
+        name = "iconify-simple-icons.json" if prefix == "simple-icons" else f"iconify-{prefix}.json"
+        _icon_sets[prefix] = icons.cached_json(workdir, name, ICON_SETS.format(prefix))
+    return _icon_sets[prefix]
+
+
+def icon_svg(workdir, icon, color):
+    prefix, name = icon.split(":", 1)
+    data = icon_set(workdir, prefix)
+    name = data.get("aliases", {}).get(name, {}).get("parent", name)
+    entry = data["icons"].get(name)
+    if not entry:
+        return None
+    w, h = entry.get("width", data.get("width", 24)), entry.get("height", data.get("height", 24))
+    body = entry["body"].replace("currentColor", color)
+    if 'fill="' not in body:
+        body = f'<g fill="{color}">{body}</g>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}">{body}</svg>'.encode()
+
+
 def iconify_png(workdir, icon, color, size=96):
-    """Iconify SVG rasterized with rsvg-convert (cached), or None when unavailable."""
+    """Iconify icon rasterized with rsvg-convert (cached), or None when unavailable."""
     cache = os.path.join(workdir, "iconify")
     os.makedirs(cache, exist_ok=True)
     out = os.path.join(cache, f"{icon.replace(':', '-')}-{color.lstrip('#')}.png")
     if not os.path.exists(out):
-        prefix, name = icon.split(":", 1)
-        svg = icons.get(f"https://api.iconify.design/{prefix}/{name}.svg?color=%23{color.lstrip('#')}")
-        if not svg.startswith(b"<svg"):
+        svg = icon_svg(workdir, icon, color)
+        if not svg:
             return None
         try:
             r = subprocess.run(["rsvg-convert", "-w", str(size), "-h", str(size), "-o", out], input=svg)
@@ -468,10 +494,8 @@ def validate(rows, workdir):
     served, _ = simple_icons(workdir)
     cats = categories()
     mdi = sorted({r["source"][4:] for r in rows if r["source"].startswith("mdi:")})
-    missing_mdi = set()
-    if mdi:
-        data = json.loads(icons.get("https://api.iconify.design/mdi.json?icons=" + ",".join(mdi)) or b"{}")
-        missing_mdi = set(data.get("not_found", [])) if data else set(mdi)
+    mdi_set = icon_set(workdir, "mdi") if mdi else {}
+    missing_mdi = {m for m in mdi if m not in mdi_set.get("icons", {}) and m not in mdi_set.get("aliases", {})}
     errors, seen = [], set()
     for r in rows:
         k, src = r["key"], r["source"]
