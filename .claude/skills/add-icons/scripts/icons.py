@@ -37,7 +37,7 @@ import sys
 import urllib.parse
 from io import BytesIO
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageChops, ImageDraw, ImageStat
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
 ASSETS = os.path.join(ROOT, "src", "assets", "social-icons")
@@ -361,6 +361,22 @@ def candidates(domain, html=None):
     return urls
 
 
+def effective_size(im):
+    """Real resolution of a logo: a 16 px favicon served as 256 px (Advanced Custom Fields)
+    survives a round trip through 16 px almost unchanged."""
+    im = im.convert("RGBA")
+    flat = Image.new("RGBA", im.size, "white")
+    flat.alpha_composite(im)
+    flat = flat.convert("RGB")
+    for s in (16, 24, 32, 48, 64, 96):
+        if s >= min(flat.size):
+            break
+        back = flat.resize((s, s), Image.LANCZOS).resize(flat.size, Image.LANCZOS)
+        if sum(ImageStat.Stat(ImageChops.difference(flat, back)).mean) / 3 < 2:
+            return s
+    return min(flat.size)
+
+
 def save_png(im, path, max_size=512):
     im = im.convert("RGBA")
     im.thumbnail((max_size, max_size), Image.LANCZOS)
@@ -386,7 +402,7 @@ def cmd_fetch(args):
         for kind, url in candidates(domain):
             im = as_image(get(url))
             if im and min(im.size) >= 16:
-                found.append((min(im.size), kind, url, im))
+                found.append((effective_size(im), kind, url, im))
         if not found:
             print(f"{key:18s} ÉCHEC   aucun candidat sur {domain}")
             continue
@@ -395,7 +411,8 @@ def cmd_fetch(args):
         size, kind, url, im = found[0]
         w, h = im.size
         flag = "  ⚠ bannière ?" if max(w, h) > 1.5 * min(w, h) else ""
-        flag += "  ⚠ < 96px" if min(w, h) < 96 else ""
+        flag += "  ⚠ agrandi" if size < min(w, h) else ""
+        flag += "  ⚠ < 96px" if size < 96 else ""
         print(f"{key:18s} {kind:8s} {(w, h)}  {url}{flag}")
         save_png(im, out)
 

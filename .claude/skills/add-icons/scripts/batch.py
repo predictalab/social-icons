@@ -194,7 +194,8 @@ def probe(domain):
             continue
         if max(im.size) > 1.5 * min(im.size):
             continue  # og:image banner
-        found.append((kind != "og" and min(im.size) >= 128, min(im.size), kind, url, im))
+        size = icons.effective_size(im)  # an upscaled 16 px favicon counts as 16 px
+        found.append((kind != "og" and size >= 128, size, kind, url, im))
     found.sort(key=lambda f: f[:2], reverse=True)
     best = found[0] if found else None
     return {

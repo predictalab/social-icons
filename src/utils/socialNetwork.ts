@@ -5262,9 +5262,9 @@ export const socialNetworks: socialNetworkType = {
     name: "Adultism",
   },
   advancedcustomfields: {
-    color: "#32A9DC",
-    category: "other",
-    name: "AdvancedCustomFields",
+    color: "#0694D5",
+    category: "programming",
+    name: "Advanced Custom Fields",
   },
   afsoc: {
     color: "#607D8B",

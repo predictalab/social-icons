@@ -3747,7 +3747,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="adultism.webp" alt="Adultism" />;
       break;
     case "advancedcustomfields":
-      icon = <LocalIcon file="advancedcustomfields.webp" alt="AdvancedCustomFields" />;
+      icon = <LocalIcon file="advancedcustomfields.webp" alt="Advanced Custom Fields" />;
       break;
     case "afsoc":
       icon = <Icon icon="mdi:medal" color={socialNetworks.afsoc.color} />;
