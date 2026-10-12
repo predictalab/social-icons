@@ -5241,4 +5241,174 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "Zenodo",
   },
+  abcaccounting: {
+    color: "#607D8B",
+    category: "finance",
+    name: "ABC accounting",
+  },
+  actikom: {
+    color: "#607D8B",
+    category: "other",
+    name: "Actikom",
+  },
+  adminsoft: {
+    color: "#080808",
+    category: "programming",
+    name: "Admin Soft",
+  },
+  adultism: {
+    color: "#28323A",
+    category: "other",
+    name: "Adultism",
+  },
+  advancedcustomfields: {
+    color: "#32A9DC",
+    category: "other",
+    name: "AdvancedCustomFields",
+  },
+  afsoc: {
+    color: "#607D8B",
+    category: "other",
+    name: "Afsoc",
+  },
+  aikidomariupol: {
+    color: "#607D8B",
+    category: "sport",
+    name: "Aikido Mariupol",
+  },
+  airbit: {
+    color: "#6A00FE",
+    category: "other",
+    name: "Airbit",
+  },
+  airnfts: {
+    color: "#1E1B3D",
+    category: "finance",
+    name: "AirNFTs",
+  },
+  alabay: {
+    color: "#2C6CB5",
+    category: "social",
+    name: "Alabay",
+  },
+  alexgyver: {
+    color: "#2397F3",
+    category: "social",
+    name: "Alexgyver",
+  },
+  aliensoup: {
+    color: "#C9150D",
+    category: "social",
+    name: "Aliensoup",
+  },
+  alisaclub: {
+    color: "#B9543A",
+    category: "social",
+    name: "Alisaclub",
+  },
+  allgaz: {
+    color: "#AAB5CB",
+    category: "social",
+    name: "Allgaz",
+  },
+  allmods: {
+    color: "#927173",
+    category: "gaming",
+    name: "All-mods",
+  },
+  allmus: {
+    color: "#7C541C",
+    category: "gaming",
+    name: "Allmus",
+  },
+  alpanf: {
+    color: "#030302",
+    category: "social",
+    name: "Alpanf",
+  },
+  analitikaforex: {
+    color: "#E85037",
+    category: "finance",
+    name: "Analitika Forex",
+  },
+  anarchopunk: {
+    color: "#060606",
+    category: "social",
+    name: "Anarcho-punk",
+  },
+  andrei: {
+    color: "#607D8B",
+    category: "finance",
+    name: "TIME OF MONEY",
+  },
+  angelgothics: {
+    color: "#2956A7",
+    category: "other",
+    name: "Angelgothics",
+  },
+  animebase: {
+    color: "#3C2263",
+    category: "social",
+    name: "Animebase",
+  },
+  animego: {
+    color: "#F97A12",
+    category: "other",
+    name: "AnimeGo",
+  },
+  animelend: {
+    color: "#607D8B",
+    category: "other",
+    name: "Animelend",
+  },
+  animeuknews: {
+    color: "#12335C",
+    category: "social",
+    name: "AnimeUKNews",
+  },
+  animewebtr: {
+    color: "#ECC994",
+    category: "other",
+    name: "Anime Manga Forum",
+  },
+  ankord: {
+    color: "#4C1E20",
+    category: "other",
+    name: "Ankord",
+  },
+  anschula: {
+    color: "#607D8B",
+    category: "social",
+    name: "Anschula",
+  },
+  antalya: {
+    color: "#607D8B",
+    category: "ecommerce",
+    name: "Antalya",
+  },
+  antihack: {
+    color: "#7F0000",
+    category: "hacking",
+    name: "CyberHacking",
+  },
+  antipunk: {
+    color: "#CD0000",
+    category: "other",
+    name: "Antipunk",
+  },
+  antivirus: {
+    color: "#86BAB7",
+    category: "programming",
+    name: "AntiviruS TeaM",
+  },
+  antizombie: {
+    color: "#F76061",
+    category: "video_platform",
+    name: "Antizombie",
+  },
+  apelmon: {
+    color: "#6CAEBA",
+    category: "social",
+    name: "Apelmon",
+  },
 };
