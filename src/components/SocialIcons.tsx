@@ -2287,6 +2287,8 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
 
     case "opgg":
+    case "pubgopgg":
+    case "valorantopgg":
       icon = <LocalIcon file="opgg.png" alt="OP.GG" />;
       break;
 
@@ -5558,9 +5560,6 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "psydv":
       icon = <Icon icon="mdi:medical-bag" color={socialNetworks.psydv.color} />;
       break;
-    case "pubgopgg":
-      icon = <LocalIcon file="pubgopgg.webp" alt="OP.GG PUBG" />;
-      break;
     case "punx":
       icon = <Icon icon="mdi:music" color={socialNetworks.punx.color} />;
       break;
@@ -6151,9 +6150,6 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "v3de":
       icon = <Icon icon="mdi:laptop" color={socialNetworks.v3de.color} />;
-      break;
-    case "valorantopgg":
-      icon = <LocalIcon file="valorantopgg.webp" alt="OP.GG Valorant" />;
       break;
     case "vdvbelarus":
       icon = <Icon icon="mdi:medal" color={socialNetworks.vdvbelarus.color} />;

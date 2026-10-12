@@ -8282,7 +8282,7 @@ export const socialNetworks: socialNetworkType = {
     name: "Psy Dv",
   },
   pubgopgg: {
-    color: "#664B1A",
+    color: "#5282E8",
     category: "gaming",
     name: "OP.GG PUBG",
   },
@@ -9272,7 +9272,7 @@ export const socialNetworks: socialNetworkType = {
     name: "V3de",
   },
   valorantopgg: {
-    color: "#5383E8",
+    color: "#5282E8",
     category: "gaming",
     name: "OP.GG Valorant",
   },
