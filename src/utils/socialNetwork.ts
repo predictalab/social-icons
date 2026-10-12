@@ -8421,4 +8421,754 @@ export const socialNetworks: socialNetworkType = {
     category: "ecommerce",
     name: "Rielt55",
   },
+  rodgersforum: {
+    color: "#607D8B",
+    category: "social",
+    name: "Rodgersforum",
+  },
+  roonlabs: {
+    color: "#24282E",
+    category: "other",
+    name: "Roon Labs Community",
+  },
+  rotarusofi: {
+    color: "#00CBCB",
+    category: "other",
+    name: "Rotarusofi",
+  },
+  rottweiler: {
+    color: "#8E8E8E",
+    category: "social",
+    name: "Rottweiler",
+  },
+  rrforums: {
+    color: "#010101",
+    category: "social",
+    name: "RRForums",
+  },
+  rt20getbb: {
+    color: "#607D8B",
+    category: "social",
+    name: "Rt20",
+  },
+  rt21getbb: {
+    color: "#607D8B",
+    category: "social",
+    name: "Rt21",
+  },
+  rudtp: {
+    color: "#383A42",
+    category: "social",
+    name: "RUDTP",
+  },
+  rurip: {
+    color: "#6B6B6B",
+    category: "programming",
+    name: "Rurip",
+  },
+  ruslangxp: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "RuslangXP",
+  },
+  rusmmm: {
+    color: "#272224",
+    category: "finance",
+    name: "Rus Mmm",
+  },
+  russemya: {
+    color: "#93738A",
+    category: "social",
+    name: "Russemya",
+  },
+  rustlang: {
+    color: "#000000",
+    category: "programming",
+    name: "Rust Users Forum",
+  },
+  rzn: {
+    color: "#0E4FEE",
+    category: "social",
+    name: "Rzn",
+  },
+  salavat: {
+    color: "#FE9D00",
+    category: "other",
+    name: "Salavat",
+  },
+  salekhardnews: {
+    color: "#585499",
+    category: "other",
+    name: "Salekhardnews",
+  },
+  salutm: {
+    color: "#E41212",
+    category: "other",
+    name: "Salutm",
+  },
+  samp: {
+    color: "#190000",
+    category: "gaming",
+    name: "SA-MP",
+  },
+  sampsektor: {
+    color: "#606A5E",
+    category: "gaming",
+    name: "SA-MP Sektor",
+  },
+  samsungfood: {
+    color: "#FE9B00",
+    category: "other",
+    name: "Samsung Food",
+  },
+  samsungmobile: {
+    color: "#607D8B",
+    category: "programming",
+    name: "Samsungmobile",
+  },
+  sandisk: {
+    color: "#E10500",
+    category: "programming",
+    name: "SanDisk Forums",
+  },
+  satelectronics: {
+    color: "#607D8B",
+    category: "programming",
+    name: "Sat Electronics",
+  },
+  satisfacktion: {
+    color: "#020202",
+    category: "other",
+    name: "Satisfacktion",
+  },
+  sayty: {
+    color: "#3E65C1",
+    category: "other",
+    name: "Sayty",
+  },
+  scalalang: {
+    color: "#DC322F",
+    category: "programming",
+    name: "Scala Users",
+  },
+  scb: {
+    color: "#607D8B",
+    category: "social",
+    name: "Scb",
+  },
+  schonin: {
+    color: "#6B6A6B",
+    category: "social",
+    name: "Schonin",
+  },
+  school1065: {
+    color: "#607D8B",
+    category: "other",
+    name: "School1065",
+  },
+  sciax2: {
+    color: "#E8892B",
+    category: "social",
+    name: "Sciax2",
+  },
+  scoutwiki: {
+    color: "#002587",
+    category: "other",
+    name: "Scoutwiki",
+  },
+  screwfix: {
+    color: "#0B2483",
+    category: "social",
+    name: "Screwfix",
+  },
+  scssoft: {
+    color: "#4C2721",
+    category: "social",
+    name: "SCS Software",
+  },
+  sebastopol: {
+    color: "#607D8B",
+    category: "other",
+    name: "Sebastopol",
+  },
+  seeedstudio: {
+    color: "#8DC21F",
+    category: "programming",
+    name: "Seeed Studio Forum",
+  },
+  sefirut: {
+    color: "#98AD83",
+    category: "other",
+    name: "Sefirut",
+  },
+  seguru: {
+    color: "#405F9C",
+    category: "social",
+    name: "SE.Guru",
+  },
+  selly: {
+    color: "#2576FF",
+    category: "finance",
+    name: "Selly",
+  },
+  semenovaklass: {
+    color: "#336666",
+    category: "other",
+    name: "Semenova Klass",
+  },
+  sense: {
+    color: "#607D8B",
+    category: "programming",
+    name: "Sense",
+  },
+  serwis: {
+    color: "#090908",
+    category: "other",
+    name: "Serwis",
+  },
+  seveneightthree: {
+    color: "#66B200",
+    category: "other",
+    name: "IVT 78-3",
+  },
+  seventyfourfivezeroseven: {
+    color: "#B1BC46",
+    category: "other",
+    name: "74507",
+  },
+  sevenxnetua: {
+    color: "#7190A9",
+    category: "other",
+    name: "7x",
+  },
+  sevenya: {
+    color: "#73C44C",
+    category: "social",
+    name: "7ya",
+  },
+  sexforumws: {
+    color: "#11151B",
+    category: "adult",
+    name: "Sexforum",
+  },
+  sfd: {
+    color: "#1E315F",
+    category: "social",
+    name: "SFD",
+  },
+  sfinxcats: {
+    color: "#607D8B",
+    category: "social",
+    name: "Sfinx Cats",
+  },
+  shanson: {
+    color: "#515153",
+    category: "other",
+    name: "Shanson",
+  },
+  sharzhportret: {
+    color: "#313031",
+    category: "other",
+    name: "Sharzh Portret",
+  },
+  sherwood: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Sherwood",
+  },
+  shitpostbot: {
+    color: "#0B0C0B",
+    category: "social",
+    name: "ShitpostBot5000",
+  },
+  shkolnikov: {
+    color: "#607D8B",
+    category: "video_platform",
+    name: "Shkolnikov",
+  },
+  shmanich: {
+    color: "#706E71",
+    category: "social",
+    name: "Shmanich",
+  },
+  shopsmith: {
+    color: "#E1251B",
+    category: "social",
+    name: "Shopsmith",
+  },
+  shotbow: {
+    color: "#523B25",
+    category: "social",
+    name: "Shotbow",
+  },
+  shotcut: {
+    color: "#416F89",
+    category: "video_platform",
+    name: "Shotcut Forum",
+  },
+  shporgalki: {
+    color: "#896701",
+    category: "other",
+    name: "Shporgalki",
+  },
+  sibcoins: {
+    color: "#607D8B",
+    category: "social",
+    name: "Sibcoins",
+  },
+  sibmama: {
+    color: "#73A635",
+    category: "social",
+    name: "Sibmama",
+  },
+  signalusers: {
+    color: "#3B45FD",
+    category: "social",
+    name: "Signal Community",
+  },
+  silvercollector: {
+    color: "#8F8E8F",
+    category: "other",
+    name: "Silver-collector",
+  },
+  simfmama: {
+    color: "#607D8B",
+    category: "social",
+    name: "Simf Mama",
+  },
+  sisv: {
+    color: "#4AC803",
+    category: "other",
+    name: "Si Sv",
+  },
+  sixfivefiveiap: {
+    color: "#607D8B",
+    category: "other",
+    name: "655iap",
+  },
+  skeb: {
+    color: "#25807D",
+    category: "other",
+    name: "Skeb",
+  },
+  sketchup: {
+    color: "#005F9E",
+    category: "other",
+    name: "SketchUp Community",
+  },
+  sladkiydesert: {
+    color: "#607D8B",
+    category: "social",
+    name: "Sladkiydesert",
+  },
+  smartphone: {
+    color: "#607D8B",
+    category: "programming",
+    name: "Smart Phone",
+  },
+  smartplay: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Smart Play",
+  },
+  smartthings: {
+    color: "#15BFFF",
+    category: "programming",
+    name: "SmartThings Community",
+  },
+  smashrun: {
+    color: "#1D1D1D",
+    category: "sport",
+    name: "Smashrun",
+  },
+  snapcraft: {
+    color: "#E95420",
+    category: "programming",
+    name: "Snapcraft",
+  },
+  snegovayapad: {
+    color: "#4A9DB3",
+    category: "other",
+    name: "Snegovaya Pad",
+  },
+  so4ineniya: {
+    color: "#607D8B",
+    category: "other",
+    name: "So4ineniya",
+  },
+  soborno: {
+    color: "#EC3655",
+    category: "social",
+    name: "Soborno",
+  },
+  socforum: {
+    color: "#353535",
+    category: "other",
+    name: "Socforum",
+  },
+  softdeniz: {
+    color: "#2C4B9E",
+    category: "programming",
+    name: "Soft Deniz",
+  },
+  softgame: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Softgame",
+  },
+  softwareinformer: {
+    color: "#003967",
+    category: "programming",
+    name: "SoftwareInformer",
+  },
+  softwm: {
+    color: "#607D8B",
+    category: "other",
+    name: "Soft Wm",
+  },
+  sokal: {
+    color: "#607D8B",
+    category: "other",
+    name: "Sokal",
+  },
+  soloby: {
+    color: "#4A90D6",
+    category: "other",
+    name: "Soloby",
+  },
+  somersoft: {
+    color: "#295B83",
+    category: "other",
+    name: "Somersoft",
+  },
+  sonicretro: {
+    color: "#2C4A9A",
+    category: "gaming",
+    name: "Sonic Retro",
+  },
+  sony127: {
+    color: "#77531A",
+    category: "social",
+    name: "Sony127",
+  },
+  soobshestva: {
+    color: "#607D8B",
+    category: "other",
+    name: "Soobshestva",
+  },
+  sorentokiaclub: {
+    color: "#3B6DB8",
+    category: "social",
+    name: "Sorento",
+  },
+  soundfactory: {
+    color: "#32172D",
+    category: "other",
+    name: "Sound Factory",
+  },
+  sourceruns: {
+    color: "#7F4600",
+    category: "gaming",
+    name: "Sourceruns",
+  },
+  sovgavan: {
+    color: "#CF2821",
+    category: "social",
+    name: "Sovgavan",
+  },
+  splice: {
+    color: "#000000",
+    category: "other",
+    name: "Splice",
+  },
+  sportlerfrage: {
+    color: "#1B9BC6",
+    category: "sport",
+    name: "Sportlerfrage",
+  },
+  sportsjournalists: {
+    color: "#4E2049",
+    category: "social",
+    name: "Sportsjournalists",
+  },
+  sstalkers: {
+    color: "#615248",
+    category: "gaming",
+    name: "Sstalkers",
+  },
+  staroverovka: {
+    color: "#607D8B",
+    category: "social",
+    name: "Staroverovka",
+  },
+  starsonice: {
+    color: "#607D8B",
+    category: "sport",
+    name: "Starsonice",
+  },
+  steinberg: {
+    color: "#C90827",
+    category: "other",
+    name: "Steinberg Forums",
+  },
+  stopnarko: {
+    color: "#191C69",
+    category: "social",
+    name: "Stop Narko",
+  },
+  storycorps: {
+    color: "#3AABC4",
+    category: "other",
+    name: "Storycorps",
+  },
+  straightdope: {
+    color: "#08198A",
+    category: "social",
+    name: "Straight Dope Message Board",
+  },
+  stroysnami: {
+    color: "#998A51",
+    category: "other",
+    name: "Stroy S Nami",
+  },
+  strupravlenie: {
+    color: "#085C08",
+    category: "other",
+    name: "Str Upravlenie",
+  },
+  subeta: {
+    color: "#829BB3",
+    category: "gaming",
+    name: "Subeta",
+  },
+  sufficit: {
+    color: "#3676A8",
+    category: "social",
+    name: "Sufficit",
+  },
+  sureai: {
+    color: "#17120F",
+    category: "gaming",
+    name: "Sureai",
+  },
+  suzuri: {
+    color: "#54662E",
+    category: "other",
+    name: "Suzuri",
+  },
+  svadbaorel: {
+    color: "#2E2E2E",
+    category: "video_platform",
+    name: "Svadba Orel",
+  },
+  symbian9: {
+    color: "#3A0B03",
+    category: "gaming",
+    name: "Symbian9",
+  },
+  szenmark: {
+    color: "#7DEE44",
+    category: "other",
+    name: "Szenprogs Mark",
+  },
+  szerokikadr: {
+    color: "#000000",
+    category: "other",
+    name: "Szerokikadr",
+  },
+  szmer: {
+    color: "#948C8D",
+    category: "social",
+    name: "szmer",
+  },
+  tabun: {
+    color: "#607D8B",
+    category: "other",
+    name: "Tabun",
+  },
+  tachograph: {
+    color: "#1993D0",
+    category: "social",
+    name: "Tachograph",
+  },
+  talimger: {
+    color: "#010100",
+    category: "other",
+    name: "Talimger",
+  },
+  tanuki: {
+    color: "#AB776A",
+    category: "other",
+    name: "Tanuki",
+  },
+  tarjaturunen: {
+    color: "#886352",
+    category: "finance",
+    name: "Tarjaturunen",
+  },
+  taskrabbit: {
+    color: "#092A13",
+    category: "other",
+    name: "Taskrabbit",
+  },
+  tatyanaart: {
+    color: "#995227",
+    category: "other",
+    name: "Tatyana Art",
+  },
+  taxibelgorod: {
+    color: "#CB5300",
+    category: "other",
+    name: "Taxi Belgorod",
+  },
+  teampros: {
+    color: "#00CB65",
+    category: "other",
+    name: "Team Pros",
+  },
+  terminatorium: {
+    color: "#607D8B",
+    category: "video_platform",
+    name: "Terminatorium",
+  },
+  terminatorscc: {
+    color: "#252424",
+    category: "other",
+    name: "Terminator",
+  },
+  terralight: {
+    color: "#607D8B",
+    category: "other",
+    name: "TERRA LIGHT",
+  },
+  tgi: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "TGI",
+  },
+  thaicat: {
+    color: "#513B28",
+    category: "social",
+    name: "Thaicat",
+  },
+  theatre: {
+    color: "#607D8B",
+    category: "other",
+    name: "Theatre",
+  },
+  theorizeit: {
+    color: "#383636",
+    category: "other",
+    name: "Information Systems Theories",
+  },
+  theprodigy: {
+    color: "#FECD33",
+    category: "social",
+    name: "Theprodigy",
+  },
+  thetattooforum: {
+    color: "#010407",
+    category: "other",
+    name: "Thetattooforum",
+  },
+  theturboforums: {
+    color: "#010102",
+    category: "other",
+    name: "Theturboforums",
+  },
+  tkgr: {
+    color: "#F18D6E",
+    category: "other",
+    name: "Tkgr",
+  },
+  tomshardware: {
+    color: "#D82228",
+    category: "programming",
+    name: "TomsHardware",
+  },
+  toneto: {
+    color: "#838383",
+    category: "sport",
+    name: "Toneto",
+  },
+  top10allservers: {
+    color: "#905E32",
+    category: "gaming",
+    name: "TOP-10 BiteFight.ru",
+  },
+  topcheats: {
+    color: "#1D293D",
+    category: "gaming",
+    name: "Topcheats",
+  },
+  tottenhamhotspur: {
+    color: "#607D8B",
+    category: "sport",
+    name: "Tottenhamhotspur",
+  },
+  trainzvl: {
+    color: "#7A8293",
+    category: "gaming",
+    name: "Trainz Vl",
+  },
+  transitclub: {
+    color: "#029AFE",
+    category: "other",
+    name: "Transit Club",
+  },
+  travisci: {
+    color: "#3EAAAF",
+    category: "programming",
+    name: "Travis CI Community",
+  },
+  trays: {
+    color: "#607D8B",
+    category: "social",
+    name: "Trays",
+  },
+  truckersmp: {
+    color: "#8B393C",
+    category: "gaming",
+    name: "TruckersMP Forum",
+  },
+  truckersmpru: {
+    color: "#C41D26",
+    category: "gaming",
+    name: "TruckersMP",
+  },
+  tsibulskiy: {
+    color: "#607D8B",
+    category: "other",
+    name: "Tsibulskiy",
+  },
+  tunefind: {
+    color: "#000000",
+    category: "other",
+    name: "Tunefind",
+  },
+  tvigra: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Tvigra",
+  },
+  tvucoz: {
+    color: "#FE7C42",
+    category: "other",
+    name: "Tv",
+  },
+  twitcasting: {
+    color: "#3ABBEA",
+    category: "streaming",
+    name: "Twitcasting",
+  },
+  twoelfive: {
+    color: "#607D8B",
+    category: "social",
+    name: "2el5",
+  },
+  twofastforu: {
+    color: "#3A527C",
+    category: "other",
+    name: "2Fast4U",
+  },
 };
