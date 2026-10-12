@@ -5411,4 +5411,14 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "Apelmon",
   },
+  airbuds: {
+    color: "#252224",
+    category: "social",
+    name: "Airbuds",
+  },
+  appclan: {
+    color: "#393841",
+    category: "other",
+    name: "AppClan",
+  },
 };

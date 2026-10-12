@@ -3836,6 +3836,12 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "apelmon":
       icon = <Icon icon="mdi:forum" color={socialNetworks.apelmon.color} />;
       break;
+    case "airbuds":
+      icon = <LocalIcon file="airbuds.webp" alt="Airbuds" />;
+      break;
+    case "appclan":
+      icon = <Icon icon="mdi:newspaper-variant" color={socialNetworks.appclan.color} />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;

@@ -1,6 +1,6 @@
 ---
 name: add-icons
-description: Ajoute des icônes de réseaux/sources à @predictalab/social-icons à partir d'une liste de clés (ex. "anaconda, bilibili, tetrio") ; lancé sans clé, liste d'abord les réseaux de l'API Predicta (/networks) qui n'ont pas d'icône. Sourcing des logos (simple-icons d'abord, sinon asset local, sinon fallback mdi), édition des 3 fichiers, vérification et bump de version. Utiliser dès qu'on demande d'ajouter, créer ou compléter des icônes, de vérifier que des sources ont bien leur icône, ou de trouver dans maigret quels réseaux n'ont pas encore d'icône.
+description: Ajoute des icônes de réseaux/sources à @predictalab/social-icons à partir d'une liste de clés (ex. "anaconda, bilibili, tetrio") ; lancé sans clé, liste d'abord les réseaux de l'API Predicta (/networks) qui n'ont pas d'icône. Sourcing des logos (simple-icons d'abord, sinon asset local, sinon fallback mdi), édition des 3 fichiers, vérification et PR (sans bump : la version est bumpée à la publication). Utiliser dès qu'on demande d'ajouter, créer ou compléter des icônes, de vérifier que des sources ont bien leur icône, ou de trouver dans maigret quels réseaux n'ont pas encore d'icône.
 ---
 
 # Ajouter des icônes à social-icons
@@ -34,9 +34,8 @@ un alias `case "sevencups":` au-dessus de `case "7cups":` (et la clé dans `sour
 `socialNetwork.ts`), sans chercher de nouveau logo.
 
 Présenter à l'utilisateur le nombre de réseaux manquants et demander combien en traiter
-(une PR de 100 à 200 clés est raisonnable avec le mode lot). Tout passe dans une seule branche
-et une seule PR ; le bump de version, le build complet et la PR (étape 6) se font une fois à
-la fin.
+(une PR de 100 à 200 clés est raisonnable avec le mode lot). Un lot = une branche et une PR ;
+le build complet et la PR (étape 6) se font une fois à la fin du lot.
 
 ## 0 bis. Mode lot (dès ~20 clés) : plan → revue → apply
 
@@ -45,7 +44,7 @@ corriger le manifeste.
 
 ```bash
 python3 .claude/skills/add-icons/scripts/icons.py plan --api -n 100     # réseaux API sans icône
-python3 .claude/skills/add-icons/scripts/icons.py plan airbuds=airbuds.fm hexpm   # clés données
+python3 .claude/skills/add-icons/scripts/icons.py plan appclan=app.clan.su hexpm   # clés données
 python3 .claude/skills/add-icons/scripts/icons.py plan --maigret -n 200 [--tag t] [--include-disabled]
 ```
 
@@ -103,7 +102,14 @@ une ligne `fetch clé=domaine` prête pour l'étape 3. Ce que ça tranche :
 - les sous-services : `yandexznatoki` = yandex.ru/q, `yandexbugbounty` = yandex.ru/bugbounty ;
 - `(désactivé dans maigret)` : le check est cassé chez maigret, le site existe quand même.
 
-`INCONNU` : clé absente des trois bases ; demander le domaine à l'utilisateur plutôt que deviner.
+`INCONNU` : clé absente des trois bases. Le domaine est en général dans le service de la clé
+du dépôt sources-api (`app/services/<clé>.py`, URLs appelées), consultable sans clone :
+
+```bash
+glab api "projects/113/repository/files/app%2Fservices%2F<clé>.py/raw?ref=master" --hostname gitlab.predictalab.com | grep -oE 'https?://[a-zA-Z0-9./_-]+' | sort -u
+```
+
+Sinon, demander le domaine à l'utilisateur plutôt que deviner.
 
 **Trouver de nouveaux réseaux à ajouter** (quand on demande quoi ajouter ensuite, ou qu'on
 fouille maigret) :
@@ -164,6 +170,9 @@ Quand le résultat est mauvais, forcer une URL avec `--url clé=url`. Sources al
 - avatar X : `https://unavatar.io/x/<handle>` (rate-limit sévère ~50/h/IP, vérifier que
   c'est bien le compte officiel)
 - instances Lemmy : `https://<domaine>/api/v3/site` → `site_view.site.icon`
+- icône App Store (site qui redirige vers l'App Store, ex. airbuds.fm) :
+  `curl -s "https://itunes.apple.com/search?term=<nom>&entity=software&limit=3"` →
+  `artworkUrl512` (vérifier `sellerName`)
 - icône Play Store : chercher `play-lh.googleusercontent.com/...=w` dans la page de l'app,
   remplacer le suffixe par `=w512`
 - Wikimedia bloque curl : ne pas insister, passer à une autre source
@@ -217,7 +226,7 @@ Aucun artwork ≥ 48 px : icône mdi thématique + couleur dominante du favicon,
    régénère ; pour un asset ajouté à la main (SVG officiel, etc.), lancer
    `npm run gen-assets`. Ne pas l'éditer, et le commiter avec le reste du lot.
 
-## 6. Vérifier, versionner, livrer
+## 6. Vérifier, livrer
 
 ```bash
 npm run gen-assets && npx tsc --noEmit && npm run build
@@ -227,16 +236,19 @@ npm run gen-assets && npx tsc --noEmit && npm run build
 ajouté : sinon il manque au commit.
 
 Smoke test dans l'aperçu (`npm run dev`, port 5174) : le filtre **Nouveautés** liste les clés
-ajoutées à `sourceTypes.ts` depuis la dernière release. Vérifier qu'aucune `<img>` n'est
+ajoutées à `sourceTypes.ts` depuis le dernier commit qui a touché `package.json` (le dernier
+bump) : sans bump dans les PR de lots, il cumule tout ce que contiendra la prochaine
+publication. Vérifier qu'aucune `<img>` n'est
 cassée et qu'aucun SVG Iconify n'est vide :
 
 ```js
 [...document.querySelectorAll('img')].filter(i => !i.complete || i.naturalWidth === 0).map(i => i.alt)
 ```
 
-Puis : bump **patch** de `version` dans `package.json`, commit
-`feat: add N icons for <contexte> and bump version to X.Y.Z` (corps : les mappings de slugs
-non évidents et la provenance des assets), PR vers `master`.
+Puis commit `feat: add N icons for <contexte>` (corps : les mappings de slugs non évidents et
+la provenance des assets), PR vers `master`. **Ne pas toucher à `version`** dans
+`package.json` : plusieurs PR de lots s'enchaînent avant une publication, et le bump se fait
+une seule fois, au moment de publier (hors de ce skill).
 
 La description de la PR liste **toutes** les icônes ajoutées, groupées par input (sert à les
 retrouver dans l'interface des produits) ; ce bloc se génère avec :
@@ -247,5 +259,5 @@ python3 .claude/skills/add-icons/scripts/icons.py inputs <toutes les clés ajout
 
 Un réseau à plusieurs inputs apparaît dans chacun de ses groupes (username, name, email,
 phone) ; les inputs rares (`network-domain`, `group-company`…) vont dans **other**, et les clés
-absentes de l'API dans **hors API**. La publication npm et le bump
-des produits consommateurs ne font pas partie de ce skill.
+absentes de l'API dans **hors API**. Le bump de version, la publication
+npm et le bump des produits consommateurs ne font pas partie de ce skill.

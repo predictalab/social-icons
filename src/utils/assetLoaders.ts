@@ -8,6 +8,7 @@ export const assetLoaders = {
   "advancedcustomfields.webp": () => import("../assets/social-icons/advancedcustomfields.webp"),
   "advego.png": () => import("../assets/social-icons/advego.png"),
   "affiliatefix.png": () => import("../assets/social-icons/affiliatefix.png"),
+  "airbuds.webp": () => import("../assets/social-icons/airbuds.webp"),
   "airliners.png": () => import("../assets/social-icons/airliners.png"),
   "airnfts.webp": () => import("../assets/social-icons/airnfts.webp"),
   "akniga.png": () => import("../assets/social-icons/akniga.png"),

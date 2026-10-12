@@ -1264,4 +1264,6 @@ export type SourceTypes =
   | "antipunk"
   | "antivirus"
   | "antizombie"
-  | "apelmon";
+  | "apelmon"
+  | "airbuds"
+  | "appclan";
