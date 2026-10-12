@@ -4292,6 +4292,456 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "djfint":
       icon = <Icon icon="mdi:music" color={socialNetworks.djfint.color} />;
       break;
+    case "dnbforum":
+      icon = <LocalIcon file="dnbforum.webp" alt="Dnbforum" />;
+      break;
+    case "dndwiki":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.dndwiki.color} />;
+      break;
+    case "dobroeslovo":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.dobroeslovo.color} />;
+      break;
+    case "dockerforums":
+      icon = <Icon icon="simple-icons:docker" color={socialNetworks.dockerforums.color} />;
+      break;
+    case "doctissimo":
+      icon = <LocalIcon file="doctissimo.webp" alt="Doctissimo" />;
+      break;
+    case "dogcraft":
+      icon = <LocalIcon file="dogcraft.webp" alt="Dogcraft" />;
+      break;
+    case "doytrunt":
+      icon = <Icon icon="mdi:school" color={socialNetworks.doytrunt.color} />;
+      break;
+    case "dpilsscooter":
+      icon = <Icon icon="mdi:web" color={socialNetworks.dpilsscooter.color} />;
+      break;
+    case "drawingsbase":
+      icon = <Icon icon="mdi:palette" color={socialNetworks.drawingsbase.color} />;
+      break;
+    case "drdenisov":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.drdenisov.color} />;
+      break;
+    case "dremel":
+      icon = <Icon icon="mdi:cart" color={socialNetworks.dremel.color} />;
+      break;
+    case "droners":
+      icon = <LocalIcon file="droners.webp" alt="Droners" />;
+      break;
+    case "dubrovo":
+      icon = <Icon icon="mdi:tag" color={socialNetworks.dubrovo.color} />;
+      break;
+    case "dumpz":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.dumpz.color} />;
+      break;
+    case "duno":
+      icon = <LocalIcon file="duno.webp" alt="Duno" />;
+      break;
+    case "dushschool":
+      icon = <Icon icon="mdi:trophy" color={socialNetworks.dushschool.color} />;
+      break;
+    case "duz":
+      icon = <Icon icon="mdi:web" color={socialNetworks.duz.color} />;
+      break;
+    case "dvkstyle":
+      icon = <Icon icon="mdi:palette" color={socialNetworks.dvkstyle.color} />;
+      break;
+    case "dzhida2000":
+      icon = <Icon icon="mdi:puzzle" color={socialNetworks.dzhida2000.color} />;
+      break;
+    case "eaforums":
+      icon = <Icon icon="simple-icons:ea" color={socialNetworks.eaforums.color} />;
+      break;
+    case "easyen":
+      icon = <LocalIcon file="easyen.webp" alt="Easyen" />;
+      break;
+    case "easyjob":
+      icon = <LocalIcon file="easyjob.webp" alt="Easyjob" />;
+      break;
+    case "eclipse":
+      icon = <Icon icon="simple-icons:eclipseide" color={socialNetworks.eclipse.color} />;
+      break;
+    case "edumonch":
+      icon = <Icon icon="mdi:school" color={socialNetworks.edumonch.color} />;
+      break;
+    case "ekzoticsad":
+      icon = <Icon icon="mdi:cards-playing" color={socialNetworks.ekzoticsad.color} />;
+      break;
+    case "elastic":
+      icon = <Icon icon="simple-icons:elastic" color={socialNetworks.elastic.color} />;
+      break;
+    case "electroniccomponent":
+      icon = <Icon icon="mdi:cart" color={socialNetworks.electroniccomponent.color} />;
+      break;
+    case "elektron":
+      icon = <LocalIcon file="elektron.webp" alt="Elektron" />;
+      break;
+    case "elibrarytips":
+      icon = <LocalIcon file="elibrarytips.webp" alt="eLibrary Tips" />;
+      break;
+    case "elpizza":
+      icon = <Icon icon="mdi:post" color={socialNetworks.elpizza.color} />;
+      break;
+    case "encyc":
+      icon = <LocalIcon file="encyc.webp" alt="Encyc" />;
+      break;
+    case "endeavouros":
+      icon = <Icon icon="simple-icons:endeavouros" color={socialNetworks.endeavouros.color} />;
+      break;
+    case "endlessos":
+      icon = <LocalIcon file="endlessos.webp" alt="Endless OS Community" />;
+      break;
+    case "endoctor":
+      icon = <Icon icon="mdi:school" color={socialNetworks.endoctor.color} />;
+      break;
+    case "englishinfo":
+      icon = <Icon icon="mdi:school" color={socialNetworks.englishinfo.color} />;
+      break;
+    case "engtips":
+      icon = <Icon icon="mdi:wrench" color={socialNetworks.engtips.color} />;
+      break;
+    case "esetnod32":
+      icon = <LocalIcon file="esetnod32.webp" alt="ESET Forum" />;
+      break;
+    case "evaveda":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.evaveda.color} />;
+      break;
+    case "evendim":
+      icon = <Icon icon="mdi:book-open-page-variant" color={socialNetworks.evendim.color} />;
+      break;
+    case "excelworld":
+      icon = <LocalIcon file="excelworld.webp" alt="Excelworld" />;
+      break;
+    case "exkavator":
+      icon = <LocalIcon file="exkavator.webp" alt="Exkavator" />;
+      break;
+    case "exoduspay":
+      icon = <LocalIcon file="exoduspay.webp" alt="Exodus Pay" />;
+      break;
+    case "eyorkie":
+      icon = <Icon icon="mdi:web" color={socialNetworks.eyorkie.color} />;
+      break;
+    case "ezoterikaconversion":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.ezoterikaconversion.color} />;
+      break;
+    case "fablero":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.fablero.color} />;
+      break;
+    case "facultyofmedicine":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.facultyofmedicine.color} />;
+      break;
+    case "faillyuboi":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.faillyuboi.color} />;
+      break;
+    case "faktopedia":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.faktopedia.color} />;
+      break;
+    case "fameswap":
+      icon = <Icon icon="mdi:briefcase" color={socialNetworks.fameswap.color} />;
+      break;
+    case "fancentro":
+      icon = <LocalIcon file="fancentro.webp" alt="Fancentro" />;
+      break;
+    case "fanfiktion":
+      icon = <LocalIcon file="fanfiktion.webp" alt="Fanfiktion" />;
+      break;
+    case "faqusha":
+      icon = <LocalIcon file="faqusha.webp" alt="Faqusha" />;
+      break;
+    case "fareast":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.fareast.color} />;
+      break;
+    case "fat":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.fat.color} />;
+      break;
+    case "fcdin":
+      icon = <LocalIcon file="fcdin.webp" alt="Fcdin" />;
+      break;
+    case "fclmnews":
+      icon = <LocalIcon file="fclmnews.webp" alt="FCLM News" />;
+      break;
+    case "fdroid":
+      icon = <Icon icon="simple-icons:fdroid" color={socialNetworks.fdroid.color} />;
+      break;
+    case "ffmbio":
+      icon = <Icon icon="mdi:account-group" color={socialNetworks.ffmbio.color} />;
+      break;
+    case "ficwriter":
+      icon = <LocalIcon file="ficwriter.webp" alt="Ficwriter" />;
+      break;
+    case "finanzfrage":
+      icon = <LocalIcon file="finanzfrage.webp" alt="Finanzfrage" />;
+      break;
+    case "finforum":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.finforum.color} />;
+      break;
+    case "finmessage":
+      icon = <LocalIcon file="finmessage.webp" alt="Finmessage" />;
+      break;
+    case "firesofheaven":
+      icon = <Icon icon="mdi:laptop" color={socialNetworks.firesofheaven.color} />;
+      break;
+    case "fireteam":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.fireteam.color} />;
+      break;
+    case "fiveieight":
+      icon = <Icon icon="mdi:web" color={socialNetworks.fiveieight.color} />;
+      break;
+    case "fivelevel":
+      icon = <Icon icon="mdi:web" color={socialNetworks.fivelevel.color} />;
+      break;
+    case "flamp":
+      icon = <LocalIcon file="flamp.webp" alt="Flamp" />;
+      break;
+    case "flarum":
+      icon = <LocalIcon file="flarum.webp" alt="Flarum Community" />;
+      break;
+    case "flipsnack":
+      icon = <LocalIcon file="flipsnack.webp" alt="Flipsnack" />;
+      break;
+    case "flirtic":
+      icon = <LocalIcon file="flirtic.webp" alt="Flirtic" />;
+      break;
+    case "fly":
+      icon = <Icon icon="mdi:laptop" color={socialNetworks.fly.color} />;
+      break;
+    case "focuspocus":
+      icon = <Icon icon="mdi:school" color={socialNetworks.focuspocus.color} />;
+      break;
+    case "fordating":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.fordating.color} />;
+      break;
+    case "forextrader":
+      icon = <Icon icon="mdi:finance" color={socialNetworks.forextrader.color} />;
+      break;
+    case "forum29":
+      icon = <LocalIcon file="forum29.webp" alt="Forum29" />;
+      break;
+    case "forumhistory":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.forumhistory.color} />;
+      break;
+    case "forumprawne":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.forumprawne.color} />;
+      break;
+    case "forumsi":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.forumsi.color} />;
+      break;
+    case "forumtauck":
+      icon = <Icon icon="mdi:airplane" color={socialNetworks.forumtauck.color} />;
+      break;
+    case "forumyuristov":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.forumyuristov.color} />;
+      break;
+    case "fotka":
+      icon = <LocalIcon file="fotka.webp" alt="Fotka" />;
+      break;
+    case "fourfourzeroonezeroone":
+      icon = <Icon icon="mdi:school" color={socialNetworks.fourfourzeroonezeroone.color} />;
+      break;
+    case "fourninefoureight":
+      icon = <Icon icon="mdi:briefcase" color={socialNetworks.fourninefoureight.color} />;
+      break;
+    case "fourxfourtomsk":
+      icon = <Icon icon="mdi:car" color={socialNetworks.fourxfourtomsk.color} />;
+      break;
+    case "foxrecord":
+      icon = <Icon icon="mdi:post" color={socialNetworks.foxrecord.color} />;
+      break;
+    case "freelancebay":
+      icon = <Icon icon="mdi:briefcase" color={socialNetworks.freelancebay.color} />;
+      break;
+    case "freelancedashua":
+      icon = <Icon icon="mdi:briefcase" color={socialNetworks.freelancedashua.color} />;
+      break;
+    case "freeproxy":
+      icon = <Icon icon="mdi:post" color={socialNetworks.freeproxy.color} />;
+      break;
+    case "fsmodsrus":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.fsmodsrus.color} />;
+      break;
+    case "fstkolos":
+      icon = <Icon icon="mdi:puzzle" color={socialNetworks.fstkolos.color} />;
+      break;
+    case "funcom":
+      icon = <LocalIcon file="funcom.webp" alt="Funcom" />;
+      break;
+    case "futajiststudio":
+      icon = <Icon icon="mdi:video" color={socialNetworks.futajiststudio.color} />;
+      break;
+    case "g2g":
+      icon = <Icon icon="simple-icons:g2g" color={socialNetworks.g2g.color} />;
+      break;
+    case "gadjet":
+      icon = <Icon icon="mdi:laptop" color={socialNetworks.gadjet.color} />;
+      break;
+    case "galactictalk":
+      icon = <LocalIcon file="galactictalk.webp" alt="GalacticTalk" />;
+      break;
+    case "gamedevnet":
+      icon = <LocalIcon file="gamedevnet.webp" alt="GameDev.net" />;
+      break;
+    case "gamedevtv":
+      icon = <LocalIcon file="gamedevtv.webp" alt="GameDev.tv" />;
+      break;
+    case "gamemobi":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.gamemobi.color} />;
+      break;
+    case "gamerevolution":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.gamerevolution.color} />;
+      break;
+    case "gamesfrm":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.gamesfrm.color} />;
+      break;
+    case "garagepunk":
+      icon = <Icon icon="mdi:music" color={socialNetworks.garagepunk.color} />;
+      break;
+    case "gardeningforums":
+      icon = <LocalIcon file="gardeningforums.webp" alt="Gardening Forums" />;
+      break;
+    case "garminucoz":
+      icon = <Icon icon="mdi:map-marker" color={socialNetworks.garminucoz.color} />;
+      break;
+    case "garudalinux":
+      icon = <Icon icon="simple-icons:garudalinux" color={socialNetworks.garudalinux.color} />;
+      break;
+    case "gebirgs":
+      icon = <Icon icon="mdi:puzzle" color={socialNetworks.gebirgs.color} />;
+      break;
+    case "gemsofwar":
+      icon = <LocalIcon file="gemsofwar.webp" alt="Gems of War" />;
+      break;
+    case "german242":
+      icon = <LocalIcon file="german242.webp" alt="German242" />;
+      break;
+    case "gesundheitsfrage":
+      icon = <LocalIcon file="gesundheitsfrage.webp" alt="Gesundheitsfrage" />;
+      break;
+    case "ghostforum":
+      icon = <Icon icon="simple-icons:ghost" color={socialNetworks.ghostforum.color} />;
+      break;
+    case "gipsysteam":
+      icon = <LocalIcon file="gipsysteam.webp" alt="GipsysTeam" />;
+      break;
+    case "gitcode":
+      icon = <Icon icon="simple-icons:gitcode" color={socialNetworks.gitcode.color} />;
+      break;
+    case "gitlabforum":
+      icon = <Icon icon="simple-icons:gitlab" color={socialNetworks.gitlabforum.color} />;
+      break;
+    case "glbyh":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.glbyh.color} />;
+      break;
+    case "globulation2":
+      icon = <LocalIcon file="globulation2.webp" alt="Globulation2" />;
+      break;
+    case "glowforge":
+      icon = <LocalIcon file="glowforge.webp" alt="Glowforge Community" />;
+      break;
+    case "goba6372":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.goba6372.color} />;
+      break;
+    case "goddamn":
+      icon = <Icon icon="mdi:music" color={socialNetworks.goddamn.color} />;
+      break;
+    case "goha":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.goha.color} />;
+      break;
+    case "golangbridge":
+      icon = <LocalIcon file="golangbridge.webp" alt="Golang Bridge" />;
+      break;
+    case "golasavkfree":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.golasavkfree.color} />;
+      break;
+    case "golfmonthly":
+      icon = <LocalIcon file="golfmonthly.webp" alt="Golf Monthly" />;
+      break;
+    case "gomeldogs":
+      icon = <Icon icon="mdi:puzzle" color={socialNetworks.gomeldogs.color} />;
+      break;
+    case "gong":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.gong.color} />;
+      break;
+    case "goodmusic":
+      icon = <Icon icon="mdi:web" color={socialNetworks.goodmusic.color} />;
+      break;
+    case "goroskop":
+      icon = <Icon icon="mdi:post" color={socialNetworks.goroskop.color} />;
+      break;
+    case "gorposmos":
+      icon = <LocalIcon file="gorposmos.webp" alt="Gorposmos" />;
+      break;
+    case "gozenhost":
+      icon = <Icon icon="mdi:web" color={socialNetworks.gozenhost.color} />;
+      break;
+    case "gradleplugins":
+      icon = <Icon icon="simple-icons:gradle" color={socialNetworks.gradleplugins.color} />;
+      break;
+    case "gribnikikybani":
+      icon = <LocalIcon file="gribnikikybani.webp" alt="Gribnikikybani" />;
+      break;
+    case "grodnofish":
+      icon = <Icon icon="mdi:puzzle" color={socialNetworks.grodnofish.color} />;
+      break;
+    case "gsmstandart":
+      icon = <Icon icon="mdi:cart" color={socialNetworks.gsmstandart.color} />;
+      break;
+    case "gtafanzone":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.gtafanzone.color} />;
+      break;
+    case "gtgarazh":
+      icon = <Icon icon="mdi:car" color={socialNetworks.gtgarazh.color} />;
+      break;
+    case "gulfcoastgunforum":
+      icon = <LocalIcon file="gulfcoastgunforum.webp" alt="Gulfcoastgunforum" />;
+      break;
+    case "gym5":
+      icon = <Icon icon="mdi:school" color={socialNetworks.gym5.color} />;
+      break;
+    case "hackapp":
+      icon = <Icon icon="mdi:incognito" color={socialNetworks.hackapp.color} />;
+      break;
+    case "hairmaniac":
+      icon = <LocalIcon file="hairmaniac.webp" alt="Hairmaniac" />;
+      break;
+    case "halol":
+      icon = <LocalIcon file="halol.webp" alt="Halol" />;
+      break;
+    case "haogan":
+      icon = <Icon icon="mdi:briefcase" color={socialNetworks.haogan.color} />;
+      break;
+    case "hashicorp":
+      icon = <Icon icon="simple-icons:hashicorp" color={socialNetworks.hashicorp.color} />;
+      break;
+    case "haskell":
+      icon = <Icon icon="simple-icons:haskell" color={socialNetworks.haskell.color} />;
+      break;
+    case "hiveos":
+      icon = <Icon icon="mdi:forum" color={socialNetworks.hiveos.color} />;
+      break;
+    case "hmkids":
+      icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.hmkids.color} />;
+      break;
+    case "hokage":
+      icon = <Icon icon="mdi:animation" color={socialNetworks.hokage.color} />;
+      break;
+    case "holodilshchik":
+      icon = <Icon icon="mdi:school" color={socialNetworks.holodilshchik.color} />;
+      break;
+    case "homeassistant":
+      icon = <Icon icon="simple-icons:homeassistant" color={socialNetworks.homeassistant.color} />;
+      break;
+    case "hostingkitchen":
+      icon = <Icon icon="mdi:web" color={socialNetworks.hostingkitchen.color} />;
+      break;
+    case "houserepairtalk":
+      icon = <LocalIcon file="houserepairtalk.webp" alt="Houserepairtalk" />;
+      break;
+    case "huel":
+      icon = <LocalIcon file="huel.webp" alt="Huel Community" />;
+      break;
+    case "huelna":
+      icon = <LocalIcon file="huelna.webp" alt="Huel Community NA" />;
+      break;
     default:
       icon = <Icon icon="mdi:share-variant-outline" />;
       break;
