@@ -243,6 +243,10 @@ def tag_rule(infos):
     return "mdi:web", "other"
 
 
+# Host labels and page titles that name the software, not the site: forum.balletfriends.ru,
+# en.brickimedia.org, a page titled "Forums"
+GENERIC_LABELS = {"forum", "forums", "community", "discuss", "en", "ru", "m", "app", "support",
+                  "develop", "q", "board", "talk", "wiki", "commons", "home", "main"}
 JUNK_TITLE = re.compile(r"just a moment|attention required|access denied|forbidden|not found|error|"
                         r"index of|welcome to|default page|captcha|ddos", re.I)
 
@@ -253,10 +257,12 @@ def display_name(key, site, title):
     Latin like the existing ones (FishingSib, YaPishu)."""
     if site and not is_domain_name(site[1]) and "{" not in site[1]:
         return site[1][0].upper() + site[1][1:] if site[1].islower() else site[1]
-    if title and title.isascii() and len(title) <= 30 and not JUNK_TITLE.search(title) and not is_domain_name(title):
+    if (title and title.isascii() and len(title) <= 30 and not JUNK_TITLE.search(title)
+            and not is_domain_name(title) and title.lower() not in GENERIC_LABELS):
         return title
     host = (site[2] if site else "").split("/")[0].removeprefix("www.")
-    label = host.split(".")[0] if host else key
+    labels = [l for l in host.split(".")[:-1] if l not in GENERIC_LABELS]  # forum.cxem.net -> cxem
+    label = labels[0] if labels else key
     return " ".join(w.capitalize() for w in re.split(r"[-_]+", label) if w) or key
 
 
