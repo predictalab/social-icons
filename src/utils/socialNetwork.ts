@@ -7671,4 +7671,754 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "Mistrzowie",
   },
+  mixlr: {
+    color: "#F21C24",
+    category: "other",
+    name: "Mixlr",
+  },
+  mmorpg: {
+    color: "#000000",
+    category: "gaming",
+    name: "MMORPG.com",
+  },
+  mobrep: {
+    color: "#23C3FD",
+    category: "other",
+    name: "Mobrep",
+  },
+  moedelo: {
+    color: "#F31F1F",
+    category: "other",
+    name: "Moedelo",
+  },
+  moegirl: {
+    color: "#38B48B",
+    category: "other",
+    name: "Moegirlpedia",
+  },
+  moments: {
+    color: "#00D8FD",
+    category: "social",
+    name: "Moments",
+  },
+  moneysfirst: {
+    color: "#FFC800",
+    category: "finance",
+    name: "Moneysfirst",
+  },
+  morozovka: {
+    color: "#607D8B",
+    category: "social",
+    name: "Morozovka",
+  },
+  morshansk: {
+    color: "#607D8B",
+    category: "social",
+    name: "Morshansk",
+  },
+  moskovia: {
+    color: "#295353",
+    category: "social",
+    name: "Moskovia",
+  },
+  motokiller: {
+    color: "#060606",
+    category: "other",
+    name: "Motokiller",
+  },
+  motorka: {
+    color: "#0A0A0A",
+    category: "social",
+    name: "Motorka",
+  },
+  motorradfrage: {
+    color: "#1B9BC6",
+    category: "other",
+    name: "Motorradfrage",
+  },
+  mototravels: {
+    color: "#691D00",
+    category: "other",
+    name: "Moto Travels",
+  },
+  movi: {
+    color: "#607D8B",
+    category: "social",
+    name: "Movi",
+  },
+  moxvouz: {
+    color: "#607D8B",
+    category: "social",
+    name: "Mox",
+  },
+  mozganet: {
+    color: "#FECD33",
+    category: "gaming",
+    name: "Mozga Net",
+  },
+  muffingroup: {
+    color: "#054CB6",
+    category: "gaming",
+    name: "MuffinGroup",
+  },
+  music2dj: {
+    color: "#607D8B",
+    category: "other",
+    name: "Music2DJ",
+  },
+  musicbunker: {
+    color: "#14B60E",
+    category: "other",
+    name: "Music Bunker",
+  },
+  musicone: {
+    color: "#040221",
+    category: "other",
+    name: "Music One",
+  },
+  muzika: {
+    color: "#26AAF8",
+    category: "streaming",
+    name: "Muzika",
+  },
+  myfootball1: {
+    color: "#607D8B",
+    category: "sport",
+    name: "Myfootball 1",
+  },
+  mymailru: {
+    color: "#2063AC",
+    category: "other",
+    name: "Мой Мир",
+  },
+  mymfans: {
+    color: "#2776FE",
+    category: "adult",
+    name: "MYM",
+  },
+  mytechbook: {
+    color: "#607D8B",
+    category: "programming",
+    name: "MyTechBook",
+  },
+  mytrans: {
+    color: "#CB6B01",
+    category: "social",
+    name: "Mytrans",
+  },
+  mytucson: {
+    color: "#607D8B",
+    category: "other",
+    name: "My Tucson",
+  },
+  n8n: {
+    color: "#EA4B71",
+    category: "programming",
+    name: "N8n Community",
+  },
+  nameberry: {
+    color: "#FF00FE",
+    category: "social",
+    name: "Nameberry",
+  },
+  narutofan: {
+    color: "#F1C352",
+    category: "other",
+    name: "Naruto Fan",
+  },
+  narutorolegame: {
+    color: "#01007A",
+    category: "gaming",
+    name: "Naruto Rolegame",
+  },
+  necromancers: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Necromancers",
+  },
+  nelubit: {
+    color: "#CDDB36",
+    category: "dating",
+    name: "Nelubit",
+  },
+  newlcn: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Newlcn",
+  },
+  nfclub: {
+    color: "#607D8B",
+    category: "other",
+    name: "Nf Club",
+  },
+  nicefriendcats: {
+    color: "#607D8B",
+    category: "social",
+    name: "Nicefriendcats",
+  },
+  nicemusic: {
+    color: "#359AE8",
+    category: "other",
+    name: "Nicemusic",
+  },
+  nicholassparks: {
+    color: "#70643E",
+    category: "other",
+    name: "Nicholas Sparks Russia",
+  },
+  niflheim: {
+    color: "#2553B6",
+    category: "social",
+    name: "Niflheim World BHF forum",
+  },
+  nineinteri: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "9interi",
+  },
+  ninetysix: {
+    color: "#607D8B",
+    category: "social",
+    name: "96",
+  },
+  nkcs: {
+    color: "#473A5B",
+    category: "gaming",
+    name: "Nk Cs",
+  },
+  nodered: {
+    color: "#8F0000",
+    category: "programming",
+    name: "Node-RED Forum",
+  },
+  nojayurt: {
+    color: "#8ABA9E",
+    category: "other",
+    name: "Nojay Urt",
+  },
+  nokia6233: {
+    color: "#607D8B",
+    category: "programming",
+    name: "Nokia6233",
+  },
+  novomoskovsk: {
+    color: "#B58E2B",
+    category: "ecommerce",
+    name: "Novomoskovsk",
+  },
+  nuzar: {
+    color: "#607D8B",
+    category: "programming",
+    name: "Nuzar",
+  },
+  nvidiadevforum: {
+    color: "#76B900",
+    category: "programming",
+    name: "NVIDIA Developer Forums",
+  },
+  nyaa: {
+    color: "#106CE2",
+    category: "other",
+    name: "Nyaa",
+  },
+  nygunforum: {
+    color: "#3E9BC4",
+    category: "other",
+    name: "Nygunforum",
+  },
+  obkon: {
+    color: "#2A1214",
+    category: "social",
+    name: "Obkon",
+  },
+  obmanunet: {
+    color: "#262626",
+    category: "social",
+    name: "Obmanunet",
+  },
+  odonvv: {
+    color: "#3B370D",
+    category: "social",
+    name: "Odonvv",
+  },
+  ofc65: {
+    color: "#C9A629",
+    category: "sport",
+    name: "Ofc65",
+  },
+  officiating: {
+    color: "#8D8E90",
+    category: "social",
+    name: "Officiating",
+  },
+  oglaszamy24h: {
+    color: "#614CA4",
+    category: "ecommerce",
+    name: "Oglaszamy24h",
+  },
+  okmorgru: {
+    color: "#3E6E9E",
+    category: "social",
+    name: "OKM",
+  },
+  olx: {
+    color: "#23E5DB",
+    category: "ecommerce",
+    name: "OLX",
+  },
+  omglol: {
+    color: "#E34198",
+    category: "social",
+    name: "omg.lol",
+  },
+  onanizmclub: {
+    color: "#FB5901",
+    category: "adult",
+    name: "Onanizm",
+  },
+  onceuponatimetv: {
+    color: "#607D8B",
+    category: "social",
+    name: "Once Upon A Time Tv",
+  },
+  onesevenninesixweb: {
+    color: "#8B8F91",
+    category: "social",
+    name: "1796web",
+  },
+  onetwothreerf: {
+    color: "#0C0C0C",
+    category: "other",
+    name: "123RF",
+  },
+  onezeroonevzvod: {
+    color: "#736242",
+    category: "social",
+    name: "101vzvod",
+  },
+  onlinemovies: {
+    color: "#1D1D1D",
+    category: "video_platform",
+    name: "Online Movies",
+  },
+  oopkmoskva: {
+    color: "#607D8B",
+    category: "ecommerce",
+    name: "Oopkmoskva",
+  },
+  openaire: {
+    color: "#19167A",
+    category: "other",
+    name: "OpenAIRE",
+  },
+  openconversational: {
+    color: "#010101",
+    category: "social",
+    name: "Openconversational",
+  },
+  openframeworks: {
+    color: "#464445",
+    category: "programming",
+    name: "openFrameworks",
+  },
+  openwrt: {
+    color: "#00B5E2",
+    category: "programming",
+    name: "OpenWrt Forum",
+  },
+  oskolfishing: {
+    color: "#846B3A",
+    category: "social",
+    name: "Oskolfishing",
+  },
+  ourdjtalk: {
+    color: "#245A9A",
+    category: "other",
+    name: "OurDJTalk",
+  },
+  ovo: {
+    color: "#202078",
+    category: "social",
+    name: "Ovo",
+  },
+  ozcardtrader: {
+    color: "#5A566D",
+    category: "sport",
+    name: "Ozcardtrader",
+  },
+  ozvolvo: {
+    color: "#005192",
+    category: "other",
+    name: "Oz Volvo",
+  },
+  p1rat: {
+    color: "#430F0C",
+    category: "other",
+    name: "P1rat",
+  },
+  p2pu: {
+    color: "#AFB734",
+    category: "other",
+    name: "P2PU Community",
+  },
+  p38forum: {
+    color: "#3F3E38",
+    category: "other",
+    name: "P38forum",
+  },
+  p8ntballer: {
+    color: "#8C8C8C",
+    category: "sport",
+    name: "P8ntballer",
+  },
+  panzer35: {
+    color: "#607D8B",
+    category: "other",
+    name: "Panzer35",
+  },
+  partner: {
+    color: "#607D8B",
+    category: "other",
+    name: "Partner",
+  },
+  peppernl: {
+    color: "#FB4C00",
+    category: "ecommerce",
+    name: "Pepper NL",
+  },
+  pewex: {
+    color: "#534741",
+    category: "social",
+    name: "Pewex",
+  },
+  phpbuilder: {
+    color: "#607D8B",
+    category: "programming",
+    name: "PHPBuilder Forums",
+  },
+  piekielni: {
+    color: "#F3CCCC",
+    category: "social",
+    name: "Piekielni",
+  },
+  pihole: {
+    color: "#96060C",
+    category: "programming",
+    name: "Pi-hole Discourse",
+  },
+  pik100: {
+    color: "#607D8B",
+    category: "social",
+    name: "Pik100",
+  },
+  pimoroni: {
+    color: "#000000",
+    category: "programming",
+    name: "Pimoroni Buccaneers",
+  },
+  piobets: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Pio Bets",
+  },
+  pirohimic: {
+    color: "#607D8B",
+    category: "other",
+    name: "pirohimic",
+  },
+  pixilart: {
+    color: "#FF315A",
+    category: "gaming",
+    name: "Pixilart",
+  },
+  pixls: {
+    color: "#2B2B2B",
+    category: "social",
+    name: "Pixls",
+  },
+  playlistiptv: {
+    color: "#607D8B",
+    category: "streaming",
+    name: "Playlist iptv",
+  },
+  playtime: {
+    color: "#3BCD14",
+    category: "gaming",
+    name: "Playtime",
+  },
+  pluralsight: {
+    color: "#F15B2A",
+    category: "other",
+    name: "Pluralsight",
+  },
+  pmpkbirsk: {
+    color: "#607D8B",
+    category: "other",
+    name: "Pmpkbirsk",
+  },
+  podolog: {
+    color: "#61A792",
+    category: "ecommerce",
+    name: "Podolog",
+  },
+  podolsk: {
+    color: "#687082",
+    category: "social",
+    name: "Podolsk",
+  },
+  pogz5615: {
+    color: "#000000",
+    category: "other",
+    name: "Pogz5615",
+  },
+  pokerstrategy: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "PokerStrategy",
+  },
+  policja2009: {
+    color: "#607D8B",
+    category: "social",
+    name: "Policja2009",
+  },
+  popugi: {
+    color: "#CCCCFE",
+    category: "social",
+    name: "Popugi",
+  },
+  portalcs16: {
+    color: "#141E36",
+    category: "gaming",
+    name: "Portal CS 1.6",
+  },
+  poshtovik: {
+    color: "#607D8B",
+    category: "other",
+    name: "Poshtovik",
+  },
+  posit: {
+    color: "#447099",
+    category: "social",
+    name: "Posit Community",
+  },
+  postman: {
+    color: "#FF6C37",
+    category: "programming",
+    name: "Postman Community",
+  },
+  potystorony: {
+    color: "#607D8B",
+    category: "social",
+    name: "Potystorony",
+  },
+  prenatalclub: {
+    color: "#019CC1",
+    category: "other",
+    name: "Prenatal Club",
+  },
+  prihoz: {
+    color: "#607D8B",
+    category: "social",
+    name: "Prihoz",
+  },
+  prizyvnikmoy: {
+    color: "#56A8E2",
+    category: "other",
+    name: "Prizyvnikmoy",
+  },
+  procssteam: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Pro Cssteam",
+  },
+  prodigy: {
+    color: "#613B2D",
+    category: "other",
+    name: "Prodigy",
+  },
+  profsouzau: {
+    color: "#607D8B",
+    category: "other",
+    name: "Profsouz Au",
+  },
+  prosemirror: {
+    color: "#000000",
+    category: "programming",
+    name: "Prosemirror",
+  },
+  prosmart: {
+    color: "#848685",
+    category: "other",
+    name: "ProSmart",
+  },
+  prosvet: {
+    color: "#607D8B",
+    category: "social",
+    name: "Pro Svet",
+  },
+  prosvetlenie: {
+    color: "#607D8B",
+    category: "other",
+    name: "Prosvetlenie",
+  },
+  provincialynews: {
+    color: "#CC833A",
+    category: "finance",
+    name: "Provincialynews",
+  },
+  prv: {
+    color: "#B70101",
+    category: "social",
+    name: "Prv",
+  },
+  psychotype: {
+    color: "#607D8B",
+    category: "other",
+    name: "Psychotype",
+  },
+  psydv: {
+    color: "#9F9FFE",
+    category: "other",
+    name: "Psy Dv",
+  },
+  pubgopgg: {
+    color: "#664B1A",
+    category: "gaming",
+    name: "OP.GG PUBG",
+  },
+  punx: {
+    color: "#060605",
+    category: "other",
+    name: "Punx",
+  },
+  pythonsu: {
+    color: "#3776AB",
+    category: "programming",
+    name: "Python.su",
+  },
+  pytorch: {
+    color: "#EE4C2C",
+    category: "programming",
+    name: "PyTorch Forums",
+  },
+  quake2: {
+    color: "#B3261E",
+    category: "gaming",
+    name: "Quake2.com.ru",
+  },
+  quartertothree: {
+    color: "#000000",
+    category: "gaming",
+    name: "Qt3",
+  },
+  questionablequesting: {
+    color: "#044558",
+    category: "social",
+    name: "Questionable Questing",
+  },
+  quickfile: {
+    color: "#4C7FFE",
+    category: "finance",
+    name: "QuickFile",
+  },
+  quik: {
+    color: "#5BB48D",
+    category: "social",
+    name: "Quik",
+  },
+  rabotenka: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Rabotenka",
+  },
+  radiouchebnik: {
+    color: "#607D8B",
+    category: "social",
+    name: "Radio-uchebnik",
+  },
+  rajce: {
+    color: "#DA2C00",
+    category: "other",
+    name: "Rajce",
+  },
+  rapbeat: {
+    color: "#8B8B8B",
+    category: "other",
+    name: "Rapbeat",
+  },
+  rasa: {
+    color: "#5A17EE",
+    category: "programming",
+    name: "Rasa",
+  },
+  rasslabyxa: {
+    color: "#607D8B",
+    category: "gaming",
+    name: "Rasslabyxa",
+  },
+  rastrnet: {
+    color: "#727A4C",
+    category: "social",
+    name: "Rastrnet",
+  },
+  razborkajapan: {
+    color: "#607D8B",
+    category: "other",
+    name: "Razborka Japan",
+  },
+  rcloneforum: {
+    color: "#3F79AD",
+    category: "programming",
+    name: "Rclone Forum",
+  },
+  readthedocs: {
+    color: "#000000",
+    category: "programming",
+    name: "Read the Docs",
+  },
+  realsp: {
+    color: "#241D0F",
+    category: "ecommerce",
+    name: "Real Sp",
+  },
+  redforum: {
+    color: "#DA2A1B",
+    category: "social",
+    name: "Red Forum",
+  },
+  reincarnationforum: {
+    color: "#607D8B",
+    category: "social",
+    name: "Reincarnationforum",
+  },
+  reisefrage: {
+    color: "#1B9BC6",
+    category: "other",
+    name: "Reisefrage",
+  },
+  relasko: {
+    color: "#EC1B23",
+    category: "other",
+    name: "Relasko",
+  },
+  remont56: {
+    color: "#CD863F",
+    category: "other",
+    name: "Remont56",
+  },
+  renaultfanclub: {
+    color: "#607D8B",
+    category: "social",
+    name: "RenaultFanClub",
+  },
+  resourcemta: {
+    color: "#161616",
+    category: "gaming",
+    name: "Resource MTA",
+  },
+  rielt55: {
+    color: "#6B2527",
+    category: "ecommerce",
+    name: "Rielt55",
+  },
 };
