@@ -107,9 +107,14 @@ def site_domain(url):
     return u.netloc + path
 
 
+SECOND_LEVEL = {"org", "com", "co", "net", "gov", "edu", "ac", "or", "ne"}
+
+
 def domain_label(domain):
-    """maps.google.com → google, {username}.tilda.ws → tilda."""
+    """maps.google.com → google, {username}.tilda.ws → tilda, kali.org.ru → kali."""
     parts = [p for p in domain.split("/")[0].split(".") if p and "{" not in p]
+    if len(parts) >= 3 and parts[-2] in SECOND_LEVEL:
+        parts = parts[:-1]  # org.ru, com.au, co.uk: the registrable label is one further left
     return norm(parts[-2]) if len(parts) >= 2 else ""
 
 
