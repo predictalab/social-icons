@@ -1,6 +1,6 @@
 ---
 name: add-icons
-description: Ajoute des icônes de réseaux/sources à @predictalab/social-icons à partir d'une liste de clés (ex. "anaconda, bilibili, tetrio") ; lancé sans clé, liste d'abord les réseaux de l'API Predicta (/networks) qui n'ont pas d'icône. Sourcing des logos (simple-icons d'abord, sinon asset local, sinon fallback mdi), édition des 3 fichiers, vérification et PR (sans bump : la version est bumpée à la publication). Utiliser dès qu'on demande d'ajouter, créer ou compléter des icônes, de vérifier que des sources ont bien leur icône, ou de trouver dans maigret quels réseaux n'ont pas encore d'icône.
+description: Ajoute des icônes de réseaux/sources à @predictalab/social-icons à partir d'une liste de clés (ex. "anaconda, bilibili, tetrio") ; avec un nombre seul ("/add-icons 150"), traite directement un lot de N réseaux de l'API sans icône ; lancé sans argument, liste d'abord les réseaux de l'API Predicta (/networks) qui n'ont pas d'icône. Sourcing des logos (simple-icons d'abord, sinon asset local, sinon fallback mdi), édition des 3 fichiers, vérification et PR (sans bump : la version est bumpée à la publication). Utiliser dès qu'on demande d'ajouter, créer ou compléter des icônes, de vérifier que des sources ont bien leur icône, ou de trouver dans maigret quels réseaux n'ont pas encore d'icône.
 ---
 
 # Ajouter des icônes à social-icons
@@ -8,6 +8,21 @@ description: Ajoute des icônes de réseaux/sources à @predictalab/social-icons
 Entrée : une liste de **clés de sources** (minuscules, sans espace, identiques aux clés
 utilisées par les applications qui consomment la lib : `hexpm`, `pr0gramm`, `thepiratebay`…).
 Si on te donne des noms de marques, demande ou déduis la clé avant de commencer.
+
+Arguments de `/add-icons` :
+- aucun : réseaux de l'API sans icône (étape 0), demander combien en traiter ;
+- **un nombre seul** (`/add-icons 150`) : même chose, mais lot de N réseaux sans poser la
+  question (`plan --api -n N`, étape 0 bis). Une clé ne commence jamais par un chiffre, donc
+  pas d'ambiguïté ;
+- des clés (`hexpm, tetrio`, ou `clé=domaine`) : seulement celles-ci.
+
+**Branche** : chaque lot part d'un `origin/master` à jour (`git fetch` puis
+`git switch -c feat/add-icons-<première clé>-<dernière clé> origin/master`),
+et donne une PR mergée avant le lot suivant. Les lots ajoutent tous leurs blocs aux mêmes
+endroits des 3 fichiers (fin de l'union, fin de l'objet, avant `default:`) : deux branches
+ouvertes en parallèle se conflictent à coup sûr. Si la PR du lot précédent n'est pas encore
+mergée, le signaler à l'utilisateur et proposer de la merger d'abord ; à défaut, partir de sa
+branche (PR empilée, base = branche précédente).
 
 Outillage : `python3 .claude/skills/add-icons/scripts/icons.py <sous-commande>`
 (dépend de python3 + Pillow + curl ; dossier de travail `.icons-work/`, ignoré par git).
@@ -34,7 +49,8 @@ un alias `case "sevencups":` au-dessus de `case "7cups":` (et la clé dans `sour
 `socialNetwork.ts`), sans chercher de nouveau logo.
 
 Présenter à l'utilisateur le nombre de réseaux manquants et demander combien en traiter
-(une PR de 100 à 200 clés est raisonnable avec le mode lot). Un lot = une branche et une PR ;
+(une PR de 100 à 200 clés est raisonnable avec le mode lot), sauf si `/add-icons N` a déjà
+donné le nombre. Un lot = une branche et une PR ;
 le build complet et la PR (étape 6) se font une fois à la fin du lot.
 
 ## 0 bis. Mode lot (dès ~20 clés) : plan → revue → apply
