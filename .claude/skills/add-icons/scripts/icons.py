@@ -351,6 +351,9 @@ def candidates(domain, html=None):
             urls.append(("link", urllib.parse.urljoin(base, href.group(1))))
         elif "manifest" in rel:
             man_url = urllib.parse.urljoin(base, href.group(1))
+            if "/mobiquo/" in man_url:
+                continue  # Tapatalk smart-banner manifest: Tapatalk's logo, not the forum's
+
             try:
                 man = json.loads(get(man_url))
                 for ic in man.get("icons", []):
