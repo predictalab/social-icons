@@ -33,11 +33,50 @@ confirmer. La colonne note signale les chiffres écrits en toutes lettres par l'
 un alias `case "sevencups":` au-dessus de `case "7cups":` (et la clé dans `sourceTypes.ts` /
 `socialNetwork.ts`), sans chercher de nouveau logo.
 
-Présenter à l'utilisateur le nombre de réseaux manquants et la liste, puis traiter **toutes**
-les clés dans une seule branche et une seule PR (d'habitude 30 à 40 au maximum). En interne,
-dérouler les étapes 1 bis à 5 par lots de 15 à 20 clés (alias faciles d'abord) : une planche
-de contrôle visuel par lot, un commit par lot. Le bump de version, le build complet et la PR
-(étape 6) se font une seule fois à la fin.
+Présenter à l'utilisateur le nombre de réseaux manquants et demander combien en traiter
+(une PR de 100 à 200 clés est raisonnable avec le mode lot). Tout passe dans une seule branche
+et une seule PR ; le bump de version, le build complet et la PR (étape 6) se font une fois à
+la fin.
+
+## 0 bis. Mode lot (dès ~20 clés) : plan → revue → apply
+
+Les étapes 1 à 5 sont automatisées ; le travail manuel se limite à relire les planches et
+corriger le manifeste.
+
+```bash
+python3 .claude/skills/add-icons/scripts/icons.py plan --api -n 100     # réseaux API sans icône
+python3 .claude/skills/add-icons/scripts/icons.py plan airbuds=airbuds.fm hexpm   # clés données
+python3 .claude/skills/add-icons/scripts/icons.py plan --maigret -n 200 [--tag t] [--include-disabled]
+```
+
+`plan` résout chaque clé (maigret, WhatsMyName, Sherlock, avec la règle de clé de l'API ;
+`clé=domaine` pour les inconnues), télécharge les logos en parallèle et choisit une source :
+`alias:` (chiffres en lettres), `si:<slug>` (simple-icons, note `homonyme ? vérifier` si le
+slug ne correspond pas au domaine), `local` (logo ≥ 48 px, hors bannière), sinon `mdi:<icône>`
+d'après les tags maigret, avec la couleur du favicon. Les favicons par défaut d'hébergeurs
+(le « U » uCoz…) sont reconnus et basculent en mdi : un favicon identique sur ≥ 3 domaines est
+appris dans `generic-favicons.json` (à commiter). Sortie : `.icons-work/batch.tsv` (une ligne
+par clé : `key source color category name domain note`) et les planches
+`.icons-work/batch-N.png` (36 icônes chacune, rendu final + pastille de couleur + nom).
+
+**Relire chaque planche** (mêmes critères qu'à l'étape 3 : mauvais site, bannière, logo
+flou) et corriger `batch.tsv` à la main : changer `source` (`mdi:…`, `si:…`), le nom (latin,
+casse officielle), la catégorie. `?` = clé inconnue : relancer `plan clé=domaine` ou laisser,
+`apply` l'ignore. Puis `icons.py review` pour régénérer les planches.
+
+```bash
+python3 .claude/skills/add-icons/scripts/icons.py apply
+```
+
+Valide tout le manifeste avant d'écrire (slug Iconify, icône mdi, couleur, catégorie, asset),
+installe les assets en WebP 96 px, ajoute les blocs triés aux 3 fichiers et régénère
+`assetLoaders.ts`, puis imprime la commande `inputs` pour la PR. Enchaîner sur l'étape 6.
+
+`icons.py keys` mesure la règle de clé (nom maigret normalisé, chiffres de tête en lettres,
+ou premier label quand le nom est un hôte : `abc-accounting.ucoz.net` → `abcaccounting`)
+contre l'API : 85 % exacts en 2026-10, les écarts étant surtout des variantes rattachées au
+réseau parent. Pour `plan --maigret`, les clés sont donc prédites : à confirmer avec l'équipe
+API avant un import massif.
 
 ## 1. Ne traiter que ce qui manque
 
@@ -138,7 +177,7 @@ python3 .claude/skills/add-icons/scripts/icons.py sheet
 puis lire `.icons-work/contact.png`. Rejeter : lettre générique (fallback d'unavatar),
 bannière, favicon 16 px flou, mauvais compte. Un candidat sur dix est faux en pratique.
 
-Installation (150 px max, PNG optimisé, affiche la couleur dominante à reporter dans
+Installation (WebP 96 px, affiche la couleur de marque, fond ignoré, à reporter dans
 `socialNetwork.ts`, puis régénère `src/utils/assetLoaders.ts`) :
 
 ```bash
@@ -170,7 +209,7 @@ Aucun artwork ≥ 48 px : icône mdi thématique + couleur dominante du favicon,
    ou, pour un asset local (chargé à la demande, **pas d'import** en haut du fichier) :
    ```tsx
    case "<clé>":
-     icon = <LocalIcon file="<clé>.png" alt="Nom affiché" />;
+     icon = <LocalIcon file="<clé>.webp" alt="Nom affiché" />;
      break;
    ```
    `file` est typé par `src/utils/assetLoaders.ts`, généré à partir du dossier d'assets
