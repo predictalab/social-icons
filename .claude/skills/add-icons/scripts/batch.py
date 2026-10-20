@@ -613,15 +613,20 @@ def apply_rows(rows, workdir):
 FOLDED_FARMS = {"fandom.com": "fandom", "discourse.group": "discourse"}
 
 
-# Fediverse instances too: 72 of the 74 Mastodon / Lemmy instances the API has are folded into
-# `mastodon` / `lemmy` (hexbear and programmingdev are the exceptions).
+# Instances of a self-hosted engine too: sources-api has one `mastodon`, `lemmy`, `gitlab` and
+# `gitea` network, each querying a list of instances (app/services/<key>.py, INSTANCES); a new
+# instance joins that list rather than getting its own key.
 FOLDED_TAGS = {"mastodon": "mastodon", "lemmy": "lemmy"}
+FOLDED_ENGINES = {"Mastodon": "mastodon", "Lemmy": "lemmy", "GitLab": "gitlab", "Gitea": "gitea",
+                  "Forgejo": "gitea", "Gogs": "gitea"}
 
 
-def folded_into(domain, tags=()):
+def folded_into(domain, infos=None):
+    infos = infos or {}
     host = domain.split("/")[0].lower()
     farm = next((k for farm, k in FOLDED_FARMS.items() if host.endswith("." + farm)), None)
-    return farm or next((FOLDED_TAGS[t] for t in tags if t in FOLDED_TAGS), None)
+    tag = next((FOLDED_TAGS[t] for t in infos.get("tags", ()) if t in FOLDED_TAGS), None)
+    return farm or tag or FOLDED_ENGINES.get(infos.get("engine"))
 
 
 def maigret_targets(workdir, tag=None, include_disabled=False):
@@ -641,7 +646,7 @@ def maigret_targets(workdir, tag=None, include_disabled=False):
         stem = icons.VARIANT.sub("", icons.norm(name))
         if stem != icons.norm(name) and (stem in have or stem == icons.domain_label(domain)):
             continue  # VKByID, SteamGroup: same icon as the covered network
-        if icons.covered_by(domain, have) or folded_into(domain, infos["tags"]) in have:
+        if icons.covered_by(domain, have) or folded_into(domain, infos) in have:
             continue
         parent = icons.domain_label(domain)
         if parent in have and parent not in SHARED_HOSTS:
