@@ -112,6 +112,8 @@ SHARED_HOSTS = {"ucoz", "3dn", "clan", "my1", "moy", "do", "narod", "forum24", "
 def is_section(label, host):
     if host in SHARED_HOSTS:
         return False
+    if re.fullmatch(r"[a-z]{2}-wiki|wiki-[a-z]{2}", label):  # pl-wiki.metin2…, wiki-fr.guildwars2…
+        return True
     return label in SECTION_PREFIXES or (len(label) == 2 and label.isalpha() and label != "tv")
 
 
