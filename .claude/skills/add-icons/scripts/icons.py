@@ -149,6 +149,7 @@ def osint_sites(workdir):
                 "tags": s.get("tags", []),
                 "off": s.get("disabled"),
                 "engine": s.get("engine"),
+                "probe": s.get("urlProbe") or "",
             }
             sites.append(("maigret", name, site_domain(main), s.get("url", ""), infos))
     for s in cached_json(workdir, "wmn-data.json", WMN)["sites"]:

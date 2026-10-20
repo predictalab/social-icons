@@ -100,7 +100,8 @@ choisies à la main par l'équipe API (`audacity` pour audacityteam.org, `bitcoi
 bitcoin.it) : elles sortent en `?` et se résolvent via sources-api (étape 1 bis). `plan --maigret` ignore aussi ce que l'API replie sur un réseau existant : les sites de
 `*.fandom.com` et `*.discourse.group` (→ `fandom`, `discourse`), les instances Mastodon,
 Lemmy, GitLab et Gitea/Forgejo/Gogs (→ `mastodon`, `lemmy`, `gitlab`, `gitea` : sources-api
-interroge une liste `INSTANCES` par moteur au lieu d'une clé par instance), et les sous-domaines d'une marque déjà
+interroge une liste `INSTANCES` par moteur au lieu d'une clé par instance ; les instances
+ActivityPub que maigret sonde par WebFinger, Pleroma, Akkoma, Misskey…, vont avec `mastodon`), et les sous-domaines d'une marque déjà
 couverte (`forum.openwrt.org` → `openwrt`, `community.spotify.com` → `spotify`), sauf sur les
 hébergeurs mutualisés. Un nom maigret en hôte + chemin perd son chemin
 (`destroyrepeat.com/community` → `destroyrepeat`). Pour `plan --maigret`, les clés sont donc prédites : à confirmer avec l'équipe

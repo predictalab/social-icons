@@ -626,7 +626,10 @@ def folded_into(domain, infos=None):
     host = domain.split("/")[0].lower()
     farm = next((k for farm, k in FOLDED_FARMS.items() if host.endswith("." + farm)), None)
     tag = next((FOLDED_TAGS[t] for t in infos.get("tags", ()) if t in FOLDED_TAGS), None)
-    return farm or tag or FOLDED_ENGINES.get(infos.get("engine"))
+    # ActivityPub instances maigret probes through WebFinger (Pleroma, Akkoma, Misskey…): the
+    # protocol the `mastodon` service looks accounts up with
+    fedi = "mastodon" if "/.well-known/webfinger" in infos.get("probe", "") else None
+    return farm or tag or FOLDED_ENGINES.get(infos.get("engine")) or fedi
 
 
 def maigret_targets(workdir, tag=None, include_disabled=False):
