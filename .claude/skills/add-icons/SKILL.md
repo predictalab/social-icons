@@ -89,12 +89,16 @@ installe les assets en WebP 96 px, ajoute les blocs triés aux 2 fichiers et ré
 
 `icons.py keys` mesure la règle de clé (nom maigret normalisé, chiffres de tête en lettres,
 ou premier label quand le nom est un hôte : `abc-accounting.ucoz.net` → `abcaccounting`,
-en sautant les préfixes de forum : `forum.cockroachlabs.com` → `cockroachlabs`) contre l'API :
+en sautant les préfixes de forum : `forum.cockroachlabs.com` → `cockroachlabs`, et les
+sous-domaines de langue ou de section devant une marque : `zh.wikifur.com` → `wikifur`,
+`wiki.openstreetmap.org` → `openstreetmap`, sauf chez les hébergeurs mutualisés où le
+sous-domaine est la marque : `av.3dn.ru` → `av`) contre l'API :
 la première clé candidate est exacte pour ~85 % des sites en 2026-10, les écarts étant surtout
 des variantes rattachées au réseau parent. Des candidats de repli couvrent les autres
 graphies vues dans l'API (`avto.dzerghinsk.org` → `avtodzerghinsk`). Certaines clés restent
 choisies à la main par l'équipe API (`audacity` pour audacityteam.org, `bitcoinwiki` pour
-bitcoin.it) : elles sortent en `?` et se résolvent via sources-api (étape 1 bis). Pour `plan --maigret`, les clés sont donc prédites : à confirmer avec l'équipe
+bitcoin.it) : elles sortent en `?` et se résolvent via sources-api (étape 1 bis). Les sites de `*.fandom.com` et `*.discourse.group` sont repliés par l'API sur `fandom` et
+`discourse` : `plan --maigret` les ignore. Pour `plan --maigret`, les clés sont donc prédites : à confirmer avec l'équipe
 API avant un import massif.
 
 ## 1. Ne traiter que ce qui manque

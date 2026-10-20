@@ -95,6 +95,24 @@ def norm(name):
 # keeps them (app.clan.su -> appclan)
 HOST_PREFIXES = {"forum", "forums", "community", "discuss", "discourse", "support", "develop",
                  "commons", "board", "boards", "talk", "en"}
+# Subdomains that name a language or a section of the brand's site, skipped only when a brand
+# label follows (3+ labels): zh.wikifur.com -> wikifur, wiki.openstreetmap.org -> openstreetmap,
+# dev.bukkit.org -> bukkit. Two-letter labels are language codes (de., es., ar.), except "tv":
+# tv.ucoz.club -> tvucoz.
+SECTION_PREFIXES = {"wiki", "dev", "git", "q", "is", "database", "directory", "english",
+                    "docs", "help", "kb", "maps", "our", "plus"}
+
+
+# Shared hosts: there the subdomain is the brand (av.3dn.ru -> av, wm.ucoz.com -> wmucoz,
+# my.mail.ru -> mymailru), never a section.
+SHARED_HOSTS = {"ucoz", "3dn", "clan", "my1", "moy", "do", "narod", "forum24", "nodebb",
+                "discoursehosting", "freeflarum", "flarum", "vanillacommunities", "mail"}
+
+
+def is_section(label, host):
+    if host in SHARED_HOSTS:
+        return False
+    return label in SECTION_PREFIXES or (len(label) == 2 and label.isalpha() and label != "tv")
 
 
 def is_domain_name(name):
@@ -113,6 +131,8 @@ def key_candidates(name, domain):
     if is_domain_name(name):
         labels = name.lower().removeprefix("www.").split(".")[:-1]
         brand = [l for l in labels if l not in HOST_PREFIXES]  # forums.docker.com -> docker
+        if len(brand) >= 2 and is_section(brand[0], brand[1]):
+            brand = brand[1:]
         out.append(spell_leading(norm((brand or labels)[0])))
         out.append(spell_leading(norm(labels[0])))
     out.append(spell_leading(norm(name)))
@@ -584,6 +604,16 @@ def apply_rows(rows, workdir):
 
 
 # --------------------------------------------------------------------------- commands
+# Wiki / forum farms the API folds into one network (Armchairgm -> fandom, es.discourse.group
+# -> discourse, measured with `icons.py keys`): their sites need no icon of their own.
+FOLDED_FARMS = {"fandom.com": "fandom", "discourse.group": "discourse"}
+
+
+def folded_into(domain):
+    host = domain.split("/")[0].lower()
+    return next((k for farm, k in FOLDED_FARMS.items() if host.endswith("." + farm)), None)
+
+
 def maigret_targets(workdir, tag=None, include_disabled=False):
     """{predicted key: site} for maigret sites without icon, one per domain, by popularity."""
     have = icons.existing_keys()
@@ -601,7 +631,7 @@ def maigret_targets(workdir, tag=None, include_disabled=False):
         stem = icons.VARIANT.sub("", icons.norm(name))
         if stem != icons.norm(name) and (stem in have or stem == icons.domain_label(domain)):
             continue  # VKByID, SteamGroup: same icon as the covered network
-        if icons.covered_by(domain, have):
+        if icons.covered_by(domain, have) or folded_into(domain) in have:
             continue
         seen.add(domain)
         out[key] = s
