@@ -621,6 +621,9 @@ FOLDED_ENGINES = {"Mastodon": "mastodon", "Lemmy": "lemmy", "GitLab": "gitlab", 
                   "Forgejo": "gitea", "Gogs": "gitea"}
 
 
+FORUM_SOFTWARE = {"discourse", "flarum", "nodebb"} | SHARED_HOSTS
+
+
 def folded_into(domain, infos=None):
     infos = infos or {}
     host = domain.split("/")[0].lower()
@@ -654,6 +657,10 @@ def maigret_targets(workdir, tag=None, include_disabled=False):
         parent = icons.domain_label(domain)
         if parent in have and parent not in SHARED_HOSTS:
             continue  # forum.openwrt.org, community.spotify.com: the API folds them (openwrt)
+        # already there under another spelling the API uses (tv.ucoz.club -> tvucoz, okm.org.ru
+        # -> okmorgru); forum software names are no brand (discourse.nixos.org is not discourse)
+        if any(c in have and c not in FORUM_SOFTWARE for c in key_candidates(name, domain)):
+            continue
         seen.add(domain)
         out[key] = s
     return out
