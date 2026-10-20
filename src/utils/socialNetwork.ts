@@ -11627,4 +11627,10 @@ export const socialNetworks: socialNetworkType = {
     name: "Zvukinadezdy",
     icon: "mdi:music",
   },
+  googlenews: {
+    color: "#174EA6",
+    category: "search_engine",
+    name: "Google News",
+    icon: "simple-icons:googlenews",
+  },
 };

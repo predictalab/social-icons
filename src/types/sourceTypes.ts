@@ -2122,4 +2122,5 @@ export type SourceTypes =
   | "zorin"
   | "zornet"
   | "zpmama"
-  | "zvukinadezdy";
+  | "zvukinadezdy"
+  | "googlenews";
