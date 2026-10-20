@@ -40,14 +40,13 @@ ajoutées à `sourceTypes.ts` depuis la dernière release).
 
 ## Ajouter des icônes
 
-Une icône = une clé dans 3 fichiers, plus éventuellement un asset :
+Une icône = une clé dans 2 fichiers, plus éventuellement un asset :
 
 | Fichier | Rôle |
 |---|---|
 | `src/types/sourceTypes.ts` | l'union `SourceTypes` |
-| `src/utils/socialNetwork.ts` | couleur, catégorie, nom d'affichage |
-| `src/components/SocialIcons.tsx` | le `case` qui rend l'icône (Iconify ou `<LocalIcon file="<clé>.png" … />`) |
-| `src/assets/social-icons/<clé>.png` | asset local (150 px max), seulement si la marque n'est pas dans simple-icons |
+| `src/utils/socialNetwork.ts` | couleur, catégorie, nom d'affichage, et l'icône : `icon` (nom Iconify) ou `logo` (`"<clé>.webp"`) |
+| `src/assets/social-icons/<clé>.webp` | asset local (WebP 96 px), seulement si la marque n'est pas dans simple-icons |
 
 Les assets locaux sont chargés à la demande : chacun devient un chunk séparé
 (`dist/icons/`), récupéré par le navigateur seulement quand l'icône s'affiche.
@@ -67,13 +66,14 @@ ou en langage naturel (« ajoute une icône pour Bilibili ») : la description d
 
 Le skill déroule la procédure complète :
 
-1. ne traite que les clés qui n'ont pas encore de `case` ;
+1. ne traite que les clés qui n'ont pas encore d'entrée dans `socialNetwork.ts` ;
 2. cherche la marque dans **simple-icons** (via Iconify) et récupère sa couleur officielle, en
    évitant les faux amis connus (`backstage` est le portail dev Spotify, `lens` l'IDE Kubernetes…) ;
 3. sinon télécharge le logo depuis le site officiel (apple-touch-icon, manifest, og:image, avatars
    GitHub/X…) et produit une **planche-contact à relire** avant d'installer quoi que ce soit ;
 4. en dernier recours, une icône `mdi` thématique ;
-5. édite les 3 fichiers, lance `tsc` + `build`, vérifie l'aperçu, bumpe la version patch.
+5. édite les 2 fichiers, lance `tsc` + `build`, vérifie l'aperçu et ouvre la PR (la version est
+   bumpée à la publication).
 
 Prérequis machine : `python3` avec Pillow (`pip install pillow`) et `curl`. Le script
 `.claude/skills/add-icons/scripts/icons.py` est aussi utilisable seul :
@@ -82,7 +82,7 @@ Prérequis machine : `python3` avec Pillow (`pip install pillow`) et `curl`. Le 
 python3 .claude/skills/add-icons/scripts/icons.py check anaconda hexbear      # slug + couleur simple-icons
 python3 .claude/skills/add-icons/scripts/icons.py fetch tetrio=tetr.io         # meilleur logo candidat
 python3 .claude/skills/add-icons/scripts/icons.py sheet                        # planche-contact
-python3 .claude/skills/add-icons/scripts/icons.py install tetrio               # PNG 150 px + couleur dominante
+python3 .claude/skills/add-icons/scripts/icons.py install tetrio               # WebP 96 px + couleur dominante
 ```
 
 Le dossier de travail `.icons-work/` est ignoré par git.

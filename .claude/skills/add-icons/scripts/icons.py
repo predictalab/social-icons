@@ -20,7 +20,7 @@ Sous-commandes :
                                    propose une source par clé (simple-icons, logo local, mdi
                                    auto, alias) → WORKDIR/batch.tsv + planches batch-N.png
   review                           régénère les planches depuis batch.tsv après retouches
-  apply                            écrit les 3 fichiers + assets depuis batch.tsv
+  apply                            écrit les 2 fichiers + assets depuis batch.tsv
   keys                             précision de la clé prédite pour maigret vs l'API
 
 WORKDIR : --workdir <dir> (défaut : ./.icons-work, ignoré par git).
@@ -158,8 +158,8 @@ def osint_sites(workdir):
 
 
 def existing_keys():
-    tsx = open(os.path.join(ROOT, "src", "components", "SocialIcons.tsx")).read()
-    return set(re.findall(r'case "([^"]+)"', tsx))
+    ts = open(os.path.join(ROOT, "src", "utils", "socialNetwork.ts")).read()
+    return set(re.findall(r'^  "?([\w-]+)"?: \{', ts, re.M))
 
 
 # --------------------------------------------------------------------------- missing
@@ -216,7 +216,7 @@ def cmd_missing(args):
         alt = digits_form(key)
         note = ""
         if alt and (alt in have or alt in assets):
-            note = f"= {alt} déjà présent ({'case' if alt in have else 'asset'}) : alias à ajouter"
+            note = f"= {alt} déjà présent ({'entrée' if alt in have else 'asset'}) : alias à ajouter"
         elif alt:
             note = f"chiffres : {alt}"
         state = "actif" if networks[key].get("is_active", True) else "désactivé"
