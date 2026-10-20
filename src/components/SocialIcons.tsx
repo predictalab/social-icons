@@ -440,32 +440,32 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:vivino" color={socialNetworks.vivino.color} />;
       break;
     case "myfitnesspal":
-      icon = <LocalIcon file="myfitnesspal.png" alt="MyFitnessPal" />;
+      icon = <LocalIcon file="myfitnesspal.webp" alt="MyFitnessPal" />;
       break;
     case "whatsmyname":
     case "wmn":
-      icon = <LocalIcon file="whatsmyname.jpg" alt="WhatsMyName" />;
+      icon = <LocalIcon file="whatsmyname.webp" alt="WhatsMyName" />;
       break;
     case "yandex":
-      icon = <LocalIcon file="yandex.png" alt="Yandex" />;
+      icon = <LocalIcon file="yandex.webp" alt="Yandex" />;
       break;
     case "imageshack":
-      icon = <LocalIcon file="imageshack.png" alt="Imageshack" />;
+      icon = <LocalIcon file="imageshack.webp" alt="Imageshack" />;
       break;
     case "taringa":
-      icon = <LocalIcon file="taringa.png" alt="Taringa" />;
+      icon = <LocalIcon file="taringa.webp" alt="Taringa" />;
       break;
     case "shotgun":
-      icon = <LocalIcon file="shotgun.png" alt="Shotgun" />;
+      icon = <LocalIcon file="shotgun.webp" alt="Shotgun" />;
       break;
     case "weward":
-      icon = <LocalIcon file="weward.png" alt="Weward" />;
+      icon = <LocalIcon file="weward.webp" alt="Weward" />;
       break;
     case "life360":
-      icon = <LocalIcon file="life360.png" alt="Life360" />;
+      icon = <LocalIcon file="life360.webp" alt="Life360" />;
       break;
     case "okru":
-      icon = <LocalIcon file="okru.png" alt="Okru" />;
+      icon = <LocalIcon file="okru.webp" alt="Okru" />;
       break;
     case "clubhouse":
       icon = <Icon icon="simple-icons:clubhouse" color={socialNetworks.clubhouse.color} />;
@@ -474,16 +474,16 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="eyecon.svg" alt="Eyecon" />;
       break;
     case "locket":
-      icon = <LocalIcon file="locket.png" alt="Locket" />;
+      icon = <LocalIcon file="locket.webp" alt="Locket" />;
       break;
     case "touchtunes":
-      icon = <LocalIcon file="touchtunes.png" alt="Touchtunes" />;
+      icon = <LocalIcon file="touchtunes.webp" alt="Touchtunes" />;
       break;
     case "mocospace":
-      icon = <LocalIcon file="mocospace.png" alt="Mocospace" />;
+      icon = <LocalIcon file="mocospace.webp" alt="Mocospace" />;
       break;
     case "whoxy":
-      icon = <LocalIcon file="whoxy.png" alt="Whoxy" />;
+      icon = <LocalIcon file="whoxy.webp" alt="Whoxy" />;
       break;
     case "runkeeper":
       icon = <Icon icon="simple-icons:runkeeper" color={socialNetworks.runkeeper.color} />;
@@ -492,25 +492,25 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:garmin" color={socialNetworks.garmin.color} />;
       break;
     case "bibleapp":
-      icon = <LocalIcon file="bible.png" alt="BibleApp" />;
+      icon = <LocalIcon file="bible.webp" alt="BibleApp" />;
       break;
     case "goodreads":
       icon = <Icon icon="simple-icons:goodreads" color={socialNetworks.goodreads.color} />;
       break;
     case "monopolygo":
-      icon = <LocalIcon file="monopolygo.png" alt="MonopolyGo" />;
+      icon = <LocalIcon file="monopolygo.webp" alt="MonopolyGo" />;
       break;
     case "scrabblego":
-      icon = <LocalIcon file="scrabblego.png" alt="ScrabbleGo" />;
+      icon = <LocalIcon file="scrabblego.webp" alt="ScrabbleGo" />;
       break;
     case "hudsonrock":
-      icon = <LocalIcon file="hudsonrock.png" alt="Cavalier" />;
+      icon = <LocalIcon file="hudsonrock.webp" alt="Cavalier" />;
       break;
     case "opensanctions":
-      icon = <LocalIcon file="opensanctions.png" alt="OpenSanctions" />;
+      icon = <LocalIcon file="opensanctions.webp" alt="OpenSanctions" />;
       break;
     case "imvu":
-      icon = <LocalIcon file="imvu.png" alt="IMVU" />;
+      icon = <LocalIcon file="imvu.webp" alt="IMVU" />;
       break;
     case "pagesjaunes":
       icon = <LocalIcon file="pagesjaunes.svg" alt="Pages Jaunes" />;
@@ -534,7 +534,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="imapp.svg" alt="iMapp" />;
       break;
     case "mapstr":
-      icon = <LocalIcon file="mapstr.png" alt="Mapstr" />;
+      icon = <LocalIcon file="mapstr.webp" alt="Mapstr" />;
       break;
     case "walkietalkie":
       icon = <LocalIcon file="walkietalkie.svg" alt="Walkie Talkie" />;
@@ -543,7 +543,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="marcopolo.svg" alt="Marco Polo" />;
       break;
     case "truecaller":
-      icon = <LocalIcon file="truecaller.png" alt="Truecaller" />;
+      icon = <LocalIcon file="truecaller.webp" alt="Truecaller" />;
       break;
     case "truthsocial":
       icon = <LocalIcon file="truthsocial.svg" alt="Truth Social" />;
@@ -604,25 +604,25 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
     case "breachforums":
     case "breached":
-      icon = <LocalIcon file="breachforums.png" alt="BreachForums" />;
+      icon = <LocalIcon file="breachforums.webp" alt="BreachForums" />;
       break;
     case "guiadohacker":
       icon = <LocalIcon file="guiadohacker.svg" alt="GuiadoHacker" />;
       break;
     case "hackforums":
-      icon = <LocalIcon file="hackforums.png" alt="HackForums" />;
+      icon = <LocalIcon file="hackforums.webp" alt="HackForums" />;
       break;
     case "leakbase":
       icon = <LocalIcon file="leakbase.svg" alt="LeakBase" />;
       break;
     case "nulled":
-      icon = <LocalIcon file="nulled.png" alt="Nulled" />;
+      icon = <LocalIcon file="nulled.webp" alt="Nulled" />;
       break;
     case "raidforums":
-      icon = <LocalIcon file="raidforums.png" alt="RaidForums" />;
+      icon = <LocalIcon file="raidforums.webp" alt="RaidForums" />;
       break;
     case "xss":
-      icon = <LocalIcon file="xss.jpg" alt="XSS" />;
+      icon = <LocalIcon file="xss.webp" alt="XSS" />;
       break;
     case "happn":
       icon = <LocalIcon file="happn.svg" alt="Happn" />;
@@ -631,7 +631,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="meetic.svg" alt="Meetic" />;
       break;
     case "shodan":
-      icon = <LocalIcon file="shodan.png" alt="Shodan" />;
+      icon = <LocalIcon file="shodan.webp" alt="Shodan" />;
       break;
     case "whiteintel":
       icon = <LocalIcon file="whiteintel.svg" alt="WhiteIntel" />;
@@ -646,7 +646,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="gowish.svg" alt="GoWish" />;
       break;
     case "sleeper":
-      icon = <LocalIcon file="sleeper.png" alt="Sleeper" />;
+      icon = <LocalIcon file="sleeper.webp" alt="Sleeper" />;
       break;
     case "thefork":
       icon = <LocalIcon file="thefork.svg" alt="TheFork" />;
@@ -658,7 +658,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="crackedio.svg" alt="Cracked.io" />;
       break;
     case "psbdmp":
-      icon = <LocalIcon file="psbdmp.png" alt="PSBDMP" />;
+      icon = <LocalIcon file="psbdmp.webp" alt="PSBDMP" />;
       break;
     case "flare":
       icon = <LocalIcon file="flare.svg" alt="Flare" />;
@@ -670,25 +670,25 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="whoisxml.svg" alt="WhoisXML" />;
       break;
     case "smule":
-      icon = <LocalIcon file="smule.png" alt="Smule" />;
+      icon = <LocalIcon file="smule.webp" alt="Smule" />;
       break;
     case "bleacher":
-      icon = <LocalIcon file="bleacher.png" alt="Bleacher" />;
+      icon = <LocalIcon file="bleacher.webp" alt="Bleacher" />;
       break;
     case "pray":
-      icon = <LocalIcon file="pray.png" alt="Pray" />;
+      icon = <LocalIcon file="pray.webp" alt="Pray" />;
       break;
     case "peloton":
       icon = <Icon icon="simple-icons:peloton" color={socialNetworks.peloton.color} />;
       break;
     case "zepeto":
-      icon = <LocalIcon file="zepeto.png" alt="Zepeto" />;
+      icon = <LocalIcon file="zepeto.webp" alt="Zepeto" />;
       break;
     case "sportstracker":
-      icon = <LocalIcon file="sportstracker.png" alt="SportsTracker" />;
+      icon = <LocalIcon file="sportstracker.webp" alt="SportsTracker" />;
       break;
     case "chime":
-      icon = <LocalIcon file="chime.png" alt="Chime" />;
+      icon = <LocalIcon file="chime.webp" alt="Chime" />;
       break;
     case "blink":
       icon = <LocalIcon file="blink.svg" alt="Blink" />;
@@ -700,145 +700,145 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="att.svg" alt="AT&T" />;
       break;
     case "bajao":
-      icon = <LocalIcon file="bajao.png" alt="Bajao" />;
+      icon = <LocalIcon file="bajao.webp" alt="Bajao" />;
       break;
     case "callapp":
-      icon = <LocalIcon file="callapp.png" alt="CallApp" />;
+      icon = <LocalIcon file="callapp.webp" alt="CallApp" />;
       break;
     case "catch":
-      icon = <LocalIcon file="catch.png" alt="Catch" />;
+      icon = <LocalIcon file="catch.webp" alt="Catch" />;
       break;
     case "costar":
-      icon = <LocalIcon file="costar.png" alt="Costar" />;
+      icon = <LocalIcon file="costar.webp" alt="Costar" />;
       break;
     case "cricheroes":
-      icon = <LocalIcon file="cricheroes.png" alt="CricHeroes" />;
+      icon = <LocalIcon file="cricheroes.webp" alt="CricHeroes" />;
       break;
     case "cricwick":
-      icon = <LocalIcon file="cricwick.png" alt="Cricwick" />;
+      icon = <LocalIcon file="cricwick.webp" alt="Cricwick" />;
       break;
     case "dailytelegraph":
-      icon = <LocalIcon file="dailytelegraph.png" alt="Daily Telegraph" />;
+      icon = <LocalIcon file="dailytelegraph.webp" alt="Daily Telegraph" />;
       break;
     case "distiller":
-      icon = <LocalIcon file="distiller.png" alt="Distiller" />;
+      icon = <LocalIcon file="distiller.webp" alt="Distiller" />;
       break;
     case "easypaisa":
-      icon = <LocalIcon file="easypaisa.png" alt="EasyPaisa" />;
+      icon = <LocalIcon file="easypaisa.webp" alt="EasyPaisa" />;
       break;
     case "explurger":
-      icon = <LocalIcon file="explurger.png" alt="Explurger" />;
+      icon = <LocalIcon file="explurger.webp" alt="Explurger" />;
       break;
     case "familylocator":
-      icon = <LocalIcon file="familylocator.png" alt="Family Locator" />;
+      icon = <LocalIcon file="familylocator.webp" alt="Family Locator" />;
       break;
     case "fiton":
-      icon = <LocalIcon file="fiton.png" alt="FitOn" />;
+      icon = <LocalIcon file="fiton.webp" alt="FitOn" />;
       break;
     case "fishangler":
-      icon = <LocalIcon file="fishangler.png" alt="FishAngler" />;
+      icon = <LocalIcon file="fishangler.webp" alt="FishAngler" />;
       break;
     case "fittr":
-      icon = <LocalIcon file="fittr.png" alt="Fittr" />;
+      icon = <LocalIcon file="fittr.webp" alt="Fittr" />;
       break;
     case "flock":
-      icon = <LocalIcon file="flock.png" alt="Flock" />;
+      icon = <LocalIcon file="flock.webp" alt="Flock" />;
       break;
     case "golfnow":
-      icon = <LocalIcon file="golfnow.png" alt="GolfNow" />;
+      icon = <LocalIcon file="golfnow.webp" alt="GolfNow" />;
       break;
     case "habitshare":
-      icon = <LocalIcon file="habbitshare.png" alt="HabitShare" />;
+      icon = <LocalIcon file="habbitshare.webp" alt="HabitShare" />;
       break;
     case "halfords":
       icon = <LocalIcon file="halfords.svg" alt="Halfords" />;
       break;
     case "jazzcash":
-      icon = <LocalIcon file="jazzcash.png" alt="JazzCash" />;
+      icon = <LocalIcon file="jazzcash.webp" alt="JazzCash" />;
       break;
     case "joinr":
-      icon = <LocalIcon file="joinr.png" alt="Joinr" />;
+      icon = <LocalIcon file="joinr.webp" alt="Joinr" />;
       break;
     case "lapse":
-      icon = <LocalIcon file="lapse.png" alt="Lapse" />;
+      icon = <LocalIcon file="lapse.webp" alt="Lapse" />;
       break;
     case "libravatar":
-      icon = <LocalIcon file="libravatar.png" alt="Libravatar" />;
+      icon = <LocalIcon file="libravatar.webp" alt="Libravatar" />;
       break;
     case "likewise":
-      icon = <LocalIcon file="likewise.png" alt="Likewise" />;
+      icon = <LocalIcon file="likewise.webp" alt="Likewise" />;
       break;
     case "lineleap":
-      icon = <LocalIcon file="lineleap.png" alt="LineLeap" />;
+      icon = <LocalIcon file="lineleap.webp" alt="LineLeap" />;
       break;
     case "lovense":
-      icon = <LocalIcon file="lovense.png" alt="Lovense" />;
+      icon = <LocalIcon file="lovense.webp" alt="Lovense" />;
       break;
     case "medal":
-      icon = <LocalIcon file="medaltv.png" alt="Medal" />;
+      icon = <LocalIcon file="medaltv.webp" alt="Medal" />;
       break;
     case "offtop":
-      icon = <LocalIcon file="offtop.png" alt="Offtop" />;
+      icon = <LocalIcon file="offtop.webp" alt="Offtop" />;
       break;
     case "omada":
-      icon = <LocalIcon file="omada.png" alt="Omada" />;
+      icon = <LocalIcon file="omada.webp" alt="Omada" />;
       break;
     case "pitaya":
-      icon = <LocalIcon file="pitaya.png" alt="Pitaya" />;
+      icon = <LocalIcon file="pitaya.webp" alt="Pitaya" />;
       break;
     case "playpark":
-      icon = <LocalIcon file="playpark.jpg" alt="PlayPark" />;
+      icon = <LocalIcon file="playpark.webp" alt="PlayPark" />;
       break;
     case "playtomic":
-      icon = <LocalIcon file="playtomic.png" alt="Playtomic" />;
+      icon = <LocalIcon file="playtomic.webp" alt="Playtomic" />;
       break;
     case "planetfitness":
-      icon = <LocalIcon file="planetfitness.png" alt="Planet Fitness" />;
+      icon = <LocalIcon file="planetfitness.webp" alt="Planet Fitness" />;
       break;
     case "poe":
       icon = <Icon icon="simple-icons:poe" color={socialNetworks.poe.color} />;
       break;
     case "poshmark":
-      icon = <LocalIcon file="poshmark.png" alt="Poshmark" />;
+      icon = <LocalIcon file="poshmark.webp" alt="Poshmark" />;
       break;
     case "reclip":
-      icon = <LocalIcon file="reclip.png" alt="Reclip" />;
+      icon = <LocalIcon file="reclip.webp" alt="Reclip" />;
       break;
     case "regroup":
-      icon = <LocalIcon file="regroup.png" alt="Regroup" />;
+      icon = <LocalIcon file="regroup.webp" alt="Regroup" />;
       break;
     case "savorfood":
-      icon = <LocalIcon file="savorfood.png" alt="SavorFood" />;
+      icon = <LocalIcon file="savorfood.webp" alt="SavorFood" />;
       break;
     case "theshoecompany":
-      icon = <LocalIcon file="shoecompany.png" alt="TheShoeCompany" />;
+      icon = <LocalIcon file="shoecompany.webp" alt="TheShoeCompany" />;
       break;
     case "skiline":
-      icon = <LocalIcon file="skiline.png" alt="SkiLine" />;
+      icon = <LocalIcon file="skiline.webp" alt="SkiLine" />;
       break;
     case "sportxjazz":
-      icon = <LocalIcon file="sportxjazz.png" alt="SportJazz" />;
+      icon = <LocalIcon file="sportxjazz.webp" alt="SportJazz" />;
       break;
     case "superlocal":
-      icon = <LocalIcon file="superlocal.png" alt="SuperLocal" />;
+      icon = <LocalIcon file="superlocal.webp" alt="SuperLocal" />;
       break;
     case "tapmad":
-      icon = <LocalIcon file="tapmad.png" alt="TapMad" />;
+      icon = <LocalIcon file="tapmad.webp" alt="TapMad" />;
       break;
     case "tellonym":
-      icon = <LocalIcon file="tellonym.png" alt="Tellonym" />;
+      icon = <LocalIcon file="tellonym.webp" alt="Tellonym" />;
       break;
     case "templatemonster":
-      icon = <LocalIcon file="templatemonster.jpg" alt="TemplateMonster" />;
+      icon = <LocalIcon file="templatemonster.webp" alt="TemplateMonster" />;
       break;
     case "tokeechat":
       icon = <LocalIcon file="tokeechat.webp" alt="TokeeChat" />;
       break;
     case "toneitup":
-      icon = <LocalIcon file="toneitup.png" alt="ToneItUp" />;
+      icon = <LocalIcon file="toneitup.webp" alt="ToneItUp" />;
       break;
     case "viewcaller":
-      icon = <LocalIcon file="viewcaller.png" alt="ViewCall" />;
+      icon = <LocalIcon file="viewcaller.webp" alt="ViewCall" />;
       break;
     case "vibes":
       icon = <LocalIcon file="vibes.webp" alt="Vibes" />;
@@ -847,7 +847,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="wayfair.webp" alt="Wayfair" />;
       break;
     case "winendine":
-      icon = <LocalIcon file="winendine.png" alt="Winendine" />;
+      icon = <LocalIcon file="winendine.webp" alt="Winendine" />;
       break;
     case "wokii":
       icon = <LocalIcon file="wokii.webp" alt="Wokii" />;
@@ -865,13 +865,13 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="mindbody.svg" alt="MindBody" />;
       break;
     case "samsunghealth":
-      icon = <LocalIcon file="samsunghealth.png" alt="Samsung Health" />;
+      icon = <LocalIcon file="samsunghealth.webp" alt="Samsung Health" />;
       break;
     case "wordfeud":
-      icon = <LocalIcon file="wordfeud.png" alt="WordFeud" />;
+      icon = <LocalIcon file="wordfeud.webp" alt="WordFeud" />;
       break;
     case "classpass":
-      icon = <LocalIcon file="classpass.png" alt="ClassPass" />;
+      icon = <LocalIcon file="classpass.webp" alt="ClassPass" />;
       break;
     case "fetchamericasreward":
       icon = <LocalIcon file="fetch.webp" alt="Fetch" />;
@@ -880,7 +880,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:aliexpress" color={socialNetworks.aliexpress.color} />;
       break;
     case "telerik":
-      icon = <LocalIcon file="telerik.png" alt="Telerik" />;
+      icon = <LocalIcon file="telerik.webp" alt="Telerik" />;
       break;
     case "typeform":
       icon = <Icon icon="simple-icons:typeform" color={socialNetworks.typeform.color} />;
@@ -895,10 +895,10 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="tokee.webp" alt="Tokee" />;
       break;
     case "lusha":
-      icon = <LocalIcon file="lusha.png" alt="Lusha" />;
+      icon = <LocalIcon file="lusha.webp" alt="Lusha" />;
       break;
     case "ransomware":
-      icon = <LocalIcon file="ransomware.png" alt="Ransomware" />;
+      icon = <LocalIcon file="ransomware.webp" alt="Ransomware" />;
       break;
     case "alltrails":
       icon = <Icon icon="simple-icons:alltrails" color={socialNetworks.alltrails.color} />;
@@ -946,13 +946,13 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:codewars" color={socialNetworks.codewars.color} />;
       break;
     case "gab":
-      icon = <LocalIcon file="gab.png" alt="Gab" />;
+      icon = <LocalIcon file="gab.webp" alt="Gab" />;
       break;
     case "gettr":
-      icon = <LocalIcon file="gettr.png" alt="Gettr" />;
+      icon = <LocalIcon file="gettr.webp" alt="Gettr" />;
       break;
     case "gdbrowser":
-      icon = <LocalIcon file="gdbrowser.png" alt="GDBrowser" />;
+      icon = <LocalIcon file="gdbrowser.webp" alt="GDBrowser" />;
       break;
     case "npm":
       icon = <Icon icon="simple-icons:npm" color={socialNetworks.npm.color} />;
@@ -1079,7 +1079,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:codeberg" color={socialNetworks.codeberg.color} />;
       break;
     case "crates":
-      icon = <LocalIcon file="crates.png" alt="crates.io" />;
+      icon = <LocalIcon file="crates.webp" alt="crates.io" />;
       break;
     case "dockerhub":
       icon = <Icon icon="simple-icons:docker" color={socialNetworks.dockerhub.color} />;
@@ -1115,7 +1115,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:pixelfed" color={socialNetworks.pixelfed.color} />;
       break;
     case "pokemonshowdown":
-      icon = <LocalIcon file="pokemonshowdown.png" alt="Pokémon Showdown" />;
+      icon = <LocalIcon file="pokemonshowdown.webp" alt="Pokémon Showdown" />;
       break;
     case "r6":
       icon = <Icon icon="simple-icons:ubisoft" color={socialNetworks.r6.color} />;
@@ -1146,13 +1146,13 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:codecademy" color={socialNetworks.codecademy.color} />;
       break;
     case "crevado":
-      icon = <LocalIcon file="crevado.png" alt="Crevado" />;
+      icon = <LocalIcon file="crevado.webp" alt="Crevado" />;
       break;
     case "datingru":
-      icon = <LocalIcon file="datingru.png" alt="Dating.ru" />;
+      icon = <LocalIcon file="datingru.webp" alt="Dating.ru" />;
       break;
     case "dibiz":
-      icon = <LocalIcon file="dibiz.png" alt="Dibiz" />;
+      icon = <LocalIcon file="dibiz.webp" alt="Dibiz" />;
       break;
     case "digitalocean":
       icon = <Icon icon="simple-icons:digitalocean" color={socialNetworks.digitalocean.color} />;
@@ -1182,7 +1182,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:tapas" color={socialNetworks.tapas.color} />;
       break;
     case "vero":
-      icon = <LocalIcon file="vero.png" alt="Vero" />;
+      icon = <LocalIcon file="vero.webp" alt="Vero" />;
       break;
     case "vscodemarketplace":
       icon = <Icon icon="logos:visual-studio-code" color={socialNetworks.vscodemarketplace.color} />;
@@ -1191,7 +1191,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:asciinema" color={socialNetworks.asciinema.color} />;
       break;
     case "carbonmade":
-      icon = <LocalIcon file="carbonmade.png" alt="Carbonmade" />;
+      icon = <LocalIcon file="carbonmade.webp" alt="Carbonmade" />;
       break;
     case "carrd":
       icon = <Icon icon="simple-icons:carrd" color={socialNetworks.carrd.color} />;
@@ -1200,7 +1200,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:crowdin" color={socialNetworks.crowdin.color} />;
       break;
     case "fabswingers":
-      icon = <LocalIcon file="fabswingers.png" alt="FabSwingers" />;
+      icon = <LocalIcon file="fabswingers.webp" alt="FabSwingers" />;
       break;
     case "fiverr":
       icon = <Icon icon="simple-icons:fiverr" color={socialNetworks.fiverr.color} />;
@@ -1215,16 +1215,16 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:geocaching" color={socialNetworks.geocaching.color} />;
       break;
     case "goodgame":
-      icon = <LocalIcon file="goodgame.png" alt="GoodGame" />;
+      icon = <LocalIcon file="goodgame.webp" alt="GoodGame" />;
       break;
     case "ifttt":
       icon = <Icon icon="simple-icons:ifttt" color={socialNetworks.ifttt.color} />;
       break;
     case "imgsrc":
-      icon = <LocalIcon file="imgsrc.png" alt="ImgSrc.ru" />;
+      icon = <LocalIcon file="imgsrc.webp" alt="ImgSrc.ru" />;
       break;
     case "interpals":
-      icon = <LocalIcon file="interpals.png" alt="InterPals" />;
+      icon = <LocalIcon file="interpals.webp" alt="InterPals" />;
       break;
     case "issuu":
       icon = <Icon icon="simple-icons:issuu" color={socialNetworks.issuu.color} />;
@@ -1239,7 +1239,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:naver" color={socialNetworks.naverblog.color} />;
       break;
     case "pillowfort":
-      icon = <LocalIcon file="pillowfort.png" alt="Pillowfort" />;
+      icon = <LocalIcon file="pillowfort.webp" alt="Pillowfort" />;
       break;
     case "slides":
       icon = <Icon icon="simple-icons:slides" color={socialNetworks.slides.color} />;
@@ -1248,11 +1248,11 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:tradingview" color={socialNetworks.tradingview.color} />;
       break;
     case "youpic":
-      icon = <LocalIcon file="youpic.png" alt="YouPic" />;
+      icon = <LocalIcon file="youpic.webp" alt="YouPic" />;
       break;
     case "35photo":
     case "thirtyfivephoto":
-      icon = <LocalIcon file="35photo.png" alt="35PHOTO" />;
+      icon = <LocalIcon file="35photo.webp" alt="35PHOTO" />;
       break;
     case "ameblo":
       icon = <Icon icon="simple-icons:ameba" color={socialNetworks.ameblo.color} />;
@@ -1264,13 +1264,13 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:envato" color={socialNetworks.audiojungle.color} />;
       break;
     case "championat":
-      icon = <LocalIcon file="championat.png" alt="Championat" />;
+      icon = <LocalIcon file="championat.webp" alt="Championat" />;
       break;
     case "coderwall":
       icon = <Icon icon="simple-icons:coderwall" color={socialNetworks.coderwall.color} />;
       break;
     case "designspiration":
-      icon = <LocalIcon file="designspiration.png" alt="Designspiration" />;
+      icon = <LocalIcon file="designspiration.webp" alt="Designspiration" />;
       break;
     case "hackadayio":
       icon = <Icon icon="simple-icons:hackaday" color={socialNetworks.hackadayio.color} />;
@@ -1279,7 +1279,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:hackster" color={socialNetworks.hackster.color} />;
       break;
     case "hubpages":
-      icon = <LocalIcon file="hubpages.png" alt="HubPages" />;
+      icon = <LocalIcon file="hubpages.webp" alt="HubPages" />;
       break;
     case "instructables":
       icon = <Icon icon="simple-icons:instructables" color={socialNetworks.instructables.color} />;
@@ -1288,10 +1288,10 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="intensedebate.svg" alt="IntenseDebate" />;
       break;
     case "pentesterlab":
-      icon = <LocalIcon file="pentesterlab.png" alt="PentesterLab" />;
+      icon = <LocalIcon file="pentesterlab.webp" alt="PentesterLab" />;
       break;
     case "pikabu":
-      icon = <LocalIcon file="pikabu.png" alt="Pikabu" />;
+      icon = <LocalIcon file="pikabu.webp" alt="Pikabu" />;
       break;
     case "plurk":
       icon = <Icon icon="simple-icons:plurk" color={socialNetworks.plurk.color} />;
@@ -1306,25 +1306,25 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:speakerdeck" color={socialNetworks.speakerdeck.color} />;
       break;
     case "subscribestar":
-      icon = <LocalIcon file="subscribestar.png" alt="SubscribeStar" />;
+      icon = <LocalIcon file="subscribestar.webp" alt="SubscribeStar" />;
       break;
     case "themeforest":
       icon = <Icon icon="simple-icons:envato" color={socialNetworks.themeforest.color} />;
       break;
     case "wikidot":
-      icon = <LocalIcon file="wikidot.png" alt="Wikidot" />;
+      icon = <LocalIcon file="wikidot.webp" alt="Wikidot" />;
       break;
     case "wishlistr":
-      icon = <LocalIcon file="wishlistr.png" alt="Wishlistr" />;
+      icon = <LocalIcon file="wishlistr.webp" alt="Wishlistr" />;
       break;
     case "xhamster":
-      icon = <LocalIcon file="xhamster.png" alt="xHamster" />;
+      icon = <LocalIcon file="xhamster.webp" alt="xHamster" />;
       break;
     case "akniga":
-      icon = <LocalIcon file="akniga.png" alt="Akniga" />;
+      icon = <LocalIcon file="akniga.webp" alt="Akniga" />;
       break;
     case "biosite":
-      icon = <LocalIcon file="biosite.png" alt="Bio.site" />;
+      icon = <LocalIcon file="biosite.webp" alt="Bio.site" />;
       break;
     case "buymeacoffee":
       icon = <Icon icon="simple-icons:buymeacoffee" color={socialNetworks.buymeacoffee.color} />;
@@ -1342,10 +1342,10 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:habr" color={socialNetworks.habr.color} />;
       break;
     case "inkbunny":
-      icon = <LocalIcon file="inkbunny.png" alt="Inkbunny" />;
+      icon = <LocalIcon file="inkbunny.webp" alt="Inkbunny" />;
       break;
     case "justforfans":
-      icon = <LocalIcon file="justforfans.png" alt="JustFor.Fans" />;
+      icon = <LocalIcon file="justforfans.webp" alt="JustFor.Fans" />;
       break;
     case "mix":
       icon = <Icon icon="simple-icons:mix" color={socialNetworks.mix.color} />;
@@ -1354,19 +1354,19 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:openstreetmap" color={socialNetworks.openstreetmap.color} />;
       break;
     case "rsi":
-      icon = <LocalIcon file="rsi.png" alt="Roberts Space Industries" />;
+      icon = <LocalIcon file="rsi.webp" alt="Roberts Space Industries" />;
       break;
     case "setlistfm":
-      icon = <LocalIcon file="setlistfm.png" alt="setlist.fm" />;
+      icon = <LocalIcon file="setlistfm.webp" alt="setlist.fm" />;
       break;
     case "sofurry":
-      icon = <LocalIcon file="sofurry.png" alt="SoFurry" />;
+      icon = <LocalIcon file="sofurry.webp" alt="SoFurry" />;
       break;
     case "tenor":
-      icon = <LocalIcon file="tenor.png" alt="Tenor" />;
+      icon = <LocalIcon file="tenor.webp" alt="Tenor" />;
       break;
     case "warriorforum":
-      icon = <LocalIcon file="warriorforum.png" alt="Warrior Forum" />;
+      icon = <LocalIcon file="warriorforum.webp" alt="Warrior Forum" />;
       break;
     case "weasyl":
       icon = <Icon icon="simple-icons:weasyl" color={socialNetworks.weasyl.color} />;
@@ -1378,83 +1378,83 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:hackerone" color={socialNetworks.hackerone.color} />;
       break;
     case "kwai":
-      icon = <LocalIcon file="kwai.png" alt="Kwai" />;
+      icon = <LocalIcon file="kwai.webp" alt="Kwai" />;
       break;
     case "sevencups":
     case "7cups":
-      icon = <LocalIcon file="7cups.png" alt="7 Cups" />;
+      icon = <LocalIcon file="7cups.webp" alt="7 Cups" />;
       break;
     case "academia":
       icon = <Icon icon="simple-icons:academia" color={socialNetworks.academia.color} />;
       break;
     case "animeplanet":
-      icon = <LocalIcon file="animeplanet.png" alt="Anime-Planet" />;
+      icon = <LocalIcon file="animeplanet.webp" alt="Anime-Planet" />;
       break;
     case "au":
-      icon = <LocalIcon file="au.png" alt="Au.ru" />;
+      icon = <LocalIcon file="au.webp" alt="Au.ru" />;
       break;
     case "beacons":
-      icon = <LocalIcon file="beacons.png" alt="Beacons" />;
+      icon = <LocalIcon file="beacons.webp" alt="Beacons" />;
       break;
     case "bookcrossing":
-      icon = <LocalIcon file="bookcrossing.png" alt="BookCrossing" />;
+      icon = <LocalIcon file="bookcrossing.webp" alt="BookCrossing" />;
       break;
     case "buzzfeed":
       icon = <Icon icon="simple-icons:buzzfeed" color={socialNetworks.buzzfeed.color} />;
       break;
     case "clapper":
-      icon = <LocalIcon file="clapper.png" alt="Clapper" />;
+      icon = <LocalIcon file="clapper.webp" alt="Clapper" />;
       break;
     case "cloudflarecommunity":
       icon = <Icon icon="simple-icons:cloudflare" color={socialNetworks.cloudflarecommunity.color} />;
       break;
     case "codtracker":
-      icon = <LocalIcon file="codtracker.png" alt="COD Tracker" />;
+      icon = <LocalIcon file="codtracker.webp" alt="COD Tracker" />;
       break;
     case "colourlovers":
-      icon = <LocalIcon file="colourlovers.png" alt="COLOURlovers" />;
+      icon = <LocalIcon file="colourlovers.webp" alt="COLOURlovers" />;
       break;
     case "comicvine":
-      icon = <LocalIcon file="comicvine.png" alt="Comic Vine" />;
+      icon = <LocalIcon file="comicvine.webp" alt="Comic Vine" />;
       break;
     case "creativemarket":
-      icon = <LocalIcon file="creativemarket.png" alt="Creative Market" />;
+      icon = <LocalIcon file="creativemarket.webp" alt="Creative Market" />;
       break;
     case "curseforge":
       icon = <Icon icon="simple-icons:curseforge" color={socialNetworks.curseforge.color} />;
       break;
     case "depop":
-      icon = <LocalIcon file="depop.png" alt="Depop" />;
+      icon = <LocalIcon file="depop.webp" alt="Depop" />;
       break;
     case "diigo":
-      icon = <LocalIcon file="diigo.png" alt="Diigo" />;
+      icon = <LocalIcon file="diigo.webp" alt="Diigo" />;
       break;
     case "directme":
-      icon = <LocalIcon file="directme.png" alt="Direct.me" />;
+      icon = <LocalIcon file="directme.webp" alt="Direct.me" />;
       break;
     case "eksisozluk":
-      icon = <LocalIcon file="eksisozluk.png" alt="Ekşi Sözlük" />;
+      icon = <LocalIcon file="eksisozluk.webp" alt="Ekşi Sözlük" />;
       break;
     case "exophase":
-      icon = <LocalIcon file="exophase.png" alt="Exophase" />;
+      icon = <LocalIcon file="exophase.webp" alt="Exophase" />;
       break;
     case "furaffinity":
       icon = <Icon icon="simple-icons:furaffinity" color={socialNetworks.furaffinity.color} />;
       break;
     case "gamefaqs":
-      icon = <LocalIcon file="gamefaqs.png" alt="GameFAQs" />;
+      icon = <LocalIcon file="gamefaqs.webp" alt="GameFAQs" />;
       break;
     case "inkitt":
-      icon = <LocalIcon file="inkitt.jpg" alt="Inkitt" />;
+      icon = <LocalIcon file="inkitt.webp" alt="Inkitt" />;
       break;
     case "itchio":
       icon = <Icon icon="simple-icons:itchdotio" color={socialNetworks.itchio.color} />;
       break;
     case "jvc":
-      icon = <LocalIcon file="jvc.png" alt="Jeuxvideo.com" />;
+      icon = <LocalIcon file="jvc.webp" alt="Jeuxvideo.com" />;
       break;
     case "kaskus":
-      icon = <LocalIcon file="kaskus.png" alt="Kaskus" />;
+      icon = <LocalIcon file="kaskus.webp" alt="Kaskus" />;
       break;
     case "kickstarter":
       icon = <Icon icon="simple-icons:kickstarter" color={socialNetworks.kickstarter.color} />;
@@ -1469,16 +1469,16 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="livelib.svg" alt="LiveLib" />;
       break;
     case "moddb":
-      icon = <LocalIcon file="moddb.png" alt="ModDB" />;
+      icon = <LocalIcon file="moddb.webp" alt="ModDB" />;
       break;
     case "musescore":
-      icon = <LocalIcon file="musescore.png" alt="MuseScore" />;
+      icon = <LocalIcon file="musescore.webp" alt="MuseScore" />;
       break;
     case "musicboard":
-      icon = <LocalIcon file="musicboard.png" alt="Musicboard" />;
+      icon = <LocalIcon file="musicboard.webp" alt="Musicboard" />;
       break;
     case "nexusmods":
-      icon = <LocalIcon file="nexusmods.png" alt="Nexus Mods" />;
+      icon = <LocalIcon file="nexusmods.webp" alt="Nexus Mods" />;
       break;
     case "paypalme":
       icon = <Icon icon="simple-icons:paypal" color={socialNetworks.paypalme.color} />;
@@ -1493,16 +1493,16 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:stackshare" color={socialNetworks.stackshare.color} />;
       break;
     case "stripchat":
-      icon = <LocalIcon file="stripchat.png" alt="Stripchat" />;
+      icon = <LocalIcon file="stripchat.webp" alt="Stripchat" />;
       break;
     case "superlink":
-      icon = <LocalIcon file="superlink.png" alt="Superlink" />;
+      icon = <LocalIcon file="superlink.webp" alt="Superlink" />;
       break;
     case "tvtropes":
-      icon = <LocalIcon file="tvtropes.png" alt="TV Tropes" />;
+      icon = <LocalIcon file="tvtropes.webp" alt="TV Tropes" />;
       break;
     case "ultimateguitar":
-      icon = <LocalIcon file="ultimateguitar.png" alt="Ultimate Guitar" />;
+      icon = <LocalIcon file="ultimateguitar.webp" alt="Ultimate Guitar" />;
       break;
     case "zillow":
       icon = <Icon icon="simple-icons:zillow" color={socialNetworks.zillow.color} />;
@@ -1642,127 +1642,127 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
 
     case "allmylinks":
-      icon = <LocalIcon file="allmylinks.png" alt="AllMyLinks" />;
+      icon = <LocalIcon file="allmylinks.webp" alt="AllMyLinks" />;
       break;
     case "allthingsworn":
-      icon = <LocalIcon file="allthingsworn.png" alt="All Things Worn" />;
+      icon = <LocalIcon file="allthingsworn.webp" alt="All Things Worn" />;
       break;
     case "apsense":
-      icon = <LocalIcon file="apsense.png" alt="APSense" />;
+      icon = <LocalIcon file="apsense.webp" alt="APSense" />;
       break;
     case "aryion":
-      icon = <LocalIcon file="aryion.png" alt="Aryion" />;
+      icon = <LocalIcon file="aryion.webp" alt="Aryion" />;
       break;
     case "authortoday":
-      icon = <LocalIcon file="authortoday.png" alt="Author.Today" />;
+      icon = <LocalIcon file="authortoday.webp" alt="Author.Today" />;
       break;
     case "backloggd":
-      icon = <LocalIcon file="backloggd.png" alt="Backloggd" />;
+      icon = <LocalIcon file="backloggd.webp" alt="Backloggd" />;
       break;
     case "backstagecam":
       icon = <Icon icon="mdi:webcam" color={socialNetworks.backstagecam.color} />;
       break;
     case "cam4":
-      icon = <LocalIcon file="cam4.png" alt="CAM4" />;
+      icon = <LocalIcon file="cam4.webp" alt="CAM4" />;
       break;
     case "cara":
-      icon = <LocalIcon file="cara.png" alt="Cara" />;
+      icon = <LocalIcon file="cara.webp" alt="Cara" />;
       break;
     case "ccmixter":
-      icon = <LocalIcon file="ccmixter.png" alt="ccMixter" />;
+      icon = <LocalIcon file="ccmixter.webp" alt="ccMixter" />;
       break;
     case "cgtrader":
       icon = <Icon icon="mdi:cube-outline" color={socialNetworks.cgtrader.color} />;
       break;
     case "chatujme":
-      icon = <LocalIcon file="chatujme.png" alt="Chatujme.cz" />;
+      icon = <LocalIcon file="chatujme.webp" alt="Chatujme.cz" />;
       break;
     case "chollometro":
-      icon = <LocalIcon file="chollometro.png" alt="Chollometro" />;
+      icon = <LocalIcon file="chollometro.webp" alt="Chollometro" />;
       break;
     case "civitai":
-      icon = <LocalIcon file="civitai.png" alt="Civitai" />;
+      icon = <LocalIcon file="civitai.webp" alt="Civitai" />;
       break;
     case "codecanyon":
-      icon = <LocalIcon file="codecanyon.png" alt="CodeCanyon" />;
+      icon = <LocalIcon file="codecanyon.webp" alt="CodeCanyon" />;
       break;
     case "coindrop":
-      icon = <LocalIcon file="coindrop.png" alt="Coindrop" />;
+      icon = <LocalIcon file="coindrop.webp" alt="Coindrop" />;
       break;
     case "comeup":
-      icon = <LocalIcon file="comeup.png" alt="ComeUp" />;
+      icon = <LocalIcon file="comeup.webp" alt="ComeUp" />;
       break;
     case "contactinbio":
-      icon = <LocalIcon file="contactinbio.png" alt="ContactInBio" />;
+      icon = <LocalIcon file="contactinbio.webp" alt="ContactInBio" />;
       break;
     case "creatorspring":
-      icon = <LocalIcon file="creatorspring.png" alt="Spring" />;
+      icon = <LocalIcon file="creatorspring.webp" alt="Spring" />;
       break;
     case "cryptohack":
-      icon = <LocalIcon file="cryptohack.png" alt="CryptoHack" />;
+      icon = <LocalIcon file="cryptohack.webp" alt="CryptoHack" />;
       break;
     case "cssbattle":
-      icon = <LocalIcon file="cssbattle.png" alt="CSSBattle" />;
+      icon = <LocalIcon file="cssbattle.webp" alt="CSSBattle" />;
       break;
     case "cults3d":
-      icon = <LocalIcon file="cults3d.png" alt="Cults" />;
+      icon = <LocalIcon file="cults3d.webp" alt="Cults" />;
       break;
     case "dailykos":
-      icon = <LocalIcon file="dailykos.png" alt="Daily Kos" />;
+      icon = <LocalIcon file="dailykos.webp" alt="Daily Kos" />;
       break;
     case "danbooru":
-      icon = <LocalIcon file="danbooru.png" alt="Danbooru" />;
+      icon = <LocalIcon file="danbooru.webp" alt="Danbooru" />;
       break;
     case "debank":
-      icon = <LocalIcon file="debank.png" alt="DeBank" />;
+      icon = <LocalIcon file="debank.webp" alt="DeBank" />;
       break;
     case "derpibooru":
-      icon = <LocalIcon file="derpibooru.png" alt="Derpibooru" />;
+      icon = <LocalIcon file="derpibooru.webp" alt="Derpibooru" />;
       break;
     case "domestika":
-      icon = <LocalIcon file="domestika.png" alt="Domestika" />;
+      icon = <LocalIcon file="domestika.webp" alt="Domestika" />;
       break;
     case "dou":
-      icon = <LocalIcon file="dou.png" alt="DOU" />;
+      icon = <LocalIcon file="dou.webp" alt="DOU" />;
       break;
     case "dzen":
-      icon = <LocalIcon file="dzen.png" alt="Dzen" />;
+      icon = <LocalIcon file="dzen.webp" alt="Dzen" />;
       break;
     case "e621":
-      icon = <LocalIcon file="e621.png" alt="e621" />;
+      icon = <LocalIcon file="e621.webp" alt="e621" />;
       break;
     case "ebaumsworld":
-      icon = <LocalIcon file="ebaumsworld.png" alt="eBaum's World" />;
+      icon = <LocalIcon file="ebaumsworld.webp" alt="eBaum's World" />;
       break;
     case "eintracht":
-      icon = <LocalIcon file="eintracht.png" alt="Eintracht Frankfurt" />;
+      icon = <LocalIcon file="eintracht.webp" alt="Eintracht Frankfurt" />;
       break;
     case "empowher":
-      icon = <LocalIcon file="empowher.png" alt="EmpowHER" />;
+      icon = <LocalIcon file="empowher.webp" alt="EmpowHER" />;
       break;
     case "erome":
-      icon = <LocalIcon file="erome.png" alt="EroMe" />;
+      icon = <LocalIcon file="erome.webp" alt="EroMe" />;
       break;
     case "eroprofile":
       icon = <Icon icon="mdi:emoticon" color={socialNetworks.eroprofile.color} />;
       break;
     case "fanbase":
-      icon = <LocalIcon file="fanbase.png" alt="Fanbase" />;
+      icon = <LocalIcon file="fanbase.webp" alt="Fanbase" />;
       break;
     case "fanlink":
-      icon = <LocalIcon file="fanlink.png" alt="FanLink" />;
+      icon = <LocalIcon file="fanlink.webp" alt="FanLink" />;
       break;
     case "fanvue":
-      icon = <LocalIcon file="fanvue.png" alt="Fanvue" />;
+      icon = <LocalIcon file="fanvue.webp" alt="Fanvue" />;
       break;
     case "ficwad":
       icon = <Icon icon="mdi:book-open-page-variant" color={socialNetworks.ficwad.color} />;
       break;
     case "fixya":
-      icon = <LocalIcon file="fixya.png" alt="Fixya" />;
+      icon = <LocalIcon file="fixya.webp" alt="Fixya" />;
       break;
     case "flightradar24":
-      icon = <LocalIcon file="flightradar24.png" alt="Flightradar24" />;
+      icon = <LocalIcon file="flightradar24.webp" alt="Flightradar24" />;
       break;
     case "flist":
       icon = <Icon icon="mdi:paw" color={socialNetworks.flist.color} />;
@@ -1771,148 +1771,148 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <LocalIcon file="fragment.svg" alt="Fragment" />;
       break;
     case "fredmiranda":
-      icon = <LocalIcon file="fredmiranda.png" alt="Fred Miranda" />;
+      icon = <LocalIcon file="fredmiranda.webp" alt="Fred Miranda" />;
       break;
     case "freelanceua":
-      icon = <LocalIcon file="freelanceua.png" alt="Freelance.ua" />;
+      icon = <LocalIcon file="freelanceua.webp" alt="Freelance.ua" />;
       break;
     case "freeones":
-      icon = <LocalIcon file="freeones.png" alt="FreeOnes" />;
+      icon = <LocalIcon file="freeones.webp" alt="FreeOnes" />;
       break;
     case "gaiaonline":
-      icon = <LocalIcon file="gaiaonline.png" alt="Gaia Online" />;
+      icon = <LocalIcon file="gaiaonline.webp" alt="Gaia Online" />;
       break;
     case "geneanet":
-      icon = <LocalIcon file="geneanet.png" alt="Geneanet" />;
+      icon = <LocalIcon file="geneanet.webp" alt="Geneanet" />;
       break;
     case "getallmylinks":
-      icon = <LocalIcon file="getallmylinks.png" alt="GetAllMyLinks" />;
+      icon = <LocalIcon file="getallmylinks.webp" alt="GetAllMyLinks" />;
       break;
     case "giantbomb":
-      icon = <LocalIcon file="giantbomb.png" alt="Giant Bomb" />;
+      icon = <LocalIcon file="giantbomb.webp" alt="Giant Bomb" />;
       break;
     case "hackage":
-      icon = <LocalIcon file="hackage.png" alt="Hackage" />;
+      icon = <LocalIcon file="hackage.webp" alt="Hackage" />;
       break;
     case "heavyr":
-      icon = <LocalIcon file="heavyr.png" alt="Heavy-R" />;
+      icon = <LocalIcon file="heavyr.webp" alt="Heavy-R" />;
       break;
     case "hotukdeals":
-      icon = <LocalIcon file="hotukdeals.png" alt="hotukdeals" />;
+      icon = <LocalIcon file="hotukdeals.webp" alt="hotukdeals" />;
       break;
     case "imgflip":
-      icon = <LocalIcon file="imgflip.png" alt="Imgflip" />;
+      icon = <LocalIcon file="imgflip.webp" alt="Imgflip" />;
       break;
     case "itemfix":
-      icon = <LocalIcon file="itemfix.png" alt="ItemFix" />;
+      icon = <LocalIcon file="itemfix.webp" alt="ItemFix" />;
       break;
     case "jalbum":
-      icon = <LocalIcon file="jalbum.png" alt="jAlbum" />;
+      icon = <LocalIcon file="jalbum.webp" alt="jAlbum" />;
       break;
     case "jetpunk":
-      icon = <LocalIcon file="jetpunk.png" alt="JetPunk" />;
+      icon = <LocalIcon file="jetpunk.webp" alt="JetPunk" />;
       break;
     case "justpasteit":
-      icon = <LocalIcon file="justpasteit.png" alt="JustPaste.it" />;
+      icon = <LocalIcon file="justpasteit.webp" alt="JustPaste.it" />;
       break;
     case "koalendar":
-      icon = <LocalIcon file="koalendar.png" alt="Koalendar" />;
+      icon = <LocalIcon file="koalendar.webp" alt="Koalendar" />;
       break;
     case "lens":
-      icon = <LocalIcon file="lens.png" alt="Lens" />;
+      icon = <LocalIcon file="lens.webp" alt="Lens" />;
       break;
     case "limetorrents":
       icon = <Icon icon="mdi:fruit-citrus" color={socialNetworks.limetorrents.color} />;
       break;
     case "linkme":
-      icon = <LocalIcon file="linkme.png" alt="Link.me" />;
+      icon = <LocalIcon file="linkme.webp" alt="Link.me" />;
       break;
     case "linuxfr":
       icon = <Icon icon="mdi:penguin" color={socialNetworks.linuxfr.color} />;
       break;
     case "listal":
-      icon = <LocalIcon file="listal.png" alt="Listal" />;
+      icon = <LocalIcon file="listal.webp" alt="Listal" />;
       break;
     case "listed":
-      icon = <LocalIcon file="listed.png" alt="Listed" />;
+      icon = <LocalIcon file="listed.webp" alt="Listed" />;
       break;
     case "listography":
       icon = <Icon icon="mdi:format-list-bulleted" color={socialNetworks.listography.color} />;
       break;
     case "lnkbio":
-      icon = <LocalIcon file="lnkbio.png" alt="Lnk.Bio" />;
+      icon = <LocalIcon file="lnkbio.webp" alt="Lnk.Bio" />;
       break;
     case "lushstories":
-      icon = <LocalIcon file="lushstories.png" alt="Lush Stories" />;
+      icon = <LocalIcon file="lushstories.webp" alt="Lush Stories" />;
       break;
     case "lyricstranslate":
-      icon = <LocalIcon file="lyricstranslate.png" alt="LyricsTranslate" />;
+      icon = <LocalIcon file="lyricstranslate.webp" alt="LyricsTranslate" />;
       break;
     case "magiceden":
-      icon = <LocalIcon file="magiceden.png" alt="Magic Eden" />;
+      icon = <LocalIcon file="magiceden.webp" alt="Magic Eden" />;
       break;
     case "manifoldgallery":
       icon = <LocalIcon file="manifoldgallery.svg" alt="Manifold Gallery" />;
       break;
     case "manylink":
-      icon = <LocalIcon file="manylink.png" alt="Many.link" />;
+      icon = <LocalIcon file="manylink.webp" alt="Many.link" />;
       break;
     case "memrise":
-      icon = <LocalIcon file="memrise.png" alt="Memrise" />;
+      icon = <LocalIcon file="memrise.webp" alt="Memrise" />;
       break;
     case "meneame":
-      icon = <LocalIcon file="meneame.png" alt="Menéame" />;
+      icon = <LocalIcon file="meneame.webp" alt="Menéame" />;
       break;
     case "mercari":
-      icon = <LocalIcon file="mercari.png" alt="Mercari" />;
+      icon = <LocalIcon file="mercari.webp" alt="Mercari" />;
       break;
     case "metalarchives":
       icon = <Icon icon="mdi:guitar-electric" color={socialNetworks.metalarchives.color} />;
       break;
     case "milkshake":
-      icon = <LocalIcon file="milkshake.png" alt="Milkshake" />;
+      icon = <LocalIcon file="milkshake.webp" alt="Milkshake" />;
       break;
     case "mydealz":
-      icon = <LocalIcon file="mydealz.png" alt="mydealz" />;
+      icon = <LocalIcon file="mydealz.webp" alt="mydealz" />;
       break;
     case "mydramalist":
-      icon = <LocalIcon file="mydramalist.png" alt="MyDramaList" />;
+      icon = <LocalIcon file="mydramalist.webp" alt="MyDramaList" />;
       break;
     case "myfans":
-      icon = <LocalIcon file="myfans.png" alt="Myfans" />;
+      icon = <LocalIcon file="myfans.webp" alt="Myfans" />;
       break;
     case "myminifactory":
-      icon = <LocalIcon file="myminifactory.png" alt="MyMiniFactory" />;
+      icon = <LocalIcon file="myminifactory.webp" alt="MyMiniFactory" />;
       break;
     case "mynickname":
-      icon = <LocalIcon file="mynickname.png" alt="MyNickname" />;
+      icon = <LocalIcon file="mynickname.webp" alt="MyNickname" />;
       break;
     case "nationstates":
-      icon = <LocalIcon file="nationstates.png" alt="NationStates" />;
+      icon = <LocalIcon file="nationstates.webp" alt="NationStates" />;
       break;
     case "ngl":
-      icon = <LocalIcon file="ngl.png" alt="NGL" />;
+      icon = <LocalIcon file="ngl.webp" alt="NGL" />;
       break;
     case "nineninenine":
-      icon = <LocalIcon file="nineninenine.png" alt="999.md" />;
+      icon = <LocalIcon file="nineninenine.webp" alt="999.md" />;
       break;
     case "nintendolife":
-      icon = <LocalIcon file="nintendolife.png" alt="Nintendo Life" />;
+      icon = <LocalIcon file="nintendolife.webp" alt="Nintendo Life" />;
       break;
     case "nitrotype":
-      icon = <LocalIcon file="nitrotype.png" alt="Nitro Type" />;
+      icon = <LocalIcon file="nitrotype.webp" alt="Nitro Type" />;
       break;
     case "opengameart":
-      icon = <LocalIcon file="opengameart.png" alt="OpenGameArt" />;
+      icon = <LocalIcon file="opengameart.webp" alt="OpenGameArt" />;
       break;
     case "oshwlab":
-      icon = <LocalIcon file="oshwlab.png" alt="OSHWLab" />;
+      icon = <LocalIcon file="oshwlab.webp" alt="OSHWLab" />;
       break;
     case "paragraph":
-      icon = <LocalIcon file="paragraph.png" alt="Paragraph" />;
+      icon = <LocalIcon file="paragraph.webp" alt="Paragraph" />;
       break;
     case "passes":
-      icon = <LocalIcon file="passes.png" alt="Passes" />;
+      icon = <LocalIcon file="passes.webp" alt="Passes" />;
       break;
     case "pbase":
       icon = <Icon icon="mdi:camera" color={socialNetworks.pbase.color} />;
@@ -1921,178 +1921,178 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:image-multiple" color={socialNetworks.picturepush.color} />;
       break;
     case "pifyi":
-      icon = <LocalIcon file="pifyi.png" alt="PI.FYI" />;
+      icon = <LocalIcon file="pifyi.webp" alt="PI.FYI" />;
       break;
     case "pinkbike":
-      icon = <LocalIcon file="pinkbike.png" alt="Pinkbike" />;
+      icon = <LocalIcon file="pinkbike.webp" alt="Pinkbike" />;
       break;
     case "podchaser":
-      icon = <LocalIcon file="podchaser.png" alt="Podchaser" />;
+      icon = <LocalIcon file="podchaser.webp" alt="Podchaser" />;
       break;
     case "polymarket":
-      icon = <LocalIcon file="polymarket.png" alt="Polymarket" />;
+      icon = <LocalIcon file="polymarket.webp" alt="Polymarket" />;
       break;
     case "preisjaeger":
-      icon = <LocalIcon file="preisjaeger.png" alt="Preisjäger" />;
+      icon = <LocalIcon file="preisjaeger.webp" alt="Preisjäger" />;
       break;
     case "promodescuentos":
-      icon = <LocalIcon file="promodescuentos.png" alt="Promodescuentos" />;
+      icon = <LocalIcon file="promodescuentos.webp" alt="Promodescuentos" />;
       break;
     case "promptbase":
-      icon = <LocalIcon file="promptbase.png" alt="PromptBase" />;
+      icon = <LocalIcon file="promptbase.webp" alt="PromptBase" />;
       break;
     case "proza":
-      icon = <LocalIcon file="proza.png" alt="Proza.ru" />;
+      icon = <LocalIcon file="proza.webp" alt="Proza.ru" />;
       break;
     case "pwonline":
-      icon = <LocalIcon file="pwonline.png" alt="PW Online" />;
+      icon = <LocalIcon file="pwonline.webp" alt="PW Online" />;
       break;
     case "qbn":
-      icon = <LocalIcon file="qbn.png" alt="QBN" />;
+      icon = <LocalIcon file="qbn.webp" alt="QBN" />;
       break;
     case "quotev":
-      icon = <LocalIcon file="quotev.png" alt="Quotev" />;
+      icon = <LocalIcon file="quotev.webp" alt="Quotev" />;
       break;
     case "ramblerdating":
-      icon = <LocalIcon file="ramblerdating.png" alt="Rambler Dating" />;
+      icon = <LocalIcon file="ramblerdating.webp" alt="Rambler Dating" />;
       break;
     case "rankia":
-      icon = <LocalIcon file="rankia.png" alt="Rankia" />;
+      icon = <LocalIcon file="rankia.webp" alt="Rankia" />;
       break;
     case "realmeye":
       icon = <Icon icon="mdi:eye" color={socialNetworks.realmeye.color} />;
       break;
     case "runescape":
-      icon = <LocalIcon file="runescape.png" alt="RuneScape" />;
+      icon = <LocalIcon file="runescape.webp" alt="RuneScape" />;
       break;
     case "sharechat":
-      icon = <LocalIcon file="sharechat.png" alt="ShareChat" />;
+      icon = <LocalIcon file="sharechat.webp" alt="ShareChat" />;
       break;
     case "shoppy":
-      icon = <LocalIcon file="shoppy.png" alt="Shoppy" />;
+      icon = <LocalIcon file="shoppy.webp" alt="Shoppy" />;
       break;
     case "shorby":
-      icon = <LocalIcon file="shorby.png" alt="Shorby" />;
+      icon = <LocalIcon file="shorby.webp" alt="Shorby" />;
       break;
     case "slushy":
-      icon = <LocalIcon file="slushy.png" alt="Slushy" />;
+      icon = <LocalIcon file="slushy.webp" alt="Slushy" />;
       break;
     case "snackvideo":
-      icon = <LocalIcon file="snackvideo.png" alt="SnackVideo" />;
+      icon = <LocalIcon file="snackvideo.webp" alt="SnackVideo" />;
       break;
     case "soloto":
-      icon = <LocalIcon file="soloto.png" alt="Solo.to" />;
+      icon = <LocalIcon file="soloto.webp" alt="Solo.to" />;
       break;
     case "soylentnews":
-      icon = <LocalIcon file="soylentnews.png" alt="SoylentNews" />;
+      icon = <LocalIcon file="soylentnews.webp" alt="SoylentNews" />;
       break;
     case "spankbang":
-      icon = <LocalIcon file="spankbang.png" alt="SpankBang" />;
+      icon = <LocalIcon file="spankbang.webp" alt="SpankBang" />;
       break;
     case "spells8":
-      icon = <LocalIcon file="spells8.png" alt="Spells8" />;
+      icon = <LocalIcon file="spells8.webp" alt="Spells8" />;
       break;
     case "spoutible":
-      icon = <LocalIcon file="spoutible.png" alt="Spoutible" />;
+      icon = <LocalIcon file="spoutible.webp" alt="Spoutible" />;
       break;
     case "statink":
-      icon = <LocalIcon file="statink.png" alt="stat.ink" />;
+      icon = <LocalIcon file="statink.webp" alt="stat.ink" />;
       break;
     case "statuscafe":
       icon = <Icon icon="mdi:coffee" color={socialNetworks.statuscafe.color} />;
       break;
     case "stihi":
-      icon = <LocalIcon file="stihi.png" alt="Stihi.ru" />;
+      icon = <LocalIcon file="stihi.webp" alt="Stihi.ru" />;
       break;
     case "suicidegirls":
-      icon = <LocalIcon file="suicidegirls.png" alt="SuicideGirls" />;
+      icon = <LocalIcon file="suicidegirls.webp" alt="SuicideGirls" />;
       break;
     case "superprofile":
-      icon = <LocalIcon file="superprofile.png" alt="SuperProfile" />;
+      icon = <LocalIcon file="superprofile.webp" alt="SuperProfile" />;
       break;
     case "superrare":
-      icon = <LocalIcon file="superrare.png" alt="SuperRare" />;
+      icon = <LocalIcon file="superrare.webp" alt="SuperRare" />;
       break;
     case "taittsuu":
-      icon = <LocalIcon file="taittsuu.png" alt="Taittsuu" />;
+      icon = <LocalIcon file="taittsuu.webp" alt="Taittsuu" />;
       break;
     case "tango":
-      icon = <LocalIcon file="tango.png" alt="Tango" />;
+      icon = <LocalIcon file="tango.webp" alt="Tango" />;
       break;
     case "teamliquid":
-      icon = <LocalIcon file="teamliquid.png" alt="Team Liquid" />;
+      icon = <LocalIcon file="teamliquid.webp" alt="Team Liquid" />;
       break;
     case "teia":
-      icon = <LocalIcon file="teia.png" alt="Teia" />;
+      icon = <LocalIcon file="teia.webp" alt="Teia" />;
       break;
     case "terrariaforum":
-      icon = <LocalIcon file="terrariaforum.png" alt="Terraria Forums" />;
+      icon = <LocalIcon file="terrariaforum.webp" alt="Terraria Forums" />;
       break;
     case "thebigboss":
       icon = <Icon icon="mdi:earth" color={socialNetworks.thebigboss.color} />;
       break;
     case "throne":
-      icon = <LocalIcon file="throne.png" alt="Throne" />;
+      icon = <LocalIcon file="throne.webp" alt="Throne" />;
       break;
     case "tiendanube":
-      icon = <LocalIcon file="tiendanube.png" alt="Tiendanube" />;
+      icon = <LocalIcon file="tiendanube.webp" alt="Tiendanube" />;
       break;
     case "tipeee":
-      icon = <LocalIcon file="tipeee.png" alt="Tipeee" />;
+      icon = <LocalIcon file="tipeee.webp" alt="Tipeee" />;
       break;
     case "tnaflix":
-      icon = <LocalIcon file="tnaflix.png" alt="TNAFlix" />;
+      icon = <LocalIcon file="tnaflix.webp" alt="TNAFlix" />;
       break;
     case "tokopedia":
-      icon = <LocalIcon file="tokopedia.png" alt="Tokopedia" />;
+      icon = <LocalIcon file="tokopedia.webp" alt="Tokopedia" />;
       break;
     case "topmate":
       icon = <LocalIcon file="topmate.svg" alt="Topmate" />;
       break;
     case "traktrain":
-      icon = <LocalIcon file="traktrain.png" alt="TrakTrain" />;
+      icon = <LocalIcon file="traktrain.webp" alt="TrakTrain" />;
       break;
     case "tripline":
-      icon = <LocalIcon file="tripline.png" alt="Tripline" />;
+      icon = <LocalIcon file="tripline.webp" alt="Tripline" />;
       break;
     case "trovo":
-      icon = <LocalIcon file="trovo.png" alt="Trovo" />;
+      icon = <LocalIcon file="trovo.webp" alt="Trovo" />;
       break;
     case "truelancer":
-      icon = <LocalIcon file="truelancer.png" alt="Truelancer" />;
+      icon = <LocalIcon file="truelancer.webp" alt="Truelancer" />;
       break;
     case "turpravda":
-      icon = <LocalIcon file="turpravda.png" alt="TurPravda" />;
+      icon = <LocalIcon file="turpravda.webp" alt="TurPravda" />;
       break;
     case "typeracer":
-      icon = <LocalIcon file="typeracer.png" alt="TypeRacer" />;
+      icon = <LocalIcon file="typeracer.webp" alt="TypeRacer" />;
       break;
     case "unstoppabledomains":
-      icon = <LocalIcon file="unstoppabledomains.png" alt="Unstoppable Domains" />;
+      icon = <LocalIcon file="unstoppabledomains.webp" alt="Unstoppable Domains" />;
       break;
     case "vgen":
-      icon = <LocalIcon file="vgen.png" alt="VGen" />;
+      icon = <LocalIcon file="vgen.webp" alt="VGen" />;
       break;
     case "vlr":
-      icon = <LocalIcon file="vlr.png" alt="VLR.gg" />;
+      icon = <LocalIcon file="vlr.webp" alt="VLR.gg" />;
       break;
     case "voicemod":
-      icon = <LocalIcon file="voicemod.png" alt="Voicemod" />;
+      icon = <LocalIcon file="voicemod.webp" alt="Voicemod" />;
       break;
     case "wanderlog":
-      icon = <LocalIcon file="wanderlog.png" alt="Wanderlog" />;
+      icon = <LocalIcon file="wanderlog.webp" alt="Wanderlog" />;
       break;
     case "whatnot":
-      icon = <LocalIcon file="whatnot.png" alt="Whatnot" />;
+      icon = <LocalIcon file="whatnot.webp" alt="Whatnot" />;
       break;
     case "zora":
-      icon = <LocalIcon file="zora.png" alt="Zora" />;
+      icon = <LocalIcon file="zora.webp" alt="Zora" />;
       break;
     case "numtrace":
-      icon = <LocalIcon file="numtrace.png" alt="NumTrace" />;
+      icon = <LocalIcon file="numtrace.webp" alt="NumTrace" />;
       break;
     case "jazzbalance":
-      icon = <LocalIcon file="jazzbalance.png" alt="Jazz Balance" />;
+      icon = <LocalIcon file="jazzbalance.webp" alt="Jazz Balance" />;
       break;
     case "melissa":
       icon = <Icon icon="mdi:alpha-m-box" color={socialNetworks.melissa.color} />;
@@ -2108,7 +2108,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:aparat" color={socialNetworks.aparat.color} />;
       break;
     case "audius":
-      icon = <LocalIcon file="audius.png" alt="Audius" />;
+      icon = <LocalIcon file="audius.webp" alt="Audius" />;
       break;
     case "bilibili":
       icon = <Icon icon="simple-icons:bilibili" color={socialNetworks.bilibili.color} />;
@@ -2117,16 +2117,16 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:blender" color={socialNetworks.blenderartists.color} />;
       break;
     case "campsitebio":
-      icon = <LocalIcon file="campsitebio.png" alt="Campsite.bio" />;
+      icon = <LocalIcon file="campsitebio.webp" alt="Campsite.bio" />;
       break;
     case "chingari":
-      icon = <LocalIcon file="chingari.png" alt="Chingari" />;
+      icon = <LocalIcon file="chingari.webp" alt="Chingari" />;
       break;
     case "codestudio":
       icon = <Icon icon="simple-icons:codingninjas" color={socialNetworks.codestudio.color} />;
       break;
     case "codolio":
-      icon = <LocalIcon file="codolio.png" alt="Codolio" />;
+      icon = <LocalIcon file="codolio.webp" alt="Codolio" />;
       break;
     case "credly":
       icon = <Icon icon="simple-icons:credly" color={socialNetworks.credly.color} />;
@@ -2135,28 +2135,28 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:discord" color={socialNetworks.discordgg.color} />;
       break;
     case "elixirforum":
-      icon = <LocalIcon file="elixirforum.png" alt="Elixir Forum" />;
+      icon = <LocalIcon file="elixirforum.webp" alt="Elixir Forum" />;
       break;
     case "fanbox":
-      icon = <LocalIcon file="fanbox.png" alt="pixivFANBOX" />;
+      icon = <LocalIcon file="fanbox.webp" alt="pixivFANBOX" />;
       break;
     case "freecodecamp":
       icon = <Icon icon="simple-icons:freecodecamp" color={socialNetworks.freecodecamp.color} />;
       break;
     case "grailed":
-      icon = <LocalIcon file="grailed.png" alt="Grailed" />;
+      icon = <LocalIcon file="grailed.webp" alt="Grailed" />;
       break;
     case "hexbear":
-      icon = <LocalIcon file="hexbear.png" alt="Hexbear" />;
+      icon = <LocalIcon file="hexbear.webp" alt="Hexbear" />;
       break;
     case "hexpm":
-      icon = <LocalIcon file="hexpm.png" alt="Hex.pm" />;
+      icon = <LocalIcon file="hexpm.webp" alt="Hex.pm" />;
       break;
     case "kitsu":
       icon = <Icon icon="simple-icons:kitsu" color={socialNetworks.kitsu.color} />;
       break;
     case "laylo":
-      icon = <LocalIcon file="laylo.png" alt="Laylo" />;
+      icon = <LocalIcon file="laylo.webp" alt="Laylo" />;
       break;
     case "leetcode":
       icon = <Icon icon="simple-icons:leetcode" color={socialNetworks.leetcode.color} />;
@@ -2165,10 +2165,10 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:lemmy" color={socialNetworks.lemmy.color} />;
       break;
     case "linkinbio":
-      icon = <LocalIcon file="linkinbio.png" alt="Linkin.bio" />;
+      icon = <LocalIcon file="linkinbio.webp" alt="Linkin.bio" />;
       break;
     case "manifold":
-      icon = <LocalIcon file="manifold.png" alt="Manifold" />;
+      icon = <LocalIcon file="manifold.webp" alt="Manifold" />;
       break;
     case "modrinth":
       icon = <Icon icon="simple-icons:modrinth" color={socialNetworks.modrinth.color} />;
@@ -2180,34 +2180,34 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:obsidian" color={socialNetworks.obsidian.color} />;
       break;
     case "playstrategy":
-      icon = <LocalIcon file="playstrategy.png" alt="PlayStrategy" />;
+      icon = <LocalIcon file="playstrategy.webp" alt="PlayStrategy" />;
       break;
     case "pr0gramm":
-      icon = <LocalIcon file="pr0gramm.png" alt="pr0gramm" />;
+      icon = <LocalIcon file="pr0gramm.webp" alt="pr0gramm" />;
       break;
     case "programmingdev":
-      icon = <LocalIcon file="programmingdev.png" alt="Programming.dev" />;
+      icon = <LocalIcon file="programmingdev.webp" alt="Programming.dev" />;
       break;
     case "pychess":
-      icon = <LocalIcon file="pychess.png" alt="PyChess" />;
+      icon = <LocalIcon file="pychess.webp" alt="PyChess" />;
       break;
     case "qiita":
       icon = <Icon icon="simple-icons:qiita" color={socialNetworks.qiita.color} />;
       break;
     case "quay":
-      icon = <LocalIcon file="quay.png" alt="Quay.io" />;
+      icon = <LocalIcon file="quay.webp" alt="Quay.io" />;
       break;
     case "serverfault":
       icon = <Icon icon="simple-icons:serverfault" color={socialNetworks.serverfault.color} />;
       break;
     case "soop":
-      icon = <LocalIcon file="soop.png" alt="SOOP" />;
+      icon = <LocalIcon file="soop.webp" alt="SOOP" />;
       break;
     case "speedrunslive":
-      icon = <LocalIcon file="speedrunslive.png" alt="SpeedRunsLive" />;
+      icon = <LocalIcon file="speedrunslive.webp" alt="SpeedRunsLive" />;
       break;
     case "spline":
-      icon = <LocalIcon file="spline.png" alt="Spline" />;
+      icon = <LocalIcon file="spline.webp" alt="Spline" />;
       break;
     case "sublimetextforum":
       icon = <Icon icon="simple-icons:sublimetext" color={socialNetworks.sublimetextforum.color} />;
@@ -2216,13 +2216,13 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:superuser" color={socialNetworks.superuser.color} />;
       break;
     case "swapd":
-      icon = <LocalIcon file="swapd.png" alt="SWAPD" />;
+      icon = <LocalIcon file="swapd.webp" alt="SWAPD" />;
       break;
     case "tetrio":
-      icon = <LocalIcon file="tetrio.png" alt="TETR.IO" />;
+      icon = <LocalIcon file="tetrio.webp" alt="TETR.IO" />;
       break;
     case "thepiratebay":
-      icon = <LocalIcon file="thepiratebay.png" alt="The Pirate Bay" />;
+      icon = <LocalIcon file="thepiratebay.webp" alt="The Pirate Bay" />;
       break;
     case "topcoder":
       icon = <Icon icon="simple-icons:topcoder" color={socialNetworks.topcoder.color} />;
@@ -2234,13 +2234,13 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:viber" color={socialNetworks.viber.color} />;
       break;
     case "warframemarket":
-      icon = <LocalIcon file="warframemarket.png" alt="Warframe Market" />;
+      icon = <LocalIcon file="warframemarket.webp" alt="Warframe Market" />;
       break;
     case "warpcast":
       icon = <Icon icon="simple-icons:farcaster" color={socialNetworks.warpcast.color} />;
       break;
     case "yandexmusic":
-      icon = <LocalIcon file="yandexmusic.png" alt="Yandex Music" />;
+      icon = <LocalIcon file="yandexmusic.webp" alt="Yandex Music" />;
       break;
     case "imdb":
       icon = <Icon icon="simple-icons:imdb" color={socialNetworks.imdb.color} />;
@@ -2255,7 +2255,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
 
     case "changeorg":
-      icon = <LocalIcon file="changeorg.png" alt="Change.org" />;
+      icon = <LocalIcon file="changeorg.webp" alt="Change.org" />;
       break;
 
     case "cnet":
@@ -2289,11 +2289,11 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
     case "opgg":
     case "pubgopgg":
     case "valorantopgg":
-      icon = <LocalIcon file="opgg.png" alt="OP.GG" />;
+      icon = <LocalIcon file="opgg.webp" alt="OP.GG" />;
       break;
 
     case "quizizz":
-      icon = <LocalIcon file="quizizz.png" alt="Quizizz" />;
+      icon = <LocalIcon file="quizizz.webp" alt="Quizizz" />;
       break;
 
     case "theguardian":
@@ -2301,15 +2301,15 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
 
     case "theverge":
-      icon = <LocalIcon file="theverge.png" alt="The Verge" />;
+      icon = <LocalIcon file="theverge.webp" alt="The Verge" />;
       break;
 
     case "weebly":
-      icon = <LocalIcon file="weebly.png" alt="Weebly" />;
+      icon = <LocalIcon file="weebly.webp" alt="Weebly" />;
       break;
 
     case "weforum":
-      icon = <LocalIcon file="weforum.png" alt="World Economic Forum" />;
+      icon = <LocalIcon file="weforum.webp" alt="World Economic Forum" />;
       break;
 
     case "xing":
@@ -2317,7 +2317,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
 
     case "gamespot":
-      icon = <LocalIcon file="gamespot.png" alt="GameSpot" />;
+      icon = <LocalIcon file="gamespot.webp" alt="GameSpot" />;
       break;
 
     case "hackernoon":
@@ -2325,7 +2325,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
 
     case "ibmvideo":
-      icon = <LocalIcon file="ibmvideo.png" alt="IBM Video" />;
+      icon = <LocalIcon file="ibmvideo.webp" alt="IBM Video" />;
       break;
 
     case "instapaper":
@@ -2333,11 +2333,11 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
 
     case "jimdo":
-      icon = <LocalIcon file="jimdo.png" alt="Jimdo" />;
+      icon = <LocalIcon file="jimdo.webp" alt="Jimdo" />;
       break;
 
     case "laracasts":
-      icon = <LocalIcon file="laracasts.png" alt="Laracasts" />;
+      icon = <LocalIcon file="laracasts.webp" alt="Laracasts" />;
       break;
 
     case "liveinternet":
@@ -2345,11 +2345,11 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
 
     case "lonelyplanet":
-      icon = <LocalIcon file="lonelyplanet.png" alt="Lonely Planet" />;
+      icon = <LocalIcon file="lonelyplanet.webp" alt="Lonely Planet" />;
       break;
 
     case "pcgamer":
-      icon = <LocalIcon file="pcgamer.png" alt="PC Gamer" />;
+      icon = <LocalIcon file="pcgamer.webp" alt="PC Gamer" />;
       break;
 
     case "photobucket":
@@ -2357,7 +2357,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
 
     case "polygon":
-      icon = <LocalIcon file="polygon.png" alt="Polygon" />;
+      icon = <LocalIcon file="polygon.webp" alt="Polygon" />;
       break;
 
     case "pypi":
@@ -2381,79 +2381,79 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       break;
 
     case "vcru":
-      icon = <LocalIcon file="vcru.png" alt="vc.ru" />;
+      icon = <LocalIcon file="vcru.webp" alt="vc.ru" />;
       break;
 
     case "wikimapia":
-      icon = <LocalIcon file="wikimapia.png" alt="Wikimapia" />;
+      icon = <LocalIcon file="wikimapia.webp" alt="Wikimapia" />;
       break;
 
     case "windy":
-      icon = <LocalIcon file="windy.png" alt="Windy" />;
+      icon = <LocalIcon file="windy.webp" alt="Windy" />;
       break;
 
     case "yandexbugbounty":
-      icon = <LocalIcon file="yandexbugbounty.png" alt="Yandex Bug Bounty" />;
+      icon = <LocalIcon file="yandexbugbounty.webp" alt="Yandex Bug Bounty" />;
       break;
 
     case "yandexznatoki":
-      icon = <LocalIcon file="yandexznatoki.png" alt="Yandex Znatoki" />;
+      icon = <LocalIcon file="yandexznatoki.webp" alt="Yandex Znatoki" />;
       break;
 
     case "yumpu":
-      icon = <LocalIcon file="yumpu.png" alt="Yumpu" />;
+      icon = <LocalIcon file="yumpu.webp" alt="Yumpu" />;
       break;
 
     case "airliners":
-      icon = <LocalIcon file="airliners.png" alt="Airliners.net" />;
+      icon = <LocalIcon file="airliners.webp" alt="Airliners.net" />;
       break;
     case "americanthinker":
-      icon = <LocalIcon file="americanthinker.png" alt="American Thinker" />;
+      icon = <LocalIcon file="americanthinker.webp" alt="American Thinker" />;
       break;
     case "animenewsnetwork":
-      icon = <LocalIcon file="animenewsnetwork.png" alt="Anime News Network" />;
+      icon = <LocalIcon file="animenewsnetwork.webp" alt="Anime News Network" />;
       break;
     case "artsy":
-      icon = <LocalIcon file="artsy.png" alt="Artsy" />;
+      icon = <LocalIcon file="artsy.webp" alt="Artsy" />;
       break;
     case "coroflot":
-      icon = <LocalIcon file="coroflot.png" alt="Coroflot" />;
+      icon = <LocalIcon file="coroflot.webp" alt="Coroflot" />;
       break;
     case "couchsurfing":
-      icon = <LocalIcon file="couchsurfing.png" alt="Couchsurfing" />;
+      icon = <LocalIcon file="couchsurfing.webp" alt="Couchsurfing" />;
       break;
     case "coub":
-      icon = <LocalIcon file="coub.png" alt="Coub" />;
+      icon = <LocalIcon file="coub.webp" alt="Coub" />;
       break;
     case "ctan":
-      icon = <LocalIcon file="ctan.png" alt="CTAN" />;
+      icon = <LocalIcon file="ctan.webp" alt="CTAN" />;
       break;
     case "destructoid":
-      icon = <LocalIcon file="destructoid.png" alt="Destructoid" />;
+      icon = <LocalIcon file="destructoid.webp" alt="Destructoid" />;
       break;
     case "dtf":
-      icon = <LocalIcon file="dtf.png" alt="DTF" />;
+      icon = <LocalIcon file="dtf.webp" alt="DTF" />;
       break;
     case "fotki":
-      icon = <LocalIcon file="fotki.png" alt="Fotki" />;
+      icon = <LocalIcon file="fotki.webp" alt="Fotki" />;
       break;
     case "globalvoices":
-      icon = <LocalIcon file="globalvoices.png" alt="Global Voices" />;
+      icon = <LocalIcon file="globalvoices.webp" alt="Global Voices" />;
       break;
     case "lesswrong":
-      icon = <LocalIcon file="lesswrong.png" alt="LessWrong" />;
+      icon = <LocalIcon file="lesswrong.webp" alt="LessWrong" />;
       break;
     case "nextcloud":
       icon = <Icon icon="simple-icons:nextcloud" color={socialNetworks.nextcloud.color} />;
       break;
     case "residentadvisor":
-      icon = <LocalIcon file="residentadvisor.png" alt="Resident Advisor" />;
+      icon = <LocalIcon file="residentadvisor.webp" alt="Resident Advisor" />;
       break;
     case "sportsru":
-      icon = <LocalIcon file="sportsru.png" alt="Sports.ru" />;
+      icon = <LocalIcon file="sportsru.webp" alt="Sports.ru" />;
       break;
     case "teletype":
-      icon = <LocalIcon file="teletype.png" alt="Teletype" />;
+      icon = <LocalIcon file="teletype.webp" alt="Teletype" />;
       break;
     case "boosty":
       icon = <Icon icon="simple-icons:boosty" color={socialNetworks.boosty.color} />;
@@ -2489,13 +2489,13 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:xdadevelopers" color={socialNetworks.xda.color} />;
       break;
     case "acomics":
-      icon = <LocalIcon file="acomics.png" alt="AComics" />;
+      icon = <LocalIcon file="acomics.webp" alt="AComics" />;
       break;
     case "advego":
-      icon = <LocalIcon file="advego.png" alt="Advego" />;
+      icon = <LocalIcon file="advego.webp" alt="Advego" />;
       break;
     case "allkpop":
-      icon = <LocalIcon file="allkpop.png" alt="allkpop" />;
+      icon = <LocalIcon file="allkpop.webp" alt="allkpop" />;
       break;
     case "androidforums":
       icon = <Icon icon="mdi:android" color={socialNetworks.androidforums.color} />;
@@ -2504,190 +2504,190 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:treasure-chest" color={socialNetworks.antiquers.color} />;
       break;
     case "armorgames":
-      icon = <LocalIcon file="armorgames.png" alt="Armor Games" />;
+      icon = <LocalIcon file="armorgames.webp" alt="Armor Games" />;
       break;
     case "aufeminin":
-      icon = <LocalIcon file="aufeminin.png" alt="aufeminin" />;
+      icon = <LocalIcon file="aufeminin.webp" alt="aufeminin" />;
       break;
     case "avforums":
-      icon = <LocalIcon file="avforums.png" alt="AVForums" />;
+      icon = <LocalIcon file="avforums.webp" alt="AVForums" />;
       break;
     case "bankiru":
-      icon = <LocalIcon file="bankiru.png" alt="Banki.ru" />;
+      icon = <LocalIcon file="bankiru.webp" alt="Banki.ru" />;
       break;
     case "bibsonomy":
       icon = <Icon icon="mdi:bookmark-multiple" color={socialNetworks.bibsonomy.color} />;
       break;
     case "bigsoccer":
-      icon = <LocalIcon file="bigsoccer.png" alt="BigSoccer" />;
+      icon = <LocalIcon file="bigsoccer.webp" alt="BigSoccer" />;
       break;
     case "blackhatprotools":
-      icon = <LocalIcon file="blackhatprotools.png" alt="BlackHatProTools" />;
+      icon = <LocalIcon file="blackhatprotools.webp" alt="BlackHatProTools" />;
       break;
     case "booth":
-      icon = <LocalIcon file="booth.png" alt="BOOTH" />;
+      icon = <LocalIcon file="booth.webp" alt="BOOTH" />;
       break;
     case "brusheezy":
-      icon = <LocalIcon file="brusheezy.png" alt="Brusheezy" />;
+      icon = <LocalIcon file="brusheezy.webp" alt="Brusheezy" />;
       break;
     case "bukkit":
       icon = <Icon icon="mdi:minecraft" color={socialNetworks.bukkit.color} />;
       break;
     case "ccm":
-      icon = <LocalIcon file="ccm.png" alt="CCM" />;
+      icon = <LocalIcon file="ccm.webp" alt="CCM" />;
       break;
     case "cfdonline":
-      icon = <LocalIcon file="cfdonline.png" alt="CFD Online" />;
+      icon = <LocalIcon file="cfdonline.webp" alt="CFD Online" />;
       break;
     case "clarity":
-      icon = <LocalIcon file="clarity.png" alt="Clarity" />;
+      icon = <LocalIcon file="clarity.webp" alt="Clarity" />;
       break;
     case "comedy":
-      icon = <LocalIcon file="comedy.png" alt="British Comedy Guide" />;
+      icon = <LocalIcon file="comedy.webp" alt="British Comedy Guide" />;
       break;
     case "computerbase":
-      icon = <LocalIcon file="computerbase.png" alt="ComputerBase" />;
+      icon = <LocalIcon file="computerbase.webp" alt="ComputerBase" />;
       break;
     case "cont":
-      icon = <LocalIcon file="cont.png" alt="Cont" />;
+      icon = <LocalIcon file="cont.webp" alt="Cont" />;
       break;
     case "dcinside":
-      icon = <LocalIcon file="dcinside.png" alt="DCInside" />;
+      icon = <LocalIcon file="dcinside.webp" alt="DCInside" />;
       break;
     case "deepdreamgenerator":
-      icon = <LocalIcon file="deepdreamgenerator.png" alt="Deep Dream Generator" />;
+      icon = <LocalIcon file="deepdreamgenerator.webp" alt="Deep Dream Generator" />;
       break;
     case "dhgate":
-      icon = <LocalIcon file="dhgate.png" alt="DHgate" />;
+      icon = <LocalIcon file="dhgate.webp" alt="DHgate" />;
       break;
     case "donationalerts":
-      icon = <LocalIcon file="donationalerts.png" alt="DonationAlerts" />;
+      icon = <LocalIcon file="donationalerts.webp" alt="DonationAlerts" />;
       break;
     case "dreamwidth":
-      icon = <LocalIcon file="dreamwidth.png" alt="Dreamwidth" />;
+      icon = <LocalIcon file="dreamwidth.webp" alt="Dreamwidth" />;
       break;
     case "drive2":
-      icon = <LocalIcon file="drive2.png" alt="DRIVE2" />;
+      icon = <LocalIcon file="drive2.webp" alt="DRIVE2" />;
       break;
     case "dumskaya":
-      icon = <LocalIcon file="dumskaya.png" alt="Dumskaya" />;
+      icon = <LocalIcon file="dumskaya.webp" alt="Dumskaya" />;
       break;
     case "exposure":
-      icon = <LocalIcon file="exposure.png" alt="Exposure" />;
+      icon = <LocalIcon file="exposure.webp" alt="Exposure" />;
       break;
     case "filmow":
-      icon = <LocalIcon file="filmow.png" alt="Filmow" />;
+      icon = <LocalIcon file="filmow.webp" alt="Filmow" />;
       break;
     case "filmweb":
-      icon = <LocalIcon file="filmweb.png" alt="Filmweb" />;
+      icon = <LocalIcon file="filmweb.webp" alt="Filmweb" />;
       break;
     case "flru":
-      icon = <LocalIcon file="flru.png" alt="FL.ru" />;
+      icon = <LocalIcon file="flru.webp" alt="FL.ru" />;
       break;
     case "flyertalk":
-      icon = <LocalIcon file="flyertalk.png" alt="FlyerTalk" />;
+      icon = <LocalIcon file="flyertalk.webp" alt="FlyerTalk" />;
       break;
     case "fodors":
-      icon = <LocalIcon file="fodors.png" alt="Fodor's" />;
+      icon = <LocalIcon file="fodors.webp" alt="Fodor's" />;
       break;
     case "fourpda":
-      icon = <LocalIcon file="fourpda.png" alt="4PDA" />;
+      icon = <LocalIcon file="fourpda.webp" alt="4PDA" />;
       break;
     case "freelanceru":
-      icon = <LocalIcon file="freelanceru.png" alt="Freelance.ru" />;
+      icon = <LocalIcon file="freelanceru.webp" alt="Freelance.ru" />;
       break;
     case "gamesradar":
-      icon = <LocalIcon file="gamesradar.png" alt="GamesRadar+" />;
+      icon = <LocalIcon file="gamesradar.webp" alt="GamesRadar+" />;
       break;
     case "garden":
-      icon = <LocalIcon file="garden.png" alt="Garden.org" />;
+      icon = <LocalIcon file="garden.webp" alt="Garden.org" />;
       break;
     case "gbatemp":
-      icon = <LocalIcon file="gbatemp.png" alt="GBAtemp" />;
+      icon = <LocalIcon file="gbatemp.webp" alt="GBAtemp" />;
       break;
     case "gloriatv":
-      icon = <LocalIcon file="gloriatv.png" alt="gloria.tv" />;
+      icon = <LocalIcon file="gloriatv.webp" alt="gloria.tv" />;
       break;
     case "goldderby":
-      icon = <LocalIcon file="goldderby.png" alt="Gold Derby" />;
+      icon = <LocalIcon file="goldderby.webp" alt="Gold Derby" />;
       break;
     case "gutefrage":
-      icon = <LocalIcon file="gutefrage.png" alt="gutefrage" />;
+      icon = <LocalIcon file="gutefrage.webp" alt="gutefrage" />;
       break;
     case "hardforum":
-      icon = <LocalIcon file="hardforum.png" alt="HardForum" />;
+      icon = <LocalIcon file="hardforum.webp" alt="HardForum" />;
       break;
     case "huntingnet":
       icon = <Icon icon="mdi:target" color={socialNetworks.huntingnet.color} />;
       break;
     case "illustrators":
-      icon = <LocalIcon file="illustrators.png" alt="Illustrators.ru" />;
+      icon = <LocalIcon file="illustrators.webp" alt="Illustrators.ru" />;
       break;
     case "influenster":
-      icon = <LocalIcon file="influenster.png" alt="Influenster" />;
+      icon = <LocalIcon file="influenster.webp" alt="Influenster" />;
       break;
     case "infourok":
-      icon = <LocalIcon file="infourok.png" alt="Infourok" />;
+      icon = <LocalIcon file="infourok.webp" alt="Infourok" />;
       break;
     case "iphonesru":
-      icon = <LocalIcon file="iphonesru.png" alt="iPhones.ru" />;
+      icon = <LocalIcon file="iphonesru.webp" alt="iPhones.ru" />;
       break;
     case "irecommend":
-      icon = <LocalIcon file="irecommend.png" alt="iRecommend" />;
+      icon = <LocalIcon file="irecommend.webp" alt="iRecommend" />;
       break;
     case "jigsawplanet":
-      icon = <LocalIcon file="jigsawplanet.png" alt="Jigsaw Planet" />;
+      icon = <LocalIcon file="jigsawplanet.webp" alt="Jigsaw Planet" />;
       break;
     case "joomlart":
-      icon = <LocalIcon file="joomlart.png" alt="JoomlArt" />;
+      icon = <LocalIcon file="joomlart.webp" alt="JoomlArt" />;
       break;
     case "joyreactor":
-      icon = <LocalIcon file="joyreactor.png" alt="JoyReactor" />;
+      icon = <LocalIcon file="joyreactor.webp" alt="JoyReactor" />;
       break;
     case "kwork":
-      icon = <LocalIcon file="kwork.png" alt="Kwork" />;
+      icon = <LocalIcon file="kwork.webp" alt="Kwork" />;
       break;
     case "likee":
-      icon = <LocalIcon file="likee.png" alt="Likee" />;
+      icon = <LocalIcon file="likee.webp" alt="Likee" />;
       break;
     case "livemaster":
-      icon = <LocalIcon file="livemaster.png" alt="Livemaster" />;
+      icon = <LocalIcon file="livemaster.webp" alt="Livemaster" />;
       break;
     case "lomography":
       icon = <Icon icon="mdi:camera-iris" color={socialNetworks.lomography.color} />;
       break;
     case "max":
-      icon = <LocalIcon file="max.png" alt="MAX" />;
+      icon = <LocalIcon file="max.webp" alt="MAX" />;
       break;
     case "melfm":
-      icon = <LocalIcon file="melfm.png" alt="Mel.fm" />;
+      icon = <LocalIcon file="melfm.webp" alt="Mel.fm" />;
       break;
     case "mercadolivre":
-      icon = <LocalIcon file="mercadolivre.png" alt="Mercado Livre" />;
+      icon = <LocalIcon file="mercadolivre.webp" alt="Mercado Livre" />;
       break;
     case "mirtesen":
-      icon = <LocalIcon file="mirtesen.png" alt="MirTesen" />;
+      icon = <LocalIcon file="mirtesen.webp" alt="MirTesen" />;
       break;
     case "morguefile":
-      icon = <LocalIcon file="morguefile.png" alt="morgueFile" />;
+      icon = <LocalIcon file="morguefile.webp" alt="morgueFile" />;
       break;
     case "mssg":
-      icon = <LocalIcon file="mssg.png" alt="mssg.me" />;
+      icon = <LocalIcon file="mssg.webp" alt="mssg.me" />;
       break;
     case "n4g":
-      icon = <LocalIcon file="n4g.png" alt="N4G" />;
+      icon = <LocalIcon file="n4g.webp" alt="N4G" />;
       break;
     case "nairaland":
-      icon = <LocalIcon file="nairaland.png" alt="Nairaland" />;
+      icon = <LocalIcon file="nairaland.webp" alt="Nairaland" />;
       break;
     case "namepros":
-      icon = <LocalIcon file="namepros.png" alt="NamePros" />;
+      icon = <LocalIcon file="namepros.webp" alt="NamePros" />;
       break;
     case "nativeinstruments":
-      icon = <LocalIcon file="nativeinstruments.png" alt="Native Instruments" />;
+      icon = <LocalIcon file="nativeinstruments.webp" alt="Native Instruments" />;
       break;
     case "nhattao":
-      icon = <LocalIcon file="nhattao.png" alt="Nhattao" />;
+      icon = <LocalIcon file="nhattao.webp" alt="Nhattao" />;
       break;
     case "nkj":
       icon = <Icon icon="mdi:book-open-page-variant" color={socialNetworks.nkj.color} />;
@@ -2696,58 +2696,58 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:magnet" color={socialNetworks.onethreethreesevenx.color} />;
       break;
     case "onex":
-      icon = <LocalIcon file="onex.png" alt="1x" />;
+      icon = <LocalIcon file="onex.webp" alt="1x" />;
       break;
     case "opennet":
-      icon = <LocalIcon file="opennet.png" alt="OpenNet" />;
+      icon = <LocalIcon file="opennet.webp" alt="OpenNet" />;
       break;
     case "opensource":
       icon = <Icon icon="mdi:newspaper-variant" color={socialNetworks.opensource.color} />;
       break;
     case "overclockers":
-      icon = <LocalIcon file="overclockers.png" alt="Overclockers.ru" />;
+      icon = <LocalIcon file="overclockers.webp" alt="Overclockers.ru" />;
       break;
     case "paltalk":
-      icon = <LocalIcon file="paltalk.png" alt="Paltalk" />;
+      icon = <LocalIcon file="paltalk.webp" alt="Paltalk" />;
       break;
     case "partnerkin":
-      icon = <LocalIcon file="partnerkin.png" alt="Partnerkin" />;
+      icon = <LocalIcon file="partnerkin.webp" alt="Partnerkin" />;
       break;
     case "phpru":
       icon = <Icon icon="mdi:language-php" color={socialNetworks.phpru.color} />;
       break;
     case "physicsforums":
-      icon = <LocalIcon file="physicsforums.png" alt="Physics Forums" />;
+      icon = <LocalIcon file="physicsforums.webp" alt="Physics Forums" />;
       break;
     case "planetminecraft":
-      icon = <LocalIcon file="planetminecraft.png" alt="Planet Minecraft" />;
+      icon = <LocalIcon file="planetminecraft.webp" alt="Planet Minecraft" />;
       break;
     case "pling":
-      icon = <LocalIcon file="pling.png" alt="Pling" />;
+      icon = <LocalIcon file="pling.webp" alt="Pling" />;
       break;
     case "pokecommunity":
-      icon = <LocalIcon file="pokecommunity.png" alt="PokéCommunity" />;
+      icon = <LocalIcon file="pokecommunity.webp" alt="PokéCommunity" />;
       break;
     case "portfoliobox":
-      icon = <LocalIcon file="portfoliobox.png" alt="Portfoliobox" />;
+      icon = <LocalIcon file="portfoliobox.webp" alt="Portfoliobox" />;
       break;
     case "profi":
-      icon = <LocalIcon file="profi.png" alt="Profi.ru" />;
+      icon = <LocalIcon file="profi.webp" alt="Profi.ru" />;
       break;
     case "promodj":
-      icon = <LocalIcon file="promodj.png" alt="PromoDJ" />;
+      icon = <LocalIcon file="promodj.webp" alt="PromoDJ" />;
       break;
     case "psnprofiles":
-      icon = <LocalIcon file="psnprofiles.png" alt="PSNProfiles" />;
+      icon = <LocalIcon file="psnprofiles.webp" alt="PSNProfiles" />;
       break;
     case "publiclab":
-      icon = <LocalIcon file="publiclab.png" alt="Public Lab" />;
+      icon = <LocalIcon file="publiclab.webp" alt="Public Lab" />;
       break;
     case "pushsquare":
-      icon = <LocalIcon file="pushsquare.png" alt="Push Square" />;
+      icon = <LocalIcon file="pushsquare.webp" alt="Push Square" />;
       break;
     case "rapidapi":
-      icon = <LocalIcon file="rapidapi.png" alt="RapidAPI" />;
+      icon = <LocalIcon file="rapidapi.webp" alt="RapidAPI" />;
       break;
     case "rutracker":
       icon = <Icon icon="mdi:magnet" color={socialNetworks.rutracker.color} />;
@@ -2756,226 +2756,226 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:library" color={socialNetworks.samlib.color} />;
       break;
     case "segmentfault":
-      icon = <LocalIcon file="segmentfault.png" alt="SegmentFault" />;
+      icon = <LocalIcon file="segmentfault.webp" alt="SegmentFault" />;
       break;
     case "skyblock":
       icon = <Icon icon="mdi:minecraft" color={socialNetworks.skyblock.color} />;
       break;
     case "smartlab":
-      icon = <LocalIcon file="smartlab.png" alt="Smart-Lab" />;
+      icon = <LocalIcon file="smartlab.webp" alt="Smart-Lab" />;
       break;
     case "smogon":
-      icon = <LocalIcon file="smogon.png" alt="Smogon" />;
+      icon = <LocalIcon file="smogon.webp" alt="Smogon" />;
       break;
     case "sparkru":
-      icon = <LocalIcon file="sparkru.png" alt="Spark.ru" />;
+      icon = <LocalIcon file="sparkru.webp" alt="Spark.ru" />;
       break;
     case "spatial":
-      icon = <LocalIcon file="spatial.png" alt="Spatial" />;
+      icon = <LocalIcon file="spatial.webp" alt="Spatial" />;
       break;
     case "spletnik":
-      icon = <LocalIcon file="spletnik.png" alt="Spletnik" />;
+      icon = <LocalIcon file="spletnik.webp" alt="Spletnik" />;
       break;
     case "stopgame":
-      icon = <LocalIcon file="stopgame.png" alt="StopGame" />;
+      icon = <LocalIcon file="stopgame.webp" alt="StopGame" />;
       break;
     case "studfile":
-      icon = <LocalIcon file="studfile.png" alt="Studfile" />;
+      icon = <LocalIcon file="studfile.webp" alt="Studfile" />;
       break;
     case "sugoidesu":
       icon = <Icon icon="mdi:forum" color={socialNetworks.sugoidesu.color} />;
       break;
     case "sythe":
-      icon = <LocalIcon file="sythe.png" alt="Sythe" />;
+      icon = <LocalIcon file="sythe.webp" alt="Sythe" />;
       break;
     case "taplink":
       icon = <Icon icon="mdi:link-variant" color={socialNetworks.taplink.color} />;
       break;
     case "telescope":
-      icon = <LocalIcon file="telescope.png" alt="Telescope" />;
+      icon = <LocalIcon file="telescope.webp" alt="Telescope" />;
       break;
     case "theodysseyonline":
-      icon = <LocalIcon file="theodysseyonline.png" alt="The Odyssey Online" />;
+      icon = <LocalIcon file="theodysseyonline.webp" alt="The Odyssey Online" />;
       break;
     case "thestudentroom":
-      icon = <LocalIcon file="thestudentroom.png" alt="The Student Room" />;
+      icon = <LocalIcon file="thestudentroom.webp" alt="The Student Room" />;
       break;
     case "threeddd":
-      icon = <LocalIcon file="threeddd.png" alt="3DDD" />;
+      icon = <LocalIcon file="threeddd.webp" alt="3DDD" />;
       break;
     case "threedtoday":
-      icon = <LocalIcon file="threedtoday.png" alt="3Dtoday" />;
+      icon = <LocalIcon file="threedtoday.webp" alt="3Dtoday" />;
       break;
     case "tinkoffinvest":
-      icon = <LocalIcon file="tinkoffinvest.png" alt="T-Invest" />;
+      icon = <LocalIcon file="tinkoffinvest.webp" alt="T-Invest" />;
       break;
     case "travelblog":
       icon = <Icon icon="mdi:airplane" color={socialNetworks.travelblog.color} />;
       break;
     case "travellerspoint":
-      icon = <LocalIcon file="travellerspoint.png" alt="Travellerspoint" />;
+      icon = <LocalIcon file="travellerspoint.webp" alt="Travellerspoint" />;
       break;
     case "trueachievements":
-      icon = <LocalIcon file="trueachievements.png" alt="TrueAchievements" />;
+      icon = <LocalIcon file="trueachievements.webp" alt="TrueAchievements" />;
       break;
     case "twentythreehq":
-      icon = <LocalIcon file="twentythreehq.png" alt="23hq" />;
+      icon = <LocalIcon file="twentythreehq.webp" alt="23hq" />;
       break;
     case "videohive":
-      icon = <LocalIcon file="videohive.png" alt="VideoHive" />;
+      icon = <LocalIcon file="videohive.webp" alt="VideoHive" />;
       break;
     case "virgool":
-      icon = <LocalIcon file="virgool.png" alt="Virgool" />;
+      icon = <LocalIcon file="virgool.webp" alt="Virgool" />;
       break;
     case "weblancer":
-      icon = <LocalIcon file="weblancer.png" alt="Weblancer" />;
+      icon = <LocalIcon file="weblancer.webp" alt="Weblancer" />;
       break;
     case "webnode":
-      icon = <LocalIcon file="webnode.png" alt="Webnode" />;
+      icon = <LocalIcon file="webnode.webp" alt="Webnode" />;
       break;
     case "wowhead":
-      icon = <LocalIcon file="wowhead.png" alt="Wowhead" />;
+      icon = <LocalIcon file="wowhead.webp" alt="Wowhead" />;
       break;
     case "xakep":
-      icon = <LocalIcon file="xakep.png" alt="Xakep" />;
+      icon = <LocalIcon file="xakep.webp" alt="Xakep" />;
       break;
     case "xenforo":
-      icon = <LocalIcon file="xenforo.png" alt="XenForo" />;
+      icon = <LocalIcon file="xenforo.webp" alt="XenForo" />;
       break;
     case "yandexreviews":
-      icon = <LocalIcon file="yandexreviews.png" alt="Yandex Reviews" />;
+      icon = <LocalIcon file="yandexreviews.webp" alt="Yandex Reviews" />;
       break;
     case "allhockey":
-      icon = <LocalIcon file="allhockey.png" alt="AllHockey" />;
+      icon = <LocalIcon file="allhockey.webp" alt="AllHockey" />;
       break;
     case "allthelyrics":
       icon = <Icon icon="mdi:music-note" color={socialNetworks.allthelyrics.color} />;
       break;
     case "aminus3":
-      icon = <LocalIcon file="aminus3.png" alt="Aminus3" />;
+      icon = <LocalIcon file="aminus3.webp" alt="Aminus3" />;
       break;
     case "animesuperhero":
-      icon = <LocalIcon file="animesuperhero.png" alt="AnimeSuperHero" />;
+      icon = <LocalIcon file="animesuperhero.webp" alt="AnimeSuperHero" />;
       break;
     case "aniworld":
-      icon = <LocalIcon file="aniworld.png" alt="AniWorld" />;
+      icon = <LocalIcon file="aniworld.webp" alt="AniWorld" />;
       break;
     case "ariva":
-      icon = <LocalIcon file="ariva.png" alt="ariva.de" />;
+      icon = <LocalIcon file="ariva.webp" alt="ariva.de" />;
       break;
     case "arrse":
-      icon = <LocalIcon file="arrse.png" alt="ARRSE" />;
+      icon = <LocalIcon file="arrse.webp" alt="ARRSE" />;
       break;
     case "avizo":
-      icon = <LocalIcon file="avizo.png" alt="Avízo" />;
+      icon = <LocalIcon file="avizo.webp" alt="Avízo" />;
       break;
     case "babyru":
-      icon = <LocalIcon file="babyru.png" alt="Baby.ru" />;
+      icon = <LocalIcon file="babyru.webp" alt="Baby.ru" />;
       break;
     case "bdoutdoors":
-      icon = <LocalIcon file="bdoutdoors.png" alt="BD Outdoors" />;
+      icon = <LocalIcon file="bdoutdoors.webp" alt="BD Outdoors" />;
       break;
     case "bitpapa":
-      icon = <LocalIcon file="bitpapa.png" alt="Bitpapa" />;
+      icon = <LocalIcon file="bitpapa.webp" alt="Bitpapa" />;
       break;
     case "clozemaster":
-      icon = <LocalIcon file="clozemaster.png" alt="Clozemaster" />;
+      icon = <LocalIcon file="clozemaster.webp" alt="Clozemaster" />;
       break;
     case "coolminiornot":
-      icon = <LocalIcon file="coolminiornot.png" alt="CoolMiniOrNot" />;
+      icon = <LocalIcon file="coolminiornot.webp" alt="CoolMiniOrNot" />;
       break;
     case "cqham":
-      icon = <LocalIcon file="cqham.png" alt="CQHAM.ru" />;
+      icon = <LocalIcon file="cqham.webp" alt="CQHAM.ru" />;
       break;
     case "d3":
-      icon = <LocalIcon file="d3.png" alt="d3.ru" />;
+      icon = <LocalIcon file="d3.webp" alt="d3.ru" />;
       break;
     case "ddo":
       icon = <Icon icon="mdi:sword-cross" color={socialNetworks.ddo.color} />;
       break;
     case "dota2ru":
-      icon = <LocalIcon file="dota2ru.png" alt="Dota2.ru" />;
+      icon = <LocalIcon file="dota2ru.webp" alt="Dota2.ru" />;
       break;
     case "egpu":
-      icon = <LocalIcon file="egpu.png" alt="eGPU.io" />;
+      icon = <LocalIcon file="egpu.webp" alt="eGPU.io" />;
       break;
     case "ethereummagicians":
-      icon = <LocalIcon file="ethereummagicians.png" alt="Ethereum Magicians" />;
+      icon = <LocalIcon file="ethereummagicians.webp" alt="Ethereum Magicians" />;
       break;
     case "ethresear":
-      icon = <LocalIcon file="ethresear.png" alt="Ethresear.ch" />;
+      icon = <LocalIcon file="ethresear.webp" alt="Ethresear.ch" />;
       break;
     case "etxt":
-      icon = <LocalIcon file="etxt.png" alt="eTXT" />;
+      icon = <LocalIcon file="etxt.webp" alt="eTXT" />;
       break;
     case "fanlore":
-      icon = <LocalIcon file="fanlore.png" alt="Fanlore" />;
+      icon = <LocalIcon file="fanlore.webp" alt="Fanlore" />;
       break;
     case "fluther":
-      icon = <LocalIcon file="fluther.png" alt="Fluther" />;
+      icon = <LocalIcon file="fluther.webp" alt="Fluther" />;
       break;
     case "forest":
-      icon = <LocalIcon file="forest.png" alt="Forest.ru" />;
+      icon = <LocalIcon file="forest.webp" alt="Forest.ru" />;
       break;
     case "fortnitetracker":
-      icon = <LocalIcon file="fortnitetracker.png" alt="Fortnite Tracker" />;
+      icon = <LocalIcon file="fortnitetracker.webp" alt="Fortnite Tracker" />;
       break;
     case "forumhr":
       icon = <Icon icon="mdi:forum" color={socialNetworks.forumhr.color} />;
       break;
     case "forumodua":
-      icon = <LocalIcon file="forumodua.png" alt="Forum.od.ua" />;
+      icon = <LocalIcon file="forumodua.webp" alt="Forum.od.ua" />;
       break;
     case "fotostrana":
-      icon = <LocalIcon file="fotostrana.png" alt="Fotostrana" />;
+      icon = <LocalIcon file="fotostrana.webp" alt="Fotostrana" />;
       break;
     case "freelancehunt":
-      icon = <LocalIcon file="freelancehunt.png" alt="Freelancehunt" />;
+      icon = <LocalIcon file="freelancehunt.webp" alt="Freelancehunt" />;
       break;
     case "gcup":
-      icon = <LocalIcon file="gcup.png" alt="GCUP.ru" />;
+      icon = <LocalIcon file="gcup.webp" alt="GCUP.ru" />;
       break;
     case "gingerbread":
-      icon = <LocalIcon file="gingerbread.png" alt="Gingerbread" />;
+      icon = <LocalIcon file="gingerbread.webp" alt="Gingerbread" />;
       break;
     case "govloop":
-      icon = <LocalIcon file="govloop.png" alt="GovLoop" />;
+      icon = <LocalIcon file="govloop.webp" alt="GovLoop" />;
       break;
     case "hackingwithswift":
-      icon = <LocalIcon file="hackingwithswift.png" alt="Hacking with Swift" />;
+      icon = <LocalIcon file="hackingwithswift.webp" alt="Hacking with Swift" />;
       break;
     case "hackthissite":
-      icon = <LocalIcon file="hackthissite.png" alt="HackThisSite" />;
+      icon = <LocalIcon file="hackthissite.webp" alt="HackThisSite" />;
       break;
     case "homebrewtalk":
-      icon = <LocalIcon file="homebrewtalk.png" alt="HomebrewTalk" />;
+      icon = <LocalIcon file="homebrewtalk.webp" alt="HomebrewTalk" />;
       break;
     case "icheckmovies":
       icon = <Icon icon="mdi:movie-check" color={socialNetworks.icheckmovies.color} />;
       break;
     case "imagefap":
-      icon = <LocalIcon file="imagefap.png" alt="ImageFap" />;
+      icon = <LocalIcon file="imagefap.webp" alt="ImageFap" />;
       break;
     case "imginn":
-      icon = <LocalIcon file="imginn.png" alt="Imginn" />;
+      icon = <LocalIcon file="imginn.webp" alt="Imginn" />;
       break;
     case "kharkovforum":
-      icon = <LocalIcon file="kharkovforum.png" alt="KharkovForum" />;
+      icon = <LocalIcon file="kharkovforum.webp" alt="KharkovForum" />;
       break;
     case "kosmetista":
-      icon = <LocalIcon file="kosmetista.png" alt="Kosmetista" />;
+      icon = <LocalIcon file="kosmetista.webp" alt="Kosmetista" />;
       break;
     case "kwejk":
-      icon = <LocalIcon file="kwejk.png" alt="Kwejk" />;
+      icon = <LocalIcon file="kwejk.webp" alt="Kwejk" />;
       break;
     case "lightstalking":
       icon = <Icon icon="mdi:camera-iris" color={socialNetworks.lightstalking.color} />;
       break;
     case "liinks":
-      icon = <LocalIcon file="liinks.png" alt="Liinks" />;
+      icon = <LocalIcon file="liinks.webp" alt="Liinks" />;
       break;
     case "massagerepublic":
-      icon = <LocalIcon file="massagerepublic.png" alt="Massage Republic" />;
+      icon = <LocalIcon file="massagerepublic.webp" alt="Massage Republic" />;
       break;
     case "medikforum":
       icon = <Icon icon="mdi:medical-bag" color={socialNetworks.medikforum.color} />;
@@ -2984,262 +2984,262 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:city" color={socialNetworks.millerovo161.color} />;
       break;
     case "modxpro":
-      icon = <LocalIcon file="modxpro.png" alt="modx.pro" />;
+      icon = <LocalIcon file="modxpro.webp" alt="modx.pro" />;
       break;
     case "movieforums":
-      icon = <LocalIcon file="movieforums.png" alt="MovieForums" />;
+      icon = <LocalIcon file="movieforums.webp" alt="MovieForums" />;
       break;
     case "movielist":
-      icon = <LocalIcon file="movielist.png" alt="Movie-List" />;
+      icon = <LocalIcon file="movielist.webp" alt="Movie-List" />;
       break;
     case "mpgh":
-      icon = <LocalIcon file="mpgh.png" alt="MPGH" />;
+      icon = <LocalIcon file="mpgh.webp" alt="MPGH" />;
       break;
     case "musikerboard":
-      icon = <LocalIcon file="musikerboard.png" alt="Musiker-Board" />;
+      icon = <LocalIcon file="musikerboard.webp" alt="Musiker-Board" />;
       break;
     case "mybuilder":
-      icon = <LocalIcon file="mybuilder.png" alt="MyBuilder" />;
+      icon = <LocalIcon file="mybuilder.webp" alt="MyBuilder" />;
       break;
     case "myinstants":
-      icon = <LocalIcon file="myinstants.png" alt="Myinstants" />;
+      icon = <LocalIcon file="myinstants.webp" alt="Myinstants" />;
       break;
     case "mylot":
-      icon = <LocalIcon file="mylot.png" alt="myLot" />;
+      icon = <LocalIcon file="mylot.webp" alt="myLot" />;
       break;
     case "namemc":
       icon = <Icon icon="simple-icons:namemc" color={socialNetworks.namemc.color} />;
       break;
     case "nothingcommunity":
-      icon = <LocalIcon file="nothingcommunity.png" alt="Nothing Community" />;
+      icon = <LocalIcon file="nothingcommunity.webp" alt="Nothing Community" />;
       break;
     case "oldgames":
-      icon = <LocalIcon file="oldgames.png" alt="Old-Games.ru" />;
+      icon = <LocalIcon file="oldgames.webp" alt="Old-Games.ru" />;
       break;
     case "onethousandonetracklists":
-      icon = <LocalIcon file="onethousandonetracklists.png" alt="1001Tracklists" />;
+      icon = <LocalIcon file="onethousandonetracklists.webp" alt="1001Tracklists" />;
       break;
     case "onlyfinder":
-      icon = <LocalIcon file="onlyfinder.png" alt="OnlyFinder" />;
+      icon = <LocalIcon file="onlyfinder.webp" alt="OnlyFinder" />;
       break;
     case "oper":
-      icon = <LocalIcon file="oper.png" alt="Oper.ru" />;
+      icon = <LocalIcon file="oper.webp" alt="Oper.ru" />;
       break;
     case "partyflock":
-      icon = <LocalIcon file="partyflock.png" alt="Partyflock" />;
+      icon = <LocalIcon file="partyflock.webp" alt="Partyflock" />;
       break;
     case "politforums":
-      icon = <LocalIcon file="politforums.png" alt="Politforums" />;
+      icon = <LocalIcon file="politforums.webp" alt="Politforums" />;
       break;
     case "radioscanner":
       icon = <Icon icon="mdi:radio-tower" color={socialNetworks.radioscanner.color} />;
       break;
     case "rappad":
-      icon = <LocalIcon file="rappad.png" alt="Rappad" />;
+      icon = <LocalIcon file="rappad.webp" alt="Rappad" />;
       break;
     case "reibert":
-      icon = <LocalIcon file="reibert.png" alt="Reibert.info" />;
+      icon = <LocalIcon file="reibert.webp" alt="Reibert.info" />;
       break;
     case "rlocman":
-      icon = <LocalIcon file="rlocman.png" alt="RLocman" />;
+      icon = <LocalIcon file="rlocman.webp" alt="RLocman" />;
       break;
     case "rmmedia":
-      icon = <LocalIcon file="rmmedia.png" alt="RMMedia" />;
+      icon = <LocalIcon file="rmmedia.webp" alt="RMMedia" />;
       break;
     case "rollitup":
-      icon = <LocalIcon file="rollitup.png" alt="RollItUp" />;
+      icon = <LocalIcon file="rollitup.webp" alt="RollItUp" />;
       break;
     case "runitonce":
-      icon = <LocalIcon file="runitonce.png" alt="Run It Once" />;
+      icon = <LocalIcon file="runitonce.webp" alt="Run It Once" />;
       break;
     case "rusfootball":
-      icon = <LocalIcon file="rusfootball.png" alt="RusFootball" />;
+      icon = <LocalIcon file="rusfootball.webp" alt="RusFootball" />;
       break;
     case "salon24":
-      icon = <LocalIcon file="salon24.png" alt="Salon24" />;
+      icon = <LocalIcon file="salon24.webp" alt="Salon24" />;
       break;
     case "savingadvice":
-      icon = <LocalIcon file="savingadvice.png" alt="SavingAdvice" />;
+      icon = <LocalIcon file="savingadvice.webp" alt="SavingAdvice" />;
       break;
     case "sbazar":
-      icon = <LocalIcon file="sbazar.png" alt="Sbazar" />;
+      icon = <LocalIcon file="sbazar.webp" alt="Sbazar" />;
       break;
     case "seoclerks":
-      icon = <LocalIcon file="seoclerks.png" alt="SEOClerks" />;
+      icon = <LocalIcon file="seoclerks.webp" alt="SEOClerks" />;
       break;
     case "sevendach":
-      icon = <LocalIcon file="sevendach.png" alt="7dach" />;
+      icon = <LocalIcon file="sevendach.webp" alt="7dach" />;
       break;
     case "shazoo":
-      icon = <LocalIcon file="shazoo.png" alt="Shazoo" />;
+      icon = <LocalIcon file="shazoo.webp" alt="Shazoo" />;
       break;
     case "shikimori":
       icon = <Icon icon="simple-icons:shikimori" color={socialNetworks.shikimori.color} />;
       break;
     case "smokingmeatforums":
-      icon = <LocalIcon file="smokingmeatforums.png" alt="Smoking Meat Forums" />;
+      icon = <LocalIcon file="smokingmeatforums.webp" alt="Smoking Meat Forums" />;
       break;
     case "tfw2005":
-      icon = <LocalIcon file="tfw2005.png" alt="TFW2005" />;
+      icon = <LocalIcon file="tfw2005.webp" alt="TFW2005" />;
       break;
     case "theanswerbank":
       icon = <Icon icon="mdi:comment-question" color={socialNetworks.theanswerbank.color} />;
       break;
     case "thesimsresource":
-      icon = <LocalIcon file="thesimsresource.png" alt="The Sims Resource" />;
+      icon = <LocalIcon file="thesimsresource.webp" alt="The Sims Resource" />;
       break;
     case "touristlink":
-      icon = <LocalIcon file="touristlink.png" alt="Touristlink" />;
+      icon = <LocalIcon file="touristlink.webp" alt="Touristlink" />;
       break;
     case "trainsim":
-      icon = <LocalIcon file="trainsim.png" alt="TrainSim" />;
+      icon = <LocalIcon file="trainsim.webp" alt="TrainSim" />;
       break;
     case "trashbox":
-      icon = <LocalIcon file="trashbox.png" alt="Trashbox" />;
+      icon = <LocalIcon file="trashbox.webp" alt="Trashbox" />;
       break;
     case "trisquel":
-      icon = <LocalIcon file="trisquel.png" alt="Trisquel" />;
+      icon = <LocalIcon file="trisquel.webp" alt="Trisquel" />;
       break;
     case "valinor":
-      icon = <LocalIcon file="valinor.png" alt="Valinor" />;
+      icon = <LocalIcon file="valinor.webp" alt="Valinor" />;
       break;
     case "vgtimes":
-      icon = <LocalIcon file="vgtimes.png" alt="VGTimes" />;
+      icon = <LocalIcon file="vgtimes.webp" alt="VGTimes" />;
       break;
     case "vjudge":
-      icon = <LocalIcon file="vjudge.png" alt="Virtual Judge" />;
+      icon = <LocalIcon file="vjudge.webp" alt="Virtual Judge" />;
       break;
     case "vsemayki":
-      icon = <LocalIcon file="vsemayki.png" alt="Vsemayki" />;
+      icon = <LocalIcon file="vsemayki.webp" alt="Vsemayki" />;
       break;
     case "w7forums":
-      icon = <LocalIcon file="w7forums.png" alt="W7Forums" />;
+      icon = <LocalIcon file="w7forums.webp" alt="W7Forums" />;
       break;
     case "windowsforum":
-      icon = <LocalIcon file="windowsforum.png" alt="WindowsForum" />;
+      icon = <LocalIcon file="windowsforum.webp" alt="WindowsForum" />;
       break;
     case "zoomit":
-      icon = <LocalIcon file="zoomit.png" alt="Zoomit" />;
+      icon = <LocalIcon file="zoomit.webp" alt="Zoomit" />;
       break;
     case "affiliatefix":
-      icon = <LocalIcon file="affiliatefix.png" alt="AffiliateFix" />;
+      icon = <LocalIcon file="affiliatefix.webp" alt="AffiliateFix" />;
       break;
     case "animeforum":
       icon = <Icon icon="mdi:forum" color={socialNetworks.animeforum.color} />;
       break;
     case "armtorg":
-      icon = <LocalIcon file="armtorg.png" alt="Armtorg" />;
+      icon = <LocalIcon file="armtorg.webp" alt="Armtorg" />;
       break;
     case "arsenalmania":
-      icon = <LocalIcon file="arsenalmania.png" alt="Arsenal Mania" />;
+      icon = <LocalIcon file="arsenalmania.webp" alt="Arsenal Mania" />;
       break;
     case "australianfrequentflyer":
-      icon = <LocalIcon file="australianfrequentflyer.png" alt="Australian Frequent Flyer" />;
+      icon = <LocalIcon file="australianfrequentflyer.webp" alt="Australian Frequent Flyer" />;
       break;
     case "autokadabra":
       icon = <Icon icon="mdi:car" color={socialNetworks.autokadabra.color} />;
       break;
     case "autolada":
-      icon = <LocalIcon file="autolada.png" alt="Autolada" />;
+      icon = <LocalIcon file="autolada.webp" alt="Autolada" />;
       break;
     case "avtomarket":
-      icon = <LocalIcon file="avtomarket.png" alt="Avtomarket" />;
+      icon = <LocalIcon file="avtomarket.webp" alt="Avtomarket" />;
       break;
     case "beermoneyforum":
-      icon = <LocalIcon file="beermoneyforum.png" alt="BeerMoneyForum" />;
+      icon = <LocalIcon file="beermoneyforum.webp" alt="BeerMoneyForum" />;
       break;
     case "bikepost":
       icon = <Icon icon="mdi:motorbike" color={socialNetworks.bikepost.color} />;
       break;
     case "blast":
-      icon = <LocalIcon file="blast.png" alt="BlastHack" />;
+      icon = <LocalIcon file="blast.webp" alt="BlastHack" />;
       break;
     case "blipfoto":
-      icon = <LocalIcon file="blipfoto.png" alt="Blipfoto" />;
+      icon = <LocalIcon file="blipfoto.webp" alt="Blipfoto" />;
       break;
     case "chan4chan":
       icon = <Icon icon="mdi:image-multiple" color={socialNetworks.chan4chan.color} />;
       break;
     case "codeby":
-      icon = <LocalIcon file="codeby.png" alt="Codeby" />;
+      icon = <LocalIcon file="codeby.webp" alt="Codeby" />;
       break;
     case "cslords":
       icon = <Icon icon="mdi:pistol" color={socialNetworks.cslords.color} />;
       break;
     case "cubecraft":
-      icon = <LocalIcon file="cubecraft.png" alt="CubeCraft" />;
+      icon = <LocalIcon file="cubecraft.webp" alt="CubeCraft" />;
       break;
     case "dishtv":
-      icon = <LocalIcon file="dishtv.png" alt="Dish TV" />;
+      icon = <LocalIcon file="dishtv.webp" alt="Dish TV" />;
       break;
     case "diskusjon":
       icon = <Icon icon="mdi:forum" color={socialNetworks.diskusjon.color} />;
       break;
     case "dmoj":
-      icon = <LocalIcon file="dmoj.png" alt="DMOJ" />;
+      icon = <LocalIcon file="dmoj.webp" alt="DMOJ" />;
       break;
     case "dolap":
-      icon = <LocalIcon file="dolap.png" alt="Dolap" />;
+      icon = <LocalIcon file="dolap.webp" alt="Dolap" />;
       break;
     case "donatepay":
-      icon = <LocalIcon file="donatepay.png" alt="DonatePay" />;
+      icon = <LocalIcon file="donatepay.webp" alt="DonatePay" />;
       break;
     case "drupalru":
-      icon = <LocalIcon file="drupalru.png" alt="Drupal.ru" />;
+      icon = <LocalIcon file="drupalru.webp" alt="Drupal.ru" />;
       break;
     case "edugeek":
-      icon = <LocalIcon file="edugeek.png" alt="EduGeek" />;
+      icon = <LocalIcon file="edugeek.webp" alt="EduGeek" />;
       break;
     case "elakiri":
-      icon = <LocalIcon file="elakiri.png" alt="Elakiri" />;
+      icon = <LocalIcon file="elakiri.webp" alt="Elakiri" />;
       break;
     case "empflix":
-      icon = <LocalIcon file="empflix.png" alt="EMPFlix" />;
+      icon = <LocalIcon file="empflix.webp" alt="EMPFlix" />;
       break;
     case "fanficslandia":
-      icon = <LocalIcon file="fanficslandia.png" alt="Fanficslandia" />;
+      icon = <LocalIcon file="fanficslandia.webp" alt="Fanficslandia" />;
       break;
     case "fcrubin":
-      icon = <LocalIcon file="fcrubin.png" alt="FC Rubin" />;
+      icon = <LocalIcon file="fcrubin.webp" alt="FC Rubin" />;
       break;
     case "flashflashrevolution":
-      icon = <LocalIcon file="flashflashrevolution.png" alt="Flash Flash Revolution" />;
+      icon = <LocalIcon file="flashflashrevolution.webp" alt="Flash Flash Revolution" />;
       break;
     case "footballforums":
       icon = <Icon icon="mdi:soccer" color={socialNetworks.footballforums.color} />;
       break;
     case "forumkinopoisk":
-      icon = <LocalIcon file="forumkinopoisk.png" alt="Forum Kinopoisk" />;
+      icon = <LocalIcon file="forumkinopoisk.webp" alt="Forum Kinopoisk" />;
       break;
     case "forumophilia":
-      icon = <LocalIcon file="forumophilia.png" alt="Forumophilia" />;
+      icon = <LocalIcon file="forumophilia.webp" alt="Forumophilia" />;
       break;
     case "fourgameforum":
       icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.fourgameforum.color} />;
       break;
     case "fourstor":
-      icon = <LocalIcon file="fourstor.png" alt="4stor" />;
+      icon = <LocalIcon file="fourstor.webp" alt="4stor" />;
       break;
     case "gardrops":
-      icon = <LocalIcon file="gardrops.png" alt="Gardrops" />;
+      icon = <LocalIcon file="gardrops.webp" alt="Gardrops" />;
       break;
     case "geodesist":
-      icon = <LocalIcon file="geodesist.png" alt="Geodesist" />;
+      icon = <LocalIcon file="geodesist.webp" alt="Geodesist" />;
       break;
     case "gpodder":
-      icon = <LocalIcon file="gpodder.png" alt="gpodder.net" />;
+      icon = <LocalIcon file="gpodder.webp" alt="gpodder.net" />;
       break;
     case "graana":
-      icon = <LocalIcon file="graana.png" alt="Graana" />;
+      icon = <LocalIcon file="graana.webp" alt="Graana" />;
       break;
     case "hackenproof":
-      icon = <LocalIcon file="hackenproof.png" alt="HackenProof" />;
+      icon = <LocalIcon file="hackenproof.webp" alt="HackenProof" />;
       break;
     case "housemixes":
-      icon = <LocalIcon file="housemixes.png" alt="House-Mixes" />;
+      icon = <LocalIcon file="housemixes.webp" alt="House-Mixes" />;
       break;
     case "hozpitality":
-      icon = <LocalIcon file="hozpitality.png" alt="Hozpitality" />;
+      icon = <LocalIcon file="hozpitality.webp" alt="Hozpitality" />;
       break;
     case "huntingru":
       icon = <Icon icon="mdi:target" color={socialNetworks.huntingru.color} />;
@@ -3251,70 +3251,70 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:microphone-variant" color={socialNetworks.justmj.color} />;
       break;
     case "kuharka":
-      icon = <LocalIcon file="kuharka.png" alt="Kuharka" />;
+      icon = <LocalIcon file="kuharka.webp" alt="Kuharka" />;
       break;
     case "lolchess":
-      icon = <LocalIcon file="lolchess.png" alt="LoLCHESS.GG" />;
+      icon = <LocalIcon file="lolchess.webp" alt="LoLCHESS.GG" />;
       break;
     case "lori":
-      icon = <LocalIcon file="lori.png" alt="Lori" />;
+      icon = <LocalIcon file="lori.webp" alt="Lori" />;
       break;
     case "loveplanet":
-      icon = <LocalIcon file="loveplanet.png" alt="LovePlanet" />;
+      icon = <LocalIcon file="loveplanet.webp" alt="LovePlanet" />;
       break;
     case "machelp":
-      icon = <LocalIcon file="machelp.png" alt="Mac Help" />;
+      icon = <LocalIcon file="machelp.webp" alt="Mac Help" />;
       break;
     case "macosx":
-      icon = <LocalIcon file="macosx.png" alt="MacOSX.com" />;
+      icon = <LocalIcon file="macosx.webp" alt="MacOSX.com" />;
       break;
     case "magix":
-      icon = <LocalIcon file="magix.png" alt="MAGIX" />;
+      icon = <LocalIcon file="magix.webp" alt="MAGIX" />;
       break;
     case "mamuli":
       icon = <Icon icon="mdi:baby-carriage" color={socialNetworks.mamuli.color} />;
       break;
     case "math10":
-      icon = <LocalIcon file="math10.png" alt="Math10" />;
+      icon = <LocalIcon file="math10.webp" alt="Math10" />;
       break;
     case "mdshooters":
       icon = <Icon icon="mdi:pistol" color={socialNetworks.mdshooters.color} />;
       break;
     case "motorhomefun":
-      icon = <LocalIcon file="motorhomefun.png" alt="MotorhomeFun" />;
+      icon = <LocalIcon file="motorhomefun.webp" alt="MotorhomeFun" />;
       break;
     case "mywishboard":
-      icon = <LocalIcon file="mywishboard.png" alt="MyWishBoard" />;
+      icon = <LocalIcon file="mywishboard.webp" alt="MyWishBoard" />;
       break;
     case "nightbot":
-      icon = <LocalIcon file="nightbot.png" alt="Nightbot" />;
+      icon = <LocalIcon file="nightbot.webp" alt="Nightbot" />;
       break;
     case "niketalk":
-      icon = <LocalIcon file="niketalk.png" alt="NikeTalk" />;
+      icon = <LocalIcon file="niketalk.webp" alt="NikeTalk" />;
       break;
     case "nixp":
-      icon = <LocalIcon file="nixp.png" alt="nixp" />;
+      icon = <LocalIcon file="nixp.webp" alt="nixp" />;
       break;
     case "not606":
-      icon = <LocalIcon file="not606.png" alt="Not606" />;
+      icon = <LocalIcon file="not606.webp" alt="Not606" />;
       break;
     case "oakleyforum":
-      icon = <LocalIcon file="oakleyforum.png" alt="Oakley Forum" />;
+      icon = <LocalIcon file="oakleyforum.webp" alt="Oakley Forum" />;
       break;
     case "officeforums":
-      icon = <LocalIcon file="officeforums.png" alt="Office Forums" />;
+      icon = <LocalIcon file="officeforums.webp" alt="Office Forums" />;
       break;
     case "omoimot":
-      icon = <LocalIcon file="omoimot.png" alt="Omoimot" />;
+      icon = <LocalIcon file="omoimot.webp" alt="Omoimot" />;
       break;
     case "pedsovet":
       icon = <Icon icon="mdi:school" color={socialNetworks.pedsovet.color} />;
       break;
     case "pepperpl":
-      icon = <LocalIcon file="pepperpl.png" alt="Pepper.pl" />;
+      icon = <LocalIcon file="pepperpl.webp" alt="Pepper.pl" />;
       break;
     case "pepperru":
-      icon = <LocalIcon file="pepperru.png" alt="Pepper.ru" />;
+      icon = <LocalIcon file="pepperru.webp" alt="Pepper.ru" />;
       break;
     case "planetaexcel":
       icon = <Icon icon="mdi:table" color={socialNetworks.planetaexcel.color} />;
@@ -3326,82 +3326,82 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:forum" color={socialNetworks.pogovorim.color} />;
       break;
     case "pregame":
-      icon = <LocalIcon file="pregame.png" alt="Pregame" />;
+      icon = <LocalIcon file="pregame.webp" alt="Pregame" />;
       break;
     case "prodaman":
-      icon = <LocalIcon file="prodaman.png" alt="Prodaman" />;
+      icon = <LocalIcon file="prodaman.webp" alt="Prodaman" />;
       break;
     case "proglib":
-      icon = <LocalIcon file="proglib.png" alt="Proglib" />;
+      icon = <LocalIcon file="proglib.webp" alt="Proglib" />;
       break;
     case "proshkolu":
       icon = <Icon icon="mdi:school" color={socialNetworks.proshkolu.color} />;
       break;
     case "pyha":
-      icon = <LocalIcon file="pyha.png" alt="Pyha" />;
+      icon = <LocalIcon file="pyha.webp" alt="Pyha" />;
       break;
     case "queer":
-      icon = <LocalIcon file="queer.png" alt="Queer.pl" />;
+      icon = <LocalIcon file="queer.webp" alt="Queer.pl" />;
       break;
     case "railforums":
       icon = <Icon icon="mdi:train" color={socialNetworks.railforums.color} />;
       break;
     case "redcafe":
-      icon = <LocalIcon file="redcafe.png" alt="RedCafe" />;
+      icon = <LocalIcon file="redcafe.webp" alt="RedCafe" />;
       break;
     case "religiousforums":
       icon = <Icon icon="mdi:hands-pray" color={socialNetworks.religiousforums.color} />;
       break;
     case "romanticcollection":
-      icon = <LocalIcon file="romanticcollection.png" alt="RomanticCollection" />;
+      icon = <LocalIcon file="romanticcollection.webp" alt="RomanticCollection" />;
       break;
     case "rpgrussia":
-      icon = <LocalIcon file="rpgrussia.png" alt="RPG Russia" />;
+      icon = <LocalIcon file="rpgrussia.webp" alt="RPG Russia" />;
       break;
     case "ruanekdot":
-      icon = <LocalIcon file="ruanekdot.png" alt="RuAnekdot" />;
+      icon = <LocalIcon file="ruanekdot.webp" alt="RuAnekdot" />;
       break;
     case "rubyforum":
-      icon = <LocalIcon file="rubyforum.png" alt="Ruby Forum" />;
+      icon = <LocalIcon file="rubyforum.webp" alt="Ruby Forum" />;
       break;
     case "rusfishing":
-      icon = <LocalIcon file="rusfishing.png" alt="RusFishing" />;
+      icon = <LocalIcon file="rusfishing.webp" alt="RusFishing" />;
       break;
     case "shophelp":
-      icon = <LocalIcon file="shophelp.png" alt="ShopHelp" />;
+      icon = <LocalIcon file="shophelp.webp" alt="ShopHelp" />;
       break;
     case "showme":
-      icon = <LocalIcon file="showme.png" alt="ShowMe" />;
+      icon = <LocalIcon file="showme.webp" alt="ShowMe" />;
       break;
     case "snbforums":
-      icon = <LocalIcon file="snbforums.png" alt="SNBForums" />;
+      icon = <LocalIcon file="snbforums.webp" alt="SNBForums" />;
       break;
     case "stereo":
-      icon = <LocalIcon file="stereo.png" alt="Stereo.ru" />;
+      icon = <LocalIcon file="stereo.webp" alt="Stereo.ru" />;
       break;
     case "svtperformance":
-      icon = <LocalIcon file="svtperformance.png" alt="SVTPerformance" />;
+      icon = <LocalIcon file="svtperformance.webp" alt="SVTPerformance" />;
       break;
     case "swedroid":
-      icon = <LocalIcon file="swedroid.png" alt="Swedroid" />;
+      icon = <LocalIcon file="swedroid.webp" alt="Swedroid" />;
       break;
     case "tamtam":
-      icon = <LocalIcon file="tamtam.png" alt="TamTam" />;
+      icon = <LocalIcon file="tamtam.webp" alt="TamTam" />;
       break;
     case "thefastlaneforum":
-      icon = <LocalIcon file="thefastlaneforum.png" alt="The Fastlane Forum" />;
+      icon = <LocalIcon file="thefastlaneforum.webp" alt="The Fastlane Forum" />;
       break;
     case "themainboard":
       icon = <Icon icon="mdi:basketball" color={socialNetworks.themainboard.color} />;
       break;
     case "truesteamachievements":
-      icon = <LocalIcon file="truesteamachievements.png" alt="TrueSteamAchievements" />;
+      icon = <LocalIcon file="truesteamachievements.webp" alt="TrueSteamAchievements" />;
       break;
     case "tvgames":
       icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.tvgames.color} />;
       break;
     case "twodthreed":
-      icon = <LocalIcon file="twodthreed.png" alt="2D-3D" />;
+      icon = <LocalIcon file="twodthreed.webp" alt="2D-3D" />;
       break;
     case "uchportal":
       icon = <Icon icon="mdi:book-education" color={socialNetworks.uchportal.color} />;
@@ -3416,10 +3416,10 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:needle" color={socialNetworks.vishivalochka.color} />;
       break;
     case "voicesevas":
-      icon = <LocalIcon file="voicesevas.png" alt="Voicesevas" />;
+      icon = <LocalIcon file="voicesevas.webp" alt="Voicesevas" />;
       break;
     case "windows10forums":
-      icon = <LocalIcon file="windows10forums.png" alt="Windows 10 Forums" />;
+      icon = <LocalIcon file="windows10forums.webp" alt="Windows 10 Forums" />;
       break;
     case "wolpy":
       icon = <Icon icon="mdi:earth" color={socialNetworks.wolpy.color} />;
@@ -3428,10 +3428,10 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:sword-cross" color={socialNetworks.wowgame.color} />;
       break;
     case "ww2aircraft":
-      icon = <LocalIcon file="ww2aircraft.png" alt="WW2Aircraft.net" />;
+      icon = <LocalIcon file="ww2aircraft.webp" alt="WW2Aircraft.net" />;
       break;
     case "admireme":
-      icon = <LocalIcon file="admireme.png" alt="AdmireMe" />;
+      icon = <LocalIcon file="admireme.webp" alt="AdmireMe" />;
       break;
     case "adobecommunity":
       icon = <Icon icon="simple-icons:adobe" color={socialNetworks.adobecommunity.color} />;
@@ -3440,16 +3440,16 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:city" color={socialNetworks.alushta24.color} />;
       break;
     case "amazfitwatchfaces":
-      icon = <LocalIcon file="amazfitwatchfaces.png" alt="AmazfitWatchFaces" />;
+      icon = <LocalIcon file="amazfitwatchfaces.webp" alt="AmazfitWatchFaces" />;
       break;
     case "angara":
-      icon = <LocalIcon file="angara.png" alt="Angara.Net" />;
+      icon = <LocalIcon file="angara.webp" alt="Angara.Net" />;
       break;
     case "antiquebottles":
       icon = <Icon icon="mdi:bottle-wine" color={socialNetworks.antiquebottles.color} />;
       break;
     case "aqa":
-      icon = <LocalIcon file="aqa.png" alt="AQA" />;
+      icon = <LocalIcon file="aqa.webp" alt="AQA" />;
       break;
     case "avtoforum":
       icon = <Icon icon="mdi:car" color={socialNetworks.avtoforum.color} />;
@@ -3458,13 +3458,13 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:pistol" color={socialNetworks.bayoushooter.color} />;
       break;
     case "borisfxforum":
-      icon = <LocalIcon file="borisfxforum.png" alt="Boris FX Forum" />;
+      icon = <LocalIcon file="borisfxforum.webp" alt="Boris FX Forum" />;
       break;
     case "bristle":
-      icon = <LocalIcon file="bristle.png" alt="Bristle" />;
+      icon = <LocalIcon file="bristle.webp" alt="Bristle" />;
       break;
     case "cad":
-      icon = <LocalIcon file="cad.png" alt="CAD.ru" />;
+      icon = <LocalIcon file="cad.webp" alt="CAD.ru" />;
       break;
     case "caduser":
       icon = <Icon icon="mdi:pencil-ruler" color={socialNetworks.caduser.color} />;
@@ -3473,25 +3473,25 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:car-wrench" color={socialNetworks.carmasters.color} />;
       break;
     case "caves":
-      icon = <LocalIcon file="caves.png" alt="Caves.ru" />;
+      icon = <LocalIcon file="caves.webp" alt="Caves.ru" />;
       break;
     case "cheatmaster":
-      icon = <LocalIcon file="cheatmaster.png" alt="Cheat-Master" />;
+      icon = <LocalIcon file="cheatmaster.webp" alt="Cheat-Master" />;
       break;
     case "coddy":
-      icon = <LocalIcon file="coddy.png" alt="Coddy" />;
+      icon = <LocalIcon file="coddy.webp" alt="Coddy" />;
       break;
     case "codedex":
-      icon = <LocalIcon file="codedex.png" alt="Codédex" />;
+      icon = <LocalIcon file="codedex.webp" alt="Codédex" />;
       break;
     case "codersrank":
       icon = <Icon icon="simple-icons:codersrank" color={socialNetworks.codersrank.color} />;
       break;
     case "connosr":
-      icon = <LocalIcon file="connosr.png" alt="Connosr" />;
+      icon = <LocalIcon file="connosr.webp" alt="Connosr" />;
       break;
     case "cowboyszone":
-      icon = <LocalIcon file="cowboyszone.png" alt="CowboysZone" />;
+      icon = <LocalIcon file="cowboyszone.webp" alt="CowboysZone" />;
       break;
     case "diorama":
       icon = <Icon icon="mdi:castle" color={socialNetworks.diorama.color} />;
@@ -3509,16 +3509,16 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:hand-heart" color={socialNetworks.donatestream.color} />;
       break;
     case "empretienda":
-      icon = <LocalIcon file="empretienda.png" alt="Empretienda" />;
+      icon = <LocalIcon file="empretienda.webp" alt="Empretienda" />;
       break;
     case "erogen":
-      icon = <LocalIcon file="erogen.png" alt="Erogen.club" />;
+      icon = <LocalIcon file="erogen.webp" alt="Erogen.club" />;
       break;
     case "figshare":
       icon = <Icon icon="simple-icons:figshare" color={socialNetworks.figshare.color} />;
       break;
     case "fishingsib":
-      icon = <LocalIcon file="fishingsib.png" alt="FishingSib" />;
+      icon = <LocalIcon file="fishingsib.webp" alt="FishingSib" />;
       break;
     case "forumjizni":
       icon = <Icon icon="mdi:forum" color={socialNetworks.forumjizni.color} />;
@@ -3527,91 +3527,91 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:medal" color={socialNetworks.forummil.color} />;
       break;
     case "forumprosport":
-      icon = <LocalIcon file="forumprosport.png" alt="ForumProSport" />;
+      icon = <LocalIcon file="forumprosport.webp" alt="ForumProSport" />;
       break;
     case "forumsdrom":
-      icon = <LocalIcon file="forumsdrom.png" alt="Forums Drom" />;
+      icon = <LocalIcon file="forumsdrom.webp" alt="Forums Drom" />;
       break;
     case "forumvancouver":
-      icon = <LocalIcon file="forumvancouver.png" alt="ForumVancouver" />;
+      icon = <LocalIcon file="forumvancouver.webp" alt="ForumVancouver" />;
       break;
     case "fourcheat":
-      icon = <LocalIcon file="fourcheat.png" alt="4cheat" />;
+      icon = <LocalIcon file="fourcheat.webp" alt="4cheat" />;
       break;
     case "freelancers":
       icon = <Icon icon="mdi:briefcase" color={socialNetworks.freelancers.color} />;
       break;
     case "gays":
-      icon = <LocalIcon file="gays.png" alt="Gays.com" />;
+      icon = <LocalIcon file="gays.webp" alt="Gays.com" />;
       break;
     case "gentlemint":
       icon = <Icon icon="mdi:mustache" color={socialNetworks.gentlemint.color} />;
       break;
     case "harvardcyber":
-      icon = <LocalIcon file="harvardcyber.png" alt="Berkman Klein Center" />;
+      icon = <LocalIcon file="harvardcyber.webp" alt="Berkman Klein Center" />;
       break;
     case "harvardscholar":
       icon = <Icon icon="mdi:school" color={socialNetworks.harvardscholar.color} />;
       break;
     case "hbh":
-      icon = <LocalIcon file="hbh.png" alt="HBH" />;
+      icon = <LocalIcon file="hbh.webp" alt="HBH" />;
       break;
     case "hitmanforum":
-      icon = <LocalIcon file="hitmanforum.png" alt="Hitman Forum" />;
+      icon = <LocalIcon file="hitmanforum.webp" alt="Hitman Forum" />;
       break;
     case "hondaswap":
-      icon = <LocalIcon file="hondaswap.png" alt="HondaSwap" />;
+      icon = <LocalIcon file="hondaswap.webp" alt="HondaSwap" />;
       break;
     case "interfaith":
       icon = <Icon icon="mdi:hands-pray" color={socialNetworks.interfaith.color} />;
       break;
     case "investsocial":
-      icon = <LocalIcon file="investsocial.png" alt="T-Bank Invest" />;
+      icon = <LocalIcon file="investsocial.webp" alt="T-Bank Invest" />;
       break;
     case "issuehunt":
-      icon = <LocalIcon file="issuehunt.png" alt="IssueHunt" />;
+      icon = <LocalIcon file="issuehunt.webp" alt="IssueHunt" />;
       break;
     case "juejin":
       icon = <Icon icon="simple-icons:juejin" color={socialNetworks.juejin.color} />;
       break;
     case "kashalot":
-      icon = <LocalIcon file="kashalot.png" alt="Kashalot" />;
+      icon = <LocalIcon file="kashalot.webp" alt="Kashalot" />;
       break;
     case "kloomba":
-      icon = <LocalIcon file="kloomba.png" alt="Kloomba" />;
+      icon = <LocalIcon file="kloomba.webp" alt="Kloomba" />;
       break;
     case "livetrack24":
-      icon = <LocalIcon file="livetrack24.png" alt="LiveTrack24" />;
+      icon = <LocalIcon file="livetrack24.webp" alt="LiveTrack24" />;
       break;
     case "maccentre":
-      icon = <LocalIcon file="maccentre.png" alt="Maccentre" />;
+      icon = <LocalIcon file="maccentre.webp" alt="Maccentre" />;
       break;
     case "masterkosta":
       icon = <Icon icon="mdi:tools" color={socialNetworks.masterkosta.color} />;
       break;
     case "mbclub":
-      icon = <LocalIcon file="mbclub.png" alt="MBClub" />;
+      icon = <LocalIcon file="mbclub.webp" alt="MBClub" />;
       break;
     case "mdregion":
-      icon = <LocalIcon file="mdregion.png" alt="MDRegion" />;
+      icon = <LocalIcon file="mdregion.webp" alt="MDRegion" />;
       break;
     case "megapolis":
       icon = <Icon icon="mdi:city" color={socialNetworks.megapolis.color} />;
       break;
     case "minecraftstatistic":
-      icon = <LocalIcon file="minecraftstatistic.png" alt="Minecraft-Statistic" />;
+      icon = <LocalIcon file="minecraftstatistic.webp" alt="Minecraft-Statistic" />;
       break;
     case "mineplex":
-      icon = <LocalIcon file="mineplex.png" alt="Mineplex" />;
+      icon = <LocalIcon file="mineplex.webp" alt="Mineplex" />;
       break;
     case "mnogodetok":
       icon = <Icon icon="mdi:human-male-female-child" color={socialNetworks.mnogodetok.color} />;
       break;
     case "munzee":
-      icon = <LocalIcon file="munzee.png" alt="Munzee" />;
+      icon = <LocalIcon file="munzee.webp" alt="Munzee" />;
       break;
     case "nesiditsa":
-      icon = <LocalIcon file="nesiditsa.png" alt="Ne Siditsa" />;
+      icon = <LocalIcon file="nesiditsa.webp" alt="Ne Siditsa" />;
       break;
     case "neteasemusic":
       icon = <Icon icon="simple-icons:neteasecloudmusic" color={socialNetworks.neteasemusic.color} />;
@@ -3623,7 +3623,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:city" color={socialNetworks.nsk66.color} />;
       break;
     case "nucastle":
-      icon = <LocalIcon file="nucastle.png" alt="NUcastle" />;
+      icon = <LocalIcon file="nucastle.webp" alt="NUcastle" />;
       break;
     case "operaforums":
       icon = <Icon icon="simple-icons:opera" color={socialNetworks.operaforums.color} />;
@@ -3632,7 +3632,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="simple-icons:oracle" color={socialNetworks.oraclecommunity.color} />;
       break;
     case "parkrocker":
-      icon = <LocalIcon file="parkrocker.png" alt="Parkrocker" />;
+      icon = <LocalIcon file="parkrocker.webp" alt="Parkrocker" />;
       break;
     case "playmd":
       icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.playmd.color} />;
@@ -3641,19 +3641,19 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:vote" color={socialNetworks.politikforum.color} />;
       break;
     case "pornsavant":
-      icon = <LocalIcon file="pornsavant.png" alt="PornSavant" />;
+      icon = <LocalIcon file="pornsavant.webp" alt="PornSavant" />;
       break;
     case "prizyvnik":
-      icon = <LocalIcon file="prizyvnik.png" alt="Prizyvnik" />;
+      icon = <LocalIcon file="prizyvnik.webp" alt="Prizyvnik" />;
       break;
     case "prokoni":
-      icon = <LocalIcon file="prokoni.png" alt="ProKoni" />;
+      icon = <LocalIcon file="prokoni.webp" alt="ProKoni" />;
       break;
     case "psyera":
-      icon = <LocalIcon file="psyera.png" alt="Psyera" />;
+      icon = <LocalIcon file="psyera.webp" alt="Psyera" />;
       break;
     case "rebornbuddy":
-      icon = <LocalIcon file="rebornbuddy.png" alt="RebornBuddy" />;
+      icon = <LocalIcon file="rebornbuddy.webp" alt="RebornBuddy" />;
       break;
     case "recpoker":
       icon = <Icon icon="mdi:cards-playing" color={socialNetworks.recpoker.color} />;
@@ -3665,13 +3665,13 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:map" color={socialNetworks.sasgis.color} />;
       break;
     case "serveradmin":
-      icon = <LocalIcon file="serveradmin.png" alt="ServerAdmin" />;
+      icon = <LocalIcon file="serveradmin.webp" alt="ServerAdmin" />;
       break;
     case "sforum":
-      icon = <LocalIcon file="sforum.png" alt="S-Forum" />;
+      icon = <LocalIcon file="sforum.webp" alt="S-Forum" />;
       break;
     case "shafa":
-      icon = <LocalIcon file="shafa.png" alt="Shafa" />;
+      icon = <LocalIcon file="shafa.webp" alt="Shafa" />;
       break;
     case "socioforum":
       icon = <Icon icon="mdi:account-group" color={socialNetworks.socioforum.color} />;
@@ -3680,10 +3680,10 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:motorbike" color={socialNetworks.southbayriders.color} />;
       break;
     case "spaces":
-      icon = <LocalIcon file="spaces.png" alt="Spaces" />;
+      icon = <LocalIcon file="spaces.webp" alt="Spaces" />;
       break;
     case "studwork":
-      icon = <LocalIcon file="studwork.png" alt="Studwork" />;
+      icon = <LocalIcon file="studwork.webp" alt="Studwork" />;
       break;
     case "texasguntalk":
       icon = <Icon icon="mdi:pistol" color={socialNetworks.texasguntalk.color} />;
@@ -3692,34 +3692,34 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:tools" color={socialNetworks.trworkshop.color} />;
       break;
     case "tuchong":
-      icon = <LocalIcon file="tuchong.png" alt="Tuchong" />;
+      icon = <LocalIcon file="tuchong.webp" alt="Tuchong" />;
       break;
     case "twentysix":
-      icon = <LocalIcon file="twentysix.png" alt="TwentySix" />;
+      icon = <LocalIcon file="twentysix.webp" alt="TwentySix" />;
       break;
     case "unixforum":
-      icon = <LocalIcon file="unixforum.png" alt="UnixForum" />;
+      icon = <LocalIcon file="unixforum.webp" alt="UnixForum" />;
       break;
     case "volgogradru":
-      icon = <LocalIcon file="volgogradru.png" alt="VolgogradRU" />;
+      icon = <LocalIcon file="volgogradru.webp" alt="VolgogradRU" />;
       break;
     case "votetags":
       icon = <Icon icon="mdi:bookmark" color={socialNetworks.votetags.color} />;
       break;
     case "w3challs":
-      icon = <LocalIcon file="w3challs.png" alt="W3Challs" />;
+      icon = <LocalIcon file="w3challs.webp" alt="W3Challs" />;
       break;
     case "wasm":
-      icon = <LocalIcon file="wasm.png" alt="WASM" />;
+      icon = <LocalIcon file="wasm.webp" alt="WASM" />;
       break;
     case "webosforums":
-      icon = <LocalIcon file="webosforums.png" alt="webOS Forums" />;
+      icon = <LocalIcon file="webosforums.webp" alt="webOS Forums" />;
       break;
     case "worldofplayers":
-      icon = <LocalIcon file="worldofplayers.png" alt="World of Players" />;
+      icon = <LocalIcon file="worldofplayers.webp" alt="World of Players" />;
       break;
     case "writercenter":
-      icon = <LocalIcon file="writercenter.png" alt="WriterCenter" />;
+      icon = <LocalIcon file="writercenter.webp" alt="WriterCenter" />;
       break;
     case "xboxgamertag":
       icon = <Icon icon="mdi:gamepad-variant" color={socialNetworks.xboxgamertag.color} />;
@@ -3728,7 +3728,7 @@ const SocialIcons = ({ source }: PropsTypes): ReactNode | null => {
       icon = <Icon icon="mdi:puzzle" color={socialNetworks.xgm.color} />;
       break;
     case "yamaya":
-      icon = <LocalIcon file="yamaya.png" alt="Yamaya" />;
+      icon = <LocalIcon file="yamaya.webp" alt="Yamaya" />;
       break;
     case "yapishu":
       icon = <Icon icon="mdi:feather" color={socialNetworks.yapishu.color} />;

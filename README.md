@@ -46,8 +46,8 @@ Une icône = une clé dans 3 fichiers, plus éventuellement un asset :
 |---|---|
 | `src/types/sourceTypes.ts` | l'union `SourceTypes` |
 | `src/utils/socialNetwork.ts` | couleur, catégorie, nom d'affichage |
-| `src/components/SocialIcons.tsx` | le `case` qui rend l'icône (Iconify ou `<LocalIcon file="<clé>.png" … />`) |
-| `src/assets/social-icons/<clé>.png` | asset local (150 px max), seulement si la marque n'est pas dans simple-icons |
+| `src/components/SocialIcons.tsx` | le `case` qui rend l'icône (Iconify ou `<LocalIcon file="<clé>.webp" … />`) |
+| `src/assets/social-icons/<clé>.webp` | asset local (WebP 96 px), seulement si la marque n'est pas dans simple-icons |
 
 Les assets locaux sont chargés à la demande : chacun devient un chunk séparé
 (`dist/icons/`), récupéré par le navigateur seulement quand l'icône s'affiche.
@@ -82,7 +82,7 @@ Prérequis machine : `python3` avec Pillow (`pip install pillow`) et `curl`. Le 
 python3 .claude/skills/add-icons/scripts/icons.py check anaconda hexbear      # slug + couleur simple-icons
 python3 .claude/skills/add-icons/scripts/icons.py fetch tetrio=tetr.io         # meilleur logo candidat
 python3 .claude/skills/add-icons/scripts/icons.py sheet                        # planche-contact
-python3 .claude/skills/add-icons/scripts/icons.py install tetrio               # PNG 150 px + couleur dominante
+python3 .claude/skills/add-icons/scripts/icons.py install tetrio               # WebP 96 px + couleur dominante
 ```
 
 Le dossier de travail `.icons-work/` est ignoré par git.
