@@ -61,6 +61,9 @@ NETWORKS_APIS = [
 
 
 def get(url, timeout=25):
+    # inline data: icons and absurd URLs scraped from a page (one overflowed curl's argv)
+    if not url.startswith(("http://", "https://")) or len(url) > 4096:
+        return b""
     r = subprocess.run(
         ["curl", "-sL", "--max-time", str(timeout), "-A", UA, "-H", "Accept: */*", url],
         capture_output=True,

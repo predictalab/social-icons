@@ -130,6 +130,8 @@ def key_candidates(name, domain):
     prefixes (forum.cockroachlabs.com -> cockroachlabs); then fallbacks, the domain's
     second-level label last (Bambu Lab Forum -> bambulab)."""
     out = []
+    if re.fullmatch(r"[\w.-]+\.[a-z]{2,}/[\w./-]*", name, re.I):
+        name = name.split("/")[0]  # destroyrepeat.com/community -> destroyrepeat.com
     if is_domain_name(name):
         labels = name.lower().removeprefix("www.").split(".")[:-1]
         brand = [l for l in labels if l not in HOST_PREFIXES]  # forums.docker.com -> docker
@@ -611,9 +613,15 @@ def apply_rows(rows, workdir):
 FOLDED_FARMS = {"fandom.com": "fandom", "discourse.group": "discourse"}
 
 
-def folded_into(domain):
+# Fediverse instances too: 72 of the 74 Mastodon / Lemmy instances the API has are folded into
+# `mastodon` / `lemmy` (hexbear and programmingdev are the exceptions).
+FOLDED_TAGS = {"mastodon": "mastodon", "lemmy": "lemmy"}
+
+
+def folded_into(domain, tags=()):
     host = domain.split("/")[0].lower()
-    return next((k for farm, k in FOLDED_FARMS.items() if host.endswith("." + farm)), None)
+    farm = next((k for farm, k in FOLDED_FARMS.items() if host.endswith("." + farm)), None)
+    return farm or next((FOLDED_TAGS[t] for t in tags if t in FOLDED_TAGS), None)
 
 
 def maigret_targets(workdir, tag=None, include_disabled=False):
@@ -633,8 +641,11 @@ def maigret_targets(workdir, tag=None, include_disabled=False):
         stem = icons.VARIANT.sub("", icons.norm(name))
         if stem != icons.norm(name) and (stem in have or stem == icons.domain_label(domain)):
             continue  # VKByID, SteamGroup: same icon as the covered network
-        if icons.covered_by(domain, have) or folded_into(domain) in have:
+        if icons.covered_by(domain, have) or folded_into(domain, infos["tags"]) in have:
             continue
+        parent = icons.domain_label(domain)
+        if parent in have and parent not in SHARED_HOSTS:
+            continue  # forum.openwrt.org, community.spotify.com: the API folds them (openwrt)
         seen.add(domain)
         out[key] = s
     return out

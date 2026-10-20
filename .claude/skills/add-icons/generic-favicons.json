@@ -1,9 +1,12 @@
 {
  "0000000000000000000000000000000000000000000000000000000000000000": "auto: english.republiquelibre.org, supernaturalwiki.com, thinkwiki.org",
+ "00000000000000000000000001807ffe7ffe7f76000000000000000000000000": "auto: forum.minecraft-france.fr, forums.f-o-g.eu, forums.kingdomsofheckfire.com",
  "00000000000007e00ff01db81bd81bd81ff80ff00fe00fc00380000000000000": "auto: 101010.pl, mamot.fr, mstdn.social",
  "000000003ff8200820082008200821fc2104390409040bec0c18080800000000": "auto: rodgersforum.borda.ru, starsonice.borda.ru, terminatorium.borda.ru",
  "fbfff9fff8fff87ff83fc81fc00fc007c003c243c3c3c3c3e187f00ff81ffc3f": "auto: armchairgm.fandom.com, bleach.fandom.com, codesnippets.fandom.com",
  "fc3ff00fc003c003842184210420042004200420866183c1c003c003f00ffc3f": "auto: abc-accounting.ucoz.net, actikom.ucoz.ru, afsoc.ucoz.ru",
  "fffff81fe007c1e3c0e390e991f1b7e5bbe59c799e19ce13c723e007f81fffff": "Google faviconV2 default globe (site unreachable)",
- "fffffc3ff00be00ff19ff18fb18d98c598c99849cc63cc73e637f43ffc3fffff": "WordPress default"
+ "fffffc3ff00be00ff19ff18fb18d98c598c99849cc63cc73e637f43ffc3fffff": "WordPress default",
+ "ffffffffffffcff38001318c27e48ff1eff7e997c243c003f00ffe7fffffffff": "auto: adultswim.fan, aggregatet.org, awful.systems",
+ "fffffffffffff067e007e007ee87e02fe03fe007e007e007e03fffffffffffff": "auto: 438punk.house, bigshoulders.city, hcommons.social"
 }

@@ -97,8 +97,12 @@ la première clé candidate est exacte pour ~85 % des sites en 2026-10, les éca
 des variantes rattachées au réseau parent. Des candidats de repli couvrent les autres
 graphies vues dans l'API (`avto.dzerghinsk.org` → `avtodzerghinsk`). Certaines clés restent
 choisies à la main par l'équipe API (`audacity` pour audacityteam.org, `bitcoinwiki` pour
-bitcoin.it) : elles sortent en `?` et se résolvent via sources-api (étape 1 bis). Les sites de `*.fandom.com` et `*.discourse.group` sont repliés par l'API sur `fandom` et
-`discourse` : `plan --maigret` les ignore. Pour `plan --maigret`, les clés sont donc prédites : à confirmer avec l'équipe
+bitcoin.it) : elles sortent en `?` et se résolvent via sources-api (étape 1 bis). `plan --maigret` ignore aussi ce que l'API replie sur un réseau existant : les sites de
+`*.fandom.com` et `*.discourse.group` (→ `fandom`, `discourse`), les instances Mastodon et
+Lemmy (→ `mastodon`, `lemmy` : 72 sur 74 dans l'API), et les sous-domaines d'une marque déjà
+couverte (`forum.openwrt.org` → `openwrt`, `community.spotify.com` → `spotify`), sauf sur les
+hébergeurs mutualisés. Un nom maigret en hôte + chemin perd son chemin
+(`destroyrepeat.com/community` → `destroyrepeat`). Pour `plan --maigret`, les clés sont donc prédites : à confirmer avec l'équipe
 API avant un import massif.
 
 ## 1. Ne traiter que ce qui manque
