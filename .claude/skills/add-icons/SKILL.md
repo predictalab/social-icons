@@ -1,6 +1,6 @@
 ---
 name: add-icons
-description: Ajoute des icônes de réseaux/sources à @predictalab/social-icons à partir d'une liste de clés (ex. "anaconda, bilibili, tetrio") ; avec un nombre seul ("/add-icons 150"), traite directement un lot de N réseaux de l'API sans icône ; lancé sans argument, liste d'abord les réseaux de l'API Predicta (/networks) qui n'ont pas d'icône. Sourcing des logos (simple-icons d'abord, sinon asset local, sinon fallback mdi), édition des 3 fichiers, vérification et PR (sans bump : la version est bumpée à la publication). Utiliser dès qu'on demande d'ajouter, créer ou compléter des icônes, de vérifier que des sources ont bien leur icône, ou de trouver dans maigret quels réseaux n'ont pas encore d'icône.
+description: Ajoute des icônes de réseaux/sources à @predictalab/social-icons à partir d'une liste de clés (ex. "anaconda, bilibili, tetrio") ; avec un nombre seul ("/add-icons 150"), traite directement un lot de N réseaux de l'API sans icône ; lancé sans argument, liste d'abord les réseaux de l'API Predicta (/networks) qui n'ont pas d'icône. Sourcing des logos (simple-icons d'abord, sinon asset local, sinon fallback mdi), édition des 2 fichiers, vérification et PR (sans bump : la version est bumpée à la publication). Utiliser dès qu'on demande d'ajouter, créer ou compléter des icônes, de vérifier que des sources ont bien leur icône, ou de trouver dans maigret quels réseaux n'ont pas encore d'icône.
 ---
 
 # Ajouter des icônes à social-icons
@@ -19,7 +19,7 @@ Arguments de `/add-icons` :
 **Branche** : chaque lot part d'un `origin/master` à jour (`git fetch` puis
 `git switch -c feat/add-icons-<première clé>-<dernière clé> origin/master`),
 et donne une PR mergée avant le lot suivant. Les lots ajoutent tous leurs blocs aux mêmes
-endroits des 3 fichiers (fin de l'union, fin de l'objet, avant `default:`) : deux branches
+endroits des 2 fichiers (fin de l'union, fin de l'objet) : deux branches
 ouvertes en parallèle se conflictent à coup sûr. Si la PR du lot précédent n'est pas encore
 mergée, le signaler à l'utilisateur et proposer de la merger d'abord ; à défaut, partir de sa
 branche (PR empilée, base = branche précédente).
@@ -41,12 +41,12 @@ réseaux, y compris ceux désactivés en attente de fix ; réseau local ou VPN s
 bascule sur le public `https://dev-b2c-api.predictalab.com/networks` (réseaux actifs exposés
 uniquement) s'il ne répond pas : la dernière ligne indique l'endpoint utilisé, le signaler à
 l'utilisateur en cas de repli. Jamais mis en cache ; autre endpoint via `--api <url>`. Ignore
-les réseaux `deprecated` et les compare aux `case` de `SocialIcons.tsx`. La colonne état
+les réseaux `deprecated` et les compare aux clés de `socialNetwork.ts`. La colonne état
 marque les réseaux `désactivé` : leur icône reste utile (ils reviendront après fix). Les clés de l'API sont celles des applications : pas besoin de les
 confirmer. La colonne note signale les chiffres écrits en toutes lettres par l'API
 (`sevencups` pour notre `7cups`) : si la forme à chiffres existe déjà, il suffit d'ajouter
-un alias `case "sevencups":` au-dessus de `case "7cups":` (et la clé dans `sourceTypes.ts` /
-`socialNetwork.ts`), sans chercher de nouveau logo.
+un alias : une entrée `sevencups` qui reprend l'`icon` ou le `logo` de `7cups` (et la clé dans
+`sourceTypes.ts`), sans chercher de nouveau logo.
 
 Présenter à l'utilisateur le nombre de réseaux manquants et demander combien en traiter
 (une PR de 100 à 200 clés est raisonnable avec le mode lot), sauf si `/add-icons N` a déjà
@@ -84,7 +84,7 @@ python3 .claude/skills/add-icons/scripts/icons.py apply
 ```
 
 Valide tout le manifeste avant d'écrire (slug Iconify, icône mdi, couleur, catégorie, asset),
-installe les assets en WebP 96 px, ajoute les blocs triés aux 3 fichiers et régénère
+installe les assets en WebP 96 px, ajoute les blocs triés aux 2 fichiers et régénère
 `assetLoaders.ts`, puis imprime la commande `inputs` pour la PR. Enchaîner sur l'étape 6.
 
 `icons.py keys` mesure la règle de clé (nom maigret normalisé, chiffres de tête en lettres,
@@ -100,10 +100,10 @@ API avant un import massif.
 ## 1. Ne traiter que ce qui manque
 
 ```bash
-for k in <clés>; do grep -q "case \"$k\"" src/components/SocialIcons.tsx && echo "OK $k" || echo "MANQUE $k"; done
+for k in <clés>; do grep -qE "^  \"?$k\"?: \{" src/utils/socialNetwork.ts && echo "OK $k" || echo "MANQUE $k"; done
 ```
 
-Une clé peut aussi exister sous forme d'alias (`case "gist":` juste au-dessus de `case "github":`).
+Une clé peut aussi exister sous forme d'alias (`gist` reprend l'`icon` de `github`).
 Ne rien recréer qui existe déjà ; signaler à l'utilisateur ce qui était déjà couvert.
 
 ## 1 bis. Identifier chaque source (maigret)
@@ -219,9 +219,9 @@ python3 .claude/skills/add-icons/scripts/icons.py install <clés>
 ## 4. Dernier recours : fallback mdi
 
 Aucun artwork ≥ 48 px : icône mdi thématique + couleur dominante du favicon, comme
-`mslearn` ou `thebigboss` (`<Icon icon="mdi:earth" color={socialNetworks.thebigboss.color} />`).
+`mslearn` ou `thebigboss` (`icon: "mdi:earth"` dans son entrée).
 
-## 5. Les 3 fichiers à éditer (ordre alphabétique des clés dans chaque bloc ajouté)
+## 5. Les 2 fichiers à éditer (ordre alphabétique des clés dans chaque bloc ajouté)
 
 1. `src/types/sourceTypes.ts` — ajouter `| "<clé>"` à l'union (avant le `;` final).
 2. `src/utils/socialNetwork.ts` — avant le `};` final :
@@ -230,21 +230,15 @@ Aucun artwork ≥ 48 px : icône mdi thématique + couleur dominante du favicon,
      color: "#RRGGBB",      // simple-icons : couleur de marque ; local : couleur dominante
      category: "gaming",    // social | messaging_app | video_platform | adult | streaming | gaming | sport | ecommerce | finance | dating | other | programming | hacking | bot | search_engine | images-search-engine | paste
      name: "Nom affiché",   // casse officielle : "pr0gramm", "TETR.IO", "freeCodeCamp"
+     icon: "simple-icons:<slug>", // nom Iconify (simple-icons:, mdi:…), dessiné en `color`
    },
    ```
-3. `src/components/SocialIcons.tsx` — juste avant `default:` :
-   ```tsx
-   case "<clé>":
-     icon = <Icon icon="simple-icons:<slug>" color={socialNetworks.<clé>.color} />;
-     break;
+   ou, pour un asset local (chargé à la demande, `name` sert de texte alternatif) :
+   ```ts
+     logo: "<clé>.webp",    // à la place de `icon`, jamais les deux
    ```
-   ou, pour un asset local (chargé à la demande, **pas d'import** en haut du fichier) :
-   ```tsx
-   case "<clé>":
-     icon = <LocalIcon file="<clé>.webp" alt="Nom affiché" />;
-     break;
-   ```
-   `file` est typé par `src/utils/assetLoaders.ts`, généré à partir du dossier d'assets
+   `SocialIcons.tsx` n'a plus à être touché : il lit l'entrée de la clé.
+   `logo` est typé par `src/utils/assetLoaders.ts`, généré à partir du dossier d'assets
    (une faute de frappe ou une mauvaise extension casse `tsc`). `icons.py install` le
    régénère ; pour un asset ajouté à la main (SVG officiel, etc.), lancer
    `npm run gen-assets`. Ne pas l'éditer, et le commiter avec le reste du lot.

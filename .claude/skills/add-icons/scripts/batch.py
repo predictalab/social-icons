@@ -1,5 +1,5 @@
 """Batch pipeline of the add-icons skill: `plan` proposes a source for every key and writes an
-editable manifest plus review sheets, `apply` writes the 3 source files from the manifest.
+editable manifest plus review sheets, `apply` writes the 2 source files from the manifest.
 
 Manifest (WORKDIR/batch.tsv), one line per key, tab separated:
   key  source  color  category  name  domain  note
@@ -23,7 +23,6 @@ GENERIC_FILE = os.path.join(os.path.dirname(__file__), "..", "generic-favicons.j
 COLUMNS = ["key", "source", "color", "category", "name", "domain", "note"]
 DEFAULT_COLOR = "#607D8B"
 KEY_RE = re.compile(r"^[a-z][a-z0-9]*$")
-TSX = os.path.join(icons.ROOT, "src", "components", "SocialIcons.tsx")
 NETWORK_TS = os.path.join(icons.ROOT, "src", "utils", "socialNetwork.ts")
 TYPES_TS = os.path.join(icons.ROOT, "src", "types", "sourceTypes.ts")
 
@@ -282,13 +281,15 @@ def display_name(key, site, title):
 
 
 def network_entries():
-    """{key: (color, category, name)} of socialNetwork.ts, to copy for aliases."""
+    """{key: (color, category, name, (field, value))} of socialNetwork.ts, to copy for aliases;
+    (field, value) is how the network is drawn: ("icon", <Iconify name>) or ("logo", <file>)."""
     ts = open(NETWORK_TS).read()
     out = {}
     for m in re.finditer(r'^  "?([\w-]+)"?: \{(.*?)\}', ts, re.M | re.S):
         body = m.group(2)
-        get = lambda f: (re.search(rf'{f}: "([^"]*)"', body) or [None, ""])[1]
-        out[m.group(1)] = (get("color"), get("category"), get("name"))
+        get = lambda f: (re.search(rf'\b{f}: "([^"]*)"', body) or [None, ""])[1]
+        draw = ("logo", get("logo")) if get("logo") else ("icon", get("icon"))
+        out[m.group(1)] = (get("color"), get("category"), get("name"), draw)
     return out
 
 
@@ -310,7 +311,7 @@ def plan_rows(keys, sites_by_key, workdir, preset=None):
         row = dict(key=key, source="?", color="", category=category, name=key, domain=domain, note="")
         alt = icons.digits_form(key)
         if alt and alt in have and alt in entries:
-            color, category, name = entries[alt]
+            color, category, name, _ = entries[alt]
             row.update(source=f"alias:{alt}", color=color, category=category, name=name)
         elif not site:
             row["note"] = "INCONNU : domaine à fournir"
@@ -532,7 +533,7 @@ def ts_key(k):
 
 
 def apply_rows(rows, workdir):
-    """Writes the 3 files (and the WebP assets) for rows not covered yet. All or nothing:
+    """Writes the 2 files (and the WebP assets) for rows not covered yet. All or nothing:
     the manifest is validated before anything is written."""
     have = icons.existing_keys()
     rows = sorted((r for r in rows if r["key"] not in have), key=lambda r: r["key"])
@@ -550,35 +551,27 @@ def apply_rows(rows, workdir):
     types = types[: end + 1] + union + types[end + 1 :]
 
     ts = open(NETWORK_TS).read()
-    block = "".join(
-        f"  {ts_key(r['key'])}: {{\n    color: \"{r['color'].upper()}\",\n"
-        f"    category: \"{r['category']}\",\n    name: {ts_string(r['name'])},\n  }},\n"
-        for r in rows
-    )
-    end = ts.rindex("};")
-    ts = ts[:end] + block + ts[end:]
-
-    tsx = open(TSX).read()
-    cases = []
+    entries = network_entries()
+    block = []
     for r in rows:
         k, src = r["key"], r["source"]
         if src.startswith("alias:"):
-            target = f'    case "{src[6:]}":\n'
-            tsx = tsx.replace(target, f'    case "{k}":\n' + target, 1)
-            continue
-        if src == "local":
+            field, value = entries[src[6:]][3]  # same icon or logo as the target network
+        elif src == "local":
             icons.save_asset(Image.open(os.path.join(workdir, k + ".png")), os.path.join(icons.ASSETS, k + icons.ASSET_EXT))
-            jsx = f"<LocalIcon file=\"{k}{icons.ASSET_EXT}\" alt={ts_string(r['name'])} />"
+            field, value = "logo", k + icons.ASSET_EXT
         else:
-            icon = "simple-icons:" + src[3:] if src.startswith("si:") else src
-            jsx = f'<Icon icon="{icon}" color={{socialNetworks.{k}.color}} />'
-        cases.append(f'    case "{k}":\n      icon = {jsx};\n      break;\n')
-    default = tsx.index("    default:")
-    tsx = tsx[:default] + "".join(cases) + tsx[default:]
+            field, value = "icon", ("simple-icons:" + src[3:] if src.startswith("si:") else src)
+        block.append(
+            f"  {ts_key(k)}: {{\n    color: \"{r['color'].upper()}\",\n"
+            f"    category: \"{r['category']}\",\n    name: {ts_string(r['name'])},\n"
+            f"    {field}: {ts_string(value)},\n  }},\n"
+        )
+    end = ts.rindex("};")
+    ts = ts[:end] + "".join(block) + ts[end:]
 
     open(TYPES_TS, "w").write(types)
     open(NETWORK_TS, "w").write(ts)
-    open(TSX, "w").write(tsx)
     icons.gen_asset_loaders()
     by = {}
     for r in rows:
