@@ -94,7 +94,7 @@ def norm(name):
 # Host prefixes that name the forum software, not the brand. Not "app", "m" or "ru": the API
 # keeps them (app.clan.su -> appclan)
 HOST_PREFIXES = {"forum", "forums", "community", "discuss", "discourse", "support", "develop",
-                 "commons", "board", "boards", "talk", "en"}
+                 "commons", "board", "boards", "talk", "en", "foro", "foros"}
 # Subdomains that name a language or a section of the brand's site, skipped only when a brand
 # label follows (3+ labels): zh.wikifur.com -> wikifur, wiki.openstreetmap.org -> openstreetmap,
 # dev.bukkit.org -> bukkit. Two-letter labels are language codes (de., es., ar.), except "tv":
