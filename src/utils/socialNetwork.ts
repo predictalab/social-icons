@@ -11663,12 +11663,6 @@ export const socialNetworks: socialNetworkType = {
     name: "AppleInsider.ru",
     logo: "appleinsider.webp",
   },
-  archiveofourown: {
-    color: "#990000",
-    category: "other",
-    name: "Archive of Our Own",
-    icon: "simple-icons:archiveofourown",
-  },
   b17: {
     color: "#839891",
     category: "other",
@@ -11800,12 +11794,6 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "DefensiveCarry",
     logo: "defensivecarry.webp",
-  },
-  designs99: {
-    color: "#FE5F50",
-    category: "other",
-    name: "99designs",
-    icon: "simple-icons:99designs",
   },
   directx10: {
     color: "#080808",
@@ -12077,12 +12065,6 @@ export const socialNetworks: socialNetworkType = {
     name: "Lkforum",
     icon: "mdi:forum",
   },
-  lor: {
-    color: "#FCC624",
-    category: "programming",
-    name: "Linux.org.ru",
-    icon: "simple-icons:linux",
-  },
   mamot: {
     color: "#607D8B",
     category: "social",
@@ -12232,12 +12214,6 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "101010",
     icon: "mdi:account-group",
-  },
-  onezerozeroonetracklists: {
-    color: "#40AEF0",
-    category: "other",
-    name: "1001tracklists",
-    icon: "simple-icons:1001tracklists",
   },
   otzovik: {
     color: "#CE2356",
@@ -12533,12 +12509,6 @@ export const socialNetworks: socialNetworkType = {
     name: "Tigerfan",
     icon: "mdi:trophy",
   },
-  tl: {
-    color: "#00A6D8",
-    category: "gaming",
-    name: "Team Liquid",
-    logo: "teamliquid.webp",
-  },
   trakt: {
     color: "#9F42C6",
     category: "streaming",
@@ -12569,23 +12539,11 @@ export const socialNetworks: socialNetworkType = {
     name: "Tweakers",
     logo: "tweakers.webp",
   },
-  twod3d: {
-    color: "#E21A1E",
-    category: "other",
-    name: "2d-3d",
-    logo: "twod3d.webp",
-  },
   twoonebuttons: {
     color: "#0987FA",
     category: "ecommerce",
     name: "21buttons",
     icon: "mdi:cart",
-  },
-  twothreehq: {
-    color: "#489A3B",
-    category: "other",
-    name: "23hq",
-    logo: "twothreehq.webp",
   },
   uazpatriot: {
     color: "#91928C",
@@ -12742,12 +12700,6 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "Aktivix",
     icon: "mdi:book-open-variant",
-  },
-  algowikiproject: {
-    color: "#000000",
-    category: "other",
-    name: "Algowiki Project",
-    icon: "mdi:flask",
   },
   alioth: {
     color: "#73E99C",
@@ -12976,12 +12928,6 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "Bisq Wiki",
     logo: "bisq.webp",
-  },
-  bitcoin: {
-    color: "#F7931A",
-    category: "finance",
-    name: "Bitcoin Wiki",
-    icon: "simple-icons:bitcoin",
   },
   bitlair: {
     color: "#FC5C1C",
@@ -13346,7 +13292,7 @@ export const socialNetworks: socialNetworkType = {
   dfwk: {
     color: "#232222",
     category: "gaming",
-    name: "Dwarf Fortress Wiki",
+    name: "Dwarf Fortress Wiki (dfwk.ru)",
     icon: "mdi:gamepad-variant",
   },
   dghochn: {
@@ -14565,7 +14511,7 @@ export const socialNetworks: socialNetworkType = {
     color: "#070707",
     category: "gaming",
     name: "Multi Theft Auto: Wiki",
-    logo: "mtasa.webp",
+    logo: "multitheftauto.webp",
   },
   mtg: {
     color: "#7C516C",
@@ -17663,12 +17609,6 @@ export const socialNetworks: socialNetworkType = {
     name: "Terasology",
     icon: "mdi:gamepad-variant",
   },
-  terrariaforums: {
-    color: "#B08759",
-    category: "gaming",
-    name: "Terraria Forums",
-    logo: "terrariaforums.webp",
-  },
   tf2items: {
     color: "#2C2927",
     category: "gaming",
@@ -19127,12 +19067,6 @@ export const socialNetworks: socialNetworkType = {
     name: "Cockpit Community",
     logo: "getcockpit.webp",
   },
-  getpostman: {
-    color: "#FF6C37",
-    category: "programming",
-    name: "Postman Community",
-    logo: "getpostman.webp",
-  },
   girofle: {
     color: "#0B86CF",
     category: "programming",
@@ -20183,12 +20117,6 @@ export const socialNetworks: socialNetworkType = {
     name: "China FreeBSD Forum",
     logo: "mozii.webp",
   },
-  mozilla: {
-    color: "#161616",
-    category: "programming",
-    name: "Mozilla Discourse",
-    icon: "simple-icons:mozilla",
-  },
   msu: {
     color: "#55B4E2",
     category: "programming",
@@ -20518,12 +20446,6 @@ export const socialNetworks: socialNetworkType = {
     category: "programming",
     name: "Openubmc",
     icon: "mdi:code-tags",
-  },
-  opera: {
-    color: "#FF1B2D",
-    category: "programming",
-    name: "Opera forums",
-    icon: "simple-icons:opera",
   },
   optimistose: {
     color: "#3A3ABA",
@@ -20866,12 +20788,6 @@ export const socialNetworks: socialNetworkType = {
     category: "programming",
     name: "Roots Discourse",
     icon: "simple-icons:roots",
-  },
-  rstudio: {
-    color: "#436F99",
-    category: "programming",
-    name: "Posit Community",
-    icon: "simple-icons:rstudio",
   },
   rubikpi: {
     color: "#A57163",
@@ -21395,12 +21311,6 @@ export const socialNetworks: socialNetworkType = {
     name: "Animal Hope",
     icon: "mdi:cards-playing",
   },
-  anime: {
-    color: "#ECC994",
-    category: "other",
-    name: "Anime Manga Forum",
-    icon: "mdi:animation",
-  },
   animegrand: {
     color: "#607D8B",
     category: "other",
@@ -21520,12 +21430,6 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "Bentbox",
     icon: "mdi:palette",
-  },
-  berkmanklein: {
-    color: "#BD5968",
-    category: "other",
-    name: "Berkman Klein Center",
-    logo: "berkmanklein.webp",
   },
   bestclips: {
     color: "#607D8B",
@@ -22475,12 +22379,6 @@ export const socialNetworks: socialNetworkType = {
     name: "Lavkachudec",
     icon: "mdi:web",
   },
-  sublimetext: {
-    color: "#FF9800",
-    category: "programming",
-    name: "Sublime Forum",
-    icon: "simple-icons:sublimetext",
-  },
   taursnd: {
     color: "#607D8B",
     category: "social",
@@ -22762,12 +22660,6 @@ export const socialNetworks: socialNetworkType = {
     category: "programming",
     name: "WPBay Community",
     logo: "wpbay.webp",
-  },
-  wyzecam: {
-    color: "#1A1919",
-    category: "programming",
-    name: "Wyze Forum",
-    logo: "wyzecam.webp",
   },
   xanasoft: {
     color: "#013F88",
@@ -24245,12 +24137,6 @@ export const socialNetworks: socialNetworkType = {
     name: "TVn7FLiX",
     icon: "mdi:video",
   },
-  twoel5: {
-    color: "#607D8B",
-    category: "other",
-    name: "2el5",
-    icon: "mdi:web",
-  },
   ufive: {
     color: "#607D8B",
     category: "social",
@@ -25055,11 +24941,11 @@ export const socialNetworks: socialNetworkType = {
     name: "Forum Nenormarehab",
     logo: "forumnenormarehab.webp",
   },
-  forumru: {
+  enlistedru: {
     color: "#41100B",
     category: "social",
-    name: "Enlisted",
-    logo: "forumru.webp",
+    name: "Enlisted Forum (RU)",
+    logo: "enlistedru.webp",
   },
   forumsmotri: {
     color: "#000000",
@@ -25571,12 +25457,6 @@ export const socialNetworks: socialNetworkType = {
     name: "Ne Kurim",
     logo: "nekurim.webp",
   },
-  ninesix: {
-    color: "#607D8B",
-    category: "finance",
-    name: "96",
-    icon: "mdi:finance",
-  },
   nivaclub: {
     color: "#000000",
     category: "other",
@@ -25882,12 +25762,6 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "Sellermap",
     icon: "mdi:briefcase",
-  },
-  sevenfourfivezeroseven: {
-    color: "#B1BC46",
-    category: "other",
-    name: "74507",
-    icon: "mdi:medal",
   },
   shaiba: {
     color: "#2C3339",
@@ -26278,12 +26152,6 @@ export const socialNetworks: socialNetworkType = {
     category: "other",
     name: "Zdesvsyo",
     icon: "mdi:web",
-  },
-  zid: {
-    color: "#370F1E",
-    category: "other",
-    name: "Zid",
-    icon: "mdi:car",
   },
   zoig: {
     color: "#BF5651",
@@ -26894,7 +26762,7 @@ export const socialNetworks: socialNetworkType = {
   arongranberg: {
     color: "#607D8B",
     category: "social",
-    name: "Support Forum",
+    name: "A* Pathfinding Project Forum",
     icon: "mdi:forum",
   },
   arowanaclub: {
@@ -27028,12 +26896,6 @@ export const socialNetworks: socialNetworkType = {
     category: "social",
     name: "Atxfriends",
     logo: "atxfriends.webp",
-  },
-  audacityteam: {
-    color: "#60358E",
-    category: "other",
-    name: "Audacity Forum",
-    logo: "audacityteam.webp",
   },
   audiforum: {
     color: "#0C0C0D",
@@ -28148,7 +28010,7 @@ export const socialNetworks: socialNetworkType = {
   breakthrought1d: {
     color: "#0B29FF",
     category: "social",
-    name: "Community Forum",
+    name: "Breakthrough T1D Community Forum",
     logo: "breakthrought1d.webp",
   },
   breww: {
@@ -28509,7 +28371,7 @@ export const socialNetworks: socialNetworkType = {
     color: "#080808",
     category: "social",
     name: "Charg (CHG)",
-    logo: "chgcoin.webp",
+    logo: "zchg.webp",
   },
   chiase: {
     color: "#607D8B",
@@ -29918,8 +29780,8 @@ export const socialNetworks: socialNetworkType = {
   enlisted: {
     color: "#C62828",
     category: "social",
-    name: "Enlisted",
-    icon: "mdi:star",
+    name: "Enlisted Forum",
+    logo: "enlistedru.webp",
   },
   ens: {
     color: "#0080BC",
@@ -30899,12 +30761,6 @@ export const socialNetworks: socialNetworkType = {
     name: "GHI Electronics' Forums",
     logo: "ghielectronics.webp",
   },
-  ghost: {
-    color: "#15171A",
-    category: "social",
-    name: "Ghost Forum",
-    icon: "simple-icons:ghost",
-  },
   giaicuunongdan: {
     color: "#607D8B",
     category: "social",
@@ -31790,7 +31646,7 @@ export const socialNetworks: socialNetworkType = {
   invoiceninja: {
     color: "#000000",
     category: "social",
-    name: "Support Forum",
+    name: "Invoice Ninja Forum",
     icon: "simple-icons:invoiceninja",
   },
   invvest: {
@@ -31802,7 +31658,7 @@ export const socialNetworks: socialNetworkType = {
   iobroker: {
     color: "#3399CC",
     category: "social",
-    name: "Community Forum",
+    name: "ioBroker Forum",
     icon: "simple-icons:iobroker",
   },
   iode: {
@@ -33399,7 +33255,7 @@ export const socialNetworks: socialNetworkType = {
     color: "#50A0DA",
     category: "social",
     name: "NEJE",
-    logo: "neje.webp",
+    logo: "neje99.webp",
   },
   neo4j: {
     color: "#4581C3",
