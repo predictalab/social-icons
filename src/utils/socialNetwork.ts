@@ -13327,13 +13327,13 @@ export const socialNetworks: socialNetworkType = {
   },
   dustloop: {
     color: "#000000",
-    category: "other",
+    category: "gaming",
     name: "Dustloop Wiki",
     logo: "dustloop.webp",
   },
   dwarffortresswiki: {
     color: "#232222",
-    category: "other",
+    category: "gaming",
     name: "Dwarf Fortress Wiki",
     icon: "mdi:book-open-variant",
   },
@@ -13477,7 +13477,7 @@ export const socialNetworks: socialNetworkType = {
   },
   factorio: {
     color: "#865A36",
-    category: "other",
+    category: "gaming",
     name: "Official Factorio Wiki",
     logo: "factorio.webp",
   },
@@ -13729,7 +13729,7 @@ export const socialNetworks: socialNetworkType = {
   },
   gta: {
     color: "#030303",
-    category: "other",
+    category: "gaming",
     name: "GTA Wiki",
     logo: "gta.webp",
   },
@@ -13921,7 +13921,7 @@ export const socialNetworks: socialNetworkType = {
   },
   idleon: {
     color: "#7029AD",
-    category: "other",
+    category: "gaming",
     name: "IdleOn MMO Wiki",
     logo: "idleon.webp",
   },
@@ -14455,7 +14455,7 @@ export const socialNetworks: socialNetworkType = {
   },
   multicopter: {
     color: "#609B9B",
-    category: "programming",
+    category: "other",
     name: "Multicopter Wiki",
     icon: "mdi:laptop",
   },
@@ -14857,7 +14857,7 @@ export const socialNetworks: socialNetworkType = {
   },
   pokewiki: {
     color: "#0F0101",
-    category: "other",
+    category: "gaming",
     name: "Pokewiki",
     logo: "pokewiki.webp",
   },
@@ -15337,7 +15337,7 @@ export const socialNetworks: socialNetworkType = {
   },
   starbase118: {
     color: "#BC8B33",
-    category: "other",
+    category: "gaming",
     name: "118Wiki",
     icon: "mdi:book-open-variant",
   },
@@ -15865,7 +15865,7 @@ export const socialNetworks: socialNetworkType = {
   },
   wargaming: {
     color: "#26221D",
-    category: "other",
+    category: "gaming",
     name: "World of Tanks",
     logo: "wargaming.webp",
   },
@@ -16033,7 +16033,7 @@ export const socialNetworks: socialNetworkType = {
   },
   wikidex: {
     color: "#FEC209",
-    category: "other",
+    category: "gaming",
     name: "Wikidex",
     logo: "wikidex.webp",
   },
@@ -17683,7 +17683,7 @@ export const socialNetworks: socialNetworkType = {
   },
   wikistock: {
     color: "#607D8B",
-    category: "other",
+    category: "finance",
     name: "Wiki Stock",
     icon: "mdi:book-open-variant",
   },
@@ -18079,7 +18079,7 @@ export const socialNetworks: socialNetworkType = {
   },
   basketpc: {
     color: "#607D8B",
-    category: "programming",
+    category: "gaming",
     name: "Free Online Game Basketball",
     icon: "mdi:laptop",
   },
@@ -18241,7 +18241,7 @@ export const socialNetworks: socialNetworkType = {
   },
   centralatermica: {
     color: "#6898C7",
-    category: "programming",
+    category: "other",
     name: "Centrala Termica",
     logo: "centralatermica.webp",
   },
@@ -18913,7 +18913,7 @@ export const socialNetworks: socialNetworkType = {
   },
   fusionfall: {
     color: "#94E42D",
-    category: "programming",
+    category: "gaming",
     name: "Fusionfall",
     logo: "fusionfall.webp",
   },
@@ -19033,7 +19033,7 @@ export const socialNetworks: socialNetworkType = {
   },
   graphicdesignforum: {
     color: "#607D8B",
-    category: "programming",
+    category: "other",
     name: "Graphicdesignforum",
     icon: "mdi:laptop",
   },
@@ -19183,7 +19183,7 @@ export const socialNetworks: socialNetworkType = {
   },
   indiaconsumercomplaints: {
     color: "#607D8B",
-    category: "programming",
+    category: "other",
     name: "Indiaconsumercomplaints",
     icon: "mdi:laptop",
   },
@@ -19219,7 +19219,7 @@ export const socialNetworks: socialNetworkType = {
   },
   insidepromod: {
     color: "#607D8B",
-    category: "programming",
+    category: "gaming",
     name: "Insidepromod",
     icon: "mdi:laptop",
   },
@@ -19669,7 +19669,7 @@ export const socialNetworks: socialNetworkType = {
   },
   ledhorticoles: {
     color: "#607D8B",
-    category: "programming",
+    category: "other",
     name: "Led horticoles",
     icon: "mdi:laptop",
   },
@@ -19969,7 +19969,7 @@ export const socialNetworks: socialNetworkType = {
   },
   modernnations: {
     color: "#02ED02",
-    category: "programming",
+    category: "gaming",
     name: "Modern Nations",
     logo: "modernnations.webp",
   },
@@ -20173,7 +20173,7 @@ export const socialNetworks: socialNetworkType = {
   },
   officialpsds: {
     color: "#0075C7",
-    category: "programming",
+    category: "other",
     name: "Officialpsds",
     logo: "officialpsds.webp",
   },
@@ -20557,7 +20557,7 @@ export const socialNetworks: socialNetworkType = {
   },
   rangerovers: {
     color: "#015126",
-    category: "programming",
+    category: "other",
     name: "Rangerovers",
     logo: "rangerovers.webp",
   },
@@ -20617,7 +20617,7 @@ export const socialNetworks: socialNetworkType = {
   },
   research: {
     color: "#5D5D5D",
-    category: "programming",
+    category: "finance",
     name: "Kaspa Research",
     icon: "mdi:code-tags",
   },
@@ -20677,7 +20677,7 @@ export const socialNetworks: socialNetworkType = {
   },
   rzdputeetz: {
     color: "#607D8B",
-    category: "programming",
+    category: "other",
     name: "Rzd Puteetz",
     icon: "mdi:laptop",
   },
@@ -20809,7 +20809,7 @@ export const socialNetworks: socialNetworkType = {
   },
   sparkhelp: {
     color: "#E8501A",
-    category: "programming",
+    category: "other",
     name: "DJI Drone Help Forum",
     icon: "mdi:quadcopter",
   },
@@ -20887,7 +20887,7 @@ export const socialNetworks: socialNetworkType = {
   },
   swedron: {
     color: "#8369FF",
-    category: "programming",
+    category: "other",
     name: "Swedron Community",
     logo: "swedron.webp",
   },
@@ -21037,7 +21037,7 @@ export const socialNetworks: socialNetworkType = {
   },
   theknightonline: {
     color: "#607D8B",
-    category: "programming",
+    category: "gaming",
     name: "The Knight Online Forum",
     icon: "mdi:laptop",
   },
@@ -21835,7 +21835,7 @@ export const socialNetworks: socialNetworkType = {
   },
   gbadev: {
     color: "#B71CC5",
-    category: "other",
+    category: "gaming",
     name: "gbadev",
     logo: "gbadev.webp",
   },
@@ -22351,7 +22351,7 @@ export const socialNetworks: socialNetworkType = {
   },
   wildwestrp: {
     color: "#607D8B",
-    category: "programming",
+    category: "gaming",
     name: "Wild West RP",
     icon: "mdi:laptop",
   },
@@ -22381,7 +22381,7 @@ export const socialNetworks: socialNetworkType = {
   },
   worstgen: {
     color: "#E9546B",
-    category: "programming",
+    category: "other",
     name: "Worstgen",
     icon: "mdi:web",
   },
@@ -22909,13 +22909,13 @@ export const socialNetworks: socialNetworkType = {
   },
   outof: {
     color: "#1D1A2D",
-    category: "other",
+    category: "gaming",
     name: "Out of Games",
     logo: "outof.webp",
   },
   overgg: {
     color: "#5EC9DC",
-    category: "other",
+    category: "gaming",
     name: "Over.gg",
     logo: "overgg.webp",
   },
@@ -23401,7 +23401,7 @@ export const socialNetworks: socialNetworkType = {
   },
   spygaming: {
     color: "#607D8B",
-    category: "other",
+    category: "gaming",
     name: "SpyGaming",
     icon: "mdi:web",
   },
@@ -24097,7 +24097,7 @@ export const socialNetworks: socialNetworkType = {
   },
   blocktrainer: {
     color: "#007684",
-    category: "social",
+    category: "finance",
     name: "Blocktrainer Forum",
     logo: "blocktrainer.webp",
   },
@@ -25003,7 +25003,7 @@ export const socialNetworks: socialNetworkType = {
   },
   paradox: {
     color: "#FE302C",
-    category: "social",
+    category: "gaming",
     name: "Paradox",
     logo: "paradox.webp",
   },
@@ -25675,7 +25675,7 @@ export const socialNetworks: socialNetworkType = {
   },
   aeternity: {
     color: "#1B1B26",
-    category: "social",
+    category: "finance",
     name: "Aeternity",
     logo: "aeternity.webp",
   },
@@ -25933,7 +25933,7 @@ export const socialNetworks: socialNetworkType = {
   },
   anoma: {
     color: "#FA4E4E",
-    category: "social",
+    category: "finance",
     name: "Anoma",
     logo: "anoma.webp",
   },
@@ -26071,7 +26071,7 @@ export const socialNetworks: socialNetworkType = {
   },
   arcaneodyssey: {
     color: "#000702",
-    category: "social",
+    category: "gaming",
     name: "Arcane Odyssey",
     logo: "arcaneodyssey.webp",
   },
@@ -26767,7 +26767,7 @@ export const socialNetworks: socialNetworkType = {
   },
   cayas: {
     color: "#1E1C1B",
-    category: "social",
+    category: "finance",
     name: "Cayas",
     logo: "cayas.webp",
   },
@@ -26845,7 +26845,7 @@ export const socialNetworks: socialNetworkType = {
   },
   ffxivrp: {
     color: "#607D8B",
-    category: "social",
+    category: "gaming",
     name: "FFXIV Roleplay Ragnarok",
     icon: "mdi:forum",
   },
@@ -26857,7 +26857,7 @@ export const socialNetworks: socialNetworkType = {
   },
   financeheros: {
     color: "#0D8282",
-    category: "social",
+    category: "finance",
     name: "Finance Heros",
     logo: "financeheros.webp",
   },
@@ -26929,7 +26929,7 @@ export const socialNetworks: socialNetworkType = {
   },
   hellominecraft: {
     color: "#904515",
-    category: "social",
+    category: "gaming",
     name: "Hello Minecraft",
     icon: "mdi:forum",
   },
@@ -27073,7 +27073,7 @@ export const socialNetworks: socialNetworkType = {
   },
   realitygaming: {
     color: "#1B1F23",
-    category: "social",
+    category: "gaming",
     name: "Reality Gaming",
     logo: "realitygaming.webp",
   },
@@ -27553,7 +27553,7 @@ export const socialNetworks: socialNetworkType = {
   },
   cardano: {
     color: "#0133AD",
-    category: "social",
+    category: "finance",
     name: "Cardano Forum",
     icon: "simple-icons:cardano",
   },
@@ -27613,7 +27613,7 @@ export const socialNetworks: socialNetworkType = {
   },
   castleengine: {
     color: "#CB7C8A",
-    category: "social",
+    category: "gaming",
     name: "Castle Game Engine Forum",
     logo: "castleengine.webp",
   },
@@ -27733,7 +27733,7 @@ export const socialNetworks: socialNetworkType = {
   },
   cheshirecatsclan: {
     color: "#030303",
-    category: "social",
+    category: "gaming",
     name: "Cheshirecatsclan",
     icon: "mdi:forum",
   },
@@ -28153,7 +28153,7 @@ export const socialNetworks: socialNetworkType = {
   },
   cowdao: {
     color: "#23191A",
-    category: "social",
+    category: "finance",
     name: "CoW DAO",
     logo: "cowdao.webp",
   },
@@ -28177,13 +28177,13 @@ export const socialNetworks: socialNetworkType = {
   },
   creonline: {
     color: "#001141",
-    category: "social",
+    category: "finance",
     name: "Creonline",
     logo: "creonline.webp",
   },
   creuniversity: {
     color: "#001141",
-    category: "social",
+    category: "finance",
     name: "Creuniversity",
     logo: "creuniversity.webp",
   },
@@ -28261,7 +28261,7 @@ export const socialNetworks: socialNetworkType = {
   },
   cryptex: {
     color: "#1C1C3B",
-    category: "social",
+    category: "finance",
     name: "Cryptex Community Forum",
     logo: "cryptex.webp",
   },
@@ -28375,7 +28375,7 @@ export const socialNetworks: socialNetworkType = {
   },
   darkgaming: {
     color: "#4B3B70",
-    category: "social",
+    category: "gaming",
     name: "Dark Gaming",
     logo: "darkgaming.webp",
   },
@@ -28483,7 +28483,7 @@ export const socialNetworks: socialNetworkType = {
   },
   defold: {
     color: "#5F726F",
-    category: "social",
+    category: "gaming",
     name: "Defold game engine forum",
     logo: "defold.webp",
   },
@@ -29155,13 +29155,13 @@ export const socialNetworks: socialNetworkType = {
   },
   ens: {
     color: "#0080BC",
-    category: "social",
+    category: "finance",
     name: "ENS",
     icon: "simple-icons:ens",
   },
   enworld: {
     color: "#326EB3",
-    category: "social",
+    category: "gaming",
     name: "Enworld",
     logo: "enworld.webp",
   },
@@ -29233,7 +29233,7 @@ export const socialNetworks: socialNetworkType = {
   },
   ethichub: {
     color: "#042C4E",
-    category: "social",
+    category: "finance",
     name: "EthicHub",
     logo: "ethichub.webp",
   },
@@ -29347,7 +29347,7 @@ export const socialNetworks: socialNetworkType = {
   },
   failbettergames: {
     color: "#1E1E1E",
-    category: "social",
+    category: "gaming",
     name: "The Failbetter Games Forums",
     logo: "failbettergames.webp",
   },
@@ -29479,7 +29479,7 @@ export const socialNetworks: socialNetworkType = {
   },
   finanzrudel: {
     color: "#051D29",
-    category: "social",
+    category: "finance",
     name: "Finanzrudel Community Forum",
     logo: "finanzrudel.webp",
   },
@@ -29671,7 +29671,7 @@ export const socialNetworks: socialNetworkType = {
   },
   forobits: {
     color: "#0097E4",
-    category: "social",
+    category: "finance",
     name: "Forobits",
     logo: "forobits.webp",
   },
@@ -30205,7 +30205,7 @@ export const socialNetworks: socialNetworkType = {
   },
   gmdonate: {
     color: "#00BCFF",
-    category: "social",
+    category: "gaming",
     name: "Gm Donate",
     logo: "gmdonate.webp",
   },
@@ -30469,7 +30469,7 @@ export const socialNetworks: socialNetworkType = {
   },
   havoc: {
     color: "#9A4F2D",
-    category: "social",
+    category: "gaming",
     name: "Havoc Games",
     logo: "havoc.webp",
   },
@@ -30631,7 +30631,7 @@ export const socialNetworks: socialNetworkType = {
   },
   hiveworkshop: {
     color: "#000000",
-    category: "social",
+    category: "gaming",
     name: "HIVE",
     logo: "hiveworkshop.webp",
   },
@@ -30865,7 +30865,7 @@ export const socialNetworks: socialNetworkType = {
   },
   tokenpocket: {
     color: "#287FFE",
-    category: "social",
+    category: "finance",
     name: "TokenPocket",
     logo: "tokenpocket.webp",
   },
@@ -31831,7 +31831,7 @@ export const socialNetworks: socialNetworkType = {
   },
   lxdao: {
     color: "#459AE5",
-    category: "social",
+    category: "finance",
     name: "LXDAO",
     logo: "lxdao.webp",
   },
@@ -32413,7 +32413,7 @@ export const socialNetworks: socialNetworkType = {
   },
   morpho: {
     color: "#1663E8",
-    category: "social",
+    category: "finance",
     name: "Morpho Governance Forum",
     logo: "morpho.webp",
   },
@@ -32863,7 +32863,7 @@ export const socialNetworks: socialNetworkType = {
   },
   novaskin: {
     color: "#848383",
-    category: "social",
+    category: "gaming",
     name: "Nova Skin",
     logo: "novaskin.webp",
   },
@@ -33253,7 +33253,7 @@ export const socialNetworks: socialNetworkType = {
   },
   optimusfutures: {
     color: "#1B3664",
-    category: "social",
+    category: "finance",
     name: "Optimusfutures",
     logo: "optimusfutures.webp",
   },
@@ -33367,7 +33367,7 @@ export const socialNetworks: socialNetworkType = {
   },
   pancakeswap: {
     color: "#D1884F",
-    category: "social",
+    category: "finance",
     name: "PancakeSwap",
     logo: "pancakeswap.webp",
   },
@@ -33655,7 +33655,7 @@ export const socialNetworks: socialNetworkType = {
   },
   pixeltailgames: {
     color: "#48526D",
-    category: "social",
+    category: "gaming",
     name: "PixelTail Games",
     logo: "pixeltailgames.webp",
   },
@@ -33787,7 +33787,7 @@ export const socialNetworks: socialNetworkType = {
   },
   polkadot: {
     color: "#E6007A",
-    category: "social",
+    category: "finance",
     name: "Polkadot Forum",
     icon: "simple-icons:polkadot",
   },
@@ -34411,7 +34411,7 @@ export const socialNetworks: socialNetworkType = {
   },
   rimworld: {
     color: "#281349",
-    category: "social",
+    category: "gaming",
     name: "RimWorld Gallery",
     logo: "rimworld.webp",
   },
@@ -34495,13 +34495,13 @@ export const socialNetworks: socialNetworkType = {
   },
   rpgforen: {
     color: "#974212",
-    category: "social",
+    category: "gaming",
     name: "RPG Foren",
     logo: "rpgforen.webp",
   },
   rpgtrader: {
     color: "#6C895F",
-    category: "social",
+    category: "gaming",
     name: "RPG Trader Support",
     logo: "rpgtrader.webp",
   },
@@ -34927,7 +34927,7 @@ export const socialNetworks: socialNetworkType = {
   },
   skyeco: {
     color: "#4B6DF7",
-    category: "social",
+    category: "finance",
     name: "Sky Forum",
     logo: "skyeco.webp",
   },
@@ -34975,7 +34975,7 @@ export const socialNetworks: socialNetworkType = {
   },
   solana: {
     color: "#9945FF",
-    category: "social",
+    category: "finance",
     name: "Solana Developer Forums",
     icon: "simple-icons:solana",
   },
@@ -35083,7 +35083,7 @@ export const socialNetworks: socialNetworkType = {
   },
   spaceid: {
     color: "#1EF0A4",
-    category: "social",
+    category: "finance",
     name: "SPACE ID",
     logo: "spaceid.webp",
   },
@@ -35683,7 +35683,7 @@ export const socialNetworks: socialNetworkType = {
   },
   tezosagora: {
     color: "#0C61FF",
-    category: "social",
+    category: "finance",
     name: "Tezos Agora Forum",
     logo: "tezosagora.webp",
   },
@@ -35701,7 +35701,7 @@ export const socialNetworks: socialNetworkType = {
   },
   theboxingmanagergame: {
     color: "#052541",
-    category: "social",
+    category: "gaming",
     name: "Boxing Manager",
     logo: "theboxingmanagergame.webp",
   },
@@ -36121,7 +36121,7 @@ export const socialNetworks: socialNetworkType = {
   },
   tripleagame: {
     color: "#511114",
-    category: "social",
+    category: "gaming",
     name: "TripleA Forum",
     logo: "tripleagame.webp",
   },
@@ -36133,7 +36133,7 @@ export const socialNetworks: socialNetworkType = {
   },
   trondao: {
     color: "#DB0029",
-    category: "social",
+    category: "finance",
     name: "TRON DAO Forum",
     logo: "trondao.webp",
   },
@@ -36685,7 +36685,7 @@ export const socialNetworks: socialNetworkType = {
   },
   whackahack: {
     color: "#756D24",
-    category: "social",
+    category: "gaming",
     name: "Whackahack.com/foro",
     icon: "mdi:forum",
   },
@@ -36889,7 +36889,7 @@ export const socialNetworks: socialNetworkType = {
   },
   y8: {
     color: "#E71D22",
-    category: "social",
+    category: "gaming",
     name: "Y8",
     logo: "y8.webp",
   },
