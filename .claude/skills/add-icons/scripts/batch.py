@@ -94,7 +94,27 @@ def norm(name):
 # Host prefixes that name the forum software, not the brand. Not "app", "m" or "ru": the API
 # keeps them (app.clan.su -> appclan)
 HOST_PREFIXES = {"forum", "forums", "community", "discuss", "discourse", "support", "develop",
-                 "commons", "board", "boards", "talk", "en"}
+                 "commons", "board", "boards", "talk", "en", "foro", "foros"}
+# Subdomains that name a language or a section of the brand's site, skipped only when a brand
+# label follows (3+ labels): zh.wikifur.com -> wikifur, wiki.openstreetmap.org -> openstreetmap,
+# dev.bukkit.org -> bukkit. Two-letter labels are language codes (de., es., ar.), except "tv":
+# tv.ucoz.club -> tvucoz.
+SECTION_PREFIXES = {"wiki", "dev", "git", "q", "is", "database", "directory", "english",
+                    "docs", "help", "kb", "maps", "our", "plus"}
+
+
+# Shared hosts: there the subdomain is the brand (av.3dn.ru -> av, wm.ucoz.com -> wmucoz,
+# my.mail.ru -> mymailru), never a section.
+SHARED_HOSTS = {"ucoz", "3dn", "clan", "my1", "moy", "do", "narod", "forum24", "nodebb",
+                "discoursehosting", "freeflarum", "flarum", "vanillacommunities", "mail"}
+
+
+def is_section(label, host):
+    if host in SHARED_HOSTS:
+        return False
+    if re.fullmatch(r"[a-z]{2}-wiki|wiki-[a-z]{2}", label):  # pl-wiki.metin2…, wiki-fr.guildwars2…
+        return True
+    return label in SECTION_PREFIXES or (len(label) == 2 and label.isalpha() and label != "tv")
 
 
 def is_domain_name(name):
@@ -110,9 +130,13 @@ def key_candidates(name, domain):
     prefixes (forum.cockroachlabs.com -> cockroachlabs); then fallbacks, the domain's
     second-level label last (Bambu Lab Forum -> bambulab)."""
     out = []
+    if re.fullmatch(r"[\w.-]+\.[a-z]{2,}/[\w./-]*", name, re.I):
+        name = name.split("/")[0]  # destroyrepeat.com/community -> destroyrepeat.com
     if is_domain_name(name):
         labels = name.lower().removeprefix("www.").split(".")[:-1]
         brand = [l for l in labels if l not in HOST_PREFIXES]  # forums.docker.com -> docker
+        if len(brand) >= 2 and is_section(brand[0], brand[1]):
+            brand = brand[1:]
         out.append(spell_leading(norm((brand or labels)[0])))
         out.append(spell_leading(norm(labels[0])))
     out.append(spell_leading(norm(name)))
@@ -584,6 +608,33 @@ def apply_rows(rows, workdir):
 
 
 # --------------------------------------------------------------------------- commands
+# Wiki / forum farms the API folds into one network (Armchairgm -> fandom, es.discourse.group
+# -> discourse, measured with `icons.py keys`): their sites need no icon of their own.
+FOLDED_FARMS = {"fandom.com": "fandom", "discourse.group": "discourse"}
+
+
+# Instances of a self-hosted engine too: sources-api has one `mastodon`, `lemmy`, `gitlab` and
+# `gitea` network, each querying a list of instances (app/services/<key>.py, INSTANCES); a new
+# instance joins that list rather than getting its own key.
+FOLDED_TAGS = {"mastodon": "mastodon", "lemmy": "lemmy"}
+FOLDED_ENGINES = {"Mastodon": "mastodon", "Lemmy": "lemmy", "GitLab": "gitlab", "Gitea": "gitea",
+                  "Forgejo": "gitea", "Gogs": "gitea"}
+
+
+FORUM_SOFTWARE = {"discourse", "flarum", "nodebb"} | SHARED_HOSTS
+
+
+def folded_into(domain, infos=None):
+    infos = infos or {}
+    host = domain.split("/")[0].lower()
+    farm = next((k for farm, k in FOLDED_FARMS.items() if host.endswith("." + farm)), None)
+    tag = next((FOLDED_TAGS[t] for t in infos.get("tags", ()) if t in FOLDED_TAGS), None)
+    # ActivityPub instances maigret probes through WebFinger (Pleroma, Akkoma, Misskey…): the
+    # protocol the `mastodon` service looks accounts up with
+    fedi = "mastodon" if "/.well-known/webfinger" in infos.get("probe", "") else None
+    return farm or tag or FOLDED_ENGINES.get(infos.get("engine")) or fedi
+
+
 def maigret_targets(workdir, tag=None, include_disabled=False):
     """{predicted key: site} for maigret sites without icon, one per domain, by popularity."""
     have = icons.existing_keys()
@@ -601,7 +652,14 @@ def maigret_targets(workdir, tag=None, include_disabled=False):
         stem = icons.VARIANT.sub("", icons.norm(name))
         if stem != icons.norm(name) and (stem in have or stem == icons.domain_label(domain)):
             continue  # VKByID, SteamGroup: same icon as the covered network
-        if icons.covered_by(domain, have):
+        if icons.covered_by(domain, have) or folded_into(domain, infos) in have:
+            continue
+        parent = icons.domain_label(domain)
+        if parent in have and parent not in SHARED_HOSTS:
+            continue  # forum.openwrt.org, community.spotify.com: the API folds them (openwrt)
+        # already there under another spelling the API uses (tv.ucoz.club -> tvucoz, okm.org.ru
+        # -> okmorgru); forum software names are no brand (discourse.nixos.org is not discourse)
+        if any(c in have and c not in FORUM_SOFTWARE for c in key_candidates(name, domain)):
             continue
         seen.add(domain)
         out[key] = s
