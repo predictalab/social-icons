@@ -85,7 +85,8 @@ python3 .claude/skills/add-icons/scripts/icons.py apply
 
 Valide tout le manifeste avant d'écrire (slug Iconify, icône mdi, couleur, catégorie, asset),
 installe les assets en WebP 96 px, ajoute les blocs triés aux 2 fichiers et régénère
-`assetLoaders.ts`, puis imprime la commande `inputs` pour la PR. Enchaîner sur l'étape 6.
+`assetLoaders.ts`, puis imprime la commande `inputs` pour la PR. Passer par l'étape 5 bis
+(top 100, non automatisée), puis enchaîner sur l'étape 6.
 
 `icons.py keys` mesure la règle de clé (nom maigret normalisé, chiffres de tête en lettres,
 ou premier label quand le nom est un hôte : `abc-accounting.ucoz.net` → `abcaccounting`,
@@ -252,6 +253,27 @@ Aucun artwork ≥ 48 px : icône mdi thématique + couleur dominante du favicon,
    (une faute de frappe ou une mauvaise extension casse `tsc`). `icons.py install` le
    régénère ; pour un asset ajouté à la main (SVG officiel, etc.), lancer
    `npm run gen-assets`. Ne pas l'éditer, et le commiter avec le reste du lot.
+
+## 5 bis. Top 100 : le nouveau réseau y entre-t-il ?
+
+`src/utils/networkRank.ts` contient `RANKED_NETWORKS`, les ~100 réseaux les plus connus, du plus
+connu au moins connu (le rang est la position dans la liste). Les apps s'en servent pour mettre
+les grands réseaux en avant (bannière « Supported networks », lignes de la FAQ). **À chaque
+ajout**, lot compris, consulter cette liste pour chaque nouvelle clé :
+
+1. **Entre-t-il dans le top 100 ?** Seulement une marque connue du grand public, au moins
+   autant que les dernières de la liste (`viadeo`, `copainsdavant`, `vinted`…). Indices : rang
+   de popularité maigret (colonne `rang` de `icons.py lookup --missing`, < ~1 000), notoriété
+   de la marque, réseau actif dans l'API. Un forum, un wiki de niche ou un service régional
+   n'y entre pas : c'est le cas de la quasi-totalité des ajouts.
+2. **Si oui, à quelle position ?** Juste avant le premier réseau de la liste qu'il dépasse en
+   notoriété. La liste reste à 100 : le dernier en sort.
+3. **Ne pas modifier la liste sans validation** : proposer la position (et le réseau qui sort)
+   à l'utilisateur, puis appliquer. Si aucune clé n'entre, le dire en une ligne
+   (« aucun nouveau réseau n'entre dans le top 100 »).
+
+`tsc` vérifie que chaque clé de la liste existe dans `SourceTypes`. Le filtre **Top** de
+l'aperçu affiche le classement.
 
 ## 6. Vérifier, livrer
 
