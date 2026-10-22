@@ -1,5 +1,6 @@
 import "./Sample.scss";
 import { socialNetworks } from "../utils/socialNetwork";
+import { RANKED_NETWORKS, getNetworkRank } from "../utils/networkRank";
 import SocialIcons from "./SocialIcons";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
@@ -113,9 +114,10 @@ const Sample = () => {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return entries.filter((e) => {
+    const matches = entries.filter((e) => {
       if (filter === "new" && !e.isNew) return false;
-      if (filter !== "all" && filter !== "new" && e.category !== filter) return false;
+      if (filter === "top" && getNetworkRank(e.key) === undefined) return false;
+      if (!["all", "new", "top"].includes(filter) && e.category !== filter) return false;
       if (!q) return true;
       return (
         e.name.toLowerCase().includes(q) ||
@@ -123,6 +125,9 @@ const Sample = () => {
         e.category.toLowerCase().includes(q)
       );
     });
+    // "Top" shows the RANKED_NETWORKS order, not the alphabetical one
+    if (filter !== "top") return matches;
+    return matches.sort((a, b) => getNetworkRank(a.key)! - getNetworkRank(b.key)!);
   }, [entries, query, filter]);
 
   useEffect(() => {
@@ -266,6 +271,13 @@ const Sample = () => {
             Nouveautés<span className="chip-count mono">{NEW_ICONS.length}</span>
           </button>
         )}
+        <button
+          type="button"
+          className={filter === "top" ? "chip chip-active" : "chip"}
+          onClick={() => setFilter(filter === "top" ? "all" : "top")}
+        >
+          Top<span className="chip-count mono">{RANKED_NETWORKS.length}</span>
+        </button>
         {categories.map(([category, count]) => (
           <button
             key={category}

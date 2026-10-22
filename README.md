@@ -27,6 +27,23 @@ applications qui consomment la lib : `github`, `pr0gramm`, `thepiratebay`…). U
 `socialNetworks` expose pour chaque clé la couleur de marque, une catégorie (`social`,
 `messaging_app`, `gaming`, `programming`…) et éventuellement un nom d'affichage.
 
+### Réseaux les plus connus
+
+Pour mettre en avant les grands réseaux (bannière, lignes de la FAQ…) plutôt que l'ordre
+alphabétique de l'API :
+
+```tsx
+import { RANKED_NETWORKS, getNetworkRank, sortByRank } from "@predictalab/social-icons";
+
+RANKED_NETWORKS;            // les ~100 réseaux les plus connus, du plus connu au moins connu
+getNetworkRank("facebook"); // 2 ; undefined pour un réseau non classé
+sortByRank(["airbuds", "whatsapp", "facebook"]); // ["facebook", "whatsapp", "airbuds"]
+```
+
+`sortByRank` place les réseaux classés en tête, dans l'ordre du classement, puis les autres
+dans leur ordre d'origine. Le classement se modifie dans `src/utils/networkRank.ts` : le rang
+est la position dans la liste. Le filtre **Top** de l'aperçu affiche le classement.
+
 ## Développement
 
 ```bash
