@@ -6362,4 +6362,9 @@ export type SourceTypes =
   | "zodiacpd"
   | "zoodev"
   | "zoozcommunity"
-  | "zynthian";
+  | "zynthian"
+  | "argus"
+  | "atleto"
+  | "bdjobs"
+  | "buz"
+  | "virasty";

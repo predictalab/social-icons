@@ -37067,4 +37067,34 @@ export const socialNetworks: socialNetworkType = {
     name: "Zynthian Discourse",
     logo: "zynthian.webp",
   },
+  argus: {
+    color: "#101010",
+    category: "sport",
+    name: "Argus",
+    logo: "argus.webp",
+  },
+  atleto: {
+    color: "#101010",
+    category: "sport",
+    name: "Atleto",
+    logo: "atleto.webp",
+  },
+  bdjobs: {
+    color: "#AC016C",
+    category: "other",
+    name: "Bdjobs",
+    logo: "bdjobs.webp",
+  },
+  buz: {
+    color: "#101010",
+    category: "messaging_app",
+    name: "buz",
+    logo: "buz.webp",
+  },
+  virasty: {
+    color: "#1BB2EF",
+    category: "social",
+    name: "Virasty",
+    logo: "virasty.webp",
+  },
 };
